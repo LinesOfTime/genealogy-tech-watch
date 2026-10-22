@@ -66,5 +66,15 @@ function count(html, className) { return (html.match(new RegExp('<article class=
     }
   }
   assert.equal(page.context.WatchUI.url('javascript:alert(1)'), '');
+  for (const card of catalog.filter(x => x.description_provenance)) {
+    assert.ok(page.context.WatchUI.esc(card.description).includes('без независимой проверки'));
+    const pr=fixture(null); pr.context.location.search='?repo='+encodeURIComponent(card.name);
+    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+    await vm.runInContext(read('docs/project-ui.js'),pr.context);
+    assert.ok(pr.get('content').innerHTML.includes(pr.context.WatchUI.esc(card.description)));
+    assert.match(pr.get('content').innerHTML,/<h2>Тип проекта<\/h2>/);
+    assert.match(pr.get('content').innerHTML,/<h2>Назначение<\/h2>/);
+    assert.ok(pr.get('content').innerHTML.includes(pr.context.WatchUI.esc(card.description_provenance.source.original_text)));
+  }
   console.log(`UI smoke passed: ${catalog.length} cards; source-backed Russia filters; combined/empty filters; ${eventCount} events and research links; full/missing research; no storage; unsafe URL rejected.`);
 })().catch(error => {console.error(error);process.exitCode=1;});

@@ -204,6 +204,13 @@ def validate(root, baseline=None):
                 issue('error', 'baseline', name, str(exc))
     from event_integrity import event_issues
     issues.extend(event_issues(root, catalog, research, loaded.get('digest.json', [])))
+    from restore_descriptions import restore, VERSION
+    for card in catalog:
+        if isinstance(card, dict) and isinstance(card.get('description_provenance'), dict) and card['description_provenance'].get('migration') == VERSION:
+            try:
+                restore([card], research)
+            except (ValueError, KeyError, TypeError, AttributeError) as exc:
+                issue('error', 'description_provenance', str(card.get('name')), str(exc))
     workflows = root / '.github' / 'workflows'
     if workflows.exists() and any(workflows.iterdir()):
         issue('error', 'actions', '.github/workflows', 'GitHub Actions are prohibited')

@@ -15,7 +15,16 @@
     let html = panel('Применимость для России', para(rating(r.russia_applicability ? r : x)) + para(applicability?.basis || 'Оценка не установлена') +
       (applicability?.original_line ? para('Исходная строка: ' + applicability.original_line) + '<small>Источник: путеводитель от 10 октября 2026, guide_excerpt. Редакционная оценка.</small>' : '') +
       para('Доступность сервиса из РФ: ' + (r.russia_service_availability || 'не проверена')));
-    html += panel('Назначение и архитектурная роль', para(r.project_type || x.description) + (r.editorial_summary ? para(r.editorial_summary) : ''));
+    html += panel('Тип проекта', para(r.project_type || 'Тип проекта не установлен'));
+    const purpose = x.description_provenance ? x.description : r.editorial_summary || x.description;
+    html += panel('Назначение', para(purpose));
+    if (x.description_provenance) {
+      const p = x.description_provenance;
+      html += panel('Происхождение описания назначения', para('Прежнее описание: ' + p.original_description) +
+        para('Источник: ' + p.source.file + ' → ' + p.source.key + ' → ' + p.source.field) +
+        para('Исходный текст: ' + p.source.original_text) +
+        para('Редакционный материал; назначение и функции независимо не подтверждены. Тип проекта не выводился из описания.'));
+    }
     html += panel('Практическое применение', para(r.editorial_use_case || x.use_case));
     html += panel('Ограничения и редакционная оценка', para(r.editorial_limitations || x.limitations) + (r.audit_notes ? para(r.audit_notes) : ''));
     if (r.guide_excerpt) html += panel('Из путеводителя от 10 октября 2026', para(r.guide_excerpt) + '<small>Полный исходный текст сохранён. Это редакционное описание, не независимое испытание.</small>');

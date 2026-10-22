@@ -2030,7 +2030,7 @@
     "name": "jregimbal/iiif-downloader",
     "url": "https://github.com/jregimbal/iiif-downloader",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Скачивание изображений из IIIF. Помогает получать последовательности страниц из совместимых IIIF-манифестов для личной исследовательской работы.",
     "use_case": "",
     "limitations": "GUI wxPython для загрузки из IIIF Presentation Manifest; не путать лицензию кода с правами на изображения архивов | Часть 51: незакрытые поля: тип проекта",
     "license": "GPL-3.0",
@@ -2055,13 +2055,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "jregimbal/iiif-downloader",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Скачивание изображений из IIIF. Помогает получать последовательности страниц из совместимых IIIF-манифестов для личной исследовательской работы.",
+        "sha256": "13eed645a5df39144c07b754a1a05e816651874331824d6f1513a0838e1ece81"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "kanik0/rustenati",
     "url": "https://github.com/kanik0/rustenati",
     "section": "Прочие и междисциплинарные",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Специализированный генеалогический кандидат. Может представлять интерес для исследования семейных связей; конкретный набор функций следует сверить по README и демонстрации.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2086,13 +2101,31 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "kanik0/rustenati",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Специализированный генеалогический кандидат. Может представлять интерес для исследования семейных связей; конкретный набор функций следует сверить по README и демонстрации.",
+        "sha256": "1fb41aaa0728316a21665620cd8bddd186a6e4d2f25dd216940b5b0be5107d5a"
+      },
+      "uncertainty_markers": [
+        "кандидат",
+        "Может"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "kasssandr/archilles",
     "url": "https://github.com/kasssandr/archilles",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Инструмент из области RAG и памяти. Возможный технический компонент поиска по собственным архивным материалам с опорой на извлечённые фрагменты.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2117,13 +2150,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "kasssandr/archilles",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Инструмент из области RAG и памяти. Возможный технический компонент поиска по собственным архивным материалам с опорой на извлечённые фрагменты.",
+        "sha256": "7c62be7188298c2d2117bc7fc755fe62d61a079c9320fad5ffa54a1cd73e7173"
+      },
+      "uncertainty_markers": [
+        "Возможный"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "keerthanamurugaraj/topic-rag-for-historical-newspapers",
     "url": "https://github.com/keerthanamurugaraj/topic-rag-for-historical-newspapers",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Тематический поиск в исторических газетах. Исследовательский пример поиска по газетному корпусу с применением тематического анализа и RAG.",
     "use_case": "",
     "limitations": "Исследовательские ноутбуки и сценарии; газетный корпус не распространяется из-за авторских прав; заявлен перевод на английский. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
     "license": "Не установлена для кода; CC BY 4.0 относится к статье",
@@ -2148,6 +2198,21 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "keerthanamurugaraj/topic-rag-for-historical-newspapers",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Тематический поиск в исторических газетах. Исследовательский пример поиска по газетному корпусу с применением тематического анализа и RAG.",
+        "sha256": "9f7df5a3d4f0a783bf928b8b50e6dac1941f4c378cbc212f6be74c053e76dab2"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
@@ -2185,7 +2250,7 @@
     "name": "kimon1230/gedgraph",
     "url": "https://github.com/kimon1230/gedgraph",
     "section": "Программы и деревья",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Графическое представление GEDCOM. Позволяет изучить представление родственных связей в виде графа для анализа и публикации.",
     "use_case": "",
     "limitations": "Часть 38: Python 3.11+, Graphviz; вывод DOT с дальнейшим преобразованием в изображения. Не является редактором семейной базы. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
     "license": "MIT",
@@ -2210,13 +2275,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "kimon1230/gedgraph",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Графическое представление GEDCOM. Позволяет изучить представление родственных связей в виде графа для анализа и публикации.",
+        "sha256": "ad75b97cfac8c42ba236e1edd99a6245819c68c0e422d44f21414bcbbaa09e2e"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "kkkamur07/nomikos",
     "url": "https://github.com/kkkamur07/nomikos",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Кандидат для транскрибирования. Следует оценить как возможный инструмент работы с текстом и аннотациями исторических источников.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2241,13 +2321,31 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "kkkamur07/nomikos",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Кандидат для транскрибирования. Следует оценить как возможный инструмент работы с текстом и аннотациями исторических источников.",
+        "sha256": "b185720adc026f79f9b8bee799d2df17dd732e6ac26d2e0ffd23d2b501df78cf"
+      },
+      "uncertainty_markers": [
+        "Кандидат",
+        "возможный"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "knuckles-team/gramps-mcp",
     "url": "https://github.com/knuckles-team/gramps-mcp",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): MCP-интерфейс для Gramps. Может дать ИИ-помощнику доступ к данным генеалогической базы через стандартизированные инструменты.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2272,13 +2370,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "knuckles-team/gramps-mcp",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: MCP-интерфейс для Gramps. Может дать ИИ-помощнику доступ к данным генеалогической базы через стандартизированные инструменты.",
+        "sha256": "c9ce039cdfe88e7f45c19888ac4a706ccb7e7e79577fc1fb75d3a70d00bbfcaa"
+      },
+      "uncertainty_markers": [
+        "Может"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "komura-shoan/iiif-downloader",
     "url": "https://github.com/komura-shoan/iiif-downloader",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Загрузчик IIIF-изображений. Практический вариант получения изображений из цифровых архивов, поддерживающих IIIF.",
     "use_case": "",
     "limitations": "CLI для IIIF Presentation 3 и последовательных URL; не путать лицензию кода с правами на изображения архивов | Часть 51: незакрытые поля: тип проекта",
     "license": "MIT",
@@ -2303,13 +2418,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "komura-shoan/iiif-downloader",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Загрузчик IIIF-изображений. Практический вариант получения изображений из цифровых архивов, поддерживающих IIIF.",
+        "sha256": "d89e618e3f2937990e6f182df2965666103beb0a2f6e87e8f1fd0a4c9b81c05f"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "libraryofcongress/gazetteer",
     "url": "https://github.com/libraryofcongress/gazetteer",
     "section": "Прочие и междисциплинарные",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Исторический справочник географических названий. Полезен как пример структуры справочника и сопоставления вариантов географических названий.",
     "use_case": "",
     "limitations": "Снимок исторического проекта (2014), старый стек Django; нельзя считать действующей географической службой. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
     "license": "MIT",
@@ -2334,13 +2464,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "libraryofcongress/gazetteer",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Исторический справочник географических названий. Полезен как пример структуры справочника и сопоставления вариантов географических названий.",
+        "sha256": "da83690c516644c36200e8525de9bc4fb08a736134ce96b21b6bae2d0b23c726"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "lieuwe89/genealogy-viz",
     "url": "https://github.com/lieuwe89/genealogy-viz",
     "section": "Программы и деревья",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Визуализация родословной. Кандидат для изучения альтернативного отображения семейных связей и навигации по дереву.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2365,6 +2510,23 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "lieuwe89/genealogy-viz",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Визуализация родословной. Кандидат для изучения альтернативного отображения семейных связей и навигации по дереву.",
+        "sha256": "43763419fac9005746d300b25f614a2dd82ab2be3324c68cc688e112b28cf558"
+      },
+      "uncertainty_markers": [
+        "Кандидат"
+      ],
+      "additional_verification_required": true
     }
   },
   {
@@ -2398,7 +2560,7 @@
     "name": "lovasoa/dezoomify-rs",
     "url": "https://github.com/lovasoa/dezoomify-rs",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Получение изображений из тайловых просмотрщиков. Позволяет собирать доступные фрагменты изображения в единую копию, если это допускает источник.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2423,13 +2585,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "lovasoa/dezoomify-rs",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Получение изображений из тайловых просмотрщиков. Позволяет собирать доступные фрагменты изображения в единую копию, если это допускает источник.",
+        "sha256": "3f748967dd5d30ea1a6bbcf96e0cd52018a8083ef63cbcd48f20a7e0f6fb45a5"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "magne/vitni",
     "url": "https://github.com/magne/vitni",
     "section": "Прочие и междисциплинарные",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Дополнительный кандидат каталога. Требует полноценной первичной экспертизы перед рекомендацией исследователям.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2454,13 +2631,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "magne/vitni",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Дополнительный кандидат каталога. Требует полноценной первичной экспертизы перед рекомендацией исследователям.",
+        "sha256": "b713300808198077e09df42f0152560f253fa90169fbc127f6fc7c7a137fa559"
+      },
+      "uncertainty_markers": [
+        "кандидат"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "meh313/htr-model-tester",
     "url": "https://github.com/meh313/htr-model-tester",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Тестирование моделей HTR. Интерфейс для сравнения моделей распознавания рукописного текста в исследовательском процессе.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Ч44: Окружение WSL/Windows и Kraken; лицензия требует уточнения | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
     "license": "Не установлена",
@@ -2485,13 +2679,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "meh313/htr-model-tester",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Тестирование моделей HTR. Интерфейс для сравнения моделей распознавания рукописного текста в исследовательском процессе.",
+        "sha256": "43782fd99ad41c1f2d5fdd7196b6fba54ba55ef8e8085b27b9f29d3225d33b73"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "microsoft/graphrag",
     "url": "https://github.com/microsoft/graphrag",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): GraphRAG для связанных источников. Подход к поиску и обобщению по графу сущностей; потенциально применим к корпусам архивных текстов.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2516,6 +2725,23 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "microsoft/graphrag",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: GraphRAG для связанных источников. Подход к поиску и обобщению по графу сущностей; потенциально применим к корпусам архивных текстов.",
+        "sha256": "2f342daee7bc274d2b23e550442e03c50f9fc0c15f924dfce4f6330bce4ce577"
+      },
+      "uncertainty_markers": [
+        "потенциально"
+      ],
+      "additional_verification_required": true
     }
   },
   {
@@ -2615,7 +2841,7 @@
     "name": "narasimhan-lab/repare",
     "url": "https://github.com/narasimhan-lab/repare",
     "section": "Программы и деревья",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Реконструкция семейных связей. Исследовательский кандидат для анализа вероятных родственных отношений по неполным данным.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2640,13 +2866,31 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "narasimhan-lab/repare",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Реконструкция семейных связей. Исследовательский кандидат для анализа вероятных родственных отношений по неполным данным.",
+        "sha256": "03fffde578479d9e4b87383de7fc05e87fab42767b4dff54748e6155843a4779"
+      },
+      "uncertainty_markers": [
+        "кандидат",
+        "вероятных"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "ngohung0704/rag-militai",
     "url": "https://github.com/ngohung0704/rag-militai",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): RAG-проект смежной тематики. Может дать технические идеи по индексированию и поиску в специализированных документах.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2671,6 +2915,23 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "ngohung0704/rag-militai",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: RAG-проект смежной тематики. Может дать технические идеи по индексированию и поиску в специализированных документах.",
+        "sha256": "0d4c3d1b4737dab8b378e3166ca7d835dfcc6fa3988caed90479f09b1f719902"
+      },
+      "uncertainty_markers": [
+        "Может"
+      ],
+      "additional_verification_required": true
     }
   },
   {
@@ -2739,7 +3000,7 @@
     "name": "nikkoxgonzales/mcp-grampsweb",
     "url": "https://github.com/nikkoxgonzales/mcp-grampsweb",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): MCP для Gramps Web. Кандидат на подключение ИИ-инструментов к генеалогическим объектам Gramps Web.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2764,13 +3025,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "nikkoxgonzales/mcp-grampsweb",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: MCP для Gramps Web. Кандидат на подключение ИИ-инструментов к генеалогическим объектам Gramps Web.",
+        "sha256": "26b4a61239a58e2f95995f08384b54bd450cf402bc0a95ca9ea8f2ceb90615d3"
+      },
+      "uncertainty_markers": [
+        "Кандидат"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "noahkiss/genealogy-mcp",
     "url": "https://github.com/noahkiss/genealogy-mcp",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): MCP-интерфейс генеалогических данных. Может быть интересен как способ запросов к родословным данным через ИИ-агента.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2795,13 +3073,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "noahkiss/genealogy-mcp",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: MCP-интерфейс генеалогических данных. Может быть интересен как способ запросов к родословным данным через ИИ-агента.",
+        "sha256": "f82d867c6139583b93bf6b2d2b3a62cc1c3a7b1c56a1e029d05fb9daebe04b6b"
+      },
+      "uncertainty_markers": [
+        "Может"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "notakeith/handscribe",
     "url": "https://github.com/notakeith/handscribe",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Средство транскрибирования. Кандидат для ручной или полуавтоматической расшифровки документов.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2826,13 +3121,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "notakeith/handscribe",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Средство транскрибирования. Кандидат для ручной или полуавтоматической расшифровки документов.",
+        "sha256": "31b7705f4be36fadb25337bf886cc2395f4ec908a407d379e44ebac8588a9651"
+      },
+      "uncertainty_markers": [
+        "Кандидат"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "oh-kay-blanket/family-plot",
     "url": "https://github.com/oh-kay-blanket/family-plot",
     "section": "Программы и деревья",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Визуализация семейных связей. Может помочь представить сложную структуру родства графически.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -2857,13 +3169,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "oh-kay-blanket/family-plot",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Визуализация семейных связей. Может помочь представить сложную структуру родства графически.",
+        "sha256": "f2e0cec259f683a8f311f64510c7019b9f19170052384406c457ad9b0d32f93d"
+      },
+      "uncertainty_markers": [
+        "Может"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "omeka/omeka",
     "url": "https://github.com/omeka/omeka",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Публикация цифровых коллекций. Платформа для создания веб-коллекций архивных фотографий, описаний и источников.",
     "use_case": "",
     "limitations": "Платформа публикации цифровых коллекций; не редактор родословных. | Часть 51: незакрытые поля: тип проекта, первоисточник",
     "license": "GPL-3.0-or-later",
@@ -2888,6 +3217,21 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "omeka/omeka",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Публикация цифровых коллекций. Платформа для создания веб-коллекций архивных фотографий, описаний и источников.",
+        "sha256": "ea680e8c05f6e8d13b19a1fce3866d03865f7ee5ddc7cdcbfcbfc9268b8380e9"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
@@ -2987,7 +3331,7 @@
     "name": "qurator-spk/dinglehopper",
     "url": "https://github.com/qurator-spk/dinglehopper",
     "section": "Сопоставление и качество данных",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Инструмент сравнения результатов OCR. Сопоставлять распознанный текст с эталоном при тестировании разных моделей на одних и тех же сканах.",
     "use_case": "",
     "limitations": "Сравнение OCR с эталоном, PAGE/ALTO/text, HTML/JSON отчёты; не распознаёт самостоятельно. | Часть 51: незакрытые поля: тип проекта, первоисточник",
     "license": "Apache-2.0",
@@ -3012,6 +3356,21 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "qurator-spk/dinglehopper",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Инструмент сравнения результатов OCR. Сопоставлять распознанный текст с эталоном при тестировании разных моделей на одних и тех же сканах.",
+        "sha256": "7703fb4294d3d5e545203ec537e9265d7310192956dc08dafe7ed4530faa8d0c"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
@@ -3049,7 +3408,7 @@
     "name": "rollybre/cthulhu",
     "url": "https://github.com/rollybre/cthulhu",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Оценка качества распознавания рукописей. Сравнивать OCR/HTR с проверенной транскрипцией, рассчитывать ошибки и исследовать проблемные страницы.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Ч44: CER/WER, ALTO/PAGE; работа не протестирована | Часть 51: незакрытые поля: тип проекта, первоисточник",
     "license": "MIT",
@@ -3074,13 +3433,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "rollybre/cthulhu",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Оценка качества распознавания рукописей. Сравнивать OCR/HTR с проверенной транскрипцией, рассчитывать ошибки и исследовать проблемные страницы.",
+        "sha256": "4a4b153a6bb75d45e21f85d4476150c2dd144af18ec6877ce1055c9e9a8bf072"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "rue-a/provo",
     "url": "https://github.com/rue-a/provo",
     "section": "Сопоставление и качество данных",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Средства работы с происхождением данных. Фиксировать связи между источником, преобразованием и итоговым утверждением.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3105,13 +3479,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "rue-a/provo",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Средства работы с происхождением данных. Фиксировать связи между источником, преобразованием и итоговым утверждением.",
+        "sha256": "ceb74524d8e4ad734b9eeeb847950b87a1a3c171db67352a6e49a90282ae15c6"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "ruempel/nacarta",
     "url": "https://github.com/ruempel/nacarta",
     "section": "Программы и деревья",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Визуализация семейных связей. Оценить альтернативное представление ветвей родословной и переходы между родственниками.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3136,6 +3525,21 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "ruempel/nacarta",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Визуализация семейных связей. Оценить альтернативное представление ветвей родословной и переходы между родственниками.",
+        "sha256": "c3fe280a84fca043de352841820c558b0a6cd1a2451af6b84008a3c072a2d52d"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
@@ -3173,7 +3577,7 @@
     "name": "sandxlab/sandx-er",
     "url": "https://github.com/sandxlab/sandx-er",
     "section": "Сопоставление и качество данных",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Сопоставление сущностей и записей. Рассматривать как кандидат для поиска повторов персон с вариантами имен и дат.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3198,13 +3602,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "sandxlab/sandx-er",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Сопоставление сущностей и записей. Рассматривать как кандидат для поиска повторов персон с вариантами имен и дат.",
+        "sha256": "003303731f6fcd877f1a5faf8bfb381cf30f5dbb908e730b0886ebd7a162dc33"
+      },
+      "uncertainty_markers": [
+        "кандидат"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "satvikgosai/genea-web",
     "url": "https://github.com/satvikgosai/genea-web",
     "section": "Программы и деревья",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Веб-инструмент генеалогии. Изучить способы навигации по дереву и представления карточек родственников.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3229,13 +3650,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "satvikgosai/genea-web",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Веб-инструмент генеалогии. Изучить способы навигации по дереву и представления карточек родственников.",
+        "sha256": "d2a546fde46a08428d27cd211460ecba8a2731b4f4f9345bc8a5970d97838e92"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "scheldt-llc/genealogy_ai",
     "url": "https://github.com/scheldt-llc/genealogy_ai",
     "section": "Прочие и междисциплинарные",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Экспериментальное применение ИИ в генеалогии. Оценить идеи поиска и объяснения родственных связей по документированным фактам.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3260,13 +3696,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "scheldt-llc/genealogy_ai",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Экспериментальное применение ИИ в генеалогии. Оценить идеи поиска и объяснения родственных связей по документированным фактам.",
+        "sha256": "054c27f08a994817e17a609c33d48f3d95d549f25bf02570b7337aaff951cf0f"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "scormave/gramps-web-mcp",
     "url": "https://github.com/scormave/gramps-web-mcp",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): MCP-интерфейс для Gramps Web. Проверить управляемые запросы к людям, событиям, источникам и цитатам в тестовой базе.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3291,6 +3742,21 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "scormave/gramps-web-mcp",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: MCP-интерфейс для Gramps Web. Проверить управляемые запросы к людям, событиям, источникам и цитатам в тестовой базе.",
+        "sha256": "c94edce33c6a718831eb6a9fc73149f801d78303a49ff9149299f854600158a6"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
@@ -3355,7 +3821,7 @@
     "name": "stefromlc/iiif-downloader",
     "url": "https://github.com/stefromlc/iiif-downloader",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Загрузка IIIF-изображений. Сравнить с другими загрузчиками IIIF по возобновлению и именованию файлов.",
     "use_case": "",
     "limitations": "Загрузка тайлов и сборка одного изображения большого разрешения; не путать лицензию кода с правами на изображения архивов | Часть 51: незакрытые поля: тип проекта",
     "license": "MIT",
@@ -3380,13 +3846,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "stefromlc/iiif-downloader",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Загрузка IIIF-изображений. Сравнить с другими загрузчиками IIIF по возобновлению и именованию файлов.",
+        "sha256": "224232359f6ea1ee42f7a056623a453d5cf86a3c849643b032e9af51768362e7"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "thisisankit27/f-tree",
     "url": "https://github.com/thisisankit27/f-tree",
     "section": "Программы и деревья",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Визуализация родословного дерева. Оценить интерфейс дерева и возможности адаптации к большим семьям.",
     "use_case": "",
     "limitations": "Часть 38: Собственный формат .ftree (ZIP/JSON), обмен между устройствами. GEDCOM в README не подтверждён; русская локализация не заявлена. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
     "license": "MIT",
@@ -3411,6 +3892,23 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "thisisankit27/f-tree",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Визуализация родословного дерева. Оценить интерфейс дерева и возможности адаптации к большим семьям.",
+        "sha256": "d90532a0bacfe1ec255a104ed6b3600bd2392ff2b78f1deecf28e26ec752db20"
+      },
+      "uncertainty_markers": [
+        "возможности"
+      ],
+      "additional_verification_required": true
     }
   },
   {
@@ -3448,7 +3946,7 @@
     "name": "trungdong/prov",
     "url": "https://github.com/trungdong/prov",
     "section": "Сопоставление и качество данных",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Библиотека модели происхождения PROV. Связывать операции обработки и исходные документы для аудита генеалогических утверждений.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3473,13 +3971,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "trungdong/prov",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Библиотека модели происхождения PROV. Связывать операции обработки и исходные документы для аудита генеалогических утверждений.",
+        "sha256": "e0a62a5b7edc21d38dad01412d6c50ca930ac0530239a73a8b060c251d2021f1"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "ub-mannheim/escriptorium",
     "url": "https://github.com/ub-mannheim/escriptorium",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Среда транскрибирования исторических документов. Оценить ручную корректуру, обучение и запуск HTR на архивных изображениях.",
     "use_case": "",
     "limitations": "GitHub-зеркало/адаптация; отдельно учитывать исходный GitLab | Часть 51: незакрытые поля: тип проекта, первоисточник",
     "license": "MIT (текст LICENSE)",
@@ -3504,13 +4017,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "ub-mannheim/escriptorium",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Среда транскрибирования исторических документов. Оценить ручную корректуру, обучение и запуск HTR на архивных изображениях.",
+        "sha256": "235925dda1785fe1297727fb852dc05749fb66405463e1ab0046bd3d46c57395"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "ub-mannheim/escriptorium_dokumentation",
     "url": "https://github.com/ub-mannheim/escriptorium_dokumentation",
     "section": "Источники, OCR и архивы",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Документация к eScriptorium. Использовать как руководство по подготовке изображений и проверке результатов HTR.",
     "use_case": "",
     "limitations": "Документация, не программный движок | Часть 51: незакрытые поля: тип проекта, первоисточник",
     "license": "CC0-1.0",
@@ -3535,13 +4063,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "ub-mannheim/escriptorium_dokumentation",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Документация к eScriptorium. Использовать как руководство по подготовке изображений и проверке результатов HTR.",
+        "sha256": "64c73c94b966785b4a9b35b6170e1c04b019e8e720a96d36e3c6e10fbb283c44"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "umb-oconnorgroup/ibdtools",
     "url": "https://github.com/umb-oconnorgroup/ibdtools",
     "section": "Генетическая генеалогия",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Инструменты анализа IBD-сегментов ДНК. Исследовать выявление генетических совпадений и группирование вероятных родственников.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3566,13 +4109,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "umb-oconnorgroup/ibdtools",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Инструменты анализа IBD-сегментов ДНК. Исследовать выявление генетических совпадений и группирование вероятных родственников.",
+        "sha256": "2bfe9ac6ae33f7678274876574a00a60e6812dd5687802db0bd6174402add023"
+      },
+      "uncertainty_markers": [
+        "вероятных"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "unstructured-io/unstructured-mlk-archive-public",
     "url": "https://github.com/unstructured-io/unstructured-mlk-archive-public",
     "section": "ИИ, агенты и поиск",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Пример обработки исторического текстового архива. Изучить способы структурирования документов для последующего поиска и анализа.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3597,13 +4157,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "unstructured-io/unstructured-mlk-archive-public",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Пример обработки исторического текстового архива. Изучить способы структурирования документов для последующего поиска и анализа.",
+        "sha256": "a9adfb099bcda869c9949e6eff55061d6a55227776cc6468bb65df7c8bee2d2e"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "w3c/prov",
     "url": "https://github.com/w3c/prov",
     "section": "Сопоставление и качество данных",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Стандарт описания происхождения данных. Ввести воспроизводимые цепочки: скан → транскрипция → индексная запись → вывод исследователя.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3628,13 +4203,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "w3c/prov",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Стандарт описания происхождения данных. Ввести воспроизводимые цепочки: скан → транскрипция → индексная запись → вывод исследователя.",
+        "sha256": "9e14586258f2ea1da648f52ccfae87681aa3c58f274737363ec6298a89a34a9c"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "williamscole/haptic",
     "url": "https://github.com/williamscole/haptic",
     "section": "Генетическая генеалогия",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Инструменты генетического анализа. Оценить применимость к группировке совпадений ДНК и реконструкции родства.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3659,13 +4249,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "williamscole/haptic",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Инструменты генетического анализа. Оценить применимость к группировке совпадений ДНК и реконструкции родства.",
+        "sha256": "4eeb9db3be6b0f61804532978d7dfd32b6b3b23b4bf96a020811c862c4ac5950"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "williamscole/ponderosa",
     "url": "https://github.com/williamscole/ponderosa",
     "section": "Генетическая генеалогия",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Анализ генетических совпадений. Изучить подходы к классификации родства по генетическим данным.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3690,13 +4295,28 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "williamscole/ponderosa",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Анализ генетических совпадений. Изучить подходы к классификации родства по генетическим данным.",
+        "sha256": "2e9a13185d46e89fa649d6e624f5f0b937afca372ba4cc171a0a04e9e47f6570"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
     "name": "worldhistoricalgazetteer/documentation",
     "url": "https://github.com/worldhistoricalgazetteer/documentation",
     "section": "Прочие и междисциплинарные",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Документация World Historical Gazetteer. Перенять принципы устойчивых идентификаторов, альтернативных названий и исторической географии.",
     "use_case": "",
     "limitations": "Часть документации помечена как архивная версия дизайна 2025, заменённая в 2026. Лицензия отдельных образовательных материалов не равна лицензии всего репозитория. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
     "license": "Не установлена для всего репозитория",
@@ -3721,6 +4341,21 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "worldhistoricalgazetteer/documentation",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Документация World Historical Gazetteer. Перенять принципы устойчивых идентификаторов, альтернативных названий и исторической географии.",
+        "sha256": "91142e786e70aa113ed593c25a49785877eb802afd7111e3d4387a67f399062e"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
@@ -3789,7 +4424,7 @@
     "name": "yingzhou001/ibdkin",
     "url": "https://github.com/yingzhou001/ibdkin",
     "section": "Генетическая генеалогия",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Оценка генетического родства по IBD. Рассмотреть как исследовательский метод оценки вероятных связей между образцами.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3814,13 +4449,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "yingzhou001/ibdkin",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Оценка генетического родства по IBD. Рассмотреть как исследовательский метод оценки вероятных связей между образцами.",
+        "sha256": "b2174fb42d884d31a655f4a5f4e911fbdba731eba1cfeab8995e4c011805ef29"
+      },
+      "uncertainty_markers": [
+        "вероятных"
+      ],
+      "additional_verification_required": true
     }
   },
   {
     "name": "zal-analytics/zer",
     "url": "https://github.com/zal-analytics/zer",
     "section": "Сопоставление и качество данных",
-    "description": "Не установлен",
+    "description": "По редакционным материалам (без независимой проверки): Сопоставление записей и сущностей. Изучить подход к выявлению совпадающих персон при расхождениях имен и дат.",
     "use_case": "",
     "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
     "license": "Не установлена",
@@ -3845,6 +4497,21 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "description_provenance": {
+      "migration": "editorial-purpose-v1",
+      "original_description": "Не установлен",
+      "interpretation": "Описание назначения; тип проекта не выводился из назначения",
+      "evidence_status": "editorial_only_not_independently_verified",
+      "source": {
+        "file": "docs/research.json",
+        "key": "zal-analytics/zer",
+        "field": "guide_excerpt",
+        "original_text": "Назначение: Сопоставление записей и сущностей. Изучить подход к выявлению совпадающих персон при расхождениях имен и дат.",
+        "sha256": "22fb12315acb18f538aeef1d491f7fffcd30df46b3c8966f461660fb1bf10188"
+      },
+      "uncertainty_markers": [],
+      "additional_verification_required": true
     }
   },
   {
