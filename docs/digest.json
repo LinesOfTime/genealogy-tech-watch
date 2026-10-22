@@ -1,0 +1,174 @@
+[
+  {
+    "date": "2026-10-21",
+    "title": "Поисковая архитектура, пакетный HTR и устойчивые идентификаторы",
+    "summary": "Четыре изменения: Gramps Web API, htrflow-batch, scan2gedcom, Rask.",
+    "items": [
+      {
+        "repo": "gramps-project/gramps-web-api",
+        "priority": "P1",
+        "change": "Удалён встроенный семантический поиск; ИИ-ассистент использует полнотекстовый поиск.",
+        "link": "https://github.com/gramps-project/gramps-web-api/commit/9326174cf86921533682409aced7fddd5efefe07",
+        "components": "Research Workspace · Person Resolver · API/MCP",
+        "action": "Разделить точный, полнотекстовый и семантический поиск"
+      },
+      {
+        "repo": "AI-Riksarkivet/htrflow-batch",
+        "priority": "P1",
+        "change": "Пакетный OCR/HTR; в обзоре отмечены изменения IIIF 2/3 от 20 октября.",
+        "link": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d8d5185c51e606e50793fc8e0678a9dac73c07f9",
+        "components": "Archive Adapter · OCR/HTR · Indexer",
+        "action": "Изучить архитектуру обработки томов и IIIF"
+      },
+      {
+        "repo": "briancase1776/scan2gedcom",
+        "priority": "P1",
+        "change": "Правила обработки повторных записей, исторических дат и общих идентификаторов при параллельной обработке.",
+        "link": "https://github.com/briancase1776/scan2gedcom/commit/f6ec59b249da4317a620f96b3a8092ea35feb70d",
+        "components": "Indexer · Person Resolver · GEDCOM",
+        "action": "Заимствовать правила сохранения исходных дат и дедупликации"
+      },
+      {
+        "repo": "AI-Riksarkivet/rask",
+        "priority": "P2",
+        "change": "ADR-0173: постоянные UUID для объектов независимо от их названий; решение, не подтверждённая реализация.",
+        "link": "https://github.com/AI-Riksarkivet/rask/commit/04766b18482e879e235b7c00e7494756fc0857ba",
+        "components": "Place Resolver/АТД · provenance/evidence",
+        "action": "Учесть постоянные UUID; реализация не подтверждена"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "title": "Research Workbench, IIIF-компонент и контроль полноты",
+    "summary": "Четыре проекта из предыдущего обзора.",
+    "items": [
+      {
+        "repo": "glasgowm148/genealogy-research-workbench",
+        "priority": "P1",
+        "change": "Исследовательские дела, гипотезы, доказательства и отделение приватных данных от публикации.",
+        "link": "https://github.com/glasgowm148/genealogy-research-workbench",
+        "components": "Research Workspace · provenance/evidence",
+        "action": "Сравнить модель исследований"
+      },
+      {
+        "repo": "nakamura196/iiif-kasane",
+        "priority": "P1",
+        "change": "Просмотрщик выделен в подключаемый пакет с управлением Canvas и областью изображения.",
+        "link": "https://github.com/nakamura196/iiif-kasane/commit/78169c4648a8be35aa6ed4dbe01a026b707387e3",
+        "components": "Research Workspace · OCR/HTR",
+        "action": "Эксперимент интеграции"
+      },
+      {
+        "repo": "briancase1776/scan2gedcom",
+        "priority": "P1",
+        "change": "Контроль полноты страниц и параллельных заданий.",
+        "link": "https://github.com/briancase1776/scan2gedcom/commit/7a7ec2ea8e8f8ce2b006e0efd123f273ce0f8438",
+        "components": "Indexer · OCR/HTR",
+        "action": "Заимствовать принцип контроля полноты"
+      },
+      {
+        "repo": "fmadore/zmo-ai-pipelines",
+        "priority": "P2",
+        "change": "Воспроизводимые конвейеры и provenance.json.",
+        "link": "https://github.com/fmadore/zmo-ai-pipelines",
+        "components": "OCR/HTR · provenance/evidence",
+        "action": "Изучить формат метаданных"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "title": "Агентные навыки и разделение архивных сервисов",
+    "summary": "Четыре проекта.",
+    "items": [
+      {
+        "repo": "rfsbraz/genealogy-agent-skills",
+        "priority": "P1",
+        "change": "Контракты исследовательских агентов и состояния доказательств.",
+        "link": "https://github.com/rfsbraz/genealogy-agent-skills",
+        "components": "Research Workspace · provenance/evidence",
+        "action": "Изучить"
+      },
+      {
+        "repo": "zankul/gramps-mcp-dotnet",
+        "priority": "P1",
+        "change": "Ограничение MCP-операций по правам.",
+        "link": "https://github.com/zankul/gramps-mcp-dotnet",
+        "components": "API/MCP",
+        "action": "Изучить"
+      },
+      {
+        "repo": "AI-Riksarkivet/rask",
+        "priority": "P1",
+        "change": "Отделение сервиса аннотирования от архивной платформы.",
+        "link": "https://github.com/AI-Riksarkivet/rask",
+        "components": "Research Workspace · API",
+        "action": "Заимствовать принцип"
+      },
+      {
+        "repo": "briancase1776/scan2gedcom",
+        "priority": "P2",
+        "change": "PDF → транскрипция → JSON → GEDCOM.",
+        "link": "https://github.com/briancase1776/scan2gedcom",
+        "components": "OCR/HTR · GEDCOM",
+        "action": "Изучить"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "title": "Сохранность GEDCOM, транскрипция и IIIF",
+    "summary": "Шесть значимых упоминаний.",
+    "items": [
+      {
+        "repo": "trois-six/oxidged",
+        "priority": "P1",
+        "change": "Развитие GEDCOM-парсера и round-trip неизвестных структур.",
+        "link": "https://github.com/trois-six/oxidged",
+        "components": "GEDCOM/data model",
+        "action": "Изучить / проверить"
+      },
+      {
+        "repo": "julioalonzom/exscriptor",
+        "priority": "P1",
+        "change": "Двойная проверка транскрипции и журнал исправлений.",
+        "link": "https://github.com/julioalonzom/exscriptor",
+        "components": "OCR/HTR · provenance",
+        "action": "Изучить / проверить"
+      },
+      {
+        "repo": "dsblank/gramps-connect",
+        "priority": "P1",
+        "change": "Разделение оригинальных карт и производных слоёв.",
+        "link": "https://github.com/dsblank/gramps-connect",
+        "components": "Place Resolver/АТД",
+        "action": "Изучить / проверить"
+      },
+      {
+        "repo": "nakamura196/iiif-kasane",
+        "priority": "P1",
+        "change": "Анализ видимой области большого изображения.",
+        "link": "https://github.com/nakamura196/iiif-kasane",
+        "components": "OCR/HTR · Research Workspace",
+        "action": "Изучить / проверить"
+      },
+      {
+        "repo": "Serg-Norseman/GEDKeeper",
+        "priority": "P1",
+        "change": "Read-only MCP-операции.",
+        "link": "https://github.com/Serg-Norseman/GEDKeeper",
+        "components": "API/MCP",
+        "action": "Изучить / проверить"
+      },
+      {
+        "repo": "gramps-project/gramps-web",
+        "priority": "P2",
+        "change": "Визуальный конструктор запросов.",
+        "link": "https://github.com/gramps-project/gramps-web",
+        "components": "Research Workspace",
+        "action": "Изучить / проверить"
+      }
+    ]
+  }
+]
