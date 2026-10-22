@@ -3,12 +3,13 @@
   "independent_research_performed": false,
   "summary": {
     "total": 47,
-    "restored": 42,
-    "unresolved": 5,
-    "provisional": 17,
+    "restored": 46,
+    "unresolved": 1,
+    "provisional": 19,
     "requiring_additional_verification": 47,
     "sources": {
-      "guide_excerpt": 42
+      "guide_excerpt": 42,
+      "editorial_summary": 4
     }
   },
   "records": [
@@ -392,15 +393,23 @@
       "name": "mittagessen/kraken",
       "url": "https://github.com/mittagessen/kraken",
       "original_description": "Не установлен",
-      "description": "Не установлен",
-      "restored": false,
-      "result": "unresolved",
-      "source": null,
-      "uncertainty_markers": [],
+      "description": "По редакционным материалам (без независимой проверки): Система автоматического распознавания текста исторических документов с обучаемыми анализом макета, порядком чтения и распознаванием; доступны CLI и API. Возможности описаны по документации авторов; качество на конкретных русских рукописях независимо не проверялось.",
+      "restored": true,
+      "result": "restored_provisional",
+      "source": {
+        "file": "docs/research.json",
+        "key": "mittagessen/kraken",
+        "field": "editorial_summary",
+        "original_text": "Система автоматического распознавания текста исторических документов с обучаемыми анализом макета, порядком чтения и распознаванием; доступны CLI и API. Возможности описаны по документации авторов; качество на конкретных русских рукописях независимо не проверялось.",
+        "sha256": "417739c60fa22924563fdcb9d5cf74e86d3668e30afddc944ceac2e151f09bc4"
+      },
+      "uncertainty_markers": [
+        "Возможности"
+      ],
       "additional_verification_required": true,
       "review_reasons": [
-        "В editorial_summary и строке «Назначение:» нет содержательного описания",
-        "Редакционный пересказ не сверялся с первоисточником в этом исправлении"
+        "Редакционный пересказ не сверялся с первоисточником в этом исправлении",
+        "Сохранена гипотетическая формулировка: Возможности"
       ],
       "source_limitations": [],
       "project_type_preserved": "Не установлен"
@@ -464,15 +473,23 @@
       "name": "nikazzio/scriptoria",
       "url": "https://github.com/nikazzio/scriptoria",
       "original_description": "Не установлен",
-      "description": "Не установлен",
-      "restored": false,
-      "result": "unresolved",
-      "source": null,
-      "uncertainty_markers": [],
+      "description": "По редакционным материалам (без независимой проверки): Исследовательская среда для работы с IIIF-рукописями: поиск и локальная коллекция, просмотр документа и работа с транскрипцией в Studio, подготовка вывода. Это описание возможностей, заявленных в README авторов; работа среды и качество OCR/HTR независимо не испытывались.",
+      "restored": true,
+      "result": "restored_provisional",
+      "source": {
+        "file": "docs/research.json",
+        "key": "nikazzio/scriptoria",
+        "field": "editorial_summary",
+        "original_text": "Исследовательская среда для работы с IIIF-рукописями: поиск и локальная коллекция, просмотр документа и работа с транскрипцией в Studio, подготовка вывода. Это описание возможностей, заявленных в README авторов; работа среды и качество OCR/HTR независимо не испытывались.",
+        "sha256": "cb71a648d62567202a57e9758cc18a39d9b3b6e00ba43b5f73b0824557b46852"
+      },
+      "uncertainty_markers": [
+        "возможностей"
+      ],
       "additional_verification_required": true,
       "review_reasons": [
-        "В editorial_summary и строке «Назначение:» нет содержательного описания",
-        "Редакционный пересказ не сверялся с первоисточником в этом исправлении"
+        "Редакционный пересказ не сверялся с первоисточником в этом исправлении",
+        "Сохранена гипотетическая формулировка: возможностей"
       ],
       "source_limitations": [],
       "project_type_preserved": "Не установлен"
@@ -613,14 +630,19 @@
       "name": "omeka/omeka-s",
       "url": "https://github.com/omeka/omeka-s",
       "original_description": "Не установлен",
-      "description": "Не установлен",
-      "restored": false,
-      "result": "unresolved",
-      "source": null,
+      "description": "По редакционным материалам (без независимой проверки): Веб-платформа публикации цифровых коллекций культурного наследия с метаданными и связанными данными; одна установка позволяет вести несколько сайтов, дополнительные функции подключаются модулями. Назначение описано по сайту проекта; собственная коллекция здесь независимо не публиковалась.",
+      "restored": true,
+      "result": "restored_editorial",
+      "source": {
+        "file": "docs/research.json",
+        "key": "omeka/omeka-s",
+        "field": "editorial_summary",
+        "original_text": "Веб-платформа публикации цифровых коллекций культурного наследия с метаданными и связанными данными; одна установка позволяет вести несколько сайтов, дополнительные функции подключаются модулями. Назначение описано по сайту проекта; собственная коллекция здесь независимо не публиковалась.",
+        "sha256": "5c77d8122d4b94ccdc845a1e102422c36e49047928369b8379ab301399d024ad"
+      },
       "uncertainty_markers": [],
       "additional_verification_required": true,
       "review_reasons": [
-        "В editorial_summary и строке «Назначение:» нет содержательного описания",
         "Редакционный пересказ не сверялся с первоисточником в этом исправлении"
       ],
       "source_limitations": [],
@@ -876,14 +898,19 @@
       "name": "tropy/tropy",
       "url": "https://github.com/tropy/tropy",
       "original_description": "Не установлен",
-      "description": "Не установлен",
-      "restored": false,
-      "result": "unresolved",
-      "source": null,
+      "description": "По редакционным материалам (без независимой проверки): Настольный инструмент организации исследовательских фотографий: объединение в элементы, описательные метаданные, теги, списки, заметки и транскрипции рядом с изображениями. Назначение описано по сайту авторов; пригодность для конкретного генеалогического исследования независимо не испытывалась.",
+      "restored": true,
+      "result": "restored_editorial",
+      "source": {
+        "file": "docs/research.json",
+        "key": "tropy/tropy",
+        "field": "editorial_summary",
+        "original_text": "Настольный инструмент организации исследовательских фотографий: объединение в элементы, описательные метаданные, теги, списки, заметки и транскрипции рядом с изображениями. Назначение описано по сайту авторов; пригодность для конкретного генеалогического исследования независимо не испытывалась.",
+        "sha256": "e5d8e47c317382657028049d0feaf30939136696c913797aff7e4821dd627326"
+      },
       "uncertainty_markers": [],
       "additional_verification_required": true,
       "review_reasons": [
-        "В editorial_summary и строке «Назначение:» нет содержательного описания",
         "Редакционный пересказ не сверялся с первоисточником в этом исправлении"
       ],
       "source_limitations": [],

@@ -57,15 +57,18 @@ class DescriptionTests(unittest.TestCase):
         r=json.loads((ROOT/'docs/research.json').read_text(encoding='utf-8'))
         updated,report=restore(c,r)
         self.assertEqual(report['summary']['total'],47)
-        self.assertEqual(report['summary']['restored'],42)
-        self.assertEqual(report['summary']['unresolved'],5)
-        self.assertEqual(report['summary']['provisional'],17)
+        self.assertEqual(report['summary']['restored'],46)
+        self.assertEqual(report['summary']['unresolved'],1)
+        self.assertEqual(sum(row['result']=='restored_provisional' for row in report['records']
+                             if row['source'] and row['source']['field']=='guide_excerpt'),17)
         for old,new in zip(c,updated):
             self.assertEqual({k:v for k,v in old.items() if k not in ('description','description_provenance')},
                              {k:v for k,v in new.items() if k not in ('description','description_provenance')})
         for row in report['records']:
             if row['restored']:
-                self.assertEqual(row['description'],PREFIX+row['source']['original_text'].split(':',1)[1].strip())
+                text=row['source']['original_text']
+                if row['source']['field']=='guide_excerpt':text=text.split(':',1)[1].strip()
+                self.assertEqual(row['description'],PREFIX+text)
 
 
 if __name__=='__main__': unittest.main()
