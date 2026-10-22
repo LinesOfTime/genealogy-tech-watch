@@ -3,8 +3,8 @@
 Проверены все 164 карточки. Проверка использует те же правила выбора полей, что и интерфейс. Новые исследовательские факты не выводятся.
 
 - service_notes_preserved: 138
-- missing_practical: 20
-- duplicate_raw_notes: 86
+- missing_practical: 16
+- duplicate_raw_notes: 82
 - limitations_need_context_review: 3
 
 Служебные заметки и исходные дубли сохраняются в данных; интерфейс не выводит их дважды в основном блоке. limitations_need_context_review — эвристический сигнал: содержание требует прочтения, а не автоматической правки.
@@ -41,14 +41,6 @@ missing_practical, service_notes_preserved, duplicate_raw_notes
 
 **Ограничения:** README указывает Affero GPL; точный SPDX по LICENSE следует проверить отдельно.
 
-## dedupeio/dedupe
-
-missing_practical, service_notes_preserved, duplicate_raw_notes
-
-**Сценарий:** Не описан
-
-**Ограничения:** Нужны обучение и ручная верификация совпадений; не генеалогическая программа.
-
 ## familysearch/gedcom
 
 missing_practical, service_notes_preserved, duplicate_raw_notes
@@ -73,22 +65,6 @@ missing_practical, service_notes_preserved, duplicate_raw_notes
 
 **Ограничения:** Frontend; package.json указывает AGPL без номера; не приписывать точный SPDX только по package.json
 
-## ipums/hlink
-
-missing_practical, service_notes_preserved, duplicate_raw_notes
-
-**Сценарий:** Не описан
-
-**Ограничения:** Python; для Spark-сценариев требуется дополнительная среда.
-
-## j535d165/recordlinkage
-
-missing_practical, service_notes_preserved, duplicate_raw_notes
-
-**Сценарий:** Не описан
-
-**Ограничения:** Python-инструменты для сравнения, классификации и поиска дубликатов в табличных данных; могут формировать файлы для ручной разметки. Ограничения: Это программная библиотека, а не готовый генеалогический кабинет; нужны тестовые пары, оценка ошибок и сохранение исходных строк.
-
 ## linesoftime/yarchive-downloader
 
 missing_practical, service_notes_preserved, duplicate_raw_notes
@@ -96,14 +72,6 @@ missing_practical, service_notes_preserved, duplicate_raw_notes
 **Сценарий:** Не описан
 
 **Ограничения:** Не считать наличие URL подтверждением функций или лицензии
-
-## moj-analytical-services/splink
-
-missing_practical, service_notes_preserved, duplicate_raw_notes
-
-**Сценарий:** Не описан
-
-**Ограничения:** Методы вероятностного связывания; не готовое генеалогическое приложение; версии API могут меняться.
 
 ## nikazzio/scriptoria
 

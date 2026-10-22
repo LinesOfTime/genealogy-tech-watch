@@ -23,8 +23,9 @@ class CardUseCaseTests(unittest.TestCase):
 
     def test_actual_batch_has_sources_and_test_caveat(self):
         fixes=json.loads((ROOT/'data/card-usecase-corrections.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(fixes),5)
-        self.assertEqual(len({x['id'] for x in fixes}),5)
+        self.assertGreaterEqual(len(fixes),9)
+        self.assertEqual(len({x['id'] for x in fixes}),len(fixes))
+        self.assertEqual(len({x['project'].lower() for x in fixes}),len(fixes))
         for fix in fixes:
             self.assertTrue(fix['sources'])
             self.assertIn('независимо не испытывался',fix['use_case'])
