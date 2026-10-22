@@ -24,6 +24,15 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   assert.ok(limited.includes(duplicated));
   assert.ok(helper.practical({use_case:''},{guide_excerpt:'Возможности / сценарий: Возможно, инструмент для проверки'}).includes('Возможно, инструмент для проверки'));
   assert.ok(!helper.practical({use_case:''},{}).includes('Сведения не установлены'));
+  assert.match(helper.practical({use_case:'Не установлен | Часть 51: незакрытые поля: сценарий'},
+    {guide_excerpt:'Возможности / сценарий: Сценарий из путеводителя'}),/Сценарий из путеводителя/);
+  assert.match(helper.limitations({limitations:'Часть 51: незакрытые поля: ограничения'},
+    {guide_excerpt:'Ограничения: Требуется тестирование'}),/Требуется тестирование/);
+  assert.match(helper.limitations({limitations:'Нужна проверка'},
+    {audit_notes:'Ч48: Предрелиз; не готово к эксплуатации'}),/Предрелиз; не готово к эксплуатации/);
+  const whitespaceDuplicate=helper.limitations({limitations:'Нужна   проверка'},
+    {audit_notes:'нужна проверка'}).split('<details>')[0];
+  assert.ok(!whitespaceDuplicate.includes('Редакционная заметка'));
   const openrefine=catalog.find(x=>x.name.toLowerCase()==='openrefine/openrefine');
   const openResearch=research['openrefine/openrefine'];
   assert.match(helper.practical(openrefine,openResearch),/Редакционный генеалогический сценарий/);
