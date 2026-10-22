@@ -1,3 +1,11 @@
 .DS_Store
 Thumbs.db
 *.log
+__pycache__/
+*.py[cod]
+.watch-local-before.json
+.watch-e2e-*/
+.watch-validation-*/
+.watch-write-*/
+.watch-release-*/
+reports/*.diff

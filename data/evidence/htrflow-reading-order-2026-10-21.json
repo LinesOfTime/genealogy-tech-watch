@@ -1,0 +1,24 @@
+{
+  "sha": "d087c1ec02417c73e4061b8a54fc44627424d876",
+  "event_timestamp": "2026-10-21T10:25:53Z",
+  "parent": "7ea0ff851c003d7a77fe965ed29110047730fec8",
+  "files": [
+    {
+      "path": ".docker/htrflow-batch.dockerfile",
+      "blob_sha": "a1dcd2006e73020a2c590a4a43bee6270fff6d7f",
+      "url": "https://github.com/AI-Riksarkivet/htrflow-batch/blob/d087c1ec02417c73e4061b8a54fc44627424d876/.docker%2Fhtrflow-batch.dockerfile"
+    },
+    {
+      "path": ".docker/htrflow-reading-order.patch",
+      "blob_sha": "d64d16ba68a5331c2fcfd5fffc826399b9304b95",
+      "url": "https://github.com/AI-Riksarkivet/htrflow-batch/blob/d087c1ec02417c73e4061b8a54fc44627424d876/.docker%2Fhtrflow-reading-order.patch"
+    },
+    {
+      "path": "packages/wrapper/tests/test_dockerfile_workspace.py",
+      "blob_sha": "88fd9d52e2d286e339631a8ee6e65bb4f374899c",
+      "url": "https://github.com/AI-Riksarkivet/htrflow-batch/blob/d087c1ec02417c73e4061b8a54fc44627424d876/packages%2Fwrapper%2Ftests%2Ftest_dockerfile_workspace.py"
+    }
+  ],
+  "canonical_url": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876",
+  "verification_method": "GitHub API metadata and static commit diff; no code execution"
+}

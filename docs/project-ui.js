@@ -1,0 +1,48 @@
+(async () => {
+  const {esc, link, para, panel, rating, sources} = WatchUI;
+  const content = document.getElementById('content');
+  try {
+    const load = async path => { const response = await fetch(path, {cache:'no-store'}); if (!response.ok) throw Error(`Не удалось загрузить ${path}`); return response.json(); };
+    const [catalog, research, digest] = await Promise.all(['catalog.json','research.json','digest.json'].map(load));
+    const requested = (new URLSearchParams(location.search).get('repo') || '').toLowerCase();
+    const x = catalog.find(v => v.name.toLowerCase() === requested || v.url.toLowerCase().replace(/\/$/, '').replace('https://github.com/', '') === requested);
+    if (!x) throw Error('Проект не найден: ' + requested);
+    const key = x.name.toLowerCase(), r = research[key] || {};
+    document.title = x.name + ' — исследование';
+    document.getElementById('title').textContent = x.name;
+    document.getElementById('subtitle').textContent = x.section + ' · редакционный приоритет ' + x.priority;
+    const applicability = r.russia_applicability || x.russia_applicability;
+    let html = panel('Применимость для России', para(rating(r.russia_applicability ? r : x)) + para(applicability?.basis || 'Оценка не установлена') +
+      (applicability?.original_line ? para('Исходная строка: ' + applicability.original_line) + '<small>Источник: путеводитель от 10 октября 2026, guide_excerpt. Редакционная оценка.</small>' : '') +
+      para('Доступность сервиса из РФ: ' + (r.russia_service_availability || 'не проверена')));
+    html += panel('Назначение и архитектурная роль', para(r.project_type || x.description) + (r.editorial_summary ? para(r.editorial_summary) : ''));
+    html += panel('Практическое применение', para(r.editorial_use_case || x.use_case));
+    html += panel('Ограничения и редакционная оценка', para(r.editorial_limitations || x.limitations) + (r.audit_notes ? para(r.audit_notes) : ''));
+    if (r.guide_excerpt) html += panel('Из путеводителя от 10 октября 2026', para(r.guide_excerpt) + '<small>Полный исходный текст сохранён. Это редакционное описание, не независимое испытание.</small>');
+    html += panel('Лицензия и проверка', para('Лицензия: ' + (r.license || x.license || 'Не определена')) + para('Статус лицензии: ' + (r.license_status || x.license_status || 'Не подтверждён')) +
+      para('Основание: ' + (r.license_evidence || 'Не указано')) + para('Открытость: ' + (r.opensource_status || 'Не установлена')) +
+      para('Аудит: ' + (r.audit_status || 'Не указан')) + para('Метод проверки: ' + (r.verification_basis || x.verification || 'Не указан')) +
+      para('Дата проверки: ' + (r.verification_date || x.verified_at || 'Не указана')) +
+      para('Независимое тестирование: ' + (r.test_status || x.test_status || 'Не подтверждено')) + link(x.url, 'Репозиторий') + ' · ' + link(x.source, 'Источник каталога') + ' · ' + link(r.source_evidence, 'Источник исследования'));
+    const events = [...(r.watch_events || []), ...(x.history || [])];
+    const repository = x.url.toLowerCase().replace(/\/$/, '').replace('https://github.com/', '');
+    for (const day of digest) for (const item of day.items || []) if ([key,repository].includes(item.repo.toLowerCase())) events.push({...item, date:item.event_date || day.date, url:item.link});
+    events.sort((a,b) => String(b.date).localeCompare(String(a.date)));
+    const seen = new Set();
+    html += panel('Хронология исследований', events.map(e => {
+      const id = e.discovery_id || e.date + '|' + e.change;
+      if (seen.has(id)) return ''; seen.add(id);
+      return `<div class="entry"><small>${esc(e.date)}</small>` + para(e.change) +
+        (e.previous_state ? para('До: ' + e.previous_state) + para('После: ' + e.new_state) : '') +
+        (e.significance_reason ? para('Значимость: ' + e.significance_reason) : '') +
+        (e.claims_vs_verified ? '<p><b>Заявления и проверка</b></p>' + WatchUI.claims(e.claims_vs_verified) : '') +
+        (e.risks ? '<p><b>Риски</b></p>' + WatchUI.risks(e.risks) : '') +
+        (e.license ? para('Лицензия по событию: ' + e.license) + sources(e.license_evidence) : '') +
+        (e.action ? para('Редакционная рекомендация: ' + e.action) : '') +
+        para(e.review_status === 'approved' ? 'Событие утверждено редактором; это не подтверждение независимого испытания. Проверяющий: ' + e.reviewer : 'Историческое событие: статус новой проверки не указан') +
+        sources(e.source_urls) + ' ' + link(e.url, 'Источник изменения') + '</div>';
+    }).join('') || para('Пока нет датированных обновлений'));
+    html += panel('Происхождение сведений', para('Редакционный реестр от 8 октября 2026; путеводитель от 10 октября 2026; записи GitHub Watch. Источники и статусы проверки указаны отдельно.'));
+    content.innerHTML = html;
+  } catch (error) { content.textContent = 'Ошибка: ' + error.message; }
+})();

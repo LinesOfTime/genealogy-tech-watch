@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-10-22",
+    "title": "Значимые изменения проектов",
+    "summary": "Утверждённые события; источники и дельты указаны в записях.",
+    "items": [
+      {
+        "repo": "ai-riksarkivet/htrflow-batch",
+        "priority": "P2",
+        "change": "В сборку htrflow-batch добавлен патч порядка чтения: верхнее и нижнее поля классифицируются раньше боковых; применённый патч отмечается суффиксом +reading-order в базовой ревизии.",
+        "link": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876",
+        "components": "OCR/HTR · provenance/evidence",
+        "action": "Оценить порядок чтения на страницах с верхними/боковыми полями; сохранять идентификатор патченной ревизии в provenance.",
+        "event_date": "2026-10-21",
+        "significance_reason": "Практическое изменение порядка чтения архивных страниц и прослеживаемости сборки: ошибочное отнесение верхнего поля к боковому может менять последовательность текста. Это редакционная оценка применимости по коду, без измерения качества HTR.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: утверждение в чате после конкретной находки",
+        "reviewed_at": "2026-10-22T09:18:27Z",
+        "discovery_id": "github:ai-riksarkivet/htrflow-batch:d087c1ec02417c73e4061b8a54fc44627424d876",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876"
+          }
+        ],
+        "research_link": "project.html?repo=ai-riksarkivet%2Fhtrflow-batch",
+        "previous_state": "В родительском коммите 7ea0ff851c003d7a77fe965ed29110047730fec8 сборка использует htrflow-src без стадии htrflow-patched; дифф патча показывает проверки боковых полей раньше верхнего/нижнего. В каталоге и дайджесте отмечена другая дельта: IIIF 2/3.",
+        "new_state": "Коммит d087c1ec добавляет .docker/htrflow-reading-order.patch и стадию htrflow-patched, переводит сборку на обработанные исходники и записывает +reading-order в HTRFLOW_BASE_REVISION. В патче проверки верхнего/нижнего полей перенесены перед боковыми."
+      }
+    ]
+  },
+  {
     "date": "2026-10-21",
     "title": "Поисковая архитектура, пакетный HTR и устойчивые идентификаторы",
     "summary": "Четыре изменения: Gramps Web API, htrflow-batch, scan2gedcom, Rask.",

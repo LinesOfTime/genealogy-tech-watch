@@ -1,0 +1,26 @@
+{
+  "mode": "Read-only verification of actual local application; no publication",
+  "discovery_id": "github:ai-riksarkivet/htrflow-batch:d087c1ec02417c73e4061b8a54fc44627424d876",
+  "production_review_status": "approved",
+  "candidate_hash": "01d8bf9efaf1c5f32fd9ced34c91d8348f627786dea9f1bcf13565bbbc90957c",
+  "reviewer": "Пользователь: утверждение в чате после конкретной находки",
+  "reviewed_at": "2026-10-22T09:18:27Z",
+  "baseline_hash": "01d1c24ecf4e13cb8ef11e4821bdd70f4ae4899897c8c5ed465c0c81886dc047",
+  "counts": {
+    "catalog": 164,
+    "research": 142,
+    "editions": 5,
+    "events": 19
+  },
+  "validation_errors": 0,
+  "validation_warnings": 308,
+  "checks": {
+    "single_event_in_each_store": true,
+    "review_metadata_consistent": true,
+    "idempotent": true,
+    "empty_run_unchanged": true,
+    "verification_read_only": true,
+    "previous_data_preserved": true
+  },
+  "ui_smoke": "UI smoke passed: 164 cards; source-backed Russia filters; combined/empty filters; 19 events and research links; full/missing research; no storage; unsafe URL rejected."
+}
