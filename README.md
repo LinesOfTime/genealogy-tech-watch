@@ -1,22 +1,39 @@
-# Genealogy Tech Watch
+# Genealogy Tech Watch — Линии времени
 
-Публичный каталог GitHub-проектов для цифровой генеалогии и архивных исследований.
+Каталог проектов цифровой генеалогии и датированный исследовательский дайджест.
 
-## Структура
+## Безопасный режим публикации
 
-- `docs/index.html` — каталог проектов.
-- `docs/digest.html` — датированный исследовательский дайджест.
-- `catalog.json` и `digest.json` — исходные данные.
-- `tools/sync_data.py` — синхронизация данных с HTML.
+- **GitHub Actions не используются**: в репозитории отсутствует `.github/workflows/`.
+- Статический GitHub Pages публикуется из `main` / `docs`.
+- Никаких сборок, Docker, артефактов или Actions cache.
+- `docs/index.html` — каталог; `docs/digest.html` — дайджест.
+- `catalog.json`, `digest.json` — исходные экспортные снимки данных. Страницы содержат встроенные копии данных и работают офлайн.
 
-## Безопасная публикация
+## Первая публикация
 
-1. Распаковать подготовленный архив `genealogy-tech-watch-static.zip`.
-2. Загрузить содержимое папки `genealogy-tech-watch/` в корень репозитория, сохранив структуру каталогов (в том числе `docs/` и `tools/`). При загрузке заменить этот README полной версией из архива.
-3. В GitHub открыть **Settings → Pages → Build and deployment**.
-4. Выбрать **Deploy from a branch**, ветку **main**, папку **/docs**, нажать **Save**.
-5. Проверить адрес https://linesoftime.github.io/genealogy-tech-watch/
+1. Создайте **публичный** пустой репозиторий `LinesOfTime/genealogy-tech-watch` без автоматически создаваемых файлов.
+2. Из распакованной папки выполните в PowerShell (требуется Git):
 
-**Ограничения:** не создавать собственных `.github/workflows`, не использовать Actions cache и artifacts. GitHub Pages при публикации из ветки может использовать служебный механизм Actions; это не то же самое, что собственный ежедневный workflow.
+   ```powershell
+   git init -b main
+   git add .
+   git commit -m "Initial static genealogy watch catalog and digest"
+   git remote add origin https://github.com/LinesOfTime/genealogy-tech-watch.git
+   git push -u origin main
+   ```
+3. В GitHub откройте **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: main → Folder: /docs → Save**.
+4. Откройте `https://linesoftime.github.io/genealogy-tech-watch/` и перейдите в дайджест.
 
-Исследовательские утверждения и лицензии требуют проверки по первичным источникам перед заимствованием кода.
+**Примечание:** GitHub Pages может использовать внутренний механизм развёртывания GitHub. Выбор «Deploy from a branch» не создаёт нашего собственного workflow, но не гарантирует абсолютно нулевых внутренних записей о публикации. Проверяйте Billing → Actions.
+
+## Как обновлять
+
+1. Редактируйте `catalog.json` / `digest.json`.
+2. Важно: HTML-страницы работают на **встроенных** данных. После правки JSON обновите содержимое `<script id="seed" type="application/json">` в соответствующей HTML-странице (или используйте `python tools/sync_data.py`).
+3. Проверьте локально HTML, затем `git add .`, `git commit`, `git push`.
+4. Изменения должны быть проверены до публикации; обнаружение нового коммита не равнозначно значимому обновлению.
+
+## Источники и ограничения
+
+Содержимое основано на прежних исследовательских обзорах; не является независимым повторным аудитом всех репозиториев. Лицензии и заявления о возможностях требуют проверки по первоисточникам. Локальный импорт JSON в интерфейсе сохраняет данные только в браузере и **не отправляет** их в GitHub.
