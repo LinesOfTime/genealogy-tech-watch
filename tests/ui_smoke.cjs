@@ -45,6 +45,7 @@ function count(html, className) { return (html.match(new RegExp('<article class=
     for (const task of taskData.tasks) {
       taskPage.get('task').value=task.id; taskPage.get('task').onchange();
       assert.equal(count(taskPage.get('results').innerHTML,'card'),taskData.matches.filter(x=>x.task===task.id).length);
+      assert.ok(!taskPage.get('results').innerHTML.match(/<b>Ограничения:<\/b>[^<]*Часть\s*51/));
       taskPage.get('status').value='candidate'; taskPage.get('status').onchange();
       assert.equal(count(taskPage.get('results').innerHTML,'card'),taskData.matches.filter(x=>x.task===task.id&&x.status==='candidate').length);
       taskPage.get('status').value='';
@@ -104,6 +105,18 @@ function count(html, className) { return (html.match(new RegExp('<article class=
     }
   }
   assert.equal(page.context.WatchUI.url('javascript:alert(1)'), '');
+  for (const [key,r] of Object.entries(research).filter(([,r])=>r.editorial_corrections?.length)) {
+    const pr=fixture(null);pr.context.location.search='?repo='+encodeURIComponent(key);
+    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+    await vm.runInContext(read('docs/project-ui.js'),pr.context);
+    const body=pr.get('content').innerHTML;
+    assert.match(body,/Прежние значения до уточнения/);
+    for(const c of r.editorial_corrections){
+      for(const s of c.sources||[])assert.ok(body.includes(pr.context.WatchUI.url(typeof s==='string'?s:s.url)));
+      for(const values of [c.previous_catalog,c.previous_research])for(const value of Object.values(values||{}))
+        if(value)assert.ok(body.includes(pr.context.WatchUI.esc(value)));
+    }
+  }
   for (const card of catalog.filter(x => x.description_provenance)) {
     assert.ok(page.context.WatchUI.esc(card.description).includes('без независимой проверки'));
     const pr=fixture(null); pr.context.location.search='?repo='+encodeURIComponent(card.name);

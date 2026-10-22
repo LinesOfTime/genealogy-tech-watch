@@ -27,7 +27,15 @@
     }
     html += panel('Практическое применение', WatchUI.practical(x,r));
     html += panel('Ограничения и редакционная оценка', WatchUI.limitations(x,r));
-    if(r.editorial_corrections?.length) html+=panel('Основания редакционного уточнения',r.editorial_corrections.map(c=>para(c.basis)+sources(c.sources)).join(''));
+    if(r.editorial_corrections?.length) {
+      const labels={description:'Назначение',use_case:'Практическое применение',limitations:'Ограничения',
+        editorial_summary:'Редакционное описание назначения',editorial_use_case:'Редакционный сценарий',editorial_limitations:'Редакционные ограничения'};
+      const previous=(values,origin)=>Object.entries(values||{}).map(([field,value])=>
+        para(origin+' — '+(labels[field]||field)+': '+(value===null||value===undefined?'Значение отсутствовало':value===''?'Поле было пустым':value))).join('');
+      html+=panel('Основания редакционного уточнения',r.editorial_corrections.map(c=>
+        '<div class="entry">'+(c.checked_at?para('Дата уточнения: '+c.checked_at):'')+para(c.basis)+sources(c.sources)+
+        (c.previous_catalog||c.previous_research?'<details><summary>Прежние значения до уточнения</summary>'+previous(c.previous_catalog,'Каталог')+previous(c.previous_research,'Исследовательская карточка')+'</details>':'')+'</div>').join(''));
+    }
     if (r.guide_excerpt) html += panel('Из путеводителя от 10 октября 2026', para(r.guide_excerpt) + '<small>Полный исходный текст сохранён. Это редакционное описание, не независимое испытание.</small>');
     html += panel('Лицензия и проверка', para('Лицензия: ' + (r.license || x.license || 'Не определена')) + para('Статус лицензии: ' + (r.license_status || x.license_status || 'Не подтверждён')) +
       para('Основание: ' + (r.license_evidence || 'Не указано')) + para('Открытость: ' + (r.opensource_status || 'Не установлена')) +
