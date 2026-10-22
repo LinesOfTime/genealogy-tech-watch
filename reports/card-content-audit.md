@@ -3,8 +3,8 @@
 Проверены все 164 карточки. Проверка использует те же правила выбора полей, что и интерфейс. Новые исследовательские факты не выводятся.
 
 - service_notes_preserved: 138
-- missing_practical: 16
-- duplicate_raw_notes: 82
+- missing_practical: 12
+- duplicate_raw_notes: 78
 - limitations_need_context_review: 3
 
 Служебные заметки и исходные дубли сохраняются в данных; интерфейс не выводит их дважды в основном блоке. limitations_need_context_review — эвристический сигнал: содержание требует прочтения, а не автоматической правки.
@@ -89,30 +89,6 @@ service_notes_preserved, duplicate_raw_notes, limitations_need_context_review
 
 **Ограничения:** Нужны тесты на больших деревьях, браках между ветвями и кириллических именах.
 
-## omeka/omeka-s
-
-missing_practical, service_notes_preserved, duplicate_raw_notes
-
-**Сценарий:** Не описан
-
-**Ограничения:** Веб-платформа публикации связанных цифровых коллекций; требует серверного окружения LAMP.
-
-## openseadragon/openseadragon
-
-missing_practical, service_notes_preserved, duplicate_raw_notes
-
-**Сценарий:** Не описан
-
-**Ограничения:** Не считать наличие URL подтверждением функций или лицензии | Просмотрщик изображений высокого разрешения; не архив и не загрузчик
-
-## projectmirador/mirador
-
-missing_practical, service_notes_preserved, duplicate_raw_notes
-
-**Сценарий:** Не описан
-
-**Ограничения:** Не считать наличие URL подтверждением функций или лицензии | Просмотрщик IIIF, сравнение изображений и аннотации
-
 ## scripta/escriptorium
 
 missing_practical, service_notes_preserved, duplicate_raw_notes
@@ -128,14 +104,6 @@ missing_practical, service_notes_preserved, duplicate_raw_notes
 **Сценарий:** Не описан
 
 **Ограничения:** Разные условия для программного кода, контента и внешних наборов; не смешивать.
-
-## allmaps/allmaps
-
-missing_practical, service_notes_preserved, duplicate_raw_notes
-
-**Сценарий:** Не описан
-
-**Ограничения:** Документация проекта; запуск не проверен
 
 ## LinkedPasts/linked-places-format
 
