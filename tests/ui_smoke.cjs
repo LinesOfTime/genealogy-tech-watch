@@ -14,6 +14,21 @@ function fixture(seed) {
 }
 function count(html, className) { return (html.match(new RegExp('<article class="' + className, 'g')) || []).length; }
 (async () => {
+  if (fs.existsSync(path.join(root,'docs/task-matches.json'))) {
+    const taskData=JSON.parse(read('docs/task-matches.json')), taskPage=fixture(null);
+    taskPage.context.fetch=async()=>({ok:true,json:async()=>taskData});
+    await vm.runInContext(read('docs/tasks-ui.js'),taskPage.context);
+    assert.match(taskPage.get('stats').textContent,/Выберите задачу/);
+    for (const task of taskData.tasks) {
+      taskPage.get('task').value=task.id; taskPage.get('task').onchange();
+      assert.equal(count(taskPage.get('results').innerHTML,'card'),taskData.matches.filter(x=>x.task===task.id).length);
+      taskPage.get('status').value='candidate'; taskPage.get('status').onchange();
+      assert.equal(count(taskPage.get('results').innerHTML,'card'),taskData.matches.filter(x=>x.task===task.id&&x.status==='candidate').length);
+      taskPage.get('status').value='';
+    }
+    taskPage.get('query').value='NO_SUCH_TASK_PROJECT_123';taskPage.get('query').oninput();
+    assert.equal(count(taskPage.get('results').innerHTML,'card'),0);
+  }
   const page = fixture(catalog), html = read('docs/index.html');
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
   assert.equal(scripts.length, 1);

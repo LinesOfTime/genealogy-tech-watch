@@ -1,0 +1,3486 @@
+{
+  "version": 1,
+  "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
+  "source_hash": "6521b898e063806bdd5200c4f5dbacb5cb7cef4fce99823cdfb4f81344f92e91",
+  "tasks": [
+    {
+      "id": "transcribe",
+      "title": "Распознать или расшифровать документы"
+    },
+    {
+      "id": "download",
+      "title": "Получить сканы из цифрового архива"
+    },
+    {
+      "id": "resolve",
+      "title": "Найти дубликаты людей и сопоставить записи"
+    },
+    {
+      "id": "places",
+      "title": "Найти историческое место, название или приход"
+    },
+    {
+      "id": "research",
+      "title": "Вести исследование с источниками и гипотезами"
+    },
+    {
+      "id": "gedcom",
+      "title": "Проверить, преобразовать или показать GEDCOM"
+    },
+    {
+      "id": "agents",
+      "title": "Подключить ИИ к генеалогическим данным"
+    }
+  ],
+  "matches": [
+    {
+      "task": "research",
+      "project": "23andme/bonsaitree",
+      "url": "https://github.com/23andme/bonsaitree",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "23andme/bonsaitree",
+          "field": "use_case",
+          "excerpt": "Сравнение гипотез о структуре родства на основе ДНК-данных; не подмена документального доказательства.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "23andme/bonsaitree",
+          "field": "editorial_use_case",
+          "excerpt": "Сравнение гипотез о структуре родства на основе ДНК-данных; не подмена документального доказательства.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "23andme/bonsaitree",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Восстановление возможных родственных связей по генетическим данным\nВозможности / сценарий: Сравнение гипотез о структуре родства на основе ДНК-данных; не подмена документального доказательства.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Нужны подходящие генетические входные данные; точная лицензия ещё не подтверждена.",
+      "test_status": "Не тестировалось независимо",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "abbyy/jfk-ocr",
+      "url": "https://github.com/abbyy/jfk-ocr",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "abbyy/jfk-ocr",
+          "field": "description",
+          "excerpt": "Корпус исторических документов с результатами OCR",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "abbyy/jfk-ocr",
+          "field": "use_case",
+          "excerpt": "Изучение формата выдачи распознанного текста и типичных ошибок на исторических документах.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "abbyy/jfk-ocr",
+          "field": "editorial_summary",
+          "excerpt": "Корпус исторических документов с результатами OCR",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "abbyy/jfk-ocr",
+          "field": "editorial_use_case",
+          "excerpt": "Изучение формата выдачи распознанного текста и типичных ошибок на исторических документах.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "abbyy/jfk-ocr",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Корпус исторических документов с результатами OCR\nВозможности / сценарий: Изучение формата выдачи распознанного текста и типичных ошибок на исторических документах.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Это набор данных, а не исходный код OCR ABBYY; права на материалы проверяются отдельно.",
+      "test_status": "Не проводилось независимое тестирование",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "abdash/roots-familytreevisualizer",
+      "url": "https://github.com/abdash/roots-familytreevisualizer",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "abdash/roots-familytreevisualizer",
+          "field": "description",
+          "excerpt": "Визуализация семейного дерева",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "abdash/roots-familytreevisualizer",
+          "field": "editorial_summary",
+          "excerpt": "Визуализация семейного дерева",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "abdash/roots-familytreevisualizer",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Визуализация семейного дерева\nВозможности / сценарий: Быстро представить небольшую родословную и экспортировать графику в PNG или SVG.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Прямой импорт GEDCOM не заявлен; хранение через URL имеет ограничения размера.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "ai-collaboratory/scribe",
+      "url": "https://github.com/ai-collaboratory/scribe",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-collaboratory/scribe",
+          "field": "description",
+          "excerpt": "Инструмент исследования транскрибирования",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-collaboratory/scribe",
+          "field": "editorial_summary",
+          "excerpt": "Инструмент исследования транскрибирования",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-collaboratory/scribe",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Инструмент исследования транскрибирования\nВозможности / сценарий: Изучение подходов к извлечению текста из исторических изображений.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Практическая пригодность к русским рукописям не проверена; лицензия не подтверждена.",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "ai-historian/chronos",
+      "url": "https://github.com/ai-historian/chronos",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-historian/chronos",
+          "field": "description",
+          "excerpt": "ИИ-агент для исторических документов",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-historian/chronos",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: ИИ-агент для исторических документов",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Ограничено некоммерческим использованием; исходный код открыт для просмотра. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "ai-riksarkivet/htrflow",
+      "url": "https://github.com/ai-riksarkivet/htrflow",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/htrflow",
+          "field": "description",
+          "excerpt": "Движок HTR/OCR",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/htrflow",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Движок HTR/OCR",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Гибкие YAML-конвейеры, экспорт PAGE XML, ALTO XML, JSON, TXT. Лицензия моделей отдельно. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "ai-riksarkivet/htrflow-batch",
+      "url": "https://github.com/ai-riksarkivet/htrflow-batch",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/htrflow-batch",
+          "field": "description",
+          "excerpt": "Пакетная обработка архивных изображений с HTR",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/htrflow-batch",
+          "field": "editorial_summary",
+          "excerpt": "Пакетная обработка архивных изображений с HTR",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/htrflow-batch",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Пакетная обработка архивных изображений с HTR\nВозможности / сценарий: Обработка больших коллекций сканов на GPU-инфраструктуре с последующей проверкой текста.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Авторы предупреждают о неготовности к промышленной эксплуатации; требуется кластерная инфраструктура.",
+      "test_status": "Не проводилось независимое тестирование",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "ai-riksarkivet/htrflow_app",
+      "url": "https://github.com/ai-riksarkivet/htrflow_app",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/htrflow_app",
+          "field": "description",
+          "excerpt": "Демонстрационный интерфейс Gradio / MCP",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/htrflow_app",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Демонстрационный интерфейс Gradio / MCP",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Демо, не для production; поддерживаемые языки не включают русский в заявленном перечне. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "benwbrum/fromthepage",
+      "url": "https://github.com/benwbrum/fromthepage",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "benwbrum/fromthepage",
+          "field": "description",
+          "excerpt": "Платформа совместной транскрипции",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "benwbrum/fromthepage",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Платформа совместной транскрипции",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "README указывает Affero GPL; точный SPDX по LICENSE следует проверить отдельно. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "bhaskargautam/record-linkage",
+      "url": "https://github.com/bhaskargautam/record-linkage",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "bhaskargautam/record-linkage",
+          "field": "description",
+          "excerpt": "Исследовательский проект сопоставления записей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "bhaskargautam/record-linkage",
+          "field": "editorial_summary",
+          "excerpt": "Исследовательский проект сопоставления записей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "bhaskargautam/record-linkage",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Исследовательский проект сопоставления записей\nВозможности / сценарий: Рассмотреть подход к поиску кандидатов на совпадение среди персон из разных источников.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Точный алгоритм, зрелость и лицензия требуют первичной проверки.",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "bruceyyu/ml-chinese-record-linkage",
+      "url": "https://github.com/bruceyyu/ml-chinese-record-linkage",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "bruceyyu/ml-chinese-record-linkage",
+          "field": "description",
+          "excerpt": "Машинное сопоставление исторических записей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "bruceyyu/ml-chinese-record-linkage",
+          "field": "use_case",
+          "excerpt": "Сравнить методы работы с неоднозначными именами и повторяющимися персонами.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "bruceyyu/ml-chinese-record-linkage",
+          "field": "editorial_summary",
+          "excerpt": "Машинное сопоставление исторических записей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "bruceyyu/ml-chinese-record-linkage",
+          "field": "editorial_use_case",
+          "excerpt": "Сравнить методы работы с неоднозначными именами и повторяющимися персонами.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "bruceyyu/ml-chinese-record-linkage",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Машинное сопоставление исторических записей\nВозможности / сценарий: Сравнить методы работы с неоднозначными именами и повторяющимися персонами.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Предметная область китайских данных; перенос на русские имена и лицензия не проверены.",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "cabout-me/gramps-mcp",
+      "url": "https://github.com/cabout-me/gramps-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "cabout-me/gramps-mcp",
+          "field": "description",
+          "excerpt": "Интерфейс ИИ-агента к Gramps через MCP",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cabout-me/gramps-mcp",
+          "field": "editorial_summary",
+          "excerpt": "Интерфейс ИИ-агента к Gramps через MCP",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cabout-me/gramps-mcp",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Интерфейс ИИ-агента к Gramps через MCP\nВозможности / сценарий: Искать персон, связи и события через диалоговый интерфейс; готовить предложения исправлений.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Доступ к данным требует защиты; запись изменений — только с проверкой человеком.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "cacack/my-family",
+      "url": "https://github.com/cacack/my-family",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "cacack/my-family",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Функции заявлены автором, но не подтверждены независимыми испытаниями.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "cacack/my-family",
+      "url": "https://github.com/cacack/my-family",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "cacack/my-family",
+          "field": "use_case",
+          "excerpt": "Проверить журнал исследований, импорт GEDCOM и организацию семейных событий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "cacack/my-family",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cacack/my-family",
+          "field": "editorial_use_case",
+          "excerpt": "Проверить журнал исследований, импорт GEDCOM и организацию семейных событий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cacack/my-family",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Ведение семейной истории и исследовательских записей\nВозможности / сценарий: Проверить журнал исследований, импорт GEDCOM и организацию семейных событий.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Функции заявлены автором, но не подтверждены независимыми испытаниями.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "cartwrightdj/gedcomtools",
+      "url": "https://github.com/cartwrightdj/gedcomtools",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "cartwrightdj/gedcomtools",
+          "field": "description",
+          "excerpt": "Инструменты работы с GEDCOM и агентными интерфейсами",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "cartwrightdj/gedcomtools",
+          "field": "use_case",
+          "excerpt": "Исследовать преобразования GEDCOM и возможности автоматизированных запросов к данным.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cartwrightdj/gedcomtools",
+          "field": "editorial_summary",
+          "excerpt": "Инструменты работы с GEDCOM и агентными интерфейсами",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cartwrightdj/gedcomtools",
+          "field": "editorial_use_case",
+          "excerpt": "Исследовать преобразования GEDCOM и возможности автоматизированных запросов к данным.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cartwrightdj/gedcomtools",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Инструменты работы с GEDCOM и агентными интерфейсами\nВозможности / сценарий: Исследовать преобразования GEDCOM и возможности автоматизированных запросов к данным.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Разработчик описывает бета-статус и не рекомендует промышленное применение.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "cartwrightdj/gedcomtools",
+      "url": "https://github.com/cartwrightdj/gedcomtools",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "cartwrightdj/gedcomtools",
+          "field": "description",
+          "excerpt": "Инструменты работы с GEDCOM и агентными интерфейсами",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cartwrightdj/gedcomtools",
+          "field": "editorial_summary",
+          "excerpt": "Инструменты работы с GEDCOM и агентными интерфейсами",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cartwrightdj/gedcomtools",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Инструменты работы с GEDCOM и агентными интерфейсами\nВозможности / сценарий: Исследовать преобразования GEDCOM и возможности автоматизированных запросов к данным.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Разработчик описывает бета-статус и не рекомендует промышленное применение.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "cboulanger/tei-annotator",
+      "url": "https://github.com/cboulanger/tei-annotator",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "cboulanger/tei-annotator",
+          "field": "use_case",
+          "excerpt": "Отмечать в расшифровке имена, даты и места, сохраняя структуру источника.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cboulanger/tei-annotator",
+          "field": "editorial_use_case",
+          "excerpt": "Отмечать в расшифровке имена, даты и места, сохраняя структуру источника.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cboulanger/tei-annotator",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Аннотирование текстов в формате TEI\nВозможности / сценарий: Отмечать в расшифровке имена, даты и места, сохраняя структуру источника.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не выполняет OCR самостоятельно; автоматические предложения нужно проверять.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "claudiomartino/iiif-downloader",
+      "url": "https://github.com/claudiomartino/iiif-downloader",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "claudiomartino/iiif-downloader",
+          "field": "description",
+          "excerpt": "Загрузка изображений из IIIF-ресурсов",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "claudiomartino/iiif-downloader",
+          "field": "editorial_summary",
+          "excerpt": "Загрузка изображений из IIIF-ресурсов",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "claudiomartino/iiif-downloader",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Загрузка изображений из IIIF-ресурсов\nВозможности / сценарий: Сохранить доступные сканы для личного исследовательского архива при соблюдении правил сайта.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Поддержка версий IIIF и ограничения архивов требуют проверки.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "dedupeio/dedupe",
+      "url": "https://github.com/dedupeio/dedupe",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "dedupeio/dedupe",
+          "field": "description",
+          "excerpt": "Библиотека сопоставления записей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "dedupeio/dedupe",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Библиотека сопоставления записей",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Нужны обучение и ручная верификация совпадений; не генеалогическая программа. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "digirati-co-uk/madoc-platform",
+      "url": "https://github.com/digirati-co-uk/madoc-platform",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "digirati-co-uk/madoc-platform",
+          "field": "use_case",
+          "excerpt": "Организовать добровольную расшифровку и проверку изображений в коллекции.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "digirati-co-uk/madoc-platform",
+          "field": "editorial_use_case",
+          "excerpt": "Организовать добровольную расшифровку и проверку изображений в коллекции.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "digirati-co-uk/madoc-platform",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Совместная аннотация цифровых архивных объектов\nВозможности / сценарий: Организовать добровольную расшифровку и проверку изображений в коллекции.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Нужны сервер и администрирование; совместимость конкретного архива не испытана.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "digitalarchivst/open-genealogy",
+      "url": "https://github.com/digitalarchivst/open-genealogy",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "digitalarchivst/open-genealogy",
+          "field": "description",
+          "excerpt": "Методики и агентные материалы для доказательной генеалогии",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "digitalarchivst/open-genealogy",
+          "field": "use_case",
+          "excerpt": "Использовать шаблоны вопросов и контроль доказательств при исследовании семьи.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "digitalarchivst/open-genealogy",
+          "field": "editorial_summary",
+          "excerpt": "Методики и агентные материалы для доказательной генеалогии",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "digitalarchivst/open-genealogy",
+          "field": "editorial_use_case",
+          "excerpt": "Использовать шаблоны вопросов и контроль доказательств при исследовании семьи.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "digitalarchivst/open-genealogy",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Методики и агентные материалы для доказательной генеалогии\nВозможности / сценарий: Использовать шаблоны вопросов и контроль доказательств при исследовании семьи.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "CC BY-NC-SA ограничивает коммерческое использование; не OSI Open Source.",
+      "test_status": "Не тестировалось независимо",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "dmarkey/irish-census-mcp",
+      "url": "https://github.com/dmarkey/irish-census-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "dmarkey/irish-census-mcp",
+          "field": "description",
+          "excerpt": "MCP-доступ к ирландским архивным сведениям",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "dmarkey/irish-census-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-доступ к ирландским архивным сведениям",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "dmarkey/irish-census-mcp",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: MCP-доступ к ирландским архивным сведениям\nВозможности / сценарий: Искать людей в переписях и регистрах через ассистента с фиксацией источника.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "MIT для кода не распространяется автоматически на архивные данные и API.",
+      "test_status": "Не тестировалось независимо",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "dsblank/gramps-ez-mcp",
+      "url": "https://github.com/dsblank/gramps-ez-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "dsblank/gramps-ez-mcp",
+          "field": "description",
+          "excerpt": "Альтернативный MCP-доступ к данным Gramps",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "dsblank/gramps-ez-mcp",
+          "field": "editorial_summary",
+          "excerpt": "Альтернативный MCP-доступ к данным Gramps",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "dsblank/gramps-ez-mcp",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Альтернативный MCP-доступ к данным Gramps\nВозможности / сценарий: Запрашивать события и семейные связи из генеалогической базы через ИИ.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Отличается от Gramps Web API; разрешения на изменение данных необходимо контролировать.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "dthaler/gedcom-citations",
+      "url": "https://github.com/dthaler/gedcom-citations",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "dthaler/gedcom-citations",
+          "field": "description",
+          "excerpt": "Предложения по ссылкам на источники в GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "dthaler/gedcom-citations",
+          "field": "editorial_summary",
+          "excerpt": "Предложения по ссылкам на источники в GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "dthaler/gedcom-citations",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Предложения по ссылкам на источники в GEDCOM\nВозможности / сценарий: Изучить способы фиксировать цитирование и происхождение генеалогических утверждений.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Это проект предложений, не готовый менеджер источников; лицензия не установлена.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "ecoto/iiif_downloader",
+      "url": "https://github.com/ecoto/iiif_downloader",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ecoto/iiif_downloader",
+          "field": "description",
+          "excerpt": "Загрузка изображений и метаданных IIIF",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ecoto/iiif_downloader",
+          "field": "editorial_summary",
+          "excerpt": "Загрузка изображений и метаданных IIIF",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ecoto/iiif_downloader",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Загрузка изображений и метаданных IIIF\nВозможности / сценарий: Собрать исследовательский набор сканов и метаданных для дальнейшей индексации.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Зависимости могут быть устаревшими; право скачивания и распространения зависит от архива.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "familysearch/gedcom",
+      "url": "https://github.com/familysearch/gedcom",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "familysearch/gedcom",
+          "field": "description",
+          "excerpt": "Спецификация GEDCOM 7",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "familysearch/gedcom",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Спецификация GEDCOM 7",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Официальная спецификация GEDCOM 7, не готовая генеалогическая программа. Структуры SOUR, REPO, PAGE, QUAY, SCHMA; модель источников имеет признанные ограничения. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не запускалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "familysearch/gedcomx",
+      "url": "https://github.com/familysearch/gedcomx",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "familysearch/gedcomx",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Модель обмена генеалогическими данными GEDCOM X\nВозможности / сценарий: Описывать людей, отношения, события и доказательства в машиночитаемом виде",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не путать GEDCOM X с классическим форматом GEDCOM; условия на спецификации и код могут отличаться.",
+      "test_status": "Не запускалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "familysearch/gedcomx",
+      "url": "https://github.com/familysearch/gedcomx",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "familysearch/gedcomx",
+          "field": "description",
+          "excerpt": "Модель обмена генеалогическими данными GEDCOM X",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "familysearch/gedcomx",
+          "field": "editorial_summary",
+          "excerpt": "Модель обмена генеалогическими данными GEDCOM X",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "familysearch/gedcomx",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Модель обмена генеалогическими данными GEDCOM X\nВозможности / сценарий: Описывать людей, отношения, события и доказательства в машиночитаемом виде",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не путать GEDCOM X с классическим форматом GEDCOM; условия на спецификации и код могут отличаться.",
+      "test_status": "Не запускалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "freeukgen/myopicvicar",
+      "url": "https://github.com/freeukgen/myopicvicar",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "freeukgen/myopicvicar",
+          "field": "use_case",
+          "excerpt": "Изучить организацию массовой расшифровки церковных и переписных документов с проверкой волонтёрами.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "freeukgen/myopicvicar",
+          "field": "editorial_use_case",
+          "excerpt": "Изучить организацию массовой расшифровки церковных и переписных документов с проверкой волонтёрами.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Ориентация на британские проекты FreeREG и FreeCEN; адаптация требует локализации и проверки прав.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "genealogix/glx",
+      "url": "https://github.com/genealogix/glx",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogix/glx",
+          "field": "components",
+          "excerpt": "provenance/evidence · Person Resolver · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Evidence-first формат и CLI; не заменяет готовый GUI; статус beta | Часть 51: незакрытые поля: первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "genealogix/glx",
+      "url": "https://github.com/genealogix/glx",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogix/glx",
+          "field": "components",
+          "excerpt": "provenance/evidence · Person Resolver · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Evidence-first формат и CLI; не заменяет готовый GUI; статус beta | Часть 51: незакрытые поля: первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "genealogix/glx",
+      "url": "https://github.com/genealogix/glx",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogix/glx",
+          "field": "components",
+          "excerpt": "provenance/evidence · Person Resolver · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Evidence-first формат и CLI; не заменяет готовый GUI; статус beta | Часть 51: незакрытые поля: первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "glamberson/gedcom-evidence",
+      "url": "https://github.com/glamberson/gedcom-evidence",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "glamberson/gedcom-evidence",
+          "field": "description",
+          "excerpt": "Материалы по доказательствам и источникам в GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "glamberson/gedcom-evidence",
+          "field": "use_case",
+          "excerpt": "Проверить, как хранить ссылки на доказательства при обмене генеалогическими сведениями.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "glamberson/gedcom-evidence",
+          "field": "editorial_summary",
+          "excerpt": "Материалы по доказательствам и источникам в GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "glamberson/gedcom-evidence",
+          "field": "editorial_use_case",
+          "excerpt": "Проверить, как хранить ссылки на доказательства при обмене генеалогическими сведениями.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "glamberson/gedcom-evidence",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Экспериментальные структуры доказательств для GEDCOM\nВозможности / сценарий: Сопоставлять выводы исследователя с исходными свидетельствами",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не является самостоятельной программой ведения дерева; поддержка форматов требует проверки.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "glamberson/gedcom-evidence",
+      "url": "https://github.com/glamberson/gedcom-evidence",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "glamberson/gedcom-evidence",
+          "field": "description",
+          "excerpt": "Материалы по доказательствам и источникам в GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "glamberson/gedcom-evidence",
+          "field": "editorial_summary",
+          "excerpt": "Материалы по доказательствам и источникам в GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "glamberson/gedcom-evidence",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Экспериментальные структуры доказательств для GEDCOM\nВозможности / сценарий: Сопоставлять выводы исследователя с исходными свидетельствами",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не является самостоятельной программой ведения дерева; поддержка форматов требует проверки.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "glamberson/gedcom-occurrences",
+      "url": "https://github.com/glamberson/gedcom-occurrences",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "glamberson/gedcom-occurrences",
+          "field": "description",
+          "excerpt": "Представление повторяющихся событий и упоминаний в GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "glamberson/gedcom-occurrences",
+          "field": "editorial_summary",
+          "excerpt": "Представление повторяющихся событий и упоминаний в GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Концептуальные структуры не заменяют доказательства идентичности персон.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "gramps-project/gramps-web-api",
+      "url": "https://github.com/gramps-project/gramps-web-api",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps-web-api",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Перед записью необходимы резервная копия и проверка прав; не смешивать API с интерфейсом сайта.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "gramps-project/gramps-web-api",
+      "url": "https://github.com/gramps-project/gramps-web-api",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps-web-api",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Перед записью необходимы резервная копия и проверка прав; не смешивать API с интерфейсом сайта.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "gramps-project/gramps-web-api",
+      "url": "https://github.com/gramps-project/gramps-web-api",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps-web-api",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Перед записью необходимы резервная копия и проверка прав; не смешивать API с интерфейсом сайта.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "gsmitheidw/genealogytools",
+      "url": "https://github.com/gsmitheidw/genealogytools",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "gsmitheidw/genealogytools",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Набор генеалогических утилит\nВозможности / сценарий: Рассмотреть автоматизацию отдельных операций с родословными данными",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Назначение каждого инструмента, лицензия и работоспособность не подтверждены.",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "htrmopo/htrmopo",
+      "url": "https://github.com/htrmopo/htrmopo",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "htrmopo/htrmopo",
+          "field": "description",
+          "excerpt": "Инструмент из области HTR, требующий функциональной проверки",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "htrmopo/htrmopo",
+          "field": "use_case",
+          "excerpt": "Проверить заявленный сценарий распознавания рукописей на тестовых страницах.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "htrmopo/htrmopo",
+          "field": "editorial_summary",
+          "excerpt": "Инструмент из области HTR, требующий функциональной проверки",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "htrmopo/htrmopo",
+          "field": "editorial_use_case",
+          "excerpt": "Проверить заявленный сценарий распознавания рукописей на тестовых страницах.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "htrmopo/htrmopo",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Проект из области распознавания исторических рукописей\nВозможности / сценарий: Рассматривать как исследовательский кандидат для сравнения HTR-подходов",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Без независимой проверки нельзя утверждать качество распознавания кириллицы или совместимость моделей.",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "iiif/api",
+      "url": "https://github.com/iiif/api",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "iiif/api",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Спецификации IIIF\nВозможности / сценарий: Стандартизовать получение изображений, описание объектов и совместимость просмотрщиков",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Спецификации — не готовый просмотрщик; условия использования изображений определяет правообладатель.",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "iiif/awesome-iiif",
+      "url": "https://github.com/iiif/awesome-iiif",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "iiif/awesome-iiif",
+          "field": "use_case",
+          "excerpt": "Подобрать просмотрщик, загрузчик или редактор аннотаций под конкретный архив.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "iiif/awesome-iiif",
+          "field": "editorial_use_case",
+          "excerpt": "Подобрать просмотрщик, загрузчик или редактор аннотаций под конкретный архив.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "iiif/awesome-iiif",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Курируемый каталог ресурсов IIIF\nВозможности / сценарий: Находить программы просмотра, серверы и средства загрузки изображений",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Список ссылок сам по себе не подтверждает актуальность и безопасность перечисленных решений.",
+      "test_status": "Не проводилось независимое тестирование",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "j535d165/data-matching-software",
+      "url": "https://github.com/j535d165/data-matching-software",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "j535d165/data-matching-software",
+          "field": "description",
+          "excerpt": "Обзор инструментов сопоставления записей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "j535d165/data-matching-software",
+          "field": "use_case",
+          "excerpt": "Сопоставить варианты дедупликации и разрешения идентичностей для архивного индекса.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "j535d165/data-matching-software",
+          "field": "editorial_summary",
+          "excerpt": "Обзор инструментов сопоставления записей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "j535d165/data-matching-software",
+          "field": "editorial_use_case",
+          "excerpt": "Сопоставить варианты дедупликации и разрешения идентичностей для архивного индекса.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "j535d165/data-matching-software",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Материалы по сопоставлению записей\nВозможности / сценарий: Сравнивать подходы к дедупликации и идентификации персон",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Каталог решений не заменяет испытания точности на реальных данных.",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "j535d165/recordlinkage-annotator",
+      "url": "https://github.com/j535d165/recordlinkage-annotator",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "j535d165/recordlinkage-annotator",
+          "field": "description",
+          "excerpt": "Ручная оценка пар записей при record linkage",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "j535d165/recordlinkage-annotator",
+          "field": "editorial_summary",
+          "excerpt": "Ручная оценка пар записей при record linkage",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Интерфейс оценки не должен автоматически объединять людей в базе.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "jerged24/family-tree",
+      "url": "https://github.com/jerged24/family-tree",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "jerged24/family-tree",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Приложение или визуализация семейного дерева\nВозможности / сценарий: Изучать интерфейсы навигации по родственным связям",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Наличие импорта GEDCOM, экспорта и корректной работы с кириллицей пока не доказано.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "jitsi/jiwer",
+      "url": "https://github.com/jitsi/jiwer",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "jitsi/jiwer",
+          "field": "description",
+          "excerpt": "Метрики ошибок распознавания текста",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "jitsi/jiwer",
+          "field": "use_case",
+          "excerpt": "Считать WER/CER на выверенной расшифровке архивной страницы и машинном результате.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "jitsi/jiwer",
+          "field": "editorial_summary",
+          "excerpt": "Метрики ошибок распознавания текста",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "jitsi/jiwer",
+          "field": "editorial_use_case",
+          "excerpt": "Считать WER/CER на выверенной расшифровке архивной страницы и машинном результате.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "jitsi/jiwer",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Библиотека метрик ошибок распознавания речи и текста\nВозможности / сценарий: Считать WER и CER при сравнении OCR/HTR с эталонной транскрипцией",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Метрика зависит от нормализации текста и не заменяет экспертную проверку имён и дат.",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "jregimbal/iiif-downloader",
+      "url": "https://github.com/jregimbal/iiif-downloader",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "jregimbal/iiif-downloader",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Скачивание изображений из IIIF. Помогает получать последовательности страниц из совместимых IIIF-манифестов для личной исследовательской работы.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "jregimbal/iiif-downloader",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Скачивание изображений из IIIF. Помогает получать последовательности страниц из совместимых IIIF-манифестов для личной исследовательской работы.\nВозможности / сценарий: Помогает получать последовательности страниц из совместимых IIIF-манифестов для личной исследовательской работы.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "GUI wxPython для загрузки из IIIF Presentation Manifest; не путать лицензию кода с правами на изображения архивов | Часть 51: незакрытые поля: тип проекта",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "kimon1230/gedcom_tools",
+      "url": "https://github.com/kimon1230/gedcom_tools",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kimon1230/gedcom_tools",
+          "field": "description",
+          "excerpt": "ПО / библиотека GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "kimon1230/gedcom_tools",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Утилиты для файлов GEDCOM. Подходят как отправная точка для преобразования и проверки структурированных родословных файлов.\nВозможности / сценарий: Подходят как отправная точка для преобразования и проверки структурированных родословных файлов.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "MIT подтверждена LICENSE; функциональность требует независимого теста | Часть 51: незакрытые поля: первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "kimon1230/gedgraph",
+      "url": "https://github.com/kimon1230/gedgraph",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kimon1230/gedgraph",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Графическое представление GEDCOM. Позволяет изучить представление родственных связей в виде графа для анализа и публикации.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "kimon1230/gedgraph",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Графическое представление GEDCOM. Позволяет изучить представление родственных связей в виде графа для анализа и публикации.\nВозможности / сценарий: Позволяет изучить представление родственных связей в виде графа для анализа и публикации.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Часть 38: Python 3.11+, Graphviz; вывод DOT с дальнейшим преобразованием в изображения. Не является редактором семейной базы. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "kkkamur07/nomikos",
+      "url": "https://github.com/kkkamur07/nomikos",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kkkamur07/nomikos",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Кандидат для транскрибирования. Следует оценить как возможный инструмент работы с текстом и аннотациями исторических источников.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "kkkamur07/nomikos",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Кандидат для транскрибирования. Следует оценить как возможный инструмент работы с текстом и аннотациями исторических источников.\nВозможности / сценарий: Следует оценить как возможный инструмент работы с текстом и аннотациями исторических источников.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "knuckles-team/gramps-mcp",
+      "url": "https://github.com/knuckles-team/gramps-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "knuckles-team/gramps-mcp",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): MCP-интерфейс для Gramps. Может дать ИИ-помощнику доступ к данным генеалогической базы через стандартизированные инструменты.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "knuckles-team/gramps-mcp",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: MCP-интерфейс для Gramps. Может дать ИИ-помощнику доступ к данным генеалогической базы через стандартизированные инструменты.\nВозможности / сценарий: Может дать ИИ-помощнику доступ к данным генеалогической базы через стандартизированные инструменты.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "komura-shoan/iiif-downloader",
+      "url": "https://github.com/komura-shoan/iiif-downloader",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "komura-shoan/iiif-downloader",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Загрузчик IIIF-изображений. Практический вариант получения изображений из цифровых архивов, поддерживающих IIIF.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "komura-shoan/iiif-downloader",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Загрузчик IIIF-изображений. Практический вариант получения изображений из цифровых архивов, поддерживающих IIIF.\nВозможности / сценарий: Практический вариант получения изображений из цифровых архивов, поддерживающих IIIF.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "CLI для IIIF Presentation 3 и последовательных URL; не путать лицензию кода с правами на изображения архивов | Часть 51: незакрытые поля: тип проекта",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "places",
+      "project": "libraryofcongress/gazetteer",
+      "url": "https://github.com/libraryofcongress/gazetteer",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "libraryofcongress/gazetteer",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Исторический справочник географических названий. Полезен как пример структуры справочника и сопоставления вариантов географических названий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "libraryofcongress/gazetteer",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Исторический справочник географических названий. Полезен как пример структуры справочника и сопоставления вариантов географических названий.\nВозможности / сценарий: Полезен как пример структуры справочника и сопоставления вариантов географических названий.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Снимок исторического проекта (2014), старый стек Django; нельзя считать действующей географической службой. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "lieuwe89/genealogy-viz",
+      "url": "https://github.com/lieuwe89/genealogy-viz",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "lieuwe89/genealogy-viz",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Визуализация родословной. Кандидат для изучения альтернативного отображения семейных связей и навигации по дереву.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "lieuwe89/genealogy-viz",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Визуализация родословной. Кандидат для изучения альтернативного отображения семейных связей и навигации по дереву.\nВозможности / сценарий: Кандидат для изучения альтернативного отображения семейных связей и навигации по дереву.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "lovasoa/dezoomify-rs",
+      "url": "https://github.com/lovasoa/dezoomify-rs",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "lovasoa/dezoomify-rs",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Получение изображений из тайловых просмотрщиков. Позволяет собирать доступные фрагменты изображения в единую копию, если это допускает источник.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "lovasoa/dezoomify-rs",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Получение изображений из тайловых просмотрщиков. Позволяет собирать доступные фрагменты изображения в единую копию, если это допускает источник.\nВозможности / сценарий: Позволяет собирать доступные фрагменты изображения в единую копию, если это допускает источник.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "meh313/htr-model-tester",
+      "url": "https://github.com/meh313/htr-model-tester",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "meh313/htr-model-tester",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Тестирование моделей HTR. Интерфейс для сравнения моделей распознавания рукописного текста в исследовательском процессе.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "meh313/htr-model-tester",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Тестирование моделей HTR. Интерфейс для сравнения моделей распознавания рукописного текста в исследовательском процессе.\nВозможности / сценарий: Интерфейс для сравнения моделей распознавания рукописного текста в исследовательском процессе.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Ч44: Окружение WSL/Windows и Kraken; лицензия требует уточнения | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "moj-analytical-services/splink",
+      "url": "https://github.com/moj-analytical-services/splink",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "moj-analytical-services/splink",
+          "field": "description",
+          "excerpt": "Библиотека вероятностного сопоставления записей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "moj-analytical-services/splink",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Библиотека вероятностного сопоставления записей",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Методы вероятностного связывания; не готовое генеалогическое приложение; версии API могут меняться. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "n1kozor/tree-monk",
+      "url": "https://github.com/n1kozor/tree-monk",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "n1kozor/tree-monk",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Визуализация семейного дерева. Вариант представления родословной в пользовательском интерфейсе.\nВозможности / сценарий: Вариант представления родословной в пользовательском интерфейсе.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Лицензия ограничивает коммерческое использование; русская локализация заявлена, не тестировалась | Часть 51: незакрытые поля: первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "nigelhorne/gedcom",
+      "url": "https://github.com/nigelhorne/gedcom",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "nigelhorne/gedcom",
+          "field": "description",
+          "excerpt": "Консольная утилита GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "nigelhorne/gedcom",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Библиотека обработки GEDCOM. Может использоваться для чтения и обработки генеалогических файлов в автоматизированных сценариях.\nВозможности / сценарий: Может использоваться для чтения и обработки генеалогических файлов в автоматизированных сценариях.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "README: GPL2; не путать с ged2site (другие условия) | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не запускалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "nikkoxgonzales/mcp-grampsweb",
+      "url": "https://github.com/nikkoxgonzales/mcp-grampsweb",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "nikkoxgonzales/mcp-grampsweb",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): MCP для Gramps Web. Кандидат на подключение ИИ-инструментов к генеалогическим объектам Gramps Web.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "nikkoxgonzales/mcp-grampsweb",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: MCP для Gramps Web. Кандидат на подключение ИИ-инструментов к генеалогическим объектам Gramps Web.\nВозможности / сценарий: Кандидат на подключение ИИ-инструментов к генеалогическим объектам Gramps Web.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "noahkiss/genealogy-mcp",
+      "url": "https://github.com/noahkiss/genealogy-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "noahkiss/genealogy-mcp",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): MCP-интерфейс генеалогических данных. Может быть интересен как способ запросов к родословным данным через ИИ-агента.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "noahkiss/genealogy-mcp",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: MCP-интерфейс генеалогических данных. Может быть интересен как способ запросов к родословным данным через ИИ-агента.\nВозможности / сценарий: Может быть интересен как способ запросов к родословным данным через ИИ-агента.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "noahkiss/genealogy-mcp",
+      "url": "https://github.com/noahkiss/genealogy-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "noahkiss/genealogy-mcp",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): MCP-интерфейс генеалогических данных. Может быть интересен как способ запросов к родословным данным через ИИ-агента.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "noahkiss/genealogy-mcp",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: MCP-интерфейс генеалогических данных. Может быть интересен как способ запросов к родословным данным через ИИ-агента.\nВозможности / сценарий: Может быть интересен как способ запросов к родословным данным через ИИ-агента.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "notakeith/handscribe",
+      "url": "https://github.com/notakeith/handscribe",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "notakeith/handscribe",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Средство транскрибирования. Кандидат для ручной или полуавтоматической расшифровки документов.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "notakeith/handscribe",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Средство транскрибирования. Кандидат для ручной или полуавтоматической расшифровки документов.\nВозможности / сценарий: Кандидат для ручной или полуавтоматической расшифровки документов.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "oh-kay-blanket/family-plot",
+      "url": "https://github.com/oh-kay-blanket/family-plot",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "oh-kay-blanket/family-plot",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Визуализация семейных связей. Может помочь представить сложную структуру родства графически.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "oh-kay-blanket/family-plot",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Визуализация семейных связей. Может помочь представить сложную структуру родства графически.\nВозможности / сценарий: Может помочь представить сложную структуру родства графически.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "qurator-spk/dinglehopper",
+      "url": "https://github.com/qurator-spk/dinglehopper",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "qurator-spk/dinglehopper",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Инструмент сравнения результатов OCR. Сопоставлять распознанный текст с эталоном при тестировании разных моделей на одних и тех же сканах.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "qurator-spk/dinglehopper",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Инструмент сравнения результатов OCR. Сопоставлять распознанный текст с эталоном при тестировании разных моделей на одних и тех же сканах.\nВозможности / сценарий: Сопоставлять распознанный текст с эталоном при тестировании разных моделей на одних и тех же сканах.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Сравнение OCR с эталоном, PAGE/ALTO/text, HTML/JSON отчёты; не распознаёт самостоятельно. | Часть 51: незакрытые поля: тип проекта, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "recogito/text-annotator-js",
+      "url": "https://github.com/recogito/text-annotator-js",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "recogito/text-annotator-js",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Библиотека интерактивного аннотирования текста. Выделять имена, топонимы и события в расшифровке архивного документа с привязкой к исходному фрагменту.\nВозможности / сценарий: Выделять имена, топонимы и события в расшифровке архивного документа с привязкой к исходному фрагменту.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "JS-библиотека для выделения и аннотирования текста; не готовая генеалогическая система. | Часть 51: незакрытые поля: первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "rollybre/cthulhu",
+      "url": "https://github.com/rollybre/cthulhu",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "rollybre/cthulhu",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Оценка качества распознавания рукописей. Сравнивать OCR/HTR с проверенной транскрипцией, рассчитывать ошибки и исследовать проблемные страницы.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "rollybre/cthulhu",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Оценка качества распознавания рукописей. Сравнивать OCR/HTR с проверенной транскрипцией, рассчитывать ошибки и исследовать проблемные страницы.\nВозможности / сценарий: Сравнивать OCR/HTR с проверенной транскрипцией, рассчитывать ошибки и исследовать проблемные страницы.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Ч44: CER/WER, ALTO/PAGE; работа не протестирована | Часть 51: незакрытые поля: тип проекта, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "rue-a/provo",
+      "url": "https://github.com/rue-a/provo",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "rue-a/provo",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Средства работы с происхождением данных. Фиксировать связи между источником, преобразованием и итоговым утверждением.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "rue-a/provo",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Средства работы с происхождением данных. Фиксировать связи между источником, преобразованием и итоговым утверждением.\nВозможности / сценарий: Фиксировать связи между источником, преобразованием и итоговым утверждением.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "ruempel/nacarta",
+      "url": "https://github.com/ruempel/nacarta",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ruempel/nacarta",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Визуализация семейных связей. Оценить альтернативное представление ветвей родословной и переходы между родственниками.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ruempel/nacarta",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Визуализация семейных связей. Оценить альтернативное представление ветвей родословной и переходы между родственниками.\nВозможности / сценарий: Оценить альтернативное представление ветвей родословной и переходы между родственниками.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "ryanfb/iiif-dl",
+      "url": "https://github.com/ryanfb/iiif-dl",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ryanfb/iiif-dl",
+          "field": "description",
+          "excerpt": "Загрузчик IIIF",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ryanfb/iiif-dl",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Загрузка изображений по IIIF. Получать архивные изображения из открытых IIIF-манифестов для исследовательского просмотра.\nВозможности / сценарий: Получать архивные изображения из открытых IIIF-манифестов для исследовательского просмотра.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Ruby-загрузчик/сборщик IIIF; README указывает несовместимость с IIIF 3.0 | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "sandxlab/sandx-er",
+      "url": "https://github.com/sandxlab/sandx-er",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "sandxlab/sandx-er",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Сопоставление сущностей и записей. Рассматривать как кандидат для поиска повторов персон с вариантами имен и дат.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "sandxlab/sandx-er",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Сопоставление сущностей и записей. Рассматривать как кандидат для поиска повторов персон с вариантами имен и дат.\nВозможности / сценарий: Рассматривать как кандидат для поиска повторов персон с вариантами имен и дат.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "scormave/gramps-web-mcp",
+      "url": "https://github.com/scormave/gramps-web-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "scormave/gramps-web-mcp",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): MCP-интерфейс для Gramps Web. Проверить управляемые запросы к людям, событиям, источникам и цитатам в тестовой базе.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "scormave/gramps-web-mcp",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: MCP-интерфейс для Gramps Web. Проверить управляемые запросы к людям, событиям, источникам и цитатам в тестовой базе.\nВозможности / сценарий: Проверить управляемые запросы к людям, событиям, источникам и цитатам в тестовой базе.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "scripta/escriptorium",
+      "url": "https://github.com/scripta/escriptorium",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "scripta/escriptorium",
+          "field": "description",
+          "excerpt": "HTR-система; основное размещение GitLab",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Ч44: GitHub-карточка может быть зеркалом; основной источник лицензии GitLab | Ч48: Первичный источник лицензии — GitLab; проверить актуальность GitHub-зеркала отдельно | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не проводилось независимое тестирование",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "shelfgot/maatikshemua",
+      "url": "https://github.com/shelfgot/maatikshemua",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "shelfgot/maatikshemua",
+          "field": "description",
+          "excerpt": "HTR-приложение для еврейских рукописей",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "shelfgot/maatikshemua",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Работа с историческими рукописями. Изучить представление неоднозначных чтений и исправлений при транскрибировании.\nВозможности / сценарий: Изучить представление неоднозначных чтений и исправлений при транскрибировании.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Ч48: Ряд функций обозначен как планы; примеры команд клонирования содержат шаблонный URL | Часть 51: незакрытые поля: лицензия/основание",
+      "test_status": "Не проводилось независимое тестирование",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "stefromlc/iiif-downloader",
+      "url": "https://github.com/stefromlc/iiif-downloader",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "stefromlc/iiif-downloader",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Загрузка IIIF-изображений. Сравнить с другими загрузчиками IIIF по возобновлению и именованию файлов.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "stefromlc/iiif-downloader",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Загрузка IIIF-изображений. Сравнить с другими загрузчиками IIIF по возобновлению и именованию файлов.\nВозможности / сценарий: Сравнить с другими загрузчиками IIIF по возобновлению и именованию файлов.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Загрузка тайлов и сборка одного изображения большого разрешения; не путать лицензию кода с правами на изображения архивов | Часть 51: незакрытые поля: тип проекта",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "thisisankit27/f-tree",
+      "url": "https://github.com/thisisankit27/f-tree",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "thisisankit27/f-tree",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Визуализация родословного дерева. Оценить интерфейс дерева и возможности адаптации к большим семьям.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "thisisankit27/f-tree",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Визуализация родословного дерева. Оценить интерфейс дерева и возможности адаптации к большим семьям.\nВозможности / сценарий: Оценить интерфейс дерева и возможности адаптации к большим семьям.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Часть 38: Собственный формат .ftree (ZIP/JSON), обмен между устройствами. GEDCOM в README не подтверждён; русская локализация не заявлена. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "ub-mannheim/escriptorium",
+      "url": "https://github.com/ub-mannheim/escriptorium",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ub-mannheim/escriptorium",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Среда транскрибирования исторических документов. Оценить ручную корректуру, обучение и запуск HTR на архивных изображениях.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ub-mannheim/escriptorium",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Среда транскрибирования исторических документов. Оценить ручную корректуру, обучение и запуск HTR на архивных изображениях.\nВозможности / сценарий: Оценить ручную корректуру, обучение и запуск HTR на архивных изображениях.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "GitHub-зеркало/адаптация; отдельно учитывать исходный GitLab | Часть 51: незакрытые поля: тип проекта, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "ub-mannheim/escriptorium_dokumentation",
+      "url": "https://github.com/ub-mannheim/escriptorium_dokumentation",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ub-mannheim/escriptorium_dokumentation",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Документация к eScriptorium. Использовать как руководство по подготовке изображений и проверке результатов HTR.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ub-mannheim/escriptorium_dokumentation",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Документация к eScriptorium. Использовать как руководство по подготовке изображений и проверке результатов HTR.\nВозможности / сценарий: Использовать как руководство по подготовке изображений и проверке результатов HTR.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Документация, не программный движок | Часть 51: незакрытые поля: тип проекта, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "w3c/prov",
+      "url": "https://github.com/w3c/prov",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "w3c/prov",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Стандарт описания происхождения данных. Ввести воспроизводимые цепочки: скан → транскрипция → индексная запись → вывод исследователя.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "w3c/prov",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Стандарт описания происхождения данных. Ввести воспроизводимые цепочки: скан → транскрипция → индексная запись → вывод исследователя.\nВозможности / сценарий: Ввести воспроизводимые цепочки: скан → транскрипция → индексная запись → вывод исследователя.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "w3c/prov",
+      "url": "https://github.com/w3c/prov",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "w3c/prov",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Стандарт описания происхождения данных. Ввести воспроизводимые цепочки: скан → транскрипция → индексная запись → вывод исследователя.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "w3c/prov",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Стандарт описания происхождения данных. Ввести воспроизводимые цепочки: скан → транскрипция → индексная запись → вывод исследователя.\nВозможности / сценарий: Ввести воспроизводимые цепочки: скан → транскрипция → индексная запись → вывод исследователя.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "places",
+      "project": "worldhistoricalgazetteer/documentation",
+      "url": "https://github.com/worldhistoricalgazetteer/documentation",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "worldhistoricalgazetteer/documentation",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Документация World Historical Gazetteer. Перенять принципы устойчивых идентификаторов, альтернативных названий и исторической географии.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "worldhistoricalgazetteer/documentation",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Документация World Historical Gazetteer. Перенять принципы устойчивых идентификаторов, альтернативных названий и исторической географии.\nВозможности / сценарий: Перенять принципы устойчивых идентификаторов, альтернативных названий и исторической географии.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Часть документации помечена как архивная версия дизайна 2025, заменённая в 2026. Лицензия отдельных образовательных материалов не равна лицензии всего репозитория. | Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "places",
+      "project": "worldhistoricalgazetteer/website",
+      "url": "https://github.com/worldhistoricalgazetteer/website",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "worldhistoricalgazetteer/website",
+          "field": "description",
+          "excerpt": "Платформа исторических географических данных",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "worldhistoricalgazetteer/website",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Платформа исторических географических данных",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Разные условия для программного кода, контента и внешних наборов; не смешивать. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "zal-analytics/zer",
+      "url": "https://github.com/zal-analytics/zer",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "zal-analytics/zer",
+          "field": "description",
+          "excerpt": "По редакционным материалам (без независимой проверки): Сопоставление записей и сущностей. Изучить подход к выявлению совпадающих персон при расхождениях имен и дат.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "zal-analytics/zer",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Сопоставление записей и сущностей. Изучить подход к выявлению совпадающих персон при расхождениях имен и дат.\nВозможности / сценарий: Изучить подход к выявлению совпадающих персон при расхождениях имен и дат.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Не считать наличие URL подтверждением функций или лицензии | Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний",
+      "test_status": "Испытания не подтверждены",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "Segolene-Albouy/iiif-download",
+      "url": "https://github.com/Segolene-Albouy/iiif-download",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "segolene-albouy/iiif-download",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Загрузка изображений по IIIF\nВозможности / сценарий: Получить разрешённые сервером изображения архивного объекта для личного изучения и систематизации.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Документация проекта; запуск не проверен | Часть 51: незакрытые поля: OSI-статус, первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "places",
+      "project": "nypl-spacetime/nypl-warper",
+      "url": "https://github.com/nypl-spacetime/nypl-warper",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "nypl-spacetime/nypl-warper",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Историческая геопривязка карт NYPL\nВозможности / сценарий: Изучить архитектуру привязки архивных карт и возможность сравнения с современной географией.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "NYPL прекратила обновления в апреле 2021; устаревшие Ruby/Rails и внешние зависимости. | Часть 51: незакрытые поля: первоисточник",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "familysearch/gedcom-registries",
+      "url": "https://github.com/FamilySearch/GEDCOM-registries",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "familysearch/gedcom-registries",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Реестры структур GEDCOM\nВозможности / сценарий: Сверять расширения и структуры при разработке импортёра и экспортёра GEDCOM.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Реестр стандартных и расширенных структур, YAML, манифесты, валидация. Не считать программным продуктом целиком. | Часть 51: незакрытые поля: лицензия/основание",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "genea-app/genea-app",
+      "url": "https://github.com/genea-app/genea-app",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "genea-app/genea-app",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Просмотр и работа с семейными данными\nВозможности / сценарий: Оценить подход к представлению дерева и чтению GEDCOM для самостоятельного исследования.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "README описывает особенности интерпретации GEDCOM; совместимость GEDCOM 7 не подтверждена | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не запускалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "spacecat56/Ged2Reg",
+      "url": "https://github.com/spacecat56/Ged2Reg",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "spacecat56/ged2reg",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Преобразование GEDCOM в регистровый текст\nВозможности / сценарий: Получить текстовое представление дерева для просмотра или подготовки отчёта.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Жёсткая структура текста; автор предупреждает о правах на материалы источников | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не запускалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "KeithPetro/Yggdrasil",
+      "url": "https://github.com/KeithPetro/Yggdrasil",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "docs/research.json",
+          "key": "keithpetro/yggdrasil",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Экспериментальное генеалогическое приложение\nВозможности / сценарий: Оценить идеи интерфейса и модель родословных данных.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Мало коммитов; часть функций сформулирована как планы, не как реализованные возможности | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не запускалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "glamberson/gedcom-tags",
+      "url": "https://github.com/glamberson/gedcom-tags",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "glamberson/gedcom-tags",
+          "field": "description",
+          "excerpt": "Спецификация расширения GEDCOM 7",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "glamberson/gedcom-tags",
+          "field": "guide_excerpt",
+          "excerpt": "Назначение: Предложения по тегам GEDCOM\nВозможности / сценарий: Изучить идеи расширения семантики генеалогических записей.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Черновик расширения тегов; не готовое приложение. | Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "Genealogy Research Workbench",
+      "url": "https://github.com/glasgowm148/genealogy-research-workbench",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy research workbench",
+          "field": "description",
+          "excerpt": "Исследовательские дела, доказательства, гипотезы и приватная публикация.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "genealogy research workbench",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "Genealogy Research Workbench",
+      "url": "https://github.com/glasgowm148/genealogy-research-workbench",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy research workbench",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "IIIF Kasane",
+      "url": "https://github.com/nakamura196/iiif-kasane",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "iiif kasane",
+          "field": "description",
+          "excerpt": "Выделен подключаемый IIIF viewer; ранее добавлены совмещение изображений, OCR и работа с областями.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "iiif kasane",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "IIIF Kasane",
+      "url": "https://github.com/nakamura196/iiif-kasane",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "iiif kasane",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "scan2gedcom",
+      "url": "https://github.com/briancase1776/scan2gedcom",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "scan2gedcom",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "scan2gedcom",
+      "url": "https://github.com/briancase1776/scan2gedcom",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "scan2gedcom",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "ZMO AI Pipelines",
+      "url": "https://github.com/fmadore/zmo-ai-pipelines",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "zmo ai pipelines",
+          "field": "description",
+          "excerpt": "Воспроизводимые OCR-конвейеры, provenance.json, CER/WER.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "zmo ai pipelines",
+          "field": "components",
+          "excerpt": "OCR/HTR · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "ZMO AI Pipelines",
+      "url": "https://github.com/fmadore/zmo-ai-pipelines",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "zmo ai pipelines",
+          "field": "description",
+          "excerpt": "Воспроизводимые OCR-конвейеры, provenance.json, CER/WER.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "zmo ai pipelines",
+          "field": "components",
+          "excerpt": "OCR/HTR · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "genealogy-agent-skills",
+      "url": "https://github.com/rfsbraz/genealogy-agent-skills",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-agent-skills",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "genealogy-agent-skills",
+      "url": "https://github.com/rfsbraz/genealogy-agent-skills",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-agent-skills",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "gramps-mcp-dotnet",
+      "url": "https://github.com/zankul/gramps-mcp-dotnet",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-mcp-dotnet",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "gramps-mcp-dotnet",
+      "url": "https://github.com/zankul/gramps-mcp-dotnet",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-mcp-dotnet",
+          "field": "description",
+          "excerpt": "MCP-сервер с контролем разрешений и ограничением выдачи.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "gramps-mcp-dotnet",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "Rask",
+      "url": "https://github.com/AI-Riksarkivet/rask",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "rask",
+          "field": "description",
+          "excerpt": "Разделение аннотирования и архивного ядра; журнал изменений и provenance.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "rask",
+          "field": "components",
+          "excerpt": "provenance/evidence · Research Workspace · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "Rask",
+      "url": "https://github.com/AI-Riksarkivet/rask",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "rask",
+          "field": "components",
+          "excerpt": "provenance/evidence · Research Workspace · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "oxidged / OxidGene",
+      "url": "https://github.com/trois-six/oxidged",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "oxidged / oxidgene",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "oxidged / OxidGene",
+      "url": "https://github.com/trois-six/oxidged",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "oxidged / oxidgene",
+          "field": "description",
+          "excerpt": "Сохранение нестандартных GEDCOM-структур при round-trip.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "oxidged / oxidgene",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "Exscriptor",
+      "url": "https://github.com/julioalonzom/exscriptor",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "exscriptor",
+          "field": "description",
+          "excerpt": "Независимая проверка транскрипций и журнал исправлений.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "exscriptor",
+          "field": "components",
+          "excerpt": "OCR/HTR · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "Exscriptor",
+      "url": "https://github.com/julioalonzom/exscriptor",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "exscriptor",
+          "field": "components",
+          "excerpt": "OCR/HTR · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "places",
+      "project": "Gramps Connect",
+      "url": "https://github.com/dsblank/gramps-connect",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps connect",
+          "field": "components",
+          "excerpt": "Research Workspace · Place Resolver/АТД · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "Gramps Connect",
+      "url": "https://github.com/dsblank/gramps-connect",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps connect",
+          "field": "components",
+          "excerpt": "Research Workspace · Place Resolver/АТД · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "Gramps Connect",
+      "url": "https://github.com/dsblank/gramps-connect",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps connect",
+          "field": "components",
+          "excerpt": "Research Workspace · Place Resolver/АТД · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "GEDKeeper",
+      "url": "https://github.com/Serg-Norseman/GEDKeeper",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gedkeeper",
+          "field": "description",
+          "excerpt": "Режим только чтения для MCP-агентов.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "gedkeeper",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "Bartelby",
+      "url": "https://github.com/absaltfox/bartelby",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "bartelby",
+          "field": "components",
+          "excerpt": "Research Workspace · Person Resolver · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "Bartelby",
+      "url": "https://github.com/absaltfox/bartelby",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "bartelby",
+          "field": "components",
+          "excerpt": "Research Workspace · Person Resolver · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "Desembarque",
+      "url": "https://github.com/allan-valin/ocr-gene-docs",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "desembarque",
+          "field": "description",
+          "excerpt": "Геометрия таблиц и поиск по неточным транскрипциям с дополнительными архивными признаками.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "desembarque",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "Desembarque",
+      "url": "https://github.com/allan-valin/ocr-gene-docs",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "desembarque",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "Historic Records AI Reader",
+      "url": "https://github.com/usulkies/historic-records-ai-reader",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "historic records ai reader",
+          "field": "description",
+          "excerpt": "Слепая транскрипция и сравнительная оценка моделей на исторических документах.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "historic records ai reader",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "Historic Records AI Reader",
+      "url": "https://github.com/usulkies/historic-records-ai-reader",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "historic records ai reader",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "gedaudit",
+      "url": "https://github.com/thobgg/gedaudit",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gedaudit",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "gedaudit",
+      "url": "https://github.com/thobgg/gedaudit",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gedaudit",
+          "field": "description",
+          "excerpt": "Набор проверок качества GEDCOM, включая генеалогическую логику.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "gedaudit",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "open-ancestry",
+      "url": "https://github.com/adamsilverstein/open-ancestry",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "open-ancestry",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "open-ancestry",
+      "url": "https://github.com/adamsilverstein/open-ancestry",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "open-ancestry",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "NAFRec",
+      "url": "https://github.com/Kansallisarkisto-AI/nafrec",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "nafrec",
+          "field": "description",
+          "excerpt": "Конвейер распознавания кириллицы/латиницы, экспорт PAGE/ALTO, оптимизация обработки.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "nafrec",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "Scribe",
+      "url": "https://github.com/lehigh-university-libraries/scribe",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "scribe",
+          "field": "description",
+          "excerpt": "Возобновляемое распознавание строк и аннотации поверх IIIF.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "scribe",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "Scribe",
+      "url": "https://github.com/lehigh-university-libraries/scribe",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "scribe",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "places",
+      "project": "gov-gazetteer-mcp",
+      "url": "https://github.com/ianderso/gov-gazetteer-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gov-gazetteer-mcp",
+          "field": "description",
+          "excerpt": "Историческая административная принадлежность и приходы по дате.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "gov-gazetteer-mcp",
+          "field": "components",
+          "excerpt": "Place Resolver/АТД · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "gov-gazetteer-mcp",
+      "url": "https://github.com/ianderso/gov-gazetteer-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gov-gazetteer-mcp",
+          "field": "components",
+          "excerpt": "Place Resolver/АТД · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "genealogy-mcp",
+      "url": "https://github.com/igormel81/genealogy-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "genealogy-mcp",
+      "url": "https://github.com/igormel81/genealogy-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "genealogy-mcp",
+      "url": "https://github.com/igormel81/genealogy-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp",
+          "field": "description",
+          "excerpt": "Российские архивные справочники, имена, даты и аудит GEDCOM.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "genealogy-mcp",
+      "url": "https://github.com/igormel81/genealogy-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "Archive MCP adapters (ianderso)",
+      "url": "https://github.com/ianderso",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "archive mcp adapters (ianderso)",
+          "field": "components",
+          "excerpt": "Archive Adapter · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "Gramps Evidence MCP",
+      "url": "https://github.com/ianderso/gramps-evidence-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps evidence mcp",
+          "field": "components",
+          "excerpt": "provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "Gramps Evidence MCP",
+      "url": "https://github.com/ianderso/gramps-evidence-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps evidence mcp",
+          "field": "description",
+          "excerpt": "MCP-инструменты с привязкой источников, контроль атрибутов и цитирований.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "gramps evidence mcp",
+          "field": "components",
+          "excerpt": "provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    }
+  ]
+}
