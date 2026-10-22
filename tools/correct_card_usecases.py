@@ -19,7 +19,7 @@ def correct(catalog,research,corrections):
                 r.get('editorial_use_case')!=fix['use_case'] or r.get('editorial_limitations')!=fix['limitations']):
                 raise ValueError('Existing correction differs: '+key)
             continue
-        provenance=dict(id=fix['id'],checked_at='2026-10-22',
+        provenance=dict(id=fix['id'],checked_at=fix.get('checked_at','2026-10-22'),
             basis=fix['verified_scope']+' Приложение не запускалось; независимое испытание не заявлено.',
             sources=[dict(type='README',url=url) for url in fix['sources']],
             previous_catalog={field:card.get(field) for field in ('use_case','limitations')},
