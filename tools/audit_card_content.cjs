@@ -10,7 +10,7 @@ const rows=c.map(x=>{
   const raw=[x.limitations,card.audit_notes,card.editorial_limitations].filter(Boolean);
   if(raw.some(s=>/Часть\s*\d+|Ч\d+\s*:/i.test(s)))flags.push('service_notes_preserved');
   if(x.limitations&&card.audit_notes&&x.limitations===card.audit_notes)flags.push('duplicate_raw_notes');
-  if(selected.limitations.text&&!/не\b|треб|огранич|провер|завис|предупреж|нельзя|необходим|лиценз|только|риск|отсутств|не /i.test(selected.limitations.text))flags.push('limitations_need_context_review');
+  if(selected.limitations.text&&!/не\b|треб|огранич|провер|завис|предупреж|нельзя|необходим|лиценз|только|риск|отсутств|нуж|устарев|не /i.test(selected.limitations.text))flags.push('limitations_need_context_review');
   return {project:x.name,selected,flags};
 });
 const counts={};for(const row of rows)for(const flag of row.flags)counts[flag]=(counts[flag]||0)+1;
