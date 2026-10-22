@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "6521b898e063806bdd5200c4f5dbacb5cb7cef4fce99823cdfb4f81344f92e91",
+  "source_hash": "105791752e5a88229ed5ed33489c8c045b54f34251546ad1e5d62576edfd16cb",
   "tasks": [
     {
       "id": "transcribe",

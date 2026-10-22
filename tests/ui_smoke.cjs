@@ -14,6 +14,20 @@ function fixture(seed) {
 }
 function count(html, className) { return (html.match(new RegExp('<article class="' + className, 'g')) || []).length; }
 (async () => {
+  const editorial=fixture(null), helper=editorial.context.WatchUI;
+  const duplicated='Очистка таблиц | Часть 51: незакрытые поля: первоисточник';
+  const limited=helper.limitations({limitations:duplicated},{audit_notes:duplicated});
+  const mainLimited=limited.split('<details>')[0];
+  assert.equal(mainLimited.split('Очистка таблиц').length-1,1);
+  assert.ok(!mainLimited.includes('Часть 51'));
+  assert.ok(limited.includes('Исходные редакционные заметки'));
+  assert.ok(limited.includes(duplicated));
+  assert.ok(helper.practical({use_case:''},{guide_excerpt:'Возможности / сценарий: Возможно, инструмент для проверки'}).includes('Возможно, инструмент для проверки'));
+  assert.ok(!helper.practical({use_case:''},{}).includes('Сведения не установлены'));
+  const openrefine=catalog.find(x=>x.name.toLowerCase()==='openrefine/openrefine');
+  const openResearch=research['openrefine/openrefine'];
+  assert.match(helper.practical(openrefine,openResearch),/Редакционный генеалогический сценарий/);
+  assert.match(helper.limitations(openrefine,openResearch),/не доказательство тождества людей/);
   if (fs.existsSync(path.join(root,'docs/task-matches.json'))) {
     const taskData=JSON.parse(read('docs/task-matches.json')), taskPage=fixture(null);
     taskPage.context.fetch=async()=>({ok:true,json:async()=>taskData});

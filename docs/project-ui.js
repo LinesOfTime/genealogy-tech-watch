@@ -25,8 +25,9 @@
         para('Исходный текст: ' + p.source.original_text) +
         para('Редакционный материал; назначение и функции независимо не подтверждены. Тип проекта не выводился из описания.'));
     }
-    html += panel('Практическое применение', para(r.editorial_use_case || x.use_case));
-    html += panel('Ограничения и редакционная оценка', para(r.editorial_limitations || x.limitations) + (r.audit_notes ? para(r.audit_notes) : ''));
+    html += panel('Практическое применение', WatchUI.practical(x,r));
+    html += panel('Ограничения и редакционная оценка', WatchUI.limitations(x,r));
+    if(r.editorial_corrections?.length) html+=panel('Основания редакционного уточнения',r.editorial_corrections.map(c=>para(c.basis)+sources(c.sources)).join(''));
     if (r.guide_excerpt) html += panel('Из путеводителя от 10 октября 2026', para(r.guide_excerpt) + '<small>Полный исходный текст сохранён. Это редакционное описание, не независимое испытание.</small>');
     html += panel('Лицензия и проверка', para('Лицензия: ' + (r.license || x.license || 'Не определена')) + para('Статус лицензии: ' + (r.license_status || x.license_status || 'Не подтверждён')) +
       para('Основание: ' + (r.license_evidence || 'Не указано')) + para('Открытость: ' + (r.opensource_status || 'Не установлена')) +
