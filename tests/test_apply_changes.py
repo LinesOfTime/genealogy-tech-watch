@@ -51,6 +51,15 @@ class ApplyTests(unittest.TestCase):
             build_plan(self.root,[self.record],'2026-10-23')
 
     def approve(self):
+        import hashlib
+        if isinstance(self.record.get('claims_vs_verified'),str):self.record['claims_vs_verified']=dict(verified='Synthetic fixture only',author_claims=self.record['claims_vs_verified'],independent_testing='Not performed')
+        folder=self.root/'data/evidence';folder.mkdir(parents=True,exist_ok=True)
+        self.record['source_checks']=[]
+        for i,s in enumerate(self.record['source_urls']):
+            stamp='2026-10-22T11:00:00+03:00'
+            raw=json.dumps(dict(url=s['url'],checked_at=stamp,http_status=200,content='Synthetic fixture, not research evidence')).encode()
+            name=f'data/evidence/{self.record["discovery_id"]}-source-{i}.json';(self.root/name).write_bytes(raw)
+            self.record['source_checks'].append(dict(url=s['url'],checked_at=stamp,evidence_file=name,sha256=hashlib.sha256(raw).hexdigest(),verified_scope='Test fixture only'))
         self.record['reviewed_content_hash'] = content_hash(self.record)
 
     def write(self, name, value):
@@ -171,7 +180,7 @@ class ApplyTests(unittest.TestCase):
         second = copy.deepcopy(self.record)
         second.update(discovery_id='second', change_summary='Other change')
         second['source_urls'][0]['url'] += '.1'
-        second['reviewed_content_hash'] = content_hash(second)
+        original=self.record;self.record=second;self.approve();self.record=original
         before = self.snapshot()
         with self.assertRaisesRegex(ValueError, 'Multiple pending'):
             self.plan([self.record, second])

@@ -1,0 +1,21 @@
+{
+  "baseline_commit": "b0b1f2f42df63b5872204dc9621b743bb39b6270",
+  "method": "Synthetic fixtures only; no repository research or publication",
+  "cases": [
+    {
+      "case": "approved_URL_without_saved_content",
+      "baseline_allowed": true,
+      "now_blocked": true
+    },
+    {
+      "case": "all_event_projections_removed_but_ledger_remains",
+      "baseline_allowed": true,
+      "now_blocked": true
+    },
+    {
+      "case": "rejection_journal_deleted_then_repository_returns",
+      "baseline_allowed": true,
+      "now_blocked": true
+    }
+  ]
+}

@@ -46,7 +46,7 @@ class CleanupTests(unittest.TestCase):
             self.assertTrue(rejection_issues(root,[],{},[dict(items=[dict(repo=KEY)])]))
             self.assertFalse(rejection_issues(root,[dict(url=URL+'-other')],{},[]))
             body=dict(http_status=200,request_url='https://api.github.com/repos/'+KEY,
-                checked_at='2026-10-23T08:00:00+00:00',response=dict(id=123,full_name=KEY))
+                checked_at=datetime.now(timezone.utc).isoformat(),response=dict(id=123,full_name=KEY))
             raw=json.dumps(body).encode();(root/'data/proof.json').write_bytes(raw)
             check=dict(url=URL,http_status=200,checked_at=body['checked_at'],evidence_file='data/proof.json',sha256=hashlib.sha256(raw).hexdigest())
             self.assertTrue(verified_recheck(root,rejection,check))

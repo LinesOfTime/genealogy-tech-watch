@@ -6,6 +6,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import argparse
 
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN_PATTERNS = [rb'gh[pousr]_[A-Za-z0-9]{30,}', rb'github_pat_[A-Za-z0-9_]{40,}',
@@ -31,7 +32,15 @@ def git(*args):
 
 
 def main():
-    manifest=json.loads((ROOT/'data/publication-files.json').read_text(encoding='utf-8'))
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--base',help='Trusted immutable commit; compare protected history against it')
+    args=parser.parse_args()
+    if args.base:
+        base=git('rev-parse','--verify',args.base+'^{commit}').decode().strip()
+        manifest=[n for n in git('diff','--cached','--name-only','-z',base).decode().split('\0') if n]
+    else:
+        base=None
+        manifest=json.loads((ROOT/'data/publication-files.json').read_text(encoding='utf-8'))
     expected=set(manifest)
     if len(expected)!=len(manifest):
         raise ValueError('Duplicate manifest entry')
@@ -39,7 +48,7 @@ def main():
         p=PurePosixPath(name)
         if p.is_absolute() or '..' in p.parts or '\\' in name:
             raise ValueError('Unsafe manifest path')
-    staged={n for n in git('diff','--cached','--name-only','-z').decode('utf-8').split('\0') if n}
+    staged={n for n in git('diff','--cached','--name-only','-z',*([base] if base else [])).decode('utf-8').split('\0') if n}
     if staged!=expected:
         print(json.dumps(dict(error='Staged files differ from reviewed manifest',
                               missing=sorted(expected-staged),unexpected=sorted(staged-expected)),indent=2))
@@ -58,6 +67,13 @@ def main():
         snapshot=Path(temporary)
         for name,data in tree.items():
             p=snapshot/name; p.parent.mkdir(parents=True,exist_ok=True); p.write_bytes(data)
+        from history_integrity import git_baseline,history_errors
+        baseline=git_baseline(ROOT,base or 'HEAD')
+        if base and not baseline:
+            print('Cannot load protected history from the trusted base');return 1
+        protected=history_errors(snapshot,baseline)
+        if protected:
+            print(json.dumps(dict(error='Protected history differs',findings=protected),ensure_ascii=False));return 1
         checks=[[sys.executable,'tools/watch_pipeline.py','validate','--json'],
                 [sys.executable,'-m','unittest','discover','-s','tests','-v'],
                 ['node','tests/ui_smoke.cjs']]
@@ -69,7 +85,7 @@ def main():
                 print(result.stdout); print(result.stderr); return result.returncode
             outputs.append(result.stdout)
         validation=json.loads(outputs[0])
-    print(json.dumps(dict(staged_files=len(staged),tree_files=len(tree),
+    print(json.dumps(dict(trusted_base=base or 'HEAD',staged_files=len(staged),tree_files=len(tree),
                           largest_file_bytes=max(map(len,tree.values())),
                           credential_pattern_matches=0,actions=0,binary_files=0,
                           validation_errors=validation['errors'],validation_warnings=validation['warnings'],

@@ -157,6 +157,8 @@ def compare(root, records):
             errors.append('identity conflict: aliases match multiple catalogue cards')
         approved = r.get('review_status') == 'approved'
         if approved:
+            from source_evidence import evidence_errors
+            errors.extend(evidence_errors(root,r))
             if not isinstance(r.get('reviewer'), str) or not r['reviewer'].strip():
                 errors.append('approved record needs reviewer')
             try:

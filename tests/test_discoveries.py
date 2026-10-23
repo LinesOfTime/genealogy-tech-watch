@@ -39,6 +39,15 @@ class DiscoveryTests(unittest.TestCase):
         return discovery.compare(self.root, records if records is not None else [self.record])
 
     def approve(self):
+        import hashlib
+        if isinstance(self.record.get('claims_vs_verified'),str):self.record['claims_vs_verified']=dict(verified='Synthetic fixture only',author_claims=self.record['claims_vs_verified'],independent_testing='Not performed')
+        folder=self.root/'data/evidence';folder.mkdir(parents=True,exist_ok=True)
+        self.record['source_checks']=[]
+        for i,s in enumerate(self.record['source_urls']):
+            stamp='2026-10-22T10:30:00+03:00'
+            raw=json.dumps(dict(url=s['url'],checked_at=stamp,http_status=200,content='Synthetic test fixture, not real research evidence')).encode()
+            name=f'data/evidence/source-{i}.json';(self.root/name).write_bytes(raw)
+            self.record['source_checks'].append(dict(url=s['url'],checked_at=stamp,evidence_file=name,sha256=hashlib.sha256(raw).hexdigest(),verified_scope='Test fixture only'))
         self.record.update(review_status='approved', reviewer='Human reviewer',
                            reviewed_at='2026-10-22T11:00:00+03:00')
         self.record['reviewed_content_hash'] = discovery.content_hash(self.record)

@@ -17,7 +17,7 @@ def event_issues(root, catalog, research, digest):
                for event in card['history'] if isinstance(event,dict) and 'discovery_id' in event]
     extended = [(key,event) for key,card in research.items() if isinstance(card,dict) and isinstance(card.get('watch_events'),list)
                 for event in card['watch_events'] if isinstance(event,dict) and 'discovery_id' in event]
-    if not (items or history or extended):
+    if not (items or history or extended) and not (Path(root)/'data/applied-events.json').exists():
         return issues
     root=Path(root)
     try:
@@ -87,6 +87,8 @@ def event_issues(root, catalog, research, digest):
                 error(loc,'Digest event date differs from history')
         if key in journal:
             record=journal[key]
+            from source_evidence import evidence_errors
+            for message in evidence_errors(root,record):error(loc,message)
             if record.get('review_status')!='approved' or content_hash(record)!=ledger.get(key) or record.get('reviewed_content_hash')!=ledger.get(key):
                 error(loc,'Journal approval/hash differs from applied event')
             if record.get('decision')=='publish' and len(d)!=1:

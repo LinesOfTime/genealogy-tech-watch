@@ -142,6 +142,10 @@ def build_plan(root, records, edition_date):
     files['data/discoveries.jsonl'] = ('\n'.join(json.dumps(r, ensure_ascii=False, separators=(',', ':'))
                                               for r in journal) + '\n').encode('utf-8')
     before = {name: (root / name).read_bytes() if (root / name).exists() else None for name in files}
+    dependencies=['data/editorial-corrections.json','data/repository-rechecks.json']
+    dependencies += [str(p.relative_to(root)).replace('\\','/') for p in (root/'data/evidence').glob('**/*') if p.is_file()]
+    for name in dependencies:
+        if name not in before:before[name]=(root/name).read_bytes() if (root/name).exists() else None
     files = {name: data for name, data in files.items() if data != before[name]}
     # Validate the complete proposed static snapshot, without touching live files.
     from watch_pipeline import validate
@@ -156,11 +160,17 @@ def build_plan(root, records, edition_date):
             if not (staging / name).exists():
                 (staging / name).parent.mkdir(parents=True, exist_ok=True)
                 (staging / name).write_bytes((root / name).read_bytes())
+        for name in dependencies:
+            if (root/name).exists() and not (staging/name).exists():
+                (staging/name).parent.mkdir(parents=True,exist_ok=True)
+                (staging/name).write_bytes((root/name).read_bytes())
         validation = validate(staging)
         if validation['errors']:
             raise ValueError('Proposed snapshot fails validation: ' + str(validation['issues']))
     manifest = {name: [digest_bytes(before[name]) if before[name] is not None else None,
                        digest_bytes(data)] for name, data in sorted(files.items())}
+    for name in dependencies:
+        if name not in manifest:manifest[name]=[digest_bytes(before[name]) if before[name] is not None else None]*2
     plan_hash = digest_bytes(encoded(manifest))
     diff = ''.join(''.join(difflib.unified_diff(
         (before[name] or b'').decode('utf-8').splitlines(True), data.decode('utf-8').splitlines(True),

@@ -1,5 +1,5 @@
 """Offline rejection gate backed by explicit GitHub existence-check evidence."""
-from datetime import datetime
+from datetime import datetime,timezone,timedelta
 import hashlib
 import json
 from pathlib import Path
@@ -29,6 +29,7 @@ def verified_recheck(root,rejection,check):
         checked=datetime.fromisoformat(check['checked_at'].replace('Z','+00:00'))
         rejected=datetime.fromisoformat(rejection['checked_at'].replace('Z','+00:00'))
         if checked<=rejected:return False
+        if checked.tzinfo is None or rejected.tzinfo is None or checked>datetime.now(timezone.utc)+timedelta(minutes=5):return False
         path=(Path(root)/check['evidence_file']).resolve()
         if not path.is_relative_to(Path(root).resolve()):return False
         raw=path.read_bytes()
@@ -45,6 +46,9 @@ def verified_recheck(root,rejection,check):
 def rejection_issues(root,catalog,research,digest):
     issues=[]
     try:
+        from history_integrity import history_errors,git_baseline
+        for message in history_errors(root,git_baseline(root)):
+            issues.append(dict(level='error',code='protected_history',location='data',message=message))
         journal=read_journal(root)
         checks_path=Path(root)/'data/repository-rechecks.json'
         checks=json.loads(checks_path.read_text(encoding='utf-8')) if checks_path.exists() else []
@@ -73,6 +77,6 @@ def rejection_issues(root,catalog,research,digest):
                     issues.append(dict(level='error',code='rejected_repository',location=location,
                         message='Previously rejected repository requires a newer successful GitHub API existence check'))
         inspect(catalog,'catalog');inspect(research,'research');inspect(digest,'digest')
-    except (OSError,ValueError,TypeError,KeyError) as exc:
+    except (OSError,ValueError,TypeError,KeyError,AttributeError) as exc:
         issues.append(dict(level='error',code='rejection_registry',location='data/editorial-corrections.json',message=str(exc)))
     return issues
