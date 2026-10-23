@@ -1,5 +1,156 @@
 [
   {
+    "date": "2026-10-23",
+    "title": "Значимые изменения проектов",
+    "summary": "Утверждённые события; источники и дельты указаны в записях.",
+    "items": [
+      {
+        "repo": "geiserx/gramps-web-toolkit",
+        "priority": "Не оценён",
+        "change": "Gramps Web Toolkit: CLI-инструменты для работы исследовательских AI-агентов с деревом Gramps Web. README описывает dry-run перед записью, чтение перед изменением, отдельную проверку дерева, общий журнал поисков и ограничения частоты запросов.",
+        "link": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md",
+        "components": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+        "action": "Изучить архитектуру проверяемых изменений; пробовать на копии дерева с резервной копией.",
+        "event_date": "2026-10-23",
+        "significance_reason": "Редакционная оценка: полезный образец управления изменениями генеалогического дерева и учёта отрицательных поисков; результативность AI-исследований не доказана этой проверкой.",
+        "review_status": "approved",
+        "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+        "reviewed_at": "2026-10-23T09:44:05.349Z",
+        "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-10-23",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/docs/pipeline.md"
+          },
+          {
+            "type": "README",
+            "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/main/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit"
+          }
+        ],
+        "research_link": "project.html?repo=geiserx%2Fgramps-web-toolkit",
+        "previous_state": "Проект отсутствует в действующем каталоге и дайджесте; репозиторий создан 20 октября 2026 года. Это новая запись каталога, а не заявление о релизе.",
+        "new_state": "Проверены README и схема конвейера на ревизии 337064d5d7f1191ba2f3b28bb3536e0391f65d28: исследователь, проверяющий, судья, составитель изменений и исполнитель разделены; описаны резервные копии и проверка после записи."
+      },
+      {
+        "repo": "kinprove/genealogy-research-recipes",
+        "priority": "Не оценён",
+        "change": "Genealogy Research Recipes добавлен в каталог: в релизе 1.6.0 авторы заявили 72 новых и 39 уточнённых процедур, всего 116 файлов, включая Российскую империю и СССР. Версия 1.6.1 меняет две формулировки без изменения процедур.",
+        "link": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0",
+        "components": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+        "action": "Рассмотреть как источник процедур и чек-листов; проверять конкретный рецепт по его источникам и учитывать условия FSL.",
+        "event_date": "2026-10-22",
+        "significance_reason": "Редакционная оценка: материал для проектирования исследовательских чек-листов и разграничения источника, гипотезы и доказательства; адаптер инструкций не является самостоятельным исследователем.",
+        "review_status": "approved",
+        "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+        "reviewed_at": "2026-10-23T09:44:05.352Z",
+        "discovery_id": "github:kinprove/genealogy-research-recipes:watch-2026-10-23",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0"
+          },
+          {
+            "type": "release",
+            "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.1"
+          },
+          {
+            "type": "README",
+            "url": "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes"
+          }
+        ],
+        "research_link": "project.html?repo=kinprove%2Fgenealogy-research-recipes",
+        "previous_state": "Проект отсутствует в действующем каталоге. Репозиторий существует с июля 2026 года: это новая находка для каталога, а не новая разработка октября.",
+        "new_state": "Проверены опубликованные релизы 1.6.0 и 1.6.1 от 22 октября, README и лицензия версии 1.6.1. README перечисляет процедуры для метрических книг, ревизских сказок, сословий и советских источников; качество самих процедур полностью не оценивалось."
+      },
+      {
+        "repo": "genealogy-mcp",
+        "priority": "P1",
+        "change": "genealogy-mcp v0.7.0: релиз описывает поиск OCR в Gallica и по страницам книг, read-only project_evidence с привязкой ссылок к событиям и исправления ложных подтверждений check_match. Доступность Gallica вживую не подтверждена: в release notes указаны HTTP 403.",
+        "link": "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0",
+        "components": "API/MCP/agent layer · Archive Adapter · Person Resolver · provenance/evidence",
+        "action": "Проверить project_evidence на учебном проекте; отдельно проверить живой доступ к Gallica и контрольные случаи однофамильцев.",
+        "event_date": "2026-10-21",
+        "significance_reason": "Редакционная оценка: полезны привязка доказательств к отдельным событиям и различение заблокированного источника и отрицательного поиска; наличие ссылки не делает факт подтверждённым.",
+        "review_status": "approved",
+        "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+        "reviewed_at": "2026-10-23T09:44:05.353Z",
+        "discovery_id": "github:igormel81/genealogy-mcp:watch-2026-10-23",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0"
+          },
+          {
+            "type": "README",
+            "url": "https://github.com/igormel81/genealogy-mcp/blob/7f4e96b4f9ad1ab7b4c81819b59612e936c571c0/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/igormel81/genealogy-mcp"
+          }
+        ],
+        "research_link": "project.html?repo=genealogy-mcp",
+        "previous_state": "genealogy-mcp уже есть в каталоге; событие релиза 0.7.0 и его конкретная дельта отсутствуют в истории и дайджесте.",
+        "new_state": "Проверен опубликованный релиз v0.7.0 от 21 октября 2026 года и MIT LICENSE на его ревизии 7f4e96b4f9ad1ab7b4c81819b59612e936c571c0. Заявленные возможности и исправления внесены как содержание release notes с явной границей проверки."
+      },
+      {
+        "repo": "Rask",
+        "priority": "P2",
+        "change": "Rask: после ADR 0173 появились изменения кода — UUID в объектах OpenFGA, записи восстановления по UUID и проверка допустимых имён. Коммиты 22–23 октября отделяют идентичность объекта от переименования; развёртывание и миграция не проверялись.",
+        "link": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156",
+        "components": "Research Workspace · provenance/evidence · API/MCP/agent layer",
+        "action": "Изучить реализацию стабильных идентификаторов; перед интеграцией проверить миграцию прав, lineage, viewer/annotator и восстановление одноимённых объектов.",
+        "event_date": "2026-10-23",
+        "significance_reason": "Редакционная оценка: это существенная дельта для долговременных прав доступа, lineage и восстановления архивных таблиц; оценка основана на выбранном коде, без проверки работающей системы.",
+        "review_status": "approved",
+        "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+        "reviewed_at": "2026-10-23T09:44:05.354Z",
+        "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156"
+          },
+          {
+            "type": "commit",
+            "url": "https://github.com/AI-Riksarkivet/rask/commit/1ce098a42fe93656f841130b2b093fa4d9e8c6aa"
+          },
+          {
+            "type": "commit",
+            "url": "https://github.com/AI-Riksarkivet/rask/commit/d2f3f88e3b8166075801465bc4893e0433b6bf43"
+          },
+          {
+            "type": "README",
+            "url": "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/AI-Riksarkivet/rask"
+          }
+        ],
+        "research_link": "project.html?repo=Rask",
+        "previous_state": "В дайджесте 21 октября уже учтён ADR 0173 (04766b18). Архитектурное решение само по себе не подтверждало реализацию последующих изменений.",
+        "new_state": "Статически прочитаны выбранные диффы a2af14d9 (table:<uuid>/namespace:<uuid>), 1ce098a4 (trash по UUID и выбор при неоднозначном undrop) и d2f3f88e (проверки имён, NFC, фиксированный разделитель). Снимки сохраняют метаданные и полные патчи указанных файлов, а не весь репозиторий."
+      }
+    ]
+  },
+  {
     "date": "2026-10-22",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",

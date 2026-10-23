@@ -71,6 +71,61 @@ class ApplyTests(unittest.TestCase):
     def plan(self, records=None):
         return build_plan(self.root, [self.record] if records is None else records, '2026-10-22')
 
+    def test_initial_profile_is_reviewed_and_preserves_defaults(self):
+        self.record.update(repo_full_name='b/new', canonical_url='https://github.com/b/new')
+        profile=dict(description='Purpose from README, not independently tested',
+                     use_case='Editorial scenario', limitations='Untested; author claims only',
+                     project_type='CLI tools')
+        self.record['catalog_profile']=profile
+        self.approve()
+        plan=self.plan()
+        write_plan(self.root,plan,plan['plan_hash'])
+        catalog=json.loads((self.root/'catalog.json').read_text(encoding='utf-8'))
+        card=catalog[-1]
+        self.assertEqual({k:card[k] for k in profile},profile)
+        self.assertEqual(card['catalog_profile_provenance']['previous_values']['use_case'],'Не оценено')
+        self.assertIsNone(card['catalog_profile_provenance']['previous_values']['project_type'])
+        from watch_pipeline import validate
+        self.assertEqual(validate(self.root)['errors'],0)
+        catalog[-1]['description']='Unsupported replacement'
+        from apply_changes import sync_payloads
+        for name,raw in sync_payloads(self.root,catalog,None).items():
+            (self.root/name).write_bytes(raw)
+        self.assertTrue(any('profile differs' in x['message'] for x in validate(self.root)['issues']))
+
+    def test_profile_cannot_overwrite_existing_research_or_add_arbitrary_fields(self):
+        self.record['catalog_profile']=dict(description='D',use_case='U',limitations='L',project_type='T')
+        self.approve()
+        with self.assertRaisesRegex(ValueError,'new project only'):self.plan()
+        self.record.update(repo_full_name='b/new',canonical_url='https://github.com/b/new')
+        self.record['catalog_profile']['priority']='P1'
+        self.approve()
+        with self.assertRaisesRegex(ValueError,'catalog_profile requires'):self.plan()
+
+    def test_first_research_event_preserves_unrated_assessment(self):
+        from russia_applicability import derive
+        catalog=[dict(self.card,russia_applicability=derive('a/repo',None))]
+        self.write('catalog.json',catalog)
+        self.write('docs/catalog.json',catalog)
+        self.write('docs/research.json',{})
+        for name,raw in sync_payloads(self.root,catalog,None).items():
+            (self.root/name).write_bytes(raw)
+        plan=self.plan()
+        write_plan(self.root,plan,plan['plan_hash'])
+        result=json.loads((self.root/'catalog.json').read_text(encoding='utf-8'))[0]
+        self.assertEqual(result['russia_applicability']['rating'],'Не оценено')
+        self.assertEqual(result['russia_applicability_history'][0]['previous_value'],catalog[0]['russia_applicability'])
+        self.assertIsNone(result['russia_applicability']['source'])
+        from watch_pipeline import validate
+        self.assertEqual(validate(self.root)['errors'],0)
+
+    def test_profile_change_invalidates_approval(self):
+        self.record.update(repo_full_name='b/new',canonical_url='https://github.com/b/new')
+        self.record['catalog_profile']=dict(description='D',use_case='U',limitations='L',project_type='T')
+        self.approve()
+        self.record['catalog_profile']['description']='Changed after review'
+        with self.assertRaises(ValueError):self.plan()
+
     def test_apply_preserves_fields_and_is_idempotent(self):
         before = self.snapshot()
         plan = self.plan()

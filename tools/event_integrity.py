@@ -95,6 +95,17 @@ def event_issues(root, catalog, research, digest):
                 error(loc,'Published journal event is absent from digest')
             if record.get('decision')=='research_only' and d:
                 error(loc,'Research-only event must not be in digest')
+            profile=record.get('catalog_profile')
+            if profile is not None:
+                if not isinstance(profile,dict) or any(card.get(field)!=value for field,value in profile.items()):
+                    error(loc,'Initial catalogue profile differs from reviewed journal')
+                provenance=card.get('catalog_profile_provenance',{})
+                if (not isinstance(provenance,dict) or provenance.get('discovery_id')!=key or
+                        provenance.get('reviewed_content_hash')!=ledger.get(key) or
+                        provenance.get('source_urls')!=record.get('source_urls') or
+                        provenance.get('previous_values')!=dict(description=record.get('change_summary'),
+                            use_case='Не оценено',limitations='Не оценено',project_type=None)):
+                    error(loc,'Initial catalogue profile provenance differs from reviewed journal')
             expected=dict(change=record.get('change_summary'),date=record.get('event_date'),
                           previous_state=record.get('previous_state'),new_state=record.get('new_state'),
                           significance_reason=record.get('significance_reason'),source_urls=record.get('source_urls'),

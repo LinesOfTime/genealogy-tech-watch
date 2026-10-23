@@ -63,7 +63,7 @@ class CleanupTests(unittest.TestCase):
     def test_actual_active_content_and_preservation(self):
         c=json.loads((ROOT/'catalog.json').read_text(encoding='utf-8'))
         r=json.loads((ROOT/'docs/research.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(c),163);self.assertEqual(len(r),141)
+        self.assertGreaterEqual(len(c),163);self.assertGreaterEqual(len(r),141)
         self.assertNotIn(KEY,r);self.assertFalse(any(x['name'].lower()==KEY for x in c))
         for record in c:
             for field in ('description','use_case','limitations'):self.assertFalse(split_service(record.get(field))[1])

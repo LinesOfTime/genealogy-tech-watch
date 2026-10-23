@@ -1,0 +1,27 @@
+{
+  "base": "b62cb9f",
+  "existing_catalog_preserved": 163,
+  "existing_research_preserved": 141,
+  "previous_digest_preserved": true,
+  "new_catalog": 2,
+  "new_research": 4,
+  "changed_existing_fields": [
+    [
+      "Rask",
+      "history"
+    ],
+    [
+      "Rask",
+      "russia_applicability"
+    ],
+    [
+      "genealogy-mcp",
+      "history"
+    ],
+    [
+      "genealogy-mcp",
+      "russia_applicability"
+    ]
+  ],
+  "protected_history_errors": 0
+}

@@ -87,6 +87,11 @@ def compare(root, records):
                       'decision_reason', 'maturity', 'license'):
             if not isinstance(r.get(field), str) or not r[field].strip():
                 errors.append('missing text: ' + field)
+        profile = r.get('catalog_profile')
+        if profile is not None and (not isinstance(profile, dict) or
+                set(profile) != {'description', 'use_case', 'limitations', 'project_type'} or
+                any(not isinstance(v, str) or not v.strip() for v in profile.values())):
+            errors.append('catalog_profile requires separate nonempty description, use_case, limitations and project_type')
         for field in ('license_evidence', 'claims_vs_verified', 'risks'):
             if field not in r:
                 errors.append('missing field: ' + field)
@@ -134,6 +139,8 @@ def compare(root, records):
         duplicate |= any(identities & keys and (delta == old_delta or bool(links & old_links))
                          for keys, old_delta, old_links in prior)
         prior.append((identities, delta, links))
+        if profile is not None and (matches or research_matches or history):
+            errors.append('catalog_profile may initialize a new project only; existing research must be preserved')
         event_type = r.get('event_type')
         material = isinstance(event_type, str) and event_type in MATERIAL_EVENTS and bool(r.get('significance_reason'))
         if not isinstance(event_type, str) or not event_type.strip():

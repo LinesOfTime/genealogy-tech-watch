@@ -79,10 +79,18 @@ def build_plan(root, records, edition_date):
                         description=r['change_summary'], use_case='Не оценено', limitations='Не оценено',
                         license=r['license'], license_status='См. источники события; независимая проверка не заявлена',
                         priority='Не оценён', priority_original='Не оценён',
-                        verification='Ручная проверка события; см. историю', verified_at=r['event_date'],
+                        verification='Редакционная проверка источников события; см. историю', verified_at=r['event_date'],
                         test_status='Не тестировалось', source=r['source_urls'][0]['url'],
                         status='Дополнение из GitHub Watch', history=[], origin='GitHub Watch',
                         components=r['components'])
+            profile = r.get('catalog_profile')
+            if profile is not None:
+                card['catalog_profile_provenance'] = dict(
+                    previous_values={field: card.get(field) for field in profile},
+                    source_urls=copy.deepcopy(r['source_urls']),
+                    discovery_id=r['discovery_id'], reviewed_content_hash=r['reviewed_content_hash'],
+                    basis='Редакционное описание по первоисточникам; не независимое испытание')
+                card.update(copy.deepcopy(profile))
             catalog.append(card)
         target = card['url']
         if target in touched:
@@ -101,7 +109,18 @@ def build_plan(root, records, edition_date):
                      review_status='approved', reviewer=r['reviewer'], reviewed_at=r['reviewed_at'],
                      reviewed_content_hash=r['reviewed_content_hash'])
         card.setdefault('history', []).append(copy.deepcopy(event))
+        research_created = key not in research
         research.setdefault(key, {}).setdefault('watch_events', []).append(copy.deepcopy(event))
+        if research_created:
+            from russia_applicability import derive
+            assessment=derive(key,research[key])
+            previous=card.get('russia_applicability')
+            if previous is not None and previous!=assessment:
+                card.setdefault('russia_applicability_history',[]).append(dict(
+                    previous_value=copy.deepcopy(previous), discovery_id=r['discovery_id'],
+                    reason='Создана расширенная карточка события; оценка применимости не добавлялась'))
+            card['russia_applicability']=copy.deepcopy(assessment)
+            research[key]['russia_applicability']=copy.deepcopy(assessment)
         item = dict(repo=card['name'], priority=card['priority'], change=r['change_summary'],
                           link=r['source_urls'][0]['url'], components=' · '.join(r['components']),
                           action=r['decision_reason'], event_date=r['event_date'],

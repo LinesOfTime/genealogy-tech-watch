@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "e775a60a9299bade1acc25293e99e1ad104b34b25327f3bd307691f3cb44c7aa",
+  "source_hash": "3d07ec7d865982c99cd27d46564900e496b1e91fffea7bc17cb0279b4bc4d3dc",
   "tasks": [
     {
       "id": "transcribe",
@@ -3974,6 +3974,89 @@
         }
       ],
       "limitations": "Требует независимой проверки по GitHub",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "geiserx/gramps-web-toolkit",
+      "url": "https://github.com/GeiserX/gramps-web-toolkit",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "geiserx/gramps-web-toolkit",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Инструменты не запускались. Около 30 циклов и два дерева по 10 000 человек — опыт, заявленный автором. spanish-poller ориентирован на Испанию; российские архивы и надёжность записи требуют отдельной пробы.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "geiserx/gramps-web-toolkit",
+      "url": "https://github.com/GeiserX/gramps-web-toolkit",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "geiserx/gramps-web-toolkit",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Инструменты не запускались. Около 30 циклов и два дерева по 10 000 человек — опыт, заявленный автором. spanish-poller ориентирован на Испанию; российские архивы и надёжность записи требуют отдельной пробы.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "kinprove/genealogy-research-recipes",
+      "url": "https://github.com/Kinprove/genealogy-research-recipes",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kinprove/genealogy-research-recipes",
+          "field": "description",
+          "excerpt": "Набор генеалогических исследовательских процедур, упакованный как Agent Skill и плагины с инструкциями для AI-помощников; README охватывает поиск записей, проверку доказательств и работу с ДНК.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "kinprove/genealogy-research-recipes",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Все рецепты и их первоисточники не проверены. Количество файлов и масштаб обновления приведены со слов авторов релиза. Установка и реальное исследование не тестировались. FSL-1.1-MIT ограничивает конкурирующее коммерческое использование.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "kinprove/genealogy-research-recipes",
+      "url": "https://github.com/Kinprove/genealogy-research-recipes",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kinprove/genealogy-research-recipes",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Все рецепты и их первоисточники не проверены. Количество файлов и масштаб обновления приведены со слов авторов релиза. Установка и реальное исследование не тестировались. FSL-1.1-MIT ограничивает конкурирующее коммерческое использование.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."

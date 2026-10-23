@@ -1,0 +1,10 @@
+{
+  "events": [
+    "github:geiserx/gramps-web-toolkit:watch-2026-10-23",
+    "github:kinprove/genealogy-research-recipes:watch-2026-10-23",
+    "github:igormel81/genealogy-mcp:watch-2026-10-23",
+    "github:ai-riksarkivet/rask:watch-2026-10-23"
+  ],
+  "skipped": [],
+  "plan_hash": "7cae018ebc5e32c8e59666a410ec8f2bc02fa05817ecc117d2856c916313f5c6"
+}
