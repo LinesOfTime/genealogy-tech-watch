@@ -1,0 +1,1472 @@
+{
+  "method": "Public GitHub HTTP existence audit; 404 means not publicly found, not proof of deletion. 403/429/network errors remain inconclusive.",
+  "records": [
+    {
+      "url": "https://github.com/23andme/bonsaitree",
+      "request_url": "https://github.com/23andme/bonsaitree",
+      "final_url": "https://github.com/23andme/bonsaitree",
+      "checked_at": "2026-10-23T07:32:16.237378+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/abbyy/jfk-ocr",
+      "request_url": "https://github.com/abbyy/jfk-ocr",
+      "final_url": "https://github.com/abbyy/jfk-ocr",
+      "checked_at": "2026-10-23T07:32:16.237378+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/abdash/roots-familytreevisualizer",
+      "request_url": "https://github.com/abdash/roots-familytreevisualizer",
+      "final_url": "https://github.com/abdash/roots-familytreevisualizer",
+      "checked_at": "2026-10-23T07:32:16.237378+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/absaltfox/bartelby",
+      "request_url": "https://github.com/absaltfox/bartelby",
+      "final_url": "https://github.com/absaltfox/bartelby",
+      "checked_at": "2026-10-23T07:32:16.237378+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/adamsilverstein/open-ancestry",
+      "request_url": "https://github.com/adamsilverstein/open-ancestry",
+      "final_url": "https://github.com/adamsilverstein/open-ancestry",
+      "checked_at": "2026-10-23T07:32:16.238386+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/adzirid/stemma",
+      "request_url": "https://github.com/adzirid/stemma",
+      "final_url": "https://github.com/adzirid/stemma",
+      "checked_at": "2026-10-23T07:32:16.238386+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/aehrc/tribes",
+      "request_url": "https://github.com/aehrc/tribes",
+      "final_url": "https://github.com/aehrc/tribes",
+      "checked_at": "2026-10-23T07:32:17.105846+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ai-collaboratory/scribe",
+      "request_url": "https://github.com/ai-collaboratory/scribe",
+      "final_url": "https://github.com/ai-collaboratory/scribe",
+      "checked_at": "2026-10-23T07:32:17.133441+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ai-historian/chronos",
+      "request_url": "https://github.com/ai-historian/chronos",
+      "final_url": "https://github.com/ai-historian/chronos",
+      "checked_at": "2026-10-23T07:32:17.236373+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ai-historian/chronos-benchmarks",
+      "request_url": "https://github.com/ai-historian/chronos-benchmarks",
+      "final_url": "https://github.com/ai-historian/chronos-benchmarks",
+      "checked_at": "2026-10-23T07:32:17.248254+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ai-riksarkivet/htrflow",
+      "request_url": "https://github.com/ai-riksarkivet/htrflow",
+      "final_url": "https://github.com/ai-riksarkivet/htrflow",
+      "checked_at": "2026-10-23T07:32:17.296485+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ai-riksarkivet/htrflow-batch",
+      "request_url": "https://github.com/ai-riksarkivet/htrflow-batch",
+      "final_url": "https://github.com/ai-riksarkivet/htrflow-batch",
+      "checked_at": "2026-10-23T07:32:17.427432+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ai-riksarkivet/htrflow_app",
+      "request_url": "https://github.com/ai-riksarkivet/htrflow_app",
+      "final_url": "https://github.com/ai-riksarkivet/htrflow_app",
+      "checked_at": "2026-10-23T07:32:17.842122+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ai-riksarkivet/rask",
+      "request_url": "https://github.com/ai-riksarkivet/rask",
+      "final_url": "https://github.com/ai-riksarkivet/rask",
+      "checked_at": "2026-10-23T07:32:17.963650+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ajaskey/genealogy",
+      "request_url": "https://github.com/ajaskey/genealogy",
+      "final_url": "https://github.com/ajaskey/genealogy",
+      "checked_at": "2026-10-23T07:32:18.004184+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/alebeda/genechart",
+      "request_url": "https://github.com/alebeda/genechart",
+      "final_url": "https://github.com/alebeda/genechart",
+      "checked_at": "2026-10-23T07:32:18.109350+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/allan-valin/ocr-gene-docs",
+      "request_url": "https://github.com/allan-valin/ocr-gene-docs",
+      "final_url": "https://github.com/allan-valin/ocr-gene-docs",
+      "checked_at": "2026-10-23T07:32:18.360271+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/allmaps/allmaps",
+      "request_url": "https://github.com/allmaps/allmaps",
+      "final_url": "https://github.com/allmaps/allmaps",
+      "checked_at": "2026-10-23T07:32:18.428695+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/archival-iiif/viewer",
+      "request_url": "https://github.com/archival-iiif/viewer",
+      "final_url": "https://github.com/archival-iiif/viewer",
+      "checked_at": "2026-10-23T07:32:18.504348+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/benwbrum/fromthepage",
+      "request_url": "https://github.com/benwbrum/fromthepage",
+      "final_url": "https://github.com/benwbrum/fromthepage",
+      "checked_at": "2026-10-23T07:32:18.851994+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/bhaskargautam/record-linkage",
+      "request_url": "https://github.com/bhaskargautam/record-linkage",
+      "final_url": "https://github.com/bhaskargautam/record-linkage",
+      "checked_at": "2026-10-23T07:32:19.034351+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/briancase1776/scan2gedcom",
+      "request_url": "https://github.com/briancase1776/scan2gedcom",
+      "final_url": "https://github.com/briancase1776/scan2gedcom",
+      "checked_at": "2026-10-23T07:32:19.049354+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/browning-lab/hap-ibd",
+      "request_url": "https://github.com/browning-lab/hap-ibd",
+      "final_url": "https://github.com/browning-lab/hap-ibd",
+      "checked_at": "2026-10-23T07:32:19.151130+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/bruceyyu/ml-chinese-record-linkage",
+      "request_url": "https://github.com/bruceyyu/ml-chinese-record-linkage",
+      "final_url": "https://github.com/bruceyyu/ml-chinese-record-linkage",
+      "checked_at": "2026-10-23T07:32:19.225974+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/cabout-me/gramps-mcp",
+      "request_url": "https://github.com/cabout-me/gramps-mcp",
+      "final_url": "https://github.com/cabout-me/gramps-mcp",
+      "checked_at": "2026-10-23T07:32:19.234974+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/cacack/my-family",
+      "request_url": "https://github.com/cacack/my-family",
+      "final_url": "https://github.com/cacack/my-family",
+      "checked_at": "2026-10-23T07:32:19.687496+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/cartwrightdj/gedcomtools",
+      "request_url": "https://github.com/cartwrightdj/gedcomtools",
+      "final_url": "https://github.com/cartwrightdj/gedcomtools",
+      "checked_at": "2026-10-23T07:32:19.698012+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/cboulanger/tei-annotator",
+      "request_url": "https://github.com/cboulanger/tei-annotator",
+      "final_url": "https://github.com/cboulanger/tei-annotator",
+      "checked_at": "2026-10-23T07:32:19.746560+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/clariah/burgerlinker",
+      "request_url": "https://github.com/clariah/burgerlinker",
+      "final_url": "https://github.com/clariah/burgerlinker",
+      "checked_at": "2026-10-23T07:32:19.772384+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/claudiomartino/iiif-downloader",
+      "request_url": "https://github.com/claudiomartino/iiif-downloader",
+      "final_url": "https://github.com/claudiomartino/iiif-downloader",
+      "checked_at": "2026-10-23T07:32:20.024428+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/dedupeio/dedupe",
+      "request_url": "https://github.com/dedupeio/dedupe",
+      "final_url": "https://github.com/dedupeio/dedupe",
+      "checked_at": "2026-10-23T07:32:20.314256+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/digirati-co-uk/madoc-platform",
+      "request_url": "https://github.com/digirati-co-uk/madoc-platform",
+      "final_url": "https://github.com/digirati-co-uk/madoc-platform",
+      "checked_at": "2026-10-23T07:32:20.429399+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/digitalarchivst/open-genealogy",
+      "request_url": "https://github.com/digitalarchivst/open-genealogy",
+      "final_url": "https://github.com/digitalarchivst/open-genealogy",
+      "checked_at": "2026-10-23T07:32:20.431757+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/districtdatalabs/entity-resolution",
+      "request_url": "https://github.com/districtdatalabs/entity-resolution",
+      "final_url": "https://github.com/districtdatalabs/entity-resolution",
+      "checked_at": "2026-10-23T07:32:20.586707+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/dmarkey/irish-census-mcp",
+      "request_url": "https://github.com/dmarkey/irish-census-mcp",
+      "final_url": "https://github.com/dmarkey/irish-census-mcp",
+      "checked_at": "2026-10-23T07:32:20.587708+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/dsblank/gramps-connect",
+      "request_url": "https://github.com/dsblank/gramps-connect",
+      "final_url": "https://github.com/dsblank/gramps-connect",
+      "checked_at": "2026-10-23T07:32:20.819051+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/dsblank/gramps-ez-mcp",
+      "request_url": "https://github.com/dsblank/gramps-ez-mcp",
+      "final_url": "https://github.com/dsblank/gramps-ez-mcp",
+      "checked_at": "2026-10-23T07:32:21.352548+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/dthaler/gedcom-citations",
+      "request_url": "https://github.com/dthaler/gedcom-citations",
+      "final_url": "https://github.com/dthaler/gedcom-citations",
+      "checked_at": "2026-10-23T07:32:21.356408+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ecoto/iiif_downloader",
+      "request_url": "https://github.com/ecoto/iiif_downloader",
+      "final_url": "https://github.com/ecoto/iiif_downloader",
+      "checked_at": "2026-10-23T07:32:21.495697+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/erichare/kinresolve",
+      "request_url": "https://github.com/erichare/kinresolve",
+      "final_url": "https://github.com/erichare/kinresolve",
+      "checked_at": "2026-10-23T07:32:21.559337+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/evelynkimm/ari",
+      "request_url": "https://github.com/evelynkimm/ari",
+      "final_url": "https://github.com/evelynkimm/ari",
+      "checked_at": "2026-10-23T07:32:21.602036+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/familysearch/gedcom",
+      "request_url": "https://github.com/familysearch/gedcom",
+      "final_url": "https://github.com/familysearch/gedcom",
+      "checked_at": "2026-10-23T07:32:21.762992+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/familysearch/gedcom-registries",
+      "request_url": "https://github.com/familysearch/gedcom-registries",
+      "final_url": "https://github.com/familysearch/gedcom-registries",
+      "checked_at": "2026-10-23T07:32:22.124847+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/familysearch/gedcomx",
+      "request_url": "https://github.com/familysearch/gedcomx",
+      "final_url": "https://github.com/familysearch/gedcomx",
+      "checked_at": "2026-10-23T07:32:22.208997+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/fisharebest/webtrees",
+      "request_url": "https://github.com/fisharebest/webtrees",
+      "final_url": "https://github.com/fisharebest/webtrees",
+      "checked_at": "2026-10-23T07:32:22.289033+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/fmadore/zmo-ai-pipelines",
+      "request_url": "https://github.com/fmadore/zmo-ai-pipelines",
+      "final_url": "https://github.com/fmadore/zmo-ai-pipelines",
+      "checked_at": "2026-10-23T07:32:22.515981+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/freeukgen/myopicvicar",
+      "request_url": "https://github.com/freeukgen/myopicvicar",
+      "final_url": "https://github.com/freeukgen/myopicvicar",
+      "checked_at": "2026-10-23T07:32:22.611501+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/genea-app/genea-app",
+      "request_url": "https://github.com/genea-app/genea-app",
+      "final_url": "https://github.com/genea-app/genea-app",
+      "checked_at": "2026-10-23T07:32:22.676715+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/genealogix/glx",
+      "request_url": "https://github.com/genealogix/glx",
+      "final_url": "https://github.com/genealogix/glx",
+      "checked_at": "2026-10-23T07:32:22.870109+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/geneweb/geneweb",
+      "request_url": "https://github.com/geneweb/geneweb",
+      "final_url": "https://github.com/geneweb/geneweb",
+      "checked_at": "2026-10-23T07:32:22.902014+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/geospatialcentroid/historic_map_explorer",
+      "request_url": "https://github.com/geospatialcentroid/historic_map_explorer",
+      "final_url": "https://github.com/geospatialcentroid/historic_map_explorer",
+      "checked_at": "2026-10-23T07:32:22.940618+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/glamberson/gedcom-evidence",
+      "request_url": "https://github.com/glamberson/gedcom-evidence",
+      "final_url": "https://github.com/glamberson/gedcom-evidence",
+      "checked_at": "2026-10-23T07:32:23.253606+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/glamberson/gedcom-occurrences",
+      "request_url": "https://github.com/glamberson/gedcom-occurrences",
+      "final_url": "https://github.com/glamberson/gedcom-occurrences",
+      "checked_at": "2026-10-23T07:32:23.439628+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/glamberson/gedcom-tags",
+      "request_url": "https://github.com/glamberson/gedcom-tags",
+      "final_url": "https://github.com/glamberson/gedcom-tags",
+      "checked_at": "2026-10-23T07:32:23.486117+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/glasgowm148/genealogy-research-workbench",
+      "request_url": "https://github.com/glasgowm148/genealogy-research-workbench",
+      "final_url": "https://github.com/glasgowm148/genealogy-research-workbench",
+      "checked_at": "2026-10-23T07:32:23.531768+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/google/family-tree",
+      "request_url": "https://github.com/google/family-tree",
+      "final_url": "https://github.com/google/family-tree",
+      "checked_at": "2026-10-23T07:32:23.545650+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/gramps-project/addons",
+      "request_url": "https://github.com/gramps-project/addons",
+      "final_url": "https://github.com/gramps-project/addons",
+      "checked_at": "2026-10-23T07:32:23.900033+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/gramps-project/addons-source",
+      "request_url": "https://github.com/gramps-project/addons-source",
+      "final_url": "https://github.com/gramps-project/addons-source",
+      "checked_at": "2026-10-23T07:32:24.114230+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/gramps-project/gramps",
+      "request_url": "https://github.com/gramps-project/gramps",
+      "final_url": "https://github.com/gramps-project/gramps",
+      "checked_at": "2026-10-23T07:32:24.285102+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/gramps-project/gramps-web",
+      "request_url": "https://github.com/gramps-project/gramps-web",
+      "final_url": "https://github.com/gramps-project/gramps-web",
+      "checked_at": "2026-10-23T07:32:24.320285+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/gramps-project/gramps-web-api",
+      "request_url": "https://github.com/gramps-project/gramps-web-api",
+      "final_url": "https://github.com/gramps-project/gramps-web-api",
+      "checked_at": "2026-10-23T07:32:24.395669+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/gramps-project/gramps-web-docs",
+      "request_url": "https://github.com/gramps-project/gramps-web-docs",
+      "final_url": "https://github.com/gramps-project/gramps-web-docs",
+      "checked_at": "2026-10-23T07:32:24.528142+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/gsmitheidw/genealogytools",
+      "request_url": "https://github.com/gsmitheidw/genealogytools",
+      "final_url": "https://github.com/gsmitheidw/genealogytools",
+      "checked_at": "2026-10-23T07:32:24.583953+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/gusevlab/germline",
+      "request_url": "https://github.com/gusevlab/germline",
+      "final_url": "https://github.com/gusevlab/germline",
+      "checked_at": "2026-10-23T07:32:24.872633+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/hdlabconicet/recogito-tei",
+      "request_url": "https://github.com/hdlabconicet/recogito-tei",
+      "final_url": "https://github.com/hdlabconicet/recogito-tei",
+      "checked_at": "2026-10-23T07:32:24.878171+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/htrmopo/htrmopo",
+      "request_url": "https://github.com/htrmopo/htrmopo",
+      "final_url": "https://github.com/htrmopo/htrmopo",
+      "checked_at": "2026-10-23T07:32:24.985877+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ianderso/gov-gazetteer-mcp",
+      "request_url": "https://github.com/ianderso/gov-gazetteer-mcp",
+      "final_url": "https://github.com/ianderso/gov-gazetteer-mcp",
+      "checked_at": "2026-10-23T07:32:25.095299+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ianderso/gramps-evidence-mcp",
+      "request_url": "https://github.com/ianderso/gramps-evidence-mcp",
+      "final_url": "https://github.com/ianderso/gramps-evidence-mcp",
+      "checked_at": "2026-10-23T07:32:25.100890+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/igormel81/genealogy-mcp",
+      "request_url": "https://github.com/igormel81/genealogy-mcp",
+      "final_url": "https://github.com/igormel81/genealogy-mcp",
+      "checked_at": "2026-10-23T07:32:25.392335+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/iiif/api",
+      "request_url": "https://github.com/iiif/api",
+      "final_url": "https://github.com/iiif/api",
+      "checked_at": "2026-10-23T07:32:25.599837+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/iiif/awesome-iiif",
+      "request_url": "https://github.com/iiif/awesome-iiif",
+      "final_url": "https://github.com/iiif/awesome-iiif",
+      "checked_at": "2026-10-23T07:32:25.624795+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/iiif/website",
+      "request_url": "https://github.com/iiif/website",
+      "final_url": "https://github.com/iiif/website",
+      "checked_at": "2026-10-23T07:32:25.709757+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ipums/hlink",
+      "request_url": "https://github.com/ipums/hlink",
+      "final_url": "https://github.com/ipums/hlink",
+      "checked_at": "2026-10-23T07:32:25.734902+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/j535d165/data-matching-software",
+      "request_url": "https://github.com/j535d165/data-matching-software",
+      "final_url": "https://github.com/j535d165/data-matching-software",
+      "checked_at": "2026-10-23T07:32:25.933831+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/j535d165/recordlinkage",
+      "request_url": "https://github.com/j535d165/recordlinkage",
+      "final_url": "https://github.com/j535d165/recordlinkage",
+      "checked_at": "2026-10-23T07:32:25.975779+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/j535d165/recordlinkage-annotator",
+      "request_url": "https://github.com/j535d165/recordlinkage-annotator",
+      "final_url": "https://github.com/j535d165/recordlinkage-annotator",
+      "checked_at": "2026-10-23T07:32:26.287521+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/j535d165/recordlinkage-review",
+      "request_url": "https://github.com/j535d165/recordlinkage-review",
+      "final_url": "https://github.com/j535d165/recordlinkage-review",
+      "checked_at": "2026-10-23T07:32:26.323544+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/jameskane/decodingus-navigator",
+      "request_url": "https://github.com/jameskane/decodingus-navigator",
+      "final_url": "https://github.com/jameskane/decodingus-navigator",
+      "checked_at": "2026-10-23T07:32:26.515785+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/jasiek/genealogy-plugin",
+      "request_url": "https://github.com/jasiek/genealogy-plugin",
+      "final_url": "https://github.com/jasiek/genealogy-plugin",
+      "checked_at": "2026-10-23T07:32:26.534638+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/jerged24/family-tree",
+      "request_url": "https://github.com/jerged24/family-tree",
+      "final_url": "https://github.com/jerged24/family-tree",
+      "checked_at": "2026-10-23T07:32:26.551319+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/jitsi/jiwer",
+      "request_url": "https://github.com/jitsi/jiwer",
+      "final_url": "https://github.com/jitsi/jiwer",
+      "checked_at": "2026-10-23T07:32:26.733378+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/jregimbal/iiif-downloader",
+      "request_url": "https://github.com/jregimbal/iiif-downloader",
+      "final_url": "https://github.com/jregimbal/iiif-downloader",
+      "checked_at": "2026-10-23T07:32:27.109662+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/julioalonzom/exscriptor",
+      "request_url": "https://github.com/julioalonzom/exscriptor",
+      "final_url": "https://github.com/julioalonzom/exscriptor",
+      "checked_at": "2026-10-23T07:32:27.118536+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/kanik0/rustenati",
+      "request_url": "https://github.com/kanik0/rustenati",
+      "final_url": "https://github.com/kanik0/rustenati",
+      "checked_at": "2026-10-23T07:32:27.289284+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/kansallisarkisto-ai/nafrec",
+      "request_url": "https://github.com/kansallisarkisto-ai/nafrec",
+      "final_url": "https://github.com/kansallisarkisto-ai/nafrec",
+      "checked_at": "2026-10-23T07:32:27.314702+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/kartta-labs/mapwarper",
+      "request_url": "https://github.com/kartta-labs/mapwarper",
+      "final_url": "https://github.com/kartta-labs/mapwarper",
+      "checked_at": "2026-10-23T07:32:27.381484+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/kasssandr/archilles",
+      "request_url": "https://github.com/kasssandr/archilles",
+      "final_url": "https://github.com/kasssandr/archilles",
+      "checked_at": "2026-10-23T07:32:27.469259+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/keerthanamurugaraj/topic-rag-for-historical-newspapers",
+      "request_url": "https://github.com/keerthanamurugaraj/topic-rag-for-historical-newspapers",
+      "final_url": "https://github.com/keerthanamurugaraj/topic-rag-for-historical-newspapers",
+      "checked_at": "2026-10-23T07:32:27.834249+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/keithpetro/yggdrasil",
+      "request_url": "https://github.com/keithpetro/yggdrasil",
+      "final_url": "https://github.com/keithpetro/yggdrasil",
+      "checked_at": "2026-10-23T07:32:27.865290+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/kimon1230/gedcom_tools",
+      "request_url": "https://github.com/kimon1230/gedcom_tools",
+      "final_url": "https://github.com/kimon1230/gedcom_tools",
+      "checked_at": "2026-10-23T07:32:27.898878+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/kimon1230/gedgraph",
+      "request_url": "https://github.com/kimon1230/gedgraph",
+      "final_url": "https://github.com/kimon1230/gedgraph",
+      "checked_at": "2026-10-23T07:32:28.142610+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/kkkamur07/nomikos",
+      "request_url": "https://github.com/kkkamur07/nomikos",
+      "final_url": "https://github.com/kkkamur07/nomikos",
+      "checked_at": "2026-10-23T07:32:28.256014+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/knuckles-team/gramps-mcp",
+      "request_url": "https://github.com/knuckles-team/gramps-mcp",
+      "final_url": "https://github.com/knuckles-team/gramps-mcp",
+      "checked_at": "2026-10-23T07:32:28.364587+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/komura-shoan/iiif-downloader",
+      "request_url": "https://github.com/komura-shoan/iiif-downloader",
+      "final_url": "https://github.com/komura-shoan/iiif-downloader",
+      "checked_at": "2026-10-23T07:32:28.670658+00:00",
+      "http_status": 404,
+      "result": "not_found",
+      "response": null
+    },
+    {
+      "url": "https://github.com/lehigh-university-libraries/scribe",
+      "request_url": "https://github.com/lehigh-university-libraries/scribe",
+      "final_url": "https://github.com/lehigh-university-libraries/scribe",
+      "checked_at": "2026-10-23T07:32:28.708224+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/libraryofcongress/gazetteer",
+      "request_url": "https://github.com/libraryofcongress/gazetteer",
+      "final_url": "https://github.com/libraryofcongress/gazetteer",
+      "checked_at": "2026-10-23T07:32:28.810940+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/lieuwe89/genealogy-viz",
+      "request_url": "https://github.com/lieuwe89/genealogy-viz",
+      "final_url": "https://github.com/lieuwe89/genealogy-viz",
+      "checked_at": "2026-10-23T07:32:29.220772+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/linkedpasts/linked-places-format",
+      "request_url": "https://github.com/linkedpasts/linked-places-format",
+      "final_url": "https://github.com/linkedpasts/linked-places-format",
+      "checked_at": "2026-10-23T07:32:29.350538+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/lovasoa/dezoomify-rs",
+      "request_url": "https://github.com/lovasoa/dezoomify-rs",
+      "final_url": "https://github.com/lovasoa/dezoomify-rs",
+      "checked_at": "2026-10-23T07:32:29.560859+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/magne/vitni",
+      "request_url": "https://github.com/magne/vitni",
+      "final_url": "https://github.com/magne/vitni",
+      "checked_at": "2026-10-23T07:32:29.765338+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/meh313/htr-model-tester",
+      "request_url": "https://github.com/meh313/htr-model-tester",
+      "final_url": "https://github.com/meh313/htr-model-tester",
+      "checked_at": "2026-10-23T07:32:29.861909+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/microsoft/graphrag",
+      "request_url": "https://github.com/microsoft/graphrag",
+      "final_url": "https://github.com/microsoft/graphrag",
+      "checked_at": "2026-10-23T07:32:30.090537+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/mip555/root-free",
+      "request_url": "https://github.com/mip555/root-free",
+      "final_url": "https://github.com/mip555/root-free",
+      "checked_at": "2026-10-23T07:32:30.109403+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/mittagessen/kraken",
+      "request_url": "https://github.com/mittagessen/kraken",
+      "final_url": "https://github.com/mittagessen/kraken",
+      "checked_at": "2026-10-23T07:32:30.385068+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/moj-analytical-services/splink",
+      "request_url": "https://github.com/moj-analytical-services/splink",
+      "final_url": "https://github.com/moj-analytical-services/splink",
+      "checked_at": "2026-10-23T07:32:30.539346+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/n1kozor/tree-monk",
+      "request_url": "https://github.com/n1kozor/tree-monk",
+      "final_url": "https://github.com/n1kozor/tree-monk",
+      "checked_at": "2026-10-23T07:32:30.654183+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/nakamura196/iiif-kasane",
+      "request_url": "https://github.com/nakamura196/iiif-kasane",
+      "final_url": "https://github.com/nakamura196/iiif-kasane",
+      "checked_at": "2026-10-23T07:32:30.853744+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/narasimhan-lab/repare",
+      "request_url": "https://github.com/narasimhan-lab/repare",
+      "final_url": "https://github.com/narasimhan-lab/repare",
+      "checked_at": "2026-10-23T07:32:30.905109+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ngohung0704/rag-militai",
+      "request_url": "https://github.com/ngohung0704/rag-militai",
+      "final_url": "https://github.com/ngohung0704/rag-militai",
+      "checked_at": "2026-10-23T07:32:30.980465+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/nigelhorne/ged2site",
+      "request_url": "https://github.com/nigelhorne/ged2site",
+      "final_url": "https://github.com/nigelhorne/ged2site",
+      "checked_at": "2026-10-23T07:32:30.995282+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/nigelhorne/gedcom",
+      "request_url": "https://github.com/nigelhorne/gedcom",
+      "final_url": "https://github.com/nigelhorne/gedcom",
+      "checked_at": "2026-10-23T07:32:31.123617+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/nikazzio/scriptoria",
+      "request_url": "https://github.com/nikazzio/scriptoria",
+      "final_url": "https://github.com/nikazzio/scriptoria",
+      "checked_at": "2026-10-23T07:32:31.447705+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/nikkoxgonzales/mcp-grampsweb",
+      "request_url": "https://github.com/nikkoxgonzales/mcp-grampsweb",
+      "final_url": "https://github.com/nikkoxgonzales/mcp-grampsweb",
+      "checked_at": "2026-10-23T07:32:31.526333+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/noahkiss/genealogy-mcp",
+      "request_url": "https://github.com/noahkiss/genealogy-mcp",
+      "final_url": "https://github.com/noahkiss/genealogy-mcp",
+      "checked_at": "2026-10-23T07:32:31.621388+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/notakeith/handscribe",
+      "request_url": "https://github.com/notakeith/handscribe",
+      "final_url": "https://github.com/notakeith/handscribe",
+      "checked_at": "2026-10-23T07:32:31.629021+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/nypl-spacetime/nypl-warper",
+      "request_url": "https://github.com/nypl-spacetime/nypl-warper",
+      "final_url": "https://github.com/nypl-spacetime/nypl-warper",
+      "checked_at": "2026-10-23T07:32:31.904802+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/oh-kay-blanket/family-plot",
+      "request_url": "https://github.com/oh-kay-blanket/family-plot",
+      "final_url": "https://github.com/oh-kay-blanket/family-plot",
+      "checked_at": "2026-10-23T07:32:32.131714+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/omeka/omeka",
+      "request_url": "https://github.com/omeka/omeka",
+      "final_url": "https://github.com/omeka/omeka",
+      "checked_at": "2026-10-23T07:32:32.260661+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/omeka/omeka-s",
+      "request_url": "https://github.com/omeka/omeka-s",
+      "final_url": "https://github.com/omeka/omeka-s",
+      "checked_at": "2026-10-23T07:32:32.386592+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/openrefine/filesextension",
+      "request_url": "https://github.com/openrefine/filesextension",
+      "final_url": "https://github.com/openrefine/filesextension",
+      "checked_at": "2026-10-23T07:32:32.393023+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/openrefine/openrefine",
+      "request_url": "https://github.com/openrefine/openrefine",
+      "final_url": "https://github.com/openrefine/openrefine",
+      "checked_at": "2026-10-23T07:32:32.467262+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/openseadragon/openseadragon",
+      "request_url": "https://github.com/openseadragon/openseadragon",
+      "final_url": "https://github.com/openseadragon/openseadragon",
+      "checked_at": "2026-10-23T07:32:32.918223+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/projectmirador/mirador",
+      "request_url": "https://github.com/projectmirador/mirador",
+      "final_url": "https://github.com/projectmirador/mirador",
+      "checked_at": "2026-10-23T07:32:32.947518+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/qurator-spk/dinglehopper",
+      "request_url": "https://github.com/qurator-spk/dinglehopper",
+      "final_url": "https://github.com/qurator-spk/dinglehopper",
+      "checked_at": "2026-10-23T07:32:33.001281+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/recogito/pdf-annotator-js",
+      "request_url": "https://github.com/recogito/pdf-annotator-js",
+      "final_url": "https://github.com/recogito/pdf-annotator-js",
+      "checked_at": "2026-10-23T07:32:33.058744+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/recogito/recogito-js",
+      "request_url": "https://github.com/recogito/recogito-js",
+      "final_url": "https://github.com/recogito/recogito-js",
+      "checked_at": "2026-10-23T07:32:33.243304+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/recogito/text-annotator-js",
+      "request_url": "https://github.com/recogito/text-annotator-js",
+      "final_url": "https://github.com/recogito/text-annotator-js",
+      "checked_at": "2026-10-23T07:32:33.243832+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/rfsbraz/genealogy-agent-skills",
+      "request_url": "https://github.com/rfsbraz/genealogy-agent-skills",
+      "final_url": "https://github.com/rfsbraz/genealogy-agent-skills",
+      "checked_at": "2026-10-23T07:32:33.502175+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/rollybre/cthulhu",
+      "request_url": "https://github.com/rollybre/cthulhu",
+      "final_url": "https://github.com/rollybre/cthulhu",
+      "checked_at": "2026-10-23T07:32:33.516946+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/rue-a/provo",
+      "request_url": "https://github.com/rue-a/provo",
+      "final_url": "https://github.com/rue-a/provo",
+      "checked_at": "2026-10-23T07:32:33.795261+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ruempel/nacarta",
+      "request_url": "https://github.com/ruempel/nacarta",
+      "final_url": "https://github.com/ruempel/nacarta",
+      "checked_at": "2026-10-23T07:32:33.805267+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ryanfb/iiif-dl",
+      "request_url": "https://github.com/ryanfb/iiif-dl",
+      "final_url": "https://github.com/ryanfb/iiif-dl",
+      "checked_at": "2026-10-23T07:32:33.850971+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ryanturcotte/open-family-tree",
+      "request_url": "https://github.com/ryanturcotte/open-family-tree",
+      "final_url": "https://github.com/ryanturcotte/open-family-tree",
+      "checked_at": "2026-10-23T07:32:33.880394+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/sandxlab/sandx-er",
+      "request_url": "https://github.com/sandxlab/sandx-er",
+      "final_url": "https://github.com/sandxlab/sandx-er",
+      "checked_at": "2026-10-23T07:32:34.298739+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/satvikgosai/genea-web",
+      "request_url": "https://github.com/satvikgosai/genea-web",
+      "final_url": "https://github.com/satvikgosai/genea-web",
+      "checked_at": "2026-10-23T07:32:34.342701+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/scheldt-llc/genealogy_ai",
+      "request_url": "https://github.com/scheldt-llc/genealogy_ai",
+      "final_url": "https://github.com/scheldt-llc/genealogy_ai",
+      "checked_at": "2026-10-23T07:32:34.523169+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/scormave/gramps-web-mcp",
+      "request_url": "https://github.com/scormave/gramps-web-mcp",
+      "final_url": "https://github.com/scormave/gramps-web-mcp",
+      "checked_at": "2026-10-23T07:32:34.575808+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/scripta/escriptorium",
+      "request_url": "https://github.com/scripta/escriptorium",
+      "final_url": "https://github.com/scripta/escriptorium",
+      "checked_at": "2026-10-23T07:32:34.593780+00:00",
+      "http_status": 404,
+      "result": "not_found",
+      "response": null
+    },
+    {
+      "url": "https://github.com/segolene-albouy/iiif-download",
+      "request_url": "https://github.com/segolene-albouy/iiif-download",
+      "final_url": "https://github.com/segolene-albouy/iiif-download",
+      "checked_at": "2026-10-23T07:32:34.661687+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/serg-norseman/gedkeeper",
+      "request_url": "https://github.com/serg-norseman/gedkeeper",
+      "final_url": "https://github.com/serg-norseman/gedkeeper",
+      "checked_at": "2026-10-23T07:32:34.966428+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/shelfgot/maatikshemua",
+      "request_url": "https://github.com/shelfgot/maatikshemua",
+      "final_url": "https://github.com/shelfgot/maatikshemua",
+      "checked_at": "2026-10-23T07:32:35.141916+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/spacecat56/ged2reg",
+      "request_url": "https://github.com/spacecat56/ged2reg",
+      "final_url": "https://github.com/spacecat56/ged2reg",
+      "checked_at": "2026-10-23T07:32:35.278294+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/stefromlc/iiif-downloader",
+      "request_url": "https://github.com/stefromlc/iiif-downloader",
+      "final_url": "https://github.com/stefromlc/iiif-downloader",
+      "checked_at": "2026-10-23T07:32:35.330355+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/thisisankit27/f-tree",
+      "request_url": "https://github.com/thisisankit27/f-tree",
+      "final_url": "https://github.com/thisisankit27/f-tree",
+      "checked_at": "2026-10-23T07:32:35.447218+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/thobgg/gedaudit",
+      "request_url": "https://github.com/thobgg/gedaudit",
+      "final_url": "https://github.com/thobgg/gedaudit",
+      "checked_at": "2026-10-23T07:32:35.479284+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/trois-six/oxidged",
+      "request_url": "https://github.com/trois-six/oxidged",
+      "final_url": "https://github.com/trois-six/oxidged",
+      "checked_at": "2026-10-23T07:32:35.680311+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/tropy/tropy",
+      "request_url": "https://github.com/tropy/tropy",
+      "final_url": "https://github.com/tropy/tropy",
+      "checked_at": "2026-10-23T07:32:36.037340+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/trungdong/prov",
+      "request_url": "https://github.com/trungdong/prov",
+      "final_url": "https://github.com/trungdong/prov",
+      "checked_at": "2026-10-23T07:32:36.103941+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ub-mannheim/escriptorium",
+      "request_url": "https://github.com/ub-mannheim/escriptorium",
+      "final_url": "https://github.com/ub-mannheim/escriptorium",
+      "checked_at": "2026-10-23T07:32:36.116316+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/ub-mannheim/escriptorium_dokumentation",
+      "request_url": "https://github.com/ub-mannheim/escriptorium_dokumentation",
+      "final_url": "https://github.com/ub-mannheim/escriptorium_dokumentation",
+      "checked_at": "2026-10-23T07:32:36.313464+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/umb-oconnorgroup/ibdtools",
+      "request_url": "https://github.com/umb-oconnorgroup/ibdtools",
+      "final_url": "https://github.com/umb-oconnorgroup/ibdtools",
+      "checked_at": "2026-10-23T07:32:36.522319+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/unstructured-io/unstructured-mlk-archive-public",
+      "request_url": "https://github.com/unstructured-io/unstructured-mlk-archive-public",
+      "final_url": "https://github.com/unstructured-io/unstructured-mlk-archive-public",
+      "checked_at": "2026-10-23T07:32:36.564856+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/usulkies/historic-records-ai-reader",
+      "request_url": "https://github.com/usulkies/historic-records-ai-reader",
+      "final_url": "https://github.com/usulkies/historic-records-ai-reader",
+      "checked_at": "2026-10-23T07:32:36.653107+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/w3c/prov",
+      "request_url": "https://github.com/w3c/prov",
+      "final_url": "https://github.com/w3c/prov",
+      "checked_at": "2026-10-23T07:32:36.735612+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/williamscole/haptic",
+      "request_url": "https://github.com/williamscole/haptic",
+      "final_url": "https://github.com/williamscole/haptic",
+      "checked_at": "2026-10-23T07:32:36.980005+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/williamscole/ponderosa",
+      "request_url": "https://github.com/williamscole/ponderosa",
+      "final_url": "https://github.com/williamscole/ponderosa",
+      "checked_at": "2026-10-23T07:32:37.166886+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/worldhistoricalgazetteer/documentation",
+      "request_url": "https://github.com/worldhistoricalgazetteer/documentation",
+      "final_url": "https://github.com/worldhistoricalgazetteer/documentation",
+      "checked_at": "2026-10-23T07:32:37.347748+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/worldhistoricalgazetteer/website",
+      "request_url": "https://github.com/worldhistoricalgazetteer/website",
+      "final_url": "https://github.com/worldhistoricalgazetteer/website",
+      "checked_at": "2026-10-23T07:32:37.434381+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/yfullteam/ytree",
+      "request_url": "https://github.com/yfullteam/ytree",
+      "final_url": "https://github.com/yfullteam/ytree",
+      "checked_at": "2026-10-23T07:32:37.511432+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/yingzhou001/ibdkin",
+      "request_url": "https://github.com/yingzhou001/ibdkin",
+      "final_url": "https://github.com/yingzhou001/ibdkin",
+      "checked_at": "2026-10-23T07:32:37.629167+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/zal-analytics/zer",
+      "request_url": "https://github.com/zal-analytics/zer",
+      "final_url": "https://github.com/zal-analytics/zer",
+      "checked_at": "2026-10-23T07:32:37.637261+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    },
+    {
+      "url": "https://github.com/zankul/gramps-mcp-dotnet",
+      "request_url": "https://github.com/zankul/gramps-mcp-dotnet",
+      "final_url": "https://github.com/zankul/gramps-mcp-dotnet",
+      "checked_at": "2026-10-23T07:32:37.970490+00:00",
+      "http_status": 200,
+      "result": "exists",
+      "response": null
+    }
+  ],
+  "catalog_records": 163,
+  "github_urls_checked": 162,
+  "non_github": [
+    {
+      "project": "Archive MCP adapters (ianderso)",
+      "url": "https://github.com/ianderso",
+      "result": "not_a_github_repository_url"
+    }
+  ]
+}

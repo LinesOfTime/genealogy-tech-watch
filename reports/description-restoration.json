@@ -2,11 +2,11 @@
   "scope": "Only descriptions containing «Не установлен», or records restored by this migration",
   "independent_research_performed": false,
   "summary": {
-    "total": 47,
+    "total": 46,
     "restored": 46,
-    "unresolved": 1,
+    "unresolved": 0,
     "provisional": 19,
-    "requiring_additional_verification": 47,
+    "requiring_additional_verification": 46,
     "sources": {
       "guide_excerpt": 42,
       "editorial_summary": 4
@@ -268,23 +268,6 @@
       "source_limitations": [
         "Ограничения: Проверить поддержку форматов данных, боковых линий, кириллицы и лицензию."
       ],
-      "project_type_preserved": "Не установлен"
-    },
-    {
-      "name": "linesoftime/yarchive-downloader",
-      "url": "https://github.com/linesoftime/yarchive-downloader",
-      "original_description": "Не установлен",
-      "description": "Не установлен",
-      "restored": false,
-      "result": "unresolved",
-      "source": null,
-      "uncertainty_markers": [],
-      "additional_verification_required": true,
-      "review_reasons": [
-        "В editorial_summary и строке «Назначение:» нет содержательного описания",
-        "Редакционный пересказ не сверялся с первоисточником в этом исправлении"
-      ],
-      "source_limitations": [],
       "project_type_preserved": "Не установлен"
     },
     {

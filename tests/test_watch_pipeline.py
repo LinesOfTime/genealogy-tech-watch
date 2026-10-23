@@ -83,6 +83,15 @@ class ValidationTests(unittest.TestCase):
         (self.root / 'docs/research.json').write_text('{"bad": null}', encoding='utf-8')
         self.assertGreater(pipeline.validate(self.root)['errors'], 0)
 
+    def test_service_notes_and_rejected_repository_gate(self):
+        self.catalog[0]['limitations']='Нужен сервер | Часть 51: незакрытые поля: тип'
+        self.write()
+        self.assertIn('service_note_in_content',self.codes())
+        (self.root/'data').mkdir()
+        rejection=dict(reason='invalid_repository_reference',url='https://github.com/owner/repo',checked_at='2026-10-23T07:00:00+00:00')
+        (self.root/'data/editorial-corrections.json').write_text(json.dumps([rejection]),encoding='utf-8')
+        self.assertIn('rejected_repository',self.codes())
+
 
 if __name__ == '__main__':
     unittest.main()

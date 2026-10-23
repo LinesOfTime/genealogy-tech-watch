@@ -56,9 +56,9 @@ class DescriptionTests(unittest.TestCase):
         c=json.loads((ROOT/'catalog.json').read_text(encoding='utf-8'))
         r=json.loads((ROOT/'docs/research.json').read_text(encoding='utf-8'))
         updated,report=restore(c,r)
-        self.assertEqual(report['summary']['total'],47)
+        self.assertEqual(report['summary']['total'],46)
         self.assertEqual(report['summary']['restored'],46)
-        self.assertEqual(report['summary']['unresolved'],1)
+        self.assertEqual(report['summary']['unresolved'],0)
         self.assertEqual(sum(row['result']=='restored_provisional' for row in report['records']
                              if row['source'] and row['source']['field']=='guide_excerpt'),17)
         for old,new in zip(c,updated):

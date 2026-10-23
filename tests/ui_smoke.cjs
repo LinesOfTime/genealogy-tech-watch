@@ -3,6 +3,8 @@ const fs = require('node:fs'), path = require('node:path'), vm = require('node:v
 const root = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve(__dirname, '..');
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 const catalog = JSON.parse(read('catalog.json')), research = JSON.parse(read('docs/research.json')), digest = JSON.parse(read('digest.json'));
+assert.ok(!JSON.stringify([catalog,research,digest]).includes('linesoftime/yarchive-downloader'));
+for(const card of catalog)for(const field of ['description','use_case','limitations'])assert.ok(!/Часть\s*51\s*:\s*незакрытые поля/i.test(card[field]||''));
 function fixture(seed) {
   const elements = new Map();
   const get = id => { if (!elements.has(id)) elements.set(id, {value:'', innerHTML:'', textContent:'', addEventListener(){}}); return elements.get(id); };
@@ -105,6 +107,14 @@ function count(html, className) { return (html.match(new RegExp('<article class=
     }
   }
   assert.equal(page.context.WatchUI.url('javascript:alert(1)'), '');
+  const movedKey=Object.keys(research).find(key=>research[key].editorial_service_notes?.length);
+  if(movedKey){
+    const pr=fixture(null);pr.context.location.search='?repo='+encodeURIComponent(movedKey);
+    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+    await vm.runInContext(read('docs/project-ui.js'),pr.context);
+    assert.match(pr.get('content').innerHTML,/Служебные редакционные пометки/);
+    assert.match(pr.get('content').innerHTML,/это не описание ограничений/);
+  }
   for (const [key,r] of Object.entries(research).filter(([,r])=>r.editorial_corrections?.length)) {
     const pr=fixture(null);pr.context.location.search='?repo='+encodeURIComponent(key);
     pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});

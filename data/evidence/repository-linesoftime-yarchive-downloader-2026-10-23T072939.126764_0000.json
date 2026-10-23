@@ -1,0 +1,13 @@
+{
+  "url": "https://github.com/linesoftime/yarchive-downloader",
+  "request_url": "https://api.github.com/repos/linesoftime/yarchive-downloader",
+  "final_url": "https://api.github.com/repos/linesoftime/yarchive-downloader",
+  "checked_at": "2026-10-23T07:29:39.126764+00:00",
+  "http_status": 404,
+  "result": "not_found",
+  "response": {
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/repos/repos#get-a-repository",
+    "status": "404"
+  }
+}

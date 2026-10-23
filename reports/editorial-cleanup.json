@@ -1,0 +1,104 @@
+{
+  "catalog": 163,
+  "research": 141,
+  "digest_events": 19,
+  "unrated": [
+    {
+      "project": "scripta/escriptorium",
+      "basis": "Нет оценки в путеводителе"
+    },
+    {
+      "project": "Genealogy Research Workbench",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "IIIF Kasane",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "scan2gedcom",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "ZMO AI Pipelines",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "genealogy-agent-skills",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "gramps-mcp-dotnet",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Rask",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "oxidged / OxidGene",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Exscriptor",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Gramps Connect",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "GEDKeeper",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Bartelby",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Desembarque",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Historic Records AI Reader",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "gedaudit",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "open-ancestry",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "NAFRec",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Scribe",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "gov-gazetteer-mcp",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "genealogy-mcp",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Archive MCP adapters (ianderso)",
+      "basis": "Нет расширенной карточки"
+    },
+    {
+      "project": "Gramps Evidence MCP",
+      "basis": "Нет расширенной карточки"
+    }
+  ],
+  "excluded": "linesoftime/yarchive-downloader",
+  "removal_reason": "invalid_repository_reference",
+  "http_status": 404,
+  "moved_catalog_cards": 53,
+  "moved_research_cards": 137
+}

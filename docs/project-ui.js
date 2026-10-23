@@ -27,6 +27,8 @@
     }
     html += panel('Практическое применение', WatchUI.practical(x,r));
     html += panel('Ограничения и редакционная оценка', WatchUI.limitations(x,r));
+    const housekeeping=[...(x.editorial_service_notes||[]),...(r.editorial_service_notes||[])];
+    if(housekeeping.length)html+='<details class="panel"><summary>Служебные редакционные пометки</summary>'+[...new Set(housekeeping.flatMap(n=>n.notes||[]))].map(para).join('')+'<small>Историческая очередь проверки полей; это не описание ограничений инструмента.</small></details>';
     if(r.editorial_corrections?.length) {
       const labels={description:'Назначение',use_case:'Практическое применение',limitations:'Ограничения',
         editorial_summary:'Редакционное описание назначения',editorial_use_case:'Редакционный сценарий',editorial_limitations:'Редакционные ограничения'};

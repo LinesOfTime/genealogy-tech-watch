@@ -43,6 +43,13 @@ class ApplyTests(unittest.TestCase):
                            reviewer='Test reviewer', reviewed_at='2026-10-22T12:00:00+03:00')
         self.approve()
 
+    def test_rejected_repo_cannot_return_via_approved_event(self):
+        (self.root/'data').mkdir(exist_ok=True)
+        self.write('data/editorial-corrections.json',[dict(reason='invalid_repository_reference',
+            url='https://github.com/a/repo',checked_at='2026-10-23T07:00:00+00:00')])
+        with self.assertRaisesRegex(ValueError,'Rejected repository gate'):
+            build_plan(self.root,[self.record],'2026-10-23')
+
     def approve(self):
         self.record['reviewed_content_hash'] = content_hash(self.record)
 

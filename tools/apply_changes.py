@@ -121,6 +121,9 @@ def build_plan(root, records, edition_date):
     elif items:
         edition['items'].extend(items)
     # Research-only events preserve digest bytes, including formatting.
+    from repository_integrity import rejection_issues
+    rejected=rejection_issues(root,catalog,research,digest)
+    if rejected:raise ValueError('Rejected repository gate: '+str(rejected))
     files = sync_payloads(root, catalog, digest if items else None)
     files['docs/research.json'] = encoded(research)
     files['data/applied-events.json'] = encoded(ledger)

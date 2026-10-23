@@ -9,6 +9,7 @@ const rows=c.map(x=>{
   if(!selected.limitations.text)flags.push('missing_limitations');
   const raw=[x.limitations,card.audit_notes,card.editorial_limitations].filter(Boolean);
   if(raw.some(s=>/Часть\s*\d+|Ч\d+\s*:/i.test(s)))flags.push('service_notes_preserved');
+  if(x.editorial_service_notes?.length||card.editorial_service_notes?.length)flags.push('housekeeping_in_service_fields');
   if(x.limitations&&card.audit_notes&&x.limitations===card.audit_notes)flags.push('duplicate_raw_notes');
   if(selected.limitations.text&&!/не\b|треб|огранич|провер|завис|предупреж|нельзя|необходим|лиценз|только|риск|отсутств|нуж|устарев|не /i.test(selected.limitations.text))flags.push('limitations_need_context_review');
   return {project:x.name,selected,flags};

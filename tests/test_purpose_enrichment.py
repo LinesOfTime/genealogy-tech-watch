@@ -31,11 +31,11 @@ class PurposeTests(unittest.TestCase):
         fixes=json.loads((ROOT/'data/purpose-corrections.json').read_text(encoding='utf-8'))
         updated,research,report=enrich(c,r,fixes)
         self.assertEqual(updated,c);self.assertEqual(research,r)
-        self.assertEqual(report['summary']['total'],47)
+        self.assertEqual(report['summary']['total'],46)
         self.assertEqual(sum(row['result']=='restored_provisional' for row in report['records']
                              if row['source'] and row['source']['field']=='guide_excerpt'),17)
         self.assertEqual(report['summary']['sources'],{'guide_excerpt':42,'editorial_summary':4})
-        self.assertEqual([x['name'] for x in report['records'] if not x['restored']],['linesoftime/yarchive-downloader'])
+        self.assertEqual([x['name'] for x in report['records'] if not x['restored']],[])
 
 
 if __name__=='__main__':unittest.main()

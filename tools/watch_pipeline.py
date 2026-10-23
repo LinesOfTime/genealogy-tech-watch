@@ -82,6 +82,33 @@ def validate(root, baseline=None):
 
     catalog = loaded.get('catalog.json', [])
     research = loaded.get('docs/research.json', {})
+    from repository_integrity import rejection_issues
+    issues.extend(rejection_issues(root,catalog,research,loaded.get('digest.json',[])))
+    # Also reject standalone outbound links outside the JSON seeds.
+    for path in (root/'docs').glob('*.html'):
+        links=re.findall(r'https?://[^\s<>"\x27]+',path.read_text(encoding='utf-8'),re.I)
+        for finding in rejection_issues(root,[dict(url=link) for link in links],{},[]):
+            finding['location']=str(path.relative_to(root))+':'+finding['location']
+            issues.append(finding)
+    existence_path=root/'reports/repository-existence.json'
+    if existence_path.exists():
+        try:
+            from repository_integrity import repository_url
+            checked=json.loads(existence_path.read_text(encoding='utf-8'))
+            active={repository_url(c.get('url')) for c in catalog if isinstance(c,dict)}
+            for entry in checked['records']:
+                if entry['url'] in active and entry['result']=='not_found' and entry['http_status']==404:
+                    issue('warning','repository_not_found',entry['url'],'Public GitHub HTTP 404; repository-reference review is separate from feature research. Checked '+entry['checked_at'])
+        except (OSError,KeyError,TypeError,ValueError) as exc:
+            issue('error','repository_audit','reports/repository-existence.json',str(exc))
+    from editorial_hygiene import split_service
+    for origin,entries,fields in [('catalog',enumerate(catalog),('description','use_case','limitations')),
+                                  ('research',research.items(),('editorial_summary','editorial_use_case','editorial_limitations'))]:
+        for key,card in entries:
+            if not isinstance(card,dict):continue
+            for field in fields:
+                if split_service(card.get(field))[1]:
+                    issue('error','service_note_in_content',f'{origin}.{key}.{field}','Move housekeeping notes into editorial_service_notes')
     urls, names = set(), set()
     for i, card in enumerate(catalog):
         loc = f'catalog[{i}]'
