@@ -1,0 +1,2145 @@
+{
+  "candidates": 12,
+  "eligible": 0,
+  "errors": 0,
+  "results": [
+    {
+      "discovery_id": "github:ai-riksarkivet/htrflow-batch:d087c1ec02417c73e4061b8a54fc44627424d876",
+      "catalog_match": [
+        "https://github.com/ai-riksarkivet/htrflow-batch"
+      ],
+      "research_matches": [
+        "ai-riksarkivet/htrflow-batch"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-22",
+          "repo": "ai-riksarkivet/htrflow-batch",
+          "priority": "P2",
+          "change": "В сборку htrflow-batch добавлен патч порядка чтения: верхнее и нижнее поля классифицируются раньше боковых; применённый патч отмечается суффиксом +reading-order в базовой ревизии.",
+          "link": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876",
+          "components": "OCR/HTR · provenance/evidence",
+          "action": "Оценить порядок чтения на страницах с верхними/боковыми полями; сохранять идентификатор патченной ревизии в provenance.",
+          "event_date": "2026-10-21",
+          "significance_reason": "Практическое изменение порядка чтения архивных страниц и прослеживаемости сборки: ошибочное отнесение верхнего поля к боковому может менять последовательность текста. Это редакционная оценка применимости по коду, без измерения качества HTR.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение в чате после конкретной находки",
+          "reviewed_at": "2026-10-22T09:18:27Z",
+          "discovery_id": "github:ai-riksarkivet/htrflow-batch:d087c1ec02417c73e4061b8a54fc44627424d876",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876"
+            }
+          ],
+          "research_link": "project.html?repo=ai-riksarkivet%2Fhtrflow-batch",
+          "previous_state": "В родительском коммите 7ea0ff851c003d7a77fe965ed29110047730fec8 сборка использует htrflow-src без стадии htrflow-patched; дифф патча показывает проверки боковых полей раньше верхнего/нижнего. В каталоге и дайджесте отмечена другая дельта: IIIF 2/3.",
+          "new_state": "Коммит d087c1ec добавляет .docker/htrflow-reading-order.patch и стадию htrflow-patched, переводит сборку на обработанные исходники и записывает +reading-order в HTRFLOW_BASE_REVISION. В патче проверки верхнего/нижнего полей перенесены перед боковыми."
+        },
+        {
+          "date": "2026-10-21",
+          "repo": "AI-Riksarkivet/htrflow-batch",
+          "priority": "P1",
+          "change": "Пакетный OCR/HTR; в обзоре отмечены изменения IIIF 2/3 от 20 октября.",
+          "link": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d8d5185c51e606e50793fc8e0678a9dac73c07f9",
+          "components": "Archive Adapter · OCR/HTR · Indexer",
+          "action": "Изучить архитектуру обработки томов и IIIF"
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "date": "2026-10-21",
+          "change": "Пакетный OCR/HTR; в обзоре отмечены изменения IIIF 2/3 от 20 октября.",
+          "url": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d8d5185c51e606e50793fc8e0678a9dac73c07f9",
+          "evidence": "Пересказ обзора; первичный код в этой сборке не проверялся"
+        },
+        {
+          "discovery_id": "github:ai-riksarkivet/htrflow-batch:d087c1ec02417c73e4061b8a54fc44627424d876",
+          "date": "2026-10-21",
+          "change": "В сборку htrflow-batch добавлен патч порядка чтения: верхнее и нижнее поля классифицируются раньше боковых; применённый патч отмечается суффиксом +reading-order в базовой ревизии.",
+          "previous_state": "В родительском коммите 7ea0ff851c003d7a77fe965ed29110047730fec8 сборка использует htrflow-src без стадии htrflow-patched; дифф патча показывает проверки боковых полей раньше верхнего/нижнего. В каталоге и дайджесте отмечена другая дельта: IIIF 2/3.",
+          "new_state": "Коммит d087c1ec добавляет .docker/htrflow-reading-order.patch и стадию htrflow-patched, переводит сборку на обработанные исходники и записывает +reading-order в HTRFLOW_BASE_REVISION. В патче проверки верхнего/нижнего полей перенесены перед боковыми.",
+          "significance_reason": "Практическое изменение порядка чтения архивных страниц и прослеживаемости сборки: ошибочное отнесение верхнего поля к боковому может менять последовательность текста. Это редакционная оценка применимости по коду, без измерения качества HTR.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876",
+          "claims_vs_verified": {
+            "verified": "Статически прочитаны метаданные и дифф конкретного GitHub-коммита: добавление патча, изменение порядка проверок, использование обработанных исходников и суффикс ревизии.",
+            "author_claims": "Авторы объясняют исправление ошибочным порядком верхнего поля и заявляют соответствие исходникам Azure Repos; независимая проверка Azure не проводилась.",
+            "independent_testing": "HTR, сборка контейнера и upstream-тесты не запускались. Тестируется только собственный конвейер каталога."
+          },
+          "risks": [
+            "Не проверено качество порядка чтения на российских материалах.",
+            "GitHub Release v0.13.1 по API не найден: событие не называется опубликованным релизом.",
+            "Статическая проверка кода не доказывает успешное развёртывание образа."
+          ],
+          "license": "Не перепроверена; существующая оценка EUPL-1.2 в каталоге не изменяется",
+          "license_evidence": [],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение в чате после конкретной находки",
+          "reviewed_at": "2026-10-22T09:18:27Z",
+          "reviewed_content_hash": "01d8bf9efaf1c5f32fd9ced34c91d8348f627786dea9f1bcf13565bbbc90957c"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:ai-riksarkivet/htrflow-batch:d087c1ec02417c73e4061b8a54fc44627424d876",
+          "date": "2026-10-21",
+          "change": "В сборку htrflow-batch добавлен патч порядка чтения: верхнее и нижнее поля классифицируются раньше боковых; применённый патч отмечается суффиксом +reading-order в базовой ревизии.",
+          "previous_state": "В родительском коммите 7ea0ff851c003d7a77fe965ed29110047730fec8 сборка использует htrflow-src без стадии htrflow-patched; дифф патча показывает проверки боковых полей раньше верхнего/нижнего. В каталоге и дайджесте отмечена другая дельта: IIIF 2/3.",
+          "new_state": "Коммит d087c1ec добавляет .docker/htrflow-reading-order.patch и стадию htrflow-patched, переводит сборку на обработанные исходники и записывает +reading-order в HTRFLOW_BASE_REVISION. В патче проверки верхнего/нижнего полей перенесены перед боковыми.",
+          "significance_reason": "Практическое изменение порядка чтения архивных страниц и прослеживаемости сборки: ошибочное отнесение верхнего поля к боковому может менять последовательность текста. Это редакционная оценка применимости по коду, без измерения качества HTR.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876",
+          "claims_vs_verified": {
+            "verified": "Статически прочитаны метаданные и дифф конкретного GitHub-коммита: добавление патча, изменение порядка проверок, использование обработанных исходников и суффикс ревизии.",
+            "author_claims": "Авторы объясняют исправление ошибочным порядком верхнего поля и заявляют соответствие исходникам Azure Repos; независимая проверка Azure не проводилась.",
+            "independent_testing": "HTR, сборка контейнера и upstream-тесты не запускались. Тестируется только собственный конвейер каталога."
+          },
+          "risks": [
+            "Не проверено качество порядка чтения на российских материалах.",
+            "GitHub Release v0.13.1 по API не найден: событие не называется опубликованным релизом.",
+            "Статическая проверка кода не доказывает успешное развёртывание образа."
+          ],
+          "license": "Не перепроверена; существующая оценка EUPL-1.2 в каталоге не изменяется",
+          "license_evidence": [],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение в чате после конкретной находки",
+          "reviewed_at": "2026-10-22T09:18:27Z",
+          "reviewed_content_hash": "01d8bf9efaf1c5f32fd9ced34c91d8348f627786dea9f1bcf13565bbbc90957c"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "01d8bf9efaf1c5f32fd9ced34c91d8348f627786dea9f1bcf13565bbbc90957c",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-10-23",
+      "catalog_match": [
+        "https://github.com/GeiserX/gramps-web-toolkit"
+      ],
+      "research_matches": [
+        "geiserx/gramps-web-toolkit"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-23",
+          "repo": "geiserx/gramps-web-toolkit",
+          "priority": "Не оценён",
+          "change": "Gramps Web Toolkit: CLI-инструменты для работы исследовательских AI-агентов с деревом Gramps Web. README описывает dry-run перед записью, чтение перед изменением, отдельную проверку дерева, общий журнал поисков и ограничения частоты запросов.",
+          "link": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md",
+          "components": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "action": "Изучить архитектуру проверяемых изменений; пробовать на копии дерева с резервной копией.",
+          "event_date": "2026-10-23",
+          "significance_reason": "Редакционная оценка: полезный образец управления изменениями генеалогического дерева и учёта отрицательных поисков; результативность AI-исследований не доказана этой проверкой.",
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.349Z",
+          "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-10-23",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/docs/pipeline.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/main/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit"
+            }
+          ],
+          "research_link": "project.html?repo=geiserx%2Fgramps-web-toolkit",
+          "previous_state": "Проект отсутствует в действующем каталоге и дайджесте; репозиторий создан 20 октября 2026 года. Это новая запись каталога, а не заявление о релизе.",
+          "new_state": "Проверены README и схема конвейера на ревизии 337064d5d7f1191ba2f3b28bb3536e0391f65d28: исследователь, проверяющий, судья, составитель изменений и исполнитель разделены; описаны резервные копии и проверка после записи."
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-10-23",
+          "date": "2026-10-23",
+          "change": "Gramps Web Toolkit: CLI-инструменты для работы исследовательских AI-агентов с деревом Gramps Web. README описывает dry-run перед записью, чтение перед изменением, отдельную проверку дерева, общий журнал поисков и ограничения частоты запросов.",
+          "previous_state": "Проект отсутствует в действующем каталоге и дайджесте; репозиторий создан 20 октября 2026 года. Это новая запись каталога, а не заявление о релизе.",
+          "new_state": "Проверены README и схема конвейера на ревизии 337064d5d7f1191ba2f3b28bb3536e0391f65d28: исследователь, проверяющий, судья, составитель изменений и исполнитель разделены; описаны резервные копии и проверка после записи.",
+          "significance_reason": "Редакционная оценка: полезный образец управления изменениями генеалогического дерева и учёта отрицательных поисков; результативность AI-исследований не доказана этой проверкой.",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/docs/pipeline.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/main/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit"
+            }
+          ],
+          "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md",
+          "claims_vs_verified": {
+            "verified": "Проверены существование репозитория, дата создания, текст README и схема конвейера на указанной ревизии. Наличие документации не доказывает выполнение всех механизмов кодом.",
+            "author_claims": "Авторы сообщают примерно о 30 исследовательских циклах на двух деревьях примерно по 10 000 человек; эти цифры и переносимость на любые страны независимо не проверены.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Независимого запуска CLI, Gramps Web и OCR-бенчмарка не было.",
+            "spanish-poller предназначен для Испании; применимость архивных адаптеров к российским источникам не проверена.",
+            "Прочитана документация; гарантии сохранности данных при записи не установлены."
+          ],
+          "license": "GPL-3.0-or-later по README; сохранён текст GPL v3",
+          "license_evidence": [
+            "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md",
+            "https://github.com/GeiserX/gramps-web-toolkit/blob/main/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.349Z",
+          "reviewed_content_hash": "39763e7fd14b62e2601f17a12b3d112b844d47d0137c76fd20559253a6fcb705"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-10-23",
+          "date": "2026-10-23",
+          "change": "Gramps Web Toolkit: CLI-инструменты для работы исследовательских AI-агентов с деревом Gramps Web. README описывает dry-run перед записью, чтение перед изменением, отдельную проверку дерева, общий журнал поисков и ограничения частоты запросов.",
+          "previous_state": "Проект отсутствует в действующем каталоге и дайджесте; репозиторий создан 20 октября 2026 года. Это новая запись каталога, а не заявление о релизе.",
+          "new_state": "Проверены README и схема конвейера на ревизии 337064d5d7f1191ba2f3b28bb3536e0391f65d28: исследователь, проверяющий, судья, составитель изменений и исполнитель разделены; описаны резервные копии и проверка после записи.",
+          "significance_reason": "Редакционная оценка: полезный образец управления изменениями генеалогического дерева и учёта отрицательных поисков; результативность AI-исследований не доказана этой проверкой.",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/docs/pipeline.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/main/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit"
+            }
+          ],
+          "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md",
+          "claims_vs_verified": {
+            "verified": "Проверены существование репозитория, дата создания, текст README и схема конвейера на указанной ревизии. Наличие документации не доказывает выполнение всех механизмов кодом.",
+            "author_claims": "Авторы сообщают примерно о 30 исследовательских циклах на двух деревьях примерно по 10 000 человек; эти цифры и переносимость на любые страны независимо не проверены.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Независимого запуска CLI, Gramps Web и OCR-бенчмарка не было.",
+            "spanish-poller предназначен для Испании; применимость архивных адаптеров к российским источникам не проверена.",
+            "Прочитана документация; гарантии сохранности данных при записи не установлены."
+          ],
+          "license": "GPL-3.0-or-later по README; сохранён текст GPL v3",
+          "license_evidence": [
+            "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md",
+            "https://github.com/GeiserX/gramps-web-toolkit/blob/main/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.349Z",
+          "reviewed_content_hash": "39763e7fd14b62e2601f17a12b3d112b844d47d0137c76fd20559253a6fcb705"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "39763e7fd14b62e2601f17a12b3d112b844d47d0137c76fd20559253a6fcb705",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:kinprove/genealogy-research-recipes:watch-2026-10-23",
+      "catalog_match": [
+        "https://github.com/Kinprove/genealogy-research-recipes"
+      ],
+      "research_matches": [
+        "kinprove/genealogy-research-recipes"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-23",
+          "repo": "kinprove/genealogy-research-recipes",
+          "priority": "Не оценён",
+          "change": "Genealogy Research Recipes добавлен в каталог: в релизе 1.6.0 авторы заявили 72 новых и 39 уточнённых процедур, всего 116 файлов, включая Российскую империю и СССР. Версия 1.6.1 меняет две формулировки без изменения процедур.",
+          "link": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0",
+          "components": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "action": "Рассмотреть как источник процедур и чек-листов; проверять конкретный рецепт по его источникам и учитывать условия FSL.",
+          "event_date": "2026-10-22",
+          "significance_reason": "Редакционная оценка: материал для проектирования исследовательских чек-листов и разграничения источника, гипотезы и доказательства; адаптер инструкций не является самостоятельным исследователем.",
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.352Z",
+          "discovery_id": "github:kinprove/genealogy-research-recipes:watch-2026-10-23",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0"
+            },
+            {
+              "type": "release",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.1"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes"
+            }
+          ],
+          "research_link": "project.html?repo=kinprove%2Fgenealogy-research-recipes",
+          "previous_state": "Проект отсутствует в действующем каталоге. Репозиторий существует с июля 2026 года: это новая находка для каталога, а не новая разработка октября.",
+          "new_state": "Проверены опубликованные релизы 1.6.0 и 1.6.1 от 22 октября, README и лицензия версии 1.6.1. README перечисляет процедуры для метрических книг, ревизских сказок, сословий и советских источников; качество самих процедур полностью не оценивалось."
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "discovery_id": "github:kinprove/genealogy-research-recipes:watch-2026-10-23",
+          "date": "2026-10-22",
+          "change": "Genealogy Research Recipes добавлен в каталог: в релизе 1.6.0 авторы заявили 72 новых и 39 уточнённых процедур, всего 116 файлов, включая Российскую империю и СССР. Версия 1.6.1 меняет две формулировки без изменения процедур.",
+          "previous_state": "Проект отсутствует в действующем каталоге. Репозиторий существует с июля 2026 года: это новая находка для каталога, а не новая разработка октября.",
+          "new_state": "Проверены опубликованные релизы 1.6.0 и 1.6.1 от 22 октября, README и лицензия версии 1.6.1. README перечисляет процедуры для метрических книг, ревизских сказок, сословий и советских источников; качество самих процедур полностью не оценивалось.",
+          "significance_reason": "Редакционная оценка: материал для проектирования исследовательских чек-листов и разграничения источника, гипотезы и доказательства; адаптер инструкций не является самостоятельным исследователем.",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0"
+            },
+            {
+              "type": "release",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.1"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes"
+            }
+          ],
+          "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0",
+          "claims_vs_verified": {
+            "verified": "Проверены публикации двух релизов, оглавление README и текст FSL-1.1-MIT. Перечисленные российские темы присутствуют в README.",
+            "author_claims": "72 новых, 39 уточнённых и 116 файлов — цифры из сообщения автора о релизе; независимый пересчёт и проверка фактологической точности всех процедур не выполнялись. Оценка install-time scanner в 1.6.1 — заявление автора.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Не проводился полный аудит исторических и генеалогических утверждений в рецептах.",
+            "FSL-1.1-MIT содержит ограничения; проект нельзя представлять как уже распространяемый исключительно по MIT.",
+            "Установка в Claude, Hermes или OpenClaw и работа на реальном исследовании не проверялись."
+          ],
+          "license": "FSL-1.1-MIT: ограничение конкурирующего коммерческого использования; MIT для каждой версии через два года по тексту лицензии",
+          "license_evidence": [
+            "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.352Z",
+          "reviewed_content_hash": "7668b50bad0fa8b5a770ab57eb83b4d823a23ca481ad97fb0f3e07e91df933e7"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:kinprove/genealogy-research-recipes:watch-2026-10-23",
+          "date": "2026-10-22",
+          "change": "Genealogy Research Recipes добавлен в каталог: в релизе 1.6.0 авторы заявили 72 новых и 39 уточнённых процедур, всего 116 файлов, включая Российскую империю и СССР. Версия 1.6.1 меняет две формулировки без изменения процедур.",
+          "previous_state": "Проект отсутствует в действующем каталоге. Репозиторий существует с июля 2026 года: это новая находка для каталога, а не новая разработка октября.",
+          "new_state": "Проверены опубликованные релизы 1.6.0 и 1.6.1 от 22 октября, README и лицензия версии 1.6.1. README перечисляет процедуры для метрических книг, ревизских сказок, сословий и советских источников; качество самих процедур полностью не оценивалось.",
+          "significance_reason": "Редакционная оценка: материал для проектирования исследовательских чек-листов и разграничения источника, гипотезы и доказательства; адаптер инструкций не является самостоятельным исследователем.",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0"
+            },
+            {
+              "type": "release",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.1"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes"
+            }
+          ],
+          "url": "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0",
+          "claims_vs_verified": {
+            "verified": "Проверены публикации двух релизов, оглавление README и текст FSL-1.1-MIT. Перечисленные российские темы присутствуют в README.",
+            "author_claims": "72 новых, 39 уточнённых и 116 файлов — цифры из сообщения автора о релизе; независимый пересчёт и проверка фактологической точности всех процедур не выполнялись. Оценка install-time scanner в 1.6.1 — заявление автора.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Не проводился полный аудит исторических и генеалогических утверждений в рецептах.",
+            "FSL-1.1-MIT содержит ограничения; проект нельзя представлять как уже распространяемый исключительно по MIT.",
+            "Установка в Claude, Hermes или OpenClaw и работа на реальном исследовании не проверялись."
+          ],
+          "license": "FSL-1.1-MIT: ограничение конкурирующего коммерческого использования; MIT для каждой версии через два года по тексту лицензии",
+          "license_evidence": [
+            "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.352Z",
+          "reviewed_content_hash": "7668b50bad0fa8b5a770ab57eb83b4d823a23ca481ad97fb0f3e07e91df933e7"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "7668b50bad0fa8b5a770ab57eb83b4d823a23ca481ad97fb0f3e07e91df933e7",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:igormel81/genealogy-mcp:watch-2026-10-23",
+      "catalog_match": [
+        "https://github.com/igormel81/genealogy-mcp"
+      ],
+      "research_matches": [
+        "genealogy-mcp"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-23",
+          "repo": "genealogy-mcp",
+          "priority": "P1",
+          "change": "genealogy-mcp v0.7.0: релиз описывает поиск OCR в Gallica и по страницам книг, read-only project_evidence с привязкой ссылок к событиям и исправления ложных подтверждений check_match. Доступность Gallica вживую не подтверждена: в release notes указаны HTTP 403.",
+          "link": "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0",
+          "components": "API/MCP/agent layer · Archive Adapter · Person Resolver · provenance/evidence",
+          "action": "Проверить project_evidence на учебном проекте; отдельно проверить живой доступ к Gallica и контрольные случаи однофамильцев.",
+          "event_date": "2026-10-21",
+          "significance_reason": "Редакционная оценка: полезны привязка доказательств к отдельным событиям и различение заблокированного источника и отрицательного поиска; наличие ссылки не делает факт подтверждённым.",
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.353Z",
+          "discovery_id": "github:igormel81/genealogy-mcp:watch-2026-10-23",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/igormel81/genealogy-mcp/blob/7f4e96b4f9ad1ab7b4c81819b59612e936c571c0/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/igormel81/genealogy-mcp"
+            }
+          ],
+          "research_link": "project.html?repo=genealogy-mcp",
+          "previous_state": "genealogy-mcp уже есть в каталоге; событие релиза 0.7.0 и его конкретная дельта отсутствуют в истории и дайджесте.",
+          "new_state": "Проверен опубликованный релиз v0.7.0 от 21 октября 2026 года и MIT LICENSE на его ревизии 7f4e96b4f9ad1ab7b4c81819b59612e936c571c0. Заявленные возможности и исправления внесены как содержание release notes с явной границей проверки."
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "discovery_id": "github:igormel81/genealogy-mcp:watch-2026-10-23",
+          "date": "2026-10-21",
+          "change": "genealogy-mcp v0.7.0: релиз описывает поиск OCR в Gallica и по страницам книг, read-only project_evidence с привязкой ссылок к событиям и исправления ложных подтверждений check_match. Доступность Gallica вживую не подтверждена: в release notes указаны HTTP 403.",
+          "previous_state": "genealogy-mcp уже есть в каталоге; событие релиза 0.7.0 и его конкретная дельта отсутствуют в истории и дайджесте.",
+          "new_state": "Проверен опубликованный релиз v0.7.0 от 21 октября 2026 года и MIT LICENSE на его ревизии 7f4e96b4f9ad1ab7b4c81819b59612e936c571c0. Заявленные возможности и исправления внесены как содержание release notes с явной границей проверки.",
+          "significance_reason": "Редакционная оценка: полезны привязка доказательств к отдельным событиям и различение заблокированного источника и отрицательного поиска; наличие ссылки не делает факт подтверждённым.",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/igormel81/genealogy-mcp/blob/7f4e96b4f9ad1ab7b4c81819b59612e936c571c0/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/igormel81/genealogy-mcp"
+            }
+          ],
+          "url": "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0",
+          "claims_vs_verified": {
+            "verified": "Подтверждены существование репозитория, публикация v0.7.0, содержание release notes и текст лицензии на указанной ревизии.",
+            "author_claims": "Возможности Gallica, project_evidence, исправления check_match, успешность контрактных тестов и каталог из 171 источника описаны авторами; код и все 171 источника в этой проверке не аудировались.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Gallica возвращала HTTP 403 по сообщению авторов; собственная проверка живого поиска не проводилась.",
+            "Успешные контрактные тесты не подтверждают доступность Gallica.",
+            "Исправления сопоставления людей не проверены на независимом наборе; ссылка на событие не является доказанным фактом."
+          ],
+          "license": "MIT на ревизии релиза v0.7.0",
+          "license_evidence": [
+            "https://github.com/igormel81/genealogy-mcp/blob/7f4e96b4f9ad1ab7b4c81819b59612e936c571c0/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.353Z",
+          "reviewed_content_hash": "5d4a17aa9f4eef9cbf82c84415ff0b71e82e030a294d83bc388321c9d13e27ac"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:igormel81/genealogy-mcp:watch-2026-10-23",
+          "date": "2026-10-21",
+          "change": "genealogy-mcp v0.7.0: релиз описывает поиск OCR в Gallica и по страницам книг, read-only project_evidence с привязкой ссылок к событиям и исправления ложных подтверждений check_match. Доступность Gallica вживую не подтверждена: в release notes указаны HTTP 403.",
+          "previous_state": "genealogy-mcp уже есть в каталоге; событие релиза 0.7.0 и его конкретная дельта отсутствуют в истории и дайджесте.",
+          "new_state": "Проверен опубликованный релиз v0.7.0 от 21 октября 2026 года и MIT LICENSE на его ревизии 7f4e96b4f9ad1ab7b4c81819b59612e936c571c0. Заявленные возможности и исправления внесены как содержание release notes с явной границей проверки.",
+          "significance_reason": "Редакционная оценка: полезны привязка доказательств к отдельным событиям и различение заблокированного источника и отрицательного поиска; наличие ссылки не делает факт подтверждённым.",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/igormel81/genealogy-mcp/blob/7f4e96b4f9ad1ab7b4c81819b59612e936c571c0/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/igormel81/genealogy-mcp"
+            }
+          ],
+          "url": "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0",
+          "claims_vs_verified": {
+            "verified": "Подтверждены существование репозитория, публикация v0.7.0, содержание release notes и текст лицензии на указанной ревизии.",
+            "author_claims": "Возможности Gallica, project_evidence, исправления check_match, успешность контрактных тестов и каталог из 171 источника описаны авторами; код и все 171 источника в этой проверке не аудировались.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Gallica возвращала HTTP 403 по сообщению авторов; собственная проверка живого поиска не проводилась.",
+            "Успешные контрактные тесты не подтверждают доступность Gallica.",
+            "Исправления сопоставления людей не проверены на независимом наборе; ссылка на событие не является доказанным фактом."
+          ],
+          "license": "MIT на ревизии релиза v0.7.0",
+          "license_evidence": [
+            "https://github.com/igormel81/genealogy-mcp/blob/7f4e96b4f9ad1ab7b4c81819b59612e936c571c0/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.353Z",
+          "reviewed_content_hash": "5d4a17aa9f4eef9cbf82c84415ff0b71e82e030a294d83bc388321c9d13e27ac"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "5d4a17aa9f4eef9cbf82c84415ff0b71e82e030a294d83bc388321c9d13e27ac",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
+      "catalog_match": [
+        "https://github.com/AI-Riksarkivet/rask"
+      ],
+      "research_matches": [
+        "rask"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-24",
+          "repo": "Rask",
+          "priority": "P2",
+          "change": "Rask da7b2936: для доставки lineage включён parallel-режим с maxAckPending=64, а при commit повторно проверяется привязка run к автору. Это новая дельта относительно UUID-обновления 23 октября; live-показатели авторов не воспроизводились.",
+          "link": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba",
+          "components": "provenance/evidence · Indexer · API/MCP/agent layer",
+          "action": "Проверить параллельную очередь provenance, replay/deduplication и отказ записи чужого run на учебном окружении.",
+          "event_date": "2026-10-24",
+          "significance_reason": "Редакционная оценка: значимая дельта для очереди provenance и целостности авторства при параллельной доставке; не утверждение об измеренном ускорении.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-24",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+            }
+          ],
+          "research_link": "project.html?repo=Rask",
+          "previous_state": "В каталоге Rask и выпуске 23 октября уже есть UUID/OpenFGA, trash/undrop и проверки имён. Эти события сохраняются и не публикуются повторно.",
+          "new_state": "В диффе da7b2936 от 24 октября прочитаны настройки Dapr/JetStream, значение deliveriesInFlight=64, логика refuse_foreign_runs при commit и изменения теста burst-доставок. Архивированы полные патчи выбранных файлов, не весь репозиторий."
+        },
+        {
+          "date": "2026-10-23",
+          "repo": "Rask",
+          "priority": "P2",
+          "change": "Rask: после ADR 0173 появились изменения кода — UUID в объектах OpenFGA, записи восстановления по UUID и проверка допустимых имён. Коммиты 22–23 октября отделяют идентичность объекта от переименования; развёртывание и миграция не проверялись.",
+          "link": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156",
+          "components": "Research Workspace · provenance/evidence · API/MCP/agent layer",
+          "action": "Изучить реализацию стабильных идентификаторов; перед интеграцией проверить миграцию прав, lineage, viewer/annotator и восстановление одноимённых объектов.",
+          "event_date": "2026-10-23",
+          "significance_reason": "Редакционная оценка: это существенная дельта для долговременных прав доступа, lineage и восстановления архивных таблиц; оценка основана на выбранном коде, без проверки работающей системы.",
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.354Z",
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/1ce098a42fe93656f841130b2b093fa4d9e8c6aa"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/d2f3f88e3b8166075801465bc4893e0433b6bf43"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/AI-Riksarkivet/rask"
+            }
+          ],
+          "research_link": "project.html?repo=Rask",
+          "previous_state": "В дайджесте 21 октября уже учтён ADR 0173 (04766b18). Архитектурное решение само по себе не подтверждало реализацию последующих изменений.",
+          "new_state": "Статически прочитаны выбранные диффы a2af14d9 (table:<uuid>/namespace:<uuid>), 1ce098a4 (trash по UUID и выбор при неоднозначном undrop) и d2f3f88e (проверки имён, NFC, фиксированный разделитель). Снимки сохраняют метаданные и полные патчи указанных файлов, а не весь репозиторий."
+        },
+        {
+          "date": "2026-10-21",
+          "repo": "AI-Riksarkivet/rask",
+          "priority": "P2",
+          "change": "ADR-0173: постоянные UUID для объектов независимо от их названий; решение, не подтверждённая реализация.",
+          "link": "https://github.com/AI-Riksarkivet/rask/commit/04766b18482e879e235b7c00e7494756fc0857ba",
+          "components": "Place Resolver/АТД · provenance/evidence",
+          "action": "Учесть постоянные UUID; реализация не подтверждена"
+        },
+        {
+          "date": "2026-10-19",
+          "repo": "AI-Riksarkivet/rask",
+          "priority": "P1",
+          "change": "Отделение сервиса аннотирования от архивной платформы.",
+          "link": "https://github.com/AI-Riksarkivet/rask",
+          "components": "Research Workspace · API",
+          "action": "Заимствовать принцип"
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "date": "2026-10-21",
+          "change": "ADR-0173: постоянные UUID для объектов независимо от их названий; решение, не подтверждённая реализация.",
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/04766b18482e879e235b7c00e7494756fc0857ba",
+          "evidence": "Пересказ обзора; первичный код в этой сборке не проверялся"
+        },
+        {
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
+          "date": "2026-10-23",
+          "change": "Rask: после ADR 0173 появились изменения кода — UUID в объектах OpenFGA, записи восстановления по UUID и проверка допустимых имён. Коммиты 22–23 октября отделяют идентичность объекта от переименования; развёртывание и миграция не проверялись.",
+          "previous_state": "В дайджесте 21 октября уже учтён ADR 0173 (04766b18). Архитектурное решение само по себе не подтверждало реализацию последующих изменений.",
+          "new_state": "Статически прочитаны выбранные диффы a2af14d9 (table:<uuid>/namespace:<uuid>), 1ce098a4 (trash по UUID и выбор при неоднозначном undrop) и d2f3f88e (проверки имён, NFC, фиксированный разделитель). Снимки сохраняют метаданные и полные патчи указанных файлов, а не весь репозиторий.",
+          "significance_reason": "Редакционная оценка: это существенная дельта для долговременных прав доступа, lineage и восстановления архивных таблиц; оценка основана на выбранном коде, без проверки работающей системы.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/1ce098a42fe93656f841130b2b093fa4d9e8c6aa"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/d2f3f88e3b8166075801465bc4893e0433b6bf43"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/AI-Riksarkivet/rask"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156",
+          "claims_vs_verified": {
+            "verified": "В выбранных диффах присутствуют функции table_object/namespace_object с UUID, UUID в записи trash, выбор единственной записи для undrop и добавление require_names с Unicode NFC и ограничениями символов.",
+            "author_claims": "Сохранение грантов при переименовании, регрессионные тесты и план перестройки окружения описаны авторами. Полнота интеграции во все сервисы независимо не подтверждена.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Upstream-тесты, миграция и развёртывание Rask не запускались.",
+            "Коммит UUID отдельно отмечает оставшиеся проверки table:<name> в viewer/search и annotator, которые fail closed.",
+            "Автор отмечает отсутствие теста для части purge-правила пространств имён; нельзя объявлять миграцию завершённой или безопасной по одному диффу."
+          ],
+          "license": "Apache-2.0 на проверенной ревизии d2f3f88e",
+          "license_evidence": [
+            "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.354Z",
+          "reviewed_content_hash": "1050c87ef0f75b3b1261cf2c2e7c5845f8c5db104a91e496121c213d244aabdf"
+        },
+        {
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-24",
+          "date": "2026-10-24",
+          "change": "Rask da7b2936: для доставки lineage включён parallel-режим с maxAckPending=64, а при commit повторно проверяется привязка run к автору. Это новая дельта относительно UUID-обновления 23 октября; live-показатели авторов не воспроизводились.",
+          "previous_state": "В каталоге Rask и выпуске 23 октября уже есть UUID/OpenFGA, trash/undrop и проверки имён. Эти события сохраняются и не публикуются повторно.",
+          "new_state": "В диффе da7b2936 от 24 октября прочитаны настройки Dapr/JetStream, значение deliveriesInFlight=64, логика refuse_foreign_runs при commit и изменения теста burst-доставок. Архивированы полные патчи выбранных файлов, не весь репозиторий.",
+          "significance_reason": "Редакционная оценка: значимая дельта для очереди provenance и целостности авторства при параллельной доставке; не утверждение об измеренном ускорении.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba",
+          "claims_vs_verified": {
+            "verified": "В выбранных патчах присутствуют parallel, maxAckPending, значение по умолчанию 64 и повторная проверка автора run перед записью.",
+            "author_claims": "61 последовательная доставка, 171 секунда опустошения очереди, live-readback и 716 тестов приведены авторами коммита; самостоятельно не воспроизводились.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "NATS, Dapr, каталог и upstream-тесты не запускались.",
+            "Пересоздание durable consumer и повторная доставка требуют отдельного испытания в тестовом окружении.",
+            "Изменение не доказывает безопасность миграции и устойчивость ко всем гонкам."
+          ],
+          "license": "Apache-2.0 на ревизии da7b2936",
+          "license_evidence": [
+            "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "29838db54a4592ef9ed419344114386a12c6108047425f48b6c1ffedb4aac52c"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
+          "date": "2026-10-23",
+          "change": "Rask: после ADR 0173 появились изменения кода — UUID в объектах OpenFGA, записи восстановления по UUID и проверка допустимых имён. Коммиты 22–23 октября отделяют идентичность объекта от переименования; развёртывание и миграция не проверялись.",
+          "previous_state": "В дайджесте 21 октября уже учтён ADR 0173 (04766b18). Архитектурное решение само по себе не подтверждало реализацию последующих изменений.",
+          "new_state": "Статически прочитаны выбранные диффы a2af14d9 (table:<uuid>/namespace:<uuid>), 1ce098a4 (trash по UUID и выбор при неоднозначном undrop) и d2f3f88e (проверки имён, NFC, фиксированный разделитель). Снимки сохраняют метаданные и полные патчи указанных файлов, а не весь репозиторий.",
+          "significance_reason": "Редакционная оценка: это существенная дельта для долговременных прав доступа, lineage и восстановления архивных таблиц; оценка основана на выбранном коде, без проверки работающей системы.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/1ce098a42fe93656f841130b2b093fa4d9e8c6aa"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/d2f3f88e3b8166075801465bc4893e0433b6bf43"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/AI-Riksarkivet/rask"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156",
+          "claims_vs_verified": {
+            "verified": "В выбранных диффах присутствуют функции table_object/namespace_object с UUID, UUID в записи trash, выбор единственной записи для undrop и добавление require_names с Unicode NFC и ограничениями символов.",
+            "author_claims": "Сохранение грантов при переименовании, регрессионные тесты и план перестройки окружения описаны авторами. Полнота интеграции во все сервисы независимо не подтверждена.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Upstream-тесты, миграция и развёртывание Rask не запускались.",
+            "Коммит UUID отдельно отмечает оставшиеся проверки table:<name> в viewer/search и annotator, которые fail closed.",
+            "Автор отмечает отсутствие теста для части purge-правила пространств имён; нельзя объявлять миграцию завершённой или безопасной по одному диффу."
+          ],
+          "license": "Apache-2.0 на проверенной ревизии d2f3f88e",
+          "license_evidence": [
+            "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.354Z",
+          "reviewed_content_hash": "1050c87ef0f75b3b1261cf2c2e7c5845f8c5db104a91e496121c213d244aabdf"
+        },
+        {
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-24",
+          "date": "2026-10-24",
+          "change": "Rask da7b2936: для доставки lineage включён parallel-режим с maxAckPending=64, а при commit повторно проверяется привязка run к автору. Это новая дельта относительно UUID-обновления 23 октября; live-показатели авторов не воспроизводились.",
+          "previous_state": "В каталоге Rask и выпуске 23 октября уже есть UUID/OpenFGA, trash/undrop и проверки имён. Эти события сохраняются и не публикуются повторно.",
+          "new_state": "В диффе da7b2936 от 24 октября прочитаны настройки Dapr/JetStream, значение deliveriesInFlight=64, логика refuse_foreign_runs при commit и изменения теста burst-доставок. Архивированы полные патчи выбранных файлов, не весь репозиторий.",
+          "significance_reason": "Редакционная оценка: значимая дельта для очереди provenance и целостности авторства при параллельной доставке; не утверждение об измеренном ускорении.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba",
+          "claims_vs_verified": {
+            "verified": "В выбранных патчах присутствуют parallel, maxAckPending, значение по умолчанию 64 и повторная проверка автора run перед записью.",
+            "author_claims": "61 последовательная доставка, 171 секунда опустошения очереди, live-readback и 716 тестов приведены авторами коммита; самостоятельно не воспроизводились.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "NATS, Dapr, каталог и upstream-тесты не запускались.",
+            "Пересоздание durable consumer и повторная доставка требуют отдельного испытания в тестовом окружении.",
+            "Изменение не доказывает безопасность миграции и устойчивость ко всем гонкам."
+          ],
+          "license": "Apache-2.0 на ревизии da7b2936",
+          "license_evidence": [
+            "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "29838db54a4592ef9ed419344114386a12c6108047425f48b6c1ffedb4aac52c"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "1050c87ef0f75b3b1261cf2c2e7c5845f8c5db104a91e496121c213d244aabdf",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:b21-agency/gramps-ui:watch-2026-10-24",
+      "catalog_match": [
+        "https://github.com/b21-agency/gramps-ui"
+      ],
+      "research_matches": [
+        "b21-agency/gramps-ui"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-24",
+          "repo": "b21-agency/gramps-ui",
+          "priority": "Не оценён",
+          "change": "Family Archive / gramps-ui 0.1.0: опубликован первый публичный preview альтернативного интерфейса Gramps Web. README описывает замену только UI и прямо предупреждает: совместимость задумана, но пока не гарантирована.",
+          "link": "https://github.com/b21-agency/gramps-ui/releases/tag/0.1.0",
+          "components": "Research Workspace · API/MCP/agent layer",
+          "action": "Рассмотреть preview на копии базы с резервной копией; проверить совместимость нужных операций.",
+          "event_date": "2026-10-24",
+          "significance_reason": "Редакционная оценка: кандидат для сравнения семейного интерфейса поверх существующего Gramps Web без смешения frontend и backend.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "discovery_id": "github:b21-agency/gramps-ui:watch-2026-10-24",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/b21-agency/gramps-ui/releases/tag/0.1.0"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/b21-agency/gramps-ui/blob/0.1.0/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/b21-agency/gramps-ui/blob/0.1.0/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/b21-agency/gramps-ui"
+            }
+          ],
+          "research_link": "project.html?repo=b21-agency%2Fgramps-ui",
+          "previous_state": "Отсутствует в каталоге, исследованиях и дайджесте.",
+          "new_state": "Подтверждены существование репозитория, релиз 0.1.0 от 24 октября и README/LICENSE этого тега. Возможности редактирования, мобильного интерфейса, карт и графов описаны авторами; совместимость и скорость не испытывались."
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "discovery_id": "github:b21-agency/gramps-ui:watch-2026-10-24",
+          "date": "2026-10-24",
+          "change": "Family Archive / gramps-ui 0.1.0: опубликован первый публичный preview альтернативного интерфейса Gramps Web. README описывает замену только UI и прямо предупреждает: совместимость задумана, но пока не гарантирована.",
+          "previous_state": "Отсутствует в каталоге, исследованиях и дайджесте.",
+          "new_state": "Подтверждены существование репозитория, релиз 0.1.0 от 24 октября и README/LICENSE этого тега. Возможности редактирования, мобильного интерфейса, карт и графов описаны авторами; совместимость и скорость не испытывались.",
+          "significance_reason": "Редакционная оценка: кандидат для сравнения семейного интерфейса поверх существующего Gramps Web без смешения frontend и backend.",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/b21-agency/gramps-ui/releases/tag/0.1.0"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/b21-agency/gramps-ui/blob/0.1.0/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/b21-agency/gramps-ui/blob/0.1.0/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/b21-agency/gramps-ui"
+            }
+          ],
+          "url": "https://github.com/b21-agency/gramps-ui/releases/tag/0.1.0",
+          "claims_vs_verified": {
+            "verified": "Подтверждены публикация релиза, идентичность репозитория, оговорка early stage и лицензия в документации тега.",
+            "author_claims": "Полнота функций Gramps Web, скорость больших списков, сохранность данных при замене образа и полная совместимость — заявления авторов, независимо не проверены.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Первый preview; README не гарантирует совместимость.",
+            "Развёртывание и редактирование реального дерева не проверялись.",
+            "Немецкий и английский интерфейсы указаны в README; русская локализация не подтверждена."
+          ],
+          "license": "AGPL-3.0-or-later по README тега 0.1.0; сохранён LICENSE AGPL v3",
+          "license_evidence": [
+            "https://github.com/b21-agency/gramps-ui/blob/0.1.0/README.md",
+            "https://github.com/b21-agency/gramps-ui/blob/0.1.0/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "cac1540e4333e1caad453aa2010cc0f4d38c8bea50925f751ec3676665694317"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:b21-agency/gramps-ui:watch-2026-10-24",
+          "date": "2026-10-24",
+          "change": "Family Archive / gramps-ui 0.1.0: опубликован первый публичный preview альтернативного интерфейса Gramps Web. README описывает замену только UI и прямо предупреждает: совместимость задумана, но пока не гарантирована.",
+          "previous_state": "Отсутствует в каталоге, исследованиях и дайджесте.",
+          "new_state": "Подтверждены существование репозитория, релиз 0.1.0 от 24 октября и README/LICENSE этого тега. Возможности редактирования, мобильного интерфейса, карт и графов описаны авторами; совместимость и скорость не испытывались.",
+          "significance_reason": "Редакционная оценка: кандидат для сравнения семейного интерфейса поверх существующего Gramps Web без смешения frontend и backend.",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/b21-agency/gramps-ui/releases/tag/0.1.0"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/b21-agency/gramps-ui/blob/0.1.0/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/b21-agency/gramps-ui/blob/0.1.0/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/b21-agency/gramps-ui"
+            }
+          ],
+          "url": "https://github.com/b21-agency/gramps-ui/releases/tag/0.1.0",
+          "claims_vs_verified": {
+            "verified": "Подтверждены публикация релиза, идентичность репозитория, оговорка early stage и лицензия в документации тега.",
+            "author_claims": "Полнота функций Gramps Web, скорость больших списков, сохранность данных при замене образа и полная совместимость — заявления авторов, независимо не проверены.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Первый preview; README не гарантирует совместимость.",
+            "Развёртывание и редактирование реального дерева не проверялись.",
+            "Немецкий и английский интерфейсы указаны в README; русская локализация не подтверждена."
+          ],
+          "license": "AGPL-3.0-or-later по README тега 0.1.0; сохранён LICENSE AGPL v3",
+          "license_evidence": [
+            "https://github.com/b21-agency/gramps-ui/blob/0.1.0/README.md",
+            "https://github.com/b21-agency/gramps-ui/blob/0.1.0/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "cac1540e4333e1caad453aa2010cc0f4d38c8bea50925f751ec3676665694317"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "cac1540e4333e1caad453aa2010cc0f4d38c8bea50925f751ec3676665694317",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:dsblank/gramps-connect-stories:watch-2026-10-24",
+      "catalog_match": [
+        "https://github.com/dsblank/gramps-connect-stories"
+      ],
+      "research_matches": [
+        "dsblank/gramps-connect-stories"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-24",
+          "repo": "dsblank/gramps-connect-stories",
+          "priority": "Не оценён",
+          "change": "Gramps Connect Stories: обнаружен проект переносимых семейных историй .story.zip со story.json, медиа, спецификацией формата 1.0 и JSON Schema. Основной проект — AGPL-3.0-or-later; Python writer имеет отдельную GPL-2.0-or-later.",
+          "link": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/README.md",
+          "components": "Research Workspace · Place Resolver/АТД · GEDCOM/data model",
+          "action": "Испытать обмен небольшой вымышленной историей, проверить медиа, версии и обе лицензии.",
+          "event_date": "2026-10-22",
+          "significance_reason": "Редакционная оценка: отдельный формат для передачи законченной семейной истории с датами, местами и изображениями без передачи всей генеалогической базы.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "discovery_id": "github:dsblank/gramps-connect-stories:watch-2026-10-24",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/story.schema.json"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/python/gramps_connect_story.py"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/dsblank/gramps-connect-stories"
+            }
+          ],
+          "research_link": "project.html?repo=dsblank%2Fgramps-connect-stories",
+          "previous_state": "Отсутствует в каталоге. Репозиторий создан 22 октября; запись выпуска 24 октября означает дату находки, а не дату нового релиза npm.",
+          "new_state": "На ревизии 7026d43e прочитаны README, спецификация, JSON Schema и заголовок лицензии Python writer. Спецификация требует включать медиа в архив и описывает версионирование; межпрограммная переносимость не испытывалась."
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "discovery_id": "github:dsblank/gramps-connect-stories:watch-2026-10-24",
+          "date": "2026-10-22",
+          "change": "Gramps Connect Stories: обнаружен проект переносимых семейных историй .story.zip со story.json, медиа, спецификацией формата 1.0 и JSON Schema. Основной проект — AGPL-3.0-or-later; Python writer имеет отдельную GPL-2.0-or-later.",
+          "previous_state": "Отсутствует в каталоге. Репозиторий создан 22 октября; запись выпуска 24 октября означает дату находки, а не дату нового релиза npm.",
+          "new_state": "На ревизии 7026d43e прочитаны README, спецификация, JSON Schema и заголовок лицензии Python writer. Спецификация требует включать медиа в архив и описывает версионирование; межпрограммная переносимость не испытывалась.",
+          "significance_reason": "Редакционная оценка: отдельный формат для передачи законченной семейной истории с датами, местами и изображениями без передачи всей генеалогической базы.",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/story.schema.json"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/python/gramps_connect_story.py"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/dsblank/gramps-connect-stories"
+            }
+          ],
+          "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/README.md",
+          "claims_vs_verified": {
+            "verified": "Подтверждены файлы спецификации и JSON Schema, состав контейнера .story.zip и отдельная лицензия Python writer в заголовке исходника.",
+            "author_claims": "Браузерные viewer/editor, отсутствие отправки истории на сервер, сохранение неизвестных полей и совместимость версий описаны авторами; сетевой аудит и round-trip в разных программах не выполнялись.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Не проверены переносимость в независимом просмотрщике и полнота сохранения данных при повторной записи.",
+            "Семейная история не является экспортом полной базы и доказательством родственных связей.",
+            "Поиск мест в Wikidata и внешние карты могут требовать сети; полная автономность приложения не подтверждена."
+          ],
+          "license": "AGPL-3.0-or-later для основного проекта; GPL-2.0-or-later для python/gramps_connect_story.py",
+          "license_evidence": [
+            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/README.md",
+            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/LICENSE",
+            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/python/gramps_connect_story.py"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "d1f1c7c1d5ea1160dfd16a73ab09f378a0ac59bf639a9fbf0e51d749eb67fbb2"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:dsblank/gramps-connect-stories:watch-2026-10-24",
+          "date": "2026-10-22",
+          "change": "Gramps Connect Stories: обнаружен проект переносимых семейных историй .story.zip со story.json, медиа, спецификацией формата 1.0 и JSON Schema. Основной проект — AGPL-3.0-or-later; Python writer имеет отдельную GPL-2.0-or-later.",
+          "previous_state": "Отсутствует в каталоге. Репозиторий создан 22 октября; запись выпуска 24 октября означает дату находки, а не дату нового релиза npm.",
+          "new_state": "На ревизии 7026d43e прочитаны README, спецификация, JSON Schema и заголовок лицензии Python writer. Спецификация требует включать медиа в архив и описывает версионирование; межпрограммная переносимость не испытывалась.",
+          "significance_reason": "Редакционная оценка: отдельный формат для передачи законченной семейной истории с датами, местами и изображениями без передачи всей генеалогической базы.",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/story.schema.json"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/python/gramps_connect_story.py"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/dsblank/gramps-connect-stories"
+            }
+          ],
+          "url": "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/README.md",
+          "claims_vs_verified": {
+            "verified": "Подтверждены файлы спецификации и JSON Schema, состав контейнера .story.zip и отдельная лицензия Python writer в заголовке исходника.",
+            "author_claims": "Браузерные viewer/editor, отсутствие отправки истории на сервер, сохранение неизвестных полей и совместимость версий описаны авторами; сетевой аудит и round-trip в разных программах не выполнялись.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Не проверены переносимость в независимом просмотрщике и полнота сохранения данных при повторной записи.",
+            "Семейная история не является экспортом полной базы и доказательством родственных связей.",
+            "Поиск мест в Wikidata и внешние карты могут требовать сети; полная автономность приложения не подтверждена."
+          ],
+          "license": "AGPL-3.0-or-later для основного проекта; GPL-2.0-or-later для python/gramps_connect_story.py",
+          "license_evidence": [
+            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/README.md",
+            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/LICENSE",
+            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/python/gramps_connect_story.py"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "d1f1c7c1d5ea1160dfd16a73ab09f378a0ac59bf639a9fbf0e51d749eb67fbb2"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "d1f1c7c1d5ea1160dfd16a73ab09f378a0ac59bf639a9fbf0e51d749eb67fbb2",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:device25/gedview:watch-2026-10-24",
+      "catalog_match": [
+        "https://github.com/device25/gedview"
+      ],
+      "research_matches": [
+        "device25/gedview"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-24",
+          "repo": "device25/gedview",
+          "priority": "Не оценён",
+          "change": "Gedview: браузерный просмотрщик GEDCOM. Хотя README помечает перечень как Features (target), на ревизии 9b651201 присутствуют код и тесты юлианского календаря и русского двойного представления даты «6 (18) апреля 1889». Это статическая проверка, не подтверждение полноты GEDCOM 7.",
+          "link": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/README.md",
+          "components": "GEDCOM/data model · Research Workspace",
+          "action": "Проверить контрольные даты старого/нового стиля и импорт вымышленного GEDCOM; не считать весь target-список реализованным.",
+          "event_date": "2026-10-23",
+          "significance_reason": "Редакционная оценка: кандидат для просмотра GEDCOM с датами старого и нового стиля, важными для российских источников. Чтение кода не заменяет испытание точности на выбранных датах.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "discovery_id": "github:device25/gedview:watch-2026-10-24",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/calendar.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/calendar.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/date.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/date.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/device25/gedview"
+            }
+          ],
+          "research_link": "project.html?repo=device25%2Fgedview",
+          "previous_state": "Отсутствует в каталоге и дайджесте; репозиторий создан 23 октября.",
+          "new_state": "Прочитаны calendar.ts, date.ts, ui/format.ts и соответствующие тесты: преобразование через JDN, разбор календарей и форматирование двух стилей. Код и проверки существуют; тесты upstream не запускались."
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "discovery_id": "github:device25/gedview:watch-2026-10-24",
+          "date": "2026-10-23",
+          "change": "Gedview: браузерный просмотрщик GEDCOM. Хотя README помечает перечень как Features (target), на ревизии 9b651201 присутствуют код и тесты юлианского календаря и русского двойного представления даты «6 (18) апреля 1889». Это статическая проверка, не подтверждение полноты GEDCOM 7.",
+          "previous_state": "Отсутствует в каталоге и дайджесте; репозиторий создан 23 октября.",
+          "new_state": "Прочитаны calendar.ts, date.ts, ui/format.ts и соответствующие тесты: преобразование через JDN, разбор календарей и форматирование двух стилей. Код и проверки существуют; тесты upstream не запускались.",
+          "significance_reason": "Редакционная оценка: кандидат для просмотра GEDCOM с датами старого и нового стиля, важными для российских источников. Чтение кода не заменяет испытание точности на выбранных датах.",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/calendar.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/calendar.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/date.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/date.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/device25/gedview"
+            }
+          ],
+          "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/README.md",
+          "claims_vs_verified": {
+            "verified": "Статически подтверждены функции юлианского/григорианского преобразования, форматирование обоих стилей и тестовые ожидания для 1889, 1900 и 1918 годов.",
+            "author_claims": "Полная поддержка GEDCOM 7, приватность, доступность интерфейса и весь Features (target) не подтверждены. Наличие тестового файла не означает успешный запуск тестов.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Work in progress; весь список планируемых возможностей нельзя объявлять реализованным.",
+            "Upstream-сборка, браузер и тесты не запускались.",
+            "Точность календарей, неизвестные даты, расширения GEDCOM и сетевые обращения требуют отдельной проверки."
+          ],
+          "license": "Apache-2.0; сохранён LICENSE на ревизии 9b651201",
+          "license_evidence": [
+            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "37813cd368bc584e27f6fd0e9abc7964c524206e425b6db0de9908712049b1d7"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:device25/gedview:watch-2026-10-24",
+          "date": "2026-10-23",
+          "change": "Gedview: браузерный просмотрщик GEDCOM. Хотя README помечает перечень как Features (target), на ревизии 9b651201 присутствуют код и тесты юлианского календаря и русского двойного представления даты «6 (18) апреля 1889». Это статическая проверка, не подтверждение полноты GEDCOM 7.",
+          "previous_state": "Отсутствует в каталоге и дайджесте; репозиторий создан 23 октября.",
+          "new_state": "Прочитаны calendar.ts, date.ts, ui/format.ts и соответствующие тесты: преобразование через JDN, разбор календарей и форматирование двух стилей. Код и проверки существуют; тесты upstream не запускались.",
+          "significance_reason": "Редакционная оценка: кандидат для просмотра GEDCOM с датами старого и нового стиля, важными для российских источников. Чтение кода не заменяет испытание точности на выбранных датах.",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/calendar.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/calendar.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/date.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/date.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.test.ts"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/device25/gedview"
+            }
+          ],
+          "url": "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/README.md",
+          "claims_vs_verified": {
+            "verified": "Статически подтверждены функции юлианского/григорианского преобразования, форматирование обоих стилей и тестовые ожидания для 1889, 1900 и 1918 годов.",
+            "author_claims": "Полная поддержка GEDCOM 7, приватность, доступность интерфейса и весь Features (target) не подтверждены. Наличие тестового файла не означает успешный запуск тестов.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Work in progress; весь список планируемых возможностей нельзя объявлять реализованным.",
+            "Upstream-сборка, браузер и тесты не запускались.",
+            "Точность календарей, неизвестные даты, расширения GEDCOM и сетевые обращения требуют отдельной проверки."
+          ],
+          "license": "Apache-2.0; сохранён LICENSE на ревизии 9b651201",
+          "license_evidence": [
+            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "37813cd368bc584e27f6fd0e9abc7964c524206e425b6db0de9908712049b1d7"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "37813cd368bc584e27f6fd0e9abc7964c524206e425b6db0de9908712049b1d7",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:stanford-oval/sheldon:watch-2026-10-24",
+      "catalog_match": [
+        "https://github.com/stanford-oval/sheldon"
+      ],
+      "research_matches": [
+        "stanford-oval/sheldon"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-24",
+          "repo": "stanford-oval/sheldon",
+          "priority": "Не оценён",
+          "change": "SHELDON: найден общий исследовательский AI-каркас с отдельными пространствами гипотез и наблюдений. Схемы содержат проверяемое утверждение, источники наблюдения и отношения supports/refutes/neutral. Генеалогическая применимость пока только редакционная гипотеза.",
+          "link": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/README.md",
+          "components": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "action": "Изучить модель гипотез и наблюдений; оценить адаптацию на закрытой учебной задаче без переноса авторских benchmark-цифр.",
+          "event_date": "2026-10-04",
+          "significance_reason": "Редакционная оценка: архитектурный кандидат для организации конкурирующих гипотез и опровергающих наблюдений. Это общий исследовательский каркас, а не готовая генеалогическая программа.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "discovery_id": "github:stanford-oval/sheldon:watch-2026-10-24",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/sheldon/methods/sheldon/schemas.py"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/stanford-oval/sheldon"
+            }
+          ],
+          "research_link": "project.html?repo=stanford-oval%2Fsheldon",
+          "previous_state": "Отсутствует в каталоге; репозиторий существует с 4 октября. Новая находка каталога не означает новую публикацию 24 октября.",
+          "new_state": "На ревизии 7fbf027d прочитаны README, MIT LICENSE и schemas.py. Модель данных различает гипотезы, наблюдения, источники и решения пересмотра; качество рассуждений и статья независимо не проверены."
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "discovery_id": "github:stanford-oval/sheldon:watch-2026-10-24",
+          "date": "2026-10-04",
+          "change": "SHELDON: найден общий исследовательский AI-каркас с отдельными пространствами гипотез и наблюдений. Схемы содержат проверяемое утверждение, источники наблюдения и отношения supports/refutes/neutral. Генеалогическая применимость пока только редакционная гипотеза.",
+          "previous_state": "Отсутствует в каталоге; репозиторий существует с 4 октября. Новая находка каталога не означает новую публикацию 24 октября.",
+          "new_state": "На ревизии 7fbf027d прочитаны README, MIT LICENSE и schemas.py. Модель данных различает гипотезы, наблюдения, источники и решения пересмотра; качество рассуждений и статья независимо не проверены.",
+          "significance_reason": "Редакционная оценка: архитектурный кандидат для организации конкурирующих гипотез и опровергающих наблюдений. Это общий исследовательский каркас, а не готовая генеалогическая программа.",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/sheldon/methods/sheldon/schemas.py"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/stanford-oval/sheldon"
+            }
+          ],
+          "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/README.md",
+          "claims_vs_verified": {
+            "verified": "Подтверждены существование проекта, MIT LICENSE и классы HypothesisDraft, ObservationDraft, VerdictDraft, ReviseOp в исходном коде.",
+            "author_claims": "Преимущество до 26,7 пункта и остальные результаты benchmarks — заявления авторов README; не воспроизводились и не распространяются на генеалогию.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Генеалогический benchmark и независимая проверка на архивных материалах отсутствуют в этой проверке.",
+            "Требуются модели/провайдер и бюджет; конфигурация и запуск не испытывались.",
+            "README предупреждает, что Python sandbox и shell не являются границей безопасности; этот компонент не проверялся."
+          ],
+          "license": "MIT на ревизии 7fbf027d",
+          "license_evidence": [
+            "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "8aeb83db505216b71c3b0532dcc86167c01cbfd5b6af4bb1556a441f3fa11632"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:stanford-oval/sheldon:watch-2026-10-24",
+          "date": "2026-10-04",
+          "change": "SHELDON: найден общий исследовательский AI-каркас с отдельными пространствами гипотез и наблюдений. Схемы содержат проверяемое утверждение, источники наблюдения и отношения supports/refutes/neutral. Генеалогическая применимость пока только редакционная гипотеза.",
+          "previous_state": "Отсутствует в каталоге; репозиторий существует с 4 октября. Новая находка каталога не означает новую публикацию 24 октября.",
+          "new_state": "На ревизии 7fbf027d прочитаны README, MIT LICENSE и schemas.py. Модель данных различает гипотезы, наблюдения, источники и решения пересмотра; качество рассуждений и статья независимо не проверены.",
+          "significance_reason": "Редакционная оценка: архитектурный кандидат для организации конкурирующих гипотез и опровергающих наблюдений. Это общий исследовательский каркас, а не готовая генеалогическая программа.",
+          "source_urls": [
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/sheldon/methods/sheldon/schemas.py"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/stanford-oval/sheldon"
+            }
+          ],
+          "url": "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/README.md",
+          "claims_vs_verified": {
+            "verified": "Подтверждены существование проекта, MIT LICENSE и классы HypothesisDraft, ObservationDraft, VerdictDraft, ReviseOp в исходном коде.",
+            "author_claims": "Преимущество до 26,7 пункта и остальные результаты benchmarks — заявления авторов README; не воспроизводились и не распространяются на генеалогию.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Генеалогический benchmark и независимая проверка на архивных материалах отсутствуют в этой проверке.",
+            "Требуются модели/провайдер и бюджет; конфигурация и запуск не испытывались.",
+            "README предупреждает, что Python sandbox и shell не являются границей безопасности; этот компонент не проверялся."
+          ],
+          "license": "MIT на ревизии 7fbf027d",
+          "license_evidence": [
+            "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "8aeb83db505216b71c3b0532dcc86167c01cbfd5b6af4bb1556a441f3fa11632"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "8aeb83db505216b71c3b0532dcc86167c01cbfd5b6af4bb1556a441f3fa11632",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-24",
+      "catalog_match": [
+        "https://github.com/AI-Riksarkivet/rask"
+      ],
+      "research_matches": [
+        "rask"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-24",
+          "repo": "Rask",
+          "priority": "P2",
+          "change": "Rask da7b2936: для доставки lineage включён parallel-режим с maxAckPending=64, а при commit повторно проверяется привязка run к автору. Это новая дельта относительно UUID-обновления 23 октября; live-показатели авторов не воспроизводились.",
+          "link": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba",
+          "components": "provenance/evidence · Indexer · API/MCP/agent layer",
+          "action": "Проверить параллельную очередь provenance, replay/deduplication и отказ записи чужого run на учебном окружении.",
+          "event_date": "2026-10-24",
+          "significance_reason": "Редакционная оценка: значимая дельта для очереди provenance и целостности авторства при параллельной доставке; не утверждение об измеренном ускорении.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-24",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+            }
+          ],
+          "research_link": "project.html?repo=Rask",
+          "previous_state": "В каталоге Rask и выпуске 23 октября уже есть UUID/OpenFGA, trash/undrop и проверки имён. Эти события сохраняются и не публикуются повторно.",
+          "new_state": "В диффе da7b2936 от 24 октября прочитаны настройки Dapr/JetStream, значение deliveriesInFlight=64, логика refuse_foreign_runs при commit и изменения теста burst-доставок. Архивированы полные патчи выбранных файлов, не весь репозиторий."
+        },
+        {
+          "date": "2026-10-23",
+          "repo": "Rask",
+          "priority": "P2",
+          "change": "Rask: после ADR 0173 появились изменения кода — UUID в объектах OpenFGA, записи восстановления по UUID и проверка допустимых имён. Коммиты 22–23 октября отделяют идентичность объекта от переименования; развёртывание и миграция не проверялись.",
+          "link": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156",
+          "components": "Research Workspace · provenance/evidence · API/MCP/agent layer",
+          "action": "Изучить реализацию стабильных идентификаторов; перед интеграцией проверить миграцию прав, lineage, viewer/annotator и восстановление одноимённых объектов.",
+          "event_date": "2026-10-23",
+          "significance_reason": "Редакционная оценка: это существенная дельта для долговременных прав доступа, lineage и восстановления архивных таблиц; оценка основана на выбранном коде, без проверки работающей системы.",
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.354Z",
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/1ce098a42fe93656f841130b2b093fa4d9e8c6aa"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/d2f3f88e3b8166075801465bc4893e0433b6bf43"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/AI-Riksarkivet/rask"
+            }
+          ],
+          "research_link": "project.html?repo=Rask",
+          "previous_state": "В дайджесте 21 октября уже учтён ADR 0173 (04766b18). Архитектурное решение само по себе не подтверждало реализацию последующих изменений.",
+          "new_state": "Статически прочитаны выбранные диффы a2af14d9 (table:<uuid>/namespace:<uuid>), 1ce098a4 (trash по UUID и выбор при неоднозначном undrop) и d2f3f88e (проверки имён, NFC, фиксированный разделитель). Снимки сохраняют метаданные и полные патчи указанных файлов, а не весь репозиторий."
+        },
+        {
+          "date": "2026-10-21",
+          "repo": "AI-Riksarkivet/rask",
+          "priority": "P2",
+          "change": "ADR-0173: постоянные UUID для объектов независимо от их названий; решение, не подтверждённая реализация.",
+          "link": "https://github.com/AI-Riksarkivet/rask/commit/04766b18482e879e235b7c00e7494756fc0857ba",
+          "components": "Place Resolver/АТД · provenance/evidence",
+          "action": "Учесть постоянные UUID; реализация не подтверждена"
+        },
+        {
+          "date": "2026-10-19",
+          "repo": "AI-Riksarkivet/rask",
+          "priority": "P1",
+          "change": "Отделение сервиса аннотирования от архивной платформы.",
+          "link": "https://github.com/AI-Riksarkivet/rask",
+          "components": "Research Workspace · API",
+          "action": "Заимствовать принцип"
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "date": "2026-10-21",
+          "change": "ADR-0173: постоянные UUID для объектов независимо от их названий; решение, не подтверждённая реализация.",
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/04766b18482e879e235b7c00e7494756fc0857ba",
+          "evidence": "Пересказ обзора; первичный код в этой сборке не проверялся"
+        },
+        {
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
+          "date": "2026-10-23",
+          "change": "Rask: после ADR 0173 появились изменения кода — UUID в объектах OpenFGA, записи восстановления по UUID и проверка допустимых имён. Коммиты 22–23 октября отделяют идентичность объекта от переименования; развёртывание и миграция не проверялись.",
+          "previous_state": "В дайджесте 21 октября уже учтён ADR 0173 (04766b18). Архитектурное решение само по себе не подтверждало реализацию последующих изменений.",
+          "new_state": "Статически прочитаны выбранные диффы a2af14d9 (table:<uuid>/namespace:<uuid>), 1ce098a4 (trash по UUID и выбор при неоднозначном undrop) и d2f3f88e (проверки имён, NFC, фиксированный разделитель). Снимки сохраняют метаданные и полные патчи указанных файлов, а не весь репозиторий.",
+          "significance_reason": "Редакционная оценка: это существенная дельта для долговременных прав доступа, lineage и восстановления архивных таблиц; оценка основана на выбранном коде, без проверки работающей системы.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/1ce098a42fe93656f841130b2b093fa4d9e8c6aa"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/d2f3f88e3b8166075801465bc4893e0433b6bf43"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/AI-Riksarkivet/rask"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156",
+          "claims_vs_verified": {
+            "verified": "В выбранных диффах присутствуют функции table_object/namespace_object с UUID, UUID в записи trash, выбор единственной записи для undrop и добавление require_names с Unicode NFC и ограничениями символов.",
+            "author_claims": "Сохранение грантов при переименовании, регрессионные тесты и план перестройки окружения описаны авторами. Полнота интеграции во все сервисы независимо не подтверждена.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Upstream-тесты, миграция и развёртывание Rask не запускались.",
+            "Коммит UUID отдельно отмечает оставшиеся проверки table:<name> в viewer/search и annotator, которые fail closed.",
+            "Автор отмечает отсутствие теста для части purge-правила пространств имён; нельзя объявлять миграцию завершённой или безопасной по одному диффу."
+          ],
+          "license": "Apache-2.0 на проверенной ревизии d2f3f88e",
+          "license_evidence": [
+            "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.354Z",
+          "reviewed_content_hash": "1050c87ef0f75b3b1261cf2c2e7c5845f8c5db104a91e496121c213d244aabdf"
+        },
+        {
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-24",
+          "date": "2026-10-24",
+          "change": "Rask da7b2936: для доставки lineage включён parallel-режим с maxAckPending=64, а при commit повторно проверяется привязка run к автору. Это новая дельта относительно UUID-обновления 23 октября; live-показатели авторов не воспроизводились.",
+          "previous_state": "В каталоге Rask и выпуске 23 октября уже есть UUID/OpenFGA, trash/undrop и проверки имён. Эти события сохраняются и не публикуются повторно.",
+          "new_state": "В диффе da7b2936 от 24 октября прочитаны настройки Dapr/JetStream, значение deliveriesInFlight=64, логика refuse_foreign_runs при commit и изменения теста burst-доставок. Архивированы полные патчи выбранных файлов, не весь репозиторий.",
+          "significance_reason": "Редакционная оценка: значимая дельта для очереди provenance и целостности авторства при параллельной доставке; не утверждение об измеренном ускорении.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba",
+          "claims_vs_verified": {
+            "verified": "В выбранных патчах присутствуют parallel, maxAckPending, значение по умолчанию 64 и повторная проверка автора run перед записью.",
+            "author_claims": "61 последовательная доставка, 171 секунда опустошения очереди, live-readback и 716 тестов приведены авторами коммита; самостоятельно не воспроизводились.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "NATS, Dapr, каталог и upstream-тесты не запускались.",
+            "Пересоздание durable consumer и повторная доставка требуют отдельного испытания в тестовом окружении.",
+            "Изменение не доказывает безопасность миграции и устойчивость ко всем гонкам."
+          ],
+          "license": "Apache-2.0 на ревизии da7b2936",
+          "license_evidence": [
+            "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "29838db54a4592ef9ed419344114386a12c6108047425f48b6c1ffedb4aac52c"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
+          "date": "2026-10-23",
+          "change": "Rask: после ADR 0173 появились изменения кода — UUID в объектах OpenFGA, записи восстановления по UUID и проверка допустимых имён. Коммиты 22–23 октября отделяют идентичность объекта от переименования; развёртывание и миграция не проверялись.",
+          "previous_state": "В дайджесте 21 октября уже учтён ADR 0173 (04766b18). Архитектурное решение само по себе не подтверждало реализацию последующих изменений.",
+          "new_state": "Статически прочитаны выбранные диффы a2af14d9 (table:<uuid>/namespace:<uuid>), 1ce098a4 (trash по UUID и выбор при неоднозначном undrop) и d2f3f88e (проверки имён, NFC, фиксированный разделитель). Снимки сохраняют метаданные и полные патчи указанных файлов, а не весь репозиторий.",
+          "significance_reason": "Редакционная оценка: это существенная дельта для долговременных прав доступа, lineage и восстановления архивных таблиц; оценка основана на выбранном коде, без проверки работающей системы.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/1ce098a42fe93656f841130b2b093fa4d9e8c6aa"
+            },
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/d2f3f88e3b8166075801465bc4893e0433b6bf43"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/AI-Riksarkivet/rask"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156",
+          "claims_vs_verified": {
+            "verified": "В выбранных диффах присутствуют функции table_object/namespace_object с UUID, UUID в записи trash, выбор единственной записи для undrop и добавление require_names с Unicode NFC и ограничениями символов.",
+            "author_claims": "Сохранение грантов при переименовании, регрессионные тесты и план перестройки окружения описаны авторами. Полнота интеграции во все сервисы независимо не подтверждена.",
+            "independent_testing": "Программы проекта не запускались. Проверяются данные и собственный конвейер каталога."
+          },
+          "risks": [
+            "Upstream-тесты, миграция и развёртывание Rask не запускались.",
+            "Коммит UUID отдельно отмечает оставшиеся проверки table:<name> в viewer/search и annotator, которые fail closed.",
+            "Автор отмечает отсутствие теста для части purge-правила пространств имён; нельзя объявлять миграцию завершённой или безопасной по одному диффу."
+          ],
+          "license": "Apache-2.0 на проверенной ревизии d2f3f88e",
+          "license_evidence": [
+            "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
+          "reviewed_at": "2026-10-23T09:44:05.354Z",
+          "reviewed_content_hash": "1050c87ef0f75b3b1261cf2c2e7c5845f8c5db104a91e496121c213d244aabdf"
+        },
+        {
+          "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-24",
+          "date": "2026-10-24",
+          "change": "Rask da7b2936: для доставки lineage включён parallel-режим с maxAckPending=64, а при commit повторно проверяется привязка run к автору. Это новая дельта относительно UUID-обновления 23 октября; live-показатели авторов не воспроизводились.",
+          "previous_state": "В каталоге Rask и выпуске 23 октября уже есть UUID/OpenFGA, trash/undrop и проверки имён. Эти события сохраняются и не публикуются повторно.",
+          "new_state": "В диффе da7b2936 от 24 октября прочитаны настройки Dapr/JetStream, значение deliveriesInFlight=64, логика refuse_foreign_runs при commit и изменения теста burst-доставок. Архивированы полные патчи выбранных файлов, не весь репозиторий.",
+          "significance_reason": "Редакционная оценка: значимая дельта для очереди provenance и целостности авторства при параллельной доставке; не утверждение об измеренном ускорении.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+            }
+          ],
+          "url": "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba",
+          "claims_vs_verified": {
+            "verified": "В выбранных патчах присутствуют parallel, maxAckPending, значение по умолчанию 64 и повторная проверка автора run перед записью.",
+            "author_claims": "61 последовательная доставка, 171 секунда опустошения очереди, live-readback и 716 тестов приведены авторами коммита; самостоятельно не воспроизводились.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "NATS, Dapr, каталог и upstream-тесты не запускались.",
+            "Пересоздание durable consumer и повторная доставка требуют отдельного испытания в тестовом окружении.",
+            "Изменение не доказывает безопасность миграции и устойчивость ко всем гонкам."
+          ],
+          "license": "Apache-2.0 на ревизии da7b2936",
+          "license_evidence": [
+            "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "29838db54a4592ef9ed419344114386a12c6108047425f48b6c1ffedb4aac52c"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "29838db54a4592ef9ed419344114386a12c6108047425f48b6c1ffedb4aac52c",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:gramps-project/gramps-web-api:watch-2026-10-24",
+      "catalog_match": [
+        "https://github.com/gramps-project/gramps-web-api"
+      ],
+      "research_matches": [
+        "gramps-project/gramps-web-api"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-24",
+          "repo": "gramps-project/gramps-web-api",
+          "priority": "P1",
+          "change": "Gramps Web API 187ac644: изменения undo-history накапливаются в памяти и записываются при commit транзакции; добавлены тесты отменённой транзакции, чтения до commit и commit после abort. Коммит датирован 23 октября, обнаружен 24-го; наличие в выпущенном образе не установлено.",
+          "link": "https://github.com/gramps-project/gramps-web-api/commit/187ac6445c9d50ad296058c3552823eb886fb743",
+          "components": "Research Workspace · provenance/evidence · API/MCP/agent layer",
+          "action": "Проверить abort, последующий commit и undo/redo в тестовой базе; перед обновлением проверить включение коммита в нужный релиз.",
+          "event_date": "2026-10-23",
+          "significance_reason": "Редакционная оценка: помогает отличать зафиксированную историю изменения генеалогических объектов от следов отменённых операций.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "discovery_id": "github:gramps-project/gramps-web-api:watch-2026-10-24",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/gramps-project/gramps-web-api/commit/187ac6445c9d50ad296058c3552823eb886fb743"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/gramps-project/gramps-web-api"
+            }
+          ],
+          "research_link": "project.html?repo=gramps-project%2Fgramps-web-api",
+          "previous_state": "Карточка API и история семантического поиска уже существуют. Исправление undo-history по указанному коммиту в каталоге и дайджесте не учтено.",
+          "new_state": "Прочитаны полный дифф undodb.py и добавленные тесты. append помещает изменения в _pending; _after_commit отбирает диапазон транзакции, очищает pending и записывает Change вместе с Transaction. Upstream-тесты не запускались."
+        },
+        {
+          "date": "2026-10-21",
+          "repo": "gramps-project/gramps-web-api",
+          "priority": "P1",
+          "change": "Удалён встроенный семантический поиск; ИИ-ассистент использует полнотекстовый поиск.",
+          "link": "https://github.com/gramps-project/gramps-web-api/commit/9326174cf86921533682409aced7fddd5efefe07",
+          "components": "Research Workspace · Person Resolver · API/MCP",
+          "action": "Разделить точный, полнотекстовый и семантический поиск"
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "date": "2026-10-18",
+          "change": "Согласованный экспорт, защита приватных связей, управление заданиями, структурированный агентный поиск."
+        },
+        {
+          "date": "2026-10-21",
+          "change": "Удалён встроенный семантический поиск; ИИ-ассистент использует полнотекстовый поиск.",
+          "url": "https://github.com/gramps-project/gramps-web-api/commit/9326174cf86921533682409aced7fddd5efefe07",
+          "evidence": "Пересказ обзора; первичный код в этой сборке не проверялся"
+        },
+        {
+          "discovery_id": "github:gramps-project/gramps-web-api:watch-2026-10-24",
+          "date": "2026-10-23",
+          "change": "Gramps Web API 187ac644: изменения undo-history накапливаются в памяти и записываются при commit транзакции; добавлены тесты отменённой транзакции, чтения до commit и commit после abort. Коммит датирован 23 октября, обнаружен 24-го; наличие в выпущенном образе не установлено.",
+          "previous_state": "Карточка API и история семантического поиска уже существуют. Исправление undo-history по указанному коммиту в каталоге и дайджесте не учтено.",
+          "new_state": "Прочитаны полный дифф undodb.py и добавленные тесты. append помещает изменения в _pending; _after_commit отбирает диапазон транзакции, очищает pending и записывает Change вместе с Transaction. Upstream-тесты не запускались.",
+          "significance_reason": "Редакционная оценка: помогает отличать зафиксированную историю изменения генеалогических объектов от следов отменённых операций.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/gramps-project/gramps-web-api/commit/187ac6445c9d50ad296058c3552823eb886fb743"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/gramps-project/gramps-web-api"
+            }
+          ],
+          "url": "https://github.com/gramps-project/gramps-web-api/commit/187ac6445c9d50ad296058c3552823eb886fb743",
+          "claims_vs_verified": {
+            "verified": "Статически подтверждены _pending, отложенная запись в _after_commit и новые тесты для abort/read-before-commit/commit-after-abort.",
+            "author_claims": "Устранение ложных записей истории и квадратичного роста длины объясняется автором; эффективность и полная корректность runtime не испытывались.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Тесты upstream и реальная база Gramps не запускались.",
+            "Не установлено, какой опубликованный релиз или контейнер уже включает коммит.",
+            "Чтение диффа не подтверждает все сценарии undo/redo и конкурентных транзакций."
+          ],
+          "license": "LICENSE содержит GNU AGPL v3 на ревизии 187ac644; режим or-later отдельно не установлен",
+          "license_evidence": [
+            "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "b1f632a2d17697501b5364b2cfec90f47a32db3ddced85bd2cbdafa0f1a02e7c"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:gramps-project/gramps-web-api:watch-2026-10-24",
+          "date": "2026-10-23",
+          "change": "Gramps Web API 187ac644: изменения undo-history накапливаются в памяти и записываются при commit транзакции; добавлены тесты отменённой транзакции, чтения до commit и commit после abort. Коммит датирован 23 октября, обнаружен 24-го; наличие в выпущенном образе не установлено.",
+          "previous_state": "Карточка API и история семантического поиска уже существуют. Исправление undo-history по указанному коммиту в каталоге и дайджесте не учтено.",
+          "new_state": "Прочитаны полный дифф undodb.py и добавленные тесты. append помещает изменения в _pending; _after_commit отбирает диапазон транзакции, очищает pending и записывает Change вместе с Transaction. Upstream-тесты не запускались.",
+          "significance_reason": "Редакционная оценка: помогает отличать зафиксированную историю изменения генеалогических объектов от следов отменённых операций.",
+          "source_urls": [
+            {
+              "type": "commit",
+              "url": "https://github.com/gramps-project/gramps-web-api/commit/187ac6445c9d50ad296058c3552823eb886fb743"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/gramps-project/gramps-web-api"
+            }
+          ],
+          "url": "https://github.com/gramps-project/gramps-web-api/commit/187ac6445c9d50ad296058c3552823eb886fb743",
+          "claims_vs_verified": {
+            "verified": "Статически подтверждены _pending, отложенная запись в _after_commit и новые тесты для abort/read-before-commit/commit-after-abort.",
+            "author_claims": "Устранение ложных записей истории и квадратичного роста длины объясняется автором; эффективность и полная корректность runtime не испытывались.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Тесты upstream и реальная база Gramps не запускались.",
+            "Не установлено, какой опубликованный релиз или контейнер уже включает коммит.",
+            "Чтение диффа не подтверждает все сценарии undo/redo и конкурентных транзакций."
+          ],
+          "license": "LICENSE содержит GNU AGPL v3 на ревизии 187ac644; режим or-later отдельно не установлен",
+          "license_evidence": [
+            "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "b1f632a2d17697501b5364b2cfec90f47a32db3ddced85bd2cbdafa0f1a02e7c"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "b1f632a2d17697501b5364b2cfec90f47a32db3ddced85bd2cbdafa0f1a02e7c",
+      "errors": []
+    },
+    {
+      "discovery_id": "github:gramps-project/gramps-web:watch-2026-10-24",
+      "catalog_match": [
+        "https://github.com/gramps-project/gramps-web"
+      ],
+      "research_matches": [
+        "gramps-project/gramps-web"
+      ],
+      "previous_digest_matches": [
+        {
+          "date": "2026-10-24",
+          "repo": "gramps-project/gramps-web",
+          "priority": "P1",
+          "change": "Gramps Web v26.10.2 от 20 октября: release notes описывают KML/GeoJSON/GPX для мест и резервное копирование/восстановление через UI. Новая запись 24 октября отражает обнаружение пропущенного релиза; это не новый релиз сегодняшней даты.",
+          "link": "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2",
+          "components": "Place Resolver/АТД · Research Workspace · provenance/evidence",
+          "action": "Испытать карту с проверенным геофайлом и восстановление из копии в отдельном окружении; проверить версию backend и права.",
+          "event_date": "2026-10-20",
+          "significance_reason": "Редакционная оценка: полезная дельта для исторических границ приходов/маршрутов и управления копиями дерева. Это обзор релиза, а не независимое испытание восстановления.",
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "discovery_id": "github:gramps-project/gramps-web:watch-2026-10-24",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web/blob/v26.10.2/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web/blob/v26.10.2/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/gramps-project/gramps-web"
+            }
+          ],
+          "research_link": "project.html?repo=gramps-project%2Fgramps-web",
+          "previous_state": "Gramps Web уже есть в каталоге; старое событие конструктора запросов сохраняется. Конкретные карты мест и backup/restore выпуска v26.10.2 ещё не отражены.",
+          "new_state": "Подтверждены опубликованный релиз от 20 октября и LICENSE тега v26.10.2. По release notes места могут показывать прикреплённые геофайлы, а управление backups требует разрешения и Gramps Web API v3.24. Advanced filter уже упоминался ранее и не считается отдельной новой находкой."
+        },
+        {
+          "date": "2026-10-18",
+          "repo": "gramps-project/gramps-web",
+          "priority": "P2",
+          "change": "Визуальный конструктор запросов.",
+          "link": "https://github.com/gramps-project/gramps-web",
+          "components": "Research Workspace",
+          "action": "Изучить / проверить"
+        }
+      ],
+      "previous_catalog_events": [
+        {
+          "discovery_id": "github:gramps-project/gramps-web:watch-2026-10-24",
+          "date": "2026-10-20",
+          "change": "Gramps Web v26.10.2 от 20 октября: release notes описывают KML/GeoJSON/GPX для мест и резервное копирование/восстановление через UI. Новая запись 24 октября отражает обнаружение пропущенного релиза; это не новый релиз сегодняшней даты.",
+          "previous_state": "Gramps Web уже есть в каталоге; старое событие конструктора запросов сохраняется. Конкретные карты мест и backup/restore выпуска v26.10.2 ещё не отражены.",
+          "new_state": "Подтверждены опубликованный релиз от 20 октября и LICENSE тега v26.10.2. По release notes места могут показывать прикреплённые геофайлы, а управление backups требует разрешения и Gramps Web API v3.24. Advanced filter уже упоминался ранее и не считается отдельной новой находкой.",
+          "significance_reason": "Редакционная оценка: полезная дельта для исторических границ приходов/маршрутов и управления копиями дерева. Это обзор релиза, а не независимое испытание восстановления.",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web/blob/v26.10.2/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web/blob/v26.10.2/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/gramps-project/gramps-web"
+            }
+          ],
+          "url": "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2",
+          "claims_vs_verified": {
+            "verified": "Подтверждены дата публикации релиза, содержание release notes, зависимость backup-функций от разрешений/API v3.24 и заявление о лицензии or-later.",
+            "author_claims": "Отрисовка геофайлов, сохранение Wikidata buildings и работоспособность backup/restore описаны авторами релиза; программы не запускались.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Полный цикл резервного копирования и восстановления не проверен.",
+            "Часть функций требует API v3.24 и соответствующих прав; наличие frontend недостаточно.",
+            "Границы из KML/GeoJSON/GPX и Wikidata не становятся исторически подтверждёнными фактами от отображения на карте."
+          ],
+          "license": "AGPL-3.0-or-later явно указана в release notes v26.10.2; сохранён LICENSE тега",
+          "license_evidence": [
+            "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2",
+            "https://github.com/gramps-project/gramps-web/blob/v26.10.2/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6"
+        }
+      ],
+      "previous_research_events": [
+        {
+          "discovery_id": "github:gramps-project/gramps-web:watch-2026-10-24",
+          "date": "2026-10-20",
+          "change": "Gramps Web v26.10.2 от 20 октября: release notes описывают KML/GeoJSON/GPX для мест и резервное копирование/восстановление через UI. Новая запись 24 октября отражает обнаружение пропущенного релиза; это не новый релиз сегодняшней даты.",
+          "previous_state": "Gramps Web уже есть в каталоге; старое событие конструктора запросов сохраняется. Конкретные карты мест и backup/restore выпуска v26.10.2 ещё не отражены.",
+          "new_state": "Подтверждены опубликованный релиз от 20 октября и LICENSE тега v26.10.2. По release notes места могут показывать прикреплённые геофайлы, а управление backups требует разрешения и Gramps Web API v3.24. Advanced filter уже упоминался ранее и не считается отдельной новой находкой.",
+          "significance_reason": "Редакционная оценка: полезная дельта для исторических границ приходов/маршрутов и управления копиями дерева. Это обзор релиза, а не независимое испытание восстановления.",
+          "source_urls": [
+            {
+              "type": "release",
+              "url": "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web/blob/v26.10.2/README.md"
+            },
+            {
+              "type": "README",
+              "url": "https://github.com/gramps-project/gramps-web/blob/v26.10.2/LICENSE"
+            },
+            {
+              "type": "README",
+              "url": "https://api.github.com/repos/gramps-project/gramps-web"
+            }
+          ],
+          "url": "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2",
+          "claims_vs_verified": {
+            "verified": "Подтверждены дата публикации релиза, содержание release notes, зависимость backup-функций от разрешений/API v3.24 и заявление о лицензии or-later.",
+            "author_claims": "Отрисовка геофайлов, сохранение Wikidata buildings и работоспособность backup/restore описаны авторами релиза; программы не запускались.",
+            "independent_testing": "Upstream-программы и тесты не запускались. Проверяется собственный конвейер каталога."
+          },
+          "risks": [
+            "Полный цикл резервного копирования и восстановления не проверен.",
+            "Часть функций требует API v3.24 и соответствующих прав; наличие frontend недостаточно.",
+            "Границы из KML/GeoJSON/GPX и Wikidata не становятся исторически подтверждёнными фактами от отображения на карте."
+          ],
+          "license": "AGPL-3.0-or-later явно указана в release notes v26.10.2; сохранён LICENSE тега",
+          "license_evidence": [
+            "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2",
+            "https://github.com/gramps-project/gramps-web/blob/v26.10.2/LICENSE"
+          ],
+          "review_status": "approved",
+          "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
+          "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
+          "reviewed_content_hash": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6"
+        }
+      ],
+      "novelty_status": "duplicate",
+      "eligible_for_apply": false,
+      "content_hash": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6",
+      "errors": []
+    }
+  ],
+  "mode": "offline dry-run; evidence URLs have not been fetched or verified"
+}

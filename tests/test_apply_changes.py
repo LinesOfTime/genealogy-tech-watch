@@ -83,6 +83,11 @@ class ApplyTests(unittest.TestCase):
         catalog=json.loads((self.root/'catalog.json').read_text(encoding='utf-8'))
         card=catalog[-1]
         self.assertEqual({k:card[k] for k in profile},profile)
+        from discoveries import compare
+        report=compare(self.root,[self.record])
+        self.assertEqual(report['errors'],0)
+        self.assertEqual(report['eligible'],0)
+        self.assertEqual(report['results'][0]['novelty_status'],'duplicate')
         self.assertEqual(card['catalog_profile_provenance']['previous_values']['use_case'],'Не оценено')
         self.assertIsNone(card['catalog_profile_provenance']['previous_values']['project_type'])
         from watch_pipeline import validate
