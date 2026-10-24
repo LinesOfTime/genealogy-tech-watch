@@ -3,5 +3,12 @@
   "github:geiserx/gramps-web-toolkit:watch-2026-10-23": "39763e7fd14b62e2601f17a12b3d112b844d47d0137c76fd20559253a6fcb705",
   "github:kinprove/genealogy-research-recipes:watch-2026-10-23": "7668b50bad0fa8b5a770ab57eb83b4d823a23ca481ad97fb0f3e07e91df933e7",
   "github:igormel81/genealogy-mcp:watch-2026-10-23": "5d4a17aa9f4eef9cbf82c84415ff0b71e82e030a294d83bc388321c9d13e27ac",
-  "github:ai-riksarkivet/rask:watch-2026-10-23": "1050c87ef0f75b3b1261cf2c2e7c5845f8c5db104a91e496121c213d244aabdf"
+  "github:ai-riksarkivet/rask:watch-2026-10-23": "1050c87ef0f75b3b1261cf2c2e7c5845f8c5db104a91e496121c213d244aabdf",
+  "github:b21-agency/gramps-ui:watch-2026-10-24": "cac1540e4333e1caad453aa2010cc0f4d38c8bea50925f751ec3676665694317",
+  "github:dsblank/gramps-connect-stories:watch-2026-10-24": "d1f1c7c1d5ea1160dfd16a73ab09f378a0ac59bf639a9fbf0e51d749eb67fbb2",
+  "github:device25/gedview:watch-2026-10-24": "37813cd368bc584e27f6fd0e9abc7964c524206e425b6db0de9908712049b1d7",
+  "github:stanford-oval/sheldon:watch-2026-10-24": "8aeb83db505216b71c3b0532dcc86167c01cbfd5b6af4bb1556a441f3fa11632",
+  "github:ai-riksarkivet/rask:watch-2026-10-24": "29838db54a4592ef9ed419344114386a12c6108047425f48b6c1ffedb4aac52c",
+  "github:gramps-project/gramps-web-api:watch-2026-10-24": "b1f632a2d17697501b5364b2cfec90f47a32db3ddced85bd2cbdafa0f1a02e7c",
+  "github:gramps-project/gramps-web:watch-2026-10-24": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6"
 }

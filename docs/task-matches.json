@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "3d07ec7d865982c99cd27d46564900e496b1e91fffea7bc17cb0279b4bc4d3dc",
+  "source_hash": "7c48dfb1750d5be9e00b4006c73061bcc077e8e465c14bd5aa7d55363d1c21da",
   "tasks": [
     {
       "id": "transcribe",
@@ -4057,6 +4057,205 @@
         }
       ],
       "limitations": "Все рецепты и их первоисточники не проверены. Количество файлов и масштаб обновления приведены со слов авторов релиза. Установка и реальное исследование не тестировались. FSL-1.1-MIT ограничивает конкурирующее коммерческое использование.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "b21-agency/gramps-ui",
+      "url": "https://github.com/b21-agency/gramps-ui",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "b21-agency/gramps-ui",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Ранняя стадия; совместимость задумана, но не гарантирована. Работа, скорость и сохранность данных независимо не испытывались. В README указаны немецкий и английский языки.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "b21-agency/gramps-ui",
+      "url": "https://github.com/b21-agency/gramps-ui",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "b21-agency/gramps-ui",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Ранняя стадия; совместимость задумана, но не гарантирована. Работа, скорость и сохранность данных независимо не испытывались. В README указаны немецкий и английский языки.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "places",
+      "project": "dsblank/gramps-connect-stories",
+      "url": "https://github.com/dsblank/gramps-connect-stories",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "dsblank/gramps-connect-stories",
+          "field": "components",
+          "excerpt": "Research Workspace · Place Resolver/АТД · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Независимая переносимость и round-trip не проверены. Сетевые карты и поиск Wikidata не дают оснований обещать полностью автономный UI. Основной код AGPL-3.0-or-later, Python writer отдельно GPL-2.0-or-later.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "dsblank/gramps-connect-stories",
+      "url": "https://github.com/dsblank/gramps-connect-stories",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "dsblank/gramps-connect-stories",
+          "field": "components",
+          "excerpt": "Research Workspace · Place Resolver/АТД · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Независимая переносимость и round-trip не проверены. Сетевые карты и поиск Wikidata не дают оснований обещать полностью автономный UI. Основной код AGPL-3.0-or-later, Python writer отдельно GPL-2.0-or-later.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "dsblank/gramps-connect-stories",
+      "url": "https://github.com/dsblank/gramps-connect-stories",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "dsblank/gramps-connect-stories",
+          "field": "components",
+          "excerpt": "Research Workspace · Place Resolver/АТД · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Независимая переносимость и round-trip не проверены. Сетевые карты и поиск Wikidata не дают оснований обещать полностью автономный UI. Основной код AGPL-3.0-or-later, Python writer отдельно GPL-2.0-or-later.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "device25/gedview",
+      "url": "https://github.com/device25/gedview",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "device25/gedview",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Work in progress. README содержит Features (target); полнота GEDCOM 7, точность календарей и приватность независимо не подтверждены. Исходники и тесты прочитаны, но не запускались.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "device25/gedview",
+      "url": "https://github.com/device25/gedview",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "device25/gedview",
+          "field": "description",
+          "excerpt": "Браузерный просмотрщик генеалогических деревьев GEDCOM; в выбранных исходниках найдены разбор календарей, расчёт JDN и двойное отображение юлианских дат.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "device25/gedview",
+          "field": "use_case",
+          "excerpt": "Редакционный сценарий: открыть вымышленный GEDCOM с юлианскими датами и сравнить записанный день и новый стиль, включая границы месяцев и смену разницы календарей.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "device25/gedview",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Work in progress. README содержит Features (target); полнота GEDCOM 7, точность календарей и приватность независимо не подтверждены. Исходники и тесты прочитаны, но не запускались.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "stanford-oval/sheldon",
+      "url": "https://github.com/stanford-oval/sheldon",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "stanford-oval/sheldon",
+          "field": "description",
+          "excerpt": "Общий каркас AI-исследований с отдельными пространствами гипотез и наблюдений; в коде есть источники наблюдения, подтверждающие и опровергающие отношения и пересмотр гипотез.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "stanford-oval/sheldon",
+          "field": "use_case",
+          "excerpt": "Кандидат для адаптации к генеалогии: вести несколько гипотез о тождестве человека, связывать каждое наблюдение с источником и сохранять опровержения. Такой сценарий пока не испытан.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "stanford-oval/sheldon",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Не специализирован для генеалогии. Преимущество до 26,7 пункта — авторское benchmark-заявление для других задач. Модели, бюджет, sandbox и качество рассуждений независимо не испытывались.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "stanford-oval/sheldon",
+      "url": "https://github.com/stanford-oval/sheldon",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "stanford-oval/sheldon",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "limitations": "Не специализирован для генеалогии. Преимущество до 26,7 пункта — авторское benchmark-заявление для других задач. Модели, бюджет, sandbox и качество рассуждений независимо не испытывались.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."

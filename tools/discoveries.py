@@ -62,6 +62,10 @@ def compare(root, records):
     catalog = json.loads((root / 'catalog.json').read_text(encoding='utf-8'))
     research = json.loads((root / 'docs/research.json').read_text(encoding='utf-8'))
     digest = json.loads((root / 'digest.json').read_text(encoding='utf-8'))
+    ledger_path=root/'data/applied-events.json'
+    ledger=json.loads(ledger_path.read_text(encoding='utf-8')) if ledger_path.exists() else {}
+    if not isinstance(ledger,dict):
+        raise ValueError('Invalid applied-events ledger')
     results, ids, prior = [], set(), []
     for r in records:
         errors = []
@@ -139,7 +143,8 @@ def compare(root, records):
         duplicate |= any(identities & keys and (delta == old_delta or bool(links & old_links))
                          for keys, old_delta, old_links in prior)
         prior.append((identities, delta, links))
-        if profile is not None and (matches or research_matches or history):
+        already_applied = isinstance(discovery_id,str) and ledger.get(discovery_id) == content_hash(r)
+        if profile is not None and (matches or research_matches or history) and not already_applied:
             errors.append('catalog_profile may initialize a new project only; existing research must be preserved')
         event_type = r.get('event_type')
         material = isinstance(event_type, str) and event_type in MATERIAL_EVENTS and bool(r.get('significance_reason'))

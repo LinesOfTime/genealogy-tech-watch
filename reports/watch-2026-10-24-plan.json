@@ -1,0 +1,23 @@
+{
+  "events": [
+    "github:b21-agency/gramps-ui:watch-2026-10-24",
+    "github:dsblank/gramps-connect-stories:watch-2026-10-24",
+    "github:device25/gedview:watch-2026-10-24",
+    "github:stanford-oval/sheldon:watch-2026-10-24",
+    "github:ai-riksarkivet/rask:watch-2026-10-24",
+    "github:gramps-project/gramps-web-api:watch-2026-10-24",
+    "github:gramps-project/gramps-web:watch-2026-10-24"
+  ],
+  "files": [
+    "catalog.json",
+    "docs/catalog.json",
+    "docs/index.html",
+    "digest.json",
+    "docs/digest.json",
+    "docs/digest.html",
+    "docs/research.json",
+    "data/applied-events.json",
+    "data/discoveries.jsonl"
+  ],
+  "plan_hash": "d9044550844fd5585cafa6e7ce3710571e423a40f31f179a5b1ab87e8325d97a"
+}

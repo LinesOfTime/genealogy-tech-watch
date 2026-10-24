@@ -1,0 +1,55 @@
+{
+  "status": "approved",
+  "batch_hash": "edf5b7b0496a7776ff380decc434591c4cf071aeac9a84b145631e43e70f117e",
+  "records": [
+    {
+      "discovery_id": "github:b21-agency/gramps-ui:watch-2026-10-24",
+      "repo": "b21-agency/gramps-ui",
+      "content_hash": "cac1540e4333e1caad453aa2010cc0f4d38c8bea50925f751ec3676665694317",
+      "decision": "publish"
+    },
+    {
+      "discovery_id": "github:dsblank/gramps-connect-stories:watch-2026-10-24",
+      "repo": "dsblank/gramps-connect-stories",
+      "content_hash": "d1f1c7c1d5ea1160dfd16a73ab09f378a0ac59bf639a9fbf0e51d749eb67fbb2",
+      "decision": "publish"
+    },
+    {
+      "discovery_id": "github:device25/gedview:watch-2026-10-24",
+      "repo": "device25/gedview",
+      "content_hash": "37813cd368bc584e27f6fd0e9abc7964c524206e425b6db0de9908712049b1d7",
+      "decision": "publish"
+    },
+    {
+      "discovery_id": "github:stanford-oval/sheldon:watch-2026-10-24",
+      "repo": "stanford-oval/sheldon",
+      "content_hash": "8aeb83db505216b71c3b0532dcc86167c01cbfd5b6af4bb1556a441f3fa11632",
+      "decision": "publish"
+    },
+    {
+      "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-24",
+      "repo": "AI-Riksarkivet/rask",
+      "content_hash": "29838db54a4592ef9ed419344114386a12c6108047425f48b6c1ffedb4aac52c",
+      "decision": "publish"
+    },
+    {
+      "discovery_id": "github:gramps-project/gramps-web-api:watch-2026-10-24",
+      "repo": "gramps-project/gramps-web-api",
+      "content_hash": "b1f632a2d17697501b5364b2cfec90f47a32db3ddced85bd2cbdafa0f1a02e7c",
+      "decision": "publish"
+    },
+    {
+      "discovery_id": "github:gramps-project/gramps-web:watch-2026-10-24",
+      "repo": "gramps-project/gramps-web",
+      "content_hash": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6",
+      "decision": "publish"
+    }
+  ],
+  "evidence_checks": 34,
+  "new_cards": 4,
+  "updated_cards": 3,
+  "expected_catalog": 169,
+  "expected_digest_events": 30,
+  "approved_at": "2026-10-24T08:50:10.295948+00:00",
+  "approval_basis": "Прямое сообщение пользователя в этом чате: утверждаю; весь пакет из 7 находок"
+}

@@ -1,0 +1,1045 @@
+{
+  "counts": {
+    "catalog": 169,
+    "research": 149,
+    "editions": 7
+  },
+  "russia_ratings": {
+    "Специализированный / зависит от задачи": 79,
+    "Высокий": 61,
+    "Отсутствует": 9
+  },
+  "issues": [
+    {
+      "level": "warning",
+      "code": "repository_not_found",
+      "location": "https://github.com/komura-shoan/iiif-downloader",
+      "message": "Public GitHub HTTP 404; repository-reference review is separate from feature research. Checked 2026-10-23T07:32:28.670658+00:00"
+    },
+    {
+      "level": "warning",
+      "code": "repository_not_found",
+      "location": "https://github.com/scripta/escriptorium",
+      "message": "Public GitHub HTTP 404; repository-reference review is separate from feature research. Checked 2026-10-23T07:32:34.593780+00:00"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "23andme/bonsaitree.opensource_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "abdash/roots-familytreevisualizer.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "aehrc/tribes.opensource_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "aehrc/tribes.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ai-collaboratory/scribe.opensource_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ai-collaboratory/scribe.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ajaskey/genealogy.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ajaskey/genealogy.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "archival-iiif/viewer.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "benwbrum/fromthepage.opensource_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "bhaskargautam/record-linkage.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "bhaskargautam/record-linkage.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "bruceyyu/ml-chinese-record-linkage.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "bruceyyu/ml-chinese-record-linkage.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "cboulanger/tei-annotator.audit_notes",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "districtdatalabs/entity-resolution.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "districtdatalabs/entity-resolution.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "dthaler/gedcom-citations.opensource_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "dthaler/gedcom-citations.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "dthaler/gedcom-citations.license_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "dthaler/gedcom-citations.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ecoto/iiif_downloader.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "evelynkimm/ari.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "evelynkimm/ari.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "google/family-tree.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "gramps-project/addons.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "gramps-project/addons.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "gramps-project/gramps-web-docs.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "gramps-project/gramps-web-docs.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "gsmitheidw/genealogytools.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "gsmitheidw/genealogytools.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "gusevlab/germline.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "gusevlab/germline.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "hdlabconicet/recogito-tei.opensource_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "hdlabconicet/recogito-tei.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "htrmopo/htrmopo.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "htrmopo/htrmopo.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "iiif/website.opensource_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "iiif/website.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "j535d165/data-matching-software.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "j535d165/data-matching-software.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jameskane/decodingus-navigator.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jameskane/decodingus-navigator.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jasiek/genealogy-plugin.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jasiek/genealogy-plugin.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jerged24/family-tree.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jerged24/family-tree.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jitsi/jiwer.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jitsi/jiwer.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "jregimbal/iiif-downloader.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "kanik0/rustenati.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "kanik0/rustenati.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "kasssandr/archilles.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "kasssandr/archilles.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "keerthanamurugaraj/topic-rag-for-historical-newspapers.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "keerthanamurugaraj/topic-rag-for-historical-newspapers.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "keerthanamurugaraj/topic-rag-for-historical-newspapers.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "kimon1230/gedgraph.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "kkkamur07/nomikos.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "kkkamur07/nomikos.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "knuckles-team/gramps-mcp.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "knuckles-team/gramps-mcp.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "komura-shoan/iiif-downloader.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "libraryofcongress/gazetteer.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "lieuwe89/genealogy-viz.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "lieuwe89/genealogy-viz.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "lovasoa/dezoomify-rs.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "lovasoa/dezoomify-rs.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "magne/vitni.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "magne/vitni.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "meh313/htr-model-tester.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "meh313/htr-model-tester.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "microsoft/graphrag.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "microsoft/graphrag.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "mittagessen/kraken.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "mittagessen/kraken.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "moj-analytical-services/splink.editorial_limitations",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "narasimhan-lab/repare.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "narasimhan-lab/repare.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ngohung0704/rag-militai.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ngohung0704/rag-militai.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "nikazzio/scriptoria.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "nikazzio/scriptoria.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "nikkoxgonzales/mcp-grampsweb.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "nikkoxgonzales/mcp-grampsweb.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "noahkiss/genealogy-mcp.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "noahkiss/genealogy-mcp.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "notakeith/handscribe.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "notakeith/handscribe.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "oh-kay-blanket/family-plot.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "oh-kay-blanket/family-plot.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "omeka/omeka.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "omeka/omeka-s.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "omeka/omeka-s.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "omeka/omeka-s.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "qurator-spk/dinglehopper.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "rollybre/cthulhu.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "rue-a/provo.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "rue-a/provo.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ruempel/nacarta.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ruempel/nacarta.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "sandxlab/sandx-er.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "sandxlab/sandx-er.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "satvikgosai/genea-web.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "satvikgosai/genea-web.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "scheldt-llc/genealogy_ai.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "scheldt-llc/genealogy_ai.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "scheldt-llc/genealogy_ai.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "scormave/gramps-web-mcp.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "scormave/gramps-web-mcp.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "stefromlc/iiif-downloader.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "thisisankit27/f-tree.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "tropy/tropy.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "tropy/tropy.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "trungdong/prov.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "trungdong/prov.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ub-mannheim/escriptorium.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "ub-mannheim/escriptorium_dokumentation.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "umb-oconnorgroup/ibdtools.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "umb-oconnorgroup/ibdtools.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "unstructured-io/unstructured-mlk-archive-public.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "unstructured-io/unstructured-mlk-archive-public.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "w3c/prov.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "w3c/prov.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "williamscole/haptic.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "williamscole/haptic.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "williamscole/ponderosa.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "williamscole/ponderosa.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "worldhistoricalgazetteer/documentation.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "worldhistoricalgazetteer/documentation.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "yingzhou001/ibdkin.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "yingzhou001/ibdkin.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "yingzhou001/ibdkin.guide_excerpt",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "zal-analytics/zer.project_type",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "zal-analytics/zer.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "linkedpasts/linked-places-format.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "linkedpasts/linked-places-format.license_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "familysearch/gedcom-registries.opensource_status",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "editorial_review",
+      "location": "familysearch/gedcom-registries.license",
+      "message": "Manual contextual review; text retained"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[3].items[0]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[3].items[1]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[3].items[2]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[3].items[3]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[4].items[0]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[4].items[0]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[4].items[1]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[4].items[2]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[4].items[3]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[4].items[3]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[5].items[0]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[5].items[0]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[5].items[1]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[5].items[1]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[5].items[2]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[5].items[2]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[5].items[3]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[5].items[3]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[6].items[0]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[6].items[0]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[6].items[1]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[6].items[1]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[6].items[2]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[6].items[2]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[6].items[3]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[6].items[3]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[6].items[4]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[6].items[4]",
+      "message": "Source is not a specific commit/PR/release/document"
+    },
+    {
+      "level": "warning",
+      "code": "legacy_evidence",
+      "location": "digest[6].items[5]",
+      "message": "Missing metadata: event_date, significance_reason, review_status"
+    },
+    {
+      "level": "warning",
+      "code": "broad_source",
+      "location": "digest[6].items[5]",
+      "message": "Source is not a specific commit/PR/release/document"
+    }
+  ],
+  "errors": 0,
+  "warnings": 171,
+  "limitations": [
+    "Offline structural checks do not verify source claims, browser behavior, secrets, license conflicts or historical preservation without --baseline."
+  ]
+}
