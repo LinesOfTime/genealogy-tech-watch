@@ -12,21 +12,23 @@
     document.getElementById('title').textContent = x.name;
     document.getElementById('subtitle').textContent = x.section + ' · редакционный приоритет ' + x.priority;
     const applicability = r.russia_applicability || x.russia_applicability;
-    let html = panel('Применимость для России', para(rating(r.russia_applicability ? r : x)) + para(applicability?.basis || 'Оценка не установлена') +
+    const russiaPanel = panel('Применимость для России', para(rating(r.russia_applicability ? r : x)) + para(applicability?.basis || 'Оценка не установлена') +
       (applicability?.original_line ? para('Исходная строка: ' + applicability.original_line) + '<small>Источник: путеводитель от 10 октября 2026, guide_excerpt. Редакционная оценка.</small>' : '') +
       para('Доступность сервиса из РФ: ' + (r.russia_service_availability || 'не проверена')));
-    html += panel('Тип проекта', para(r.project_type || 'Тип проекта не установлен'));
+    let html = '';
+    const typePanel = panel('Тип проекта', para((r.project_type && !/^Не установлен/i.test(r.project_type) ? r.project_type : x.project_type) || r.project_type || 'Тип проекта не установлен'));
     const purpose = x.description_provenance ? x.description : r.editorial_summary || x.description;
     html += panel('Назначение', para(purpose));
-    if (x.description_provenance) {
-      const p = x.description_provenance;
-      html += panel('Происхождение описания назначения', para('Прежнее описание: ' + p.original_description) +
-        para('Источник: ' + p.source.file + ' → ' + p.source.key + ' → ' + p.source.field) +
-        para('Исходный текст: ' + p.source.original_text) +
-        para('Редакционный материал; назначение и функции независимо не подтверждены. Тип проекта не выводился из описания.'));
-    }
     html += panel('Практическое применение', WatchUI.practical(x,r));
     html += panel('Ограничения и редакционная оценка', WatchUI.limitations(x,r));
+    html += typePanel + russiaPanel;
+    if (x.description_provenance) {
+      const p = x.description_provenance;
+      html += '<details class="panel"><summary>Происхождение описания назначения</summary>' + ( para('Прежнее описание: ' + p.original_description) +
+        para('Источник: ' + p.source.file + ' → ' + p.source.key + ' → ' + p.source.field) +
+        para('Исходный текст: ' + p.source.original_text) +
+        para('Редакционный материал; назначение и функции независимо не подтверждены. Тип проекта не выводился из описания.')) + '</details>';
+    }
     const housekeeping=[...(x.editorial_service_notes||[]),...(r.editorial_service_notes||[])];
     if(housekeeping.length)html+='<details class="panel"><summary>Служебные редакционные пометки</summary>'+[...new Set(housekeeping.flatMap(n=>n.notes||[]))].map(para).join('')+'<small>Историческая очередь проверки полей; это не описание ограничений инструмента.</small></details>';
     if(r.editorial_corrections?.length) {
@@ -38,7 +40,7 @@
         '<div class="entry">'+(c.checked_at?para('Дата уточнения: '+c.checked_at):'')+para(c.basis)+sources(c.sources)+
         (c.previous_catalog||c.previous_research?'<details><summary>Прежние значения до уточнения</summary>'+previous(c.previous_catalog,'Каталог')+previous(c.previous_research,'Исследовательская карточка')+'</details>':'')+'</div>').join(''));
     }
-    if (r.guide_excerpt) html += panel('Из путеводителя от 10 октября 2026', para(r.guide_excerpt) + '<small>Полный исходный текст сохранён. Это редакционное описание, не независимое испытание.</small>');
+    if (r.guide_excerpt) html += '<details class="panel"><summary>Из путеводителя от 10 октября 2026</summary>'+para(r.guide_excerpt)+'<small>Полный исходный текст сохранён. Это редакционное описание, не независимое испытание.</small></details>';
     html += panel('Лицензия и проверка', para('Лицензия: ' + (r.license || x.license || 'Не определена')) + para('Статус лицензии: ' + (r.license_status || x.license_status || 'Не подтверждён')) +
       para('Основание: ' + (r.license_evidence || 'Не указано')) + para('Открытость: ' + (r.opensource_status || 'Не установлена')) +
       para('Аудит: ' + (r.audit_status || 'Не указан')) + para('Метод проверки: ' + (r.verification_basis || x.verification || 'Не указан')) +

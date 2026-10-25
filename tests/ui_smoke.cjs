@@ -17,6 +17,9 @@ function fixture(seed) {
 function count(html, className) { return (html.match(new RegExp('<article class="' + className, 'g')) || []).length; }
 (async () => {
   const editorial=fixture(null), helper=editorial.context.WatchUI;
+  assert.match(helper.sources([{type:'README',url:'https://github.com/a/b/blob/main/LICENSE.txt'}]),/>Лицензия ↗/);
+  assert.match(helper.sources([{type:'README',url:'https://github.com/a/b/blob/main/tests/calendar.test.ts'}]),/>Тест: calendar.test.ts ↗/);
+  assert.match(helper.sources([{type:'commit',url:'https://github.com/a/b/commit/1234567890'}]),/>Коммит 12345678 ↗/);
   const duplicated='Очистка таблиц | Часть 51: незакрытые поля: первоисточник';
   const limited=helper.limitations({limitations:duplicated},{audit_notes:duplicated});
   const mainLimited=limited.split('<details>')[0];

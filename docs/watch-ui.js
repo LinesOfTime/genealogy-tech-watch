@@ -7,7 +7,21 @@ globalThis.WatchUI = (() => {
   const text = value => typeof value === 'string' ? value : JSON.stringify(value ?? 'Не указано', null, 2);
   const para = value => `<p>${esc(text(value || 'Сведения не установлены'))}</p>`;
   const panel = (title, body) => `<section class="panel"><h2>${esc(title)}</h2>${body}</section>`;
-  const sources = items => (Array.isArray(items) ? items : []).map(s => link(typeof s === 'string' ? s : s.url, typeof s === 'string' ? 'Источник' : s.type || 'Источник')).filter(Boolean).join(' · ');
+  const sourceLabel = source => {
+    const href = typeof source === 'string' ? source : source.url;
+    try {
+      const path = decodeURIComponent(new URL(href).pathname);
+      const file = path.split('/').pop();
+      if (/^(license|copying)([.a-z0-9_-]*)?$/i.test(file)) return 'Лицензия';
+      if (/\/releases\//i.test(path)) return 'Релиз ' + file;
+      if (/\/commit\//i.test(path)) return 'Коммит ' + file.slice(0,8);
+      if (/schema/i.test(file)) return 'Схема: ' + file;
+      if (/test/i.test(path)) return 'Тест: ' + file;
+      if (/\/blob\//i.test(path)) return (/spec|specification/i.test(path) ? 'Спецификация: ' : '') + file;
+    } catch {}
+    return typeof source === 'string' ? 'Источник' : ({release:'Релиз',commit:'Коммит',README:'Документация',ADR:'Архитектурное решение',paper:'Публикация',benchmark:'Оценочные материалы',PR:'Обсуждение изменения'}[source.type] || source.type || 'Источник');
+  };
+  const sources = items => (Array.isArray(items) ? items : []).map(s => link(typeof s === 'string' ? s : s.url, sourceLabel(s))).filter(Boolean).join(' · ');
   const claims = value => {
     if (!value || typeof value !== 'object' || Array.isArray(value)) return para(value);
     const labels = {verified:'Проверено по источнику', author_claims:'Заявления авторов', independent_testing:'Независимое тестирование'};

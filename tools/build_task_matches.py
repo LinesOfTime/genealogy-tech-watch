@@ -17,6 +17,32 @@ TASKS = [
 UNCERTAIN = re.compile(r'кандидат|возмож|может|могут|потенциаль|вероят|предполож',re.I)
 
 
+ROLE_LABELS = dict(tool='Инструменты и библиотеки', data='Наборы данных и примеры',
+                   reference='Спецификации и методики', unknown='Роль требует уточнения')
+
+
+def role_for(card, research):
+    # A presentation grouping, not a new claim of readiness or fitness for a task.
+    options = [('docs/research.json','project_type',research.get('project_type')),
+               ('catalog.json','project_type',card.get('project_type')),
+               ('docs/research.json','editorial_summary',research.get('editorial_summary')),
+               ('catalog.json','description',card.get('description'))]
+    for file,field,text in options:
+        if not isinstance(text,str) or not text.strip() or text.strip().lower().startswith('не установлен'):
+            continue
+        if UNCERTAIN.search(text):
+            return dict(id='unknown',label=ROLE_LABELS['unknown'],source=dict(file=file,field=field,excerpt=text))
+        groups = []
+        if re.search(r'набор (данных|исторических документов|тестов)|корпус|датасет|benchmark',text,re.I):groups.append('data')
+        if re.search(r'спецификац|стандарт|методик|документаци|справочник|каталог ссылок|рабочая группа',text,re.I):groups.append('reference')
+        if re.search(r'программ|приложени|утилит|библиотек|движок|платформ|сервер|просмотрщик|загрузчик|frontend|CLI|REST API|веб-интерфейс|интерфейс проверки|HTR-систем|конвейер|инструмент',text,re.I):groups.append('tool')
+        if len(groups)==1:
+            return dict(id=groups[0],label=ROLE_LABELS[groups[0]],source=dict(file=file,field=field,excerpt=text))
+        if len(groups)>1 or field=='project_type':
+            return dict(id='unknown',label=ROLE_LABELS['unknown'],source=dict(file=file,field=field,excerpt=text))
+    return dict(id='unknown',label=ROLE_LABELS['unknown'],source=None)
+
+
 def build(catalog,research):
     tasks=[dict(id=key,title=title) for key,title,_ in TASKS]
     matches=[]
@@ -47,6 +73,10 @@ def build(catalog,research):
             limitations=r.get('editorial_limitations') or card.get('limitations') or 'Ограничения не установлены'
             matches.append(dict(task=task,project=card['name'],url=card['url'],
                 status='candidate' if candidate else 'editorial',evidence=evidence,
+                role=role_for(card,r),
+                purpose=(card.get('description') if card.get('description_provenance') else r.get('editorial_summary') or card.get('description')) or 'Назначение не описано',
+                use_case=r.get('editorial_use_case') or card.get('use_case') or 'Сценарий не описан',
+                license=r.get('license') or card.get('license') or 'Лицензия не установлена',
                 limitations=limitations,test_status=r.get('test_status') or card.get('test_status') or 'Испытания не подтверждены',
                 russia_applicability=card.get('russia_applicability',{}).get('rating','Не оценено'),
                 next_check='Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах.'))

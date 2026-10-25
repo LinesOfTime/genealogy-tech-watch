@@ -26,3 +26,5 @@ input::placeholder{color:#b6cadb;opacity:1}
 .catalog-card-v2 .card-meta a,.catalog-card-v2 .card-meta span,.catalog-card-v2 .card-section{font-size:13px}
 .catalog-card-v2 .card-links a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
 @media(max-width:600px){header{padding-top:24px;padding-bottom:24px}header h1{font-size:28px;line-height:1.2;margin:12px 0}header p{margin:12px 0}.bar{grid-template-columns:1fr 1fr!important}.bar .filter-field:first-child{grid-column:1/-1}.metrics{grid-template-columns:1fr 1fr}.filter-field select{font-size:14px}}
+
+.task-group{margin:28px 0}.task-group>h2{font-size:24px}.comparison{border:1px solid #55758c;border-radius:12px;padding:18px;margin:24px 0}.comparison-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}.comparison-card{min-width:0;background:#17273a;padding:16px;border-radius:10px}.comparison-card h3,.comparison-card dd{overflow-wrap:anywhere}.comparison-card dt{font-weight:700;margin-top:14px}.comparison-card dd{margin:4px 0}.task-group .card button{margin-bottom:12px}
