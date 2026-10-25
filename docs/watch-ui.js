@@ -48,3 +48,33 @@ globalThis.WatchUI = (() => {
   };
   return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent};
 })();
+
+// Persist filter values, never catalogue data, in the current URL.
+WatchUI.bindFilterState = (ids, render, resetId) => {
+  if (typeof history === 'undefined' || !globalThis.addEventListener) return false;
+  const fields = ids.map(id => document.getElementById(id));
+  const restore = () => {
+    const params = new URLSearchParams(location.search);
+    fields.forEach(field => {
+      const value = params.get(field.id) || '';
+      field.value = field.tagName === 'SELECT' && ![...field.options].some(o => o.value === value) ? '' : value;
+    });
+    render();
+  };
+  const update = () => {
+    const next = new URL(location.href);
+    fields.forEach(field => field.value ? next.searchParams.set(field.id, field.value) : next.searchParams.delete(field.id));
+    history.replaceState(null, '', next);
+    render();
+  };
+  fields.forEach(field => field.addEventListener(field.tagName === 'SELECT' ? 'change' : 'input', update));
+  document.getElementById(resetId)?.addEventListener('click', () => {
+    fields.forEach(field => field.value = '');
+    update();
+    fields[0]?.focus();
+  });
+  globalThis.addEventListener('pageshow', restore);
+  globalThis.addEventListener('popstate', restore);
+  restore();
+  return true;
+};
