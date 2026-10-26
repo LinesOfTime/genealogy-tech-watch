@@ -8509,5 +8509,39 @@
       "source": null,
       "basis": "Нет оценки в путеводителе"
     }
+  },
+  {
+    "name": "denissergeevitch/ex-ussr-kinship-research",
+    "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Agent Skill для воспроизводимого генеалогического исследования на территории бывшего СССР: исследовательские дела, реестры утверждений и источников, контроль независимости свидетельств и аудит доказательств.",
+    "use_case": "Организовать проверяемое исследование родства: фиксировать исходные документы, различать однофамильцев и копии одного источника, вести журнал поиска и проверять выводы перед публикацией.",
+    "limitations": "Не самостоятельный поисковик и не OCR/HTR-движок. Точность родственных выводов и полнота российских архивных маршрутов независимо не проверены.",
+    "license": "MIT (по документации проекта; проверить файл LICENSE)",
+    "license_status": "Требует перепроверки по лицензии репозитория",
+    "priority": "P1",
+    "priority_original": "P1",
+    "priority_basis": "Редакционная оценка релевантности для российского генеалогического исследовательского кабинета; не результат тестов.",
+    "priority_status": "Предварительная оценка",
+    "verification": "Документация автора; независимых испытаний нет",
+    "verified_at": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+    "status": "Обзор 26.10.2026",
+    "history": [],
+    "origin": "GitHub Watch",
+    "components": [
+      "Research Workspace",
+      "API/MCP/agent layer",
+      "provenance/evidence",
+      "Place Resolver/АТД"
+    ],
+    "project_type": "Agent Skill для генеалогических исследований",
+    "russia_applicability": {
+      "rating": "Специализированный / зависит от задачи",
+      "original_line": null,
+      "source": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "basis": "Охватывает исторические источники бывшего СССР; применимость конкретных архивных сценариев не проверена."
+    }
   }
 ]
