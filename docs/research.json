@@ -8039,5 +8039,69 @@
       "source": null,
       "basis": "Нет оценки в путеводителе"
     }
+  },
+  "archiveheritagegroup/ahg-archives-mcp": {
+    "editorial_summary": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+    "editorial_use_case": "Пилот read-only Archive Adapter и согласования AI-предложений без автоматической правки источника.",
+    "editorial_limitations": "Проект в разработке; заявленная интеграция Heratio планируется, а не подтверждена. Безопасность и полнота инструментов независимо не тестировались.",
+    "project_type": "Архивный MCP-сервер",
+    "license": "AGPL-3.0 (заявление проекта; проверить LICENSE)",
+    "verification_basis": "Проверено наличие README в GitHub; функции и benchmark независимо не воспроизводились",
+    "verification_date": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+      "basis": "Применимость для России требует испытаний."
+    }
+  },
+  "archiveheritagegroup/heratio": {
+    "editorial_summary": "Платформа GLAM для архивного описания и управления коллекциями, с поддержкой Records in Contexts, IIIF и AI-подсказок по метаданным согласно документации авторов.",
+    "editorial_use_case": "Изучить модель архивных описаний, RiC-граф, права доступа, provenance и human-in-the-loop для архивного адаптера.",
+    "editorial_limitations": "Крупная сложная платформа; README содержит roadmap рядом с заявленными функциями. Полная реализация и развёртывание независимо не проверены.",
+    "project_type": "Архивная GLAM-платформа",
+    "license": "AGPL-3.0 (README)",
+    "verification_basis": "Проверено наличие README в GitHub; функции и benchmark независимо не воспроизводились",
+    "verification_date": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/ArchiveHeritageGroup/heratio",
+      "basis": "Применимость для России требует испытаний."
+    }
+  },
+  "yifenglu1999/ai-historian": {
+    "editorial_summary": "AI Historian: агентный конвейер восстановления хронологии по разрозненным историческим текстам, с промежуточными TimeBlock, междокументной сверкой и привязкой к предложениям-источникам.",
+    "editorial_use_case": "Проверить на российских биографиях и противоречивых архивных документах; перенять схему промежуточных временных утверждений.",
+    "editorial_limitations": "Опубликованные MicroIoU — авторские результаты на ограниченном историческом корпусе; качество для русского OCR/HTR и генеалогии не проверено. Лицензии данных отличаются от лицензии кода.",
+    "project_type": "Исследовательский AI-конвейер",
+    "license": "Apache-2.0 (код); данные и переводы имеют отдельные условия",
+    "verification_basis": "Проверено наличие README в GitHub; функции и benchmark независимо не воспроизводились",
+    "verification_date": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/YiFengLu1999/AI-Historian",
+      "basis": "Применимость для России требует испытаний."
+    }
+  },
+  "vaibhaav-tiwari/lineage": {
+    "editorial_summary": "Lineage: экспериментальная графовая система учёта зависимостей выводов от свидетельств, пересмотра устаревших убеждений и блокировки действий после изменения исходных фактов.",
+    "editorial_use_case": "Изучить truth maintenance: при опровержении архивной атрибуции пересчитывать зависимые выводы и помечать гипотезы устаревшими.",
+    "editorial_limitations": "Хакатонный прототип на структурированных данных CPython; результаты тестов и benchmark заявлены автором и не подтверждают качество на архивных источниках.",
+    "project_type": "Граф доказательств и агентной памяти",
+    "license": "Не установлена; до выяснения лицензии код не заимствовать",
+    "verification_basis": "Проверено наличие README в GitHub; функции и benchmark независимо не воспроизводились",
+    "verification_date": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/Vaibhaav-Tiwari/lineage",
+      "basis": "Применимость для России требует испытаний."
+    }
   }
 }
