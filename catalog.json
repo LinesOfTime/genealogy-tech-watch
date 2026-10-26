@@ -8543,5 +8543,137 @@
       "source": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
       "basis": "Охватывает исторические источники бывшего СССР; применимость конкретных архивных сценариев не проверена."
     }
+  },
+  {
+    "name": "archiveheritagegroup/ahg-archives-mcp",
+    "url": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+    "use_case": "Пилот read-only Archive Adapter и согласования AI-предложений без автоматической правки источника.",
+    "limitations": "Проект в разработке; заявленная интеграция Heratio планируется, а не подтверждена. Безопасность и полнота инструментов независимо не тестировались.",
+    "license": "AGPL-3.0 (заявление проекта; проверить LICENSE)",
+    "license_status": "Требует проверки конкретного LICENSE и зависимостей",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "priority_basis": "До отдельной редакционной оценки",
+    "priority_status": "Не оценено",
+    "verification": "README и материалы репозитория; без независимого запуска",
+    "verified_at": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+    "status": "Новая находка 26.10.2026",
+    "history": [],
+    "origin": "GitHub Watch",
+    "components": [
+      "Archive Adapter",
+      "API/MCP/agent layer",
+      "provenance/evidence"
+    ],
+    "project_type": "Архивный MCP-сервер",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+      "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    }
+  },
+  {
+    "name": "archiveheritagegroup/heratio",
+    "url": "https://github.com/ArchiveHeritageGroup/heratio",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Платформа GLAM для архивного описания и управления коллекциями, с поддержкой Records in Contexts, IIIF и AI-подсказок по метаданным согласно документации авторов.",
+    "use_case": "Изучить модель архивных описаний, RiC-граф, права доступа, provenance и human-in-the-loop для архивного адаптера.",
+    "limitations": "Крупная сложная платформа; README содержит roadmap рядом с заявленными функциями. Полная реализация и развёртывание независимо не проверены.",
+    "license": "AGPL-3.0 (README)",
+    "license_status": "Требует проверки конкретного LICENSE и зависимостей",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "priority_basis": "До отдельной редакционной оценки",
+    "priority_status": "Не оценено",
+    "verification": "README и материалы репозитория; без независимого запуска",
+    "verified_at": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/ArchiveHeritageGroup/heratio",
+    "status": "Новая находка 26.10.2026",
+    "history": [],
+    "origin": "GitHub Watch",
+    "components": [
+      "Archive Adapter",
+      "provenance/evidence",
+      "Person Resolver"
+    ],
+    "project_type": "Архивная GLAM-платформа",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/ArchiveHeritageGroup/heratio",
+      "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    }
+  },
+  {
+    "name": "yifenglu1999/ai-historian",
+    "url": "https://github.com/YiFengLu1999/AI-Historian",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "AI Historian: агентный конвейер восстановления хронологии по разрозненным историческим текстам, с промежуточными TimeBlock, междокументной сверкой и привязкой к предложениям-источникам.",
+    "use_case": "Проверить на российских биографиях и противоречивых архивных документах; перенять схему промежуточных временных утверждений.",
+    "limitations": "Опубликованные MicroIoU — авторские результаты на ограниченном историческом корпусе; качество для русского OCR/HTR и генеалогии не проверено. Лицензии данных отличаются от лицензии кода.",
+    "license": "Apache-2.0 (код); данные и переводы имеют отдельные условия",
+    "license_status": "Требует проверки конкретного LICENSE и зависимостей",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "priority_basis": "До отдельной редакционной оценки",
+    "priority_status": "Не оценено",
+    "verification": "README и материалы репозитория; без независимого запуска",
+    "verified_at": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/YiFengLu1999/AI-Historian",
+    "status": "Новая находка 26.10.2026",
+    "history": [],
+    "origin": "GitHub Watch",
+    "components": [
+      "Research Workspace",
+      "Person Resolver",
+      "provenance/evidence"
+    ],
+    "project_type": "Исследовательский AI-конвейер",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/YiFengLu1999/AI-Historian",
+      "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    }
+  },
+  {
+    "name": "vaibhaav-tiwari/lineage",
+    "url": "https://github.com/Vaibhaav-Tiwari/lineage",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Lineage: экспериментальная графовая система учёта зависимостей выводов от свидетельств, пересмотра устаревших убеждений и блокировки действий после изменения исходных фактов.",
+    "use_case": "Изучить truth maintenance: при опровержении архивной атрибуции пересчитывать зависимые выводы и помечать гипотезы устаревшими.",
+    "limitations": "Хакатонный прототип на структурированных данных CPython; результаты тестов и benchmark заявлены автором и не подтверждают качество на архивных источниках.",
+    "license": "Не установлена; до выяснения лицензии код не заимствовать",
+    "license_status": "Требует проверки конкретного LICENSE и зависимостей",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "priority_basis": "До отдельной редакционной оценки",
+    "priority_status": "Не оценено",
+    "verification": "README и материалы репозитория; без независимого запуска",
+    "verified_at": "2026-10-26",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/Vaibhaav-Tiwari/lineage",
+    "status": "Новая находка 26.10.2026",
+    "history": [],
+    "origin": "GitHub Watch",
+    "components": [
+      "provenance/evidence",
+      "Research Workspace",
+      "API/MCP/agent layer"
+    ],
+    "project_type": "Граф доказательств и агентной памяти",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/Vaibhaav-Tiwari/lineage",
+      "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    }
   }
 ]
