@@ -2021,7 +2021,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки",
+      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
       "component_fit": 4,
       "russia_fit": 2,
       "maturity": 3,
@@ -2038,6 +2038,10 @@
       "review_status": "proposed",
       "source_blob_sha": {
         "README_md": "1bdb239f3e623cb102b2fdef8e83c46ab692c86c"
+      },
+      "verified_file_blob_sha": {
+        "readme": "HEAD",
+        "license": null
       }
     }
   },
@@ -2100,7 +2104,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки",
+      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
       "component_fit": 3,
       "russia_fit": 2,
       "maturity": 3,
@@ -2117,6 +2121,10 @@
       "review_status": "proposed",
       "source_blob_sha": {
         "README_md": "a71829e173e6d59fd19011812ccc3fc859e89895"
+      },
+      "verified_file_blob_sha": {
+        "readme": "HEAD",
+        "license": null
       }
     }
   },
@@ -2311,7 +2319,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей",
+      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
       "component_fit": 2,
       "russia_fit": 2,
       "maturity": 3,
@@ -2330,6 +2338,10 @@
       "source_blob_sha": {
         "README_md": "a6666b417efd0c3505706ed673f11df306f382c7",
         "LICENSE": "60549be514af76c5db0c17ce6bbe01b2f81e2d9e"
+      },
+      "verified_file_blob_sha": {
+        "readme": "HEAD",
+        "license": "HEAD"
       }
     }
   },
@@ -2669,7 +2681,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки",
+      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
       "component_fit": 4,
       "russia_fit": 2,
       "maturity": 4,
@@ -2686,6 +2698,10 @@
       "review_status": "proposed",
       "source_blob_sha": {
         "README_md": "15ed4123a3cc0811fcbafdd1f34d02db0a37afe2"
+      },
+      "verified_file_blob_sha": {
+        "readme": "HEAD",
+        "license": null
       }
     }
   },
@@ -2796,7 +2812,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей",
+      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
       "component_fit": 4,
       "russia_fit": 2,
       "maturity": 3,
@@ -2815,6 +2831,10 @@
       "source_blob_sha": {
         "README_md": "e069af1409752bcc1e5d48289bae6a1113541fd8",
         "LICENSE": "0ad25db4bd1d86c452db3f9602ccdbe172438f52"
+      },
+      "verified_file_blob_sha": {
+        "readme": "HEAD",
+        "license": "HEAD"
       }
     }
   },
@@ -2939,7 +2959,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей",
+      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
       "component_fit": 4,
       "russia_fit": 2,
       "maturity": 3,
@@ -2958,6 +2978,10 @@
       "source_blob_sha": {
         "README_md": "925d962b79329a521524485017d8bbab149ae399",
         "LICENSE": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e"
+      },
+      "verified_file_blob_sha": {
+        "readme": "HEAD",
+        "license": "HEAD"
       }
     }
   },
