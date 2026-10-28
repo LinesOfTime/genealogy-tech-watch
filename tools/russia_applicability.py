@@ -16,6 +16,15 @@ def derive(key, card):
     if len(lines) > 1:
         raise ValueError('Multiple Russia ratings: ' + key)
     original = lines[0] if lines else None
+    explicit = card.get('russia_applicability') if card else None
+    if not original and isinstance(explicit, dict) and isinstance(explicit.get('source'), str):
+        from discoveries import repo_key
+        if (explicit.get('rating') not in RATINGS | {'Не оценено'} or
+                explicit.get('original_line') is not None or
+                repo_key(explicit['source']) != key or
+                not isinstance(explicit.get('basis'), str) or not explicit['basis'].strip()):
+            raise ValueError('Invalid source-backed editorial Russia assessment: ' + key)
+        return copy.deepcopy(explicit)
     rating = original.split(':', 1)[1].strip() if original else 'Не оценено'
     if original and rating not in RATINGS:
         raise ValueError('Unknown existing Russia rating: ' + key)
@@ -23,6 +32,23 @@ def derive(key, card):
                 source=dict(file='docs/research.json', key=key, field='guide_excerpt') if original else None,
                 basis='Редакционная оценка путеводителя; независимое тестирование не заявлено' if original
                 else 'Нет оценки в путеводителе' if card is not None else 'Нет расширенной карточки')
+
+
+def same_assessment(actual, expected):
+    if actual == expected:
+        return True
+    # Post-guide editorial wording may differ between the short and extended card.
+    if (isinstance(actual, dict) and isinstance(expected, dict) and
+            isinstance(actual.get('source'), str) and isinstance(expected.get('source'), str)):
+        return (all(actual.get(k) == expected.get(k) for k in ('rating', 'source', 'original_line')) and
+                isinstance(actual.get('basis'), str) and bool(actual['basis'].strip()))
+    return False
+
+
+def catalog_assessment(key, card, research_card):
+    if research_card is None and isinstance(card.get('russia_applicability', {}).get('source'), str):
+        return derive(key, card)
+    return derive(key, research_card)
 
 
 def migrate(catalog, research):
@@ -34,10 +60,10 @@ def migrate(catalog, research):
         card['russia_applicability'] = value
     for card in catalog:
         key = card['name'].lower()
-        value = derive(key, research.get(key))
-        if 'russia_applicability' in card and card['russia_applicability'] != value:
+        value = catalog_assessment(key, card, research.get(key))
+        if 'russia_applicability' in card and not same_assessment(card['russia_applicability'], value):
             raise ValueError('Existing catalogue assessment differs: ' + key)
-        card['russia_applicability'] = value
+        card.setdefault('russia_applicability', value)
     return catalog, research
 
 

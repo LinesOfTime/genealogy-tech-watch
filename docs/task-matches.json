@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "7c48dfb1750d5be9e00b4006c73061bcc077e8e465c14bd5aa7d55363d1c21da",
+  "source_hash": "183c90b5c0375cccd2631938f68eb00775c31094cc97c6255a37912db4abc77c",
   "tasks": [
     {
       "id": "transcribe",
@@ -224,6 +224,68 @@
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
     },
     {
+      "task": "transcribe",
+      "project": "ai-historian/chronos",
+      "url": "https://github.com/ai-historian/chronos",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-historian/chronos",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "ИИ-агент для исторических документов"
+        }
+      },
+      "purpose": "ИИ-агент для исторических документов",
+      "use_case": "Редакционный сценарий: импортировать небольшую подборку сканов или PDF в рабочее пространство Chronos в VS Code и оценить извлечение нужных полей в структурированный набор данных. Сопоставить каждую выписку с изображением страницы и исправить ошибки до дальнейшего исследования. Сценарий независимо не испытывался.",
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "limitations": "README требует VS Code, Node.js и подключение провайдера модели с обработкой изображений. Доступ, стоимость и условия обработки данных выбранным провайдером необходимо проверить отдельно. Лицензия обозначена авторами как некоммерческая; коммерческое применение требует отдельного согласования. Извлечение моделью не подтверждает достоверность выписки; качество на русских источниках здесь не проверено.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "ai-historian/chronos",
+      "url": "https://github.com/ai-historian/chronos",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-historian/chronos",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "ИИ-агент для исторических документов"
+        }
+      },
+      "purpose": "ИИ-агент для исторических документов",
+      "use_case": "Редакционный сценарий: импортировать небольшую подборку сканов или PDF в рабочее пространство Chronos в VS Code и оценить извлечение нужных полей в структурированный набор данных. Сопоставить каждую выписку с изображением страницы и исправить ошибки до дальнейшего исследования. Сценарий независимо не испытывался.",
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "limitations": "README требует VS Code, Node.js и подключение провайдера модели с обработкой изображений. Доступ, стоимость и условия обработки данных выбранным провайдером необходимо проверить отдельно. Лицензия обозначена авторами как некоммерческая; коммерческое применение требует отдельного согласования. Извлечение моделью не подтверждает достоверность выписки; качество на русских источниках здесь не проверено.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
       "task": "agents",
       "project": "ai-historian/chronos",
       "url": "https://github.com/ai-historian/chronos",
@@ -235,6 +297,13 @@
           "field": "description",
           "excerpt": "ИИ-агент для исторических документов",
           "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "ai-historian/chronos",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer · API/MCP/agent layer",
+          "basis": "Компонент каталога"
         },
         {
           "file": "docs/research.json",
@@ -263,6 +332,68 @@
     },
     {
       "task": "transcribe",
+      "project": "ai-historian/chronos-benchmarks",
+      "url": "https://github.com/ai-historian/chronos-benchmarks",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-historian/chronos-benchmarks",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "data",
+        "label": "Наборы данных и примеры",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Набор тестов и оценочная инфраструктура"
+        }
+      },
+      "purpose": "Набор оценочных задач для исторического ИИ",
+      "use_case": "Проверка, насколько исторический агент корректно выполняет задачи на контрольных примерах.",
+      "license": "MIT",
+      "limitations": "Это оценочный набор, а не самостоятельный помощник генеалога; условия отличаются от основного Chronos.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "ai-historian/chronos-benchmarks",
+      "url": "https://github.com/ai-historian/chronos-benchmarks",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-historian/chronos-benchmarks",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "data",
+        "label": "Наборы данных и примеры",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Набор тестов и оценочная инфраструктура"
+        }
+      },
+      "purpose": "Набор оценочных задач для исторического ИИ",
+      "use_case": "Проверка, насколько исторический агент корректно выполняет задачи на контрольных примерах.",
+      "license": "MIT",
+      "limitations": "Это оценочный набор, а не самостоятельный помощник генеалога; условия отличаются от основного Chronos.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
       "project": "ai-riksarkivet/htrflow",
       "url": "https://github.com/ai-riksarkivet/htrflow",
       "status": "editorial",
@@ -280,6 +411,13 @@
           "field": "use_case",
           "excerpt": "Редакционный сценарий: собрать YAML-конвейер распознавания небольшой серии архивных страниц с подходящей моделью, экспортировать результат в ALTO XML, PAGE XML, TXT или JSON и сравнить с проверенной транскрипцией. Сценарий независимо не испытывался.",
           "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/htrflow",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Archive Adapter",
+          "basis": "Компонент каталога"
         },
         {
           "file": "docs/research.json",
@@ -1289,6 +1427,37 @@
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
     },
     {
+      "task": "research",
+      "project": "familysearch/gedcom",
+      "url": "https://github.com/familysearch/gedcom",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "familysearch/gedcom",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "reference",
+        "label": "Спецификации и методики",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Спецификация GEDCOM 7"
+        }
+      },
+      "purpose": "Спецификация GEDCOM 7",
+      "use_case": "Редакционный сценарий: использовать официальную спецификацию GEDCOM как справочник при проверке обмена генеалогическими данными между программами. На тестовом экспорте сопоставить сохранность нужных полей и связанных медиа с возможностями формата и обеих программ. Сценарий независимо не испытывался.",
+      "license": "Apache-2.0",
+      "limitations": "Репозиторий содержит спецификацию обмена, а не готовую программу ведения дерева или универсальный валидатор. Поддержка конкретной версии и полнота переноса зависят от экспортёра и импортёра; соответствие формату не доказывает историческую достоверность данных. Успешный перенос конкретной базы здесь не проверен.",
+      "test_status": "Не запускалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
       "task": "gedcom",
       "project": "familysearch/gedcom",
       "url": "https://github.com/familysearch/gedcom",
@@ -1307,6 +1476,13 @@
           "field": "use_case",
           "excerpt": "Редакционный сценарий: использовать официальную спецификацию GEDCOM как справочник при проверке обмена генеалогическими данными между программами. На тестовом экспорте сопоставить сохранность нужных полей и связанных медиа с возможностями формата и обеих программ. Сценарий независимо не испытывался.",
           "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "familysearch/gedcom",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
         },
         {
           "file": "docs/research.json",
@@ -1346,6 +1522,13 @@
       "url": "https://github.com/familysearch/gedcomx",
       "status": "candidate",
       "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "familysearch/gedcomx",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
+        },
         {
           "file": "docs/research.json",
           "key": "familysearch/gedcomx",
@@ -1390,6 +1573,13 @@
           "field": "use_case",
           "excerpt": "Редакционный сценарий для разработчика интеграции: использовать спецификации GEDCOM X при проектировании обмена сведениями о людях, отношениях и подтверждающих записях. Составить небольшой пример с человеком, связью и источником, затем сверить представление и протокол обмена с нужной спецификацией и реализацией получателя. Сценарий независимо не испытывался.",
           "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "familysearch/gedcomx",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · provenance/evidence",
+          "basis": "Компонент каталога"
         },
         {
           "file": "docs/research.json",
@@ -1431,6 +1621,37 @@
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
     },
     {
+      "task": "research",
+      "project": "fisharebest/webtrees",
+      "url": "https://github.com/fisharebest/webtrees",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "fisharebest/webtrees",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Веб-приложение"
+        }
+      },
+      "purpose": "Веб-приложение",
+      "use_case": "Редакционный сценарий: разместить генеалогическое дерево на собственном веб-сервере, импортировать данные GEDCOM и дать родственникам отдельные учётные записи для совместной работы. Перед публикацией проверить настройки доступа и приватности на тестовом дереве. Сценарий независимо не испытывался.",
+      "license": "GPL-3.0-or-later",
+      "limitations": "Приложению нужен веб-сервер с PHP и MySQL либо подходящий хостинг. Настройки приватности необходимо выбрать для своего дерева; их наличие не заменяет проверки того, какие сведения увидят посетители. Доступность хостинга из РФ и переносимость конкретного GEDCOM независимо не проверялись.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
       "task": "gedcom",
       "project": "fisharebest/webtrees",
       "url": "https://github.com/fisharebest/webtrees",
@@ -1442,6 +1663,13 @@
           "field": "use_case",
           "excerpt": "Редакционный сценарий: разместить генеалогическое дерево на собственном веб-сервере, импортировать данные GEDCOM и дать родственникам отдельные учётные записи для совместной работы. Перед публикацией проверить настройки доступа и приватности на тестовом дереве. Сценарий независимо не испытывался.",
           "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "fisharebest/webtrees",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace · provenance/evidence",
+          "basis": "Компонент каталога"
         },
         {
           "file": "docs/research.json",
@@ -1600,6 +1828,37 @@
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
     },
     {
+      "task": "research",
+      "project": "geneweb/geneweb",
+      "url": "https://github.com/geneweb/geneweb",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "geneweb/geneweb",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Приложение/веб-сервис"
+        }
+      },
+      "purpose": "Приложение/веб-сервис",
+      "use_case": "Редакционный сценарий: оценить ведение генеалогической базы через веб-интерфейс GeneWeb локально или на сервере, проверить импорт и экспорт тестового GEDCOM, затем изучить отображение родственных связей. Сценарий независимо не испытывался.",
+      "license": "GPL-2.0-only",
+      "limitations": "README предупреждает экспортировать резервную копию базы в формате .gw перед установкой новой версии. Для сборки из исходников требуется окружение OCaml/opam. Заявления авторов о масштабе и стабильности не являются результатом независимого теста этого каталога.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
       "task": "gedcom",
       "project": "geneweb/geneweb",
       "url": "https://github.com/geneweb/geneweb",
@@ -1611,6 +1870,13 @@
           "field": "use_case",
           "excerpt": "Редакционный сценарий: оценить ведение генеалогической базы через веб-интерфейс GeneWeb локально или на сервере, проверить импорт и экспорт тестового GEDCOM, затем изучить отображение родственных связей. Сценарий независимо не испытывался.",
           "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "geneweb/geneweb",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace",
+          "basis": "Компонент каталога"
         },
         {
           "file": "docs/research.json",
@@ -1780,6 +2046,192 @@
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
     },
     {
+      "task": "places",
+      "project": "gramps-project/gramps",
+      "url": "https://github.com/gramps-project/gramps",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace · provenance/evidence · Place Resolver/АТД",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Приложение"
+        }
+      },
+      "purpose": "Приложение",
+      "use_case": "Редакционный сценарий: оценить Gramps как настольную программу для ведения своей генеалогической базы и работы с семейным исследованием. Начать с небольшой тестовой базы и проверить нужные операции до переноса основных материалов. Сценарий независимо не испытывался.",
+      "license": "GPL-2.0-or-later",
+      "limitations": "При установке из исходников требуется окружение Python/GTK и перечисленные в README зависимости. Некоторые карты и отчёты используют дополнительные компоненты. Наличие функций в документации не подтверждает качество конкретного генеалогического исследования; независимые испытания здесь не проводились.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "gramps-project/gramps",
+      "url": "https://github.com/gramps-project/gramps",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace · provenance/evidence · Place Resolver/АТД",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Приложение"
+        }
+      },
+      "purpose": "Приложение",
+      "use_case": "Редакционный сценарий: оценить Gramps как настольную программу для ведения своей генеалогической базы и работы с семейным исследованием. Начать с небольшой тестовой базы и проверить нужные операции до переноса основных материалов. Сценарий независимо не испытывался.",
+      "license": "GPL-2.0-or-later",
+      "limitations": "При установке из исходников требуется окружение Python/GTK и перечисленные в README зависимости. Некоторые карты и отчёты используют дополнительные компоненты. Наличие функций в документации не подтверждает качество конкретного генеалогического исследования; независимые испытания здесь не проводились.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "gramps-project/gramps",
+      "url": "https://github.com/gramps-project/gramps",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · Research Workspace · provenance/evidence · Place Resolver/АТД",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Приложение"
+        }
+      },
+      "purpose": "Приложение",
+      "use_case": "Редакционный сценарий: оценить Gramps как настольную программу для ведения своей генеалогической базы и работы с семейным исследованием. Начать с небольшой тестовой базы и проверить нужные операции до переноса основных материалов. Сценарий независимо не испытывался.",
+      "license": "GPL-2.0-or-later",
+      "limitations": "При установке из исходников требуется окружение Python/GTK и перечисленные в README зависимости. Некоторые карты и отчёты используют дополнительные компоненты. Наличие функций в документации не подтверждает качество конкретного генеалогического исследования; независимые испытания здесь не проводились.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "gramps-project/gramps-web",
+      "url": "https://github.com/gramps-project/gramps-web",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps-web",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Веб-интерфейс"
+        }
+      },
+      "purpose": "Веб-интерфейс",
+      "use_case": "Редакционный сценарий: оценить веб-доступ и совместное редактирование тестовой генеалогической базы Gramps с родственниками. Проверить нужные операции просмотра, редактирования и обмена с настольным Gramps до подключения основного исследования. Сценарий независимо не испытывался.",
+      "license": "AGPL-3.0 (точная версия требует сверки LICENSE)",
+      "limitations": "Этот репозиторий содержит frontend; серверная часть Gramps Web API находится отдельно. Для собственной установки нужны соответствующая серверная среда и сопровождение. Заявленные средства приватности и синхронизации требуют проверки на выбранной конфигурации; сохранность конкретных данных и доступность из РФ здесь не испытывались. Поле лицензии frontend отдельно не переоценивается.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "gramps-project/gramps-web",
+      "url": "https://github.com/gramps-project/gramps-web",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps-web",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Веб-интерфейс"
+        }
+      },
+      "purpose": "Веб-интерфейс",
+      "use_case": "Редакционный сценарий: оценить веб-доступ и совместное редактирование тестовой генеалогической базы Gramps с родственниками. Проверить нужные операции просмотра, редактирования и обмена с настольным Gramps до подключения основного исследования. Сценарий независимо не испытывался.",
+      "license": "AGPL-3.0 (точная версия требует сверки LICENSE)",
+      "limitations": "Этот репозиторий содержит frontend; серверная часть Gramps Web API находится отдельно. Для собственной установки нужны соответствующая серверная среда и сопровождение. Заявленные средства приватности и синхронизации требуют проверки на выбранной конфигурации; сохранность конкретных данных и доступность из РФ здесь не испытывались. Поле лицензии frontend отдельно не переоценивается.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "gramps-project/gramps-web",
+      "url": "https://github.com/gramps-project/gramps-web",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gramps-project/gramps-web",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Веб-интерфейс"
+        }
+      },
+      "purpose": "Веб-интерфейс",
+      "use_case": "Редакционный сценарий: оценить веб-доступ и совместное редактирование тестовой генеалогической базы Gramps с родственниками. Проверить нужные операции просмотра, редактирования и обмена с настольным Gramps до подключения основного исследования. Сценарий независимо не испытывался.",
+      "license": "AGPL-3.0 (точная версия требует сверки LICENSE)",
+      "limitations": "Этот репозиторий содержит frontend; серверная часть Gramps Web API находится отдельно. Для собственной установки нужны соответствующая серверная среда и сопровождение. Заявленные средства приватности и синхронизации требуют проверки на выбранной конфигурации; сохранность конкретных данных и доступность из РФ здесь не испытывались. Поле лицензии frontend отдельно не переоценивается.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
       "task": "research",
       "project": "gramps-project/gramps-web-api",
       "url": "https://github.com/gramps-project/gramps-web-api",
@@ -1789,7 +2241,7 @@
           "file": "catalog.json",
           "key": "gramps-project/gramps-web-api",
           "field": "components",
-          "excerpt": "Research Workspace · GEDCOM/data model · API/MCP/agent layer · provenance/evidence",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · provenance/evidence",
           "basis": "Компонент каталога"
         }
       ],
@@ -1820,7 +2272,7 @@
           "file": "catalog.json",
           "key": "gramps-project/gramps-web-api",
           "field": "components",
-          "excerpt": "Research Workspace · GEDCOM/data model · API/MCP/agent layer · provenance/evidence",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · provenance/evidence",
           "basis": "Компонент каталога"
         }
       ],
@@ -1858,7 +2310,7 @@
           "file": "catalog.json",
           "key": "gramps-project/gramps-web-api",
           "field": "components",
-          "excerpt": "Research Workspace · GEDCOM/data model · API/MCP/agent layer · provenance/evidence",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · provenance/evidence",
           "basis": "Компонент каталога"
         },
         {
@@ -1977,6 +2429,37 @@
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
     },
     {
+      "task": "transcribe",
+      "project": "iiif/api",
+      "url": "https://github.com/iiif/api",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "iiif/api",
+          "field": "components",
+          "excerpt": "Archive Adapter · Research Workspace · OCR/HTR",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "reference",
+        "label": "Спецификации и методики",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Спецификация"
+        }
+      },
+      "purpose": "Официальные спецификации IIIF",
+      "use_case": "Согласовать доступ к архивным изображениям, метаданным и областям страницы.",
+      "license": "CC BY (тексты спецификаций)",
+      "limitations": "Спецификации — не готовый просмотрщик; условия использования изображений определяет правообладатель.",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
       "task": "download",
       "project": "iiif/api",
       "url": "https://github.com/iiif/api",
@@ -1988,6 +2471,37 @@
           "field": "guide_excerpt",
           "excerpt": "Назначение: Спецификации IIIF\nВозможности / сценарий: Стандартизовать получение изображений, описание объектов и совместимость просмотрщиков",
           "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "reference",
+        "label": "Спецификации и методики",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Спецификация"
+        }
+      },
+      "purpose": "Официальные спецификации IIIF",
+      "use_case": "Согласовать доступ к архивным изображениям, метаданным и областям страницы.",
+      "license": "CC BY (тексты спецификаций)",
+      "limitations": "Спецификации — не готовый просмотрщик; условия использования изображений определяет правообладатель.",
+      "test_status": "Не тестировался",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "iiif/api",
+      "url": "https://github.com/iiif/api",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "iiif/api",
+          "field": "components",
+          "excerpt": "Archive Adapter · Research Workspace · OCR/HTR",
+          "basis": "Компонент каталога"
         }
       ],
       "role": {
@@ -3680,11 +4194,45 @@
           "basis": "Редакционное описание/сценарий"
         },
         {
+          "file": "catalog.json",
+          "key": "ub-mannheim/escriptorium",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Research Workspace",
+          "basis": "Компонент каталога"
+        },
+        {
           "file": "docs/research.json",
           "key": "ub-mannheim/escriptorium",
           "field": "guide_excerpt",
           "excerpt": "Назначение: Среда транскрибирования исторических документов. Оценить ручную корректуру, обучение и запуск HTR на архивных изображениях.\nВозможности / сценарий: Оценить ручную корректуру, обучение и запуск HTR на архивных изображениях.",
           "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": null
+      },
+      "purpose": "По редакционным материалам (без независимой проверки): Среда транскрибирования исторических документов. Оценить ручную корректуру, обучение и запуск HTR на архивных изображениях.",
+      "use_case": "Сценарий не описан",
+      "license": "MIT (текст LICENSE)",
+      "limitations": "GitHub-зеркало/адаптация; отдельно учитывать исходный GitLab",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Высокий",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "ub-mannheim/escriptorium",
+      "url": "https://github.com/ub-mannheim/escriptorium",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ub-mannheim/escriptorium",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Research Workspace",
+          "basis": "Компонент каталога"
         }
       ],
       "role": {
@@ -5168,14 +5716,21 @@
           "file": "catalog.json",
           "key": "nafrec",
           "field": "description",
-          "excerpt": "Конвейер распознавания кириллицы/латиницы, экспорт PAGE/ALTO, оптимизация обработки.",
+          "excerpt": "OCR/HTR-конвейер Национального архива Финляндии: обнаружение строк, классификация кириллицы и латиницы по каждой строке, маршрутизация в TrOCR/PP-OCRv6, экспорт ALTO/PAGE XML.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "nafrec",
+          "field": "use_case",
+          "excerpt": "Эксперимент на метрических книгах со смешанной кириллицей и латиницей; сравнить CER/WER, геометрию строк и производительность с текущим OCR/HTR.",
           "basis": "Редакционное описание/сценарий"
         },
         {
           "file": "catalog.json",
           "key": "nafrec",
           "field": "components",
-          "excerpt": "OCR/HTR · Indexer",
+          "excerpt": "OCR/HTR · Indexer · Archive Adapter",
           "basis": "Компонент каталога"
         }
       ],
@@ -5185,13 +5740,13 @@
         "source": {
           "file": "catalog.json",
           "field": "description",
-          "excerpt": "Конвейер распознавания кириллицы/латиницы, экспорт PAGE/ALTO, оптимизация обработки."
+          "excerpt": "OCR/HTR-конвейер Национального архива Финляндии: обнаружение строк, классификация кириллицы и латиницы по каждой строке, маршрутизация в TrOCR/PP-OCRv6, экспорт ALTO/PAGE XML."
         }
       },
-      "purpose": "Конвейер распознавания кириллицы/латиницы, экспорт PAGE/ALTO, оптимизация обработки.",
-      "use_case": "Тест на русских рукописях",
+      "purpose": "OCR/HTR-конвейер Национального архива Финляндии: обнаружение строк, классификация кириллицы и латиницы по каждой строке, маршрутизация в TrOCR/PP-OCRv6, экспорт ALTO/PAGE XML.",
+      "use_case": "Эксперимент на метрических книгах со смешанной кириллицей и латиницей; сравнить CER/WER, геометрию строк и производительность с текущим OCR/HTR.",
       "license": "Apache-2.0 (код)",
-      "limitations": "Требует независимой проверки по GitHub",
+      "limitations": "Точность на дореволюционных русских почерках не доказана; требуются отдельные модели и проверка лицензий весов; AMD/ROCm сценарии нуждаются в испытаниях.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
@@ -5972,6 +6527,957 @@
       "use_case": "Кандидат для адаптации к генеалогии: вести несколько гипотез о тождестве человека, связывать каждое наблюдение с источником и сохранять опровержения. Такой сценарий пока не испытан.",
       "license": "MIT на ревизии 7fbf027d",
       "limitations": "Не специализирован для генеалогии. Преимущество до 26,7 пункта — авторское benchmark-заявление для других задач. Модели, бюджет, sandbox и качество рассуждений независимо не испытывались.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "places",
+      "project": "denissergeevitch/ex-ussr-kinship-research",
+      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "denissergeevitch/ex-ussr-kinship-research",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence · Place Resolver/АТД",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "catalog.json",
+          "field": "project_type",
+          "excerpt": "Agent Skill для генеалогических исследований"
+        }
+      },
+      "purpose": "Agent Skill для воспроизводимого генеалогического исследования на территории бывшего СССР: исследовательские дела, реестры утверждений и источников, контроль независимости свидетельств и аудит доказательств.",
+      "use_case": "Организовать проверяемое исследование родства: фиксировать исходные документы, различать однофамильцев и копии одного источника, вести журнал поиска и проверять выводы перед публикацией.",
+      "license": "MIT (по документации проекта; проверить файл LICENSE)",
+      "limitations": "Не самостоятельный поисковик и не OCR/HTR-движок. Точность родственных выводов и полнота российских архивных маршрутов независимо не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "denissergeevitch/ex-ussr-kinship-research",
+      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "denissergeevitch/ex-ussr-kinship-research",
+          "field": "description",
+          "excerpt": "Agent Skill для воспроизводимого генеалогического исследования на территории бывшего СССР: исследовательские дела, реестры утверждений и источников, контроль независимости свидетельств и аудит доказательств.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "denissergeevitch/ex-ussr-kinship-research",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence · Place Resolver/АТД",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "catalog.json",
+          "field": "project_type",
+          "excerpt": "Agent Skill для генеалогических исследований"
+        }
+      },
+      "purpose": "Agent Skill для воспроизводимого генеалогического исследования на территории бывшего СССР: исследовательские дела, реестры утверждений и источников, контроль независимости свидетельств и аудит доказательств.",
+      "use_case": "Организовать проверяемое исследование родства: фиксировать исходные документы, различать однофамильцев и копии одного источника, вести журнал поиска и проверять выводы перед публикацией.",
+      "license": "MIT (по документации проекта; проверить файл LICENSE)",
+      "limitations": "Не самостоятельный поисковик и не OCR/HTR-движок. Точность родственных выводов и полнота российских архивных маршрутов независимо не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "denissergeevitch/ex-ussr-kinship-research",
+      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "denissergeevitch/ex-ussr-kinship-research",
+          "field": "components",
+          "excerpt": "Research Workspace · API/MCP/agent layer · provenance/evidence · Place Resolver/АТД",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "catalog.json",
+          "field": "project_type",
+          "excerpt": "Agent Skill для генеалогических исследований"
+        }
+      },
+      "purpose": "Agent Skill для воспроизводимого генеалогического исследования на территории бывшего СССР: исследовательские дела, реестры утверждений и источников, контроль независимости свидетельств и аудит доказательств.",
+      "use_case": "Организовать проверяемое исследование родства: фиксировать исходные документы, различать однофамильцев и копии одного источника, вести журнал поиска и проверять выводы перед публикацией.",
+      "license": "MIT (по документации проекта; проверить файл LICENSE)",
+      "limitations": "Не самостоятельный поисковик и не OCR/HTR-движок. Точность родственных выводов и полнота российских архивных маршрутов независимо не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "archiveheritagegroup/ahg-archives-mcp",
+      "url": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "archiveheritagegroup/ahg-archives-mcp",
+          "field": "description",
+          "excerpt": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "archiveheritagegroup/ahg-archives-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный MCP-сервер"
+        }
+      },
+      "purpose": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+      "use_case": "Пилот read-only Archive Adapter и согласования AI-предложений без автоматической правки источника.",
+      "license": "AGPL-3.0 (заявление проекта; проверить LICENSE)",
+      "limitations": "Проект в разработке; заявленная интеграция Heratio планируется, а не подтверждена. Безопасность и полнота инструментов независимо не тестировались.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "archiveheritagegroup/ahg-archives-mcp",
+      "url": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "archiveheritagegroup/ahg-archives-mcp",
+          "field": "description",
+          "excerpt": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "archiveheritagegroup/ahg-archives-mcp",
+          "field": "components",
+          "excerpt": "Archive Adapter · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "archiveheritagegroup/ahg-archives-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный MCP-сервер"
+        }
+      },
+      "purpose": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+      "use_case": "Пилот read-only Archive Adapter и согласования AI-предложений без автоматической правки источника.",
+      "license": "AGPL-3.0 (заявление проекта; проверить LICENSE)",
+      "limitations": "Проект в разработке; заявленная интеграция Heratio планируется, а не подтверждена. Безопасность и полнота инструментов независимо не тестировались.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "archiveheritagegroup/ahg-archives-mcp",
+      "url": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "archiveheritagegroup/ahg-archives-mcp",
+          "field": "description",
+          "excerpt": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "archiveheritagegroup/ahg-archives-mcp",
+          "field": "components",
+          "excerpt": "Archive Adapter · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "archiveheritagegroup/ahg-archives-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный MCP-сервер"
+        }
+      },
+      "purpose": "MCP-сервер для поиска и чтения архивных описаний AtoM, связанных объектов, изображений, транскрипций и происхождения данных. Предложения ИИ требуют подтверждения архивистом.",
+      "use_case": "Пилот read-only Archive Adapter и согласования AI-предложений без автоматической правки источника.",
+      "license": "AGPL-3.0 (заявление проекта; проверить LICENSE)",
+      "limitations": "Проект в разработке; заявленная интеграция Heratio планируется, а не подтверждена. Безопасность и полнота инструментов независимо не тестировались.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "archiveheritagegroup/heratio",
+      "url": "https://github.com/ArchiveHeritageGroup/heratio",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "archiveheritagegroup/heratio",
+          "field": "components",
+          "excerpt": "Archive Adapter · provenance/evidence · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивная GLAM-платформа"
+        }
+      },
+      "purpose": "Платформа GLAM для архивного описания и управления коллекциями, с поддержкой Records in Contexts, IIIF и AI-подсказок по метаданным согласно документации авторов.",
+      "use_case": "Изучить модель архивных описаний, RiC-граф, права доступа, provenance и human-in-the-loop для архивного адаптера.",
+      "license": "AGPL-3.0 (README)",
+      "limitations": "Крупная сложная платформа; README содержит roadmap рядом с заявленными функциями. Полная реализация и развёртывание независимо не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "archiveheritagegroup/heratio",
+      "url": "https://github.com/ArchiveHeritageGroup/heratio",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "archiveheritagegroup/heratio",
+          "field": "use_case",
+          "excerpt": "Изучить модель архивных описаний, RiC-граф, права доступа, provenance и human-in-the-loop для архивного адаптера.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "archiveheritagegroup/heratio",
+          "field": "components",
+          "excerpt": "Archive Adapter · provenance/evidence · Person Resolver",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "archiveheritagegroup/heratio",
+          "field": "editorial_use_case",
+          "excerpt": "Изучить модель архивных описаний, RiC-граф, права доступа, provenance и human-in-the-loop для архивного адаптера.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивная GLAM-платформа"
+        }
+      },
+      "purpose": "Платформа GLAM для архивного описания и управления коллекциями, с поддержкой Records in Contexts, IIIF и AI-подсказок по метаданным согласно документации авторов.",
+      "use_case": "Изучить модель архивных описаний, RiC-граф, права доступа, provenance и human-in-the-loop для архивного адаптера.",
+      "license": "AGPL-3.0 (README)",
+      "limitations": "Крупная сложная платформа; README содержит roadmap рядом с заявленными функциями. Полная реализация и развёртывание независимо не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "yifenglu1999/ai-historian",
+      "url": "https://github.com/YiFengLu1999/AI-Historian",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "yifenglu1999/ai-historian",
+          "field": "components",
+          "excerpt": "Research Workspace · Person Resolver · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский AI-конвейер"
+        }
+      },
+      "purpose": "AI Historian: агентный конвейер восстановления хронологии по разрозненным историческим текстам, с промежуточными TimeBlock, междокументной сверкой и привязкой к предложениям-источникам.",
+      "use_case": "Проверить на российских биографиях и противоречивых архивных документах; перенять схему промежуточных временных утверждений.",
+      "license": "Apache-2.0 (код); данные и переводы имеют отдельные условия",
+      "limitations": "Опубликованные MicroIoU — авторские результаты на ограниченном историческом корпусе; качество для русского OCR/HTR и генеалогии не проверено. Лицензии данных отличаются от лицензии кода.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "yifenglu1999/ai-historian",
+      "url": "https://github.com/YiFengLu1999/AI-Historian",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "yifenglu1999/ai-historian",
+          "field": "components",
+          "excerpt": "Research Workspace · Person Resolver · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский AI-конвейер"
+        }
+      },
+      "purpose": "AI Historian: агентный конвейер восстановления хронологии по разрозненным историческим текстам, с промежуточными TimeBlock, междокументной сверкой и привязкой к предложениям-источникам.",
+      "use_case": "Проверить на российских биографиях и противоречивых архивных документах; перенять схему промежуточных временных утверждений.",
+      "license": "Apache-2.0 (код); данные и переводы имеют отдельные условия",
+      "limitations": "Опубликованные MicroIoU — авторские результаты на ограниченном историческом корпусе; качество для русского OCR/HTR и генеалогии не проверено. Лицензии данных отличаются от лицензии кода.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "vaibhaav-tiwari/lineage",
+      "url": "https://github.com/Vaibhaav-Tiwari/lineage",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "vaibhaav-tiwari/lineage",
+          "field": "use_case",
+          "excerpt": "Изучить truth maintenance: при опровержении архивной атрибуции пересчитывать зависимые выводы и помечать гипотезы устаревшими.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "vaibhaav-tiwari/lineage",
+          "field": "components",
+          "excerpt": "provenance/evidence · Research Workspace · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "vaibhaav-tiwari/lineage",
+          "field": "editorial_use_case",
+          "excerpt": "Изучить truth maintenance: при опровержении архивной атрибуции пересчитывать зависимые выводы и помечать гипотезы устаревшими.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Граф доказательств и агентной памяти"
+        }
+      },
+      "purpose": "Lineage: экспериментальная графовая система учёта зависимостей выводов от свидетельств, пересмотра устаревших убеждений и блокировки действий после изменения исходных фактов.",
+      "use_case": "Изучить truth maintenance: при опровержении архивной атрибуции пересчитывать зависимые выводы и помечать гипотезы устаревшими.",
+      "license": "Не установлена; до выяснения лицензии код не заимствовать",
+      "limitations": "Хакатонный прототип на структурированных данных CPython; результаты тестов и benchmark заявлены автором и не подтверждают качество на архивных источниках.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "vaibhaav-tiwari/lineage",
+      "url": "https://github.com/Vaibhaav-Tiwari/lineage",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "vaibhaav-tiwari/lineage",
+          "field": "components",
+          "excerpt": "provenance/evidence · Research Workspace · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Граф доказательств и агентной памяти"
+        }
+      },
+      "purpose": "Lineage: экспериментальная графовая система учёта зависимостей выводов от свидетельств, пересмотра устаревших убеждений и блокировки действий после изменения исходных фактов.",
+      "use_case": "Изучить truth maintenance: при опровержении архивной атрибуции пересчитывать зависимые выводы и помечать гипотезы устаревшими.",
+      "license": "Не установлена; до выяснения лицензии код не заимствовать",
+      "limitations": "Хакатонный прототип на структурированных данных CPython; результаты тестов и benchmark заявлены автором и не подтверждают качество на архивных источниках.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "mouchar/ftb-mcp",
+      "url": "https://github.com/mouchar/ftb-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · API/MCP/agent layer · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP для MyHeritage FTB и GEDCOM"
+        }
+      },
+      "purpose": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+      "use_case": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+      "license": "Apache-2.0 (README и LICENSE)",
+      "limitations": "Формат FTB не документирован и восстановлен автором по образцу; совместимость со всеми версиями Family Tree Builder не гарантирована. Не предназначен для записи в дерево.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "mouchar/ftb-mcp",
+      "url": "https://github.com/mouchar/ftb-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "description",
+          "excerpt": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "use_case",
+          "excerpt": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · API/MCP/agent layer · Research Workspace",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "editorial_summary",
+          "excerpt": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "editorial_use_case",
+          "excerpt": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP для MyHeritage FTB и GEDCOM"
+        }
+      },
+      "purpose": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+      "use_case": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+      "license": "Apache-2.0 (README и LICENSE)",
+      "limitations": "Формат FTB не документирован и восстановлен автором по образцу; совместимость со всеми версиями Family Tree Builder не гарантирована. Не предназначен для записи в дерево.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "mouchar/ftb-mcp",
+      "url": "https://github.com/mouchar/ftb-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "description",
+          "excerpt": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "use_case",
+          "excerpt": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "components",
+          "excerpt": "GEDCOM/data model · API/MCP/agent layer · Research Workspace",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "editorial_summary",
+          "excerpt": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "mouchar/ftb-mcp",
+          "field": "editorial_use_case",
+          "excerpt": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP для MyHeritage FTB и GEDCOM"
+        }
+      },
+      "purpose": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+      "use_case": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+      "license": "Apache-2.0 (README и LICENSE)",
+      "limitations": "Формат FTB не документирован и восстановлен автором по образцу; совместимость со всеми версиями Family Tree Builder не гарантирована. Не предназначен для записи в дерево.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Специализированный / зависит от задачи",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "ai-riksarkivet/ra-mcp",
+      "url": "https://github.com/AI-Riksarkivet/ra-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/ra-mcp",
+          "field": "description",
+          "excerpt": "MCP-сервер и CLI для поиска и просмотра материалов Национального архива Швеции. Документация разделяет поиск метаданных, оцифрованные изображения, AI-транскрипции и дополнительные наборы данных.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/ra-mcp",
+          "field": "use_case",
+          "excerpt": "Найти шведский архивный документ по метаданным или транскрипции, открыть изображение и сверить распознанный текст. Редакционный сценарий для прототипа архивного адаптера; перенос на российские архивы требует отдельной разработки.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/ra-mcp",
+          "field": "components",
+          "excerpt": "Archive Adapter · OCR/HTR · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/ra-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-сервер и CLI для поиска и просмотра материалов Национального архива Швеции. Документация разделяет поиск метаданных, оцифрованные изображения, AI-транскрипции и дополнительные наборы данных.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/ra-mcp",
+          "field": "editorial_use_case",
+          "excerpt": "Найти шведский архивный документ по метаданным или транскрипции, открыть изображение и сверить распознанный текст. Редакционный сценарий для прототипа архивного адаптера; перенос на российские архивы требует отдельной разработки.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Модульный MCP-сервер и CLI для архивного поиска"
+        }
+      },
+      "purpose": "MCP-сервер и CLI для поиска и просмотра материалов Национального архива Швеции. Документация разделяет поиск метаданных, оцифрованные изображения, AI-транскрипции и дополнительные наборы данных.",
+      "use_case": "Найти шведский архивный документ по метаданным или транскрипции, открыть изображение и сверить распознанный текст. Редакционный сценарий для прототипа архивного адаптера; перенос на российские архивы требует отдельной разработки.",
+      "license": "Apache-2.0 (код); права на архивные материалы проверяются отдельно",
+      "limitations": "Не весь архив транскрибирован: доступность метаданных и изображений не означает доступность полнотекстового поиска. HTR содержит ошибки, повторное распознавание зависит от внешнего сервиса; наборы LanceDB требуют дополнительных зависимостей. На российских материалах не испытывалось.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "ai-riksarkivet/ra-mcp",
+      "url": "https://github.com/AI-Riksarkivet/ra-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/ra-mcp",
+          "field": "description",
+          "excerpt": "MCP-сервер и CLI для поиска и просмотра материалов Национального архива Швеции. Документация разделяет поиск метаданных, оцифрованные изображения, AI-транскрипции и дополнительные наборы данных.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/ra-mcp",
+          "field": "components",
+          "excerpt": "Archive Adapter · OCR/HTR · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/ra-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-сервер и CLI для поиска и просмотра материалов Национального архива Швеции. Документация разделяет поиск метаданных, оцифрованные изображения, AI-транскрипции и дополнительные наборы данных.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Модульный MCP-сервер и CLI для архивного поиска"
+        }
+      },
+      "purpose": "MCP-сервер и CLI для поиска и просмотра материалов Национального архива Швеции. Документация разделяет поиск метаданных, оцифрованные изображения, AI-транскрипции и дополнительные наборы данных.",
+      "use_case": "Найти шведский архивный документ по метаданным или транскрипции, открыть изображение и сверить распознанный текст. Редакционный сценарий для прототипа архивного адаптера; перенос на российские архивы требует отдельной разработки.",
+      "license": "Apache-2.0 (код); права на архивные материалы проверяются отдельно",
+      "limitations": "Не весь архив транскрибирован: доступность метаданных и изображений не означает доступность полнотекстового поиска. HTR содержит ошибки, повторное распознавание зависит от внешнего сервиса; наборы LanceDB требуют дополнительных зависимостей. На российских материалах не испытывалось.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "borisovodov/doru",
+      "url": "https://github.com/borisovodov/doru",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "borisovodov/doru",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Настольное генеалогическое приложение с MCP-интерфейсом"
+        }
+      },
+      "purpose": "Dóru — раннее настольное приложение для семейных деревьев с локальным проектом SQLite, импортом/экспортом GEDCOM и инструментами AI-агентов через MCP. Авторы предупреждают о нестабильности до версии 0.1.0.",
+      "use_case": "На копии дерева изучить редактирование агентом, учёт автора изменений и undo/redo. Редакционный сценарий для исследовательского рабочего места; сохранность исходного GEDCOM и медиа нужно проверить до реального использования.",
+      "license": "MIT (LICENSE.md)",
+      "limitations": "README: активная разработка, до 0.1.0 ничего не гарантируется и интерфейсы меняются ежедневно. Статически найдены OpQueue.apply/undo/redo и регистрация MCP-инструментов; сквозной цикл агент → журнал → отмена не испытывался. Последние изменения main не следует считать частью релиза v0.0.26. При использовании внешнего AI-провайдера данные могут отправляться ему.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "borisovodov/doru",
+      "url": "https://github.com/borisovodov/doru",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "borisovodov/doru",
+          "field": "description",
+          "excerpt": "Dóru — раннее настольное приложение для семейных деревьев с локальным проектом SQLite, импортом/экспортом GEDCOM и инструментами AI-агентов через MCP. Авторы предупреждают о нестабильности до версии 0.1.0.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "borisovodov/doru",
+          "field": "use_case",
+          "excerpt": "На копии дерева изучить редактирование агентом, учёт автора изменений и undo/redo. Редакционный сценарий для исследовательского рабочего места; сохранность исходного GEDCOM и медиа нужно проверить до реального использования.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "borisovodov/doru",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "borisovodov/doru",
+          "field": "editorial_summary",
+          "excerpt": "Dóru — раннее настольное приложение для семейных деревьев с локальным проектом SQLite, импортом/экспортом GEDCOM и инструментами AI-агентов через MCP. Авторы предупреждают о нестабильности до версии 0.1.0.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "borisovodov/doru",
+          "field": "editorial_use_case",
+          "excerpt": "На копии дерева изучить редактирование агентом, учёт автора изменений и undo/redo. Редакционный сценарий для исследовательского рабочего места; сохранность исходного GEDCOM и медиа нужно проверить до реального использования.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Настольное генеалогическое приложение с MCP-интерфейсом"
+        }
+      },
+      "purpose": "Dóru — раннее настольное приложение для семейных деревьев с локальным проектом SQLite, импортом/экспортом GEDCOM и инструментами AI-агентов через MCP. Авторы предупреждают о нестабильности до версии 0.1.0.",
+      "use_case": "На копии дерева изучить редактирование агентом, учёт автора изменений и undo/redo. Редакционный сценарий для исследовательского рабочего места; сохранность исходного GEDCOM и медиа нужно проверить до реального использования.",
+      "license": "MIT (LICENSE.md)",
+      "limitations": "README: активная разработка, до 0.1.0 ничего не гарантируется и интерфейсы меняются ежедневно. Статически найдены OpQueue.apply/undo/redo и регистрация MCP-инструментов; сквозной цикл агент → журнал → отмена не испытывался. Последние изменения main не следует считать частью релиза v0.0.26. При использовании внешнего AI-провайдера данные могут отправляться ему.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "borisovodov/doru",
+      "url": "https://github.com/borisovodov/doru",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "borisovodov/doru",
+          "field": "description",
+          "excerpt": "Dóru — раннее настольное приложение для семейных деревьев с локальным проектом SQLite, импортом/экспортом GEDCOM и инструментами AI-агентов через MCP. Авторы предупреждают о нестабильности до версии 0.1.0.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "borisovodov/doru",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "borisovodov/doru",
+          "field": "editorial_summary",
+          "excerpt": "Dóru — раннее настольное приложение для семейных деревьев с локальным проектом SQLite, импортом/экспортом GEDCOM и инструментами AI-агентов через MCP. Авторы предупреждают о нестабильности до версии 0.1.0.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Настольное генеалогическое приложение с MCP-интерфейсом"
+        }
+      },
+      "purpose": "Dóru — раннее настольное приложение для семейных деревьев с локальным проектом SQLite, импортом/экспортом GEDCOM и инструментами AI-агентов через MCP. Авторы предупреждают о нестабильности до версии 0.1.0.",
+      "use_case": "На копии дерева изучить редактирование агентом, учёт автора изменений и undo/redo. Редакционный сценарий для исследовательского рабочего места; сохранность исходного GEDCOM и медиа нужно проверить до реального использования.",
+      "license": "MIT (LICENSE.md)",
+      "limitations": "README: активная разработка, до 0.1.0 ничего не гарантируется и интерфейсы меняются ежедневно. Статически найдены OpQueue.apply/undo/redo и регистрация MCP-инструментов; сквозной цикл агент → журнал → отмена не испытывался. Последние изменения main не следует считать частью релиза v0.0.26. При использовании внешнего AI-провайдера данные могут отправляться ему.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "stanford-oval/credit",
+      "url": "https://github.com/stanford-oval/CREDIT",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "stanford-oval/credit",
+          "field": "components",
+          "excerpt": "provenance/evidence · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский код обучения и оценки самоатрибуции языковых моделей"
+        }
+      },
+      "purpose": "CREDIT исследует, зависит ли ответ языковой модели от переданной информации: метод сравнивает ответы с источником и без него, размечает влияние и обучает модель указывать зависимость в строке RELIED ON. Это не проверка исторической достоверности источника.",
+      "use_case": "Изучить контрфактическую проверку влияния документа или результата инструмента на вывод исследовательского ассистента. Редакционный сценарий: отделять опору на внешний текст от простого совпадения ответа; применимость к генеалогии ещё требует эксперимента.",
+      "license": "Apache-2.0 для кода; данные и результаты моделей — отдельные лицензии и условия в NOTICE и data/README.md",
+      "limitations": "Таблицы качества — результаты авторов, не независимый benchmark каталога. Самоатрибуция не доказывает истинность документа или генеалогического вывода. Полный цикл требует моделей, GPU и/или API; код Apache-2.0 не даёт единой лицензии всем данным и выходам сторонних моделей.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "fmadore/iwac-mcp-server",
+      "url": "https://github.com/fmadore/iwac-mcp-server",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "fmadore/iwac-mcp-server",
+          "field": "components",
+          "excerpt": "Research Workspace · Archive Adapter · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер чтения цифровой коллекции и исследовательских инструментов"
+        }
+      },
+      "purpose": "IWAC MCP Server предоставляет поиск и исследовательские инструменты для Islam West Africa Collection: публикации, архивные документы, справочные записи и другие материалы о Западной Африке. Документация описывает stdio/HTTP, настольные пакеты и исследовательский skill.",
+      "use_case": "Изучить поиск по коллекции, чтение источников, анализ покрытия и передачу исследовательской методики через MCP skills. Редакционный сценарий для архитектуры архивного рабочего места; подключение российских коллекций потребует собственного адаптера.",
+      "license": "MIT для сервера; права доступа и использования материалов коллекции проверяются отдельно",
+      "limitations": "Корпус посвящён Западной Африке, преимущественно франкоязычным материалам; это не база российской генеалогии. Публичные и закрытые полные тексты имеют разные режимы доступа. Число инструментов и записей меняется; качество AI-аннотаций и выводов не проверено. Для runtime указан Node.js 24+, семантический поиск зависит от платформы и загрузки модели. v4.3.1 ещё использует DuckDB 1.5.6; обновление main нельзя приписывать этому релизу.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "fmadore/iwac-mcp-server",
+      "url": "https://github.com/fmadore/iwac-mcp-server",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "fmadore/iwac-mcp-server",
+          "field": "description",
+          "excerpt": "IWAC MCP Server предоставляет поиск и исследовательские инструменты для Islam West Africa Collection: публикации, архивные документы, справочные записи и другие материалы о Западной Африке. Документация описывает stdio/HTTP, настольные пакеты и исследовательский skill.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "fmadore/iwac-mcp-server",
+          "field": "use_case",
+          "excerpt": "Изучить поиск по коллекции, чтение источников, анализ покрытия и передачу исследовательской методики через MCP skills. Редакционный сценарий для архитектуры архивного рабочего места; подключение российских коллекций потребует собственного адаптера.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "fmadore/iwac-mcp-server",
+          "field": "components",
+          "excerpt": "Research Workspace · Archive Adapter · API/MCP/agent layer · provenance/evidence",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "fmadore/iwac-mcp-server",
+          "field": "editorial_summary",
+          "excerpt": "IWAC MCP Server предоставляет поиск и исследовательские инструменты для Islam West Africa Collection: публикации, архивные документы, справочные записи и другие материалы о Западной Африке. Документация описывает stdio/HTTP, настольные пакеты и исследовательский skill.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "fmadore/iwac-mcp-server",
+          "field": "editorial_use_case",
+          "excerpt": "Изучить поиск по коллекции, чтение источников, анализ покрытия и передачу исследовательской методики через MCP skills. Редакционный сценарий для архитектуры архивного рабочего места; подключение российских коллекций потребует собственного адаптера.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер чтения цифровой коллекции и исследовательских инструментов"
+        }
+      },
+      "purpose": "IWAC MCP Server предоставляет поиск и исследовательские инструменты для Islam West Africa Collection: публикации, архивные документы, справочные записи и другие материалы о Западной Африке. Документация описывает stdio/HTTP, настольные пакеты и исследовательский skill.",
+      "use_case": "Изучить поиск по коллекции, чтение источников, анализ покрытия и передачу исследовательской методики через MCP skills. Редакционный сценарий для архитектуры архивного рабочего места; подключение российских коллекций потребует собственного адаптера.",
+      "license": "MIT для сервера; права доступа и использования материалов коллекции проверяются отдельно",
+      "limitations": "Корпус посвящён Западной Африке, преимущественно франкоязычным материалам; это не база российской генеалогии. Публичные и закрытые полные тексты имеют разные режимы доступа. Число инструментов и записей меняется; качество AI-аннотаций и выводов не проверено. Для runtime указан Node.js 24+, семантический поиск зависит от платформы и загрузки модели. v4.3.1 ещё использует DuckDB 1.5.6; обновление main нельзя приписывать этому релизу.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."

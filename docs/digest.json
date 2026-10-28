@@ -1,5 +1,196 @@
 [
   {
+    "date": "2026-10-28",
+    "title": "Значимые изменения проектов",
+    "summary": "Утверждённые события; источники и дельты указаны в записях.",
+    "items": [
+      {
+        "repo": "ai-riksarkivet/ra-mcp",
+        "priority": "Не оценён",
+        "change": "Впервые добавлен в каталог: MCP-сервер и CLI для поиска и просмотра материалов Национального архива Швеции. Документация разделяет поиск метаданных, оцифрованные изображения, AI-транскрипции и дополнительные наборы данных. Проверенная база: v0.18.0 от 21.10.2026. Дата события — обнаружение и включение в каталог, не дата создания проекта.",
+        "link": "https://api.github.com/repos/AI-Riksarkivet/ra-mcp/releases/tags/v0.18.0",
+        "components": "Archive Adapter · OCR/HTR · API/MCP/agent layer",
+        "action": "Изучить search/browse и выполнить пробный поиск с проверкой изображения; отдельно проверить переносимость адаптера и доступность сервисов из РФ.",
+        "event_date": "2026-10-28",
+        "significance_reason": "Редакционный интерес: пример разделения архивного API, IIIF/ALTO и агентского интерфейса. Не готовый адаптер для российских архивов.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате завершить публикацию четырёх перечисленных проектов в PR #13; проверка первоисточников выполнена Codex",
+        "reviewed_at": "2026-10-28T17:30:49.142091+00:00",
+        "discovery_id": "github:ai-riksarkivet/ra-mcp:watch-2026-10-28",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/AI-Riksarkivet/ra-mcp/releases/tags/v0.18.0"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/AI-Riksarkivet/ra-mcp/commits?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/AI-Riksarkivet/ra-mcp"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/docs/how-it-works/architecture.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/docs/how-it-works/data-sources.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/README.md"
+          }
+        ],
+        "research_link": "project.html?repo=ai-riksarkivet%2Fra-mcp",
+        "previous_state": "Отсутствует в каталоге, расширенных исследованиях, дайджесте и журнале находок; совпадений точного имени, URL и документированных алиасов не найдено.",
+        "new_state": "Прочитаны README, описание покрытия и архитектуры на закреплённой ревизии, LICENSE и записи релиза v0.18.0. Документация описывает отдельные слои библиотек, MCP и CLI; метаданные GitHub подтверждают существование репозитория. Зрелость: Опубликован релиз v0.18.0; модульная архитектура документирована. Проверка документов E1, без runtime-испытания. Применимость для России: направление использования описано редакционно; доступность из РФ и качество на российских данных не проверены."
+      },
+      {
+        "repo": "borisovodov/doru",
+        "priority": "Не оценён",
+        "change": "Впервые добавлен в каталог: Dóru — раннее настольное приложение для семейных деревьев с локальным проектом SQLite, импортом/экспортом GEDCOM и инструментами AI-агентов через MCP. Авторы предупреждают о нестабильности до версии 0.1.0. Проверенная база: релиз v0.0.26 от 27.10.2026; README и код main на 28.10.2026. Дата события — обнаружение и включение в каталог, не дата создания проекта.",
+        "link": "https://api.github.com/repos/borisovodov/doru/releases/tags/v0.0.26",
+        "components": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+        "action": "Испытать GEDCOM round-trip, журнал акторов и undo/redo агента на обезличенной копии; проверить русские имена, даты и сохранность расширений.",
+        "event_date": "2026-10-28",
+        "significance_reason": "Редакционный интерес: генеалогическая модель и контролируемые изменения агента. Это кандидат для изучения архитектуры, а не рекомендация хранить единственную копию дерева.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате завершить публикацию четырёх перечисленных проектов в PR #13; проверка первоисточников выполнена Codex",
+        "reviewed_at": "2026-10-28T17:30:49.142091+00:00",
+        "discovery_id": "github:borisovodov/doru:watch-2026-10-28",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/borisovodov/doru/releases/tags/v0.0.26"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/borisovodov/doru/commits?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/borisovodov/doru"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/LICENSE.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/packages/ai/src/server.ts"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/packages/core/src/ops/op.ts"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/README.md"
+          }
+        ],
+        "research_link": "project.html?repo=borisovodov%2Fdoru",
+        "previous_state": "Отсутствует в каталоге, расширенных исследованиях, дайджесте и журнале находок; совпадений точного имени, URL и документированных алиасов не найдено.",
+        "new_state": "Прочитаны README и LICENSE.md закреплённой ревизии; в op.ts найдены стеки undo/redo и вызов inverse, в server.ts — DoruMcpServer с регистрацией doruTools. Проверены релиз v0.0.26 и последние коммиты GEDCOM, не заявляемые как выпущенные в этом релизе. Зрелость: Ранняя стадия до 0.1.0 с явным предупреждением авторов; есть релизы, но готовность для рабочих данных не подтверждена. Статическое чтение выбранных исходников, без runtime. Применимость для России: направление использования описано редакционно; доступность из РФ и качество на российских данных не проверены."
+      },
+      {
+        "repo": "stanford-oval/credit",
+        "priority": "Не оценён",
+        "change": "Впервые добавлен в каталог: CREDIT исследует, зависит ли ответ языковой модели от переданной информации: метод сравнивает ответы с источником и без него, размечает влияние и обучает модель указывать зависимость в строке RELIED ON. Это не проверка исторической достоверности источника. Проверенная база: публичный выпуск кода 26.10.2026, отдельного GitHub Release нет. Дата события — обнаружение и включение в каталог, не дата создания проекта.",
+        "link": "https://api.github.com/repos/stanford-oval/CREDIT/commits?per_page=3",
+        "components": "provenance/evidence · Research Workspace",
+        "action": "Сначала пересчитать небольшой пример из опубликованных результатов с соблюдением условий данных; затем спроектировать отдельную проверку на генеалогических вопросах.",
+        "event_date": "2026-10-28",
+        "significance_reason": "Редакционный интерес: методика проверки зависимости вывода от источника для provenance/evidence; не механизм установления исторического факта.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате завершить публикацию четырёх перечисленных проектов в PR #13; проверка первоисточников выполнена Codex",
+        "reviewed_at": "2026-10-28T17:30:49.142091+00:00",
+        "discovery_id": "github:stanford-oval/credit:watch-2026-10-28",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/stanford-oval/CREDIT/commits?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/stanford-oval/CREDIT"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/credit/cf_disclose.py"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/data/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/NOTICE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/README.md"
+          }
+        ],
+        "research_link": "project.html?repo=stanford-oval%2Fcredit",
+        "previous_state": "Отсутствует в каталоге, расширенных исследованиях, дайджесте и журнале находок; совпадений точного имени, URL и документированных алиасов не найдено.",
+        "new_state": "Прочитаны README, LICENSE, NOTICE, data/README.md и cf_disclose.py на 55b912d8. В исходнике описаны сравнение с ответами без подсказки, отбрасывание неоднозначных случаев и перезапись RELIED ON. Подтверждён публичный коммит от 26 октября; GitHub releases пуст. Зрелость: Новый исследовательский выпуск кода и документации; production-зрелость не установлена. Выбранные исходники прочитаны, вычислительные эксперименты не запускались. Применимость для России: направление использования описано редакционно; доступность из РФ и качество на российских данных не проверены."
+      },
+      {
+        "repo": "fmadore/iwac-mcp-server",
+        "priority": "Не оценён",
+        "change": "Впервые добавлен в каталог: IWAC MCP Server предоставляет поиск и исследовательские инструменты для Islam West Africa Collection: публикации, архивные документы, справочные записи и другие материалы о Западной Африке. Документация описывает stdio/HTTP, настольные пакеты и исследовательский skill. Проверенная база: v4.3.1 от 27.10.2026; main содержит последующее обновление DuckDB. Дата события — обнаружение и включение в каталог, не дата создания проекта.",
+        "link": "https://api.github.com/repos/fmadore/iwac-mcp-server/releases/tags/v4.3.1",
+        "components": "Research Workspace · Archive Adapter · API/MCP/agent layer · provenance/evidence",
+        "action": "Проверить подключение, переход к оригиналу, public/private границы и пагинацию на тестовом корпусе; отдельно оценить переносимость на российские данные.",
+        "event_date": "2026-10-28",
+        "significance_reason": "Редакционный интерес: связка коллекции, MCP tools, provenance и исследовательской методики; переносимая архитектура требует проверки на своих материалах.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате завершить публикацию четырёх перечисленных проектов в PR #13; проверка первоисточников выполнена Codex",
+        "reviewed_at": "2026-10-28T17:30:49.142091+00:00",
+        "discovery_id": "github:fmadore/iwac-mcp-server:watch-2026-10-28",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/fmadore/iwac-mcp-server/releases/tags/v4.3.1"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/fmadore/iwac-mcp-server/commits?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/fmadore/iwac-mcp-server"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/b3e651b5f3ca4159321cbd4ae65121b144a0949c/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/b3e651b5f3ca4159321cbd4ae65121b144a0949c/mcpb/src/tools/skills.ts"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/b3e651b5f3ca4159321cbd4ae65121b144a0949c/README.md"
+          }
+        ],
+        "research_link": "project.html?repo=fmadore%2Fiwac-mcp-server",
+        "previous_state": "Отсутствует в каталоге, расширенных исследованиях, дайджесте и журнале находок; совпадений точного имени, URL и документированных алиасов не найдено.",
+        "new_state": "Прочитаны README, LICENSE и skills.ts на b3e651b5, записи v4.2.0/v4.3.0/v4.3.1 и последние коммиты. В skills.ts видны SkillsExtension.load(strict), манифест, каталог ресурсов и attachSkills; v4.3.1 явно отделяет изменение SQL lambda от последующего обновления DuckDB. Зрелость: Есть версии и пакеты v4.3.1, документация и тестовые файлы; проверены тексты и выбранный код, установка и live-корпус не испытаны. Применимость для России: направление использования описано редакционно; доступность из РФ и качество на российских данных не проверены."
+      }
+    ]
+  },
+  {
     "date": "2026-10-24",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",

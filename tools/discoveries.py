@@ -96,6 +96,8 @@ def compare(root, records):
                 set(profile) != {'description', 'use_case', 'limitations', 'project_type'} or
                 any(not isinstance(v, str) or not v.strip() for v in profile.values())):
             errors.append('catalog_profile requires separate nonempty description, use_case, limitations and project_type')
+        if 'initialize_research_profile' in r and (r['initialize_research_profile'] is not True or profile is None):
+            errors.append('initialize_research_profile requires true and a reviewed catalog_profile')
         for field in ('license_evidence', 'claims_vs_verified', 'risks'):
             if field not in r:
                 errors.append('missing field: ' + field)

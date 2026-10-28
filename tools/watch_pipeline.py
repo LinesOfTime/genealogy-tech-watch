@@ -186,7 +186,7 @@ def validate(root, baseline=None):
     # Structured editorial assessments must reproduce the retained source exactly.
     if any(isinstance(c, dict) and 'russia_applicability' in c for c in catalog) or any(
             isinstance(c, dict) and 'russia_applicability' in c for c in research.values()):
-        from russia_applicability import derive
+        from russia_applicability import derive, same_assessment, catalog_assessment
         for key, card in research.items():
             if isinstance(card, dict) and 'russia_applicability' in card:
                 try:
@@ -198,7 +198,11 @@ def validate(root, baseline=None):
             if isinstance(card, dict) and 'russia_applicability' in card:
                 key = str(card.get('name', '')).lower()
                 try:
-                    if card['russia_applicability'] != derive(key, research.get(key)):
+                    expected = catalog_assessment(key, card, research.get(key))
+                    # Validate an explicit short-card source even when its wording differs.
+                    if isinstance(card['russia_applicability'].get('source'), str):
+                        derive(key, card)
+                    if not same_assessment(card['russia_applicability'], expected):
                         issue('error', 'russia_source', f'catalog[{i}]', 'Structured assessment differs from research source')
                 except (TypeError, ValueError, AttributeError) as exc:
                     issue('error', 'russia_source', f'catalog[{i}]', str(exc))

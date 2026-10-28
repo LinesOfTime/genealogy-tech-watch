@@ -8,6 +8,9 @@ const {chromium} = require('playwright');
   const browser = await chromium.launch({headless:true, executablePath:process.env.BROWSER_EXECUTABLE});
   try {
     const page = await browser.newPage({viewport:{width:375,height:812}});
+    const runtimeErrors=[];
+    page.on('pageerror',error=>runtimeErrors.push(error.message));
+    page.on('console',message=>{if(message.type()==='error')runtimeErrors.push(message.text())});
     const root = path.resolve(__dirname,'../docs');
     await page.route('https://ux.local/**', async route => {
       const name = path.basename(new URL(route.request().url()).pathname) || 'index.html';
@@ -15,6 +18,31 @@ const {chromium} = require('playwright');
       await route.fulfill({body:await fs.readFile(path.join(root,name)),contentType:type});
     });
     await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
+    const newProjects=['ai-riksarkivet/ra-mcp','borisovodov/doru','stanford-oval/credit','fmadore/iwac-mcp-server'];
+    for(const repo of newProjects) {
+      await page.locator('#search').fill(repo);
+      assert.match(await page.locator('#shown').innerText(),/^Показано 1 из /);
+      assert.match(await page.locator('.card').innerText(),/Не тестировался независимо/);
+      await page.locator('.card-links a[href^="project.html"]').click();
+      await page.waitForLoadState('networkidle');
+      assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
+      const details=await page.locator('#content').innerText();
+      assert.match(details,/Практическое применение/);
+      assert.match(details,/Независимое тестирование: Не тестировалось/);
+      assert.doesNotMatch(details,/Ошибка:|Сведения не установлены/);
+      assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),repo+' research overflows');
+      await page.goto('https://ux.local/digest.html',{waitUntil:'networkidle'});
+      await page.locator('#q').fill(repo);
+      assert.equal(await page.locator('article.item').count(),1);
+      await page.locator('article.item a[href^="project.html"]').click();
+      await page.waitForLoadState('networkidle');
+      assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
+      await page.goto('https://ux.local/tasks.html',{waitUntil:'networkidle'});
+      await page.locator('#task').selectOption(repo==='stanford-oval/credit'?'research':repo==='borisovodov/doru'?'gedcom':'agents');
+      await page.locator('#query').fill(repo);
+      assert.ok(await page.locator('#results article').count()>0);
+      await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
+    }
     assert.ok(await page.locator('#search').evaluate(n=>n.getBoundingClientRect().top < innerHeight));
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth <= innerWidth));
     await page.locator('#search').fill('gramps');
@@ -41,10 +69,11 @@ const {chromium} = require('playwright');
     assert.equal(await page.locator('#task').inputValue(),'');
     assert.equal(await page.locator('#query').inputValue(),'');
     await page.locator('#task').selectOption('transcribe');
-    const dataCard=page.locator('.task-group').filter({has:page.getByRole('heading',{name:'Наборы данных и примеры (1)',exact:true})});
+    const dataCard=page.locator('.task-group').filter({has:page.getByRole('heading',{name:/^Наборы данных и примеры/})});
     assert.match(await dataCard.innerText(),/abbyy\/jfk-ocr/);
     await page.locator('#role').selectOption('data');
-    assert.equal(await page.locator('#results article').count(),1);
+    assert.ok(await page.locator('#results article').count()>=1);
+    assert.equal(await page.locator('#results .task-group').count(),1);
     await page.locator('#role').selectOption('');
     const buttons=page.locator('#results [data-compare]');
     for(let i=0;i<3;i++)await buttons.nth(i).click();
@@ -74,6 +103,7 @@ const {chromium} = require('playwright');
         assert.equal(await page.locator('.skip-link').count(),1);
       }
     }
-    console.log('Browser UX regression passed: back/reload, URL filters, reset, mobile search, 12 navigation layouts.');
+    assert.deepEqual(runtimeErrors,[]);
+    console.log('Browser UX regression passed: four new projects (search, research, digest links, task matching); back/reload, URL filters, reset, mobile search, 12 navigation layouts; no console/page errors.');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1});

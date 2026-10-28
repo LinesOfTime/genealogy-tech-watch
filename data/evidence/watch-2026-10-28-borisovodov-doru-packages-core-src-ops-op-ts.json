@@ -1,0 +1,6 @@
+{
+  "url": "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/packages/core/src/ops/op.ts",
+  "checked_at": "2026-10-28T17:26:20.749Z",
+  "http_status": 200,
+  "content": "import type { TreeRepository } from '../db/repository';\n\nexport interface MutationContext {\n  repo: TreeRepository;\n}\n\nexport interface Op {\n  readonly id: string;\n  readonly kind: string;\n  readonly timestamp: string;\n  apply(ctx: MutationContext): void;\n  inverse(ctx: MutationContext): void;\n}\n\nexport class OpQueue {\n  private readonly undoStack: Op[] = [];\n  private readonly redoStack: Op[] = [];\n\n  apply(op: Op, ctx: MutationContext): void {\n    op.apply(ctx);\n    this.undoStack.push(op);\n    this.redoStack.length = 0;\n  }\n\n  undo(ctx: MutationContext): Op | undefined {\n    const op = this.undoStack.pop();\n    if (!op) {\n      return undefined;\n    }\n    op.inverse(ctx);\n    this.redoStack.push(op);\n    return op;\n  }\n\n  redo(ctx: MutationContext): Op | undefined {\n    const op = this.redoStack.pop();\n    if (!op) {\n      return undefined;\n    }\n    op.apply(ctx);\n    this.undoStack.push(op);\n    return op;\n  }\n\n  canUndo(): boolean {\n    return this.undoStack.length > 0;\n  }\n\n  canRedo(): boolean {\n    return this.redoStack.length > 0;\n  }\n}\n"
+}

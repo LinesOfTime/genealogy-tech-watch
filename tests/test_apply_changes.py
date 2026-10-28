@@ -98,6 +98,50 @@ class ApplyTests(unittest.TestCase):
             (self.root/name).write_bytes(raw)
         self.assertTrue(any('profile differs' in x['message'] for x in validate(self.root)['issues']))
 
+    def test_new_research_profile_is_bound_to_review_and_preserved_on_reapply(self):
+        self.record.update(repo_full_name='b/new', canonical_url='https://github.com/b/new',
+                           initialize_research_profile=True,
+                           catalog_profile=dict(description='Purpose',use_case='Use',limitations='Untested',project_type='CLI'))
+        self.approve()
+        plan=self.plan()
+        write_plan(self.root,plan,plan['plan_hash'])
+        r=json.loads((self.root/'docs/research.json').read_text(encoding='utf-8'))['b/new']
+        self.assertEqual(r['editorial_summary'],'Purpose')
+        self.assertEqual(r['editorial_limitations'],'Untested')
+        self.assertEqual(r['test_status'],'Не тестировалось')
+        self.assertEqual(r['russia_applicability']['rating'],'Не оценено')
+        self.assertEqual(r['profile_provenance']['reviewed_content_hash'],content_hash(self.record))
+        self.assertFalse(self.plan()['files'])
+        from watch_pipeline import validate
+        self.assertEqual(validate(self.root)['errors'],0)
+        data=json.loads((self.root/'docs/research.json').read_text(encoding='utf-8'))
+        data['b/new']['editorial_summary']='Unsupported claim'
+        self.write('docs/research.json',data)
+        self.assertTrue(any('research profile differs' in x['message'] for x in validate(self.root)['issues']))
+
+    def test_already_serialized_journal_is_in_validation_snapshot(self):
+        self.record.update(repo_full_name='b/new',canonical_url='https://github.com/b/new')
+        self.approve()
+        raw=(json.dumps(self.record,ensure_ascii=False,separators=(',',':'))+'\n').encode()
+        (self.root/'data/discoveries.jsonl').write_bytes(raw)
+        plan=self.plan()
+        self.assertNotIn('data/discoveries.jsonl',plan['files'])
+        write_plan(self.root,plan,plan['plan_hash'])
+        from watch_pipeline import validate
+        self.assertEqual(validate(self.root)['errors'],0)
+
+    def test_research_profile_initialization_requires_reviewed_new_project(self):
+        self.record['initialize_research_profile']=True
+        self.approve()
+        with self.assertRaisesRegex(ValueError,'requires true'):self.plan()
+        self.record['catalog_profile']=dict(description='D',use_case='U',limitations='L',project_type='T')
+        self.approve()
+        with self.assertRaisesRegex(ValueError,'new project only'):self.plan()
+        self.record.update(repo_full_name='b/new',canonical_url='https://github.com/b/new')
+        self.approve()
+        self.record['catalog_profile']['description']='After approval'
+        with self.assertRaises(ValueError):self.plan()
+
     def test_profile_cannot_overwrite_existing_research_or_add_arbitrary_fields(self):
         self.record['catalog_profile']=dict(description='D',use_case='U',limitations='L',project_type='T')
         self.approve()
