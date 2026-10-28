@@ -106,6 +106,20 @@ def event_issues(root, catalog, research, digest):
                         provenance.get('previous_values')!=dict(description=record.get('change_summary'),
                             use_case='Не оценено',limitations='Не оценено',project_type=None)):
                     error(loc,'Initial catalogue profile provenance differs from reviewed journal')
+            if record.get('initialize_research_profile'):
+                extended_card=research[r[0][0]]
+                mapping={'editorial_summary':'description','editorial_use_case':'use_case',
+                         'editorial_limitations':'limitations','project_type':'project_type'}
+                if not isinstance(profile,dict) or any(extended_card.get(field)!=profile.get(origin) for field,origin in mapping.items()):
+                    error(loc,'Initial research profile differs from reviewed journal')
+                provenance=extended_card.get('profile_provenance',{})
+                if (not isinstance(provenance,dict) or provenance.get('discovery_id')!=key or
+                        provenance.get('reviewed_content_hash')!=ledger.get(key) or
+                        provenance.get('source_urls')!=record.get('source_urls')):
+                    error(loc,'Initial research profile provenance differs from reviewed journal')
+                for field,value in dict(license=record.get('license'),maturity=record.get('maturity'),
+                                        license_evidence='; '.join(record.get('license_evidence',[]))).items():
+                    if extended_card.get(field)!=value:error(loc,'Initial research metadata differs: '+field)
             expected=dict(change=record.get('change_summary'),date=record.get('event_date'),
                           previous_state=record.get('previous_state'),new_state=record.get('new_state'),
                           significance_reason=record.get('significance_reason'),source_urls=record.get('source_urls'),

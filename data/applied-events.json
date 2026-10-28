@@ -10,5 +10,9 @@
   "github:stanford-oval/sheldon:watch-2026-10-24": "8aeb83db505216b71c3b0532dcc86167c01cbfd5b6af4bb1556a441f3fa11632",
   "github:ai-riksarkivet/rask:watch-2026-10-24": "29838db54a4592ef9ed419344114386a12c6108047425f48b6c1ffedb4aac52c",
   "github:gramps-project/gramps-web-api:watch-2026-10-24": "b1f632a2d17697501b5364b2cfec90f47a32db3ddced85bd2cbdafa0f1a02e7c",
-  "github:gramps-project/gramps-web:watch-2026-10-24": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6"
+  "github:gramps-project/gramps-web:watch-2026-10-24": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6",
+  "github:ai-riksarkivet/ra-mcp:watch-2026-10-28": "229befe1240eb1e523ba3a8344dc66a9816bc92ab2c59dcf018fd5d9960f62f4",
+  "github:borisovodov/doru:watch-2026-10-28": "c0aef87d9ce3ba06e7513ad7c509171764f47d8e78b798e553fc46d79772a8f0",
+  "github:stanford-oval/credit:watch-2026-10-28": "003fa791e17cbbb78a8fc05b12b7b47e95af62bad498bc792e865dc602364710",
+  "github:fmadore/iwac-mcp-server:watch-2026-10-28": "6b77f9ac4bad4c765bfe41c529a441fc135ee13b2720e0f276dc08401ab54b2f"
 }

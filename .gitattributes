@@ -1,0 +1,2 @@
+# Evidence hashes bind exact bytes; never convert line endings.
+data/evidence/** -text

@@ -6,7 +6,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
-from russia_applicability import derive, migrate
+from russia_applicability import derive, migrate, catalog_assessment
 
 
 class RussiaTests(unittest.TestCase):
@@ -44,8 +44,26 @@ class RussiaTests(unittest.TestCase):
         for key, old in research.items():
             self.assertEqual(old, {k:v for k,v in r[key].items() if k in old})
         from collections import Counter
-        expected = Counter(derive(x['name'].lower(), research.get(x['name'].lower()))['rating'] for x in catalog)
+        expected = Counter(catalog_assessment(x['name'].lower(), x, research.get(x['name'].lower()))['rating'] for x in catalog)
         self.assertEqual(Counter(x['russia_applicability']['rating'] for x in c), expected)
+
+    def test_post_guide_editorial_assessments_preserve_text_and_source(self):
+        assessment=dict(rating='Не оценено', original_line=None,
+                        source='https://github.com/a/b',basis='Not tested in Russia')
+        catalog=[dict(name='a/b',russia_applicability=assessment)]
+        research={'a/b':dict(russia_applicability=dict(assessment,basis='Separate editorial wording'))}
+        self.assertEqual(migrate(catalog,research),(catalog,research))
+        self.assertEqual(migrate(catalog,{}),(catalog,{}))
+        bad=copy.deepcopy(research)
+        bad['a/b']['russia_applicability']['source']='https://github.com/other/repo'
+        with self.assertRaises(ValueError):migrate(catalog,bad)
+        bad=copy.deepcopy(research)
+        bad['a/b']['russia_applicability']['rating']='Invented'
+        with self.assertRaises(ValueError):migrate(catalog,bad)
+        # Explicit assessments cannot override an existing guide line.
+        bad=copy.deepcopy(research)
+        bad['a/b']['guide_excerpt']='Для России: Высокий'
+        with self.assertRaises(ValueError):migrate(catalog,bad)
 
 
 if __name__ == '__main__':

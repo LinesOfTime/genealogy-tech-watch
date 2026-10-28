@@ -111,6 +111,18 @@ def build_plan(root, records, edition_date):
         card.setdefault('history', []).append(copy.deepcopy(event))
         research_created = key not in research
         research.setdefault(key, {}).setdefault('watch_events', []).append(copy.deepcopy(event))
+        if research_created and r.get('initialize_research_profile'):
+            profile = r['catalog_profile']
+            research[key].update(
+                editorial_summary=profile['description'], editorial_use_case=profile['use_case'],
+                editorial_limitations=profile['limitations'], project_type=profile['project_type'],
+                license=r['license'], license_evidence='; '.join(r['license_evidence']),
+                license_status=card['license_status'], test_status=card['test_status'],
+                verification_basis=card['verification'], verification_date=r['detected_at'][:10],
+                source_evidence=r['source_urls'][0]['url'], maturity=r['maturity'],
+                profile_provenance=dict(discovery_id=r['discovery_id'],
+                    reviewed_content_hash=r['reviewed_content_hash'], source_urls=copy.deepcopy(r['source_urls']),
+                    basis='Начальный редакционный профиль по первоисточникам; не независимое испытание'))
         if research_created:
             from russia_applicability import derive
             assessment=derive(key,research[key])
@@ -175,8 +187,9 @@ def build_plan(root, records, edition_date):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(data)
         for name in ('catalog.json', 'digest.json', 'docs/catalog.json', 'docs/digest.json',
+                     'data/discoveries.jsonl', 'data/applied-events.json',
                      'docs/research.json', 'docs/index.html', 'docs/digest.html'):
-            if not (staging / name).exists():
+            if not (staging / name).exists() and (root / name).exists():
                 (staging / name).parent.mkdir(parents=True, exist_ok=True)
                 (staging / name).write_bytes((root / name).read_bytes())
         for name in dependencies:

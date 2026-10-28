@@ -1,0 +1,6 @@
+{
+  "url": "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/NOTICE",
+  "checked_at": "2026-10-28T17:26:20.749Z",
+  "http_status": 200,
+  "content": "CREDIT: Counterfactual Relabeling for Dependence on Information Training\nCopyright 2026 Zikai Zhou, Jiacheng Sang, Yilin Xu, Yufei Jin, and Monica S. Lam\n\nThis product is licensed under the Apache License, Version 2.0 (see LICENSE).\n\nThe released data is derived from the following third-party datasets and model outputs, which remain under their own\nlicenses and terms. Users must comply with them.\n  - sycophancy-eval (Sharma et al.), built on TriviaQA and TruthfulQA questions\n  - TriviaQA (Joshi et al.), MMLU (Hendrycks et al.), ARC (Clark et al.), CommonsenseQA (Talmor et al.)\n  - FaithEval (Ming et al.), RAMDocs (Wang et al.)\n  - Outputs of Qwen3, DeepSeek-R1-Distill, and commercial API models (OpenAI, Anthropic, Google, DeepSeek), released for\n    research on model behavior; their use is subject to the respective providers' terms.\n"
+}
