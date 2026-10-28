@@ -2422,10 +2422,13 @@
       "next_action": "Сопоставить модель утверждений и источников с GEDCOM 7 и схемой кабинета. Найти точный файл лицензии и проверить условия.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/familysearch/gedcomx/blob/1bdb239f3e623cb102b2fdef8e83c46ab692c86c/README.md"
+        "https://github.com/familysearch/gedcomx/blob/HEAD/README.md"
       ],
       "reviewer": "Редакционная оценка",
-      "review_status": "proposed"
+      "review_status": "proposed",
+      "source_blob_sha": {
+        "README_md": "1bdb239f3e623cb102b2fdef8e83c46ab692c86c"
+      }
     }
   },
   "fisharebest/webtrees": {
@@ -2507,10 +2510,13 @@
       "next_action": "Проверить GEDCOM и роли пользователей на тестовом дереве. Найти точный файл лицензии и проверить условия.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/fisharebest/webtrees/blob/a71829e173e6d59fd19011812ccc3fc859e89895/README.md"
+        "https://github.com/fisharebest/webtrees/blob/HEAD/README.md"
       ],
       "reviewer": "Редакционная оценка",
-      "review_status": "proposed"
+      "review_status": "proposed",
+      "source_blob_sha": {
+        "README_md": "a71829e173e6d59fd19011812ccc3fc859e89895"
+      }
     }
   },
   "freeukgen/myopicvicar": {
@@ -2743,11 +2749,15 @@
       "next_action": "Проверить GEDCOM, связи и условия GPL-2.0-only. Сверить SPDX и зависимости перед заимствованием.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/geneweb/geneweb/blob/a6666b417efd0c3505706ed673f11df306f382c7/README.md",
-        "https://github.com/geneweb/geneweb/blob/60549be514af76c5db0c17ce6bbe01b2f81e2d9e/LICENSE"
+        "https://github.com/geneweb/geneweb/blob/HEAD/README.md",
+        "https://github.com/geneweb/geneweb/blob/HEAD/LICENSE"
       ],
       "reviewer": "Редакционная оценка",
-      "review_status": "proposed"
+      "review_status": "proposed",
+      "source_blob_sha": {
+        "README_md": "a6666b417efd0c3505706ed673f11df306f382c7",
+        "LICENSE": "60549be514af76c5db0c17ce6bbe01b2f81e2d9e"
+      }
     }
   },
   "glamberson/gedcom-evidence": {
@@ -3175,10 +3185,13 @@
       "next_action": "Сопоставить Gramps-модель с кабинетом и российской исторической географией. Найти точный файл лицензии и проверить условия.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/gramps-project/gramps/blob/15ed4123a3cc0811fcbafdd1f34d02db0a37afe2/README.md"
+        "https://github.com/gramps-project/gramps/blob/HEAD/README.md"
       ],
       "reviewer": "Редакционная оценка",
-      "review_status": "proposed"
+      "review_status": "proposed",
+      "source_blob_sha": {
+        "README_md": "15ed4123a3cc0811fcbafdd1f34d02db0a37afe2"
+      }
     }
   },
   "gramps-project/gramps-web": {
@@ -3308,11 +3321,15 @@
       "next_action": "Проверить UX, роли и работу с источниками на тестовой базе. Сверить SPDX и зависимости перед заимствованием.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/gramps-project/gramps-web/blob/e069af1409752bcc1e5d48289bae6a1113541fd8/README.md",
-        "https://github.com/gramps-project/gramps-web/blob/0ad25db4bd1d86c452db3f9602ccdbe172438f52/LICENSE"
+        "https://github.com/gramps-project/gramps-web/blob/HEAD/README.md",
+        "https://github.com/gramps-project/gramps-web/blob/HEAD/LICENSE"
       ],
       "reviewer": "Редакционная оценка",
-      "review_status": "proposed"
+      "review_status": "proposed",
+      "source_blob_sha": {
+        "README_md": "e069af1409752bcc1e5d48289bae6a1113541fd8",
+        "LICENSE": "0ad25db4bd1d86c452db3f9602ccdbe172438f52"
+      }
     }
   },
   "gramps-project/gramps-web-api": {
@@ -3456,11 +3473,15 @@
       "next_action": "Проверить read-only API, приватность guest/agent, отдельно изменения RestrictedDb. Сверить SPDX и зависимости перед заимствованием.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/gramps-project/gramps-web-api/blob/925d962b79329a521524485017d8bbab149ae399/README.md",
-        "https://github.com/gramps-project/gramps-web-api/blob/be3f7b28e564e7dd05eaf59d64adba1a4065ac0e/LICENSE"
+        "https://github.com/gramps-project/gramps-web-api/blob/HEAD/README.md",
+        "https://github.com/gramps-project/gramps-web-api/blob/HEAD/LICENSE"
       ],
       "reviewer": "Редакционная оценка",
-      "review_status": "proposed"
+      "review_status": "proposed",
+      "source_blob_sha": {
+        "README_md": "925d962b79329a521524485017d8bbab149ae399",
+        "LICENSE": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e"
+      }
     }
   },
   "gramps-project/gramps-web-docs": {
