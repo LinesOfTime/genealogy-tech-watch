@@ -2411,18 +2411,18 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки",
       "component_fit": 4,
       "russia_fit": 2,
       "maturity": 3,
-      "evidence_level": "E2",
-      "license_risk": "L1",
+      "evidence_level": "E1",
+      "license_risk": null,
       "integration_effort": 2,
       "priority_rationale": "Спецификация обмена данными с отношениями и источниками; не путать с GEDCOM 7.",
-      "next_action": "Сопоставить модель утверждений и источников с GEDCOM 7 и схемой кабинета.",
+      "next_action": "Сопоставить модель утверждений и источников с GEDCOM 7 и схемой кабинета. Найти точный файл лицензии и проверить условия.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/familysearch/gedcomx"
+        "https://github.com/familysearch/gedcomx/blob/1bdb239f3e623cb102b2fdef8e83c46ab692c86c/README.md"
       ],
       "reviewer": "Редакционная оценка",
       "review_status": "proposed"
@@ -2496,18 +2496,18 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки",
       "component_fit": 3,
       "russia_fit": 2,
       "maturity": 3,
-      "evidence_level": "E2",
-      "license_risk": "L1",
+      "evidence_level": "E1",
+      "license_risk": null,
       "integration_effort": 2,
       "priority_rationale": "Зрелый веб-инструмент GEDCOM и совместной работы, важен для сравнения UX и прав доступа.",
-      "next_action": "Проверить GEDCOM и роли пользователей на тестовом дереве.",
+      "next_action": "Проверить GEDCOM и роли пользователей на тестовом дереве. Найти точный файл лицензии и проверить условия.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/fisharebest/webtrees"
+        "https://github.com/fisharebest/webtrees/blob/a71829e173e6d59fd19011812ccc3fc859e89895/README.md"
       ],
       "reviewer": "Редакционная оценка",
       "review_status": "proposed"
@@ -2732,7 +2732,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей",
       "component_fit": 2,
       "russia_fit": 2,
       "maturity": 3,
@@ -2740,10 +2740,11 @@
       "license_risk": "L1",
       "integration_effort": 2,
       "priority_rationale": "Самостоятельная система деревьев; сравнительный ориентир, не ключевой архивный инструмент.",
-      "next_action": "Проверить GEDCOM, связи и условия GPL-2.0-only.",
+      "next_action": "Проверить GEDCOM, связи и условия GPL-2.0-only. Сверить SPDX и зависимости перед заимствованием.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/geneweb/geneweb"
+        "https://github.com/geneweb/geneweb/blob/a6666b417efd0c3505706ed673f11df306f382c7/README.md",
+        "https://github.com/geneweb/geneweb/blob/60549be514af76c5db0c17ce6bbe01b2f81e2d9e/LICENSE"
       ],
       "reviewer": "Редакционная оценка",
       "review_status": "proposed"
@@ -3163,18 +3164,18 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки",
       "component_fit": 4,
       "russia_fit": 2,
       "maturity": 4,
-      "evidence_level": "E2",
-      "license_risk": "L1",
+      "evidence_level": "E1",
+      "license_risk": null,
       "integration_effort": 2,
       "priority_rationale": "Базовый ориентир по генеалогическим сущностям, событиям, источникам и цитированиям.",
-      "next_action": "Сопоставить Gramps-модель с кабинетом и российской исторической географией.",
+      "next_action": "Сопоставить Gramps-модель с кабинетом и российской исторической географией. Найти точный файл лицензии и проверить условия.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/gramps-project/gramps"
+        "https://github.com/gramps-project/gramps/blob/15ed4123a3cc0811fcbafdd1f34d02db0a37afe2/README.md"
       ],
       "reviewer": "Редакционная оценка",
       "review_status": "proposed"
@@ -3296,7 +3297,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей",
       "component_fit": 4,
       "russia_fit": 2,
       "maturity": 3,
@@ -3304,10 +3305,11 @@
       "license_risk": "L1",
       "integration_effort": 2,
       "priority_rationale": "Ориентир по веб-интерфейсу, совместной работе и доступу; фронтенд и API различать.",
-      "next_action": "Проверить UX, роли и работу с источниками на тестовой базе.",
+      "next_action": "Проверить UX, роли и работу с источниками на тестовой базе. Сверить SPDX и зависимости перед заимствованием.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/gramps-project/gramps-web"
+        "https://github.com/gramps-project/gramps-web/blob/e069af1409752bcc1e5d48289bae6a1113541fd8/README.md",
+        "https://github.com/gramps-project/gramps-web/blob/0ad25db4bd1d86c452db3f9602ccdbe172438f52/LICENSE"
       ],
       "reviewer": "Редакционная оценка",
       "review_status": "proposed"
@@ -3443,7 +3445,7 @@
     "evaluation": {
       "method_version": "2026-10-28",
       "reviewed_at": "2026-10-28",
-      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей",
       "component_fit": 4,
       "russia_fit": 2,
       "maturity": 3,
@@ -3451,10 +3453,11 @@
       "license_risk": "L1",
       "integration_effort": 2,
       "priority_rationale": "Образец REST API и контроля приватности; RestrictedDb от 26 октября не обязательно опубликован в релизе.",
-      "next_action": "Проверить read-only API, приватность guest/agent, отдельно изменения RestrictedDb.",
+      "next_action": "Проверить read-only API, приватность guest/agent, отдельно изменения RestrictedDb. Сверить SPDX и зависимости перед заимствованием.",
       "recheck_trigger": "Новый релиз, изменения лицензии или API",
       "source_urls": [
-        "https://github.com/gramps-project/gramps-web-api"
+        "https://github.com/gramps-project/gramps-web-api/blob/925d962b79329a521524485017d8bbab149ae399/README.md",
+        "https://github.com/gramps-project/gramps-web-api/blob/be3f7b28e564e7dd05eaf59d64adba1a4065ac0e/LICENSE"
       ],
       "reviewer": "Редакционная оценка",
       "review_status": "proposed"
