@@ -143,6 +143,45 @@ def validate(root, baseline=None):
                 any(not isinstance(x, str) for x in card['components'])):
             issue('error', 'components', loc, 'Expected string array')
 
+    # Evaluation evidence gates: do not present triage as an independently tested result.
+    allowed_evidence = {'E0', 'E1', 'E2', 'E3', 'E4'}
+    allowed_status = {'triaged', 'proposed', 'approved'}
+    for i, card in enumerate(catalog):
+        if not isinstance(card, dict) or 'evaluation' not in card:
+            continue
+        loc = f'catalog[{i}].evaluation'
+        ev = card['evaluation']
+        if not isinstance(ev, dict):
+            issue('error', 'evaluation_type', loc, 'Expected object')
+            continue
+        level = ev.get('evidence_level')
+        status = ev.get('review_status')
+        if level not in allowed_evidence:
+            issue('error', 'evaluation_evidence', loc, 'Unknown evidence level')
+        if status not in allowed_status:
+            issue('error', 'evaluation_status', loc, 'Unknown review status')
+        if status == 'triaged' and level != 'E0':
+            issue('error', 'evaluation_triadge_evidence', loc, 'Triage without upstream check must be E0')
+        for field in ('component_fit', 'russia_fit', 'maturity'):
+            val = ev.get(field)
+            if val is not None and (type(val) is not int or not 0 <= val <= 4):
+                issue('error', 'evaluation_score', loc + '.' + field, 'Expected 0..4 or null')
+        effort = ev.get('integration_effort')
+        if effort is not None and (type(effort) is not int or not 0 <= effort <= 3):
+            issue('error', 'evaluation_score', loc + '.integration_effort', 'Expected 0..3 or null')
+        risk = ev.get('license_risk')
+        if risk is not None and risk not in ('L0', 'L1', 'L2', 'L3'):
+            issue('error', 'evaluation_license', loc, 'Unknown license risk')
+        if level in ('E3', 'E4') and not ev.get('test_report_url'):
+            issue('error', 'evaluation_test_evidence', loc, 'E3/E4 requires a reproducible test report URL')
+        if status == 'triaged' and any(ev.get(f) is not None for f in
+                ('component_fit', 'russia_fit', 'maturity', 'integration_effort', 'license_risk')):
+            issue('error', 'evaluation_triadge_scores', loc, 'Catalog-only triage must not fabricate numerical ratings')
+        if not isinstance(ev.get('source_urls'), list) or not ev['source_urls']:
+            issue('warning', 'evaluation_sources', loc, 'Assessment has no source URLs')
+        if not isinstance(ev.get('next_action'), str) or not ev['next_action'].strip():
+            issue('warning', 'evaluation_action', loc, 'Assessment has no next action')
+
     russia = Counter()
     # Structured editorial assessments must reproduce the retained source exactly.
     if any(isinstance(c, dict) and 'russia_applicability' in c for c in catalog) or any(
