@@ -35,6 +35,26 @@ class ValidationTests(unittest.TestCase):
     def codes(self):
         return {x['code'] for x in pipeline.validate(self.root)['issues']}
 
+    def test_evaluation_evidence_gates(self):
+        self.catalog[0]['evaluation'] = dict(
+            evidence_level='E0', review_status='triaged', component_fit=None,
+            russia_fit=None, maturity=None, integration_effort=None,
+            license_risk=None, source_urls=['https://github.com/Owner/Repo'],
+            next_action='Check upstream')
+        self.write()
+        self.assertNotIn('evaluation_triadge_scores', self.codes())
+        self.catalog[0]['evaluation']['component_fit'] = 4
+        self.write()
+        self.assertIn('evaluation_triadge_scores', self.codes())
+        self.catalog[0]['evaluation']['component_fit'] = None
+        self.catalog[0]['evaluation']['evidence_level'] = 'E4'
+        self.catalog[0]['evaluation']['review_status'] = 'proposed'
+        self.write()
+        self.assertIn('evaluation_test_evidence', self.codes())
+        self.catalog[0]['evaluation']['test_report_url'] = 'https://example.org/report'
+        self.write()
+        self.assertNotIn('evaluation_test_evidence', self.codes())
+
     def test_partial_cards_empty_result_and_idempotence(self):
         before = {p: p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
         first = pipeline.validate(self.root)
