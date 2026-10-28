@@ -2532,6 +2532,21 @@
         "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
         "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
         "reviewed_content_hash": "b1f632a2d17697501b5364b2cfec90f47a32db3ddced85bd2cbdafa0f1a02e7c"
+      },
+      {
+        "date": "2026-10-26",
+        "change": "Изменение RestrictedDb (#1107): фильтрация приватных данных на уровне доступа к БД, включая косвенные ссылки; оценить защиту API и агентных запросов.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/4345fefb84a4949040d2350e9b5814e841755396"
+          }
+        ],
+        "review_status": "pending",
+        "claims_vs_verified": {
+          "verified": "Изменение зафиксировано в указанном коммите",
+          "independent_testing": "Не проводилось"
+        }
       }
     ]
   },
@@ -8054,7 +8069,24 @@
       "original_line": null,
       "source": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
       "basis": "Применимость для России требует испытаний."
-    }
+    },
+    "watch_events": [
+      {
+        "date": "2026-10-27",
+        "change": "Развитие обработки прав и ограничений использования архивных источников в MCP, включая явное неизвестное состояние прав.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp/commit/a6a97d4feee36ad10956eaed970f7be77bb1b038"
+          }
+        ],
+        "review_status": "pending",
+        "claims_vs_verified": {
+          "verified": "Изменение зафиксировано в указанном коммите",
+          "independent_testing": "Не проводилось"
+        }
+      }
+    ]
   },
   "archiveheritagegroup/heratio": {
     "editorial_summary": "Платформа GLAM для архивного описания и управления коллекциями, с поддержкой Records in Contexts, IIIF и AI-подсказок по метаданным согласно документации авторов.",
@@ -8070,7 +8102,24 @@
       "original_line": null,
       "source": "https://github.com/ArchiveHeritageGroup/heratio",
       "basis": "Применимость для России требует испытаний."
-    }
+    },
+    "watch_events": [
+      {
+        "date": "2026-10-27",
+        "change": "Структурированное поле rights для архивных описаний, разграничение доступа к информации о правах; релевантно provenance и публикации.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/ArchiveHeritageGroup/heratio/commit/dd11eae74ff9234e59d576018863bd284daff9c0"
+          }
+        ],
+        "review_status": "pending",
+        "claims_vs_verified": {
+          "verified": "Изменение зафиксировано в указанном коммите",
+          "independent_testing": "Не проводилось"
+        }
+      }
+    ]
   },
   "yifenglu1999/ai-historian": {
     "editorial_summary": "AI Historian: агентный конвейер восстановления хронологии по разрозненным историческим текстам, с промежуточными TimeBlock, междокументной сверкой и привязкой к предложениям-источникам.",
@@ -8102,6 +8151,22 @@
       "original_line": null,
       "source": "https://github.com/Vaibhaav-Tiwari/lineage",
       "basis": "Применимость для России требует испытаний."
+    }
+  },
+  "mouchar/ftb-mcp": {
+    "editorial_summary": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+    "editorial_use_case": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+    "editorial_limitations": "Формат FTB не документирован и восстановлен автором по образцу; совместимость со всеми версиями Family Tree Builder не гарантирована. Не предназначен для записи в дерево.",
+    "project_type": "MCP для MyHeritage FTB и GEDCOM",
+    "license": "Apache-2.0 (README и LICENSE)",
+    "verification_basis": "README проекта; независимые испытания не проводились",
+    "verification_date": "2026-10-28",
+    "test_status": "Не тестировалось",
+    "russia_applicability": {
+      "rating": "Специализированный / зависит от задачи",
+      "original_line": null,
+      "source": "https://github.com/mouchar/ftb-mcp",
+      "basis": "Оценить на реальных российских материалах."
     }
   }
 }

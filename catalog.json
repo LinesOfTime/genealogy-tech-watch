@@ -1877,7 +1877,7 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/gramps-project/gramps-web-api",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Существенное обновление 27.10.2026",
     "history": [
       {
         "date": "2026-10-18",
@@ -1933,6 +1933,11 @@
         "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
         "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
         "reviewed_content_hash": "b1f632a2d17697501b5364b2cfec90f47a32db3ddced85bd2cbdafa0f1a02e7c"
+      },
+      {
+        "date": "2026-10-26",
+        "change": "Изменение RestrictedDb (#1107): фильтрация приватных данных на уровне доступа к БД, включая косвенные ссылки; оценить защиту API и агентных запросов.",
+        "source": "https://github.com/gramps-project/gramps-web-api/commit/4345fefb84a4949040d2350e9b5814e841755396"
       }
     ],
     "origin": "Реестр 8–10 октября 2026",
@@ -7570,18 +7575,24 @@
     "name": "NAFRec",
     "url": "https://github.com/Kansallisarkisto-AI/nafrec",
     "section": "Новые исследования / GitHub Watch",
-    "description": "Конвейер распознавания кириллицы/латиницы, экспорт PAGE/ALTO, оптимизация обработки.",
-    "use_case": "Тест на русских рукописях",
-    "limitations": "Требует независимой проверки по GitHub",
+    "description": "OCR/HTR-конвейер Национального архива Финляндии: обнаружение строк, классификация кириллицы и латиницы по каждой строке, маршрутизация в TrOCR/PP-OCRv6, экспорт ALTO/PAGE XML.",
+    "use_case": "Эксперимент на метрических книгах со смешанной кириллицей и латиницей; сравнить CER/WER, геометрию строк и производительность с текущим OCR/HTR.",
+    "limitations": "Точность на дореволюционных русских почерках не доказана; требуются отдельные модели и проверка лицензий весов; AMD/ROCm сценарии нуждаются в испытаниях.",
     "license": "Apache-2.0 (код)",
     "license_status": "По предыдущему обзору",
     "priority": "P1",
     "verification": "Предыдущий обзор; не перепроверено",
-    "verified_at": "2026-10-13",
+    "verified_at": "2026-10-28",
     "test_status": "Не тестировалось",
     "source": "https://github.com/Kansallisarkisto-AI/nafrec",
-    "status": "Дополнение из GitHub Watch",
-    "history": [],
+    "status": "Актуализировано 28.10.2026",
+    "history": [
+      {
+        "date": "2026-10-28",
+        "change": "Повторно изучена документация построчной классификации письменности и экспорт ALTO/PAGE XML; новая находка не заявляется — проект уже был в каталоге.",
+        "source": "https://github.com/Kansallisarkisto-AI/nafrec"
+      }
+    ],
     "origin": "GitHub Watch",
     "components": [
       "OCR/HTR",
@@ -8561,8 +8572,14 @@
     "verified_at": "2026-10-26",
     "test_status": "Не тестировалось",
     "source": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
-    "status": "Новая находка 26.10.2026",
-    "history": [],
+    "status": "Существенное обновление 27.10.2026",
+    "history": [
+      {
+        "date": "2026-10-27",
+        "change": "Развитие обработки прав и ограничений использования архивных источников в MCP, включая явное неизвестное состояние прав.",
+        "source": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp/commit/a6a97d4feee36ad10956eaed970f7be77bb1b038"
+      }
+    ],
     "origin": "GitHub Watch",
     "components": [
       "Archive Adapter",
@@ -8594,8 +8611,14 @@
     "verified_at": "2026-10-26",
     "test_status": "Не тестировалось",
     "source": "https://github.com/ArchiveHeritageGroup/heratio",
-    "status": "Новая находка 26.10.2026",
-    "history": [],
+    "status": "Существенное обновление 27.10.2026",
+    "history": [
+      {
+        "date": "2026-10-27",
+        "change": "Структурированное поле rights для архивных описаний, разграничение доступа к информации о правах; релевантно provenance и публикации.",
+        "source": "https://github.com/ArchiveHeritageGroup/heratio/commit/dd11eae74ff9234e59d576018863bd284daff9c0"
+      }
+    ],
     "origin": "GitHub Watch",
     "components": [
       "Archive Adapter",
@@ -8674,6 +8697,39 @@
       "original_line": null,
       "source": "https://github.com/Vaibhaav-Tiwari/lineage",
       "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    }
+  },
+  {
+    "name": "mouchar/ftb-mcp",
+    "url": "https://github.com/mouchar/ftb-mcp",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий.",
+    "use_case": "Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+    "limitations": "Формат FTB не документирован и восстановлен автором по образцу; совместимость со всеми версиями Family Tree Builder не гарантирована. Не предназначен для записи в дерево.",
+    "license": "Apache-2.0 (README и LICENSE)",
+    "license_status": "По документации проекта; зависимости и модели проверить отдельно",
+    "priority": "P2",
+    "priority_original": "P2",
+    "priority_basis": "Предварительная редакционная оценка применимости для российского генеалогического кабинета",
+    "priority_status": "Предварительная оценка",
+    "verification": "README GitHub; независимых испытаний нет",
+    "verified_at": "2026-10-28",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/mouchar/ftb-mcp",
+    "status": "Обзор 28.10.2026",
+    "history": [],
+    "origin": "GitHub Watch",
+    "components": [
+      "GEDCOM/data model",
+      "API/MCP/agent layer",
+      "Research Workspace"
+    ],
+    "project_type": "MCP для MyHeritage FTB и GEDCOM",
+    "russia_applicability": {
+      "rating": "Специализированный / зависит от задачи",
+      "original_line": null,
+      "source": "https://github.com/mouchar/ftb-mcp",
+      "basis": "Практическая применимость для российских архивных материалов и локальных FTB-деревьев требует испытаний."
     }
   }
 ]
