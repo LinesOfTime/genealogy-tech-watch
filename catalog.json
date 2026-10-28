@@ -7575,18 +7575,24 @@
     "name": "NAFRec",
     "url": "https://github.com/Kansallisarkisto-AI/nafrec",
     "section": "Новые исследования / GitHub Watch",
-    "description": "Конвейер распознавания кириллицы/латиницы, экспорт PAGE/ALTO, оптимизация обработки.",
-    "use_case": "Тест на русских рукописях",
-    "limitations": "Требует независимой проверки по GitHub",
+    "description": "OCR/HTR-конвейер Национального архива Финляндии: обнаружение строк, классификация кириллицы и латиницы по каждой строке, маршрутизация в TrOCR/PP-OCRv6, экспорт ALTO/PAGE XML.",
+    "use_case": "Эксперимент на метрических книгах со смешанной кириллицей и латиницей; сравнить CER/WER, геометрию строк и производительность с текущим OCR/HTR.",
+    "limitations": "Точность на дореволюционных русских почерках не доказана; требуются отдельные модели и проверка лицензий весов; AMD/ROCm сценарии нуждаются в испытаниях.",
     "license": "Apache-2.0 (код)",
     "license_status": "По предыдущему обзору",
     "priority": "P1",
     "verification": "Предыдущий обзор; не перепроверено",
-    "verified_at": "2026-10-13",
+    "verified_at": "2026-10-28",
     "test_status": "Не тестировалось",
     "source": "https://github.com/Kansallisarkisto-AI/nafrec",
-    "status": "Дополнение из GitHub Watch",
-    "history": [],
+    "status": "Актуализировано 28.10.2026",
+    "history": [
+      {
+        "date": "2026-10-28",
+        "change": "Повторно изучена документация построчной классификации письменности и экспорт ALTO/PAGE XML; новая находка не заявляется — проект уже был в каталоге.",
+        "source": "https://github.com/Kansallisarkisto-AI/nafrec"
+      }
+    ],
     "origin": "GitHub Watch",
     "components": [
       "OCR/HTR",
