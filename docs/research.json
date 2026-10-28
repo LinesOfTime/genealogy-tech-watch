@@ -1751,7 +1751,26 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Спецификация обмена данными с отношениями и источниками; не путать с GEDCOM 7.",
+      "next_action": "Сопоставить модель утверждений и источников с GEDCOM 7 и схемой кабинета.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/familysearch/gedcomx"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "fisharebest/webtrees": {
     "project_type": "Веб-приложение",
@@ -1817,7 +1836,26 @@
           "Часть 51: незакрытые поля: первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 3,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Зрелый веб-инструмент GEDCOM и совместной работы, важен для сравнения UX и прав доступа.",
+      "next_action": "Проверить GEDCOM и роли пользователей на тестовом дереве.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/fisharebest/webtrees"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "freeukgen/myopicvicar": {
     "project_type": "Генеалогическая поисковая платформа",
@@ -1994,7 +2032,26 @@
           "Часть 51: незакрытые поля: первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 2,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Самостоятельная система деревьев; сравнительный ориентир, не ключевой архивный инструмент.",
+      "next_action": "Проверить GEDCOM, связи и условия GPL-2.0-only.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/geneweb/geneweb"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "glamberson/gedcom-evidence": {
     "project_type": "Спецификация расширения GEDCOM 7",
@@ -2306,7 +2363,26 @@
           "Часть 51: незакрытые поля: первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 4,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Базовый ориентир по генеалогическим сущностям, событиям, источникам и цитированиям.",
+      "next_action": "Сопоставить Gramps-модель с кабинетом и российской исторической географией.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/gramps-project/gramps"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "gramps-project/gramps-web": {
     "project_type": "Веб-интерфейс",
@@ -2420,7 +2496,26 @@
         "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
         "reviewed_content_hash": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6"
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Ориентир по веб-интерфейсу, совместной работе и доступу; фронтенд и API различать.",
+      "next_action": "Проверить UX, роли и работу с источниками на тестовой базе.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/gramps-project/gramps-web"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "gramps-project/gramps-web-api": {
     "project_type": "REST API",
@@ -2548,7 +2643,26 @@
           "independent_testing": "Не проводилось"
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Образец REST API и контроля приватности; RestrictedDb от 26 октября не обязательно опубликован в релизе.",
+      "next_action": "Проверить read-only API, приватность guest/agent, отдельно изменения RestrictedDb.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/gramps-project/gramps-web-api"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "gramps-project/gramps-web-docs": {
     "project_type": "Не установлен",
