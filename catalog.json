@@ -28,6 +28,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Сравнение гипотез о структуре родства на основе ДНК-данных; не подмена документального доказательства.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/23andme/bonsaitree"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -59,6 +79,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучение формата выдачи распознанного текста и типичных ошибок на исторических документах.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/abbyy/jfk-ocr"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -90,6 +130,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Быстро представить небольшую родословную и экспортировать графику в PNG или SVG.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/abdash/roots-familytreevisualizer"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -121,6 +181,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Сопоставление вероятных связей на геномных данных в специализированном исследовании.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/aehrc/tribes"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -152,6 +232,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучение подходов к извлечению текста из исторических изображений.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ai-collaboratory/scribe"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -433,6 +533,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Обработка больших коллекций сканов на GPU-инфраструктуре с последующей проверкой текста.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ai-riksarkivet/htrflow-batch"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -485,7 +605,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: познакомиться с HTRflow через демоприложение на нескольких разрешённых к обработке изображениях или PDF, выбрать подходящи",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ai-riksarkivet/htrflow_app"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "ajaskey/genealogy",
@@ -516,6 +656,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Потенциальный кандидат для изучения форматов и организации генеалогических данных.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ajaskey/genealogy"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -547,6 +707,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Открыть изображения, коллекции и сопутствующие цифровые объекты архива в браузере.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/archival-iiif/viewer"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -599,7 +779,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: организовать совместную ручную транскрипцию небольшой подборки рукописных страниц, показывая скан рядом с редактируемым те",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/benwbrum/fromthepage"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "bhaskargautam/record-linkage",
@@ -630,6 +830,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Рассмотреть подход к поиску кандидатов на совпадение среди персон из разных источников.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/bhaskargautam/record-linkage"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -661,6 +881,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Анализ общих сегментов в ДНК-данных для исследования вероятного родства.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/browning-lab/hap-ibd"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -692,6 +932,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Сравнить методы работы с неоднозначными именами и повторяющимися персонами.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/bruceyyu/ml-chinese-record-linkage"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -723,6 +983,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Искать персон, связи и события через диалоговый интерфейс; готовить предложения исправлений.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/cabout-me/gramps-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -763,6 +1043,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Проверить журнал исследований, импорт GEDCOM и организацию семейных событий.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/cacack/my-family"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -815,7 +1115,27 @@
           "editorial_limitations": "Разработчик описывает бета-статус и не рекомендует промышленное применение."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: оценить проверку и преобразование копии своей GEDCOM-базы через Python или CLI. Начать с небольшого файла, содержащего кир",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/cartwrightdj/gedcomtools"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "cboulanger/tei-annotator",
@@ -867,7 +1187,27 @@
           "editorial_limitations": "Не выполняет OCR самостоятельно; автоматические предложения нужно проверять."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для технического исследователя: оценить TEI-разметку библиографических ссылок в подготовленном тексте. Вход — небольшой спи",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/cboulanger/tei-annotator"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "clariah/burgerlinker",
@@ -898,6 +1238,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Искать соответствия между оцифрованными реестрами при наличии формализованных полей.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/clariah/burgerlinker"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -929,6 +1289,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Сохранить доступные сканы для личного исследовательского архива при соблюдении правил сайта.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/claudiomartino/iiif-downloader"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -940,7 +1320,7 @@
     "limitations": "Библиотека работает со структурированными данными и использует человеческую разметку для обучения правил сравнения. Для интеграции нужен программный сценарий; библиотеку нельзя смешивать с отдельным веб-сервисом Dedupe.io. Сходство записей не доказывает тождество исторических лиц; качество на русских архивных выписках здесь не проверено.",
     "license": "MIT",
     "license_status": "Подтверждена по GitHub",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "https://github.com/dedupeio/dedupe",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировался",
@@ -949,8 +1329,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -981,7 +1361,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: подготовить таблицу архивных выписок с именами и адресами, разметить примеры совпадающих и разных записей и получить канди",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/dedupeio/dedupe"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "digirati-co-uk/madoc-platform",
@@ -1012,6 +1412,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Организовать добровольную расшифровку и проверку изображений в коллекции.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/digirati-co-uk/madoc-platform"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1043,6 +1463,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Использовать шаблоны вопросов и контроль доказательств при исследовании семьи.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/digitalarchivst/open-genealogy"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1074,6 +1514,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Сопоставить методики объединения похожих карточек персон.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/districtdatalabs/entity-resolution"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1105,6 +1565,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Искать людей в переписях и регистрах через ассистента с фиксацией источника.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/dmarkey/irish-census-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1136,6 +1616,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Запрашивать события и семейные связи из генеалогической базы через ИИ.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/dsblank/gramps-ez-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1188,7 +1688,27 @@
           "editorial_limitations": "Это проект предложений, не готовый менеджер источников; лицензия не установлена."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для разработчика формата или исследовательского кабинета: изучить предлагаемые расширения GEDCOM для цитирования и сопостав",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/dthaler/gedcom-citations"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "ecoto/iiif_downloader",
@@ -1240,7 +1760,27 @@
           "editorial_limitations": "Зависимости могут быть устаревшими; право скачивания и распространения зависит от архива."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: оценить загрузку изображений из публичного IIIF JSON с сохранением части метаданных в отдельный CSV. Вход — URL Collection",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ecoto/iiif_downloader"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "erichare/kinresolve",
@@ -1271,6 +1811,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Сравнить два дерева или массива персон, сформировать кандидатов на совпадение и передать спорные пары исследователю.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/erichare/kinresolve"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1302,6 +1862,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучить заявленные функции для поиска или анализа генеалогических данных после проверки документации.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/evelynkimm/ari"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1563,6 +2143,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучить организацию массовой расшифровки церковных и переписных документов с проверкой волонтёрами.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/freeukgen/myopicvicar"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1625,7 +2225,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: создать небольшой пробный архив GLX, представить исследовательские утверждения и их источники в текстовых файлах и запусти",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/genealogix/glx"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "geneweb/geneweb",
@@ -1731,6 +2351,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Проверить, как хранить ссылки на доказательства при обмене генеалогическими сведениями.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/glamberson/gedcom-evidence"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1762,6 +2402,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Разобрать случаи, когда один человек встречается в нескольких архивных записях.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/glamberson/gedcom-occurrences"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1793,6 +2453,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучить подход к визуальному представлению родства и применимость к собственному интерфейсу.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/google/family-tree"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1824,6 +2504,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Найти готовые дополнения, отчёты и способы установки для используемой версии Gramps.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/gramps-project/addons"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -1876,7 +2576,27 @@
           "editorial_limitations": "Репозиторий содержит много самостоятельных расширений, а не одно приложение."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для опытного пользователя или разработчика: искать конкретное расширение Gramps под недостающую операцию, затем изучить его",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/gramps-project/addons-source"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "gramps-project/gramps",
@@ -2246,6 +2966,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Использовать как справочник по установке, API и работе с системой.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/gramps-project/gramps-web-docs"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2277,6 +3017,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Оценить отдельные утилиты по README и выбрать подходящие для обработки исследовательских данных.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/gsmitheidw/genealogytools"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2308,6 +3068,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Исследовать совпадения генотипов в рамках генетической генеалогии.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/gusevlab/germline"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2339,6 +3119,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучить перенос пометок о лицах, датах и местах в структурированную текстовую разметку.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/hdlabconicet/recogito-tei"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2370,6 +3170,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Проверить заявленный сценарий распознавания рукописей на тестовых страницах.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/htrmopo/htrmopo"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2456,6 +3276,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Подобрать просмотрщик, загрузчик или редактор аннотаций под конкретный архив.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/iiif/awesome-iiif"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2487,6 +3327,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Найти справочные материалы и структуру документации стандарта.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/iiif/website"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2507,8 +3367,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -2539,7 +3399,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: оценить Hlink для сопоставления подготовленных таблиц переписных записей, задав конфигурацию обработки и запустив небольшу",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ipums/hlink"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "j535d165/data-matching-software",
@@ -2570,6 +3450,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Сопоставить варианты дедупликации и разрешения идентичностей для архивного индекса.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/j535d165/data-matching-software"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2590,8 +3490,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P2.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -2622,7 +3522,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P2.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: собрать воспроизводимый Python-конвейер для сравнения двух таблиц архивных выписок: подготовить данные, сформировать пары-",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/j535d165/recordlinkage"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "j535d165/recordlinkage-annotator",
@@ -2674,7 +3594,27 @@
           "editorial_limitations": "Интерфейс оценки не должен автоматически объединять людей в базе."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: подготовить небольшой JSON с парами архивных выписок и схемой сравнения, затем вручную отметить пары как Match или Distinc",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/j535d165/recordlinkage-annotator"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "j535d165/recordlinkage-review",
@@ -2726,7 +3666,27 @@
           "editorial_limitations": "Разработчик предупреждает не использовать проект в работе; не рекомендовать для внедрения."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: изучить экспериментальный интерфейс сравнения записей как пример организации ручной проверки. README показывает настройку ",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/j535d165/recordlinkage-review"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "jameskane/decodingus-navigator",
@@ -2757,6 +3717,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучить заявленные функции навигации по генетическим данным после проверки README.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/jameskane/decodingus-navigator"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2788,6 +3768,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Проверить поддерживаемую программу и формат данных перед оценкой применимости.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/jasiek/genealogy-plugin"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2819,6 +3819,26 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Оценить удобство навигации, отображение источников и поддержку импорта.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/jerged24/family-tree"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -2871,7 +3891,27 @@
           "editorial_limitations": "Метрика зависит от нормализации текста и не заменяет экспертную проверку имён и дат."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: сравнить OCR/HTR-вывод двух моделей на одних и тех же страницах. Вход — проверенная человеком транскрипция и машинный текс",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/jitsi/jiwer"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "jregimbal/iiif-downloader",
@@ -2929,7 +3969,27 @@
           "Часть 51: незакрытые поля: тип проекта"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/jregimbal/iiif-downloader"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "kanik0/rustenati",
@@ -2990,7 +4050,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить конкретный исследовательский сценарий и интеграцию",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/kanik0/rustenati"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "kasssandr/archilles",
@@ -3050,7 +4130,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/kasssandr/archilles"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "keerthanamurugaraj/topic-rag-for-historical-newspapers",
@@ -3108,7 +4208,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/keerthanamurugaraj/topic-rag-for-historical-newspapers"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "kimon1230/gedcom_tools",
@@ -3151,7 +4271,27 @@
           "Часть 51: незакрытые поля: первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/kimon1230/gedcom_tools"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "kimon1230/gedgraph",
@@ -3209,7 +4349,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/kimon1230/gedgraph"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "kkkamur07/nomikos",
@@ -3270,7 +4430,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/kkkamur07/nomikos"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "knuckles-team/gramps-mcp",
@@ -3330,7 +4510,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/knuckles-team/gramps-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "komura-shoan/iiif-downloader",
@@ -3388,7 +4588,27 @@
           "Часть 51: незакрытые поля: тип проекта"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/komura-shoan/iiif-downloader"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "libraryofcongress/gazetteer",
@@ -3455,7 +4675,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для разработчика: изучить историческую реализацию газеттира как пример устройства справочника мест и загрузки данных. Рассм",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/libraryofcongress/gazetteer"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "lieuwe89/genealogy-viz",
@@ -3515,7 +4755,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/lieuwe89/genealogy-viz"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "lovasoa/dezoomify-rs",
@@ -3582,7 +4842,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: сохранить для локального чтения одно разрешённое к скачиванию архивное изображение, которое в браузере показано плитками. ",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/lovasoa/dezoomify-rs"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "magne/vitni",
@@ -3642,7 +4922,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить конкретный исследовательский сценарий и интеграцию",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/magne/vitni"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "meh313/htr-model-tester",
@@ -3700,7 +5000,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/meh313/htr-model-tester"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "microsoft/graphrag",
@@ -3720,8 +5040,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P2.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -3773,7 +5093,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P2.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для технического исследователя: оценить поиск по небольшой подготовленной коллекции транскрипций через GraphRAG. Вход — тек",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/microsoft/graphrag"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "mittagessen/kraken",
@@ -3842,6 +5182,26 @@
         "Возможности"
       ],
       "additional_verification_required": true
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: подготовить небольшую подборку исторических страниц с проверенной транскрипцией и оценить распознавание текста через CLI и",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/mittagessen/kraken"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": "README по указанному адресу не найден (404); проверить актуальный репозиторий."
     }
   },
   {
@@ -3853,7 +5213,7 @@
     "limitations": "Это Python-инструмент вероятностного связывания, требующий настройки модели и подготовки данных. Оценка совпадения зависит от выбранных признаков и правил; она не подтверждает родство или тождество сама по себе. Документация допускает обучение без размеченных данных, но это не отменяет редакционную рекомендацию проверить ошибки на своих материалах. Качество на русских источниках не установлено.",
     "license": "MIT",
     "license_status": "Подтверждена по тексту LICENSE",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "https://github.com/moj-analytical-services/splink/blob/master/LICENSE; https://github.com/moj-analytical-services/splink",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировался",
@@ -3862,8 +5222,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -3894,7 +5254,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: сравнить две подготовленные таблицы архивных выписок без общего идентификатора человека, настроить признаки сравнения и пр",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/moj-analytical-services/splink"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "n1kozor/tree-monk",
@@ -3937,7 +5317,27 @@
           "Часть 51: незакрытые поля: первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить конкретный исследовательский сценарий и интеграцию",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/n1kozor/tree-monk"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "narasimhan-lab/repare",
@@ -3998,7 +5398,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/narasimhan-lab/repare"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "ngohung0704/rag-militai",
@@ -4058,7 +5478,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ngohung0704/rag-militai"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "nigelhorne/gedcom",
@@ -4101,7 +5541,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/nigelhorne/gedcom"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "nikazzio/scriptoria",
@@ -4170,6 +5630,26 @@
         "возможностей"
       ],
       "additional_verification_required": true
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: собрать пробную локальную коллекцию IIIF-рукописей в Scriptoria, открыть материал из Library в Studio и оценить просмотр и",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/nikazzio/scriptoria"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -4230,7 +5710,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/nikkoxgonzales/mcp-grampsweb"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "noahkiss/genealogy-mcp",
@@ -4290,7 +5790,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/noahkiss/genealogy-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "notakeith/handscribe",
@@ -4350,7 +5870,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/notakeith/handscribe"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "oh-kay-blanket/family-plot",
@@ -4410,7 +5950,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/oh-kay-blanket/family-plot"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "omeka/omeka",
@@ -4468,7 +6028,27 @@
           "Часть 51: незакрытые поля: тип проекта, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/omeka/omeka"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "omeka/omeka-s",
@@ -4535,6 +6115,26 @@
       },
       "uncertainty_markers": [],
       "additional_verification_required": true
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: подготовить тематическую цифровую коллекцию семейных или краеведческих материалов, описать объекты метаданными и собрать и",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/omeka/omeka-s"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -4555,8 +6155,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Archive Adapter; требует теста. Предложенный приоритет P2.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -4587,7 +6187,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Archive Adapter; требует теста. Предложенный приоритет P2.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: встроить в исследовательскую веб-страницу просмотр крупного скана архивного документа с увеличением и перемещением, подклю",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/openseadragon/openseadragon"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "projectmirador/mirador",
@@ -4598,7 +6218,7 @@
     "limitations": "Просмотрщик рассчитан на совместимые IIIF-ресурсы; доступность конкретных манифестов и изображений следует проверить отдельно. Официальный сайт относит создание аннотаций к плагину: просмотр аннотаций не означает готового хранилища собственных заметок. Сравнение изображений не является автоматическим установлением тождества людей или документов. Работа с российскими архивами здесь не испытывалась.",
     "license": "Apache-2.0",
     "license_status": "Проверена по первоисточнику",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "https://github.com/ProjectMirador/mirador/blob/main/package.json",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировался",
@@ -4607,8 +6227,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Archive Adapter; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -4639,7 +6259,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Archive Adapter; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: открыть в одном рабочем пространстве IIIF-материалы из нескольких коллекций и сопоставить страницы или разные экземпляры д",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/projectmirador/mirador"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "qurator-spk/dinglehopper",
@@ -4650,7 +6290,7 @@
     "limitations": "Нужен проверенный эталон. При сравнении двух машинных результатов без эталона README рекомендует отключать метрики: различие не показывает, какой вариант верен. Уровень извлечения TextEquiv из PAGE влияет на сравниваемый текст; отчёт по тексту не заменяет проверку сегментации и порядка чтения. Средние ошибки не оценивают сохранность критичных имён и дат отдельно.",
     "license": "Apache-2.0",
     "license_status": "Подтверждена по LICENSE/README",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "Первичные GitHub LICENSE и README; без запуска ПО",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
@@ -4659,8 +6299,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для OCR/HTR; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -4706,7 +6346,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для OCR/HTR; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: получить разбор ошибок OCR/HTR по контрольным архивным страницам. Подготовить эталон и результат распознавания в ALTO XML,",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/qurator-spk/dinglehopper"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "recogito/text-annotator-js",
@@ -4758,7 +6418,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для разработчика: встроить выделение фрагментов транскрипции в исследовательскую веб-страницу и связать выделения с коммент",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/recogito/text-annotator-js"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "rollybre/cthulhu",
@@ -4816,7 +6496,27 @@
           "Часть 51: незакрытые поля: тип проекта, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/rollybre/cthulhu"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "rue-a/provo",
@@ -4874,7 +6574,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сопоставление персон и ошибки ложных совпадений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/rue-a/provo"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "ruempel/nacarta",
@@ -4932,7 +6652,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ruempel/nacarta"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "ryanfb/iiif-dl",
@@ -4984,7 +6724,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: получить локальную последовательность сканов из совместимого IIIF-манифеста либо собрать одно изображение по IIIF-идентифи",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ryanfb/iiif-dl"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "sandxlab/sandx-er",
@@ -5044,7 +6804,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сопоставление персон и ошибки ложных совпадений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/sandxlab/sandx-er"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "satvikgosai/genea-web",
@@ -5102,7 +6882,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/satvikgosai/genea-web"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "scheldt-llc/genealogy_ai",
@@ -5160,7 +6960,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить конкретный исследовательский сценарий и интеграцию",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/scheldt-llc/genealogy_ai"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "scormave/gramps-web-mcp",
@@ -5218,7 +7038,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/scormave/gramps-web-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "scripta/escriptorium",
@@ -5270,7 +7110,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: организовать в eScriptorium пробную кампанию транскрипции рукописных страниц, импортировать изображения и подходящую модел",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/scripta/escriptorium"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": "Указанный GitHub README не найден (404); проверить канонический upstream GitLab и зеркало."
+    }
   },
   {
     "name": "shelfgot/maatikshemua",
@@ -5313,7 +7173,27 @@
           "Часть 51: незакрытые поля: лицензия/основание"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/shelfgot/maatikshemua"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "stefromlc/iiif-downloader",
@@ -5371,7 +7251,27 @@
           "Часть 51: незакрытые поля: тип проекта"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/stefromlc/iiif-downloader"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "thisisankit27/f-tree",
@@ -5431,7 +7331,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/thisisankit27/f-tree"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "tropy/tropy",
@@ -5442,7 +7362,7 @@
     "limitations": "Официальное описание относится к организации исследовательских фотографий, метаданным и аннотациям; из него нельзя выводить наличие автоматического распознавания или подтверждения родственных связей. Пригодность для конкретной коллекции и переносимость нужных метаданных следует проверить отдельно; независимых испытаний здесь нет.",
     "license": "AGPL-3.0-only",
     "license_status": "Подтверждена по LICENSE/README",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "Первичные GitHub LICENSE и README; без запуска ПО",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
@@ -5451,8 +7371,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -5498,6 +7418,26 @@
       },
       "uncertainty_markers": [],
       "additional_verification_required": true
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: собрать фотографии архивных документов в исследовательские элементы, добавить описательные метаданные, теги и списки, зате",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/tropy/tropy"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
     }
   },
   {
@@ -5565,7 +7505,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для разработчика исследовательского конвейера: описать цепочку «скан → распознавание → исправленная выписка → экспорт» в мо",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/trungdong/prov"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "ub-mannheim/escriptorium",
@@ -5705,7 +7665,27 @@
           "Часть 51: незакрытые поля: тип проекта, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ub-mannheim/escriptorium_dokumentation"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "umb-oconnorgroup/ibdtools",
@@ -5765,7 +7745,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить применимость к генетическим данным; не подменять документальные доказательства",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/umb-oconnorgroup/ibdtools"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "unstructured-io/unstructured-mlk-archive-public",
@@ -5823,7 +7823,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/unstructured-io/unstructured-mlk-archive-public"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "w3c/prov",
@@ -5881,7 +7901,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сопоставление персон и ошибки ложных совпадений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/w3c/prov"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": "README по указанному адресу не найден (404); стандарт проверять по W3C-публикациям."
+    }
   },
   {
     "name": "williamscole/haptic",
@@ -5939,7 +7979,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить применимость к генетическим данным; не подменять документальные доказательства",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/williamscole/haptic"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "williamscole/ponderosa",
@@ -5997,7 +8057,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить применимость к генетическим данным; не подменять документальные доказательства",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/williamscole/ponderosa"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "worldhistoricalgazetteer/documentation",
@@ -6055,7 +8135,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить конкретный исследовательский сценарий и интеграцию",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/worldhistoricalgazetteer/documentation"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "worldhistoricalgazetteer/website",
@@ -6066,7 +8166,7 @@
     "limitations": "Покрытие нужного региона и периода необходимо проверить; совпадение названия не доказывает тождество поселений. Документация требует человеческого решения по кандидатам и позволяет отложить его. Возможности платформы описаны по официальному руководству, а не по недоступному при проверке каталожному репозиторию. Условия кода, контента и внешних наборов остаются раздельными; российские данные здесь не испытывались.",
     "license": "BSD-3-Clause (код); контент и наборы данных — отдельные условия",
     "license_status": "Определена по GitHub/README/LICENSE",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "README/GitHub LICENSE/NOTICE (где имеется)",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
@@ -6075,8 +8175,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Place Resolver/АТД; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -6111,7 +8211,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Place Resolver/АТД; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: искать варианты исторического топонима в World Historical Gazetteer и оценить кандидатов на соответствие месту из архивной",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/worldhistoricalgazetteer/website"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "yfullteam/ytree",
@@ -6154,7 +8274,27 @@
           "Часть 51: незакрытые поля: первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/yfullteam/ytree"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "yingzhou001/ibdkin",
@@ -6214,7 +8354,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить применимость к генетическим данным; не подменять документальные доказательства",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/yingzhou001/ibdkin"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "zal-analytics/zer",
@@ -6272,7 +8432,27 @@
           "Часть 51: незакрытые поля: тип проекта, лицензия/основание, OSI-статус, первоисточник, статус испытаний"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сопоставление персон и ошибки ложных совпадений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/zal-analytics/zer"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "allmaps/allmaps",
@@ -6283,7 +8463,7 @@
     "limitations": "Описанный процесс требует доступного IIIF-источника; произвольная веб-страница с картинкой не гарантирует совместимость. Геопривязку и её точность необходимо проверить на выбранной карте. Наложение карты не доказывает историческое название, границы или принадлежность населённого пункта без дополнительных источников. Доступность конкретного сервера и результат на российских картах независимо не проверялись.",
     "license": "Приложения преимущественно GPL-3.0; CLI и библиотеки MIT; данные привязки CC0; подложка ODbL",
     "license_status": "Смешанная лицензия по компонентам",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "https://github.com/allmaps/allmaps",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
@@ -6292,8 +8472,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Place Resolver/АТД; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -6324,7 +8504,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Place Resolver/АТД; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: взять историческую карту с доступным IIIF Image или Manifest URL, выполнить геопривязку в Allmaps Editor и просмотреть рез",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/allmaps/allmaps"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "kartta-labs/mapwarper",
@@ -6376,7 +8576,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: геопривязать скан исторической карты, отметив соответствующие контрольные точки на старом изображении и опорной карте. Про",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/kartta-labs/mapwarper"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "Segolene-Albouy/iiif-download",
@@ -6419,7 +8639,27 @@
           "Часть 51: незакрытые поля: OSI-статус, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Сопоставить с текущим конвейером сканов, транскрипций и архивных изображений",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/Segolene-Albouy/iiif-download"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "nypl-spacetime/nypl-warper",
@@ -6471,7 +8711,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для технического исследователя: изучить реализацию Map Warper NYPL для проекта совместной геопривязки исторических карт. На",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/nypl-spacetime/nypl-warper"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "GeospatialCentroid/historic_map_explorer",
@@ -6523,7 +8783,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: подготовить небольшую тематическую коллекцию исторических карт в CSV и настроить её веб-просмотр через app.csv. Для совмес",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/GeospatialCentroid/historic_map_explorer"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "OpenRefine/OpenRefine",
@@ -6534,7 +8814,7 @@
     "limitations": "Кластеризация ищет похожие значения и требует подтверждения предлагаемых правок пользователем; это не доказательство тождества людей. Для согласования с внешней базой нужен подходящий reconciliation-сервис. Качество на русских архивных данных и доступность внешних сервисов из РФ отдельно не проверены.",
     "license": "BSD-3-Clause",
     "license_status": "Подтверждена по репозиторию",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "GitHub README / лицензия",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
@@ -6543,8 +8823,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -6586,7 +8866,27 @@
           "audit_notes": "Очистка, кластеризация и согласование таблиц | Часть 51: незакрытые поля: первоисточник"
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный генеалогический сценарий: подготовить таблицу архивных выписок, убрать лишние пробелы и привести написания к единому виду; просмотре",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/OpenRefine/OpenRefine"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "LinkedPasts/linked-places-format",
@@ -6597,7 +8897,7 @@
     "limitations": "Это формат данных, а не готовый поисковый сервис или программа геокодирования. Нужно сверить версию, обязательные поля и поддержку временных атрибутов выбранным инструментом. Кодирование ссылки или степени уверенности не подтверждает тождество мест; исторические утверждения требуют источников. Экспорт своей коллекции и совместимость здесь не испытывались.",
     "license": "Не установлена",
     "license_status": "Не установлена",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "GitHub README / лицензия",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
@@ -6606,8 +8906,8 @@
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Практическая значимость для Place Resolver/АТД; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Специализированный / зависит от задачи",
       "original_line": "Для России: Специализированный / зависит от задачи",
@@ -6638,7 +8938,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Place Resolver/АТД; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: представить небольшую исследовательскую подборку исторических мест в Linked Places Format, сохранив варианты названий, вре",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/LinkedPasts/linked-places-format"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "OpenRefine/FilesExtension",
@@ -6681,7 +9001,27 @@
           "Часть 51: незакрытые поля: первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить исторические топонимы, границы и временные изменения",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/OpenRefine/FilesExtension"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "familysearch/gedcom-registries",
@@ -6724,7 +9064,27 @@
           "Часть 51: незакрытые поля: лицензия/основание"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/FamilySearch/GEDCOM-registries"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "AleBeda/genechart",
@@ -6767,7 +9127,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/AleBeda/genechart"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "ADZirid/STEMMA",
@@ -6810,7 +9190,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ADZirid/STEMMA"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "genea-app/genea-app",
@@ -6853,7 +9253,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/genea-app/genea-app"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "ryanturcotte/open-family-tree",
@@ -6896,7 +9316,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ryanturcotte/open-family-tree"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "Mip555/root-free",
@@ -6939,7 +9379,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/Mip555/root-free"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "spacecat56/Ged2Reg",
@@ -6982,7 +9442,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/spacecat56/Ged2Reg"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "KeithPetro/Yggdrasil",
@@ -7025,7 +9505,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/KeithPetro/Yggdrasil"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "nigelhorne/ged2site",
@@ -7077,7 +9577,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: сделать пробный семейный сайт из обезличенной копии GEDCOM. Вход — экспорт дерева; выход по README — статический HTML и от",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/nigelhorne/ged2site"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "glamberson/gedcom-tags",
@@ -7120,7 +9640,27 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить импорт, экспорт, модель связей и источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/glamberson/gedcom-tags"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "recogito/pdf-annotator-js",
@@ -7176,7 +9716,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий для сопровождения существующей интеграции: изучить браузерное аннотирование PDF через PDF.js и Recogito, включая загрузку a",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/recogito/pdf-annotator-js"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "recogito/recogito-js",
@@ -7232,7 +9792,27 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: рассматривать Recogito.js при сопровождении уже существующего проекта текстовой разметки или изучении его прежней интеграц",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/recogito/recogito-js"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
+    }
   },
   {
     "name": "Genealogy Research Workbench",
@@ -7264,6 +9844,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/glasgowm148/genealogy-research-workbench"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7296,6 +9896,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/nakamura196/iiif-kasane"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7335,6 +9955,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/briancase1776/scan2gedcom"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7366,6 +10006,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/fmadore/zmo-ai-pipelines"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7398,6 +10058,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/rfsbraz/genealogy-agent-skills"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7429,6 +10109,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/zankul/gramps-mcp-dotnet"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7551,8 +10251,8 @@
       "API/MCP/agent layer"
     ],
     "priority_original": "P2",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Исходная шкала P",
+    "priority_basis": "Практическая значимость для Archive Adapter; требует теста. Предложенный приоритет P2.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Не оценено",
       "original_line": null,
@@ -7570,7 +10270,27 @@
         "discovery_id": "github:ai-riksarkivet/rask:watch-2026-10-23",
         "reason": "Создана расширенная карточка события; оценка применимости не добавлялась"
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Archive Adapter; требует теста. Предложенный приоритет P2.",
+      "next_action": "Проверить сценарий: Изучить принцип",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/AI-Riksarkivet/rask"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "oxidged / OxidGene",
@@ -7601,6 +10321,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/trois-six/oxidged"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7632,6 +10372,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/julioalonzom/exscriptor"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7664,6 +10424,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/dsblank/gramps-connect"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7694,6 +10474,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/Serg-Norseman/GEDKeeper"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7726,6 +10526,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/absaltfox/bartelby"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7758,6 +10578,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/allan-valin/ocr-gene-docs"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7790,6 +10630,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/usulkies/historic-records-ai-reader"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7821,6 +10681,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/thobgg/gedaudit"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7852,6 +10732,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/adamsilverstein/open-ancestry"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7941,6 +10841,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/lehigh-university-libraries/scribe"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -7972,6 +10892,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ianderso/gov-gazetteer-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8039,8 +10979,8 @@
       "Person Resolver"
     ],
     "priority_original": "P1",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Исходная шкала P",
+    "priority_basis": "Практическая значимость для API/MCP/agent layer; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Не оценено",
       "original_line": null,
@@ -8058,7 +10998,27 @@
         "discovery_id": "github:igormel81/genealogy-mcp:watch-2026-10-23",
         "reason": "Создана расширенная карточка события; оценка применимости не добавлялась"
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для API/MCP/agent layer; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Изучить",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/igormel81/genealogy-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    }
   },
   {
     "name": "Archive MCP adapters (ianderso)",
@@ -8089,6 +11049,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Уточнить сценарий пилота и качество подтверждающих источников",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ianderso"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8113,13 +11093,33 @@
       "API/MCP/agent layer"
     ],
     "priority_original": "P1",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Исходная шкала P",
+    "priority_basis": "Практическая значимость для provenance/evidence; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "russia_applicability": {
       "rating": "Не оценено",
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для provenance/evidence; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Изучить архитектуру",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ianderso/gramps-evidence-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
     }
   },
   {
@@ -8227,6 +11227,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет оценки в путеводителе"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий по документации: подготовить список изменений дерева, просмотреть dry-run, применить к копии и отдельно проверить связи и о",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/GeiserX/gramps-web-toolkit"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8341,6 +11361,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет оценки в путеводителе"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий по README: выбрать процедуру для метрических книг, цепочек ревизских сказок или проверки охвата архивных изображений и сост",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/Kinprove/genealogy-research-recipes"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8447,6 +11487,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет оценки в путеводителе"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: сравнить просмотр родственников, редактирование и навигацию на телефоне с обычным Gramps Web на копии одного дерева.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/b21-agency/gramps-ui"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8571,6 +11631,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет оценки в путеводителе"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: передать родственникам завершённый рассказ с изображениями и картой, не передавая всю генеалогическую базу; проверить откр",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/dsblank/gramps-connect-stories"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8716,6 +11796,26 @@
       "original_line": null,
       "source": null,
       "basis": "Нет оценки в путеводителе"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Редакционный сценарий: открыть вымышленный GEDCOM с юлианскими датами и сравнить записанный день и новый стиль, включая границы месяцев и смену р",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/device25/gedview"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8727,7 +11827,7 @@
     "limitations": "Не специализирован для генеалогии. Преимущество до 26,7 пункта — авторское benchmark-заявление для других задач. Модели, бюджет, sandbox и качество рассуждений независимо не испытывались.",
     "license": "MIT на ревизии 7fbf027d",
     "license_status": "См. источники события; независимая проверка не заявлена",
-    "priority": "Не оценён",
+    "priority": "P1",
     "priority_original": "Не оценён",
     "verification": "Редакционная проверка источников события; см. историю",
     "verified_at": "2026-10-04",
@@ -8822,7 +11922,29 @@
       "original_line": null,
       "source": null,
       "basis": "Нет оценки в путеводителе"
-    }
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Кандидат для адаптации к генеалогии: вести несколько гипотез о тождестве человека, связывать каждое наблюдение с источником и сохранять опроверже",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/stanford-oval/sheldon"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
+    },
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
+    "priority_basis": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P1."
   },
   {
     "name": "denissergeevitch/ex-ussr-kinship-research",
@@ -8835,8 +11957,8 @@
     "license_status": "Требует перепроверки по лицензии репозитория",
     "priority": "P1",
     "priority_original": "P1",
-    "priority_basis": "Редакционная оценка релевантности для российского генеалогического исследовательского кабинета; не результат тестов.",
-    "priority_status": "Предварительная оценка",
+    "priority_basis": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P1.",
+    "priority_status": "Предложенная редакционная оценка по README; тест не проводился",
     "verification": "Документация автора; независимых испытаний нет",
     "verified_at": "2026-10-26",
     "test_status": "Не тестировалось",
@@ -8856,6 +11978,26 @@
       "original_line": null,
       "source": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
       "basis": "Охватывает исторические источники бывшего СССР; применимость конкретных архивных сценариев не проверена."
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "README изучен; оценка предложена",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E1",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P1.",
+      "next_action": "Проверить сценарий: Организовать проверяемое исследование родства: фиксировать исходные документы, различать однофамильцев и копии одного источника, вести журнал пои",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/DenisSergeevitch/ex-ussr-kinship-research"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "proposed",
+      "verification_issue": null
     }
   },
   {
@@ -8895,6 +12037,26 @@
       "original_line": null,
       "source": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
       "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Пилот read-only Archive Adapter и согласования AI-предложений без автоматической правки источника.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8934,6 +12096,26 @@
       "original_line": null,
       "source": "https://github.com/ArchiveHeritageGroup/heratio",
       "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучить модель архивных описаний, RiC-граф, права доступа, provenance и human-in-the-loop для архивного адаптера.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/ArchiveHeritageGroup/heratio"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -8967,6 +12149,26 @@
       "original_line": null,
       "source": "https://github.com/YiFengLu1999/AI-Historian",
       "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Проверить на российских биографиях и противоречивых архивных документах; перенять схему промежуточных временных утверждений.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/YiFengLu1999/AI-Historian"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -9000,6 +12202,26 @@
       "original_line": null,
       "source": "https://github.com/Vaibhaav-Tiwari/lineage",
       "basis": "Российские архивные сценарии и доступность отдельно не проверялись."
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Изучить truth maintenance: при опровержении архивной атрибуции пересчитывать зависимые выводы и помечать гипотезы устаревшими.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/Vaibhaav-Tiwari/lineage"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   },
   {
@@ -9033,6 +12255,26 @@
       "original_line": null,
       "source": "https://github.com/mouchar/ftb-mcp",
       "basis": "Практическая применимость для российских архивных материалов и локальных FTB-деревьев требует испытаний."
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+      "component_fit": null,
+      "russia_fit": null,
+      "maturity": null,
+      "evidence_level": "E0",
+      "license_risk": null,
+      "integration_effort": null,
+      "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+      "next_action": "Проверить сценарий: Проверить импорт и анализ локального FTB/GEDCOM дерева без облачной подписки; оценить MCP API как прототип адаптера генеалогических данных.",
+      "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+      "source_urls": [
+        "https://github.com/mouchar/ftb-mcp"
+      ],
+      "reviewer": "Каталожный аудит",
+      "review_status": "triaged",
+      "verification_issue": null
     }
   }
 ]
