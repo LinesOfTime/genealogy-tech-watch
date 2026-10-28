@@ -168,12 +168,12 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/ai-historian/chronos",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Агент для извлечения структурированных данных из исторических первоисточников и накопления знаний. README указывает на VS Code, Node и внешний vision API; заявленная PolyForm-Noncommercial ограничивает коммерческое заимствование.",
+    "priority_status": "Предложенная редакционная переоценка 28.10.2026; README проверен, тестов нет",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -204,7 +204,32 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "components": [
+      "Research Workspace",
+      "OCR/HTR",
+      "Indexer",
+      "API/MCP/agent layer"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 2,
+      "evidence_level": "E1",
+      "license_risk": "L0",
+      "integration_effort": 2,
+      "priority_rationale": "Агент для извлечения структурированных данных из исторических первоисточников и накопления знаний. README указывает на VS Code, Node и внешний vision API; заявленная PolyForm-Noncommercial ограничивает коммерческое заимствование.",
+      "next_action": "Пилот на 10–20 страницах МК: проверить атрибуцию источников, исправления человеком, цену API и лицензии.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/ai-historian/chronos"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "ai-historian/chronos-benchmarks",
@@ -215,17 +240,17 @@
     "limitations": "Это оценочный набор, а не самостоятельный помощник генеалога; условия отличаются от основного Chronos.",
     "license": "MIT",
     "license_status": "Определена по GitHub/README/LICENSE",
-    "priority": "P1",
+    "priority": "P2",
     "verification": "https://github.com/ai-historian/chronos-benchmarks",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/ai-historian/chronos-benchmarks",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Репозиторий экспериментальных материалов Chronos, не самостоятельный продукт. Показатели авторов нельзя приравнивать к независимому сравнению на русских МК.",
+    "priority_status": "Предложенная редакционная переоценка 28.10.2026; README проверен, тестов нет",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -235,6 +260,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "components": [
+      "Research Workspace",
+      "OCR/HTR",
+      "Indexer"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 3,
+      "russia_fit": 1,
+      "maturity": 2,
+      "evidence_level": "E1",
+      "license_risk": "L2",
+      "integration_effort": 2,
+      "priority_rationale": "Репозиторий экспериментальных материалов Chronos, не самостоятельный продукт. Показатели авторов нельзя приравнивать к независимому сравнению на русских МК.",
+      "next_action": "Извлечь воспроизводимую методику и провести собственную оценку CER/полноты полей на русском корпусе.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/ai-historian/chronos-benchmarks"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
     }
   },
   {
@@ -246,17 +295,17 @@
     "limitations": "Документация описывает запуск распознавания готовыми моделями; FAQ прямо отделяет этот процесс от обучения моделей. Нужны настройка конвейера, подходящая модель и проверка её условий использования. Примеры шведских материалов не подтверждают качество на русских рукописях; ошибки сегментации и текста требуют отдельной оценки.",
     "license": "EUPL-1.2",
     "license_status": "Подтверждена по GitHub",
-    "priority": "P2",
+    "priority": "P1",
     "verification": "https://github.com/AI-Riksarkivet/htrflow",
     "verified_at": "2026-10-08",
     "test_status": "Не тестировался",
     "source": "https://github.com/AI-Riksarkivet/htrflow",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Модульный OCR/HTR-конвейер с документацией и CI; для русского исторического письма качество не доказано. EUPL-1.2 требует анализа совместимости при заимствовании.",
+    "priority_status": "Предложенная редакционная переоценка 28.10.2026; README проверен, тестов нет",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -291,7 +340,31 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "components": [
+      "OCR/HTR",
+      "Indexer",
+      "Archive Adapter"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E1",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Модульный OCR/HTR-конвейер с документацией и CI; для русского исторического письма качество не доказано. EUPL-1.2 требует анализа совместимости при заимствовании.",
+      "next_action": "Проверить разбиение на строки, экспорт структурированных результатов и заменяемость моделей на русском корпусе.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/ai-riksarkivet/htrflow"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "ai-riksarkivet/htrflow-batch",
@@ -1245,12 +1318,12 @@
     "verified_at": "2026-10-08",
     "test_status": "Не запускалось",
     "source": "https://github.com/FamilySearch/GEDCOM ; https://gedcom.io/specifications/FamilySearchGEDCOMv7.html",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Официальная спецификация FamilySearch GEDCOM, не библиотека для импорта. Источник нормативных требований к обмену и расширениям.",
+    "priority_status": "Предложенная редакционная переоценка 28.10.2026; README проверен, тестов нет",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -1285,7 +1358,30 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "components": [
+      "GEDCOM/data model",
+      "provenance/evidence"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 3,
+      "maturity": 4,
+      "evidence_level": "E1",
+      "license_risk": "L2",
+      "integration_effort": 2,
+      "priority_rationale": "Официальная спецификация FamilySearch GEDCOM, не библиотека для импорта. Источник нормативных требований к обмену и расширениям.",
+      "next_action": "Построить round-trip тесты GEDCOM 7, неизвестных тегов, цитирований и связей; сверить лицензию документации.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/familysearch/gedcom"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "familysearch/gedcomx",
@@ -2290,12 +2386,12 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировался",
     "source": "https://github.com/IIIF/api",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Спецификации IIIF для изображений и презентации цифровых объектов; репозиторий стандартов, не OCR-движок и не загрузчик. Лицензии текстов и реализаций различаются.",
+    "priority_status": "Предложенная редакционная переоценка 28.10.2026; README проверен, тестов нет",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -2305,6 +2401,30 @@
         "field": "guide_excerpt"
       },
       "basis": "Редакционная оценка путеводителя; независимое тестирование не заявлено"
+    },
+    "components": [
+      "Archive Adapter",
+      "Research Workspace",
+      "OCR/HTR"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 4,
+      "evidence_level": "E1",
+      "license_risk": "L2",
+      "integration_effort": 2,
+      "priority_rationale": "Спецификации IIIF для изображений и презентации цифровых объектов; репозиторий стандартов, не OCR-движок и не загрузчик. Лицензии текстов и реализаций различаются.",
+      "next_action": "Определить минимальный IIIF Image/Presentation адаптер и набор тестов на реальных архивных манифестах.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/iiif/api"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
     }
   },
   {
@@ -5461,12 +5581,12 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Интегрированная платформа транскрипции, аннотации и публикации рукописей с Kraken. GitHub-зеркало с отсылками к GitLab; проверять актуальный upstream и лицензию каждой версии.",
+    "priority_status": "Предложенная редакционная переоценка 28.10.2026; README проверен, тестов нет",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -5503,7 +5623,31 @@
           "Часть 51: незакрытые поля: тип проекта, первоисточник"
         ]
       }
-    ]
+    ],
+    "components": [
+      "OCR/HTR",
+      "Indexer",
+      "Research Workspace"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E1",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Интегрированная платформа транскрипции, аннотации и публикации рукописей с Kraken. GitHub-зеркало с отсылками к GitLab; проверять актуальный upstream и лицензию каждой версии.",
+      "next_action": "Сравнить workflow разметки строк и проверки транскрипций с Индексатором UNO; испытать на 20 страницах.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/ub-mannheim/escriptorium"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "ub-mannheim/escriptorium_dokumentation",
@@ -7724,7 +7868,7 @@
     "verified_at": "2026-10-28",
     "test_status": "Не тестировалось",
     "source": "https://github.com/Kansallisarkisto-AI/nafrec",
-    "status": "Актуализировано 28.10.2026",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [
       {
         "date": "2026-10-28",
@@ -7735,16 +7879,36 @@
     "origin": "GitHub Watch",
     "components": [
       "OCR/HTR",
-      "Indexer"
+      "Indexer",
+      "Archive Adapter"
     ],
     "priority_original": "P1",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Исходная шкала P",
+    "priority_basis": "Построчная классификация кириллицы/латиницы и маршрутизация в TrOCR/PP-OCRv6, экспорт PAGE/ALTO. Наличие русской модели не означает доказанную точность на дореволюционной скорописи.",
+    "priority_status": "Предложенная редакционная переоценка 28.10.2026; README проверен, тестов нет",
     "russia_applicability": {
       "rating": "Не оценено",
       "original_line": null,
       "source": null,
       "basis": "Нет расширенной карточки"
+    },
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 2,
+      "evidence_level": "E1",
+      "license_risk": "L2",
+      "integration_effort": 2,
+      "priority_rationale": "Построчная классификация кириллицы/латиницы и маршрутизация в TrOCR/PP-OCRv6, экспорт PAGE/ALTO. Наличие русской модели не означает доказанную точность на дореволюционной скорописи.",
+      "next_action": "Сравнить CER/WER по кириллическим и латинским строкам, затраты памяти и условия весов моделей.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/Kansallisarkisto-AI/nafrec"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
     }
   },
   {

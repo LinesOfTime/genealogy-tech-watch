@@ -264,7 +264,26 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 2,
+      "evidence_level": "E1",
+      "license_risk": "L0",
+      "integration_effort": 2,
+      "priority_rationale": "Агент для извлечения структурированных данных из исторических первоисточников и накопления знаний. README указывает на VS Code, Node и внешний vision API; заявленная PolyForm-Noncommercial ограничивает коммерческое заимствование.",
+      "next_action": "Пилот на 10–20 страницах МК: проверить атрибуцию источников, исправления человеком, цену API и лицензии.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/ai-historian/chronos"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "ai-historian/chronos-benchmarks": {
     "project_type": "Набор тестов и оценочная инфраструктура",
@@ -309,7 +328,26 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 3,
+      "russia_fit": 1,
+      "maturity": 2,
+      "evidence_level": "E1",
+      "license_risk": "L2",
+      "integration_effort": 2,
+      "priority_rationale": "Репозиторий экспериментальных материалов Chronos, не самостоятельный продукт. Показатели авторов нельзя приравнивать к независимому сравнению на русских МК.",
+      "next_action": "Извлечь воспроизводимую методику и провести собственную оценку CER/полноты полей на русском корпусе.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/ai-historian/chronos-benchmarks"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "ai-riksarkivet/htrflow": {
     "project_type": "Движок HTR/OCR",
@@ -379,7 +417,26 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E1",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Модульный OCR/HTR-конвейер с документацией и CI; для русского исторического письма качество не доказано. EUPL-1.2 требует анализа совместимости при заимствовании.",
+      "next_action": "Проверить разбиение на строки, экспорт структурированных результатов и заменяемость моделей на русском корпусе.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/ai-riksarkivet/htrflow"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "ai-riksarkivet/htrflow-batch": {
     "project_type": "Программное обеспечение — пакетная HTR-платформа",
@@ -1685,7 +1742,26 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 3,
+      "maturity": 4,
+      "evidence_level": "E1",
+      "license_risk": "L2",
+      "integration_effort": 2,
+      "priority_rationale": "Официальная спецификация FamilySearch GEDCOM, не библиотека для импорта. Источник нормативных требований к обмену и расширениям.",
+      "next_action": "Построить round-trip тесты GEDCOM 7, неизвестных тегов, цитирований и связей; сверить лицензию документации.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/familysearch/gedcom"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "familysearch/gedcomx": {
     "project_type": "Стандарты и модель данных",
@@ -2932,7 +3008,26 @@
           "Часть 51: незакрытые поля: нет формальных пробелов; содержательная проверка остаётся отдельной задачей"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 4,
+      "evidence_level": "E1",
+      "license_risk": "L2",
+      "integration_effort": 2,
+      "priority_rationale": "Спецификации IIIF для изображений и презентации цифровых объектов; репозиторий стандартов, не OCR-движок и не загрузчик. Лицензии текстов и реализаций различаются.",
+      "next_action": "Определить минимальный IIIF Image/Presentation адаптер и набор тестов на реальных архивных манифестах.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/iiif/api"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "iiif/awesome-iiif": {
     "project_type": "Каталог ссылок/справочник",
@@ -6022,7 +6117,26 @@
           "Часть 51: незакрытые поля: тип проекта, первоисточник"
         ]
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E1",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Интегрированная платформа транскрипции, аннотации и публикации рукописей с Kraken. GitHub-зеркало с отсылками к GitLab; проверять актуальный upstream и лицензию каждой версии.",
+      "next_action": "Сравнить workflow разметки строк и проверки транскрипций с Индексатором UNO; испытать на 20 страницах.",
+      "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+      "source_urls": [
+        "https://github.com/ub-mannheim/escriptorium"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   "ub-mannheim/escriptorium_dokumentation": {
     "project_type": "Не установлен",
