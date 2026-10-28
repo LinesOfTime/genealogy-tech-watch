@@ -1290,7 +1290,7 @@
   {
     "name": "familysearch/gedcomx",
     "url": "https://github.com/familysearch/gedcomx",
-    "section": "География и карты",
+    "section": "Программы и деревья",
     "description": "Модель обмена генеалогическими данными GEDCOM X",
     "use_case": "Редакционный сценарий для разработчика интеграции: использовать спецификации GEDCOM X при проектировании обмена сведениями о людях, отношениях и подтверждающих записях. Составить небольшой пример с человеком, связью и источником, затем сверить представление и протокол обмена с нужной спецификацией и реализацией получателя. Сценарий независимо не испытывался.",
     "limitations": "Это набор спецификаций, а не готовый редактор дерева и не обещание автоматического преобразования любого GEDCOM-файла. Формат данных и протоколы нужно сверять для конкретного взаимодействия. Наличие записи об источнике не подтверждает верность родства; сохранность своих данных и поддержка сторонними программами здесь не проверялись. Описание основано на официальном сайте, недоступность GitHub-страницы при этой проверке не трактуется как отсутствие проекта.",
@@ -1301,12 +1301,12 @@
     "verified_at": "2026-10-08",
     "test_status": "Не запускалось",
     "source": "https://github.com/FamilySearch/gedcomx",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Спецификация обмена данными с отношениями и источниками; не путать с GEDCOM 7.",
+    "priority_status": "Редакционная переоценка 28.10.2026; предложена к подтверждению",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -1337,12 +1337,35 @@
           "editorial_limitations": "Не путать GEDCOM X с классическим форматом GEDCOM; условия на спецификации и код могут отличаться."
         }
       }
-    ]
+    ],
+    "components": [
+      "GEDCOM/data model",
+      "provenance/evidence"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Спецификация обмена данными с отношениями и источниками; не путать с GEDCOM 7.",
+      "next_action": "Сопоставить модель утверждений и источников с GEDCOM 7 и схемой кабинета.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/familysearch/gedcomx"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "fisharebest/webtrees",
     "url": "https://github.com/fisharebest/webtrees",
-    "section": "География и карты",
+    "section": "Программы и деревья",
     "description": "Веб-приложение",
     "use_case": "Редакционный сценарий: разместить генеалогическое дерево на собственном веб-сервере, импортировать данные GEDCOM и дать родственникам отдельные учётные записи для совместной работы. Перед публикацией проверить настройки доступа и приватности на тестовом дереве. Сценарий независимо не испытывался.",
     "limitations": "Приложению нужен веб-сервер с PHP и MySQL либо подходящий хостинг. Настройки приватности необходимо выбрать для своего дерева; их наличие не заменяет проверки того, какие сведения увидят посетители. Доступность хостинга из РФ и переносимость конкретного GEDCOM независимо не проверялись.",
@@ -1353,12 +1376,12 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/fisharebest/webtrees/blob/main/README.md",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Зрелый веб-инструмент GEDCOM и совместной работы, важен для сравнения UX и прав доступа.",
+    "priority_status": "Редакционная переоценка 28.10.2026; предложена к подтверждению",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -1389,7 +1412,31 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "components": [
+      "GEDCOM/data model",
+      "Research Workspace",
+      "provenance/evidence"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 3,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Зрелый веб-инструмент GEDCOM и совместной работы, важен для сравнения UX и прав доступа.",
+      "next_action": "Проверить GEDCOM и роли пользователей на тестовом дереве.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/fisharebest/webtrees"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "freeukgen/myopicvicar",
@@ -1487,7 +1534,7 @@
   {
     "name": "geneweb/geneweb",
     "url": "https://github.com/geneweb/geneweb",
-    "section": "География и карты",
+    "section": "Программы и деревья",
     "description": "Приложение/веб-сервис",
     "use_case": "Редакционный сценарий: оценить ведение генеалогической базы через веб-интерфейс GeneWeb локально или на сервере, проверить импорт и экспорт тестового GEDCOM, затем изучить отображение родственных связей. Сценарий независимо не испытывался.",
     "limitations": "README предупреждает экспортировать резервную копию базы в формате .gw перед установкой новой версии. Для сборки из исходников требуется окружение OCaml/opam. Заявления авторов о масштабе и стабильности не являются результатом независимого теста этого каталога.",
@@ -1498,12 +1545,12 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/geneweb/geneweb/blob/master/README.md",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Самостоятельная система деревьев; сравнительный ориентир, не ключевой архивный инструмент.",
+    "priority_status": "Редакционная переоценка 28.10.2026; предложена к подтверждению",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -1534,7 +1581,30 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "components": [
+      "GEDCOM/data model",
+      "Research Workspace"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 2,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Самостоятельная система деревьев; сравнительный ориентир, не ключевой архивный инструмент.",
+      "next_action": "Проверить GEDCOM, связи и условия GPL-2.0-only.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/geneweb/geneweb"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "glamberson/gedcom-evidence",
@@ -1715,7 +1785,7 @@
   {
     "name": "gramps-project/gramps",
     "url": "https://github.com/gramps-project/gramps",
-    "section": "Сопоставление и качество данных",
+    "section": "Программы и деревья",
     "description": "Приложение",
     "use_case": "Редакционный сценарий: оценить Gramps как настольную программу для ведения своей генеалогической базы и работы с семейным исследованием. Начать с небольшой тестовой базы и проверить нужные операции до переноса основных материалов. Сценарий независимо не испытывался.",
     "limitations": "При установке из исходников требуется окружение Python/GTK и перечисленные в README зависимости. Некоторые карты и отчёты используют дополнительные компоненты. Наличие функций в документации не подтверждает качество конкретного генеалогического исследования; независимые испытания здесь не проводились.",
@@ -1726,12 +1796,12 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/gramps-project/gramps/blob/master/pyproject.toml",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Базовый ориентир по генеалогическим сущностям, событиям, источникам и цитированиям.",
+    "priority_status": "Редакционная переоценка 28.10.2026; предложена к подтверждению",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -1762,7 +1832,32 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "components": [
+      "GEDCOM/data model",
+      "Research Workspace",
+      "provenance/evidence",
+      "Place Resolver/АТД"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 4,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Базовый ориентир по генеалогическим сущностям, событиям, источникам и цитированиям.",
+      "next_action": "Сопоставить Gramps-модель с кабинетом и российской исторической географией.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/gramps-project/gramps"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "gramps-project/gramps-web",
@@ -1778,7 +1873,7 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/gramps-project/gramps-web/blob/main/README.md",
-    "status": "Исходное исследование, 8–10 октября",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [
       {
         "discovery_id": "github:gramps-project/gramps-web:watch-2026-10-24",
@@ -1829,8 +1924,8 @@
     ],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Сопоставлено по порядку исходных шкал; требуется редакционное подтверждение критериев",
+    "priority_basis": "Ориентир по веб-интерфейсу, совместной работе и доступу; фронтенд и API различать.",
+    "priority_status": "Редакционная переоценка 28.10.2026; предложена к подтверждению",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -1861,12 +1956,37 @@
           "editorial_limitations": ""
         }
       }
-    ]
+    ],
+    "components": [
+      "Research Workspace",
+      "GEDCOM/data model",
+      "provenance/evidence",
+      "API/MCP/agent layer"
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Ориентир по веб-интерфейсу, совместной работе и доступу; фронтенд и API различать.",
+      "next_action": "Проверить UX, роли и работу с источниками на тестовой базе.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/gramps-project/gramps-web"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "gramps-project/gramps-web-api",
     "url": "https://github.com/gramps-project/gramps-web-api",
-    "section": "География и карты",
+    "section": "Программы и деревья",
     "description": "Программный интерфейс Gramps Web",
     "use_case": "Редакционный сценарий для разработчика: подключить собственный инструмент к тестовому дереву Gramps через REST API. Начать с чтения заранее известных записей и сравнить полученные поля с исходной базой; изменение данных проверять отдельным шагом на копии, сверяя результат через интерфейс Gramps Web. Рассматривать API как серверную основу интеграции, а не как готового ИИ-помощника. Сценарий независимо не испытывался.",
     "limitations": "README описывает Python REST API, позволяющий запрашивать и изменять базу; это backend, пользовательский frontend расположен отдельно. Нужны развёрнутая среда, настройка доступа и собственный клиент. Конкретные операции и формат запросов следует сверять с API-документацией установленной версии. Наличие API не подтверждает MCP, автоматическое исследование или безопасное исправление родства без проверки; собственная база и доступность из РФ здесь не испытывались.",
@@ -1877,7 +1997,7 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/gramps-project/gramps-web-api",
-    "status": "Существенное обновление 27.10.2026",
+    "status": "Переоценка предложена 28.10.2026",
     "history": [
       {
         "date": "2026-10-18",
@@ -1942,14 +2062,14 @@
     ],
     "origin": "Реестр 8–10 октября 2026",
     "components": [
-      "Research Workspace",
-      "GEDCOM/data model",
       "API/MCP/agent layer",
+      "GEDCOM/data model",
+      "Research Workspace",
       "provenance/evidence"
     ],
     "priority_original": "P1",
-    "priority_basis": "Редакционная значимость для дальнейшего исследования (не оценка зрелости или качества)",
-    "priority_status": "Исходная шкала P",
+    "priority_basis": "Образец REST API и контроля приватности; RestrictedDb от 26 октября не обязательно опубликован в релизе.",
+    "priority_status": "Редакционная переоценка 28.10.2026; предложена к подтверждению",
     "russia_applicability": {
       "rating": "Высокий",
       "original_line": "Для России: Высокий",
@@ -1980,7 +2100,26 @@
           "editorial_limitations": "Перед записью необходимы резервная копия и проверка прав; не смешивать API с интерфейсом сайта."
         }
       }
-    ]
+    ],
+    "evaluation": {
+      "method_version": "2026-10-28",
+      "reviewed_at": "2026-10-28",
+      "review_scope": "Публичная документация и назначение; без запуска ПО",
+      "component_fit": 4,
+      "russia_fit": 2,
+      "maturity": 3,
+      "evidence_level": "E2",
+      "license_risk": "L1",
+      "integration_effort": 2,
+      "priority_rationale": "Образец REST API и контроля приватности; RestrictedDb от 26 октября не обязательно опубликован в релизе.",
+      "next_action": "Проверить read-only API, приватность guest/agent, отдельно изменения RestrictedDb.",
+      "recheck_trigger": "Новый релиз, изменения лицензии или API",
+      "source_urls": [
+        "https://github.com/gramps-project/gramps-web-api"
+      ],
+      "reviewer": "Редакционная оценка",
+      "review_status": "proposed"
+    }
   },
   {
     "name": "gramps-project/gramps-web-docs",
