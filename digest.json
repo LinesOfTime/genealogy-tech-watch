@@ -1,5 +1,236 @@
 [
   {
+    "date": "2026-10-29",
+    "title": "Значимые изменения проектов",
+    "summary": "Утверждённые события; источники и дельты указаны в записях.",
+    "items": [
+      {
+        "repo": "gramps-project/gramps-web-api",
+        "priority": "P1",
+        "change": "Gramps Web API 3.25.0: ограничение изменения пользователей с более высокой ролью, отзыв refresh-токенов после смены пароля или отключения пользователя и фоновое удаление объектов по handle. Семантический поиск удалён; полнотекстовый поиск сохранён и переработан.",
+        "link": "https://api.github.com/repos/gramps-project/gramps-web-api/releases/tags/v3.25.0",
+        "components": "API/MCP/agent layer · GEDCOM/data model · Research Workspace",
+        "action": "Проверить миграцию, роли owner/admin, смену пароля, refresh 403 и фоновое удаление на копии дерева; учесть удаление семантического поиска.",
+        "event_date": "2026-10-29",
+        "significance_reason": "Клиентам API и администраторам важно учесть изменение поведения сессий, прав, массового удаления и поиска при обновлении. Это новая дельта относительно ранее опубликованной истории.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате полностью применить четыре проекта из пакета PR #15 и обновить этот PR; проверка первоисточников — Codex",
+        "reviewed_at": "2026-10-29T17:58:23.094364+00:00",
+        "discovery_id": "github:gramps-project/gramps-web-api:watch-2026-10-29",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/releases/tags/v3.25.0"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/7a82674708d6394a0329e0251e9577e78135cc97"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/a9e400676e836688086b18f6f7e95273faf1a752"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/ca4e19f1ecd6ad509d286270008eb3ccbcc4f9d8"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits?per_page=12"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/releases?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/44bf834478db3199f0188a876d3b7961772913d1/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/44bf834478db3199f0188a876d3b7961772913d1/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/44bf834478db3199f0188a876d3b7961772913d1/pyproject.toml"
+          }
+        ],
+        "research_link": "project.html?repo=gramps-project%2Fgramps-web-api",
+        "previous_state": "В каталоге уже есть REST API Gramps Web, событие об undo-history от 23 октября и заметка о RestrictedDb от 26 октября. Новая запись не повторяет эти дельты.",
+        "new_state": "Релиз v3.25.0 опубликован 29 октября. В коммитах 7a826747, ca4e19f1 и a9e40067 проверены token_version и отказ обновления отозванного refresh-токена с 403, проверка ролей по GUID и фоновая задача удаления с блокировкой записи дерева. В собственном изменении пароля выдаётся новая пара токенов с 201. Access-токены немедленно не отзываются. Примечания к релизу отдельно описывают новый индекс и удаление semantic search."
+      },
+      {
+        "repo": "scormave/gramps-web-mcp",
+        "priority": "P1",
+        "change": "Scormave Gramps Web MCP 2.7.0: undo_change для одной транзакции, включая удалённые записи, dryRun и подтверждение удаления/undo через MCP elicitation при поддержке клиентом. Релиз добавляет готовые бинарные архивы для пяти платформ.",
+        "link": "https://api.github.com/repos/Scormave/gramps-web-mcp/releases/tags/v2.7.0",
+        "components": "API/MCP/agent layer · GEDCOM/data model · provenance/evidence · Research Workspace",
+        "action": "На копии дерева проверить dryRun, отказ при конфликте, required с клиентом без elicitation и undo удаления; для первого знакомства использовать read-only.",
+        "event_date": "2026-10-28",
+        "significance_reason": "Позволяет рассмотреть обратимые агентские правки дерева с предварительным просмотром и подтверждением; условия работы подтверждения и границы проверки конфликтов критичны для выбора режима.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате полностью применить четыре проекта из пакета PR #15 и обновить этот PR; проверка первоисточников — Codex",
+        "reviewed_at": "2026-10-29T17:58:23.094364+00:00",
+        "discovery_id": "github:scormave/gramps-web-mcp:watch-2026-10-29",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/releases/tags/v2.7.0"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/commits?per_page=12"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/releases?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/GrampsWeb.Mcp/Config/ConfirmationMode.cs"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/GrampsWeb.Mcp/Tools/UndoTools.cs"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/GrampsWeb.Mcp/Tools/UserConfirmation.cs"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/README.md"
+          }
+        ],
+        "research_link": "project.html?repo=scormave%2Fgramps-web-mcp",
+        "previous_state": "Проект уже есть в каталоге и расширенном исследовании; в журнале и дайджесте нет события о релизе 2.7.0. Старые описания и оценки сохраняются.",
+        "new_state": "Релиз 2.7.0 опубликован 28 октября, commit 424c3dd7. Прочитаны UndoTools и UserConfirmation на снимке 86269e6f: dryRun, конфликты, повторная проверка плана после ответа, режимы when-supported/required/off и ожидание фонового undo до 45 секунд. Более поздняя правка GQL в 86269e6f не приписывается релизу 2.7.0."
+      },
+      {
+        "repo": "alexey-n-chernyshov/gramps-web-mcp-rs",
+        "priority": "Не оценён",
+        "change": "Новая карточка gramps-web-mcp-rs: Rust MCP-сервер для Gramps Web с CRUD, фильтрами и режимом только чтения. В 1.8.0 переработана аутентификация для SSO-only через GRAMPS_SYNC_TOKEN; 1.8.1 от 29 октября отдельно исправляет создание персоны с полом.",
+        "link": "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/releases/tags/v1.8.0",
+        "components": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · Person Resolver",
+        "action": "Начать с режима только чтения и копии дерева; проверить вход через sync token, роли и конфигурацию выбранного MCP-клиента.",
+        "event_date": "2026-10-29",
+        "significance_reason": "Дополняет выбор MCP-адаптеров для существующего дерева Gramps Web; даёт документированный маршрут для инстансов с SSO без локального пароля и явный режим только чтения.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате полностью применить четыре проекта из пакета PR #15 и обновить этот PR; проверка первоисточников — Codex",
+        "reviewed_at": "2026-10-29T17:58:23.094364+00:00",
+        "discovery_id": "github:alexey-n-chernyshov/gramps-web-mcp-rs:watch-2026-10-29",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/releases/tags/v1.8.0"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/releases/tags/v1.8.1"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/commits?per_page=12"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/releases?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/docs/choose-setup.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/src/auth.rs"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/src/config.rs"
+          }
+        ],
+        "research_link": "project.html?repo=alexey-n-chernyshov%2Fgramps-web-mcp-rs",
+        "previous_state": "Отсутствует в каталоге, расширенных исследованиях, дайджесте и журнале; другие Gramps MCP-серверы являются отдельными проектами, а не алиасами.",
+        "new_state": "Репозиторий существует, не архивный и не fork. Релиз 1.8.0 опубликован 28 октября, 1.8.1 — 29 октября. На cb9da08c прочитаны README, LICENSE, setup, config и auth: GRAMPS_SYNC_TOKEN обменивается на короткоживущий JWT через /api/token/sync/ и кешируется. Промежуточное название GRAMPS_ACCESS_TOKEN из PR #117 не является текущей переменной."
+      },
+      {
+        "repo": "magicianmarty/heritage-research-mcp",
+        "priority": "Не оценён",
+        "change": "Новая карточка Heritage Research MCP: поиск исторических материалов через архивные адаптеры, метаданные прав и происхождение загрузок. В main после релиза 0.2.0 добавлены Chronicling America и локальный поиск по TEI Richmond Daily Dispatch через SQLite FTS5.",
+        "link": "https://api.github.com/repos/magicianmarty/heritage-research-mcp/releases/tags/v0.2.0",
+        "components": "Archive Adapter · Indexer · API/MCP/agent layer · provenance/evidence · Research Workspace",
+        "action": "Проверить один подходящий источник и права конкретной записи; для газет сверить текст со сканом и сначала оценить план/объём локальной индексации.",
+        "event_date": "2026-10-29",
+        "significance_reason": "Кандидат для поиска архивных текстов, карт и газет с сохранением ссылок на происхождение и различением прав на код и найденный контент. Локальный газетный индекс полезен для повторных запросов без обращения к сайту.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате полностью применить четыре проекта из пакета PR #15 и обновить этот PR; проверка первоисточников — Codex",
+        "reviewed_at": "2026-10-29T17:58:23.094364+00:00",
+        "discovery_id": "github:magicianmarty/heritage-research-mcp:watch-2026-10-29",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/magicianmarty/heritage-research-mcp/releases/tags/v0.2.0"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/magicianmarty/heritage-research-mcp"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/magicianmarty/heritage-research-mcp/commits?per_page=12"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/magicianmarty/heritage-research-mcp/releases?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/pyproject.toml"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/src/heritage_research_mcp/rights.py"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/src/heritage_research_mcp/sources/dispatch.py"
+          }
+        ],
+        "research_link": "project.html?repo=magicianmarty%2Fheritage-research-mcp",
+        "previous_state": "Отсутствует в каталоге, расширенных исследованиях, дайджесте и журнале. Новая находка для каталога не означает, что проект создан 29 октября.",
+        "new_state": "На a88957fe проверены README, MIT LICENSE, pyproject.toml (Alpha, Python 3.11+), rights.py и dispatch.py: разбор TEI, SQLite FTS5, локальный поиск и предупреждение об условиях цифровой редакции. Последний релиз 0.2.0 от 7 октября; расширение газетных источников в main добавлено 16–17 октября и не приписывается этому релизу."
+      }
+    ]
+  },
+  {
     "date": "2026-10-28",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",

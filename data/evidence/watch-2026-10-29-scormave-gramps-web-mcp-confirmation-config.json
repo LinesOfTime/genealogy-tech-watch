@@ -1,0 +1,6 @@
+{
+  "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/GrampsWeb.Mcp/Config/ConfirmationMode.cs",
+  "checked_at": "2026-10-29T17:55:47.706Z",
+  "http_status": 200,
+  "content": "namespace GrampsWeb.Mcp.Config;\n\n/// <summary>\n/// When delete_object and undo_change ask the user to confirm through MCP elicitation\n/// before changing the tree. Set with <c>GRAMPS_CONFIRMATION</c>.\n/// </summary>\npublic enum ConfirmationMode\n{\n    /// <summary>Ask when the client supports elicitation; other clients work as before.</summary>\n    WhenSupported,\n\n    /// <summary>Always ask; refuse the change when the client cannot show the question.</summary>\n    Required,\n\n    /// <summary>Never ask; the assistant's own confirmation in chat is the only check.</summary>\n    Off\n}\n"
+}

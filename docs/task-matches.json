@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "183c90b5c0375cccd2631938f68eb00775c31094cc97c6255a37912db4abc77c",
+  "source_hash": "b1ba0cb7166512a57c39e4981599944d103aaf13379eea65288a6852906bb59b",
   "tasks": [
     {
       "id": "transcribe",
@@ -7478,6 +7478,258 @@
       "use_case": "Изучить поиск по коллекции, чтение источников, анализ покрытия и передачу исследовательской методики через MCP skills. Редакционный сценарий для архитектуры архивного рабочего места; подключение российских коллекций потребует собственного адаптера.",
       "license": "MIT для сервера; права доступа и использования материалов коллекции проверяются отдельно",
       "limitations": "Корпус посвящён Западной Африке, преимущественно франкоязычным материалам; это не база российской генеалогии. Публичные и закрытые полные тексты имеют разные режимы доступа. Число инструментов и записей меняется; качество AI-аннотаций и выводов не проверено. Для runtime указан Node.js 24+, семантический поиск зависит от платформы и загрузки модели. v4.3.1 ещё использует DuckDB 1.5.6; обновление main нельзя приписывать этому релизу.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "resolve",
+      "project": "alexey-n-chernyshov/gramps-web-mcp-rs",
+      "url": "https://github.com/Alexey-N-Chernyshov/gramps-web-mcp-rs",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "alexey-n-chernyshov/gramps-web-mcp-rs",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер на Rust для Gramps Web"
+        }
+      },
+      "purpose": "MCP-сервер на Rust для доступа AI-клиента к дереву Gramps Web: поиск, структурированные фильтры, чтение и редактирование генеалогических объектов. Это адаптер к существующему Gramps Web.",
+      "use_case": "Просмотреть записи дерева, найти людей по фильтрам и подготовить добавление семьи с цитатами. Автор также предлагает поиск вероятных дубликатов и слияние; решения о тождестве людей требуют проверки исследователем. Для SSO-only описан GRAMPS_SYNC_TOKEN, который сервер обменивает на JWT. Начинать с режима только чтения.",
+      "license": "Apache-2.0",
+      "limitations": "Нужны существующий Gramps Web 26.10.0 / API 3.23+ и настройка клиента, аутентификации и доступа. CRUD и слияние меняют дерево: сначала копия и резервная копия. Текущая переменная — GRAMPS_SYNC_TOKEN, а не промежуточное GRAMPS_ACCESS_TOKEN. OAuth, токены, совместимость и работа с реальными данными независимо не испытаны. Применимость для России не оценена.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "alexey-n-chernyshov/gramps-web-mcp-rs",
+      "url": "https://github.com/Alexey-N-Chernyshov/gramps-web-mcp-rs",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "alexey-n-chernyshov/gramps-web-mcp-rs",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер на Rust для Gramps Web"
+        }
+      },
+      "purpose": "MCP-сервер на Rust для доступа AI-клиента к дереву Gramps Web: поиск, структурированные фильтры, чтение и редактирование генеалогических объектов. Это адаптер к существующему Gramps Web.",
+      "use_case": "Просмотреть записи дерева, найти людей по фильтрам и подготовить добавление семьи с цитатами. Автор также предлагает поиск вероятных дубликатов и слияние; решения о тождестве людей требуют проверки исследователем. Для SSO-only описан GRAMPS_SYNC_TOKEN, который сервер обменивает на JWT. Начинать с режима только чтения.",
+      "license": "Apache-2.0",
+      "limitations": "Нужны существующий Gramps Web 26.10.0 / API 3.23+ и настройка клиента, аутентификации и доступа. CRUD и слияние меняют дерево: сначала копия и резервная копия. Текущая переменная — GRAMPS_SYNC_TOKEN, а не промежуточное GRAMPS_ACCESS_TOKEN. OAuth, токены, совместимость и работа с реальными данными независимо не испытаны. Применимость для России не оценена.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "alexey-n-chernyshov/gramps-web-mcp-rs",
+      "url": "https://github.com/Alexey-N-Chernyshov/gramps-web-mcp-rs",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "alexey-n-chernyshov/gramps-web-mcp-rs",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер на Rust для Gramps Web"
+        }
+      },
+      "purpose": "MCP-сервер на Rust для доступа AI-клиента к дереву Gramps Web: поиск, структурированные фильтры, чтение и редактирование генеалогических объектов. Это адаптер к существующему Gramps Web.",
+      "use_case": "Просмотреть записи дерева, найти людей по фильтрам и подготовить добавление семьи с цитатами. Автор также предлагает поиск вероятных дубликатов и слияние; решения о тождестве людей требуют проверки исследователем. Для SSO-only описан GRAMPS_SYNC_TOKEN, который сервер обменивает на JWT. Начинать с режима только чтения.",
+      "license": "Apache-2.0",
+      "limitations": "Нужны существующий Gramps Web 26.10.0 / API 3.23+ и настройка клиента, аутентификации и доступа. CRUD и слияние меняют дерево: сначала копия и резервная копия. Текущая переменная — GRAMPS_SYNC_TOKEN, а не промежуточное GRAMPS_ACCESS_TOKEN. OAuth, токены, совместимость и работа с реальными данными независимо не испытаны. Применимость для России не оценена.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "alexey-n-chernyshov/gramps-web-mcp-rs",
+      "url": "https://github.com/Alexey-N-Chernyshov/gramps-web-mcp-rs",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "alexey-n-chernyshov/gramps-web-mcp-rs",
+          "field": "description",
+          "excerpt": "MCP-сервер на Rust для доступа AI-клиента к дереву Gramps Web: поиск, структурированные фильтры, чтение и редактирование генеалогических объектов. Это адаптер к существующему Gramps Web.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "alexey-n-chernyshov/gramps-web-mcp-rs",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · Person Resolver",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "alexey-n-chernyshov/gramps-web-mcp-rs",
+          "field": "editorial_summary",
+          "excerpt": "MCP-сервер на Rust для доступа AI-клиента к дереву Gramps Web: поиск, структурированные фильтры, чтение и редактирование генеалогических объектов. Это адаптер к существующему Gramps Web.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер на Rust для Gramps Web"
+        }
+      },
+      "purpose": "MCP-сервер на Rust для доступа AI-клиента к дереву Gramps Web: поиск, структурированные фильтры, чтение и редактирование генеалогических объектов. Это адаптер к существующему Gramps Web.",
+      "use_case": "Просмотреть записи дерева, найти людей по фильтрам и подготовить добавление семьи с цитатами. Автор также предлагает поиск вероятных дубликатов и слияние; решения о тождестве людей требуют проверки исследователем. Для SSO-only описан GRAMPS_SYNC_TOKEN, который сервер обменивает на JWT. Начинать с режима только чтения.",
+      "license": "Apache-2.0",
+      "limitations": "Нужны существующий Gramps Web 26.10.0 / API 3.23+ и настройка клиента, аутентификации и доступа. CRUD и слияние меняют дерево: сначала копия и резервная копия. Текущая переменная — GRAMPS_SYNC_TOKEN, а не промежуточное GRAMPS_ACCESS_TOKEN. OAuth, токены, совместимость и работа с реальными данными независимо не испытаны. Применимость для России не оценена.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "magicianmarty/heritage-research-mcp",
+      "url": "https://github.com/magicianmarty/heritage-research-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "magicianmarty/heritage-research-mcp",
+          "field": "use_case",
+          "excerpt": "Найти упоминание человека или места внутри оцифрованной книги, подобрать историческую карту или архивный документ и сохранить источник вместе с загрузкой. Для Richmond Daily Dispatch предусмотрен локальный TEI/SQLite FTS5 индекс. Это кандидат для исследования преимущественно американских материалов; совпадения имён и OCR проверяются по оригиналу.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "magicianmarty/heritage-research-mcp",
+          "field": "editorial_use_case",
+          "excerpt": "Найти упоминание человека или места внутри оцифрованной книги, подобрать историческую карту или архивный документ и сохранить источник вместе с загрузкой. Для Richmond Daily Dispatch предусмотрен локальный TEI/SQLite FTS5 индекс. Это кандидат для исследования преимущественно американских материалов; совпадения имён и OCR проверяются по оригиналу.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер архивных адаптеров с локальной индексацией"
+        }
+      },
+      "purpose": "MCP-сервер для поиска исторических текстов, карт и изображений через Internet Archive, Wikimedia Commons, DPLA, NARA и Smithsonian. В main добавлены газетные адаптеры Chronicling America и Richmond Daily Dispatch; результаты сопровождаются полями прав и происхождения.",
+      "use_case": "Найти упоминание человека или места внутри оцифрованной книги, подобрать историческую карту или архивный документ и сохранить источник вместе с загрузкой. Для Richmond Daily Dispatch предусмотрен локальный TEI/SQLite FTS5 индекс. Это кандидат для исследования преимущественно американских материалов; совпадения имён и OCR проверяются по оригиналу.",
+      "license": "MIT для кода; записи, сканы и цифровые издания — по условиям правообладателей",
+      "limitations": "Alpha; Python 3.11+, MCP-клиент, а для части архивов — API-ключи. Права на контент проверяются отдельно от MIT кода; unknown не разрешает повторное использование, date-heuristic остаётся эвристикой. Live Chronicling America автором успешно не проверен из-за challenge. Новые газетные адаптеры main не относятся к релизу 0.2.0. Индексы требуют загрузок и места; независимого испытания и оценки применимости для России нет.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "magicianmarty/heritage-research-mcp",
+      "url": "https://github.com/magicianmarty/heritage-research-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "magicianmarty/heritage-research-mcp",
+          "field": "components",
+          "excerpt": "Archive Adapter · Indexer · API/MCP/agent layer · provenance/evidence · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер архивных адаптеров с локальной индексацией"
+        }
+      },
+      "purpose": "MCP-сервер для поиска исторических текстов, карт и изображений через Internet Archive, Wikimedia Commons, DPLA, NARA и Smithsonian. В main добавлены газетные адаптеры Chronicling America и Richmond Daily Dispatch; результаты сопровождаются полями прав и происхождения.",
+      "use_case": "Найти упоминание человека или места внутри оцифрованной книги, подобрать историческую карту или архивный документ и сохранить источник вместе с загрузкой. Для Richmond Daily Dispatch предусмотрен локальный TEI/SQLite FTS5 индекс. Это кандидат для исследования преимущественно американских материалов; совпадения имён и OCR проверяются по оригиналу.",
+      "license": "MIT для кода; записи, сканы и цифровые издания — по условиям правообладателей",
+      "limitations": "Alpha; Python 3.11+, MCP-клиент, а для части архивов — API-ключи. Права на контент проверяются отдельно от MIT кода; unknown не разрешает повторное использование, date-heuristic остаётся эвристикой. Live Chronicling America автором успешно не проверен из-за challenge. Новые газетные адаптеры main не относятся к релизу 0.2.0. Индексы требуют загрузок и места; независимого испытания и оценки применимости для России нет.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "magicianmarty/heritage-research-mcp",
+      "url": "https://github.com/magicianmarty/heritage-research-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "magicianmarty/heritage-research-mcp",
+          "field": "description",
+          "excerpt": "MCP-сервер для поиска исторических текстов, карт и изображений через Internet Archive, Wikimedia Commons, DPLA, NARA и Smithsonian. В main добавлены газетные адаптеры Chronicling America и Richmond Daily Dispatch; результаты сопровождаются полями прав и происхождения.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "magicianmarty/heritage-research-mcp",
+          "field": "components",
+          "excerpt": "Archive Adapter · Indexer · API/MCP/agent layer · provenance/evidence · Research Workspace",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "magicianmarty/heritage-research-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-сервер для поиска исторических текстов, карт и изображений через Internet Archive, Wikimedia Commons, DPLA, NARA и Smithsonian. В main добавлены газетные адаптеры Chronicling America и Richmond Daily Dispatch; результаты сопровождаются полями прав и происхождения.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер архивных адаптеров с локальной индексацией"
+        }
+      },
+      "purpose": "MCP-сервер для поиска исторических текстов, карт и изображений через Internet Archive, Wikimedia Commons, DPLA, NARA и Smithsonian. В main добавлены газетные адаптеры Chronicling America и Richmond Daily Dispatch; результаты сопровождаются полями прав и происхождения.",
+      "use_case": "Найти упоминание человека или места внутри оцифрованной книги, подобрать историческую карту или архивный документ и сохранить источник вместе с загрузкой. Для Richmond Daily Dispatch предусмотрен локальный TEI/SQLite FTS5 индекс. Это кандидат для исследования преимущественно американских материалов; совпадения имён и OCR проверяются по оригиналу.",
+      "license": "MIT для кода; записи, сканы и цифровые издания — по условиям правообладателей",
+      "limitations": "Alpha; Python 3.11+, MCP-клиент, а для части архивов — API-ключи. Права на контент проверяются отдельно от MIT кода; unknown не разрешает повторное использование, date-heuristic остаётся эвристикой. Live Chronicling America автором успешно не проверен из-за challenge. Новые газетные адаптеры main не относятся к релизу 0.2.0. Индексы требуют загрузок и места; независимого испытания и оценки применимости для России нет.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
