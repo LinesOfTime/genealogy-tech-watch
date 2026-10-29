@@ -14,5 +14,9 @@
   "github:ai-riksarkivet/ra-mcp:watch-2026-10-28": "229befe1240eb1e523ba3a8344dc66a9816bc92ab2c59dcf018fd5d9960f62f4",
   "github:borisovodov/doru:watch-2026-10-28": "c0aef87d9ce3ba06e7513ad7c509171764f47d8e78b798e553fc46d79772a8f0",
   "github:stanford-oval/credit:watch-2026-10-28": "003fa791e17cbbb78a8fc05b12b7b47e95af62bad498bc792e865dc602364710",
-  "github:fmadore/iwac-mcp-server:watch-2026-10-28": "6b77f9ac4bad4c765bfe41c529a441fc135ee13b2720e0f276dc08401ab54b2f"
+  "github:fmadore/iwac-mcp-server:watch-2026-10-28": "6b77f9ac4bad4c765bfe41c529a441fc135ee13b2720e0f276dc08401ab54b2f",
+  "github:gramps-project/gramps-web-api:watch-2026-10-29": "6da06ab43a0958557969cd3a0ec2a0ea3110c62629cfff108a0b872831906c0c",
+  "github:scormave/gramps-web-mcp:watch-2026-10-29": "0c433919458a4273e4bee1e80c168bcbb1fb963d452e64e565f1f73cf53bfdb0",
+  "github:alexey-n-chernyshov/gramps-web-mcp-rs:watch-2026-10-29": "ddc4c177e9121b721f9f9565eba28cd7d368c8a6330f75a80e344b98bacbcd9c",
+  "github:magicianmarty/heritage-research-mcp:watch-2026-10-29": "07f9be9139f72db9e528bbf82d9948abc906c900d294df553dc351c7f40c875d"
 }

@@ -18,23 +18,27 @@ const {chromium} = require('playwright');
       await route.fulfill({body:await fs.readFile(path.join(root,name)),contentType:type});
     });
     await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
-    const newProjects=['ai-riksarkivet/ra-mcp','borisovodov/doru','stanford-oval/credit','fmadore/iwac-mcp-server'];
+    const newProjects=['ai-riksarkivet/ra-mcp','borisovodov/doru','stanford-oval/credit','fmadore/iwac-mcp-server',
+      'gramps-project/gramps-web-api','scormave/gramps-web-mcp',
+      'alexey-n-chernyshov/gramps-web-mcp-rs','magicianmarty/heritage-research-mcp'];
     for(const repo of newProjects) {
       await page.locator('#search').fill(repo);
       assert.match(await page.locator('#shown').innerText(),/^Показано 1 из /);
-      assert.match(await page.locator('.card').innerText(),/Не тестировался независимо/);
+      const existingLegacy=repo==='scormave/gramps-web-mcp';
+      assert.match(await page.locator('.card').innerText(),existingLegacy?/Тестирование не указано/:/Не тестировался независимо/);
       await page.locator('.card-links a[href^="project.html"]').click();
       await page.waitForLoadState('networkidle');
       assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
       const details=await page.locator('#content').innerText();
       assert.match(details,/Практическое применение/);
-      assert.match(details,/Независимое тестирование: Не тестировалось/);
+      assert.match(details,existingLegacy?/Независимое тестирование: Не подтверждено/:/Независимое тестирование: Не тестировалось/);
       assert.doesNotMatch(details,/Ошибка:|Сведения не установлены/);
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),repo+' research overflows');
       await page.goto('https://ux.local/digest.html',{waitUntil:'networkidle'});
       await page.locator('#q').fill(repo);
-      assert.equal(await page.locator('article.item').count(),1);
-      await page.locator('article.item a[href^="project.html"]').click();
+      // An existing project can have several independently reviewed events.
+      assert.ok(await page.locator('article.item').count()>=1);
+      await page.locator('article.item a[href^="project.html"]').first().click();
       await page.waitForLoadState('networkidle');
       assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
       await page.goto('https://ux.local/tasks.html',{waitUntil:'networkidle'});
@@ -104,6 +108,6 @@ const {chromium} = require('playwright');
       }
     }
     assert.deepEqual(runtimeErrors,[]);
-    console.log('Browser UX regression passed: four new projects (search, research, digest links, task matching); back/reload, URL filters, reset, mobile search, 12 navigation layouts; no console/page errors.');
+    console.log('Browser UX regression passed: eight watch projects (search, research, digest links, task matching); back/reload, URL filters, reset, mobile search, 12 navigation layouts; no console/page errors.');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1});
