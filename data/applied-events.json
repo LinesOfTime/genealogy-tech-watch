@@ -18,5 +18,7 @@
   "github:gramps-project/gramps-web-api:watch-2026-10-29": "6da06ab43a0958557969cd3a0ec2a0ea3110c62629cfff108a0b872831906c0c",
   "github:scormave/gramps-web-mcp:watch-2026-10-29": "0c433919458a4273e4bee1e80c168bcbb1fb963d452e64e565f1f73cf53bfdb0",
   "github:alexey-n-chernyshov/gramps-web-mcp-rs:watch-2026-10-29": "ddc4c177e9121b721f9f9565eba28cd7d368c8a6330f75a80e344b98bacbcd9c",
-  "github:magicianmarty/heritage-research-mcp:watch-2026-10-29": "07f9be9139f72db9e528bbf82d9948abc906c900d294df553dc351c7f40c875d"
+  "github:magicianmarty/heritage-research-mcp:watch-2026-10-29": "07f9be9139f72db9e528bbf82d9948abc906c900d294df553dc351c7f40c875d",
+  "github:scormave/gramps-web-mcp:watch-2026-10-30": "0084a3f55cfc2b7ddaa52336fe6cc5a2c41fbd634061085850546322e8241ca7",
+  "github:fmadore/iwac-mcp-server:watch-2026-10-30": "27ada18481698fcef79c7c545e69bae4bc9e4eee9db9f654a933f91a4f76a46a"
 }

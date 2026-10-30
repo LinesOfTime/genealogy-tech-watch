@@ -7749,6 +7749,79 @@
         "reviewer": "Пользователь: явное поручение в чате полностью применить четыре проекта из пакета PR #15 и обновить этот PR; проверка первоисточников — Codex",
         "reviewed_at": "2026-10-29T17:58:23.094364+00:00",
         "reviewed_content_hash": "0c433919458a4273e4bee1e80c168bcbb1fb963d452e64e565f1f73cf53bfdb0"
+      },
+      {
+        "discovery_id": "github:scormave/gramps-web-mcp:watch-2026-10-30",
+        "date": "2026-10-29",
+        "change": "Scormave Gramps Web MCP: create_records в Unreleased создаёт до 50 связанных записей одним вызовом через POST /api/objects/. Внутренние ссылки задаются через #key; предусмотрен undo_change всей транзакции. Это изменение коммита 864d4e59 от 29 октября, а не возможность выпущенного 2.7.0.",
+        "previous_state": "Существующая карточка и событие релиза 2.7.0 описывают одиночные операции, undo и MCP elicitation. Пакетное create_records в опубликованной истории ещё не отражено.",
+        "new_state": "Проверены коммит 864d4e593e1d301df5a4ac0d7d7a1c90f0476a67, раздел Unreleased, README, RecordBatchTools, BatchRecords и клиент GrampsApiClient: MaxRecords=50, проверка ключей и классов ссылок, построение всех записей до одного POST /api/objects/, EnsureWritable в клиенте. Есть upstream integration-тесты создания семьи со ссылками, отказа и undo. Последний опубликованный релиз в проверенном списке — 2.7.0; batch к нему не приписан.",
+        "significance_reason": "Для переноса одной архивной записи в дерево можно рассмотреть создание семьи, событий, источника и цитат одной группой вместо серии разрозненных записей. Это редакционный сценарий, не независимое подтверждение атомарности или корректности генеалогических связей.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/Scormave/gramps-web-mcp/commit/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/commits/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/releases?per_page=2"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/CHANGELOG.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/GrampsWeb.Mcp.IntegrationTests/RecordBatchTests.cs"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/GrampsWeb.Mcp/Client/GrampsApiClient.cs"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/GrampsWeb.Mcp/Input/BatchRecords.cs"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/GrampsWeb.Mcp/Tools/RecordBatchTools.cs"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/README.md"
+          }
+        ],
+        "url": "https://github.com/Scormave/gramps-web-mcp/commit/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67",
+        "claims_vs_verified": {
+          "verified": "В исходниках есть MaxRecords=50, предварительная сборка и проверка записей, #key с проверкой класса, единый POST /api/objects/ и запрет записи в read-only. CHANGELOG относит create_records к Unreleased. Прочитаны интеграционные тесты, но они не запускались.",
+          "author_claims": "Автор заявляет атомарное создание всей группы или отсутствие записей при отказе, undo всей транзакции и успешный опыт на demo.grampsweb.org/API 3.24.0. Мы проверили наличие описания, кода и тестов; внешний runtime и опыт автора не воспроизводили.",
+          "independent_testing": "Проверены документация, release/commit metadata и выбранные исходники; внешние серверы, upstream-тесты, реальное дерево и корпус нами не запускались."
+        },
+        "risks": [
+          "Экспериментировать только на копии дерева с резервной копией. Unreleased не означает наличие create_records в бинарниках 2.7.0.",
+          "Лимит 50 относится к общему числу записей одного вызова. При разделении на вызовы общая транзакционная гарантия для всех групп не заявлена.",
+          "create_records не проверяет дубликаты: сначала поиск и исследовательское решение о тождестве людей и объектов.",
+          "Медиа и теги внутри группы не создаются; их нужно подготовить отдельно. Новая семья связывается с людьми через father/mother/children, а некоторые связи существующих объектов с новыми требуют последующего update_*.",
+          "Наличие кода и тестов не доказывает независимую безопасность отката. Ошибка транспорта или неоднозначный ответ требуют проверки истории дерева до повторного неидемпотентного вызова.",
+          "Российские данные, родственные гипотезы и пользовательские подтверждения новых групп независимо не проверялись. Прежний приоритет P1 сохраняется, не повышает зрелость."
+        ],
+        "license": "AGPL-3.0-or-later по README; LICENSE содержит AGPL v3; зависимости сохраняют отдельные условия",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/LICENSE",
+          "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/README.md"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате полностью применить два обновления пакета PR #16 и обновить этот PR; проверка первоисточников — Codex",
+        "reviewed_at": "2026-10-30T21:02:29.027623+00:00",
+        "reviewed_content_hash": "0084a3f55cfc2b7ddaa52336fe6cc5a2c41fbd634061085850546322e8241ca7"
       }
     ]
   },
@@ -11816,6 +11889,95 @@
         "reviewer": "Пользователь: явное поручение в чате завершить публикацию четырёх перечисленных проектов в PR #13; проверка первоисточников выполнена Codex",
         "reviewed_at": "2026-10-28T17:30:49.142091+00:00",
         "reviewed_content_hash": "6b77f9ac4bad4c765bfe41c529a441fc135ee13b2720e0f276dc08401ab54b2f"
+      },
+      {
+        "discovery_id": "github:fmadore/iwac-mcp-server:watch-2026-10-30",
+        "date": "2026-10-29",
+        "change": "IWAC MCP Server 5.0.0: многословный keyword требует все слова, неизвестные параметры отклоняются; keyword_mode=literal сохраняет прежний поиск подстрокой. Добавлены ссылки экспорта до 5000 элементов, компактный provenance и профили инструментов.",
+        "previous_state": "В каталоге уже опубликовано добавление IWAC с базой v4.3.1 и последующим обновлением DuckDB в main. Семантические изменения поискового контракта 5.0.0 и новый export/provenance/profile контракт ещё не описаны отдельным событием.",
+        "new_state": "Релиз v5.0.0 опубликован 29 октября; тег указывает на e3d9867c8696fbce7a020f56b329b3a6629ba7c0. Проверены release notes, package.json (5.0.0, Node >=24), MIT LICENSE, register.ts, provenance.ts, toolProfiles.ts, researchExports.ts и тест v5-contract. Документация фиксирует все слова/кавычки/literal, отказ неизвестных аргументов, пределы входа и страниц, export link, analysis_version=iwac-research-v3, полный provenance в _meta и сокращённый текстовый блок.",
+        "significance_reason": "Меняет воспроизводимость запросов и совместимость существующих MCP-клиентов: прежние многословные подсчёты нельзя сравнивать напрямую, опечатка в имени параметра теперь ошибка. Экспорт и provenance полезны для проверяемой исследовательской выборки, не являются доказательством генеалогического факта.",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://github.com/fmadore/iwac-mcp-server/releases/tag/v5.0.0"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/fmadore/iwac-mcp-server/commits?per_page=4"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/fmadore/iwac-mcp-server/releases/tags/v5.0.0"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/fmadore/iwac-mcp-server/releases?per_page=2"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/README.md"
+          },
+          {
+            "type": "release",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/docs/releases/v5.0.0.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/package.json"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/provenance.ts"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/toolProfiles.ts"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/tools/register.ts"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/tools/researchExports.ts"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/tools/shared/text.ts"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/test/v5-contract.test.ts"
+          }
+        ],
+        "url": "https://github.com/fmadore/iwac-mcp-server/releases/tag/v5.0.0",
+        "claims_vs_verified": {
+          "verified": "Release notes и package.json фиксируют 5.0.0. В register.ts видны ограничение строк 2000, применение профиля и полный provenance в _meta; provenance.ts содержит iwac-research-v3 и компактное представление. toolProfiles.ts разделяет full/core/analysis/search и прямо говорит, что профиль не является контролем доступа. researchExports.ts экспортирует цитатные метаданные, не body/векторы. Поисковые правила, strict input и лимит linked export описаны в release notes; тесты контракта прочитаны, но не запускались.",
+          "author_claims": "Автор описывает строгие схемы, лимиты массивов/объектов 1000, linked export до 5000, страницы около 40000 символов, меньший tool footprint, CI/conformance и attestations. Эти runtime-проверки и измерения нами не воспроизводились.",
+          "independent_testing": "Проверены документация, release/commit metadata и выбранные исходники; внешние серверы, upstream-тесты, реальное дерево и корпус нами не запускались."
+        },
+        "risks": [
+          "Изменение многословного поиска влияет на состав выборок и подсчёты. Для сопоставления со старыми запусками проверить keyword_mode=literal, версию анализа и snapshot_id; совпадение слов не доказывает идентичность людей.",
+          "Неизвестные имена параметров теперь отвергаются. При миграции проверить клиентские аргументы, лимиты строк/коллекций и обработку code в ошибках.",
+          "Ссылка iwac://export требует клиента с поддержкой чтения ресурсов. Выборки больше 5000, страницы с response_limited/next_offset и изменившийся снимок требуют отдельной обработки; не считать усечённую страницу полным корпусом.",
+          "Tool profile уменьшает набор инструментов, но не является разграничением доступа. Приватный полный текст требует отдельного разрешённого режима; профиль не делает данные публичными.",
+          "MIT относится к коду, а не автоматически ко всем материалам. Экспорт цитатных метаданных не является проверенной библиографической корректировкой или разрешением на перепубликацию контента.",
+          "Корпус относится к Западной Африке. Применимость для России и независимое испытание не повышены автоматически; прежний неоценённый приоритет сохранён."
+        ],
+        "license": "MIT для кода; права на материалы коллекции, OCR, изображения и частные данные проверяются отдельно",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/LICENSE",
+          "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/package.json"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате полностью применить два обновления пакета PR #16 и обновить этот PR; проверка первоисточников — Codex",
+        "reviewed_at": "2026-10-30T21:02:29.027623+00:00",
+        "reviewed_content_hash": "27ada18481698fcef79c7c545e69bae4bc9e4eee9db9f654a933f91a4f76a46a"
       }
     ],
     "editorial_summary": "IWAC MCP Server предоставляет поиск и исследовательские инструменты для Islam West Africa Collection: публикации, архивные документы, справочные записи и другие материалы о Западной Африке. Документация описывает stdio/HTTP, настольные пакеты и исследовательский skill.",

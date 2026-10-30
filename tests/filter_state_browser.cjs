@@ -30,6 +30,17 @@ const {chromium} = require('playwright');
       await page.waitForLoadState('networkidle');
       assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
       const details=await page.locator('#content').innerText();
+      // These are updates of existing cards: their latest history must be
+      // visible without replacing the original research or duplicating it.
+      if(repo==='scormave/gramps-web-mcp') {
+        assert.equal(details.split('Scormave Gramps Web MCP: create_records в Unreleased').length-1,1);
+        assert.match(details,/не проверяет дубликаты/);
+      }
+      if(repo==='fmadore/iwac-mcp-server') {
+        assert.equal(details.split('IWAC MCP Server 5.0.0: многословный keyword').length-1,1);
+        assert.match(details,/keyword_mode=literal/);
+        assert.match(details,/профиль не является контролем доступа|профиль не делает данные публичными/);
+      }
       assert.match(details,/Практическое применение/);
       assert.match(details,existingLegacy?/Независимое тестирование: Не подтверждено/:/Независимое тестирование: Не тестировалось/);
       assert.doesNotMatch(details,/Ошибка:|Сведения не установлены/);
@@ -38,6 +49,8 @@ const {chromium} = require('playwright');
       await page.locator('#q').fill(repo);
       // An existing project can have several independently reviewed events.
       assert.ok(await page.locator('article.item').count()>=1);
+      if(repo==='scormave/gramps-web-mcp')assert.match(await page.locator('article.item').first().innerText(),/create_records в Unreleased/);
+      if(repo==='fmadore/iwac-mcp-server')assert.match(await page.locator('article.item').first().innerText(),/5\.0\.0: многословный keyword/);
       await page.locator('article.item a[href^="project.html"]').first().click();
       await page.waitForLoadState('networkidle');
       assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
