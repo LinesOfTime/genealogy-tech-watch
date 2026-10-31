@@ -20,7 +20,8 @@ const {chromium} = require('playwright');
     await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
     const newProjects=['ai-riksarkivet/ra-mcp','borisovodov/doru','stanford-oval/credit','fmadore/iwac-mcp-server',
       'gramps-project/gramps-web-api','scormave/gramps-web-mcp',
-      'alexey-n-chernyshov/gramps-web-mcp-rs','magicianmarty/heritage-research-mcp'];
+      'alexey-n-chernyshov/gramps-web-mcp-rs','magicianmarty/heritage-research-mcp',
+      'geiserx/gramps-web-toolkit','itarunnn/jp-lit-mcp'];
     for(const repo of newProjects) {
       await page.locator('#search').fill(repo);
       assert.match(await page.locator('#shown').innerText(),/^Показано 1 из /);
@@ -30,6 +31,16 @@ const {chromium} = require('playwright');
       await page.waitForLoadState('networkidle');
       assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
       const details=await page.locator('#content').innerText();
+      if(repo==='geiserx/gramps-web-toolkit') {
+        assert.equal(details.split('Gramps Web Toolkit 0.2.10–0.2.12:').length-1,1);
+        assert.match(details,/no-op/);
+        assert.match(details,/Genae/);
+      }
+      if(repo==='itarunnn/jp-lit-mcp') {
+        assert.equal(details.split('Новая карточка jp-lit-mcp 0.19.0:').length-1,1);
+        assert.match(details,/1–4 OCR/);
+        assert.match(details,/не независимая|не является независимой/);
+      }
       // These are updates of existing cards: their latest history must be
       // visible without replacing the original research or duplicating it.
       if(repo==='scormave/gramps-web-mcp') {
@@ -51,6 +62,8 @@ const {chromium} = require('playwright');
       assert.ok(await page.locator('article.item').count()>=1);
       if(repo==='scormave/gramps-web-mcp')assert.match(await page.locator('article.item').first().innerText(),/create_records в Unreleased/);
       if(repo==='fmadore/iwac-mcp-server')assert.match(await page.locator('article.item').first().innerText(),/5\.0\.0: многословный keyword/);
+      if(repo==='geiserx/gramps-web-toolkit')assert.match(await page.locator('article.item').first().innerText(),/0\.2\.10–0\.2\.12/);
+      if(repo==='itarunnn/jp-lit-mcp')assert.match(await page.locator('article.item').first().innerText(),/0\.19\.0/);
       await page.locator('article.item a[href^="project.html"]').first().click();
       await page.waitForLoadState('networkidle');
       assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
@@ -121,6 +134,6 @@ const {chromium} = require('playwright');
       }
     }
     assert.deepEqual(runtimeErrors,[]);
-    console.log('Browser UX regression passed: eight watch projects (search, research, digest links, task matching); back/reload, URL filters, reset, mobile search, 12 navigation layouts; no console/page errors.');
+    console.log('Browser UX regression passed: ten watch projects (search, research, digest links, task matching); back/reload, URL filters, reset, mobile search, 12 navigation layouts; no console/page errors.');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1});
