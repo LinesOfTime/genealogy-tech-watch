@@ -1,0 +1,10 @@
+# Публикация GitHub Watch — 31 октября 2026
+
+## Изменения, которые требуется проверить и применить
+
+1. **GeiserX/gramps-web-toolkit** — https://github.com/GeiserX/gramps-web-toolkit. Существующая карточка; обновить историю на основании релизов 0.2.10–0.2.12, проверить адаптеры Genae и Gaceta de Madrid/BOE, безопасные изменения и идемпотентность. Источники: https://github.com/GeiserX/gramps-web-toolkit/blob/main/CHANGELOG.md и https://github.com/GeiserX/gramps-web-toolkit/commit/443fcd2266979e2a8b2ee6f1f328d3539aa2350b. Предлагаемый P1, но оценка требует evidence. GPL-3.0-or-later проверить.
+2. **itarunnn/jp-lit-mcp** — https://github.com/itarunnn/jp-lit-mcp. Кандидат на новую карточку: IIIF, позиционный OCR, структура книги, TEI/SQLite, история исправлений. Проверить версию 0.19.0, коммит https://github.com/itarunnn/jp-lit-mcp/commit/914f96dc249f9e08aaeb707864223c55c33d5eb8 и https://github.com/itarunnn/jp-lit-mcp/blob/main/docs/book-structure.md. Авторский тест 20 страниц не считать независимой оценкой; MIT проверить.
+
+## Codex: довести до фактической публикации
+
+Продолжай в ветке `watch-2026-10-31-toolkit-jplit` и **этом PR**, не создавай новую ветку или PR. Сверь каталог, исследования, дайджест и журнал находок на дубликаты и уже учтённые изменения. Проверь первоисточники, лицензию, зрелость, даты и конкретную дельту. Раздели подтверждённые факты, авторские заявления и рекомендации. Для Toolkit дополни историю существующей карточки, для jp-lit-mcp создай новую карточку только если его ещё нет под другим именем. Применяй изменения строго через `DISCOVERY_WORKFLOW.md` и `APPLY_WORKFLOW.md`: discovery evidence, review, `apply --approved-only --edition-date 2026-10-31 --dry-run`, затем write с **фактическим** plan_hash. Не выдумывай хеши утверждения. При необходимости отдельного человеческого утверждения покажи готовый пакет и остановись. Выполни validate, unit tests, UI smoke, diff check; проверь корневые JSON, docs JSON и HTML seeds. Не запускай затратные GitHub Actions при исчерпанной квоте. После проверки обнови этот PR и сообщи готовность к merge. Публикацию подтверждать только после merge и проверки GitHub Pages.
