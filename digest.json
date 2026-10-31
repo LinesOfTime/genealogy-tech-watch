@@ -1,5 +1,146 @@
 [
   {
+    "date": "2026-10-31",
+    "title": "Значимые изменения проектов",
+    "summary": "Утверждённые события; источники и дельты указаны в записях.",
+    "items": [
+      {
+        "repo": "geiserx/gramps-web-toolkit",
+        "priority": "Не оценён",
+        "change": "Gramps Web Toolkit 0.2.10–0.2.12: поиск кандидатов в Genae и Gaceta de Madrid/BOE, защищённое изменение заголовка источника через expect и различение no-op skip от повторного запуска списка. Это развитие существующего Toolkit, а не новая карточка.",
+        "link": "https://github.com/GeiserX/gramps-web-toolkit/releases/tag/v0.2.12",
+        "components": "Archive Adapter · Person Resolver · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+        "action": "На копии дерева проверить expect/update_source, no-op против rerun и журналы; отдельно испытать малую выборку Genae/BOE с соблюдением ограничений, не повышая weak-упоминания до доказанных совпадений.",
+        "event_date": "2026-10-30",
+        "significance_reason": "Добавляет направления поиска по испанским источникам и более точную обработку повторов/конфликтов в редакционных цепочках изменения дерева. No-op не следует путать с уже выполненным списком, а упоминание в газете — с доказанным тождеством человека.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате полностью применить обновление Toolkit и добавление jp-lit-mcp из пакета PR #17; проверка первоисточников — Codex",
+        "reviewed_at": "2026-10-31T08:16:55.065081+00:00",
+        "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-10-31",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://github.com/GeiserX/gramps-web-toolkit/releases/tag/v0.2.12"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/443fcd2266979e2a8b2ee6f1f328d3539aa2350b"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits?per_page=5"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/tags/v0.2.12"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases?per_page=4"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/CHANGELOG.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/docs/apply.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/pyproject.toml"
+          }
+        ],
+        "research_link": "project.html?repo=geiserx%2Fgramps-web-toolkit",
+        "previous_state": "Существующая карточка добавлена 23 октября по ревизии 337064d5: CLI-конвейер, dry-run, журнал и разделение ролей. Новые испанские адаптеры и изменения 0.2.10–0.2.12 ещё не опубликованы отдельным событием.",
+        "new_state": "Релизы 0.2.10 и 0.2.11 опубликованы 29 октября, 0.2.12 — 30 октября. На снимке f0f83bdc проверены CHANGELOG, README, docs/apply и GPL SPDX; коммит 443fcd22 показывает поле Result.noop, skip_noop, строку NOOP и noop:true в JSON. Genae описан как приходской индекс Мурсии и соседних территорий; BOE/Gaceta — поиск упоминаний 1836–1959 с ролью mention и weak. Последующая правка rawstore в 00fe5f2c не приписана 0.2.12."
+      },
+      {
+        "repo": "itarunnn/jp-lit-mcp",
+        "priority": "Не оценён",
+        "change": "Новая карточка jp-lit-mcp 0.19.0: MCP и CLI для японских гуманитарных источников, IIIF, позиционного OCR и структуры книги. Документация описывает возврат к координатам оригинала, экспорт TEI/SQLite и раздельную историю OCR, автоматических кандидатов, агентской и человеческой проверки.",
+        "link": "https://github.com/itarunnn/jp-lit-mcp/releases/tag/v0.19.0",
+        "components": "Research Workspace · Archive Adapter · OCR/HTR · Indexer · provenance/evidence · API/MCP/agent layer",
+        "action": "Начать с небольшого разрешённого публичного IIIF-примера, проверить координаты и происхождение исправлений; оценить структуру и экспорт на копии workspace, не использовать авторский пример как оценку точности.",
+        "event_date": "2026-10-31",
+        "significance_reason": "Кандидат для исследовательского кабинета, где важно связывать чтение и исправления с оригинальной страницей и координатами, сохраняя неоднозначность и происхождение. Поддержка японских материалов не доказывает пригодность для российских архивов или точность распознавания.",
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате полностью применить обновление Toolkit и добавление jp-lit-mcp из пакета PR #17; проверка первоисточников — Codex",
+        "reviewed_at": "2026-10-31T08:16:55.065081+00:00",
+        "discovery_id": "github:itarunnn/jp-lit-mcp:watch-2026-10-31",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://github.com/itarunnn/jp-lit-mcp/releases/tag/v0.19.0"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/itarunnn/jp-lit-mcp"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/itarunnn/jp-lit-mcp/commits/914f96dc249f9e08aaeb707864223c55c33d5eb8"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/itarunnn/jp-lit-mcp/commits?per_page=5"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/itarunnn/jp-lit-mcp/releases/tags/v0.19.0"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/itarunnn/jp-lit-mcp/releases?per_page=4"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/docs/book-structure.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/docs/install/runtime-requirements.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/docs/source-usage-conditions.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/docs/third-party-notices.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/package.json"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/packages/book-structure/book_structure/sqlite_export.py"
+          }
+        ],
+        "research_link": "project.html?repo=itarunnn%2Fjp-lit-mcp",
+        "previous_state": "Проект отсутствует в каталоге, исследованиях, дайджесте и журнале; совпадений по jp-lit/itarunnn и обоснованных алиасов не найдено. Дата события — включение в каталог, не дата создания проекта.",
+        "new_state": "Релиз v0.19.0 опубликован 30 октября; проверен commit 914f96dc249f9e08aaeb707864223c55c33d5eb8, package.json версии 0.19.0, MIT LICENSE, README, book-structure, runtime requirements, usage conditions, third-party notices и код sqlite_export.py. Описаны general/dictionary/illustrated, 1–4 OCR-кандидата за обычный вызов, accepted/rejected/needs_review с actor human/agent и инвалидирование проверок после исправления. SQLite-схема содержит исходные строки, координаты, связи, reviews/revisions; TEI сохраняет facs-связи по документации."
+      }
+    ]
+  },
+  {
     "date": "2026-10-30",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",
