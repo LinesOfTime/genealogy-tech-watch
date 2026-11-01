@@ -33,8 +33,15 @@ const {chromium} = require('playwright');
       const details=await page.locator('#content').innerText();
       if(repo==='geiserx/gramps-web-toolkit') {
         assert.equal(details.split('Gramps Web Toolkit 0.2.10–0.2.12:').length-1,1);
+        assert.equal(details.split('Gramps Web Toolkit 0.3.0:').length-1,1);
+        assert.match(details,/backup создаётся, но автоматически не восстанавливается/);
         assert.match(details,/no-op/);
         assert.match(details,/Genae/);
+      }
+      if(repo==='gramps-project/gramps-web-api') {
+        assert.equal(details.split('Gramps Web API 3.25.1 от 31 октября:').length-1,1);
+        assert.match(details,/не подтверждает обновление уже развёрнутого образа/);
+        assert.match(details,/Gramps Web API 3.25.0:/);
       }
       if(repo==='itarunnn/jp-lit-mcp') {
         assert.equal(details.split('Новая карточка jp-lit-mcp 0.19.0:').length-1,1);
@@ -62,7 +69,8 @@ const {chromium} = require('playwright');
       assert.ok(await page.locator('article.item').count()>=1);
       if(repo==='scormave/gramps-web-mcp')assert.match(await page.locator('article.item').first().innerText(),/create_records в Unreleased/);
       if(repo==='fmadore/iwac-mcp-server')assert.match(await page.locator('article.item').first().innerText(),/5\.0\.0: многословный keyword/);
-      if(repo==='geiserx/gramps-web-toolkit')assert.match(await page.locator('article.item').first().innerText(),/0\.2\.10–0\.2\.12/);
+      if(repo==='geiserx/gramps-web-toolkit')assert.match(await page.locator('article.item').first().innerText(),/0\.3\.0/);
+      if(repo==='gramps-project/gramps-web-api')assert.match(await page.locator('article.item').first().innerText(),/3\.25\.1/);
       if(repo==='itarunnn/jp-lit-mcp')assert.match(await page.locator('article.item').first().innerText(),/0\.19\.0/);
       await page.locator('article.item a[href^="project.html"]').first().click();
       await page.waitForLoadState('networkidle');
