@@ -22,5 +22,7 @@
   "github:scormave/gramps-web-mcp:watch-2026-10-30": "0084a3f55cfc2b7ddaa52336fe6cc5a2c41fbd634061085850546322e8241ca7",
   "github:fmadore/iwac-mcp-server:watch-2026-10-30": "27ada18481698fcef79c7c545e69bae4bc9e4eee9db9f654a933f91a4f76a46a",
   "github:geiserx/gramps-web-toolkit:watch-2026-10-31": "8a0e16a3999b3d9659ee118f33f56a03b46ca47fce52dcd17ef651935c70843f",
-  "github:itarunnn/jp-lit-mcp:watch-2026-10-31": "4edc8373c06f9766c094364318003b87406a2f3ece69fd0ef5b382e55a8bef84"
+  "github:itarunnn/jp-lit-mcp:watch-2026-10-31": "4edc8373c06f9766c094364318003b87406a2f3ece69fd0ef5b382e55a8bef84",
+  "github:geiserx/gramps-web-toolkit:watch-2026-11-01": "585b20721a365e7f54ab8f0ebb4f54cc3aff8cdf0f98d2da937df4822aca7e79",
+  "github:gramps-project/gramps-web-api:watch-2026-11-01": "a2f754fbdab7f4220cf36fdedf850d8181ddba9ae518886cceb0adb9be784fe8"
 }

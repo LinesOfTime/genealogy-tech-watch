@@ -3544,6 +3544,82 @@
         "reviewer": "Пользователь: явное поручение в чате полностью применить четыре проекта из пакета PR #15 и обновить этот PR; проверка первоисточников — Codex",
         "reviewed_at": "2026-10-29T17:58:23.094364+00:00",
         "reviewed_content_hash": "6da06ab43a0958557969cd3a0ec2a0ea3110c62629cfff108a0b872831906c0c"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:watch-2026-11-01",
+        "date": "2026-10-31",
+        "change": "Gramps Web API 3.25.1 от 31 октября: сериализация миграций пользовательской БД, сохранение системной инструкции и текущего вопроса при сжатии истории AI-чата, минимальная Authlib 1.9.0. Изменение требования зависимости не подтверждает обновление уже развёрнутого образа.",
+        "previous_state": "Уже опубликованы история API, RestrictedDb и релиз 3.25.0 с ролями, refresh-токенами, фоновым удалением и поиском. Их сохранённые сведения не заменяются новым событием.",
+        "new_state": "Релиз v3.25.1 опубликован 31 октября, tag commit 77263b895c1d476dae9a655587956ec798536776. В 2b80b26b прочитаны BEGIN IMMEDIATE/transactional DDL для SQLite и advisory transaction lock для PostgreSQL, timeout SQLite 300 с и тест конкурентных SQLite-миграций. В c66ec634 и agent.py старые tool results заменяются placeholder; если этого мало, удаляются старые законченные turns, системная инструкция переносится в оставшуюся историю, текущий turn сохраняется. В 13abafd1 manifest повышает Authlib>=1.9.0; автор отдельно требует свежую сборку образа.",
+        "significance_reason": "Снижает риск конфликтующего старта web/Celery при миграции и потери инструкций/вопроса в длинном агентском диалоге. Это новая эксплуатационная дельта backend, не новое доказательство корректности генеалогических ответов.",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://github.com/gramps-project/gramps-web-api/releases/tag/v3.25.1"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/13abafd133bfcb33858983687d89bd17db4d20d5"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/2b80b26b7c160afa734e948eed5e36dd892b5d31"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/c66ec63410da139c3bbc825af44e5781c518a3a2"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/v3.25.1"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/releases/tags/v3.25.1"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/alembic_users/env.py"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/gramps_webapi/api/llm/agent.py"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/pyproject.toml"
+          }
+        ],
+        "url": "https://github.com/gramps-project/gramps-web-api/releases/tag/v3.25.1",
+        "claims_vs_verified": {
+          "verified": "Проверены release notes 3.25.1, LICENSE и manifest на tag commit. Миграционный код берёт SQLite write lock или pg_advisory_xact_lock внутри транзакции; в патче есть конкурентные SQLite-тесты. Код истории сжимает старые результаты и при необходимости старые turns, сохраняя текущий и системные parts. Патч зависимости меняет нижнюю границу Authlib с 1.6.4 на 1.9.0.",
+          "author_claims": "Автор связывает миграционные блокировки с устранением startup race и повышение Authlib с указанным в коммите CVE. Мы подтверждаем изменение кода/минимальной версии, а не устранение уязвимости в конкретном развёртывании. Upstream-тесты и поведение реальных моделей независимо не воспроизводились.",
+          "independent_testing": "Прочитаны первоисточники и выбранные исходники. Внешние приложения, миграции, модели, реальные генеалогические данные и upstream-тесты не запускались."
+        },
+        "risks": [
+          "Перед обновлением нужна копия пользовательской БД и дерева; фактическую миграцию SQLite/PostgreSQL и настройки процессов следует проверить отдельно. Наличие блокировки не является испытанием произвольных вариантов запуска.",
+          "Сжатие истории теряет старые результаты tools и может удалять старые диалоги. Исходные документы и доказательства нужно хранить отдельно; сохранение prompt не гарантирует истинность ответа модели.",
+          "Текущий turn и последние результаты сохраняются даже при превышении бюджета; код не обещает жёсткий верхний предел для любого входа. Размер оценивается символами как эвристикой, не точным числом токенов.",
+          "Authlib>=1.9.0 в manifest требует свежего разрешения зависимостей/сборки и проверки установленной версии. Уже запущенный grampsweb-образ одним коммитом не обновляется; security-fix в реальном окружении здесь не верифицирован.",
+          "Релиз 3.25.1 не отменяет ранее описанные ограничения 3.25.0 и условий доступа к данным. Приоритет и применимость для России автоматически не меняются."
+        ],
+        "license": "AGPL-3.0-or-later по pyproject.toml и исходным заголовкам; LICENSE содержит AGPL v3",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/LICENSE",
+          "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/pyproject.toml"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате добавить изменения Toolkit 0.3.0 и Gramps Web API от 31 октября в обзор 1 ноября и подготовить один PR; первоисточники проверены Codex",
+        "reviewed_at": "2026-11-01T08:30:26.860658+00:00",
+        "reviewed_content_hash": "a2f754fbdab7f4220cf36fdedf850d8181ddba9ae518886cceb0adb9be784fe8"
       }
     ],
     "evaluation": {
@@ -10724,6 +10800,87 @@
         "reviewer": "Пользователь: явное поручение в чате полностью применить обновление Toolkit и добавление jp-lit-mcp из пакета PR #17; проверка первоисточников — Codex",
         "reviewed_at": "2026-10-31T08:16:55.065081+00:00",
         "reviewed_content_hash": "8a0e16a3999b3d9659ee118f33f56a03b46ca47fce52dcd17ef651935c70843f"
+      },
+      {
+        "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-11-01",
+        "date": "2026-10-31",
+        "change": "Gramps Web Toolkit 0.3.0: локальное чтение файлов смертей INSEE, подсказки архивов из пользовательского TSV и опции --private-new / --server-backup перед записью в дерево. Флаги приватности и серверной резервной копии выключены по умолчанию; backup создаётся, но автоматически не восстанавливается.",
+        "previous_state": "В каталоге уже есть Toolkit и события 23 октября и релизов 0.2.10–0.2.12: Genae, BOE/Gaceta, expect и no-op против rerun. Эти изменения сохраняются и не выдаются за новизну 0.3.0.",
+        "new_state": "Релиз v0.3.0 опубликован 31 октября, tag commit 77935a58b9273c70d87440267b574143aaa2f23f. Прочитаны release notes, CHANGELOG, docs/apply, INSEE reader и патчи private-new, server-backup, archives. INSEE работает с локальными файлами без сети и сохраняет malformed/encoding. --private-new выставляет private только создаваемым объектам, не меняя существующие и не делая теги приватными. Backup запрашивается после проверок и до Applier.run; код проверяет ответ/задачу и не повторяет POST. --archives даёт подсказки из TSV, не запрашивает архив и не доказывает наличие конкретной записи.",
+        "significance_reason": "Помогает подготовить исследовательские кандидаты из французских файлов и назначить следующие архивные шаги, а также явно выбрать приватность новых записей и резервную точку перед изменением дерева. Новые механизмы не заменяют исследовательскую проверку личности и проверку восстановления копии.",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://github.com/GeiserX/gramps-web-toolkit/releases/tag/v0.3.0"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/305df0b23304ed95aacc87737e233061a65efd1e"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/7b0ecac6a17451a49d8b1f1da098917dc360dd92"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/a8f5b83915354bbc0b6c7917c9f3dae284c5bc79"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/v0.3.0"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/tags/v0.3.0"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/CHANGELOG.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/docs/apply.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/pyproject.toml"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/read/gwt_insee.py"
+          }
+        ],
+        "url": "https://github.com/GeiserX/gramps-web-toolkit/releases/tag/v0.3.0",
+        "claims_vs_verified": {
+          "verified": "В INSEE reader прочитаны offline-режим, фиксированные колонки, UTF-8/CP850/Latin-1 и явные ошибки формата. Патч private-new задаёт private при create и сохраняет прежние объекты; теги обходят этот путь. Патч backup показывает однократный POST, polling задачи, проверку restorable/size и отказ до Applier.run. Патч archives и release notes описывают сопоставление иерархии места с пользовательским TSV; examples/archives.tsv явно вымышленный. Manifest подтверждает GPL-3.0-or-later.",
+          "author_claims": "Авторы описывают приватность создаваемых объектов для гостя, обязательную подтверждённую серверную копию при включённом флаге, неизменность старого поведения при выключенных флагах и результаты upstream-тестов. Сквозную безопасность, восстановимость backup, качество ранжирования и работу в реальном дереве мы не подтверждаем.",
+          "independent_testing": "Прочитаны первоисточники и выбранные исходники. Внешние приложения, миграции, модели, реальные генеалогические данные и upstream-тесты не запускались."
+        },
+        "risks": [
+          "--private-new и --server-backup нужно включать явно; прежние объекты сохраняют прежние флаги, теги не имеют private. Новый флаг не является полной проверкой приватности дерева.",
+          "--server-backup требует --apply, owner/admin и настроенный сервер. Копия на том же сервере не заменяет внешнюю резервную копию и испытание восстановления; Toolkit сам restore не выполняет.",
+          "При 202 код ждёт задачу до 10 минут. Отказ, timeout или недоступная задача блокируют запись списка, но сервер всё ещё может закончить backup и применить ротацию. Не повторять POST вслепую; проверить сервер.",
+          "INSEE principal означает роль кандидата в записи о смерти, а не доказанное тождество человеку дерева. Даты и malformed сохраняются; автоматический выбор кодировки остаётся эвристикой, требующей сверки с исходным файлом.",
+          "--archives использует данные пользователя. Вымышленный пример не является реальным справочником, совпадение места и года не доказывает сохранность, доступность или наличие документа.",
+          "Сначала копия дерева, dry-run, проверка журналов и выбранных опций. Применимость для России, доступность сервисов и прежний приоритет не переоцениваются автоматически."
+        ],
+        "license": "GPL-3.0-or-later по pyproject.toml; LICENSE содержит GPL v3; условия исходных данных проверяются отдельно",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/LICENSE",
+          "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/pyproject.toml"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь: явное поручение в чате добавить изменения Toolkit 0.3.0 и Gramps Web API от 31 октября в обзор 1 ноября и подготовить один PR; первоисточники проверены Codex",
+        "reviewed_at": "2026-11-01T08:30:26.860658+00:00",
+        "reviewed_content_hash": "585b20721a365e7f54ab8f0ebb4f54cc3aff8cdf0f98d2da937df4822aca7e79"
       }
     ],
     "russia_applicability": {
