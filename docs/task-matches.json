@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "faa29b939981ab722be58a2b1ebff62433aefb7efbfd81d09d109240fa295c0e",
+  "source_hash": "b93db58939f734ea779dbd574502e60f9aa772f945239e45e73f4a8494fcc615",
   "tasks": [
     {
       "id": "transcribe",
@@ -7879,6 +7879,255 @@
       "use_case": "Найти японскую книгу или статью, сопоставить OCR-строку, заголовок или подпись к рисунку с областью оригинала и записать исправление отдельно от исходного OCR. Кандидат для изучения модели доказательств и редакционной проверки; обычная структуризация ограничена 1–4 OCR-кандидатами за вызов. OCR и агентские соответствия требуют сверки человеком.",
       "license": "MIT для кода; Mirador и OCR-компоненты имеют отдельные условия, изображения, manifest и тексты — условия поставщиков",
       "limitations": "Ориентирован на японские источники; для России не оценён. Node.js 22+, для отдельных функций uv/Python 3.13.15 и отдельно подготовленные OCR-движки; Modal требует разрешения на передачу изображений и расходов. Права материалов отделены от MIT кода. Авторский опыт на 20 страницах не является независимой оценкой точности; остаются неопределённые связи и транскрипции. В закреплённых third-party notices указаны открытые advisory зависимостей. Независимого функционального испытания нет.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "transcribe",
+      "project": "k-woitas/eperiodica-explorer",
+      "url": "https://github.com/k-woitas/eperiodica-explorer",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "k-woitas/eperiodica-explorer",
+          "field": "description",
+          "excerpt": "Браузерный инструмент для получения метаданных, IIIF-изображений и цитирований из e-periodica; распознаёт страницы локально через Tesseract.js и собирает ZIP с SOURCE.txt.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "k-woitas/eperiodica-explorer",
+          "field": "use_case",
+          "excerpt": "Найти статью швейцарского журнала по PID, DOI или ссылке, выбрать страницы, получить изображения и цитирование; использовать OCR как черновик для поиска имён и ручной сверки со сканом.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "k-woitas/eperiodica-explorer",
+          "field": "components",
+          "excerpt": "Archive Adapter · OCR/HTR · provenance/evidence",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "k-woitas/eperiodica-explorer",
+          "field": "editorial_summary",
+          "excerpt": "Браузерный инструмент для получения метаданных, IIIF-изображений и цитирований из e-periodica; распознаёт страницы локально через Tesseract.js и собирает ZIP с SOURCE.txt.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "k-woitas/eperiodica-explorer",
+          "field": "editorial_use_case",
+          "excerpt": "Найти статью швейцарского журнала по PID, DOI или ссылке, выбрать страницы, получить изображения и цитирование; использовать OCR как черновик для поиска имён и ручной сверки со сканом.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Браузерный архивный адаптер"
+        }
+      },
+      "purpose": "Браузерный инструмент для получения метаданных, IIIF-изображений и цитирований из e-periodica; распознаёт страницы локально через Tesseract.js и собирает ZIP с SOURCE.txt.",
+      "use_case": "Найти статью швейцарского журнала по PID, DOI или ссылке, выбрать страницы, получить изображения и цитирование; использовать OCR как черновик для поиска имён и ручной сверки со сканом.",
+      "license": "MIT",
+      "limitations": "OAI-PMH и выгрузка коллекций требуют CORS-прокси; PDF доступен ссылкой. OCR может ошибаться, русский язык не заявлен. MIT покрывает код, права на материалы проверяются отдельно. Работа инструмента независимо не тестировалась.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "download",
+      "project": "k-woitas/eperiodica-explorer",
+      "url": "https://github.com/k-woitas/eperiodica-explorer",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "k-woitas/eperiodica-explorer",
+          "field": "description",
+          "excerpt": "Браузерный инструмент для получения метаданных, IIIF-изображений и цитирований из e-periodica; распознаёт страницы локально через Tesseract.js и собирает ZIP с SOURCE.txt.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "k-woitas/eperiodica-explorer",
+          "field": "editorial_summary",
+          "excerpt": "Браузерный инструмент для получения метаданных, IIIF-изображений и цитирований из e-periodica; распознаёт страницы локально через Tesseract.js и собирает ZIP с SOURCE.txt.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Браузерный архивный адаптер"
+        }
+      },
+      "purpose": "Браузерный инструмент для получения метаданных, IIIF-изображений и цитирований из e-periodica; распознаёт страницы локально через Tesseract.js и собирает ZIP с SOURCE.txt.",
+      "use_case": "Найти статью швейцарского журнала по PID, DOI или ссылке, выбрать страницы, получить изображения и цитирование; использовать OCR как черновик для поиска имён и ручной сверки со сканом.",
+      "license": "MIT",
+      "limitations": "OAI-PMH и выгрузка коллекций требуют CORS-прокси; PDF доступен ссылкой. OCR может ошибаться, русский язык не заявлен. MIT покрывает код, права на материалы проверяются отдельно. Работа инструмента независимо не тестировалась.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "k-woitas/eperiodica-explorer",
+      "url": "https://github.com/k-woitas/eperiodica-explorer",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "k-woitas/eperiodica-explorer",
+          "field": "components",
+          "excerpt": "Archive Adapter · OCR/HTR · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Браузерный архивный адаптер"
+        }
+      },
+      "purpose": "Браузерный инструмент для получения метаданных, IIIF-изображений и цитирований из e-periodica; распознаёт страницы локально через Tesseract.js и собирает ZIP с SOURCE.txt.",
+      "use_case": "Найти статью швейцарского журнала по PID, DOI или ссылке, выбрать страницы, получить изображения и цитирование; использовать OCR как черновик для поиска имён и ручной сверки со сканом.",
+      "license": "MIT",
+      "limitations": "OAI-PMH и выгрузка коллекций требуют CORS-прокси; PDF доступен ссылкой. OCR может ошибаться, русский язык не заявлен. MIT покрывает код, права на материалы проверяются отдельно. Работа инструмента независимо не тестировалась.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "research",
+      "project": "genealogy-mcp/gramps-mcp",
+      "url": "https://github.com/Genealogy-MCP/gramps-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp/gramps-mcp",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер для Gramps Web"
+        }
+      },
+      "purpose": "MCP-адаптер к Gramps Web: два инструмента search и execute раскрывают 22 операции поиска, чтения, изменения и анализа дерева, включая создание и просмотр серверных резервных копий.",
+      "use_case": "Подключить MCP-клиент к своему Gramps Web, найти человека и связанные источники, подготовить изменение записи; при подходящей версии API создать серверный backup и проверить его наличие до работы на копии дерева.",
+      "license": "AGPL-3.0",
+      "limitations": "GitHub — зеркало GitLab; синхронность origin отдельно не подтверждена. Входящий MCP требует защищённого развёртывания. Backup без медиа, восстановление через MCP не предоставлено; API 3.24+, BACKUP_DIR и ManageBackups обязательны для backup. Экономия токенов заявлена автором; независимых испытаний нет.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "gedcom",
+      "project": "genealogy-mcp/gramps-mcp",
+      "url": "https://github.com/Genealogy-MCP/gramps-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp/gramps-mcp",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер для Gramps Web"
+        }
+      },
+      "purpose": "MCP-адаптер к Gramps Web: два инструмента search и execute раскрывают 22 операции поиска, чтения, изменения и анализа дерева, включая создание и просмотр серверных резервных копий.",
+      "use_case": "Подключить MCP-клиент к своему Gramps Web, найти человека и связанные источники, подготовить изменение записи; при подходящей версии API создать серверный backup и проверить его наличие до работы на копии дерева.",
+      "license": "AGPL-3.0",
+      "limitations": "GitHub — зеркало GitLab; синхронность origin отдельно не подтверждена. Входящий MCP требует защищённого развёртывания. Backup без медиа, восстановление через MCP не предоставлено; API 3.24+, BACKUP_DIR и ManageBackups обязательны для backup. Экономия токенов заявлена автором; независимых испытаний нет.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."
+    },
+    {
+      "task": "agents",
+      "project": "genealogy-mcp/gramps-mcp",
+      "url": "https://github.com/Genealogy-MCP/gramps-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp/gramps-mcp",
+          "field": "description",
+          "excerpt": "MCP-адаптер к Gramps Web: два инструмента search и execute раскрывают 22 операции поиска, чтения, изменения и анализа дерева, включая создание и просмотр серверных резервных копий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp/gramps-mcp",
+          "field": "use_case",
+          "excerpt": "Подключить MCP-клиент к своему Gramps Web, найти человека и связанные источники, подготовить изменение записи; при подходящей версии API создать серверный backup и проверить его наличие до работы на копии дерева.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "genealogy-mcp/gramps-mcp",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer · GEDCOM/data model · Research Workspace",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "genealogy-mcp/gramps-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-адаптер к Gramps Web: два инструмента search и execute раскрывают 22 операции поиска, чтения, изменения и анализа дерева, включая создание и просмотр серверных резервных копий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "genealogy-mcp/gramps-mcp",
+          "field": "editorial_use_case",
+          "excerpt": "Подключить MCP-клиент к своему Gramps Web, найти человека и связанные источники, подготовить изменение записи; при подходящей версии API создать серверный backup и проверить его наличие до работы на копии дерева.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "MCP-сервер для Gramps Web"
+        }
+      },
+      "purpose": "MCP-адаптер к Gramps Web: два инструмента search и execute раскрывают 22 операции поиска, чтения, изменения и анализа дерева, включая создание и просмотр серверных резервных копий.",
+      "use_case": "Подключить MCP-клиент к своему Gramps Web, найти человека и связанные источники, подготовить изменение записи; при подходящей версии API создать серверный backup и проверить его наличие до работы на копии дерева.",
+      "license": "AGPL-3.0",
+      "limitations": "GitHub — зеркало GitLab; синхронность origin отдельно не подтверждена. Входящий MCP требует защищённого развёртывания. Backup без медиа, восстановление через MCP не предоставлено; API 3.24+, BACKUP_DIR и ManageBackups обязательны для backup. Экономия токенов заявлена автором; независимых испытаний нет.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "next_check": "Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах."

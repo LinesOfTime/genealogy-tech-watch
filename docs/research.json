@@ -601,6 +601,55 @@
         "reviewer": "Пользователь: утверждение в чате после конкретной находки",
         "reviewed_at": "2026-10-22T09:18:27Z",
         "reviewed_content_hash": "01d8bf9efaf1c5f32fd9ced34c91d8348f627786dea9f1bcf13565bbbc90957c"
+      },
+      {
+        "discovery_id": "github:ai-riksarkivet/htrflow-batch:watch-2026-11-04",
+        "date": "2026-11-03",
+        "change": "htrflow-batch: подключаемый Solr search добавляет страницу поиска и read-only /search/select за текущей сессией; поиск выключен без HTRFLOW_SOLR_URL и объявляется флагом search в /api/v1/version.",
+        "previous_state": "В истории есть пакетная обработка IIIF и патч порядка чтения октября; отдельного Solr search нет.",
+        "new_state": "В merge-коммите 7cf504c доступен маршрут к настроенному Solr core: только select, разрешённые параметры, JSON и ограничение rows до 50. app.py включает его только при наличии Solr URL; фронтенд не показывает поиск без соответствующего флага.",
+        "significance_reason": "Появляется реализованная точка поиска по подготовленному индексу транскрипций, отдельно от планов автоматического архивного индексирования.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/packages/web/src/htrflow_web/search.py"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/packages/web/src/htrflow_web/app.py"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/docs/features/search-solr/feature.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/LICENSE"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/packages/web/src/htrflow_web/search.py",
+        "claims_vs_verified": {
+          "verified": "Прочитаны search.py, условная регистрация в app.py, черновик feature.md, README и EUPL LICENSE на 7cf504c от 3 ноября. Реализация отделена от незавершённых планов.",
+          "author_claims": "Полный поиск по всем архивным томам, автоматическое пополнение индекса и качество поиска при HTR-ошибках — цели feature-документа, не подтверждённый результат.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "Без HTRFLOW_SOLR_URL и заполненного внешнего индекса поиска нет. Сессия приложения защищает маршрут, но изоляцию архивов и настройки Solr нужно проверять отдельно.",
+          "docs/features/search-solr/feature.md помечен Draft — not yet reviewed: автоматическая индексация ALTO, IIIF Content Search, fuzzy-поиск и масштабирование остаются планами, если не подтверждены отдельным кодом.",
+          "README прямо предупреждает Not for use yet: интерфейсы меняются, выпуски предварительные и не для production. Собственный Solr/HTR стенд не запускался; качество распознавания и поиска не измерялось."
+        ],
+        "license": "EUPL-1.2",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "6cdcfe42e515ba8b5e9fe0f89422a73b0c9833f137685b6d1eb1dc7db2c8a37f"
       }
     ],
     "editorial_service_notes": [
@@ -3620,6 +3669,47 @@
         "reviewer": "Пользователь: явное поручение в чате добавить изменения Toolkit 0.3.0 и Gramps Web API от 31 октября в обзор 1 ноября и подготовить один PR; первоисточники проверены Codex",
         "reviewed_at": "2026-11-01T08:30:26.860658+00:00",
         "reviewed_content_hash": "a2f754fbdab7f4220cf36fdedf850d8181ddba9ae518886cceb0adb9be784fe8"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:watch-2026-11-03",
+        "date": "2026-11-03",
+        "change": "Gramps Web API 4b3a266: из отдельных сообщений логирования AI-агента убраны prompt, текст ответа, поисковый запрос и значения фильтров; вместо них остаются причина завершения, размеры результатов и имена правил.",
+        "previous_state": "В опубликованной истории есть 3.25.1 от 31 октября; исправление логирования из коммита 3 ноября ещё не учтено.",
+        "new_state": "Diff в api/llm/__init__.py и tools.py сокращает содержание приватного чата в debug/error логах, заменяя часть вывода метаданными. Это изменение main после 3.25.1, не новый подтверждённый релиз.",
+        "significance_reason": "Сокращено раскрытие данных частного дерева и диалога через конкретные сообщения логов.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/4b3a266255fffc0b656e754a47359a6f9a8c3a48"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/4b3a266255fffc0b656e754a47359a6f9a8c3a48/pyproject.toml"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web-api/4b3a266255fffc0b656e754a47359a6f9a8c3a48/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/gramps-project/gramps-web-api/commits/4b3a266255fffc0b656e754a47359a6f9a8c3a48",
+        "claims_vs_verified": {
+          "verified": "Проверен точный diff 4b3a266255fffc0b656e754a47359a6f9a8c3a48, pyproject.toml с AGPL-3.0-or-later и LICENSE.",
+          "author_claims": "Назначение изменения — не записывать приватное содержимое; полный security-аудит или устранение всех возможных утечек не подтверждены.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "Это точечное изменение двух файлов, а не аудит всех путей логирования и не гарантия полного отсутствия утечек. UnexpectedModelBehavior и обработка исключений сохраняют отдельные сообщения.",
+          "Коммит main сам по себе не обновляет развёрнутый образ. Работа приватного дерева и настройки логирования независимо не проверялись."
+        ],
+        "license": "AGPL-3.0-or-later",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/gramps-project/gramps-web-api/4b3a266255fffc0b656e754a47359a6f9a8c3a48/pyproject.toml",
+          "https://raw.githubusercontent.com/gramps-project/gramps-web-api/4b3a266255fffc0b656e754a47359a6f9a8c3a48/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "1a40259b9da4ce54019d0260b5902cfdbaac2ab1dbeb9882204f255cde85e6c7"
       }
     ],
     "evaluation": {
@@ -7898,6 +7988,131 @@
         "reviewer": "Пользователь: явное поручение в чате полностью применить два обновления пакета PR #16 и обновить этот PR; проверка первоисточников — Codex",
         "reviewed_at": "2026-10-30T21:02:29.027623+00:00",
         "reviewed_content_hash": "0084a3f55cfc2b7ddaa52336fe6cc5a2c41fbd634061085850546322e8241ca7"
+      },
+      {
+        "discovery_id": "github:scormave/gramps-web-mcp:watch-2026-11-02",
+        "date": "2026-11-01",
+        "change": "Scormave Gramps Web MCP: merge_objects объединяет выбранный дубль с сохраняемой записью через транзакцию Gramps Web API; возвращаемый номер транзакции позволяет вызвать undo_change после подтверждения пользователем.",
+        "previous_state": "В опубликованной истории учтены undo_change 2.7.0 и create_records; отдельного события merge_objects нет.",
+        "new_state": "Коммит 65d1f19 добавляет merge_objects для девяти типов объектов. Ссылки переходят к сохраняемому объекту, дубль удаляется; объединение людей может также объединить семьи. Супруги и родитель с ребёнком отклоняются перед запросом подтверждения.",
+        "significance_reason": "Добавлен отдельный этап согласованного объединения записей с возможностью отмены; это не автоматическое решение об идентичности людей.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/commits/65d1f19e7d525f388b9852baeffe13008a9cfc8a"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/65d1f19e7d525f388b9852baeffe13008a9cfc8a/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/65d1f19e7d525f388b9852baeffe13008a9cfc8a/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/commits/65d1f19e7d525f388b9852baeffe13008a9cfc8a",
+        "claims_vs_verified": {
+          "verified": "Прочитаны diff коммита 65d1f19, добавленные upstream-тесты merge/undo, README и LICENSE на том же SHA.",
+          "author_claims": "Транзакционность и восстановление дубля описаны автором и upstream-тестами; их выполнение в нашем окружении не подтверждено.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "Нужен Gramps Web API 3.15 или новее. Объединение удаляет дубль и может затронуть семьи; предварительно проверить обе записи и резервную копию.",
+          "Подтверждение зависит от режима GRAMPS_CONFIRMATION и возможностей MCP-клиента; undo зависит от истории транзакций и состояния сервера. Сценарий merge/undo самостоятельно не запускался."
+        ],
+        "license": "AGPL-3.0-or-later",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/65d1f19e7d525f388b9852baeffe13008a9cfc8a/README.md",
+          "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/65d1f19e7d525f388b9852baeffe13008a9cfc8a/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "de0b70f388587b4617c7acd36be7c0adbeeb2a3362e7f505608c252aca2e4083"
+      },
+      {
+        "discovery_id": "github:scormave/gramps-web-mcp:watch-2026-11-03",
+        "date": "2026-11-02",
+        "change": "Scormave Gramps Web MCP: find_duplicates ищет возможные дубли людей, а create_person и create_records выполняют предварительную проверку; сильное совпадение отклоняет создание до записи.",
+        "previous_state": "create_records ранее публиковался без проверки дублей; merge_objects учтён отдельным событием обзора 2 ноября.",
+        "new_state": "Коммит 0d582346 добавляет read-only find_duplicates с пагинацией и пределом 20000 людей. Проверка при создании использует имена, годы и родителей; notDuplicateOf задаёт явные исключения. Поиск кандидатов отделён от подтверждаемого merge_objects.",
+        "significance_reason": "Снижается риск повторного ввода человека, но эвристическое сходство не доказывает тождество и требует просмотра источников.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/commits/0d5823465d5ce9add526b227e2f98eb8d70dc17c"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/0d5823465d5ce9add526b227e2f98eb8d70dc17c/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/0d5823465d5ce9add526b227e2f98eb8d70dc17c/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/commits/0d5823465d5ce9add526b227e2f98eb8d70dc17c",
+        "claims_vs_verified": {
+          "verified": "Сверены diff 0d582346, upstream-тесты, README и LICENSE на том же SHA; отдельно от коммита merge_objects и прежнего create_records.",
+          "author_claims": "Покрытие вариантов имён и предотвращение дублей заявлены автором; статистическая точность независимо не измерялась.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "Лимит сканирования — 20000 людей; полнота для больших деревьев не гарантирована. Независимые precision/recall отсутствуют.",
+          "Имена, приблизительные годы и родители дают кандидатов, а не подтверждение личности. Отказ создания нужно разобрать вручную; notDuplicateOf не должен обходить проверку источников.",
+          "Эвристики проверки дат и родства могут пропустить дубль или остановить корректную запись. Создание и объединение самостоятельно не тестировались."
+        ],
+        "license": "AGPL-3.0-or-later",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/0d5823465d5ce9add526b227e2f98eb8d70dc17c/README.md",
+          "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/0d5823465d5ce9add526b227e2f98eb8d70dc17c/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "7c7517bfbcbe182b78e0b2da8a02b9b7d8f59c3a8d1bae2775154fb2f6319a94"
+      },
+      {
+        "discovery_id": "github:scormave/gramps-web-mcp:watch-2026-11-04",
+        "date": "2026-11-03",
+        "change": "Scormave Gramps Web MCP 2.9.1: опубликованы MCPB и бинарные архивы, пропущенные в 2.9.0 из-за тестов перевода строк Windows; сервер тот же. Дополнительно отмечены audit-tree, межалфавитные варианты имён и строгая проверка полей Name.",
+        "previous_state": "merge_objects и find_duplicates уже учтены отдельными событиями; их повторное появление в release notes не считается новой возможностью.",
+        "new_state": "2.9.1 довыпускает пакеты сервера 2.9.0. Дельта ветки 2.9 включает read-only prompt audit-tree, сопоставление кириллицы/латиницы и форм фамилий, отказ неизвестных/неоднозначных полей имени, уточнение описания undo-транзакции.",
+        "significance_reason": "Разделены исправление доставки релиза и функциональные изменения, чтобы не посчитать merge/duplicate check дважды.",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/releases/432627106"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/6b2cb2207fbfce40e124d1f78b2600721b60dcd2/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/6b2cb2207fbfce40e124d1f78b2600721b60dcd2/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/Scormave/gramps-web-mcp/releases/432627106",
+        "claims_vs_verified": {
+          "verified": "Прочитаны v2.9.1 release notes, README и LICENSE на 6b2cb22; автор прямо указывает одинаковый сервер с 2.9.0 и причину перевыпуска.",
+          "author_claims": "Качество аудита и сопоставления имён, а также корректность поставленных бинарных сборок не проверены независимо.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "audit-tree и сходство имён дают поводы для проверки, а не категорические выводы о людях. Независимые precision/recall отсутствуют.",
+          "2.9.1 не новый вариант алгоритмов относительно 2.9.0; пакеты и build-provenance attestations сами не устанавливались и не проверялись.",
+          "create_person/create_records могут отказывать на возможном дубле; неизвестные поля имени теперь ошибка. Старым клиентам нужна проверка совместимости на копии."
+        ],
+        "license": "AGPL-3.0-or-later",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/6b2cb2207fbfce40e124d1f78b2600721b60dcd2/README.md",
+          "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/6b2cb2207fbfce40e124d1f78b2600721b60dcd2/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "09b0eefefabbd904f257d94cee6720201865129bd5d66d82f559ffc067749464"
       }
     ]
   },
@@ -10881,6 +11096,98 @@
         "reviewer": "Пользователь: явное поручение в чате добавить изменения Toolkit 0.3.0 и Gramps Web API от 31 октября в обзор 1 ноября и подготовить один PR; первоисточники проверены Codex",
         "reviewed_at": "2026-11-01T08:30:26.860658+00:00",
         "reviewed_content_hash": "585b20721a365e7f54ab8f0ebb4f54cc3aff8cdf0f98d2da937df4822aca7e79"
+      },
+      {
+        "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-11-03",
+        "date": "2026-11-03",
+        "change": "Gramps Web Toolkit 1.0.0: gwt-run проводит список изменений через backup, dry-run, apply, verify и контроль качества; добавлены импорт GEDCOM, IIIF Image API без манифеста, геокодирование и встроенные архивные маршруты.",
+        "previous_state": "Опубликована история до 0.3.0; её INSEE, private-new и server-backup сохраняются без повторного события.",
+        "new_state": "Версия 1.0.0 добавляет возобновляемый gwt-run с журналом шагов, импорт GEDCOM 5.5.1/7 в список изменений с удержанием неоднозначных людей, gwt-geocode и встроенный справочник архивов. Удаление отсутствующей связи теперь конфликт, кроме явного expect: absent; календари сравниваются раздельно.",
+        "significance_reason": "Воспроизводимый цикл изменения дерева и удержание неоднозначного импорта важнее простого роста числа CLI-команд.",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/432370054"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/7d89023ac04e9466cc4fd624066ef75a887354c0/CHANGELOG.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/7d89023ac04e9466cc4fd624066ef75a887354c0/pyproject.toml"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/7d89023ac04e9466cc4fd624066ef75a887354c0/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/432370054",
+        "claims_vs_verified": {
+          "verified": "Прочитаны release v1.0.0, CHANGELOG на 7d89023, manifest с GPL-3.0-or-later и LICENSE; дата выпуска 3 ноября отличается от прежнего задания обзора 1 ноября.",
+          "author_claims": "Автор описывает безопасное возобновление и скорость импорта; независимых измерений надёжности, полноты и производительности нет.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "Backup и verify не доказывают правильность генеалогического вывода и не означают автоматического восстановления дерева. Импорт и изменения пробовать на копии.",
+          "Старые списки изменений могут останавливаться на новых конфликтах; expect: absent применять только после проверки. Геокодирование и архивные маршруты — кандидаты для ручной проверки, не установленное место события.",
+          "Доступность всех архивов, качество GEDCOM-конвертации, IIIF и геокодирования самостоятельно не проверены."
+        ],
+        "license": "GPL-3.0-or-later",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/7d89023ac04e9466cc4fd624066ef75a887354c0/pyproject.toml",
+          "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/7d89023ac04e9466cc4fd624066ef75a887354c0/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "f6824eabae2fa243c80b0e7e7d45012a914b08602778f7f8efe8a2b0875c4fb6"
+      },
+      {
+        "discovery_id": "github:geiserx/gramps-web-toolkit:watch-2026-11-04",
+        "date": "2026-11-03",
+        "change": "Gramps Web Toolkit 1.1.0: add_person с уже занятым ключом и отличающимися данными теперь конфликтует; добавлены Agent Skills-инструкции, исправлен ложный успех apply с save-snapshot и расширен перевод дайджеста.",
+        "previous_state": "Отдельно учтён 1.0.0 с gwt-run, GEDCOM и календарями; изменения 1.1.0 ещё не отражены.",
+        "new_state": "В 1.1.0 конфликт add_person показывает отличающиеся имя, фамилию, пол или ID вместо skip; подтверждённый повтор своего списка допускается. Сочетание --apply и --save-snapshot завершается ошибкой 2. ES/FR переводят служебный текст отчёта, сохраняя текст источников.",
+        "significance_reason": "Устраняется риск привязать последующие доказательства к чужому человеку и ошибочно считать выполненной запись, которая только сохранила снимок.",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/433108652"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/CHANGELOG.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/pyproject.toml"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/433108652",
+        "claims_vs_verified": {
+          "verified": "Сверены release v1.1.0 от 3 ноября и CHANGELOG/manifest/LICENSE на 081b7e1; дельта отделена от 1.0.0.",
+          "author_claims": "Предотвращение неверной привязки доказательств — заявленная цель изменения; качество реального дерева не оценивалось.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "Поведение старых списков add_person меняется: конфликт нужно разрешать по данным дерева и источникам, не автоматической заменой ключа.",
+          "Agent Skill — опубликованная инструкция проекта, не независимая сертификация безопасности. Коммиты после тега 1.1.0 не приписываются этому выпуску.",
+          "Наличие исправлений проверено по release/CHANGELOG; реальное изменение дерева и восстановление не испытывались."
+        ],
+        "license": "GPL-3.0-or-later",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/pyproject.toml",
+          "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "f10abd01958a7f3cbfa91e7ba494b556013863bf7b6837e51fc86c3ef5f2c71f"
       }
     ],
     "russia_applicability": {
@@ -12208,6 +12515,47 @@
         "reviewer": "Пользователь: явное поручение в чате полностью применить два обновления пакета PR #16 и обновить этот PR; проверка первоисточников — Codex",
         "reviewed_at": "2026-10-30T21:02:29.027623+00:00",
         "reviewed_content_hash": "27ada18481698fcef79c7c545e69bae4bc9e4eee9db9f654a933f91a4f76a46a"
+      },
+      {
+        "discovery_id": "github:fmadore/iwac-mcp-server:watch-2026-11-02",
+        "date": "2026-11-02",
+        "change": "IWAC MCP Server 6.0.0: Claude Haiku 5.5 становится моделью оценки по умолчанию; панель включает шесть моделей, разногласия и происхождение консенсуса отражаются через названные модели и instrument_ids.",
+        "previous_state": "В каталоге учтён 5.0.0 с поиском всех слов и компактным provenance; смена модели по умолчанию ещё не отражена.",
+        "new_state": "Релиз 6.0.0 меняет смысл inline polarity/centrality/subjectivity, sentiment-фильтров и сравнений при неизменных именах инструментов. model=all использует шесть моделей; consensus_g2_* и instrument_ids различают состав панели и правило оценки.",
+        "significance_reason": "Старые и новые модельные показатели нельзя молча сравнивать; сведения о разногласиях и версии измерительного инструмента нужны для воспроизводимого анализа.",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/fmadore/iwac-mcp-server/releases/431142241"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/4048b031fa3204531d8ab8c2e3e3bace50442f27/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/4048b031fa3204531d8ab8c2e3e3bace50442f27/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/fmadore/iwac-mcp-server/releases/431142241",
+        "claims_vs_verified": {
+          "verified": "Сверены GitHub release v6.0.0, README и MIT LICENSE на SHA 4048b031; подтверждены опубликованные интерфейсы и явно указанные оговорки.",
+          "author_claims": "Покрытие статей, κ, проценты единогласия и преимущество Haiku сообщаются авторами; это не независимый benchmark.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "Оценки моделей — интерпретации текста, а не установленные факты. Старые значения по умолчанию относятся к Luna; для сравнения нужно явно выбрать модель либо пересчитать.",
+          "По данным автора 4366 статей оценены только Haiku: одного голоса недостаточно для консенсуса. Haiku введена без пилота самосогласованности; исторические снимки до 27 октября не содержат consensus_g2_*.",
+          "Численность корпуса и показатели согласия приведены авторами для их снимка; независимая проверка датасета и метрик не проводилась."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/4048b031fa3204531d8ab8c2e3e3bace50442f27/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "1ec26069ab6ba4636d921a3b905f1fc28ae689ede76069d1392da5552bb796d6"
       }
     ],
     "editorial_summary": "IWAC MCP Server предоставляет поиск и исследовательские инструменты для Islam West Africa Collection: публикации, архивные документы, справочные записи и другие материалы о Западной Африке. Документация описывает stdio/HTTP, настольные пакеты и исследовательский skill.",
@@ -12695,6 +13043,238 @@
         {
           "type": "README",
           "url": "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/packages/book-structure/book_structure/sqlite_export.py"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "k-woitas/eperiodica-explorer": {
+    "watch_events": [
+      {
+        "discovery_id": "github:k-woitas/eperiodica-explorer:watch-2026-11-02",
+        "date": "2026-10-25",
+        "change": "Новая карточка eperiodica-explorer: браузерный адаптер e-periodica для метаданных, IIIF-изображений, цитирований и локального OCR швейцарских журналов; пакеты ZIP включают SOURCE.txt с происхождением файлов.",
+        "previous_state": "Отсутствует в каталоге; это новый кандидат обзора 2 ноября, проверенный 4 ноября. Единственный исходный коммит датирован 25 октября.",
+        "new_state": "Отдельная карточка браузерного инструмента, без приписывания MCP. README различает OAI-PMH через пользовательский CORS-прокси, DataCite/IIIF без прокси и OCR Tesseract.js в браузере.",
+        "significance_reason": "Позволяет исследователю получить материал и цитирование без программирования, сохранив ссылки на исходные файлы.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/k-woitas/eperiodica-explorer"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/PROXY.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/k-woitas/eperiodica-explorer",
+        "claims_vs_verified": {
+          "verified": "GitHub API подтвердил существование публичного репозитория, отсутствие архивирования и GitHub-fork-флага. Прочитаны закреплённые README, PROXY.md и MIT LICENSE; точного URL в каталоге, исследованиях и журнале не найдено.",
+          "author_claims": "Удобство, полнота выгрузок и качество OCR описаны автором. README называет проект заменой e-periodica-access; это не перенаправление существующей карточки и не основание менять чужие URL.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "OAI-PMH и сбор коллекции требуют собственного CORS-прокси; без него доступны ограниченные метаданные DataCite/IIIF. PDF предоставляется ссылкой, не скачивается инструментом.",
+          "OCR создаётся заново в браузере и может ошибаться; русский язык в перечисленном наборе OCR отсутствует. Результат не является проверенной транскрипцией.",
+          "MIT относится к коду. Права на документы определяются записью и условиями e-periodica; README отдельно предупреждает о разрешениях на публикацию изображений и систематическое хранение. Условия платформы независимо не пересматривались.",
+          "Ранний проект с одним коммитом и без GitHub Releases; фактическая загрузка материалов и OCR не тестировались."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "5c638a13271cb0265dafeddc2f24cb2061303b4dca2da5c64dc6d6c304ea9495"
+      }
+    ],
+    "editorial_summary": "Браузерный инструмент для получения метаданных, IIIF-изображений и цитирований из e-periodica; распознаёт страницы локально через Tesseract.js и собирает ZIP с SOURCE.txt.",
+    "editorial_use_case": "Найти статью швейцарского журнала по PID, DOI или ссылке, выбрать страницы, получить изображения и цитирование; использовать OCR как черновик для поиска имён и ручной сверки со сканом.",
+    "editorial_limitations": "OAI-PMH и выгрузка коллекций требуют CORS-прокси; PDF доступен ссылкой. OCR может ошибаться, русский язык не заявлен. MIT покрывает код, права на материалы проверяются отдельно. Работа инструмента независимо не тестировалась.",
+    "project_type": "Браузерный архивный адаптер",
+    "license": "MIT",
+    "license_evidence": "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/LICENSE",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-04",
+    "source_evidence": "https://api.github.com/repos/k-woitas/eperiodica-explorer",
+    "maturity": "Ранний браузерный проект; один коммит 8d14e0f, опубликованных GitHub Releases нет.",
+    "profile_provenance": {
+      "discovery_id": "github:k-woitas/eperiodica-explorer:watch-2026-11-02",
+      "reviewed_content_hash": "5c638a13271cb0265dafeddc2f24cb2061303b4dca2da5c64dc6d6c304ea9495",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/k-woitas/eperiodica-explorer"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/PROXY.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/LICENSE"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "genealogy-mcp/gramps-mcp": {
+    "watch_events": [
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:watch-2026-11-03",
+        "date": "2026-11-03",
+        "change": "Новая карточка Genealogy-MCP/gramps-mcp: зеркало разработки GitLab, два MCP-инструмента search/execute с 22 операциями Gramps Web; create_backup и list_backups требуют API 3.24+, BACKUP_DIR и права ManageBackups.",
+        "previous_state": "Точного репозитория в каталоге и журнале нет. Проекты noahkiss/genealogy-mcp, igormel81/genealogy-mcp и Scormave — другие URL; происхождение от caboutme указано авторами, но не является алиасом.",
+        "new_state": "Отдельная карточка MCP-адаптера по README и истории 3.13–3.15 в зеркале. Два метаинструмента раскрывают операции поиска, чтения, записи, удаления и анализа; backup хранится на сервере без медиафайлов, восстановление через MCP не предоставлено.",
+        "significance_reason": "Позволяет сравнивать архитектуры MCP-доступа к дереву и отдельно оценить серверное резервирование перед изменениями.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/Genealogy-MCP/gramps-mcp"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/CHANGELOG.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/src/gramps_mcp/operations.py"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/LICENSE"
+          }
+        ],
+        "url": "https://api.github.com/repos/Genealogy-MCP/gramps-mcp",
+        "claims_vs_verified": {
+          "verified": "GitHub API подтвердил публичный репозиторий; README явно называет GitLab origin и происхождение от caboutme. На SHA ac633d5 сверены 22 операции, README, история версий и AGPL LICENSE. Страница проекта GitLab также открывается.",
+          "author_claims": "Экономия токенов, полнота функций и характеристики безопасности — заявления авторов; наличие интерфейсов проверено чтением, работоспособность интеграции не испытывалась.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "GitHub — read-only зеркало GitLab. Страница GitLab существует; raw CHANGELOG GitLab получить не удалось, синхронность зеркала с origin независимо не подтверждена. GitHub Releases содержит старые v2.x, не объявлять 3.15 GitHub-релизом.",
+          "Уменьшение контекста примерно с 19K до 1K токенов — оценка автора, не наш benchmark.",
+          "Сервер не имеет собственной аутентификации входящего MCP: loopback, ограничения Host/Origin и защищающий прокси требуют настройки. Изменение данных и удаление пробовать на копии дерева.",
+          "Backup требует API 3.24+, BACKUP_DIR и Owner/ManageBackups; архив без медиа, restore/download/delete backup через эти операции не доступны. Проверка восстановления не проводилась."
+        ],
+        "license": "AGPL-3.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/LICENSE",
+          "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/README.md"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "ea8299ae7c957259d9495b9860cde209fe8e970566defb00bbeba3165eca1b9a"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:watch-2026-11-04",
+        "date": "2026-11-04",
+        "change": "Genealogy-MCP/gramps-mcp 3.15.20–3.15.23 по CHANGELOG: проверка исхода создания после timeout/5xx, поиск загруженного media по checksum, обработка 409 по status_code и установка birth/death indexes нового человека.",
+        "previous_state": "Новая карточка обзора 3 ноября описывает архитектуру search/execute и backup; исправления 3.15.20–3.15.23 ещё не выделены.",
+        "new_state": "Создание с неизвестным исходом сверяет сохранённую запись по handle; media сверяет новые записи с MD5 после ошибки загрузки и сообщает handle при сбое metadata PUT. Replace-media отличает 409 по статусу. Создание человека с Birth/Death event повторно сохраняет индексы ссылок.",
+        "significance_reason": "Снижается риск повторной записи после сетевой ошибки и потери отображаемых дат рождения/смерти; неизвестный исход всё равно требует проверки перед повтором.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/CHANGELOG.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/src/gramps_mcp/tools/upsert_table.py"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/LICENSE"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/CHANGELOG.md",
+        "claims_vs_verified": {
+          "verified": "Сверены CHANGELOG на ca6de056, реализация generic upsert и AGPL LICENSE. История коммитов зеркала 4 ноября подтверждает отдельные исправления timeout, media 5xx/409 и birth/death indexes.",
+          "author_claims": "Поведение при сбоях описано авторами и кодом; полнота защиты от дублей и надёжность на реальном сервере независимо не испытаны.",
+          "independent_testing": "Не проводилось. Проверены первоисточники и код/документация; локальные тесты каталога не являются испытаниями самого проекта."
+        },
+        "risks": [
+          "CHANGELOG датирует 3.15.20–3.15.23 третьим ноября; соответствующие коммиты появились в GitHub-зеркале 4 ноября. Это версии из CHANGELOG, не подтверждённые GitHub Releases.",
+          "После timeout сервер ещё может завершать запись: отсутствие найденного объекта не всегда разрешает немедленный повтор. MD5 используется для поиска файла, не как доказательство происхождения или подлинности.",
+          "Повторное сохранение Birth/Death добавляет запросы; при его ошибке нужно обновлять указанный handle, а не создавать нового человека. Реальные сетевые отказы и интеграция не воспроизводились."
+        ],
+        "license": "AGPL-3.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
+        "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
+        "reviewed_content_hash": "c74114d30e6491ec8af9f150bb6732d7d7e72ec96ce9fca1972eeb566ae71d6e"
+      }
+    ],
+    "editorial_summary": "MCP-адаптер к Gramps Web: два инструмента search и execute раскрывают 22 операции поиска, чтения, изменения и анализа дерева, включая создание и просмотр серверных резервных копий.",
+    "editorial_use_case": "Подключить MCP-клиент к своему Gramps Web, найти человека и связанные источники, подготовить изменение записи; при подходящей версии API создать серверный backup и проверить его наличие до работы на копии дерева.",
+    "editorial_limitations": "GitHub — зеркало GitLab; синхронность origin отдельно не подтверждена. Входящий MCP требует защищённого развёртывания. Backup без медиа, восстановление через MCP не предоставлено; API 3.24+, BACKUP_DIR и ManageBackups обязательны для backup. Экономия токенов заявлена автором; независимых испытаний нет.",
+    "project_type": "MCP-сервер для Gramps Web",
+    "license": "AGPL-3.0",
+    "license_evidence": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/LICENSE; https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/README.md",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-04",
+    "source_evidence": "https://api.github.com/repos/Genealogy-MCP/gramps-mcp",
+    "maturity": "Активно развиваемое зеркало GitLab; версии 3.13–3.15 в CHANGELOG, не новые GitHub Releases.",
+    "profile_provenance": {
+      "discovery_id": "github:genealogy-mcp/gramps-mcp:watch-2026-11-03",
+      "reviewed_content_hash": "ea8299ae7c957259d9495b9860cde209fe8e970566defb00bbeba3165eca1b9a",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/Genealogy-MCP/gramps-mcp"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/CHANGELOG.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/src/gramps_mcp/operations.py"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/LICENSE"
         }
       ],
       "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"

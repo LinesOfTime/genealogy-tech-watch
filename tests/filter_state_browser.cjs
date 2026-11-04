@@ -21,7 +21,8 @@ const {chromium} = require('playwright');
     const newProjects=['ai-riksarkivet/ra-mcp','borisovodov/doru','stanford-oval/credit','fmadore/iwac-mcp-server',
       'gramps-project/gramps-web-api','scormave/gramps-web-mcp',
       'alexey-n-chernyshov/gramps-web-mcp-rs','magicianmarty/heritage-research-mcp',
-      'geiserx/gramps-web-toolkit','itarunnn/jp-lit-mcp'];
+      'geiserx/gramps-web-toolkit','itarunnn/jp-lit-mcp',
+      'k-woitas/eperiodica-explorer','genealogy-mcp/gramps-mcp'];
     for(const repo of newProjects) {
       await page.locator('#search').fill(repo);
       assert.match(await page.locator('#shown').innerText(),/^Показано 1 из /);
@@ -34,6 +35,9 @@ const {chromium} = require('playwright');
       if(repo==='geiserx/gramps-web-toolkit') {
         assert.equal(details.split('Gramps Web Toolkit 0.2.10–0.2.12:').length-1,1);
         assert.equal(details.split('Gramps Web Toolkit 0.3.0:').length-1,1);
+        assert.equal(details.split('Gramps Web Toolkit 1.0.0:').length-1,1);
+        assert.equal(details.split('Gramps Web Toolkit 1.1.0:').length-1,1);
+        assert.match(details,/ложный успех apply/);
         assert.match(details,/backup создаётся, но автоматически не восстанавливается/);
         assert.match(details,/no-op/);
         assert.match(details,/Genae/);
@@ -42,6 +46,8 @@ const {chromium} = require('playwright');
         assert.equal(details.split('Gramps Web API 3.25.1 от 31 октября:').length-1,1);
         assert.match(details,/не подтверждает обновление уже развёрнутого образа/);
         assert.match(details,/Gramps Web API 3.25.0:/);
+        assert.equal(details.split('Gramps Web API 4b3a266:').length-1,1);
+        assert.match(details,/не гарантия полного отсутствия утечек/);
       }
       if(repo==='itarunnn/jp-lit-mcp') {
         assert.equal(details.split('Новая карточка jp-lit-mcp 0.19.0:').length-1,1);
@@ -53,11 +59,28 @@ const {chromium} = require('playwright');
       if(repo==='scormave/gramps-web-mcp') {
         assert.equal(details.split('Scormave Gramps Web MCP: create_records в Unreleased').length-1,1);
         assert.match(details,/не проверяет дубликаты/);
+        assert.equal(details.split('Scormave Gramps Web MCP: merge_objects объединяет').length-1,1);
+        assert.equal(details.split('Scormave Gramps Web MCP: find_duplicates ищет').length-1,1);
+        assert.equal(details.split('Scormave Gramps Web MCP 2.9.1:').length-1,1);
+        assert.match(details,/сервер тот же/);
       }
       if(repo==='fmadore/iwac-mcp-server') {
         assert.equal(details.split('IWAC MCP Server 5.0.0: многословный keyword').length-1,1);
         assert.match(details,/keyword_mode=literal/);
         assert.match(details,/профиль не является контролем доступа|профиль не делает данные публичными/);
+        assert.equal(details.split('IWAC MCP Server 6.0.0:').length-1,1);
+        assert.match(details,/4366 статей оценены только Haiku/);
+      }
+      if(repo==='k-woitas/eperiodica-explorer') {
+        assert.equal(details.split('Новая карточка eperiodica-explorer:').length-1,1);
+        assert.match(details,/CORS-прокси/);
+        assert.match(details,/SOURCE.txt/);
+      }
+      if(repo==='genealogy-mcp/gramps-mcp') {
+        assert.equal(details.split('Новая карточка Genealogy-MCP\/gramps-mcp:').length-1,1);
+        assert.equal(details.split('Genealogy-MCP\/gramps-mcp 3.15.20–3.15.23 по CHANGELOG:').length-1,1);
+        assert.match(details,/GitLab/);
+        assert.match(details,/не подтверждённые GitHub Releases/);
       }
       assert.match(details,/Практическое применение/);
       assert.match(details,existingLegacy?/Независимое тестирование: Не подтверждено/:/Независимое тестирование: Не тестировалось/);
@@ -67,20 +90,27 @@ const {chromium} = require('playwright');
       await page.locator('#q').fill(repo);
       // An existing project can have several independently reviewed events.
       assert.ok(await page.locator('article.item').count()>=1);
-      if(repo==='scormave/gramps-web-mcp')assert.match(await page.locator('article.item').first().innerText(),/create_records в Unreleased/);
-      if(repo==='fmadore/iwac-mcp-server')assert.match(await page.locator('article.item').first().innerText(),/5\.0\.0: многословный keyword/);
-      if(repo==='geiserx/gramps-web-toolkit')assert.match(await page.locator('article.item').first().innerText(),/0\.3\.0/);
-      if(repo==='gramps-project/gramps-web-api')assert.match(await page.locator('article.item').first().innerText(),/3\.25\.1/);
+      if(repo==='scormave/gramps-web-mcp')assert.match(await page.locator('article.item').first().innerText(),/2\.9\.1/);
+      if(repo==='fmadore/iwac-mcp-server')assert.match(await page.locator('article.item').first().innerText(),/6\.0\.0/);
+      if(repo==='geiserx/gramps-web-toolkit')assert.match(await page.locator('article.item').first().innerText(),/1\.1\.0/);
+      if(repo==='gramps-project/gramps-web-api')assert.match(await page.locator('article.item').first().innerText(),/4b3a266/);
+      if(repo==='genealogy-mcp/gramps-mcp')assert.match(await page.locator('article.item').first().innerText(),/3\.15\.20–3\.15\.23/);
       if(repo==='itarunnn/jp-lit-mcp')assert.match(await page.locator('article.item').first().innerText(),/0\.19\.0/);
       await page.locator('article.item a[href^="project.html"]').first().click();
       await page.waitForLoadState('networkidle');
       assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
       await page.goto('https://ux.local/tasks.html',{waitUntil:'networkidle'});
-      await page.locator('#task').selectOption(repo==='stanford-oval/credit'?'research':repo==='borisovodov/doru'?'gedcom':'agents');
+      await page.locator('#task').selectOption(repo==='stanford-oval/credit'?'research':repo==='borisovodov/doru'?'gedcom':repo==='k-woitas/eperiodica-explorer'?'transcribe':'agents');
       await page.locator('#query').fill(repo);
       assert.ok(await page.locator('#results article').count()>0);
       await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
     }
+    await page.goto('https://ux.local/project.html?repo=ai-riksarkivet%2Fhtrflow-batch',{waitUntil:'networkidle'});
+    const htrDetails=await page.locator('#content').innerText();
+    assert.equal(htrDetails.split('htrflow-batch: подключаемый Solr search').length-1,1);
+    assert.match(htrDetails,/HTRFLOW_SOLR_URL/);
+    assert.match(htrDetails,/Not for use yet/);
+    await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
     assert.ok(await page.locator('#search').evaluate(n=>n.getBoundingClientRect().top < innerHeight));
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth <= innerWidth));
     await page.locator('#search').fill('gramps');
@@ -142,6 +172,6 @@ const {chromium} = require('playwright');
       }
     }
     assert.deepEqual(runtimeErrors,[]);
-    console.log('Browser UX regression passed: ten watch projects (search, research, digest links, task matching); back/reload, URL filters, reset, mobile search, 12 navigation layouts; no console/page errors.');
+    console.log('Browser UX regression passed: twelve watch projects (search, research, digest links, task matching), htrflow Solr history; back/reload, URL filters, reset, mobile search, 12 navigation layouts; no console/page errors.');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1});

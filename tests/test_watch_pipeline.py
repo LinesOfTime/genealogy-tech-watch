@@ -69,6 +69,28 @@ class ValidationTests(unittest.TestCase):
         self.assertNotEqual(pipeline.canonical_url('https://github.com/a/repo'),
                             pipeline.canonical_url('https://github.com/b/repo'))
 
+    def test_specific_raw_and_api_sources_require_immutable_commit(self):
+        sha='a'*40
+        self.assertTrue(pipeline.specific_source(f'https://raw.githubusercontent.com/a/repo/{sha}/README.md'))
+        self.assertTrue(pipeline.specific_source(f'https://api.github.com/repos/a/repo/commits/{sha}'))
+        for url in ['https://raw.githubusercontent.com/a/repo/main/README.md',
+                    'https://api.github.com/repos/a/repo/commits',
+                    'https://api.github.com/repos/a/repo',
+                    'https://api.github.com/repos/a/repo/commits/short',
+                    f'https://other.example/a/repo/{sha}/README.md',None]:
+            self.assertFalse(pipeline.specific_source(url),url)
+
+    def test_digest_specific_evidence_can_accompany_repository_link(self):
+        item=dict(repo='Owner/Repo',priority='P1',change='Change',
+                  link='https://api.github.com/repos/Owner/Repo',components='Indexer',action='Review',
+                  source_urls=[dict(type='README',url='https://raw.githubusercontent.com/Owner/Repo/'+'a'*40+'/README.md')])
+        self.digest=[dict(date='2026-11-04',title='Watch',summary='Checked',items=[item])]
+        self.write()
+        self.assertNotIn('broad_source',self.codes())
+        item['source_urls'][0]['url']='https://raw.githubusercontent.com/Owner/Repo/main/README.md'
+        self.write()
+        self.assertIn('broad_source',self.codes())
+
     def test_duplicate_and_malformed_card(self):
         self.catalog += [dict(self.catalog[0], url='https://github.com/owner/repo/'), None]
         self.write()

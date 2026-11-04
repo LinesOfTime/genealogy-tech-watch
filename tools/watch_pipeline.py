@@ -25,6 +25,21 @@ def canonical_url(value):
     return p.scheme.lower() + '://' + p.netloc.lower() + path
 
 
+def specific_source(value):
+    """Recognize concrete documents, including immutable GitHub raw/API URLs."""
+    url = canonical_url(value)
+    if not url:
+        return False
+    if re.search(r'/(commit|pull|releases|blob)/', url):
+        return True
+    parsed = urlsplit(url)
+    if parsed.hostname == 'raw.githubusercontent.com':
+        return bool(re.fullmatch(r'/[^/]+/[^/]+/[0-9a-fA-F]{40}/.+', parsed.path))
+    if parsed.hostname == 'api.github.com':
+        return bool(re.fullmatch(r'/repos/[^/]+/[^/]+/commits/[0-9a-fA-F]{40}', parsed.path))
+    return False
+
+
 class SeedParser(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -261,7 +276,9 @@ def validate(root, baseline=None):
             missing = [f for f in ('event_date', 'significance_reason', 'review_status') if not item.get(f)]
             if missing:
                 issue('warning', 'legacy_evidence', at, 'Missing metadata: ' + ', '.join(missing))
-            if link and not re.search(r'/(commit|pull|releases|blob)/', link):
+            sources = item.get('source_urls', [])
+            source_links = [s.get('url') for s in sources if isinstance(s, dict)] if isinstance(sources, list) else []
+            if link and not any(specific_source(url) for url in [link, *source_links]):
                 issue('warning', 'broad_source', at, 'Source is not a specific commit/PR/release/document')
 
     if baseline:
