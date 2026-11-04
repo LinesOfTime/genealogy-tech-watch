@@ -24,5 +24,16 @@
   "github:geiserx/gramps-web-toolkit:watch-2026-10-31": "8a0e16a3999b3d9659ee118f33f56a03b46ca47fce52dcd17ef651935c70843f",
   "github:itarunnn/jp-lit-mcp:watch-2026-10-31": "4edc8373c06f9766c094364318003b87406a2f3ece69fd0ef5b382e55a8bef84",
   "github:geiserx/gramps-web-toolkit:watch-2026-11-01": "585b20721a365e7f54ab8f0ebb4f54cc3aff8cdf0f98d2da937df4822aca7e79",
-  "github:gramps-project/gramps-web-api:watch-2026-11-01": "a2f754fbdab7f4220cf36fdedf850d8181ddba9ae518886cceb0adb9be784fe8"
+  "github:gramps-project/gramps-web-api:watch-2026-11-01": "a2f754fbdab7f4220cf36fdedf850d8181ddba9ae518886cceb0adb9be784fe8",
+  "github:scormave/gramps-web-mcp:watch-2026-11-02": "de0b70f388587b4617c7acd36be7c0adbeeb2a3362e7f505608c252aca2e4083",
+  "github:fmadore/iwac-mcp-server:watch-2026-11-02": "1ec26069ab6ba4636d921a3b905f1fc28ae689ede76069d1392da5552bb796d6",
+  "github:k-woitas/eperiodica-explorer:watch-2026-11-02": "5c638a13271cb0265dafeddc2f24cb2061303b4dca2da5c64dc6d6c304ea9495",
+  "github:geiserx/gramps-web-toolkit:watch-2026-11-03": "f6824eabae2fa243c80b0e7e7d45012a914b08602778f7f8efe8a2b0875c4fb6",
+  "github:scormave/gramps-web-mcp:watch-2026-11-03": "7c7517bfbcbe182b78e0b2da8a02b9b7d8f59c3a8d1bae2775154fb2f6319a94",
+  "github:gramps-project/gramps-web-api:watch-2026-11-03": "1a40259b9da4ce54019d0260b5902cfdbaac2ab1dbeb9882204f255cde85e6c7",
+  "github:genealogy-mcp/gramps-mcp:watch-2026-11-03": "ea8299ae7c957259d9495b9860cde209fe8e970566defb00bbeba3165eca1b9a",
+  "github:geiserx/gramps-web-toolkit:watch-2026-11-04": "f10abd01958a7f3cbfa91e7ba494b556013863bf7b6837e51fc86c3ef5f2c71f",
+  "github:scormave/gramps-web-mcp:watch-2026-11-04": "09b0eefefabbd904f257d94cee6720201865129bd5d66d82f559ffc067749464",
+  "github:genealogy-mcp/gramps-mcp:watch-2026-11-04": "c74114d30e6491ec8af9f150bb6732d7d7e72ec96ce9fca1972eeb566ae71d6e",
+  "github:ai-riksarkivet/htrflow-batch:watch-2026-11-04": "6cdcfe42e515ba8b5e9fe0f89422a73b0c9833f137685b6d1eb1dc7db2c8a37f"
 }
