@@ -66,7 +66,7 @@ def ingest(source):
     try:
         with os.fdopen(fd, "w", encoding="utf-8") as out:
             for event in existing + accepted:
-                out.write(json.dumps(event, ensure_ascii=False) + "\\n")
+                out.write(json.dumps(event, ensure_ascii=False) + "\n")
             out.flush()
             os.fsync(out.fileno())
         os.replace(name, JOURNAL)
