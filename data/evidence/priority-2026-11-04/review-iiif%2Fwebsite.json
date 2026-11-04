@@ -1,0 +1,16 @@
+{
+  "name": "iiif/website",
+  "sha": "3a46f94166bdfb9a168f23a3f6a42d48f9ebfa80",
+  "url": "https://api.github.com/repos/iiif/website/contents/README.md?ref=3a46f94166bdfb9a168f23a3f6a42d48f9ebfa80",
+  "checked_on": "2026-11-04",
+  "content": "[![Stories in Ready](https://badge.waffle.io/IIIF/website.png?label=ready&title=Ready)](https://waffle.io/IIIF/website)\n[![Build Status](https://travis-ci.org/IIIF/website.svg?branch=master)](https://travis-ci.org/IIIF/website)\n\n# Specifications\n\nMarkdown Source of iiif.io website. For the IIIF specification see: [IIIF/api](https://github.com/IIIF/api).\n\n## To Debug the Site\n\n 1. `bundle install`\n\n 2. Run `bundle exec rake dev` to compile the site and run a dev server on [http://localhost:4000](http://localhost:4000).\n\n## To Run the Tests\n\n 1. `bundle install`\n 2. Install grunt `npm install -g grunt-cli`\n 3. Install grunt dependencies `npm install`\n 4. Run ```bundle exec rake ci```\n\n## To Publish the Site to iiif.io\n\nBranches are available at http://preview.iiif.io/root/[branch_name]/index.html. The master branch is automatically loaded to the iiif.io website.\n\n## Some Things to Note\n\n * Much of the site data is in the YAML files in `_data/` (e.g. member institutions, server impls, demos, etc.) make edits there.\n * The latest versions of the APIs are set in `_config.yml`. Change there will get pushed to `.htaccess`, `technical-details/`, and any other links.\n * The website is now split with the root website living here and the api website living in [IIIF/api](https://github.com/IIIF/api). Links internal and external should be in the following forms:\n    * Internal relative link inside the root website `[hyperlink text]({{ site.root_url | absolute_url }}/end/point)`\n    * link from the root website to the api website (not relative to this repo) `[hyperlink text]({{ site.api_url | absolute_url }}/end/point)`\n    * External link `[anchor-text](http://example.com/end/point)`\n    * Reference link `[text][link_name]` where link_name is expanded at the bottom of the page.\n\n\n### Tips and Tricks:\n * Adding [newsitem images](docs/news_images.md)\n\n\n## Maintenance\n\n### Updating dependencies:\n\nUpdating Ruby dependencies:\n\n```bundle update```\n\nUpdating node dependencies (`package.json`):\n\n```\n# install node update program\nnpm i -g npm-check-updates\n# run update, this will update the package.json\nncu -u\n# this will update the installed libraries\nnpm install\n```\n",
+  "error": null,
+  "license": {
+    "url": "https://api.github.com/repos/iiif/website/contents?ref=3a46f94166bdfb9a168f23a3f6a42d48f9ebfa80",
+    "content": "[{\"name\":\".github\",\"type\":\"dir\"},{\"name\":\".gitignore\",\"type\":\"file\"},{\"name\":\".rspec\",\"type\":\"file\"},{\"name\":\".ruby-version\",\"type\":\"file\"},{\"name\":\"CONTRIBUTING.md\",\"type\":\"file\"},{\"name\":\"Gemfile\",\"type\":\"file\"},{\"name\":\"README.md\",\"type\":\"file\"},{\"name\":\"Rakefile\",\"type\":\"file\"},{\"name\":\"_config.yml\",\"type\":\"file\"},{\"name\":\"docs\",\"type\":\"dir\"},{\"name\":\"questions.md\",\"type\":\"file\"},{\"name\":\"scripts\",\"type\":\"dir\"},{\"name\":\"source\",\"type\":\"dir\"}]",
+    "error": null,
+    "kind": "root_listing",
+    "status": "not_located"
+  },
+  "review_basis": "README and root license inspection, not execution"
+}

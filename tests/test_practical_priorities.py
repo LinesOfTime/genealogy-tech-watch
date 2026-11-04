@@ -84,6 +84,42 @@ class PracticalPriorityTests(unittest.TestCase):
             response=dict(status='404'))]), encoding='utf-8')
         self.reject()
 
+    def test_missing_license_supports_uncertainty_not_pilot_readiness(self):
+        path = self.root / self.proposal['evidence_file']
+        snapshot = json.loads(path.read_text(encoding='utf-8'))
+        snapshot['license']['kind'] = 'root_listing'
+        snapshot['license']['content'] = '[]'
+        raw = json.dumps(snapshot).encode()
+        path.write_bytes(raw)
+        self.proposal['evidence_sha256'] = hashlib.sha256(raw).hexdigest()
+        self.proposal['proposed_priority'] = 'P1'
+        self.reject()
+        self.proposal['proposed_priority'] = 'Не оценён'
+        self.save()
+        self.assertEqual(len(load_proposals(self.root, self.cards)), 1)
+
+    def test_full_review_covers_each_available_repository_once(self):
+        cards = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
+        audit = json.loads((ROOT / 'reports/priority-source-audit-2026-11-04.json').read_text(encoding='utf-8'))
+        proposals = load_proposals(ROOT, cards)
+        expected = {r['name'].lower() for r in audit if r['result'] == 'exists'}
+        self.assertEqual(set(proposals), expected)
+        self.assertEqual(len(cards) - len(proposals), 4)
+
+    def test_directory_listing_cannot_borrow_readme_evidence(self):
+        path = self.root / self.proposal['evidence_file']
+        snapshot = json.loads(path.read_text(encoding='utf-8'))
+        snapshot['document_kind'] = 'directory_listing'
+        snapshot['content'] = '[]'
+        raw = json.dumps(snapshot).encode()
+        path.write_bytes(raw)
+        self.proposal['evidence_sha256'] = hashlib.sha256(raw).hexdigest()
+        self.proposal['proposed_priority'] = 'Не оценён'
+        self.reject()
+        self.proposal['evidence_level'] = 'E0'
+        self.save()
+        self.assertEqual(len(load_proposals(self.root, self.cards)), 1)
+
 
 if __name__ == '__main__':
     unittest.main()

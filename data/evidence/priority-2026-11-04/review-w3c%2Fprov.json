@@ -1,0 +1,23 @@
+{
+  "name": "w3c/prov",
+  "sha": "aa82bd71b6bb1f7b735bf3f7f5b948fae87764f0",
+  "url": "https://api.github.com/repos/w3c/prov/contents?ref=aa82bd71b6bb1f7b735bf3f7f5b948fae87764f0",
+  "checked_on": "2026-11-04",
+  "content": "[{\"name\":\".hgignore\",\"type\":\"file\"},{\"name\":\"bestpractices\",\"type\":\"dir\"},{\"name\":\"dc-note\",\"type\":\"dir\"},{\"name\":\"diagrams\",\"type\":\"dir\"},{\"name\":\"dictionary\",\"type\":\"dir\"},{\"name\":\"examples\",\"type\":\"dir\"},{\"name\":\"links\",\"type\":\"dir\"},{\"name\":\"model\",\"type\":\"dir\"},{\"name\":\"namespace\",\"type\":\"dir\"},{\"name\":\"ontology\",\"type\":\"dir\"},{\"name\":\"overview\",\"type\":\"dir\"},{\"name\":\"paq\",\"type\":\"dir\"},{\"name\":\"presentations\",\"type\":\"dir\"},{\"name\":\"primer\",\"type\":\"dir\"},{\"name\":\"provenance\",\"type\":\"dir\"},{\"name\":\"reports\",\"type\":\"dir\"},{\"name\":\"semantics\",\"type\":\"dir\"},{\"name\":\"testcases\",\"type\":\"dir\"},{\"name\":\"w3c.json\",\"type\":\"file\"},{\"name\":\"xml\",\"type\":\"dir\"}]",
+  "error": null,
+  "license": {
+    "url": "https://api.github.com/repos/w3c/prov/contents?ref=aa82bd71b6bb1f7b735bf3f7f5b948fae87764f0",
+    "content": "[{\"name\":\".hgignore\",\"type\":\"file\"},{\"name\":\"bestpractices\",\"type\":\"dir\"},{\"name\":\"dc-note\",\"type\":\"dir\"},{\"name\":\"diagrams\",\"type\":\"dir\"},{\"name\":\"dictionary\",\"type\":\"dir\"},{\"name\":\"examples\",\"type\":\"dir\"},{\"name\":\"links\",\"type\":\"dir\"},{\"name\":\"model\",\"type\":\"dir\"},{\"name\":\"namespace\",\"type\":\"dir\"},{\"name\":\"ontology\",\"type\":\"dir\"},{\"name\":\"overview\",\"type\":\"dir\"},{\"name\":\"paq\",\"type\":\"dir\"},{\"name\":\"presentations\",\"type\":\"dir\"},{\"name\":\"primer\",\"type\":\"dir\"},{\"name\":\"provenance\",\"type\":\"dir\"},{\"name\":\"reports\",\"type\":\"dir\"},{\"name\":\"semantics\",\"type\":\"dir\"},{\"name\":\"testcases\",\"type\":\"dir\"},{\"name\":\"w3c.json\",\"type\":\"file\"},{\"name\":\"xml\",\"type\":\"dir\"}]",
+    "error": null,
+    "kind": "root_listing",
+    "status": "not_located"
+  },
+  "review_basis": "README and root license inspection, not execution",
+  "previous_readme_error": [
+    {
+      "type": "text",
+      "text": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}"
+    }
+  ],
+  "document_kind": "directory_listing"
+}
