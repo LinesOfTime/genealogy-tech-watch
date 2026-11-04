@@ -97,6 +97,9 @@ def validate(root, baseline=None):
 
     catalog = loaded.get('catalog.json', [])
     research = loaded.get('docs/research.json', {})
+    from usage_guidance import usage_issues
+    for message in usage_issues(root,catalog,research):
+        issue('error','usage_guidance','docs/usage-context.json',message)
     from repository_integrity import rejection_issues
     issues.extend(rejection_issues(root,catalog,research,loaded.get('digest.json',[])))
     # Also reject standalone outbound links outside the JSON seeds.

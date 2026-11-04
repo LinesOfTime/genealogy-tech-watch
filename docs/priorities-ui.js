@@ -1,0 +1,23 @@
+(async()=>{
+  const {esc,link}=WatchUI,$=id=>document.getElementById(id);
+  try {
+    const load=async file=>{const r=await fetch(file,{cache:'no-store'});if(!r.ok)throw Error('Не удалось загрузить '+file);return r.json()};
+    const [review,tasks]=await Promise.all(['priority-review.json','task-matches.json'].map(load));
+    $('priority-metrics').textContent=`${review.counts.total} карточки · ${review.counts.p1_e0} меток P1 с E0-триажем · ${review.counts.missing_evaluations} без оценки · ${review.counts.independent_reports} отчётов об испытаниях в оценках`;
+    $('task').innerHTML='<option value="">Все задачи — аудит оценок</option>'+tasks.tasks.map(t=>`<option value="${esc(t.id)}">${esc(t.title)}</option>`).join('');
+    $('assessment').innerHTML='<option value="">Все состояния оценки</option>'+Object.entries(review.states).map(([id,label])=>`<option value="${esc(id)}">${esc(label)}</option>`).join('');
+    const readiness=['Идея','Прототип','Рабочий код по оценке','Тесты, релизы и документация по оценке','Подтверждённая эксплуатация по оценке'];
+    const evidence={E0:'Триаж; это поле не отражает отдельную проверку upstream',E1:'Документация автора',E2:'Отметка проверки кода/документации; смотреть ссылки и версию',E3:'Воспроизведённый тест — нужен отчёт',E4:'Независимое сравнение — нужен релевантный корпус'};
+    function render(){
+      const task=$('task').value,state=$('assessment').value,priority=$('priority').value,q=$('q').value.trim().toLocaleLowerCase('ru');
+      const matches=new Map(tasks.matches.filter(x=>x.task===task).map(x=>[x.project.toLowerCase(),x]));
+      const rows=review.projects.filter(x=>(!task||matches.has(x.project.toLowerCase()))&&(!state||x.state===state)&&(!priority||x.legacy_priority===priority)&&(!q||[x.project,x.rationale,x.next_action,matches.get(x.project.toLowerCase())?.usage_context?.label].join(' ').toLocaleLowerCase('ru').includes(q))).sort((a,b)=>a.project.localeCompare(b.project));
+      $('priority-count').textContent=`Показано ${rows.length} из ${review.projects.length}. По названию; сохранённые P-метки не используются как рейтинг.`;
+      $('items').innerHTML=rows.map(x=>{
+        const m=matches.get(x.project.toLowerCase());
+        return `<article class="item"><h2><a href="project.html?repo=${encodeURIComponent(x.project)}">${esc(x.project)}</a></h2><p><b>${esc(x.state_label)}</b> · сохранённая метка: ${esc(x.legacy_priority)}</p><p class="meta">${esc(x.role?.label||'Роль требует уточнения')} · дата оценки: ${esc(x.reviewed_at||'не указана')}${x.latest_source_review?' · последняя утверждённая проверка источников: '+esc(x.latest_source_review):''}</p>${m?WatchUI.usage(m.usage_context):''}<dl><dt>Основания оценки</dt><dd>${esc(x.evidence_level?x.evidence_level+' — '+evidence[x.evidence_level]:'Не установлены')}</dd><dt>Готовность по сохранённой оценке</dt><dd>${esc(x.maturity===null?'Не оценена':readiness[x.maturity]||'Не установлена')}. Локальные тесты самого каталога не являются испытанием этого проекта.</dd></dl>${x.flags.map(f=>'<p class="meta">'+esc(f)+'</p>').join('')}<p><b>Следующий шаг:</b> ${esc(x.next_action)}</p>${m?'<p><b>Проба под выбранную задачу:</b> '+esc(m.next_check)+'</p>':''}<details><summary>Обоснование и исходные сведения</summary><p>${esc(x.rationale)}</p><p>Исходное обозначение: ${esc(x.priority_original||'не сохранено')}. Статус: ${esc(x.evaluation_status||'отсутствует')}. ${x.state==='changed'?'Более поздняя проверка не означает автоматического повышения приоритета.':''}</p><p>${x.source_urls.map(url=>link(url,'Источник оценки')).join(' · ')||'Ссылки оценки не указаны.'}</p>${x.independent_report?link(x.independent_report,'Отчёт об испытании'):''}</details></article>`;
+      }).join('')||'<p>Нет совпадений. Измените задачу или состояние оценки.</p>';
+    }
+    if(!WatchUI.bindFilterState(['task','assessment','priority','q'],render,'reset-priorities')){for(const id of ['task','assessment','priority','q'])$(id).addEventListener(id==='q'?'input':'change',render);render()}
+  }catch(error){$('priority-count').textContent=error.message}
+})();
