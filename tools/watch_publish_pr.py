@@ -5,7 +5,6 @@ Requires local git, gh auth, and an explicit, reviewed plan hash.
 Does not approve findings, auto-merge, or invoke GitHub Actions.
 """
 import argparse
-import json
 import subprocess
 import sys
 from pathlib import Path
@@ -38,11 +37,11 @@ def main():
             raise RuntimeError("Use a dedicated feature branch, not main")
         if command("git", "status", "--porcelain"):
             raise RuntimeError("Working tree must be clean before publication")
-        command("gh", "auth", "status")
         if not args.execute:
             print("Preview only. Run tools/watch.py prepare --date", args.date)
             print("After review, rerun with --execute and the exact plan hash.")
             return 0
+        command("gh", "auth", "status")
         command(sys.executable, str(WATCH), "publish", "--date", args.date, "--expect-plan", args.expect_plan)
         changed = command("git", "diff", "--name-only").splitlines()
         untracked = command("git", "ls-files", "--others", "--exclude-standard").splitlines()
