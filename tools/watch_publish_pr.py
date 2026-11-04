@@ -42,6 +42,12 @@ def main():
             print("After review, rerun with --execute and the exact plan hash.")
             return 0
         command("gh", "auth", "status")
+        # A failed prior run may have committed/pushed successfully but
+        # failed to open the PR. Recover that state instead of reapplying.
+        try:
+            existing_pr = command("gh", "pr", "view", branch, "--json", "url", "--jq", ".url")
+        except RuntimeError:
+            existing_pr = None
         command(sys.executable, str(WATCH), "publish", "--date", args.date, "--expect-plan", args.expect_plan)
         changed = command("git", "diff", "--name-only").splitlines()
         untracked = command("git", "ls-files", "--others", "--exclude-standard").splitlines()
@@ -50,6 +56,18 @@ def main():
             raise RuntimeError("Unexpected changed paths; inspect manually: " + ", ".join(unexpected))
         selected = [p for p in ALLOWED if p in set(changed + untracked)]
         if not selected:
+            if existing_pr:
+                print("Existing PR:", existing_pr)
+                return 0
+            # If a prior run pushed the branch, offer PR recovery without
+            # making a new commit or claiming the apply was repeated.
+            ahead = command("git", "rev-list", "--count", "origin/main..HEAD")
+            if int(ahead) > 0:
+                url = command("gh", "pr", "create", "--base", "main", "--head", branch,
+                              "--title", "Watch: утверждённые находки " + args.date,
+                              "--body", "Повторное создание PR после прерванной публикации; проверить diff.")
+                print("Recovered PR:", url)
+                return 0
             print("No data changes to publish")
             return 0
         command("git", "diff", "--check")
@@ -64,9 +82,9 @@ def main():
         body = ("Автоматически подготовленные изменения данных из утверждённых событий. "
                 "Проверены штатный validate и unit tests. "
                 "Перед merge проверить diff и лицензионные ограничения.")
-        try:
-            url = command("gh", "pr", "view", branch, "--json", "url", "--jq", ".url")
-        except RuntimeError:
+        if existing_pr:
+            url = existing_pr
+        else:
             url = command("gh", "pr", "create", "--base", "main", "--head", branch,
                           "--title", title, "--body", body)
         print("PR ready for review:", url)
