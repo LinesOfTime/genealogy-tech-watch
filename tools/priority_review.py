@@ -14,7 +14,8 @@ STATES={
 }
 
 
-def build(catalog,research,checks=None):
+def build(catalog,research,checks=None,proposals=None):
+    proposals=proposals or {}
     missing={r['url'].lower().rstrip('/'):r for r in (checks or {}).get('records',[])
              if r.get('result')=='not_found' and r.get('http_status')==404}
     rows=[]
@@ -49,7 +50,8 @@ def build(catalog,research,checks=None):
             rationale=ev.get('priority_rationale') or 'Обоснование оценки отсутствует.',
             next_action=action,source_urls=ev.get('source_urls',[]),
             flags=flags,
-            independent_report=ev.get('test_report_url'),evaluation_status=ev.get('review_status')))
+            independent_report=ev.get('test_report_url'),evaluation_status=ev.get('review_status'),
+            practical_proposal=proposals.get(key)))
     return dict(version=1,method='Практический выбор по задаче и роли; аудит сохранённых оценок, без новых баллов и утверждений',
         counts=dict(total=len(rows),priorities=dict(Counter(x['legacy_priority'] for x in rows)),
             states=dict(Counter(x['state'] for x in rows)),

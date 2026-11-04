@@ -1,0 +1,8 @@
+{
+  "name": "gusevlab/germline",
+  "sha": "f8029fcf469a09a83aa1e0d1fb45769f6dcb3c6d",
+  "url": "https://api.github.com/repos/gusevlab/germline/contents/README.md?ref=f8029fcf469a09a83aa1e0d1fb45769f6dcb3c6d",
+  "checked_on": "2026-11-04",
+  "content": "GERMLINE\n--------\n\n*GERMLINE is an algorithm to infer long shared segments of Identity by Descent (IBD) between pairs of individuals in a large population. GERMLINE is very fast.*\n\nGERMLINE takes as input ([PLINK](https://www.cog-genomics.org/plink/1.9/) format) haplotype marker data for individuals and generates a list of all pairwise segmental sharing.\n\n* To compile GERMLINE run `make` in the download directory, or use the precompiled binary in `bin/germline`.\n* To run GERMLINE use: `germline -input [ped] [map] -output [out]`.\n* See [http://gusevlab.org/projects/germline/](http://gusevlab.org/projects/germline/) for full documentation.\n\nGERMLINE was developed in Itsik Pe'er's Lab of Computational Genetics at Columbia University. If you use GERMLINE in a published analysis, please cite `Gusev et al. 2008 Genome Res doi: 10.1101/gr.081398.108`.\n\nGERMLINE is licensed under Apache.\n",
+  "error": null
+}

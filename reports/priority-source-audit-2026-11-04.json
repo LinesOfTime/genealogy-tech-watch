@@ -1,0 +1,1694 @@
+[
+  {
+    "name": "23andme/bonsaitree",
+    "url": "https://github.com/23andme/bonsaitree",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "72bfaf25508635a5c39d4b9617d4179e0675bd15",
+    "readme_available": true
+  },
+  {
+    "name": "abbyy/jfk-ocr",
+    "url": "https://github.com/abbyy/jfk-ocr",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e1e10db74b5b7d0448acfc045ba9da038df6c31e",
+    "readme_available": true
+  },
+  {
+    "name": "abdash/roots-familytreevisualizer",
+    "url": "https://github.com/abdash/roots-familytreevisualizer",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "9c0809ff4c9dfe531d550930ce2ad9b0683d2d1f",
+    "readme_available": true
+  },
+  {
+    "name": "aehrc/tribes",
+    "url": "https://github.com/aehrc/tribes",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "5af6adebc85cfa80ec8bca14dfaef929b8194888",
+    "readme_available": true
+  },
+  {
+    "name": "ai-collaboratory/scribe",
+    "url": "https://github.com/ai-collaboratory/scribe",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a8022ebd0581450119a73e947385752020019921",
+    "readme_available": true
+  },
+  {
+    "name": "ai-historian/chronos",
+    "url": "https://github.com/ai-historian/chronos",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "d8c10ce373ae599c891dbee7a25a5c26957c75be",
+    "readme_available": true
+  },
+  {
+    "name": "ai-historian/chronos-benchmarks",
+    "url": "https://github.com/ai-historian/chronos-benchmarks",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "37ab5003c18ab8ae9b3baa18076ed423f39f35c6",
+    "readme_available": true
+  },
+  {
+    "name": "ai-riksarkivet/htrflow",
+    "url": "https://github.com/ai-riksarkivet/htrflow",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "34ebd90895a3d3cb45888b3b123bc59a719f7f81",
+    "readme_available": true
+  },
+  {
+    "name": "ai-riksarkivet/htrflow-batch",
+    "url": "https://github.com/ai-riksarkivet/htrflow-batch",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "3cd05f8d117075f84bfdb75b0dbcefa903bca2a1",
+    "readme_available": true
+  },
+  {
+    "name": "ai-riksarkivet/htrflow_app",
+    "url": "https://github.com/ai-riksarkivet/htrflow_app",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "5b8ed8e9c1105c9ac379ec36c34ced4aa7464f6c",
+    "readme_available": true
+  },
+  {
+    "name": "ajaskey/genealogy",
+    "url": "https://github.com/ajaskey/genealogy",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "169dbf3295ef1e7eb9fa0aacb80247d945fb70e2",
+    "readme_available": true
+  },
+  {
+    "name": "archival-iiif/viewer",
+    "url": "https://github.com/archival-iiif/viewer",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a212ceb017e02641be4021f7d883581d8f50b97b",
+    "readme_available": true
+  },
+  {
+    "name": "benwbrum/fromthepage",
+    "url": "https://github.com/benwbrum/fromthepage",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "75db6df949d49e24bbab9930c6eaed96954cb6f1",
+    "readme_available": true
+  },
+  {
+    "name": "bhaskargautam/record-linkage",
+    "url": "https://github.com/bhaskargautam/record-linkage",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "01eb29f8b7fb4dd1625187232f2dafe47f24cddf",
+    "readme_available": true
+  },
+  {
+    "name": "browning-lab/hap-ibd",
+    "url": "https://github.com/browning-lab/hap-ibd",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a3fdd2d6294903387ee29d2f67ce6260593b681f",
+    "readme_available": true
+  },
+  {
+    "name": "bruceyyu/ml-chinese-record-linkage",
+    "url": "https://github.com/bruceyyu/ml-chinese-record-linkage",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "79fec7e5b7c16a9bb852b00c19dd4f969881d849",
+    "readme_available": true
+  },
+  {
+    "name": "cabout-me/gramps-mcp",
+    "url": "https://github.com/cabout-me/gramps-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e8360484b5a27604dab7de87bdd13aa5528c77d9",
+    "readme_available": true
+  },
+  {
+    "name": "cacack/my-family",
+    "url": "https://github.com/cacack/my-family",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "94f32953228ab3eee9822564ee6519bb30e016f1",
+    "readme_available": true
+  },
+  {
+    "name": "cartwrightdj/gedcomtools",
+    "url": "https://github.com/cartwrightdj/gedcomtools",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "6fa39db1e052af359d51b7bd6e50c743c73b5fb0",
+    "readme_available": true
+  },
+  {
+    "name": "cboulanger/tei-annotator",
+    "url": "https://github.com/cboulanger/tei-annotator",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "f1f1b3217489aa7cca9c1bc4a4f40020dd3662b7",
+    "readme_available": true
+  },
+  {
+    "name": "clariah/burgerlinker",
+    "url": "https://github.com/clariah/burgerlinker",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a209292b3c2f6c5de9c24599b2d38ea2058299ad",
+    "readme_available": true
+  },
+  {
+    "name": "claudiomartino/iiif-downloader",
+    "url": "https://github.com/claudiomartino/iiif-downloader",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "f04e2202b130f87b48f922139a0b95e1b06a9c77",
+    "readme_available": true
+  },
+  {
+    "name": "dedupeio/dedupe",
+    "url": "https://github.com/dedupeio/dedupe",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "3f61e79102910bd355e920a2df7e44c14c9cb247",
+    "readme_available": true
+  },
+  {
+    "name": "digirati-co-uk/madoc-platform",
+    "url": "https://github.com/digirati-co-uk/madoc-platform",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a09ebdd2358dbc202b8c9b6bee0aef18ea2694f7",
+    "readme_available": true
+  },
+  {
+    "name": "digitalarchivst/open-genealogy",
+    "url": "https://github.com/digitalarchivst/open-genealogy",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "249db9e47662a69b6ed4fc84b7ef7e6387c81b33",
+    "readme_available": true
+  },
+  {
+    "name": "districtdatalabs/entity-resolution",
+    "url": "https://github.com/districtdatalabs/entity-resolution",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "31192bd2059dcf4cdeb81f909d2dc67ce1ecb1ec",
+    "readme_available": true
+  },
+  {
+    "name": "dmarkey/irish-census-mcp",
+    "url": "https://github.com/dmarkey/irish-census-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "4b9e9e288b6e8e37becb469d9ff75e7379033d4a",
+    "readme_available": true
+  },
+  {
+    "name": "dsblank/gramps-ez-mcp",
+    "url": "https://github.com/dsblank/gramps-ez-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "8923eabb7934ffce71e43ed01a9b47bd77c4c680",
+    "readme_available": true
+  },
+  {
+    "name": "dthaler/gedcom-citations",
+    "url": "https://github.com/dthaler/gedcom-citations",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "dd3a11674d02a1396000cd8c0e611552b06aafb2",
+    "readme_available": true
+  },
+  {
+    "name": "ecoto/iiif_downloader",
+    "url": "https://github.com/ecoto/iiif_downloader",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "be989292d8938500d935b6737cc05b89114b276f",
+    "readme_available": true
+  },
+  {
+    "name": "erichare/kinresolve",
+    "url": "https://github.com/erichare/kinresolve",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "b22c424305b13512701f45ef5aaaa033b2858d96",
+    "readme_available": true
+  },
+  {
+    "name": "evelynkimm/ari",
+    "url": "https://github.com/evelynkimm/ari",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "72b14f8bacbe5800e1b390aa7dd91956f57d1256",
+    "readme_available": true
+  },
+  {
+    "name": "familysearch/gedcom",
+    "url": "https://github.com/familysearch/gedcom",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "633ebf8512dad123c41e9568b15845efb6a8b4b2",
+    "readme_available": true
+  },
+  {
+    "name": "familysearch/gedcomx",
+    "url": "https://github.com/familysearch/gedcomx",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ab9004050704c5eed5a79dabf298f5edc09f98d8",
+    "readme_available": true
+  },
+  {
+    "name": "fisharebest/webtrees",
+    "url": "https://github.com/fisharebest/webtrees",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "b6b4742bd04d3c7a17e60124649ab3801fbc68e2",
+    "readme_available": true
+  },
+  {
+    "name": "freeukgen/myopicvicar",
+    "url": "https://github.com/freeukgen/myopicvicar",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "5e346ecc2f1adb011adb184cac6f2b751888dd4e",
+    "readme_available": true
+  },
+  {
+    "name": "genealogix/glx",
+    "url": "https://github.com/genealogix/glx",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "66b804e59c810e8020376e39fabde7d26ee70b2a",
+    "readme_available": true
+  },
+  {
+    "name": "geneweb/geneweb",
+    "url": "https://github.com/geneweb/geneweb",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "dd63b027d35136f67379226d9fba4a54be2c5a28",
+    "readme_available": true
+  },
+  {
+    "name": "glamberson/gedcom-evidence",
+    "url": "https://github.com/glamberson/gedcom-evidence",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ad466a6415d94c7f8fb1c2c634b651fb01c2ebdf",
+    "readme_available": true
+  },
+  {
+    "name": "glamberson/gedcom-occurrences",
+    "url": "https://github.com/glamberson/gedcom-occurrences",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e72b0ddabcadcd67dd7ab1e4beac939db8e459ee",
+    "readme_available": true
+  },
+  {
+    "name": "google/family-tree",
+    "url": "https://github.com/google/family-tree",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a51c5b6eb5312a01afe777fb4927fc1622352bc0",
+    "readme_available": true
+  },
+  {
+    "name": "gramps-project/addons",
+    "url": "https://github.com/gramps-project/addons",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "7223320bb8a11c442d8cac1860dec87aa650497c",
+    "readme_available": true
+  },
+  {
+    "name": "gramps-project/addons-source",
+    "url": "https://github.com/gramps-project/addons-source",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "62a48e1ba3d54fc525bd27d83733298f8c8f55c0",
+    "readme_available": true
+  },
+  {
+    "name": "gramps-project/gramps",
+    "url": "https://github.com/gramps-project/gramps",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e9c09a44791def6a6b81079dc7f8cbe8c7e69cc0",
+    "readme_available": true
+  },
+  {
+    "name": "gramps-project/gramps-web",
+    "url": "https://github.com/gramps-project/gramps-web",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "44ede5a04f0a6ba91b084cf8ab719a97bcad6c22",
+    "readme_available": true
+  },
+  {
+    "name": "gramps-project/gramps-web-api",
+    "url": "https://github.com/gramps-project/gramps-web-api",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "57618907ce0529a893a02207115e3a3db79e0628",
+    "readme_available": true
+  },
+  {
+    "name": "gramps-project/gramps-web-docs",
+    "url": "https://github.com/gramps-project/gramps-web-docs",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "592563a9410c3788ac4e9772cd7c4bdaf6a5e1a3",
+    "readme_available": true
+  },
+  {
+    "name": "gsmitheidw/genealogytools",
+    "url": "https://github.com/gsmitheidw/genealogytools",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "205b3ec90a32cdf067d158f6938c35561c21e288",
+    "readme_available": true
+  },
+  {
+    "name": "gusevlab/germline",
+    "url": "https://github.com/gusevlab/germline",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "f8029fcf469a09a83aa1e0d1fb45769f6dcb3c6d",
+    "readme_available": true
+  },
+  {
+    "name": "hdlabconicet/recogito-tei",
+    "url": "https://github.com/hdlabconicet/recogito-tei",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "9bb15d16eb190d5218bed777a2f62e3a20a1fc5c",
+    "readme_available": true
+  },
+  {
+    "name": "htrmopo/htrmopo",
+    "url": "https://github.com/htrmopo/htrmopo",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "d6e193ff320d58c35fb2b5544f1a4618a33ea282",
+    "readme_available": true
+  },
+  {
+    "name": "iiif/api",
+    "url": "https://github.com/iiif/api",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "28a88829699ebbbe7722b4692cf3b7b67969bc6c",
+    "readme_available": true
+  },
+  {
+    "name": "iiif/awesome-iiif",
+    "url": "https://github.com/iiif/awesome-iiif",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e56ec7c7a6475a76058ca98f072e9d5924da185b",
+    "readme_available": true
+  },
+  {
+    "name": "iiif/website",
+    "url": "https://github.com/iiif/website",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "3a46f94166bdfb9a168f23a3f6a42d48f9ebfa80",
+    "readme_available": true
+  },
+  {
+    "name": "ipums/hlink",
+    "url": "https://github.com/ipums/hlink",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "81585d2cc4e05074472acaaef05da577b418a26b",
+    "readme_available": true
+  },
+  {
+    "name": "j535d165/data-matching-software",
+    "url": "https://github.com/j535d165/data-matching-software",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "f3e7176ecfc2802c7250425d0a606855287c4ce6",
+    "readme_available": true
+  },
+  {
+    "name": "j535d165/recordlinkage",
+    "url": "https://github.com/j535d165/recordlinkage",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "b93d97641952f8c85106be5794ca93b1f1298fbc",
+    "readme_available": true
+  },
+  {
+    "name": "j535d165/recordlinkage-annotator",
+    "url": "https://github.com/j535d165/recordlinkage-annotator",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "5f7d359065cb2de0c5272859530350099eedef24",
+    "readme_available": true
+  },
+  {
+    "name": "j535d165/recordlinkage-review",
+    "url": "https://github.com/j535d165/recordlinkage-review",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "1df4600096d1f7f84d1d3d0c254dc9ad87302836",
+    "readme_available": true
+  },
+  {
+    "name": "jameskane/decodingus-navigator",
+    "url": "https://github.com/jameskane/decodingus-navigator",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "94c600a46fd87386fef0e741d54b0d690ff49293",
+    "readme_available": true
+  },
+  {
+    "name": "jasiek/genealogy-plugin",
+    "url": "https://github.com/jasiek/genealogy-plugin",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "d3dc2836a56ae7ade24cc77e2bc3d86dc770ccb9",
+    "readme_available": true
+  },
+  {
+    "name": "jerged24/family-tree",
+    "url": "https://github.com/jerged24/family-tree",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ed474e9bf5a0ce8791830fc7a22e96085fe21bf9",
+    "readme_available": true
+  },
+  {
+    "name": "jitsi/jiwer",
+    "url": "https://github.com/jitsi/jiwer",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "2227002889f20f3fb19d523eeb322732cb67b431",
+    "readme_available": true
+  },
+  {
+    "name": "jregimbal/iiif-downloader",
+    "url": "https://github.com/jregimbal/iiif-downloader",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "24b7a40323976cb7cdaf81d77a815838f11e554e",
+    "readme_available": true
+  },
+  {
+    "name": "kanik0/rustenati",
+    "url": "https://github.com/kanik0/rustenati",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "51f3e1026f87db05e27f94f6e469f2b7b9c78280",
+    "readme_available": true
+  },
+  {
+    "name": "kasssandr/archilles",
+    "url": "https://github.com/kasssandr/archilles",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "c9896178466d4bf3ac233f14fa84d4797619b7a4",
+    "readme_available": true
+  },
+  {
+    "name": "keerthanamurugaraj/topic-rag-for-historical-newspapers",
+    "url": "https://github.com/keerthanamurugaraj/topic-rag-for-historical-newspapers",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "5c1ba94c98de47c5c7c6c5537985a13014862352",
+    "readme_available": true
+  },
+  {
+    "name": "kimon1230/gedcom_tools",
+    "url": "https://github.com/kimon1230/gedcom_tools",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "d262b111550f368313cfefe92c06bbe25dbb481d",
+    "readme_available": true
+  },
+  {
+    "name": "kimon1230/gedgraph",
+    "url": "https://github.com/kimon1230/gedgraph",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "b09052f6c8bcc59772464b0868298f70506524dd",
+    "readme_available": true
+  },
+  {
+    "name": "kkkamur07/nomikos",
+    "url": "https://github.com/kkkamur07/nomikos",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "821bc129af84bfda79574c503454a091ce1a4945",
+    "readme_available": true
+  },
+  {
+    "name": "knuckles-team/gramps-mcp",
+    "url": "https://github.com/knuckles-team/gramps-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "2f32c503ce45b7e7e9aefae5cdf1f7789ce75d0c",
+    "readme_available": true
+  },
+  {
+    "name": "komura-shoan/iiif-downloader",
+    "url": "https://github.com/komura-shoan/iiif-downloader",
+    "checked_on": "2026-11-04",
+    "result": "not_found",
+    "error": [
+      {
+        "type": "text",
+        "text": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"404\"}"
+      }
+    ],
+    "commit": null,
+    "readme_available": false,
+    "http_status": 404,
+    "request_url": "https://api.github.com/repos/komura-shoan/iiif-downloader",
+    "response": {
+      "message": "Not Found",
+      "documentation_url": "https://docs.github.com/rest/repos/repos#get-a-repository",
+      "status": "404"
+    }
+  },
+  {
+    "name": "libraryofcongress/gazetteer",
+    "url": "https://github.com/libraryofcongress/gazetteer",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "34c7f368c5ae51a167d698dbd3a092644eee4c0c",
+    "readme_available": true
+  },
+  {
+    "name": "lieuwe89/genealogy-viz",
+    "url": "https://github.com/lieuwe89/genealogy-viz",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "aa7d5ce85f95467d004f80263d20a3b0acd08e9b",
+    "readme_available": true
+  },
+  {
+    "name": "lovasoa/dezoomify-rs",
+    "url": "https://github.com/lovasoa/dezoomify-rs",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "562e87e7a4797c3b12a4d2519ef14f2163f7b1d8",
+    "readme_available": true
+  },
+  {
+    "name": "magne/vitni",
+    "url": "https://github.com/magne/vitni",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "7bae8c6fa06a8f947ad82f4e0056f9e1145614be",
+    "readme_available": true
+  },
+  {
+    "name": "meh313/htr-model-tester",
+    "url": "https://github.com/meh313/htr-model-tester",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "6e6d93a946aaba0ebe0a95388f56a43da3e0efea",
+    "readme_available": true
+  },
+  {
+    "name": "microsoft/graphrag",
+    "url": "https://github.com/microsoft/graphrag",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "34b2b67ae4601ad0b47bcd179fbe3f2a23aa0857",
+    "readme_available": true
+  },
+  {
+    "name": "mittagessen/kraken",
+    "url": "https://github.com/mittagessen/kraken",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "7186ce2a7142b0433e0938a139e6e687a9bb0188",
+    "readme_available": true
+  },
+  {
+    "name": "moj-analytical-services/splink",
+    "url": "https://github.com/moj-analytical-services/splink",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "3c3e45f99ef74aab077783eebc0317bba16cdec6",
+    "readme_available": true
+  },
+  {
+    "name": "n1kozor/tree-monk",
+    "url": "https://github.com/n1kozor/tree-monk",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "6ef1b21b72918b1ad514a924ff1f89cc4f71b6e7",
+    "readme_available": true
+  },
+  {
+    "name": "narasimhan-lab/repare",
+    "url": "https://github.com/narasimhan-lab/repare",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "bac2a54d0221f912b62840507640a14fbb8f466b",
+    "readme_available": true
+  },
+  {
+    "name": "ngohung0704/rag-militai",
+    "url": "https://github.com/ngohung0704/rag-militai",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "497045f2283b64a422ca0378a70987696daa0a3e",
+    "readme_available": true
+  },
+  {
+    "name": "nigelhorne/gedcom",
+    "url": "https://github.com/nigelhorne/gedcom",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "21854784348e11dcb93c109bc9632a8f10926807",
+    "readme_available": true
+  },
+  {
+    "name": "nikazzio/scriptoria",
+    "url": "https://github.com/nikazzio/scriptoria",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "25f00f1675e677412acb29bee717c2a2a86d2a22",
+    "readme_available": true
+  },
+  {
+    "name": "nikkoxgonzales/mcp-grampsweb",
+    "url": "https://github.com/nikkoxgonzales/mcp-grampsweb",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "6226e338de6905124ae8ab1f8ba12212f72022dc",
+    "readme_available": true
+  },
+  {
+    "name": "noahkiss/genealogy-mcp",
+    "url": "https://github.com/noahkiss/genealogy-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "15cdcc9efb16ff4a8d048d23521d72e971138093",
+    "readme_available": true
+  },
+  {
+    "name": "notakeith/handscribe",
+    "url": "https://github.com/notakeith/handscribe",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "f7daf525837c27ed0aaae4939d9b65cd4a920d2e",
+    "readme_available": true
+  },
+  {
+    "name": "oh-kay-blanket/family-plot",
+    "url": "https://github.com/oh-kay-blanket/family-plot",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "124f5403249d3583aa975b925dbdaba3efbfebfb",
+    "readme_available": true
+  },
+  {
+    "name": "omeka/omeka",
+    "url": "https://github.com/omeka/omeka",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e2c7d7a74bc53fa96e5df46fe22d96e8b181599a",
+    "readme_available": true
+  },
+  {
+    "name": "omeka/omeka-s",
+    "url": "https://github.com/omeka/omeka-s",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "434e0945c9263af32168fed5f8b97f3f4b4abf1c",
+    "readme_available": true
+  },
+  {
+    "name": "openseadragon/openseadragon",
+    "url": "https://github.com/openseadragon/openseadragon",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "36b92d228b121f5fa4c933aa5bb3d5eb10859e05",
+    "readme_available": true
+  },
+  {
+    "name": "projectmirador/mirador",
+    "url": "https://github.com/projectmirador/mirador",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "cd38d198d51066cee4f3469dbf65b65885ebc494",
+    "readme_available": true
+  },
+  {
+    "name": "qurator-spk/dinglehopper",
+    "url": "https://github.com/qurator-spk/dinglehopper",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "1efb382a54c98cf2c6d716d134c57a2d1325a6b6",
+    "readme_available": true
+  },
+  {
+    "name": "recogito/text-annotator-js",
+    "url": "https://github.com/recogito/text-annotator-js",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "0d375b0cba2bf68378f1f6dff30ee8812df95c0c",
+    "readme_available": true
+  },
+  {
+    "name": "rollybre/cthulhu",
+    "url": "https://github.com/rollybre/cthulhu",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "dde263214f6abe117f1a1c9456ed51bd895c8a5e",
+    "readme_available": true
+  },
+  {
+    "name": "rue-a/provo",
+    "url": "https://github.com/rue-a/provo",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a20cd97c58c7647d5d2af836433d1977f4cdc5d8",
+    "readme_available": true
+  },
+  {
+    "name": "ruempel/nacarta",
+    "url": "https://github.com/ruempel/nacarta",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "105407c381b3564916e127f87f0714f6a8185420",
+    "readme_available": true
+  },
+  {
+    "name": "ryanfb/iiif-dl",
+    "url": "https://github.com/ryanfb/iiif-dl",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "36af4d13049b6560d0505132004cafe4d39fa1ca",
+    "readme_available": true
+  },
+  {
+    "name": "sandxlab/sandx-er",
+    "url": "https://github.com/sandxlab/sandx-er",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "1fe78c66fc95e999a88efceeee60f6d93a8cae0a",
+    "readme_available": true
+  },
+  {
+    "name": "satvikgosai/genea-web",
+    "url": "https://github.com/satvikgosai/genea-web",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ef21a2748d3b9760457af52554af0953d47d9250",
+    "readme_available": true
+  },
+  {
+    "name": "scheldt-llc/genealogy_ai",
+    "url": "https://github.com/scheldt-llc/genealogy_ai",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "eb8098296c338cd920617a4ada0f2022b4a59fcd",
+    "readme_available": true
+  },
+  {
+    "name": "scormave/gramps-web-mcp",
+    "url": "https://github.com/scormave/gramps-web-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ff2c5db571b903ee922b1dfecd898e51ed947f2b",
+    "readme_available": true
+  },
+  {
+    "name": "scripta/escriptorium",
+    "url": "https://github.com/scripta/escriptorium",
+    "checked_on": "2026-11-04",
+    "result": "not_found",
+    "error": [
+      {
+        "type": "text",
+        "text": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"404\"}"
+      }
+    ],
+    "commit": null,
+    "readme_available": false,
+    "http_status": 404,
+    "request_url": "https://api.github.com/repos/scripta/escriptorium",
+    "response": {
+      "message": "Not Found",
+      "documentation_url": "https://docs.github.com/rest/repos/repos#get-a-repository",
+      "status": "404"
+    }
+  },
+  {
+    "name": "shelfgot/maatikshemua",
+    "url": "https://github.com/shelfgot/maatikshemua",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "0140c9b4de84e3d371978005c668a9e3938c1e2d",
+    "readme_available": true
+  },
+  {
+    "name": "stefromlc/iiif-downloader",
+    "url": "https://github.com/stefromlc/iiif-downloader",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "725103988c9d8e3b1e5f50876963a025d4a6bdbe",
+    "readme_available": true
+  },
+  {
+    "name": "thisisankit27/f-tree",
+    "url": "https://github.com/thisisankit27/f-tree",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "539c2ec987bb1742a63f7991b983dc5588f62b48",
+    "readme_available": true
+  },
+  {
+    "name": "tropy/tropy",
+    "url": "https://github.com/tropy/tropy",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "4ff15947990d1e19f43ab2c426df5cdc0301a6c2",
+    "readme_available": true
+  },
+  {
+    "name": "trungdong/prov",
+    "url": "https://github.com/trungdong/prov",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ff97842dfc03906f888d33d9760bc64e15f32d29",
+    "readme_available": true
+  },
+  {
+    "name": "ub-mannheim/escriptorium",
+    "url": "https://github.com/ub-mannheim/escriptorium",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "26047d53229b895c2ff7433866c24545b5d711c0",
+    "readme_available": true
+  },
+  {
+    "name": "ub-mannheim/escriptorium_dokumentation",
+    "url": "https://github.com/ub-mannheim/escriptorium_dokumentation",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "589e6d15b7b0fa8050f070b3379a368c3301b669",
+    "readme_available": true
+  },
+  {
+    "name": "umb-oconnorgroup/ibdtools",
+    "url": "https://github.com/umb-oconnorgroup/ibdtools",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "dd3f185c65c5f67a13cb3bd87af9da7d9a02838f",
+    "readme_available": true
+  },
+  {
+    "name": "unstructured-io/unstructured-mlk-archive-public",
+    "url": "https://github.com/unstructured-io/unstructured-mlk-archive-public",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "3ed9f84d97d8efa519a161511a4507d598de0bc9",
+    "readme_available": true
+  },
+  {
+    "name": "w3c/prov",
+    "url": "https://github.com/w3c/prov",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "aa82bd71b6bb1f7b735bf3f7f5b948fae87764f0",
+    "readme_available": false
+  },
+  {
+    "name": "williamscole/haptic",
+    "url": "https://github.com/williamscole/haptic",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "386fd975c5e5897d22334e8c6a00219006861e51",
+    "readme_available": true
+  },
+  {
+    "name": "williamscole/ponderosa",
+    "url": "https://github.com/williamscole/ponderosa",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e3ef4027572028ccb98b2de03902c938ae926457",
+    "readme_available": true
+  },
+  {
+    "name": "worldhistoricalgazetteer/documentation",
+    "url": "https://github.com/worldhistoricalgazetteer/documentation",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "502681b5a644e11865e9d1ddc681085781bb41d6",
+    "readme_available": true
+  },
+  {
+    "name": "worldhistoricalgazetteer/website",
+    "url": "https://github.com/worldhistoricalgazetteer/website",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "9356d73752db225f6ae9b974a12aaa312cc7ece8",
+    "readme_available": true
+  },
+  {
+    "name": "yfullteam/ytree",
+    "url": "https://github.com/yfullteam/ytree",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "bdc9bb4d8db72abc7658362f258dbc2a63e34789",
+    "readme_available": true
+  },
+  {
+    "name": "yingzhou001/ibdkin",
+    "url": "https://github.com/yingzhou001/ibdkin",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "733c33eb7031677c29dad3574f25821b21fd9134",
+    "readme_available": true
+  },
+  {
+    "name": "zal-analytics/zer",
+    "url": "https://github.com/zal-analytics/zer",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "9ed85b11172caf6aca58f0e398a3836a5a100de3",
+    "readme_available": true
+  },
+  {
+    "name": "allmaps/allmaps",
+    "url": "https://github.com/allmaps/allmaps",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "86a76898b76fcc9ec31a325fdea365ec51bceefc",
+    "readme_available": true
+  },
+  {
+    "name": "kartta-labs/mapwarper",
+    "url": "https://github.com/kartta-labs/mapwarper",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "9121861f53dc408b64b801be7c9335c5b094a6a9",
+    "readme_available": true
+  },
+  {
+    "name": "Segolene-Albouy/iiif-download",
+    "url": "https://github.com/Segolene-Albouy/iiif-download",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e82d231a75a261a501c17fb919af5de78135bd71",
+    "readme_available": true
+  },
+  {
+    "name": "nypl-spacetime/nypl-warper",
+    "url": "https://github.com/nypl-spacetime/nypl-warper",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "452856dda79b0720f72c816e8bd481ed9644c77c",
+    "readme_available": true
+  },
+  {
+    "name": "GeospatialCentroid/historic_map_explorer",
+    "url": "https://github.com/GeospatialCentroid/historic_map_explorer",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "1c3ff263c1ab6a7de8fa876a8d6acb6e347d8aed",
+    "readme_available": true
+  },
+  {
+    "name": "OpenRefine/OpenRefine",
+    "url": "https://github.com/OpenRefine/OpenRefine",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "33f9544f88ee8ca91f055b3a722ded5672cffbb4",
+    "readme_available": true
+  },
+  {
+    "name": "LinkedPasts/linked-places-format",
+    "url": "https://github.com/LinkedPasts/linked-places-format",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "3f0f00460fc783cb3da9cbb3aedf68918cf62dd4",
+    "readme_available": true
+  },
+  {
+    "name": "OpenRefine/FilesExtension",
+    "url": "https://github.com/OpenRefine/FilesExtension",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "176bd8522dd58a9c45802997c4e70a67fd6c32f1",
+    "readme_available": true
+  },
+  {
+    "name": "familysearch/gedcom-registries",
+    "url": "https://github.com/FamilySearch/GEDCOM-registries",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "8e5e8c12096d5adf90b4229e27d9b3b21f7af16f",
+    "readme_available": true
+  },
+  {
+    "name": "AleBeda/genechart",
+    "url": "https://github.com/AleBeda/genechart",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "eaeb7fb13407642ea358fd1dd78f844c747babd4",
+    "readme_available": true
+  },
+  {
+    "name": "ADZirid/STEMMA",
+    "url": "https://github.com/ADZirid/STEMMA",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "f55c915044127e224cadd23ef6bb6978b5a4f5ce",
+    "readme_available": true
+  },
+  {
+    "name": "genea-app/genea-app",
+    "url": "https://github.com/genea-app/genea-app",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "6544e682b2a9cd9cf304680515b8f8b65a7cc649",
+    "readme_available": true
+  },
+  {
+    "name": "ryanturcotte/open-family-tree",
+    "url": "https://github.com/ryanturcotte/open-family-tree",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "1661fb83c33f897742a78fd5294be63fc3381269",
+    "readme_available": true
+  },
+  {
+    "name": "Mip555/root-free",
+    "url": "https://github.com/Mip555/root-free",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "0bcf1db7414114aa8c37b172d30cff4261581036",
+    "readme_available": true
+  },
+  {
+    "name": "spacecat56/Ged2Reg",
+    "url": "https://github.com/spacecat56/Ged2Reg",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "9b3b4e7ad5fac999e2a5ca1c1bfe223ff0a2d84e",
+    "readme_available": true
+  },
+  {
+    "name": "KeithPetro/Yggdrasil",
+    "url": "https://github.com/KeithPetro/Yggdrasil",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "afa9a92a8f64a806ce6684f29efa4e0b1f1bd0f3",
+    "readme_available": true
+  },
+  {
+    "name": "nigelhorne/ged2site",
+    "url": "https://github.com/nigelhorne/ged2site",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "0983b486c3ccb584719bc04b381b744653b16031",
+    "readme_available": true
+  },
+  {
+    "name": "glamberson/gedcom-tags",
+    "url": "https://github.com/glamberson/gedcom-tags",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "d87deef11556208e746b3a4d6914a3dc6a124b06",
+    "readme_available": true
+  },
+  {
+    "name": "recogito/pdf-annotator-js",
+    "url": "https://github.com/recogito/pdf-annotator-js",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "b00bb48ffbf6e2028673da5ebb39eb24472a63b8",
+    "readme_available": true
+  },
+  {
+    "name": "recogito/recogito-js",
+    "url": "https://github.com/recogito/recogito-js",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "775e1b1b6a780426347206f5ab490b280a5bbf6f",
+    "readme_available": true
+  },
+  {
+    "name": "Genealogy Research Workbench",
+    "url": "https://github.com/glasgowm148/genealogy-research-workbench",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a54fd4c320c76af266faaa1e8d932d393f06306d",
+    "readme_available": true
+  },
+  {
+    "name": "IIIF Kasane",
+    "url": "https://github.com/nakamura196/iiif-kasane",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "5bd2572d90cbf842ee03b779bf13ac88aa580ed1",
+    "readme_available": true
+  },
+  {
+    "name": "scan2gedcom",
+    "url": "https://github.com/briancase1776/scan2gedcom",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "f6ec59b249da4317a620f96b3a8092ea35feb70d",
+    "readme_available": true
+  },
+  {
+    "name": "ZMO AI Pipelines",
+    "url": "https://github.com/fmadore/zmo-ai-pipelines",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "03c49e44e006ffea1c2f33c752f6cac5c27c7fc3",
+    "readme_available": true
+  },
+  {
+    "name": "genealogy-agent-skills",
+    "url": "https://github.com/rfsbraz/genealogy-agent-skills",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a1ce65be6db300deaf6bfb7c6f0a34c485594dae",
+    "readme_available": true
+  },
+  {
+    "name": "gramps-mcp-dotnet",
+    "url": "https://github.com/zankul/gramps-mcp-dotnet",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "33beda8e74f9799b8c7bb8ed8d4d0abb47f50ac0",
+    "readme_available": true
+  },
+  {
+    "name": "Rask",
+    "url": "https://github.com/AI-Riksarkivet/rask",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "d786f5fe07f68afbdb11a65e745587cc1306ec17",
+    "readme_available": true
+  },
+  {
+    "name": "oxidged / OxidGene",
+    "url": "https://github.com/trois-six/oxidged",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "d8c2caf3edb1b67bb8849c0fb844ef9a70c5d7cf",
+    "readme_available": true
+  },
+  {
+    "name": "Exscriptor",
+    "url": "https://github.com/julioalonzom/exscriptor",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "4a1c2a15cd2e8c9ae4b30b9f20c3e0d0f15b7a05",
+    "readme_available": true
+  },
+  {
+    "name": "Gramps Connect",
+    "url": "https://github.com/dsblank/gramps-connect",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "19d5a0bdedc253a1377075bc7cb2cf6a891e35fb",
+    "readme_available": true
+  },
+  {
+    "name": "GEDKeeper",
+    "url": "https://github.com/Serg-Norseman/GEDKeeper",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "b701a2ec111affcf5e58c4fa70f834d6c94ce5f9",
+    "readme_available": true
+  },
+  {
+    "name": "Bartelby",
+    "url": "https://github.com/absaltfox/bartelby",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a0b54c34fdd497a55a87fb2093016ac7b2ffde50",
+    "readme_available": true
+  },
+  {
+    "name": "Desembarque",
+    "url": "https://github.com/allan-valin/ocr-gene-docs",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ec6cc95eaad5c04e4437a9b1e81d5aca8a621957",
+    "readme_available": true
+  },
+  {
+    "name": "Historic Records AI Reader",
+    "url": "https://github.com/usulkies/historic-records-ai-reader",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "6001d53ffcc0dfbfc5008e19bd6146cb4d48f3e6",
+    "readme_available": true
+  },
+  {
+    "name": "gedaudit",
+    "url": "https://github.com/thobgg/gedaudit",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e09453138357e52a18e00c054a5181650601bc28",
+    "readme_available": true
+  },
+  {
+    "name": "open-ancestry",
+    "url": "https://github.com/adamsilverstein/open-ancestry",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a7b52d2d4612da21eab4df3217db21b6e5bac5e2",
+    "readme_available": true
+  },
+  {
+    "name": "NAFRec",
+    "url": "https://github.com/Kansallisarkisto-AI/nafrec",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "179b1986abb58ba90ccf5b1400fd5a5e78a4d975",
+    "readme_available": true
+  },
+  {
+    "name": "Scribe",
+    "url": "https://github.com/lehigh-university-libraries/scribe",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "37c182b27ea9fd0844d881307e29307fcb4f51c5",
+    "readme_available": true
+  },
+  {
+    "name": "gov-gazetteer-mcp",
+    "url": "https://github.com/ianderso/gov-gazetteer-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "157266ec901e9852b9b02fda90fd36f314ea4b21",
+    "readme_available": true
+  },
+  {
+    "name": "genealogy-mcp",
+    "url": "https://github.com/igormel81/genealogy-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "7f4e96b4f9ad1ab7b4c81819b59612e936c571c0",
+    "readme_available": true
+  },
+  {
+    "name": "Archive MCP adapters (ianderso)",
+    "url": "https://github.com/ianderso",
+    "checked_on": "2026-11-04",
+    "result": "owner_profile",
+    "error": null,
+    "commit": null,
+    "readme_available": false
+  },
+  {
+    "name": "Gramps Evidence MCP",
+    "url": "https://github.com/ianderso/gramps-evidence-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "77aceea16b0cf48bd51c3adcf476bc908bd5d086",
+    "readme_available": true
+  },
+  {
+    "name": "geiserx/gramps-web-toolkit",
+    "url": "https://github.com/GeiserX/gramps-web-toolkit",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "01cf2de33c0a926dedf6510a80787f505415b0d8",
+    "readme_available": true
+  },
+  {
+    "name": "kinprove/genealogy-research-recipes",
+    "url": "https://github.com/Kinprove/genealogy-research-recipes",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "4f8decf59e460cbb6c84e7ac1889ba249488cef2",
+    "readme_available": true
+  },
+  {
+    "name": "b21-agency/gramps-ui",
+    "url": "https://github.com/b21-agency/gramps-ui",
+    "checked_on": "2026-11-04",
+    "result": "not_found",
+    "error": [
+      {
+        "type": "text",
+        "text": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"404\"}"
+      }
+    ],
+    "commit": null,
+    "readme_available": false,
+    "http_status": 404,
+    "request_url": "https://api.github.com/repos/b21-agency/gramps-ui",
+    "response": {
+      "message": "Not Found",
+      "documentation_url": "https://docs.github.com/rest/repos/repos#get-a-repository",
+      "status": "404"
+    }
+  },
+  {
+    "name": "dsblank/gramps-connect-stories",
+    "url": "https://github.com/dsblank/gramps-connect-stories",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "8e801cbc4ad93259bdfa31c4db2b6f53ba271421",
+    "readme_available": true
+  },
+  {
+    "name": "device25/gedview",
+    "url": "https://github.com/device25/gedview",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "874b794d341aad1223543f68ef79692c6791a1ad",
+    "readme_available": true
+  },
+  {
+    "name": "stanford-oval/sheldon",
+    "url": "https://github.com/stanford-oval/sheldon",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "7fbf027d1fb414443612d4ad2661b396c8352cd3",
+    "readme_available": true
+  },
+  {
+    "name": "denissergeevitch/ex-ussr-kinship-research",
+    "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "557abe41be1bbf97dbe1bcf8788150559a6f37f5",
+    "readme_available": true
+  },
+  {
+    "name": "archiveheritagegroup/ahg-archives-mcp",
+    "url": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ebb6969cf19ca42ee15f46142deb130baa7c7ecf",
+    "readme_available": true
+  },
+  {
+    "name": "archiveheritagegroup/heratio",
+    "url": "https://github.com/ArchiveHeritageGroup/heratio",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a1d41554dc688cf9abe8316b52356cd0e0e7e1f6",
+    "readme_available": true
+  },
+  {
+    "name": "yifenglu1999/ai-historian",
+    "url": "https://github.com/YiFengLu1999/AI-Historian",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "3fb9725c1b21b4e7d64972cf232eb36f3d9e5678",
+    "readme_available": true
+  },
+  {
+    "name": "vaibhaav-tiwari/lineage",
+    "url": "https://github.com/Vaibhaav-Tiwari/lineage",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "d62292b880d870d2cac82e860a77e2af7a639d78",
+    "readme_available": true
+  },
+  {
+    "name": "mouchar/ftb-mcp",
+    "url": "https://github.com/mouchar/ftb-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "2869434bc59350204f567297ef04b2a832ece6ef",
+    "readme_available": true
+  },
+  {
+    "name": "ai-riksarkivet/ra-mcp",
+    "url": "https://github.com/AI-Riksarkivet/ra-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "e4b739c35a2b16be87348e7433e56d13a0d5d157",
+    "readme_available": true
+  },
+  {
+    "name": "borisovodov/doru",
+    "url": "https://github.com/borisovodov/doru",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "3ab88bf0136dd6645657d4e9424877e1482dc383",
+    "readme_available": true
+  },
+  {
+    "name": "stanford-oval/credit",
+    "url": "https://github.com/stanford-oval/CREDIT",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "55b912d8ae1d0072238ee9c0f2a9f35208467721",
+    "readme_available": true
+  },
+  {
+    "name": "fmadore/iwac-mcp-server",
+    "url": "https://github.com/fmadore/iwac-mcp-server",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "aba411e8ee6ba4ae1bf083537687266d554e2cd4",
+    "readme_available": true
+  },
+  {
+    "name": "alexey-n-chernyshov/gramps-web-mcp-rs",
+    "url": "https://github.com/Alexey-N-Chernyshov/gramps-web-mcp-rs",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "0036ef76638a10e84aa49b1137310af23928d838",
+    "readme_available": true
+  },
+  {
+    "name": "magicianmarty/heritage-research-mcp",
+    "url": "https://github.com/magicianmarty/heritage-research-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "a88957fea659904d37ec3a1f7f3cfcab26a17058",
+    "readme_available": true
+  },
+  {
+    "name": "itarunnn/jp-lit-mcp",
+    "url": "https://github.com/itarunnn/jp-lit-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "48706e1a97ce08ba3316154b387bd1c6c622686a",
+    "readme_available": true
+  },
+  {
+    "name": "k-woitas/eperiodica-explorer",
+    "url": "https://github.com/k-woitas/eperiodica-explorer",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "8d14e0f2f6869c4739155173f5b41cd764ddf892",
+    "readme_available": true
+  },
+  {
+    "name": "genealogy-mcp/gramps-mcp",
+    "url": "https://github.com/Genealogy-MCP/gramps-mcp",
+    "checked_on": "2026-11-04",
+    "result": "exists",
+    "error": null,
+    "commit": "ca6de056e9c088652627cc73dae5a3d6f106f81c",
+    "readme_available": true
+  }
+]

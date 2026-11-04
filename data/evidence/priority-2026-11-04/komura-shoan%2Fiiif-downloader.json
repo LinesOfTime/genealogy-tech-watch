@@ -1,0 +1,11 @@
+{
+  "name": "komura-shoan/iiif-downloader",
+  "checked_on": "2026-11-04",
+  "url": "https://github.com/komura-shoan/iiif-downloader",
+  "error": [
+    {
+      "type": "text",
+      "text": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"404\"}"
+    }
+  ]
+}

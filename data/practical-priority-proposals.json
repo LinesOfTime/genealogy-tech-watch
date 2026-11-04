@@ -1,0 +1,821 @@
+{
+  "version": 1,
+  "status": "pending",
+  "reviewed_on": "2026-11-04",
+  "projects": [
+    {
+      "project": "23andme/bonsaitree",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P3",
+        "priority_original": "C",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+          "component_fit": null,
+          "russia_fit": null,
+          "maturity": null,
+          "evidence_level": "E0",
+          "license_risk": null,
+          "integration_effort": null,
+          "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+          "next_action": "Проверить сценарий: Сравнение гипотез о структуре родства на основе ДНК-данных; не подмена документального доказательства.",
+          "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+          "source_urls": [
+            "https://github.com/23andme/bonsaitree"
+          ],
+          "reviewer": "Каталожный аудит",
+          "review_status": "triaged",
+          "verification_issue": null
+        }
+      },
+      "proposed_priority": "P2",
+      "role": "Библиотека генетического родства",
+      "task": "IBD → гипотеза родословной",
+      "scope": "Не ограничен страной; нужны совместимые IBD и генетическая карта",
+      "input_output": "IBD-сегменты, возраст и пол → граф предполагаемого родства",
+      "rationale": "Нужны подготовка IBD и проверка нестандартной LICENSE.txt; гипотеза не доказывает документальное родство.",
+      "pilot": "На учебном примере проверить связи с известной родословной, затем оценить расхождения с ручной гипотезой.",
+      "recheck_trigger": "После проверки входного формата, условий лицензии и ошибок на эталоне.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/23andme%2Fbonsaitree.json",
+      "evidence_sha256": "dd9000dfd5e5e384d1d167c1615ad974238fee70ff7d209e79450a1c012b6b86",
+      "source_urls": [
+        "https://api.github.com/repos/23andme/bonsaitree/contents/README.md?ref=72bfaf25508635a5c39d4b9617d4179e0675bd15",
+        "https://api.github.com/repos/23andme/bonsaitree/contents/LICENSE.txt?ref=72bfaf25508635a5c39d4b9617d4179e0675bd15"
+      ]
+    },
+    {
+      "project": "abdash/roots-familytreevisualizer",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P2",
+        "priority_original": "B",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+          "component_fit": null,
+          "russia_fit": null,
+          "maturity": null,
+          "evidence_level": "E0",
+          "license_risk": null,
+          "integration_effort": null,
+          "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+          "next_action": "Проверить сценарий: Быстро представить небольшую родословную и экспортировать графику в PNG или SVG.",
+          "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+          "source_urls": [
+            "https://github.com/abdash/roots-familytreevisualizer"
+          ],
+          "reviewer": "Каталожный аудит",
+          "review_status": "triaged",
+          "verification_issue": null
+        }
+      },
+      "proposed_priority": "P1",
+      "role": "Браузерный визуализатор",
+      "task": "Небольшая семейная схема → PNG/SVG",
+      "scope": "Английский, арабский, турецкий интерфейс; географического ограничения не заявлено",
+      "input_output": "Ручной ввод/JSON → схема и экспорт",
+      "rationale": "JSON не равен GEDCOM; объём URL ограничен, заявления о приватности не испытаны.",
+      "pilot": "Ввести пять вымышленных людей и повторный брак; проверить связи и экспорт относительно ручной схемы.",
+      "recheck_trigger": "Если требуется GEDCOM либо схема не помещается в URL — сначала искать другой путь.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/abdash%2Froots-familytreevisualizer.json",
+      "evidence_sha256": "6857e4af4508e580c10a4fcb121a527b798de324987ce0330f5a9cda59b7a749",
+      "source_urls": [
+        "https://api.github.com/repos/abdash/roots-familytreevisualizer/contents/README.md?ref=9c0809ff4c9dfe531d550930ce2ad9b0683d2d1f",
+        "https://api.github.com/repos/abdash/roots-familytreevisualizer/contents/LICENSE?ref=9c0809ff4c9dfe531d550930ce2ad9b0683d2d1f"
+      ]
+    },
+    {
+      "project": "gramps-project/gramps",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P1",
+        "priority_original": "A",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
+          "component_fit": 4,
+          "russia_fit": 2,
+          "maturity": 4,
+          "evidence_level": "E1",
+          "license_risk": null,
+          "integration_effort": 2,
+          "priority_rationale": "Базовый ориентир по генеалогическим сущностям, событиям, источникам и цитированиям.",
+          "next_action": "Сопоставить Gramps-модель с кабинетом и российской исторической географией. Найти точный файл лицензии и проверить условия.",
+          "recheck_trigger": "Новый релиз, изменения лицензии или API",
+          "source_urls": [
+            "https://github.com/gramps-project/gramps/blob/HEAD/README.md"
+          ],
+          "reviewer": "Редакционная оценка",
+          "review_status": "proposed",
+          "source_blob_sha": {
+            "README_md": "15ed4123a3cc0811fcbafdd1f34d02db0a37afe2"
+          },
+          "verified_file_blob_sha": {
+            "readme": "HEAD",
+            "license": null
+          }
+        }
+      },
+      "proposed_priority": "P1",
+      "role": "Настольное приложение",
+      "task": "Вести родословную с источниками",
+      "scope": "Локализуемый интерфейс; национальная пригодность данных проверяется на примере",
+      "input_output": "Небольшая копия дерева → связанные люди, события и источники",
+      "rationale": "При сборке нужны Python/GTK и зависимости; совместимость всех расширений не установлена.",
+      "pilot": "На копии дерева проверить одну семью и цитату, экспорт и восстановление; сравнить с текущим способом учёта.",
+      "recheck_trigger": "После проверки сохранности источников и неподдержанных полей.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/gramps-project%2Fgramps.json",
+      "evidence_sha256": "e292e6b38216dca7bf2d46d6f9cde16124aeb1211649d5c61366a24bdeb8847c",
+      "source_urls": [
+        "https://api.github.com/repos/gramps-project/gramps/contents/README.md?ref=e9c09a44791def6a6b81079dc7f8cbe8c7e69cc0",
+        "https://api.github.com/repos/gramps-project/gramps/contents/COPYING?ref=e9c09a44791def6a6b81079dc7f8cbe8c7e69cc0"
+      ]
+    },
+    {
+      "project": "gramps-project/gramps-web",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P1",
+        "priority_original": "A",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
+          "component_fit": 4,
+          "russia_fit": 2,
+          "maturity": 3,
+          "evidence_level": "E2",
+          "license_risk": "L1",
+          "integration_effort": 2,
+          "priority_rationale": "Ориентир по веб-интерфейсу, совместной работе и доступу; фронтенд и API различать.",
+          "next_action": "Проверить UX, роли и работу с источниками на тестовой базе. Сверить SPDX и зависимости перед заимствованием.",
+          "recheck_trigger": "Новый релиз, изменения лицензии или API",
+          "source_urls": [
+            "https://github.com/gramps-project/gramps-web/blob/HEAD/README.md",
+            "https://github.com/gramps-project/gramps-web/blob/HEAD/LICENSE"
+          ],
+          "reviewer": "Редакционная оценка",
+          "review_status": "proposed",
+          "source_blob_sha": {
+            "README_md": "e069af1409752bcc1e5d48289bae6a1113541fd8",
+            "LICENSE": "0ad25db4bd1d86c452db3f9602ccdbe172438f52"
+          },
+          "verified_file_blob_sha": {
+            "readme": "HEAD",
+            "license": "HEAD"
+          }
+        }
+      },
+      "proposed_priority": "P1",
+      "role": "Веб-приложение",
+      "task": "Совместно просматривать и редактировать дерево",
+      "scope": "Многоязычный интерфейс; страна не ограничена",
+      "input_output": "Тестовое дерево на демо → просмотр и проверка ролей",
+      "rationale": "Проба на демо доступна; собственное размещение и AI-функции требуют отдельной настройки.",
+      "pilot": "На демо сравнить доступ owner/editor/member к одной записи; без загрузки личных данных.",
+      "recheck_trigger": "Перед своим размещением проверить резервирование, права и синхронизацию.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/gramps-project%2Fgramps-web.json",
+      "evidence_sha256": "e2f685177710587070d01da79124598a44f8eb73f7348fc4af0d42ed9a3b454b",
+      "source_urls": [
+        "https://api.github.com/repos/gramps-project/gramps-web/contents/README.md?ref=44ede5a04f0a6ba91b084cf8ab719a97bcad6c22",
+        "https://api.github.com/repos/gramps-project/gramps-web/contents/LICENSE?ref=44ede5a04f0a6ba91b084cf8ab719a97bcad6c22"
+      ]
+    },
+    {
+      "project": "gramps-project/gramps-web-api",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P1",
+        "priority_original": "P1",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Повторно прочитаны README и LICENSE по зафиксированным blob SHA; без установки, тестирования и независимой проверки всех зависимостей; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
+          "component_fit": 4,
+          "russia_fit": 2,
+          "maturity": 3,
+          "evidence_level": "E2",
+          "license_risk": "L1",
+          "integration_effort": 2,
+          "priority_rationale": "Образец REST API и контроля приватности; RestrictedDb от 26 октября не обязательно опубликован в релизе.",
+          "next_action": "Проверить read-only API, приватность guest/agent, отдельно изменения RestrictedDb. Сверить SPDX и зависимости перед заимствованием.",
+          "recheck_trigger": "Новый релиз, изменения лицензии или API",
+          "source_urls": [
+            "https://github.com/gramps-project/gramps-web-api/blob/HEAD/README.md",
+            "https://github.com/gramps-project/gramps-web-api/blob/HEAD/LICENSE"
+          ],
+          "reviewer": "Редакционная оценка",
+          "review_status": "proposed",
+          "source_blob_sha": {
+            "README_md": "925d962b79329a521524485017d8bbab149ae399",
+            "LICENSE": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e"
+          },
+          "verified_file_blob_sha": {
+            "readme": "HEAD",
+            "license": "HEAD"
+          }
+        }
+      },
+      "proposed_priority": "P2",
+      "role": "Серверный API",
+      "task": "Интегрировать дерево с внешним инструментом",
+      "scope": "Данные Gramps, без специальной страны",
+      "input_output": "Запрос к тестовому дереву → структурированная запись",
+      "rationale": "Это backend, нужен сервер, авторизация и документация API; README не заменяет проверку контракта.",
+      "pilot": "Получить одного человека и его цитаты read-only; сравнить с интерфейсом Gramps Web.",
+      "recheck_trigger": "После проверки версии API, авторизации и полноты ответа.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/gramps-project%2Fgramps-web-api.json",
+      "evidence_sha256": "e38c37cd386cf7e826e9da3f8a0406935768c4ef97efa85c8624ee934a0315d6",
+      "source_urls": [
+        "https://api.github.com/repos/gramps-project/gramps-web-api/contents/README.md?ref=57618907ce0529a893a02207115e3a3db79e0628",
+        "https://api.github.com/repos/gramps-project/gramps-web-api/contents/LICENSE?ref=57618907ce0529a893a02207115e3a3db79e0628"
+      ]
+    },
+    {
+      "project": "geiserx/gramps-web-toolkit",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "Не оценён",
+        "priority_original": "Не оценён",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+          "component_fit": null,
+          "russia_fit": null,
+          "maturity": null,
+          "evidence_level": "E0",
+          "license_risk": null,
+          "integration_effort": null,
+          "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+          "next_action": "Проверить сценарий: Редакционный сценарий по документации: подготовить список изменений дерева, просмотреть dry-run, применить к копии и отдельно проверить связи и о",
+          "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+          "source_urls": [
+            "https://github.com/GeiserX/gramps-web-toolkit"
+          ],
+          "reviewer": "Каталожный аудит",
+          "review_status": "triaged",
+          "verification_issue": null
+        }
+      },
+      "proposed_priority": "P2",
+      "role": "CLI-конвейер",
+      "task": "Контролировать подготовку и применение изменений дерева",
+      "scope": "Ядро без ограничения страны; spanish-poller и часть загрузчиков — Испания",
+      "input_output": "Тестовый JSONL и снимок дерева → dry-run и отчёт проверок",
+      "rationale": "Нужна CLI-среда Python; часть архивов требует учётную запись. Испанские модули не универсальны.",
+      "pilot": "На встроенных вымышленных данных проверить отказ от дубля без --apply; сравнить с ручной проверкой.",
+      "recheck_trigger": "После проверки dry-run, совместимости и резервной копии.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/geiserx%2Fgramps-web-toolkit.json",
+      "evidence_sha256": "631bad3f6cde38b55e2ebadeadb02118db36303375d005edb4221960110ee138",
+      "source_urls": [
+        "https://api.github.com/repos/GeiserX/gramps-web-toolkit/contents/README.md?ref=01cf2de33c0a926dedf6510a80787f505415b0d8",
+        "https://api.github.com/repos/GeiserX/gramps-web-toolkit/contents/LICENSE?ref=01cf2de33c0a926dedf6510a80787f505415b0d8"
+      ]
+    },
+    {
+      "project": "scormave/gramps-web-mcp",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P1",
+        "priority_original": "A",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+          "component_fit": null,
+          "russia_fit": null,
+          "maturity": null,
+          "evidence_level": "E0",
+          "license_risk": null,
+          "integration_effort": null,
+          "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+          "next_action": "Проверить обоснованность выводов и ссылки на первоисточники",
+          "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+          "source_urls": [
+            "https://github.com/scormave/gramps-web-mcp"
+          ],
+          "reviewer": "Каталожный аудит",
+          "review_status": "triaged",
+          "verification_issue": null
+        }
+      },
+      "proposed_priority": "P2",
+      "role": "MCP-адаптер",
+      "task": "Читать дерево и проверять дубли с ИИ",
+      "scope": "Экземпляр Gramps Web; национальной привязки нет",
+      "input_output": "Запрос к тестовому дереву → найденные записи/кандидаты дублей",
+      "rationale": "Нужны сервер и MCP-клиент; автор предупреждает о потере данных в версиях до 2.3.1. Подтверждение зависит от клиента.",
+      "pilot": "Начать read-only с известной пары дублей; сравнить с ручным поиском, изменения пробовать только на копии.",
+      "recheck_trigger": "После проверки установленной версии, прав, подтверждения и отката.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/scormave%2Fgramps-web-mcp.json",
+      "evidence_sha256": "8050a82b18c69bbd0cac2fa6d65108e2d4512a50e2539a8f4022bb6499632035",
+      "source_urls": [
+        "https://api.github.com/repos/scormave/gramps-web-mcp/contents/README.md?ref=ff2c5db571b903ee922b1dfecd898e51ed947f2b",
+        "https://api.github.com/repos/scormave/gramps-web-mcp/contents/LICENSE?ref=ff2c5db571b903ee922b1dfecd898e51ed947f2b"
+      ]
+    },
+    {
+      "project": "genealogy-mcp/gramps-mcp",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "Не оценён",
+        "priority_original": "Не оценён",
+        "evaluation": null
+      },
+      "proposed_priority": "P2",
+      "role": "MCP-адаптер",
+      "task": "Запрашивать и изменять данные Gramps Web",
+      "scope": "Gramps Web 26.x/API 3.x; без специальной страны",
+      "input_output": "Идентификатор/поисковый запрос → записи дерева",
+      "rationale": "GitHub — зеркало GitLab; старый API 2.x не поддерживается. Backup не включает media и не даёт restore через MCP.",
+      "pilot": "На отдельном дереве прочитать известную запись, проверить резервную копию через UI; сравнить с прямым API.",
+      "recheck_trigger": "После проверки совместимости, ограничений backup и полного восстановления вне MCP.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/genealogy-mcp%2Fgramps-mcp.json",
+      "evidence_sha256": "42f9318ab7c94fe1530d63f6afa7377fa7abad44f4e7c592fea054248121d5c1",
+      "source_urls": [
+        "https://api.github.com/repos/Genealogy-MCP/gramps-mcp/contents/README.md?ref=ca6de056e9c088652627cc73dae5a3d6f106f81c",
+        "https://api.github.com/repos/Genealogy-MCP/gramps-mcp/contents/LICENSE?ref=ca6de056e9c088652627cc73dae5a3d6f106f81c"
+      ]
+    },
+    {
+      "project": "ai-riksarkivet/ra-mcp",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "Не оценён",
+        "priority_original": "Не оценён",
+        "evaluation": null
+      },
+      "proposed_priority": "P1",
+      "role": "Архивный MCP/CLI",
+      "task": "Искать транскрибированные шведские документы",
+      "scope": "Швеция; коллекции Riksarkivet, покрытие не равно всему архиву",
+      "input_output": "Имя/место → найденная страница и транскрипция",
+      "rationale": "Удалённый endpoint и поддержка клиента требуют проверки; AI/HTR-текст сверять со сканом.",
+      "pilot": "Найти заранее известную страницу по имени и месту, сохранить архивный шифр и сверить чтение с изображением.",
+      "recheck_trigger": "Если endpoint недоступен или нужная коллекция не покрыта — уточнить доступ.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/ai-riksarkivet%2Fra-mcp.json",
+      "evidence_sha256": "e21d25a85f48837d5295c4165aa0f77f03f18f550bacbc3f4242b55ca0f1bff2",
+      "source_urls": [
+        "https://api.github.com/repos/AI-Riksarkivet/ra-mcp/contents/README.md?ref=e4b739c35a2b16be87348e7433e56d13a0d5d157",
+        "https://api.github.com/repos/AI-Riksarkivet/ra-mcp/contents/LICENSE?ref=e4b739c35a2b16be87348e7433e56d13a0d5d157"
+      ]
+    },
+    {
+      "project": "ai-riksarkivet/htrflow-batch",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P2",
+        "priority_original": "B",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+          "component_fit": null,
+          "russia_fit": null,
+          "maturity": null,
+          "evidence_level": "E0",
+          "license_risk": null,
+          "integration_effort": null,
+          "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+          "next_action": "Проверить сценарий: Обработка больших коллекций сканов на GPU-инфраструктуре с последующей проверкой текста.",
+          "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+          "source_urls": [
+            "https://github.com/ai-riksarkivet/htrflow-batch"
+          ],
+          "reviewer": "Каталожный аудит",
+          "review_status": "triaged",
+          "verification_issue": null
+        }
+      },
+      "proposed_priority": "P3",
+      "role": "Экспериментальный HTR-конвейер",
+      "task": "Пакетно распознавать архивные тома",
+      "scope": "Примеры архивных томов; перенос модели на иной язык не проверен",
+      "input_output": "IIIF/изображения и pipeline → ALTO/PAGE XML",
+      "rationale": "Авторы прямо пишут Not for use yet; интерфейсы и формат campaigns меняются, релизы предварительные.",
+      "pilot": "Пока сравнить требования с задачей; инженерное демо одной страницы отделить от реальной исследовательской обработки.",
+      "recheck_trigger": "Стабильный формат, снятие предупреждения автора и проверка эталонной страницы.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/ai-riksarkivet%2Fhtrflow-batch.json",
+      "evidence_sha256": "2e638c30d411b786b7532f9b9f1b47b465a213e7fde3829b8094a237000af310",
+      "source_urls": [
+        "https://api.github.com/repos/ai-riksarkivet/htrflow-batch/contents/README.md?ref=3cd05f8d117075f84bfdb75b0dbcefa903bca2a1",
+        "https://api.github.com/repos/ai-riksarkivet/htrflow-batch/contents/LICENSE?ref=3cd05f8d117075f84bfdb75b0dbcefa903bca2a1"
+      ]
+    },
+    {
+      "project": "fmadore/iwac-mcp-server",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "Не оценён",
+        "priority_original": "Не оценён",
+        "evaluation": null
+      },
+      "proposed_priority": "P1",
+      "role": "Архивный read-only MCP",
+      "task": "Искать источники по истории ислама Западной Африки",
+      "scope": "Западная Африка; только покрытие IWAC",
+      "input_output": "Тема/имя → карточки документов, фильтры и ссылки",
+      "rationale": "Публичные и закрытые данные различаются; семантический поиск требует модели, совпадение оценок не подтверждает факт.",
+      "pilot": "Найти два известных документа через публичный поиск и сверить метаданные/цитаты с оригиналами.",
+      "recheck_trigger": "При запросе закрытого полного текста сначала подтвердить права доступа.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/fmadore%2Fiwac-mcp-server.json",
+      "evidence_sha256": "d5da252463d03667857822da6f58a4a12cd515db38257b8b5b604e6413697a77",
+      "source_urls": [
+        "https://api.github.com/repos/fmadore/iwac-mcp-server/contents/README.md?ref=aba411e8ee6ba4ae1bf083537687266d554e2cd4",
+        "https://api.github.com/repos/fmadore/iwac-mcp-server/contents/LICENSE?ref=aba411e8ee6ba4ae1bf083537687266d554e2cd4"
+      ]
+    },
+    {
+      "project": "k-woitas/eperiodica-explorer",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "Не оценён",
+        "priority_original": "Не оценён",
+        "evaluation": null
+      },
+      "proposed_priority": "P1",
+      "role": "Браузерный архивный адаптер",
+      "task": "Получить статью и изображения швейцарского журнала",
+      "scope": "Швейцарские журналы e-periodica; OCR de/fr/it/en/la",
+      "input_output": "PID/DOI/URL статьи → цитата, manifest, изображения",
+      "rationale": "OAI/сбор коллекции требуют собственного CORS proxy; OCR генерируется в браузере и ошибается, права статьи отдельные.",
+      "pilot": "По известному DOI получить цитату и одну страницу без proxy; сравнить с сайтом e-periodica и проверить SOURCE.txt.",
+      "recheck_trigger": "Для массового OAI-сбора сначала настроить proxy и проверить условия источника.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/k-woitas%2Feperiodica-explorer.json",
+      "evidence_sha256": "b8428a089c09986a3d6a9e995b43fd28deaa257deb74fd81f0b3709dd959e558",
+      "source_urls": [
+        "https://api.github.com/repos/k-woitas/eperiodica-explorer/contents/README.md?ref=8d14e0f2f6869c4739155173f5b41cd764ddf892",
+        "https://api.github.com/repos/k-woitas/eperiodica-explorer/contents/LICENSE?ref=8d14e0f2f6869c4739155173f5b41cd764ddf892"
+      ]
+    },
+    {
+      "project": "tropy/tropy",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P1",
+        "priority_original": "B",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "README изучен; оценка предложена",
+          "component_fit": null,
+          "russia_fit": null,
+          "maturity": null,
+          "evidence_level": "E1",
+          "license_risk": null,
+          "integration_effort": null,
+          "priority_rationale": "Практическая значимость для Research Workspace; требует теста. Предложенный приоритет P1.",
+          "next_action": "Проверить сценарий: Редакционный сценарий: собрать фотографии архивных документов в исследовательские элементы, добавить описательные метаданные, теги и списки, зате",
+          "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+          "source_urls": [
+            "https://github.com/tropy/tropy"
+          ],
+          "reviewer": "Каталожный аудит",
+          "review_status": "proposed",
+          "verification_issue": null
+        }
+      },
+      "proposed_priority": "P1",
+      "role": "Настольный организатор источников",
+      "task": "Систематизировать исследовательские фотографии",
+      "scope": "Фотографии пользователя; странового ограничения в README нет",
+      "input_output": "Небольшой набор фотографий → описанные и находимые источники",
+      "rationale": "README не подтверждает все сценарии экспорта и переноса проекта; сохранность оригиналов проверять отдельно.",
+      "pilot": "Описать десять копий фотографий, затем найти нужную по метаданным; сравнить с папками и таблицей.",
+      "recheck_trigger": "Перед большим проектом проверить резервирование и перенос метаданных.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/tropy%2Ftropy.json",
+      "evidence_sha256": "633894e929df06f0c4324c2fa05926b6c555190b91417862caf0bab07c2f6e3a",
+      "source_urls": [
+        "https://api.github.com/repos/tropy/tropy/contents/README.md?ref=4ff15947990d1e19f43ab2c426df5cdc0301a6c2",
+        "https://api.github.com/repos/tropy/tropy/contents/LICENSE?ref=4ff15947990d1e19f43ab2c426df5cdc0301a6c2"
+      ]
+    },
+    {
+      "project": "lovasoa/dezoomify-rs",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P2",
+        "priority_original": "B",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Проверены имеющиеся данные каталога; upstream не перепроверен",
+          "component_fit": null,
+          "russia_fit": null,
+          "maturity": null,
+          "evidence_level": "E0",
+          "license_risk": null,
+          "integration_effort": null,
+          "priority_rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
+          "next_action": "Проверить сценарий: Редакционный сценарий: сохранить для локального чтения одно разрешённое к скачиванию архивное изображение, которое в браузере показано плитками. ",
+          "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+          "source_urls": [
+            "https://github.com/lovasoa/dezoomify-rs"
+          ],
+          "reviewer": "Каталожный аудит",
+          "review_status": "triaged",
+          "verification_issue": null
+        }
+      },
+      "proposed_priority": "P3",
+      "role": "Неподдерживаемый загрузчик",
+      "task": "Получить изображение из тайлов",
+      "scope": "Зависит от протокола архива, не от страны",
+      "input_output": "URL тайлового изображения → собранное изображение",
+      "rationale": "README прямо сообщает о прекращении поддержки; ссылка на преемника не является его новой оценкой.",
+      "pilot": "Для нового исследования сначала проверить поддерживаемый путь у источника; прежнюю версию пробовать лишь при необходимости.",
+      "recheck_trigger": "Возобновление поддержки либо отдельная проверка преемника, без автоматической подмены URL.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/lovasoa%2Fdezoomify-rs.json",
+      "evidence_sha256": "277f16fc72c0c9e7a04a1f8008ac04e9fa2a536030981445be85f9a80828dca6",
+      "source_urls": [
+        "https://api.github.com/repos/lovasoa/dezoomify-rs/contents/README.md?ref=562e87e7a4797c3b12a4d2519ef14f2163f7b1d8",
+        "https://api.github.com/repos/lovasoa/dezoomify-rs/contents/LICENSE?ref=562e87e7a4797c3b12a4d2519ef14f2163f7b1d8"
+      ]
+    },
+    {
+      "project": "OpenRefine/OpenRefine",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P1",
+        "priority_original": "B",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "README изучен; оценка предложена",
+          "component_fit": null,
+          "russia_fit": null,
+          "maturity": null,
+          "evidence_level": "E1",
+          "license_risk": null,
+          "integration_effort": null,
+          "priority_rationale": "Практическая значимость для Person Resolver; требует теста. Предложенный приоритет P1.",
+          "next_action": "Проверить сценарий: Редакционный генеалогический сценарий: подготовить таблицу архивных выписок, убрать лишние пробелы и привести написания к единому виду; просмотре",
+          "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
+          "source_urls": [
+            "https://github.com/OpenRefine/OpenRefine"
+          ],
+          "reviewer": "Каталожный аудит",
+          "review_status": "proposed",
+          "verification_issue": null
+        }
+      },
+      "proposed_priority": "P1",
+      "role": "Локальное приложение для таблиц",
+      "task": "Очищать таблицу персон перед сопоставлением",
+      "scope": "Табличные данные; страна не ограничена",
+      "input_output": "Копия CSV → очищенные и согласованные значения",
+      "rationale": "Автоматическое согласование не доказывает тождество людей; внешние сервисы и расширения проверяются отдельно.",
+      "pilot": "На 30 строках с известными вариантами имён сравнить ручную очистку и результат, сохранив исходный CSV.",
+      "recheck_trigger": "Перед объединением персон вручную подтвердить неоднозначные совпадения.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/OpenRefine%2FOpenRefine.json",
+      "evidence_sha256": "d3daba1afea7acd4e07cd791ba606ded8c34fd10f9494144ee758a50afb572eb",
+      "source_urls": [
+        "https://api.github.com/repos/OpenRefine/OpenRefine/contents/README.md?ref=33f9544f88ee8ca91f055b3a722ded5672cffbb4",
+        "https://api.github.com/repos/OpenRefine/OpenRefine/contents/LICENSE.txt?ref=33f9544f88ee8ca91f055b3a722ded5672cffbb4"
+      ]
+    },
+    {
+      "project": "familysearch/gedcom",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P1",
+        "priority_original": "A",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "GitHub README, назначение и известные лицензионные сведения; без независимого запуска",
+          "component_fit": 4,
+          "russia_fit": 3,
+          "maturity": 4,
+          "evidence_level": "E1",
+          "license_risk": "L2",
+          "integration_effort": 2,
+          "priority_rationale": "Официальная спецификация FamilySearch GEDCOM, не библиотека для импорта. Источник нормативных требований к обмену и расширениям.",
+          "next_action": "Построить round-trip тесты GEDCOM 7, неизвестных тегов, цитирований и связей; сверить лицензию документации.",
+          "recheck_trigger": "Новый релиз, изменение API/моделей, лицензии или независимый benchmark",
+          "source_urls": [
+            "https://github.com/familysearch/gedcom"
+          ],
+          "reviewer": "Редакционная оценка",
+          "review_status": "proposed"
+        }
+      },
+      "proposed_priority": "P1",
+      "role": "Спецификация обмена",
+      "task": "Проверить соответствие генеалогического экспорта",
+      "scope": "GEDCOM; конкретную версию сверять с заголовком файла",
+      "input_output": "Малый GEDCOM и спецификация → список несовместимых полей",
+      "rationale": "Это спецификация, не готовый парсер; main и рабочий draft различаются.",
+      "pilot": "Сопоставить одну семью, цитату и нестандартную дату с выпущенной спецификацией; сравнить потери двух экспортов.",
+      "recheck_trigger": "При изменении версии или расширений повторить проверку совместимости.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/familysearch%2Fgedcom.json",
+      "evidence_sha256": "883443aee797e07fa324bbd398d48b2331dba89f69f118a9ed360b4bb76dccb4",
+      "source_urls": [
+        "https://api.github.com/repos/familysearch/gedcom/contents/README.md?ref=633ebf8512dad123c41e9568b15845efb6a8b4b2",
+        "https://api.github.com/repos/familysearch/gedcom/contents/LICENSE?ref=633ebf8512dad123c41e9568b15845efb6a8b4b2"
+      ]
+    },
+    {
+      "project": "familysearch/gedcomx",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "P1",
+        "priority_original": "A",
+        "evaluation": {
+          "method_version": "2026-10-28",
+          "reviewed_at": "2026-10-28",
+          "review_scope": "Повторно прочитан README по зафиксированному blob SHA; LICENSE по стандартному пути не найден, требует отдельной проверки; ссылки на HEAD динамические, идентификаторы blob SHA сохранены отдельно",
+          "component_fit": 4,
+          "russia_fit": 2,
+          "maturity": 3,
+          "evidence_level": "E1",
+          "license_risk": null,
+          "integration_effort": 2,
+          "priority_rationale": "Спецификация обмена данными с отношениями и источниками; не путать с GEDCOM 7.",
+          "next_action": "Сопоставить модель утверждений и источников с GEDCOM 7 и схемой кабинета. Найти точный файл лицензии и проверить условия.",
+          "recheck_trigger": "Новый релиз, изменения лицензии или API",
+          "source_urls": [
+            "https://github.com/familysearch/gedcomx/blob/HEAD/README.md"
+          ],
+          "reviewer": "Редакционная оценка",
+          "review_status": "proposed",
+          "source_blob_sha": {
+            "README_md": "1bdb239f3e623cb102b2fdef8e83c46ab692c86c"
+          },
+          "verified_file_blob_sha": {
+            "readme": "HEAD",
+            "license": null
+          }
+        }
+      },
+      "proposed_priority": "P2",
+      "role": "Модель данных/спецификация",
+      "task": "Оценить обмен исследовательскими сущностями",
+      "scope": "Сериализации GEDCOM X, не подмена GEDCOM-файла",
+      "input_output": "Пример сущностей и связей → модель обмена",
+      "rationale": "Краткий README не задаёт полный контракт; нужен конкретный формат/реализация и схема.",
+      "pilot": "Сопоставить одну персону и источник с моделью, сравнить с текущим форматом, отметить недокументированные поля.",
+      "recheck_trigger": "После выбора схемы/версии и проверки round-trip в конкретной реализации.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/familysearch%2Fgedcomx.json",
+      "evidence_sha256": "5451c253b9be2525e610c5e3679e4b337411d5dff70633c2454073fa3a7a4cfa",
+      "source_urls": [
+        "https://api.github.com/repos/familysearch/gedcomx/contents/README.md?ref=ab9004050704c5eed5a79dabf298f5edc09f98d8",
+        "https://api.github.com/repos/familysearch/gedcomx/contents/LICENSE.txt?ref=ab9004050704c5eed5a79dabf298f5edc09f98d8"
+      ]
+    },
+    {
+      "project": "stanford-oval/credit",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "Не оценён",
+        "priority_original": "Не оценён",
+        "evaluation": null
+      },
+      "proposed_priority": "P3",
+      "role": "Исследовательский ML-метод",
+      "task": "Изучить зависимость ответа модели от предоставленного источника",
+      "scope": "Языковые модели и benchmark авторов; генеалогическая применимость не подтверждена",
+      "input_output": "Ответы с/без контекста → оценка self-attribution",
+      "rationale": "Это обучение/оценивание моделей, не проверка истинности источника; нужны данные, API и для обучения GPU.",
+      "pilot": "Сначала сопоставить задачу с removal test, не переносить авторские метрики в доказанность генеалогического факта.",
+      "recheck_trigger": "Появление воспроизведённого теста на релевантных исторических источниках.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/stanford-oval%2Fcredit.json",
+      "evidence_sha256": "2f2d6c8a6f9084e27ced2011955ae2f93352e6bb0724d69457a5da9aad38503d",
+      "source_urls": [
+        "https://api.github.com/repos/stanford-oval/CREDIT/contents/README.md?ref=55b912d8ae1d0072238ee9c0f2a9f35208467721",
+        "https://api.github.com/repos/stanford-oval/CREDIT/contents/LICENSE?ref=55b912d8ae1d0072238ee9c0f2a9f35208467721"
+      ]
+    },
+    {
+      "project": "borisovodov/doru",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "Не оценён",
+        "priority_original": "Не оценён",
+        "evaluation": null
+      },
+      "proposed_priority": "P3",
+      "role": "Разрабатываемое настольное приложение",
+      "task": "Наблюдать за локальным ведением дерева и MCP",
+      "scope": "Локальные деревья; покрытие стран не установлено",
+      "input_output": "Тестовое дерево → предполагаемый локальный рабочий процесс",
+      "rationale": "В README прямо написано NOTHING WORKS до 0.1.0; список возможностей не доказывает работоспособность.",
+      "pilot": "Не переносить рабочее исследование; после стабильного выпуска проверить пять вымышленных людей и сохранение источников.",
+      "recheck_trigger": "Выпуск 0.1.0 и снятие предупреждения, затем независимая проба.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/borisovodov%2Fdoru.json",
+      "evidence_sha256": "561b12ecbe36d5254d8e8a58e42f5409a418bd23437cee860f50388e6e2f9148",
+      "source_urls": [
+        "https://api.github.com/repos/borisovodov/doru/contents/README.md?ref=3ab88bf0136dd6645657d4e9424877e1482dc383",
+        "https://api.github.com/repos/borisovodov/doru/contents/LICENSE.md?ref=3ab88bf0136dd6645657d4e9424877e1482dc383"
+      ]
+    },
+    {
+      "project": "itarunnn/jp-lit-mcp",
+      "review_status": "pending",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "previous": {
+        "priority": "Не оценён",
+        "priority_original": "Не оценён",
+        "evaluation": null
+      },
+      "proposed_priority": "P2",
+      "role": "Библиографический MCP",
+      "task": "Найти японскую литературу и сведения о материалах",
+      "scope": "Япония; NDL, CiNii, J-STAGE и другие перечисленные базы",
+      "input_output": "Тема/название → библиографические кандидаты и ссылки",
+      "rationale": "Нужны Node.js 22+, MCP-клиент; CiNii appid обязателен по спецификации, KAKEN без него не работает. OCR и доступ к оригиналу различаются.",
+      "pilot": "После настройки найти две заранее известные книги в NDL и проверить библиографию вручную; не считать doctor проверкой качества поиска.",
+      "recheck_trigger": "После проверки установки, нужной базы, ключей и прав на оригинал.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "evidence_file": "data/evidence/priority-2026-11-04/itarunnn%2Fjp-lit-mcp.json",
+      "evidence_sha256": "6c7794cda71b54fd91af8cd3c5ae0f09c4edc975694227403537249c128fdb46",
+      "source_urls": [
+        "https://api.github.com/repos/itarunnn/jp-lit-mcp/contents/README.md?ref=48706e1a97ce08ba3316154b387bd1c6c622686a",
+        "https://api.github.com/repos/itarunnn/jp-lit-mcp/contents/LICENSE?ref=48706e1a97ce08ba3316154b387bd1c6c622686a"
+      ]
+    }
+  ]
+}

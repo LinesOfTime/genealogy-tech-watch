@@ -114,7 +114,9 @@ def main():
         from priority_review import build as review_priorities
         audit=root/'reports/repository-existence.json'
         checks=json.loads(audit.read_text(encoding='utf-8')) if audit.exists() else {}
-        files['docs/priority-review.json']=encoded(review_priorities(catalog,research,checks))
+        from practical_priorities import load_proposals, merge_source_audit
+        proposals=load_proposals(root,catalog)
+        files['docs/priority-review.json']=encoded(review_priorities(catalog,research,merge_source_audit(root,checks),proposals))
     before={name:(root/name).read_bytes() if (root/name).exists() else None for name in files}
     files={name:raw for name,raw in files.items() if before[name]!=raw}
     changed=bool(files)
