@@ -21,6 +21,7 @@ class PracticalPriorityTests(unittest.TestCase):
         package = json.loads((ROOT / 'data/practical-priority-proposals.json').read_text(encoding='utf-8'))
         self.proposal = copy.deepcopy(package['projects'][0])
         self.cards = [copy.deepcopy(next(c for c in cards if c['name'] == self.proposal['project']))]
+        self.cards[0].pop('practical_priority', None)  # synthetic pending review
         self.package = dict(version=1, status='pending', projects=[self.proposal])
         evidence = self.root / self.proposal['evidence_file']
         evidence.parent.mkdir(parents=True)

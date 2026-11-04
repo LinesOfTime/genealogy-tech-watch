@@ -10,7 +10,7 @@
     const key = x.name.toLowerCase(), r = research[key] || {};
     document.title = x.name + ' — исследование';
     document.getElementById('title').textContent = x.name;
-    document.getElementById('subtitle').textContent = x.section + ' · сохранённая редакционная метка ' + x.priority;
+    document.getElementById('subtitle').textContent = x.section + ' · практический приоритет ' + WatchUI.priorityValue(x);
     const applicability = r.russia_applicability || x.russia_applicability;
     const russiaPanel = panel('Применимость для России', para(rating(r.russia_applicability ? r : x)) + para(applicability?.basis || 'Оценка не установлена') +
       (applicability?.original_line ? para('Исходная строка: ' + applicability.original_line) + '<small>Источник: путеводитель от 10 октября 2026, guide_excerpt. Редакционная оценка.</small>' : '') +
@@ -19,10 +19,12 @@
     const typePanel = panel('Тип проекта', para((r.project_type && !/^Не установлен/i.test(r.project_type) ? r.project_type : x.project_type) || r.project_type || 'Тип проекта не установлен'));
     const purpose = x.description_provenance ? x.description : r.editorial_summary || x.description;
     html += panel('Назначение', para(purpose));
-    html += panel('Практическое применение', WatchUI.usage(usage?.projects?.[key],true)+WatchUI.practical(x,r));
+    const p=x.practical_priority;
+    const practicalDetails=p?'<p><b>'+esc(p.task)+'</b></p>'+para(p.scope)+para(p.rationale)+'<p><b>Небольшая проба:</b> '+esc(p.pilot)+'</p>':'';
+    html += panel('Практическое применение', practicalDetails+ WatchUI.usage(usage?.projects?.[key],true)+WatchUI.practical(x,r));
     html += panel('Ограничения и редакционная оценка', WatchUI.limitations(x,r));
     html += typePanel + russiaPanel;
-    html += panel('Приоритет и основания оценки', WatchUI.priorityNote(x)+para(x.evaluation?.priority_rationale||'Обоснование оценки отсутствует.')+'<a href="priorities.html?q='+encodeURIComponent(x.name)+'">Проверить актуальность и следующий шаг →</a>');
+    html += panel('Приоритет и основания оценки', WatchUI.priorityNote(x)+para(x.practical_priority?.rationale||x.evaluation?.priority_rationale||'Обоснование оценки отсутствует.')+'<a href="priorities.html?q='+encodeURIComponent(x.name)+'">Проверить актуальность и следующий шаг →</a>');
     if (x.description_provenance) {
       const p = x.description_provenance;
       html += '<details class="panel"><summary>Происхождение описания назначения</summary>' + ( para('Прежнее описание: ' + p.original_description) +

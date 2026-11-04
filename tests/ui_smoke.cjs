@@ -75,7 +75,13 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   assert.equal(count(page.get('cards').innerHTML,'card'),0);
   page.get('search').value=''; page.get('priority').value='P1'; page.get('russia').value='Высокий';
   vm.runInContext('render()', page.context);
-  assert.equal(count(page.get('cards').innerHTML,'card'), catalog.filter(x => x.priority==='P1' && x.russia_applicability.rating==='Высокий').length);
+  assert.equal(count(page.get('cards').innerHTML,'card'), catalog.filter(x => !x.repository_reference_issue && (x.practical_priority?.priority||x.priority)==='P1' && x.russia_applicability.rating==='Высокий').length);
+  page.get('russia').value='';
+  vm.runInContext('render()', page.context);
+  assert.equal(count(page.get('cards').innerHTML,'card'),23);
+  page.get('priority').value='Проверить ссылку';
+  vm.runInContext('render()', page.context);
+  assert.equal(count(page.get('cards').innerHTML,'card'),4);
   const dg = fixture(digest);
   vm.runInContext(read('docs/digest-ui.js'), dg.context);
   const eventCount = digest.reduce((n,d) => n+d.items.length, 0);

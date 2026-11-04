@@ -30,7 +30,8 @@ const {chromium} = require('playwright');
       assert.equal(await page.locator('#results article').count(),1);
       assert.match(await page.locator('#results').innerText(),new RegExp(repo));
       assert.match(await page.locator('#results').innerText(),/Границы применения/);
-      assert.match(await page.locator('#results').innerText(),/Начните с чтения одной записи/);
+      assert.match(await page.locator('#results').innerText(),/Проба на своих материалах/);
+      assert.match(await page.locator('#results').innerText(),/утверждён пользователем/);
       await page.locator('#results [data-compare]').click();
     }
     assert.match(await page.locator('#compare-results').innerText(),/География источников/);
@@ -206,7 +207,7 @@ const {chromium} = require('playwright');
     assert.ok((await page.locator('#items').innerText()).includes(priorityAudit.projects.find(x=>x.project==='scormave/gramps-web-mcp').state_label));
     const proposal=page.locator('.practical-proposal');
     assert.equal(await proposal.count(),1);
-    assert.match(await proposal.innerText(),/P2.*ожидает утверждения/);
+    assert.match(await proposal.innerText(),/P2.*утверждено пользователем/);
     assert.match(await proposal.innerText(),/read-only/);
     assert.equal(await proposal.locator('a').count(),2);
     await page.reload({waitUntil:'networkidle'});

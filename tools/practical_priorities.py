@@ -4,6 +4,19 @@ import json
 import re
 
 
+def package_hash(data):
+    return hashlib.sha256(json.dumps(data, ensure_ascii=False, sort_keys=True,
+                                    separators=(',', ':')).encode()).hexdigest()
+
+
+def public_assessment(proposal, approval):
+    result = {k: v for k, v in proposal.items() if k not in ('previous', 'proposed_priority', 'review_status')}
+    result.update(priority=proposal['proposed_priority'], previous_priority=proposal['previous']['priority'],
+                  review_status='approved', approved_by=approval['approved_by'], approved_at=approval['approved_at'],
+                  approval_package_hash=approval['package_hash'])
+    return result
+
+
 def merge_source_audit(root, checks):
     """Retain the historical audit; prefer the new, dated public check per URL."""
     path = root / 'reports/priority-source-audit-2026-11-04.json'
@@ -89,4 +102,30 @@ def load_proposals(root, catalog):
         if data['coverage'] != dict(catalog=len(cards), reviewed_repositories=len(expected),
                                     reference_issues=len(cards) - len(expected)):
             raise ValueError('Full practical review coverage counts differ')
+    application = root / 'data/practical-priority-application.json'
+    if application.exists():
+        approval = json.loads(application.read_text(encoding='utf-8'))
+        from datetime import datetime
+        if (approval.get('status') != 'approved' or approval.get('package_hash') != package_hash(data)
+                or not approval.get('approved_by') or not approval.get('source_instruction')):
+            raise ValueError('Practical application has missing or stale approval')
+        if datetime.fromisoformat(approval['approved_at'].replace('Z', '+00:00')).tzinfo is None:
+            raise ValueError('Practical approval needs timezone')
+        research = json.loads((root / 'docs/research.json').read_text(encoding='utf-8'))
+        for key, p in result.items():
+            expected = public_assessment(p, approval)
+            if cards[key].get('practical_priority') != expected:
+                raise ValueError('Applied practical assessment differs from approval: ' + key)
+            if key in research and research[key].get('practical_priority') != expected:
+                raise ValueError('Research practical assessment differs from approval: ' + key)
+            result[key] = {**p, 'review_status': 'approved', 'approved_by': approval['approved_by'],
+                           'approved_at': approval['approved_at']}
+        audit_path = root / 'reports/priority-source-audit-2026-11-04.json'
+        for row in json.loads(audit_path.read_text(encoding='utf-8')):
+            if row['result'] != 'exists':
+                expected = dict(result=row['result'], checked_on=row['checked_on'], url=row['url'])
+                if cards[row['name'].lower()].get('repository_reference_issue') != expected:
+                    raise ValueError('Repository reference issue lost from publication')
+    elif any(c.get('practical_priority') for c in catalog):
+        raise ValueError('Practical assessment has no application approval')
     return result
