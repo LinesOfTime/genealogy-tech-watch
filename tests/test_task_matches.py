@@ -7,6 +7,7 @@ import unittest
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
 from build_task_matches import build, role_for
+from usage_guidance import load_context
 
 
 class TaskTests(unittest.TestCase):
@@ -59,7 +60,7 @@ class TaskTests(unittest.TestCase):
     def test_generated_data_matches_sources(self):
         c=json.loads((ROOT/'catalog.json').read_text(encoding='utf-8'))
         r=json.loads((ROOT/'docs/research.json').read_text(encoding='utf-8'))
-        result=build(c,r)
+        result=build(c,r,load_context(ROOT,c,r))
         self.assertEqual(result,json.loads((ROOT/'docs/task-matches.json').read_text(encoding='utf-8')))
         self.assertEqual(len({(x['task'],x['project']) for x in result['matches']}),len(result['matches']))
 

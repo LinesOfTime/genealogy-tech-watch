@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+from usage_guidance import load_context, TASK_CHECKS
 
 TASKS = [
     ('transcribe','Распознать или расшифровать документы',r'OCR|HTR|распозна|транскри|расшифров'),
@@ -43,7 +44,8 @@ def role_for(card, research):
     return dict(id='unknown',label=ROLE_LABELS['unknown'],source=None)
 
 
-def build(catalog,research):
+def build(catalog,research,usage=None):
+    usage=usage or dict(version=1,projects={})
     tasks=[dict(id=key,title=title) for key,title,_ in TASKS]
     matches=[]
     for card in catalog:
@@ -79,8 +81,9 @@ def build(catalog,research):
                 license=r.get('license') or card.get('license') or 'Лицензия не установлена',
                 limitations=limitations,test_status=r.get('test_status') or card.get('test_status') or 'Испытания не подтверждены',
                 russia_applicability=card.get('russia_applicability',{}).get('rating','Не оценено'),
-                next_check='Проверить README, актуальность версии, лицензию и выполнить пробу на своих материалах.'))
-    source_hash=hashlib.sha256(json.dumps([catalog,research],ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+                usage_context=usage['projects'].get(key),
+                next_check=TASK_CHECKS[task]))
+    source_hash=hashlib.sha256(json.dumps([catalog,research,usage],ensure_ascii=False,sort_keys=True).encode()).hexdigest()
     return dict(version=1,method='Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества',
                 source_hash=source_hash,tasks=tasks,matches=matches)
 
@@ -90,12 +93,29 @@ def main():
     parser.add_argument('--write',action='store_true')
     args=parser.parse_args()
     root=Path(__file__).resolve().parents[1]
-    result=build(json.loads((root/'catalog.json').read_text(encoding='utf-8')),
-                 json.loads((root/'docs/research.json').read_text(encoding='utf-8')))
+    catalog=json.loads((root/'catalog.json').read_text(encoding='utf-8'))
+    research=json.loads((root/'docs/research.json').read_text(encoding='utf-8'))
+    usage=load_context(root,catalog,research)
+    result=build(catalog,research,usage)
     data=(json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode()
-    target=root/'docs/task-matches.json'
-    changed=not target.exists() or target.read_bytes()!=data
-    if args.write and changed: target.write_bytes(data)
+    from apply_changes import encoded,digest_bytes,write_plan
+    html=(root/'docs/index.html').read_text(encoding='utf-8')
+    payload=json.dumps(usage,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
+    script='<script type="application/json" id="usage-seed">'+payload+'</script>'
+    if 'id="usage-seed"' in html:
+        html,count=re.subn(r'<script\b[^>]*\bid="usage-seed"[^>]*>.*?</script>',lambda _:script,html,flags=re.S)
+        if count!=1:raise ValueError('Expected exactly one usage seed')
+    else:
+        marker='<script>\nconst $='
+        if html.count(marker)!=1:raise ValueError('Cannot locate catalogue renderer for usage seed')
+        html=html.replace(marker,script+'\n'+marker)
+    files={'docs/task-matches.json':data,'docs/usage-context.json':encoded(usage),'docs/index.html':html.encode('utf-8')}
+    before={name:(root/name).read_bytes() if (root/name).exists() else None for name in files}
+    files={name:raw for name,raw in files.items() if before[name]!=raw}
+    changed=bool(files)
+    if args.write and files:
+        plan_hash=digest_bytes(encoded({name:digest_bytes(raw) for name,raw in files.items()}))
+        write_plan(root,dict(files=files,before=before,plan_hash=plan_hash),plan_hash)
     print(json.dumps(dict(projects=len({x['project'] for x in result['matches']}),matches=len(result['matches']),changed=changed,write=args.write)))
 
 

@@ -60,7 +60,15 @@ globalThis.WatchUI = (() => {
     if(originals.some(value=>/Часть\s*\d+|Ч\d+\s*:/i.test(value))) body+='<details><summary>Исходные редакционные заметки</summary>'+originals.map(para).join('')+'</details>';
     return body;
   };
-  return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent};
+  const usage = (context, detailed=false) => {
+    if(!context)return detailed?'<p>География источников в подсказках пока не уточнена. Это не означает универсальное покрытие.</p>':'';
+    let html='<p class="usage-geography"><b>География источников:</b> '+esc(context.label)+'</p>';
+    if(detailed)html+='<p><b>Когда смотреть:</b> '+esc(context.scenario)+'</p><p><b>Границы применения:</b> '+esc(context.boundary)+'</p>'+
+      '<details><summary>Откуда географическая подсказка</summary>'+para(context.evidence?.original_text)+
+      '<small>'+esc(context.evidence?.file)+' → '+esc(context.evidence?.key)+' → '+esc(context.evidence?.field)+'. Редакционный материал; не независимое испытание.</small></details>';
+    return html;
+  };
+  return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent, usage};
 })();
 
 // Persist filter values, never catalogue data, in the current URL.
