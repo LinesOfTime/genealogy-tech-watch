@@ -54,6 +54,10 @@ def main():
             return 0
         command("git", "diff", "--check")
         command("git", "add", "--", *selected)
+        command("git", "diff", "--cached", "--check")
+        staged = command("git", "diff", "--cached", "--name-only").splitlines()
+        if set(staged) != set(selected):
+            raise RuntimeError("Staged paths differ from allowlist; abort before commit")
         command("git", "commit", "-m", "watch: publish approved findings for " + args.date)
         command("git", "push", "-u", "origin", branch)
         title = "Watch: утверждённые находки " + args.date
