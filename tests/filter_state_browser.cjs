@@ -18,6 +18,25 @@ const {chromium} = require('playwright');
       await route.fulfill({body:await fs.readFile(path.join(root,name)),contentType:type});
     });
     await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
+    await page.locator('#search').fill('Швейцария');
+    assert.match(await page.locator('#shown').innerText(),/^Показано 1 из /);
+    assert.match(await page.locator('.usage-geography').innerText(),/Швейцария.*e-periodica/);
+    await page.locator('.card-links a[href^="project.html"]').click();
+    await page.waitForLoadState('networkidle');
+    assert.match(await page.locator('#content').innerText(),/не поиск по всем архивам Швейцарии/);
+    await page.goto('https://ux.local/tasks.html?task=agents',{waitUntil:'networkidle'});
+    for(const [country,repo] of [['Швеция','ai-riksarkivet/ra-mcp'],['Япония','itarunnn/jp-lit-mcp']]) {
+      await page.locator('#query').fill(country);
+      assert.equal(await page.locator('#results article').count(),1);
+      assert.match(await page.locator('#results').innerText(),new RegExp(repo));
+      assert.match(await page.locator('#results').innerText(),/Границы применения/);
+      assert.match(await page.locator('#results').innerText(),/Начните с чтения одной записи/);
+      await page.locator('#results [data-compare]').click();
+    }
+    assert.match(await page.locator('#compare-results').innerText(),/География источников/);
+    await page.goto('https://ux.local/project.html?repo=genealogy-mcp%2Fgramps-mcp',{waitUntil:'networkidle'});
+    assert.match(await page.locator('#content').innerText(),/не означает универсальное покрытие/);
+    await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
     const newProjects=['ai-riksarkivet/ra-mcp','borisovodov/doru','stanford-oval/credit','fmadore/iwac-mcp-server',
       'gramps-project/gramps-web-api','scormave/gramps-web-mcp',
       'alexey-n-chernyshov/gramps-web-mcp-rs','magicianmarty/heritage-research-mcp',

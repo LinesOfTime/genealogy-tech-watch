@@ -9,6 +9,7 @@ function fixture(seed) {
   const elements = new Map();
   const get = id => { if (!elements.has(id)) elements.set(id, {value:'', innerHTML:'', textContent:'', addEventListener(){}}); return elements.get(id); };
   get('seed').textContent = JSON.stringify(seed);
+  get('usage-seed').textContent = read('docs/usage-context.json');
   const context = vm.createContext({document:{getElementById:get, title:''}, URL, URLSearchParams, structuredClone,
     location:{search:''}, localStorage:{getItem(){throw Error('Storage must never override published data');},setItem(){throw Error('No persistence');}}, console});
   vm.runInContext(read('docs/watch-ui.js'), context);
@@ -87,7 +88,7 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   for (const name of [catalog[0].name, catalog.find(x => !research[x.name.toLowerCase()]).name]) {
     const pr = fixture(null);
     pr.context.location.search = '?repo=' + encodeURIComponent(name);
-    pr.context.fetch = async url => ({ok:true, json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+    pr.context.fetch = async url => ({ok:true, json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
     await vm.runInContext(read('docs/project-ui.js'), pr.context);
     assert.equal(pr.get('title').textContent,name);
     assert.match(pr.get('content').innerHTML,/Доступность сервиса из РФ/);
@@ -95,12 +96,12 @@ function count(html, className) { return (html.match(new RegExp('<article class=
     if (r?.guide_excerpt) assert.ok(pr.get('content').innerHTML.includes(pr.context.WatchUI.esc(r.guide_excerpt)));
   }
   const missing=fixture(null); missing.context.location.search='?repo=missing';
-  missing.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+  missing.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
   await vm.runInContext(read('docs/project-ui.js'),missing.context);
   assert.match(missing.get('content').textContent,/Проект не найден/);
   for (const [key,r] of Object.entries(research)) if (r.watch_events?.length) {
     const pr=fixture(null); pr.context.location.search='?repo='+encodeURIComponent(key);
-    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
     await vm.runInContext(read('docs/project-ui.js'),pr.context);
     for (const event of r.watch_events) {
       assert.equal(pr.get('content').innerHTML.split(pr.context.WatchUI.esc(event.change)).length-1,1,'Event must render once across research/history/digest');
@@ -113,14 +114,14 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   const movedKey=Object.keys(research).find(key=>research[key].editorial_service_notes?.length);
   if(movedKey){
     const pr=fixture(null);pr.context.location.search='?repo='+encodeURIComponent(movedKey);
-    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
     await vm.runInContext(read('docs/project-ui.js'),pr.context);
     assert.match(pr.get('content').innerHTML,/Служебные редакционные пометки/);
     assert.match(pr.get('content').innerHTML,/это не описание ограничений/);
   }
   for (const [key,r] of Object.entries(research).filter(([,r])=>r.editorial_corrections?.length)) {
     const pr=fixture(null);pr.context.location.search='?repo='+encodeURIComponent(key);
-    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
     await vm.runInContext(read('docs/project-ui.js'),pr.context);
     const body=pr.get('content').innerHTML;
     assert.match(body,/Прежние значения до уточнения/);
@@ -133,7 +134,7 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   for (const card of catalog.filter(x => x.description_provenance)) {
     assert.ok(page.context.WatchUI.esc(card.description).includes('без независимой проверки'));
     const pr=fixture(null); pr.context.location.search='?repo='+encodeURIComponent(card.name);
-    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest}[url])});
+    pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
     await vm.runInContext(read('docs/project-ui.js'),pr.context);
     assert.ok(pr.get('content').innerHTML.includes(pr.context.WatchUI.esc(card.description)));
     assert.match(pr.get('content').innerHTML,/<h2>Тип проекта<\/h2>/);
