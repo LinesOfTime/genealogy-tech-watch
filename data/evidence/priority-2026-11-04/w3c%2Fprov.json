@@ -1,0 +1,13 @@
+{
+  "name": "w3c/prov",
+  "sha": "aa82bd71b6bb1f7b735bf3f7f5b948fae87764f0",
+  "url": "https://api.github.com/repos/w3c/prov/contents/README.md?ref=aa82bd71b6bb1f7b735bf3f7f5b948fae87764f0",
+  "checked_on": "2026-11-04",
+  "content": null,
+  "error": [
+    {
+      "type": "text",
+      "text": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}"
+    }
+  ]
+}

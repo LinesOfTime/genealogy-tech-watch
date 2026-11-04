@@ -1,0 +1,8 @@
+{
+  "name": "omeka/omeka",
+  "sha": "e2c7d7a74bc53fa96e5df46fe22d96e8b181599a",
+  "url": "https://api.github.com/repos/omeka/omeka/contents/README.md?ref=e2c7d7a74bc53fa96e5df46fe22d96e8b181599a",
+  "checked_on": "2026-11-04",
+  "content": "# Welcome to Omeka\n\n© 2016-present [Corporation for Digital Scholarship](http://digitalscholar.org/), 2008-2016 [Roy Rosenzweig Center for History and New Media](http://chnm.gmu.edu/)\n\nThis program is free software: you can redistribute it and/or modify it under \nthe terms of the GNU General Public License as published by the Free Software \nFoundation, either version 3 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program. If not, see [http://www.gnu.org/licenses/](http://www.gnu.org/licenses/).\n\nOmeka includes:\n\n* [Zend Framework](http://framework.zend.com)\n* [getID3](http://getid3.sourceforge.net)\n* [jQuery](http://jquery.com)\n* [jQuery UI](http://jqueryui.com)\n* [TinyMCE](http://tinymce.moxiecode.com)\n* [Silk Icons](http://www.famfamfam.com/lab/icons/silk/)\n\nUse and modifications of these libraries must comply with their respective \nlicenses.\n\nRelease notes for Omeka are available at\n[http://omeka.org/codex/Release_Notes](http://omeka.org/codex/Release_Notes).\n",
+  "error": null
+}

@@ -1,0 +1,15 @@
+{
+  "name": "bhaskargautam/record-linkage",
+  "sha": "01eb29f8b7fb4dd1625187232f2dafe47f24cddf",
+  "url": "https://api.github.com/repos/bhaskargautam/record-linkage/contents/README.md?ref=01eb29f8b7fb4dd1625187232f2dafe47f24cddf",
+  "checked_on": "2026-11-04",
+  "content": "# record-linkage\nPython Script to Link records using graph embeddings.\n\n### How to test\nThe module uses [python unittest framework](https://docs.python.org/2.7/library/unittest.html) for testing record linkage methods. \n\n* To run all tests described in tests folder\n```\npython -m unittest discover\n```\n\n* To run all tests related to specified method in a test file\n```\npython -m unittest discover -p test_ecm*.py\n```\n\nThe logs are accumulated in test.log file by default.\n\n### Datasets\n\nWe work with three datasets defined in data folder. All pre-processing and spliting the data in training and test sets is defined in their specific classes.\n1. Cora: Bibliographical records for scientic papers \n2. FEBRL: Syntectic Census dataset\n3. Census: Real Census data from Barcelona from early 20th century. \n\nRaw census data is propeietry of [UAB-CVC](http://www.cvc.uab.es/) and thus not included in this repositary.\n\n### Methods\n\nFor base results we use [recordlinkage](https://github.com/J535D165/recordlinkage) toolkit to test following methods:\n1. ECM Classifier\n2. K-Means Clustering\n3. Logistic Regression\n\nFollowing graph embedding based methods are implemented\n1. TransE\n2. TransH \n3. KR-EAR \n4. SEEA\n5. MTransE\n\nProposed Methods:\n1. HTransE\n2. LogTransE\n3. E-MTransE\n4. RL-TransE\n5. VEER\n",
+  "error": null,
+  "license": {
+    "url": "https://api.github.com/repos/bhaskargautam/record-linkage/contents/LICENSE?ref=01eb29f8b7fb4dd1625187232f2dafe47f24cddf",
+    "content": "MIT License\n\nCopyright (c) 2018 bhaskargautam\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "error": null,
+    "kind": "license_document"
+  },
+  "review_basis": "README and root license inspection, not execution"
+}

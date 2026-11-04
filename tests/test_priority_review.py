@@ -33,7 +33,8 @@ class PriorityTests(unittest.TestCase):
         r=json.loads((ROOT/'docs/research.json').read_text(encoding='utf-8'))
         checks=json.loads((ROOT/'reports/repository-existence.json').read_text(encoding='utf-8'))
         actual=json.loads((ROOT/'docs/priority-review.json').read_text(encoding='utf-8'))
-        self.assertEqual(build(c,r,checks),actual)
+        from practical_priorities import load_proposals, merge_source_audit
+        self.assertEqual(build(c,r,merge_source_audit(ROOT,checks),load_proposals(ROOT,c)),actual)
         self.assertEqual(actual['counts']['total'],len(c))
         self.assertEqual(len({x['url'] for x in actual['projects']}),len(c))
 

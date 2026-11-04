@@ -112,7 +112,8 @@ def validate(root, baseline=None):
     if existence_path.exists():
         try:
             from repository_integrity import repository_url
-            checked=json.loads(existence_path.read_text(encoding='utf-8'))
+            from practical_priorities import merge_source_audit
+            checked=merge_source_audit(root,json.loads(existence_path.read_text(encoding='utf-8')))
             active={repository_url(c.get('url')) for c in catalog if isinstance(c,dict)}
             for entry in checked['records']:
                 if entry['url'] in active and entry['result']=='not_found' and entry['http_status']==404:
@@ -301,6 +302,11 @@ def validate(root, baseline=None):
                 restore([card], research)
             except (ValueError, KeyError, TypeError, AttributeError) as exc:
                 issue('error', 'description_provenance', str(card.get('name')), str(exc))
+    from practical_priorities import load_proposals
+    try:
+        load_proposals(root, catalog)
+    except (ValueError, OSError, KeyError, TypeError, AttributeError) as exc:
+        issue('error', 'practical_priority_proposal', 'data/practical-priority-proposals.json', str(exc))
     workflows = root / '.github' / 'workflows'
     if workflows.exists() and any(workflows.iterdir()):
         issue('error', 'actions', '.github/workflows', 'GitHub Actions are prohibited')

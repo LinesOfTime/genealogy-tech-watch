@@ -1,0 +1,9 @@
+{
+  "status": "approved",
+  "package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3",
+  "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
+  "approved_at": "2026-11-04T18:26:40.963239+00:00",
+  "source_instruction": "обнови сайт",
+  "source_report": "reports/PRACTICAL_REASSESSMENT_FULL_2026-11-04.md",
+  "source_commit": "4b5a7662775b479a51923dccb44e2e704c143e09"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "dthaler/gedcom-citations",
+  "sha": "dd3a11674d02a1396000cd8c0e611552b06aafb2",
+  "url": "https://api.github.com/repos/dthaler/gedcom-citations/contents/README.md?ref=dd3a11674d02a1396000cd8c0e611552b06aafb2",
+  "checked_on": "2026-11-04",
+  "content": "# gedcom-citations\n\nThis repository contains proposed [FamilySearch GEDCOM](https://gedcom.io/specs/) extensions\nfor reliably capturing and exchanging EE-style citations, Chicago-style, citations, etc.\n\nThis repository is intended to contain work in progress by the Citations project team.\nFor more information, see [Project Teams](https://gedcom.io/community/#project-teams). \n\n* [Background and requirements](background.md)\n\nExtensions\n----------\n\nThe following extensions are proposed for discussion:\n\n* [Source Derivation Extension](source-derivation-extension.md)\n* [Source Stewardship Extension](source-stewardship-extension.md)\n* [Source Templates Extension](templates-extension.md)\n\nAll proposed extensions use [documented extension tags](https://gedcom.io/specifications/FamilySearchGEDCOMv7.html#extension-tags).  If they later become incorporated into the FamilySearch GEDCOM standard,\nstandard tags will be defined at that time.\n\nRather than write out URIs in full, we use prefix notation: any URI beginning with one\nof the following short prefixes followed by a colon is shorthand for a URI beginning\nwith the corresponding URI prefix\n\n| Short Prefix | URI Prefix                                          |\n|:-------------|:----------------------------------------------------|\n| `g7`         | `https://gedcom.io/terms/v7/`                       |\n| `ext`        | `https://github.com/dthaler/gedcom-citations/yaml/` |\n",
+  "error": null,
+  "license": {
+    "url": "https://api.github.com/repos/dthaler/gedcom-citations/contents?ref=dd3a11674d02a1396000cd8c0e611552b06aafb2",
+    "content": "[{\"name\":\"CODE_OF_CONDUCT.md\",\"type\":\"file\"},{\"name\":\"README.md\",\"type\":\"file\"},{\"name\":\"background.md\",\"type\":\"file\"},{\"name\":\"source-derivation-extension.md\",\"type\":\"file\"},{\"name\":\"source-stewardship-extension.md\",\"type\":\"file\"},{\"name\":\"templates-extension.md\",\"type\":\"file\"},{\"name\":\"yaml\",\"type\":\"dir\"}]",
+    "error": null,
+    "kind": "root_listing",
+    "status": "not_located"
+  },
+  "review_basis": "README and root license inspection, not execution"
+}

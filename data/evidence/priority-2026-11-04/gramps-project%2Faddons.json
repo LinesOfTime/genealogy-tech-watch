@@ -1,0 +1,8 @@
+{
+  "name": "gramps-project/addons",
+  "sha": "7223320bb8a11c442d8cac1860dec87aa650497c",
+  "url": "https://api.github.com/repos/gramps-project/addons/contents/README.md?ref=7223320bb8a11c442d8cac1860dec87aa650497c",
+  "checked_on": "2026-11-04",
+  "content": "Gramps addons\n=============\n\nThis repository contains packaged third-party plugins for [Gramps genealogy program](https://github.com/gramps-project/gramps), corresponding to source code in [addons-source](https://github.com/gramps-project/addons-source).\n",
+  "error": null
+}

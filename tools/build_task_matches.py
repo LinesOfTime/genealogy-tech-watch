@@ -49,6 +49,7 @@ def build(catalog,research,usage=None):
     tasks=[dict(id=key,title=title) for key,title,_ in TASKS]
     matches=[]
     for card in catalog:
+        if card.get('repository_reference_issue'):continue
         key=card['name'].lower(); r=research.get(key,{})
         fields=[]
         for field in ('description','use_case','limitations','components'):
@@ -75,6 +76,7 @@ def build(catalog,research,usage=None):
             limitations=r.get('editorial_limitations') or card.get('limitations') or 'Ограничения не установлены'
             matches.append(dict(task=task,project=card['name'],url=card['url'],
                 status='candidate' if candidate else 'editorial',evidence=evidence,
+                practical_priority=card.get('practical_priority'),
                 role=role_for(card,r),
                 purpose=(card.get('description') if card.get('description_provenance') else r.get('editorial_summary') or card.get('description')) or 'Назначение не описано',
                 use_case=r.get('editorial_use_case') or card.get('use_case') or 'Сценарий не описан',
@@ -114,7 +116,9 @@ def main():
         from priority_review import build as review_priorities
         audit=root/'reports/repository-existence.json'
         checks=json.loads(audit.read_text(encoding='utf-8')) if audit.exists() else {}
-        files['docs/priority-review.json']=encoded(review_priorities(catalog,research,checks))
+        from practical_priorities import load_proposals, merge_source_audit
+        proposals=load_proposals(root,catalog)
+        files['docs/priority-review.json']=encoded(review_priorities(catalog,research,merge_source_audit(root,checks),proposals))
     before={name:(root/name).read_bytes() if (root/name).exists() else None for name in files}
     files={name:raw for name,raw in files.items() if before[name]!=raw}
     changed=bool(files)

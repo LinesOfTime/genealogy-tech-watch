@@ -54,10 +54,15 @@ def main():
                               missing=sorted(expected-staged),unexpected=sorted(staged-expected)),indent=2))
         return 1
     subprocess.run(['git','diff','--cached','--check'],cwd=ROOT,check=True)
-    tree={}
-    for name in git('ls-files','-z').decode('utf-8').split('\0'):
-        if name:
-            tree[name]=git('show',':'+name)
+    from history_integrity import read_git_objects
+    entries=[]
+    for item in git('ls-files','--stage','-z').split(b'\0'):
+        if not item:continue
+        metadata,name=item.split(b'\t',1)
+        mode,sha,stage=metadata.decode('ascii').split()
+        if stage!='0':raise ValueError('Unmerged index entry')
+        entries.append((name.decode('utf-8'),sha))
+    tree=read_git_objects(ROOT,entries)
     findings={name:result for name,data in tree.items() if (result:=scan_blob(name,data))}
     if findings:
         print(json.dumps(dict(error='Publication file checks failed',findings=findings),indent=2))

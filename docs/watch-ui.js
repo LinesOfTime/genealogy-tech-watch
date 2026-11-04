@@ -60,7 +60,11 @@ globalThis.WatchUI = (() => {
     if(originals.some(value=>/Часть\s*\d+|Ч\d+\s*:/i.test(value))) body+='<details><summary>Исходные редакционные заметки</summary>'+originals.map(para).join('')+'</details>';
     return body;
   };
+  const priorityValue = card => card.repository_reference_issue ? 'Проверить ссылку' : card.practical_priority?.priority || card.priority || 'Не оценён';
   const priorityNote = card => {
+    if(card.repository_reference_issue)return '<p class="meta">Проблема ссылки: '+esc(card.repository_reference_issue.result==='not_found'?'GitHub HTTP 404 — публичный репозиторий не найден':'профиль владельца, не репозиторий')+'. Сначала проверить адрес; это не оценка характеристик.</p>';
+    const p=card.practical_priority;
+    if(p?.review_status==='approved')return '<p class="meta">Практический приоритет по задаче · '+esc(p.evidence_level)+' · утверждён пользователем. Работа проекта независимо не проверялась.</p>';
     const e=card.evaluation;
     if(!e)return '<p class="meta">Оценка приоритета отсутствует.</p>';
     const status={triaged:'каталожный триаж',proposed:'предложение не утверждено',approved:'утверждённая оценка'}[e.review_status]||'статус не установлен';
@@ -74,7 +78,7 @@ globalThis.WatchUI = (() => {
       '<small>'+esc(context.evidence?.file)+' → '+esc(context.evidence?.key)+' → '+esc(context.evidence?.field)+'. Редакционный материал; не независимое испытание.</small></details>';
     return html;
   };
-  return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent, usage, priorityNote};
+  return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent, usage, priorityNote, priorityValue};
 })();
 
 // Persist filter values, never catalogue data, in the current URL.

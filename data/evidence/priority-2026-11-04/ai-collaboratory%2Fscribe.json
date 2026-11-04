@@ -1,0 +1,8 @@
+{
+  "name": "ai-collaboratory/scribe",
+  "sha": "a8022ebd0581450119a73e947385752020019921",
+  "url": "https://api.github.com/repos/ai-collaboratory/scribe/contents/README.md?ref=a8022ebd0581450119a73e947385752020019921",
+  "checked_on": "2026-11-04",
+  "content": "# Scribe by DCIC, Univesity of Maryland iSchool\n\n[Scribe](http://scribeproject.github.io/) is a framework for crowdsourcing the transcription of text-based documents, particularly documents that are not well suited for Optical Character Recognition. It is originally developed by a collaboration between [Zooniverse](https://www.zooniverse.org/) and [The New York Public Library Labs](http://labs.nypl.org/) with generous support from [The National Endowment for the Humanities (NEH), Office of Digital Humanities](http://www.neh.gov/divisions/odh).\n\nThis repository is for (1) a Scribe platform modified and adjusted for Redlining documents from 1920's and 30's; and (2) code snippets that support generating configuration files and installing the development environment.\n\nIf you have any questions on the Redlining project, contact us at:\n- email: dcic.ischool@umd.edu\n- website: http://dcic.umd.edu\n\nFor the Scribe platform for the Mapping Inequality project in particular, contact Myeong Lee (UMD iSchool) at myeong@umd.edu.",
+  "error": null
+}

@@ -1,0 +1,8 @@
+{
+  "name": "ai-riksarkivet/htrflow",
+  "sha": "34ebd90895a3d3cb45888b3b123bc59a719f7f81",
+  "url": "https://api.github.com/repos/ai-riksarkivet/htrflow/contents/README.md?ref=34ebd90895a3d3cb45888b3b123bc59a719f7f81",
+  "checked_on": "2026-11-04",
+  "content": "<p align=\"center\">\n  <img src=\"https://github.com/AI-Riksarkivet/htrflow/blob/main/docs/assets/background_htrflow_2.png?raw=true\" alt=\"HTRFLOW Image\" width=70%>\n</p>\n\n\n<p align=\"center\">\n    <img alt=\"GitHub Repo stars\" src=\"https://img.shields.io/github/stars/AI-Riksarkivet/htrflow\">\n    <img alt=\"License\" src=\"https://img.shields.io/github/license/AI-Riksarkivet/htrflow\">\n    <a href=\"https://github.com/AI-Riksarkivet/htrflow/actions/workflows/tests.yml\">\n        <img alt=\"Tests\" src=\"https://github.com/AI-Riksarkivet/htrflow/actions/workflows/tests.yml/badge.svg\">\n    </a>\n    <a href=\"https://github.com/AI-Riksarkivet/htrflow/actions/workflows/publish-pypi.yml\">\n        <img alt=\"PyPI\" src=\"https://github.com/AI-Riksarkivet/htrflow/actions/workflows/publish-pypi.yml/badge.svg\">\n    </a>\n    <a href=\"https://github.com/AI-Riksarkivet/htrflow/actions/workflows/deploy-docs.yml\">\n        <img alt=\"Deploy Docs\" src=\"https://github.com/AI-Riksarkivet/htrflow/actions/workflows/deploy-docs.yml/badge.svg\">\n    </a>\n</p>\n\n# **HTRflow**\nHTRflow is an open source tool for  HTR and OCR.\n\nRead the documentation here 👉 [HTRflow's documentation](https://ai-riksarkivet.github.io/htrflow)",
+  "error": null
+}

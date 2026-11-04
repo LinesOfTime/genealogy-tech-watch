@@ -11,10 +11,12 @@ STATES={
     'triaged':'Только каталожный триаж',
     'proposed':'Предложение не утверждено',
     'approved':'Оценка утверждена',
+    'practical_approved':'Практический приоритет утверждён',
 }
 
 
-def build(catalog,research,checks=None):
+def build(catalog,research,checks=None,proposals=None):
+    proposals=proposals or {}
     missing={r['url'].lower().rstrip('/'):r for r in (checks or {}).get('records',[])
              if r.get('result')=='not_found' and r.get('http_status')==404}
     rows=[]
@@ -41,18 +43,23 @@ def build(catalog,research,checks=None):
         elif state=='missing':action='Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.'
         elif state=='triaged':action='Проверить первоисточник, конкретный сценарий, вход и результат. Сохранённая метка не обоснована повторной оценкой.'
         else:action=ev.get('next_action') or 'Проверить условия небольшой практической пробы.'
+        legacy_state=state
+        proposal=proposals.get(key)
+        if proposal and proposal.get('review_status')=='approved' and not (reference or profile):state='practical_approved'
         rows.append(dict(project=c['name'],url=c['url'],legacy_priority=c.get('priority','Не оценён'),
-            priority_original=c.get('priority_original'),state=state,state_label=STATES[state],
+            priority_original=c.get('priority_original'),state=state,legacy_state=legacy_state,state_label=STATES[state],
             role=role_for(c,r),evidence_level=ev.get('evidence_level'),maturity=ev.get('maturity'),
             license_state=ev.get('license_risk'),integration_effort=ev.get('integration_effort'),
             reviewed_at=date or None,latest_source_review=latest or None,
             rationale=ev.get('priority_rationale') or 'Обоснование оценки отсутствует.',
-            next_action=action,source_urls=ev.get('source_urls',[]),
+            next_action=proposal['pilot'] if state=='practical_approved' else action,source_urls=ev.get('source_urls',[]),
             flags=flags,
-            independent_report=ev.get('test_report_url'),evaluation_status=ev.get('review_status')))
+            independent_report=ev.get('test_report_url'),evaluation_status=ev.get('review_status'),
+            practical_proposal=proposals.get(key)))
     return dict(version=1,method='Практический выбор по задаче и роли; аудит сохранённых оценок, без новых баллов и утверждений',
         counts=dict(total=len(rows),priorities=dict(Counter(x['legacy_priority'] for x in rows)),
-            states=dict(Counter(x['state'] for x in rows)),
+            states={k:sum(x['state']==k for x in rows) for k in STATES},
+            practical_priorities=dict(Counter(x['practical_proposal']['proposed_priority'] for x in rows if x['state']=='practical_approved')),
             p1_e0=sum(x['legacy_priority']=='P1' and x['evidence_level']=='E0' for x in rows),
             missing_evaluations=sum(not c.get('evaluation') for c in catalog),
             independent_reports=sum(bool(x['independent_report']) for x in rows)),states=STATES,projects=rows)
