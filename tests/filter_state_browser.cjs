@@ -191,6 +191,27 @@ const {chromium} = require('playwright');
       }
     }
     assert.deepEqual(runtimeErrors,[]);
+    await page.goto('https://ux.local/priorities.html?priority=P1',{waitUntil:'networkidle'});
+    const priorityAudit=JSON.parse(await fs.readFile(path.join(root,'priority-review.json'),'utf8'));
+    assert.equal(await page.locator('#priority').inputValue(),'P1');
+    assert.equal(await page.locator('#items article').count(),priorityAudit.counts.priorities.P1);
+    assert.ok((await page.locator('#priority-metrics').innerText()).includes(priorityAudit.counts.p1_e0+' меток P1 с E0'));
+    await page.locator('#reset-priorities').click();
+    await page.locator('#assessment').selectOption('missing');
+    assert.equal(await page.locator('#items article').count(),priorityAudit.counts.states.missing);
+    await page.locator('#reset-priorities').click();
+    await page.locator('#task').selectOption('agents');
+    await page.locator('#q').fill('scormave/gramps-web-mcp');
+    assert.equal(await page.locator('#items article').count(),1);
+    assert.ok((await page.locator('#items').innerText()).includes(priorityAudit.projects.find(x=>x.project==='scormave/gramps-web-mcp').state_label));
+    await page.reload({waitUntil:'networkidle'});
+    assert.equal(await page.locator('#q').inputValue(),'scormave/gramps-web-mcp');
+    await page.locator('#reset-priorities').click();
+    await page.locator('#assessment').selectOption('reference_issue');
+    assert.equal(await page.locator('#items article').count(),priorityAudit.counts.states.reference_issue);
+    assert.match(await page.locator('#items').innerText(),/HTTP 404/);
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    assert.deepEqual(runtimeErrors,[]);
     console.log('Browser UX regression passed: twelve watch projects (search, research, digest links, task matching), htrflow Solr history; back/reload, URL filters, reset, mobile search, 12 navigation layouts; no console/page errors.');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1});

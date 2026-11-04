@@ -110,6 +110,11 @@ def main():
         if html.count(marker)!=1:raise ValueError('Cannot locate catalogue renderer for usage seed')
         html=html.replace(marker,script+'\n'+marker)
     files={'docs/task-matches.json':data,'docs/usage-context.json':encoded(usage),'docs/index.html':html.encode('utf-8')}
+    if (root/'docs/priorities-ui.js').exists():
+        from priority_review import build as review_priorities
+        audit=root/'reports/repository-existence.json'
+        checks=json.loads(audit.read_text(encoding='utf-8')) if audit.exists() else {}
+        files['docs/priority-review.json']=encoded(review_priorities(catalog,research,checks))
     before={name:(root/name).read_bytes() if (root/name).exists() else None for name in files}
     files={name:raw for name,raw in files.items() if before[name]!=raw}
     changed=bool(files)
