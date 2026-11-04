@@ -28,7 +28,6 @@ def run(*args, capture=False):
 
 def ingest(source):
     """Append only unique, valid JSON objects; review remains pending."""
-    from tempfile import NamedTemporaryFile
     sys.path.insert(0, str(ROOT / "tools"))
     from discoveries import read_jsonl, compare
     existing = read_jsonl(JOURNAL)
@@ -40,6 +39,8 @@ def ingest(source):
             raise ValueError("Incoming events must be pending; never import approvals")
         if event.get("reviewer") or event.get("reviewed_at") or event.get("reviewed_content_hash"):
             raise ValueError("Incoming events must not contain review signatures")
+        if not isinstance(event.get("discovery_id"), str) or not event["discovery_id"].strip():
+            raise ValueError("Missing discovery_id")
         if event.get("discovery_id") in ids:
             if any(e == event for e in existing):
                 continue
@@ -57,9 +58,21 @@ def ingest(source):
         report = compare(ROOT, read_jsonl(staged))
         if report["errors"]:
             raise ValueError("Review rejected staged journal: " + json.dumps(report, ensure_ascii=False)[:2000])
-    with JOURNAL.open("a", encoding="utf-8") as out:
-        for event in accepted:
-            out.write(json.dumps(event, ensure_ascii=False) + "\n")
+    # Atomic replacement: no partially appended JSONL if a write fails.
+    import os
+    import tempfile
+    JOURNAL.parent.mkdir(parents=True, exist_ok=True)
+    fd, name = tempfile.mkstemp(prefix=".discoveries-", suffix=".jsonl", dir=JOURNAL.parent)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as out:
+            for event in existing + accepted:
+                out.write(json.dumps(event, ensure_ascii=False) + "\\n")
+            out.flush()
+            os.fsync(out.fileno())
+        os.replace(name, JOURNAL)
+    finally:
+        if os.path.exists(name):
+            os.unlink(name)
     print(f"Appended {len(accepted)} pending events")
 
 
