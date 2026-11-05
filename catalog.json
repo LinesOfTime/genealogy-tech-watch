@@ -19335,5 +19335,30 @@
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
     }
+  },
+  {
+    "name": "pioneeraiacademy/cowork-genealogy",
+    "url": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Alpha-инструмент многоэтапного генеалогического исследования с фиксацией поисков, источников и конфликтующих свидетельств; функции заявлены авторами.",
+    "use_case": "Изучить устройство Research Workspace, планирование поиска, журнал доказательств и контроль противоречий.",
+    "limitations": "Зависимость от Claude Desktop Cowork и FamilySearch; независимое испытание не проводилось, применимость к архивам РФ не установлена.",
+    "license": "Apache-2.0 (заявлено авторами; проверить LICENSE перед заимствованием)",
+    "license_status": "Предварительно по репозиторию; независимый аудит не проводился",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "verification": "README проекта прочитан 2026-11-05; работоспособность не тестировалась",
+    "verified_at": "2026-11-05",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+    "status": "Предварительная редакционная карточка",
+    "history": [],
+    "origin": "GitHub Watch",
+    "components": [
+      "Research Workspace",
+      "Person Resolver",
+      "provenance/evidence",
+      "API/MCP/agent layer"
+    ]
   }
 ]

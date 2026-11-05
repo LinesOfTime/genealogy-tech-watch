@@ -17585,5 +17585,24 @@
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
     }
+  },
+  "pioneeraiacademy/cowork-genealogy": {
+    "editorial_summary": "Alpha-инструмент исследования с планированием, фиксацией поисков, свидетельств и противоречий по данным README разработчиков.",
+    "editorial_use_case": "Проверить исследовательский журнал, работу с конфликтующими источниками, восстановление сессий и переносимость архитектуры на российские архивы.",
+    "editorial_limitations": "Зависимость от внешних сервисов и FamilySearch; авторские заявления не подтверждены независимым тестированием.",
+    "project_type": "Исследовательский агент и рабочее пространство",
+    "license": "Apache-2.0 (предварительно)",
+    "verification_basis": "README GitHub прочитан 2026-11-05; технический пилот не выполнялся",
+    "verification_date": "2026-11-05",
+    "test_status": "Не тестировалось",
+    "source_evidence": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+    "maturity": "Alpha",
+    "watch_events": [],
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+      "basis": "Не проверялась работа с российскими архивными источниками."
+    }
   }
 }
