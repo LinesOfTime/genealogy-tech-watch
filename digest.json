@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-11-05",
+    "title": "Новые направления: доказательства, рабочие пространства и архивные графы",
+    "summary": "Предварительный редакционный обзор по первоисточникам GitHub. Независимые испытания не проводились; сведения о функциональности требуют технической проверки.",
+    "items": [
+      {
+        "repo": "GeiserX/gramps-web-toolkit",
+        "priority": "Не оценён",
+        "change": "В changelog v1.3.0 описаны отзыв ошибочного результата поиска (ledger void), проверки привязки цитат и ограничения приватности GEDCOM-экспорта. Требует независимого испытания.",
+        "link": "https://github.com/GeiserX/gramps-web-toolkit/blob/v1.3.0/CHANGELOG.md",
+        "components": "Research Workspace · provenance/evidence · GEDCOM/data model",
+        "action": "Изучить архитектуру журнала и проверить на тестовой базе; GPL-3.0.",
+        "event_date": "2026-11-05",
+        "significance_reason": "Значимая архитектурная возможность для генеалогического кабинета; предварительная оценка, без независимого тестирования.",
+        "review_status": "editorial_pending",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/v1.3.0/CHANGELOG.md"
+          }
+        ]
+      },
+      {
+        "repo": "PioneerAIAcademy/cowork-genealogy",
+        "priority": "Не оценён",
+        "change": "Новый для мониторинга alpha-проект исследовательского рабочего пространства с FamilySearch, проверками хронологии и конфликтов; MCP App обозначен как план, не готовая функция.",
+        "link": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+        "components": "Research Workspace · Person Resolver · provenance/evidence · API/MCP/agent layer",
+        "action": "Изучить структуру дела и ограничения приватности; Apache-2.0.",
+        "event_date": "2026-11-05",
+        "significance_reason": "Значимая архитектурная возможность для генеалогического кабинета; предварительная оценка, без независимого тестирования.",
+        "review_status": "editorial_pending",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/PioneerAIAcademy/cowork-genealogy"
+          }
+        ]
+      },
+      {
+        "repo": "ArchiveHeritageGroup/heratio",
+        "priority": "Не оценён",
+        "change": "Добавлен переход от архивного поиска к графу отношений; применимость RiC/RDF/IIIF для связывания источников требует отдельной проверки.",
+        "link": "https://github.com/ArchiveHeritageGroup/heratio/commit/e7401ac17cde5b5823bf8108d6ddecee9b18673d",
+        "components": "Archive Adapter · Research Workspace · provenance/evidence",
+        "action": "Изучить архитектуру графа; AGPL-3.0.",
+        "event_date": "2026-11-05",
+        "significance_reason": "Значимая архитектурная возможность для генеалогического кабинета; предварительная оценка, без независимого тестирования.",
+        "review_status": "editorial_pending",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/ArchiveHeritageGroup/heratio/commit/e7401ac17cde5b5823bf8108d6ddecee9b18673d"
+          }
+        ]
+      },
+      {
+        "repo": "gramps-project/gramps-web",
+        "priority": "P2",
+        "change": "Изменена временная фильтрация OpenHistoricalMap при использовании MapLibre GL JS 6; полезно как пример исторической картографии, не готовый справочник АТД.",
+        "link": "https://github.com/gramps-project/gramps-web/commit/b8451d205783f0454cfccb9bd7a47107dca7de32",
+        "components": "Place Resolver/АТД · Research Workspace",
+        "action": "Проверить на исторических картах; AGPL-3.0.",
+        "event_date": "2026-11-05",
+        "significance_reason": "Значимая архитектурная возможность для генеалогического кабинета; предварительная оценка, без независимого тестирования.",
+        "review_status": "editorial_pending",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web/commit/b8451d205783f0454cfccb9bd7a47107dca7de32"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-04",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",
