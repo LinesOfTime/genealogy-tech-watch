@@ -19,7 +19,8 @@
             "type": "commit",
             "url": "https://github.com/GeiserX/gramps-web-toolkit/blob/v1.3.0/CHANGELOG.md"
           }
-        ]
+        ],
+        "research_link": "watch-2026-11-05.html#project-1"
       },
       {
         "repo": "PioneerAIAcademy/cowork-genealogy",
@@ -36,7 +37,8 @@
             "type": "commit",
             "url": "https://github.com/PioneerAIAcademy/cowork-genealogy"
           }
-        ]
+        ],
+        "research_link": "watch-2026-11-05.html#project-2"
       },
       {
         "repo": "ArchiveHeritageGroup/heratio",
@@ -53,7 +55,8 @@
             "type": "commit",
             "url": "https://github.com/ArchiveHeritageGroup/heratio/commit/e7401ac17cde5b5823bf8108d6ddecee9b18673d"
           }
-        ]
+        ],
+        "research_link": "watch-2026-11-05.html#project-3"
       },
       {
         "repo": "gramps-project/gramps-web",
@@ -70,7 +73,8 @@
             "type": "commit",
             "url": "https://github.com/gramps-project/gramps-web/commit/b8451d205783f0454cfccb9bd7a47107dca7de32"
           }
-        ]
+        ],
+        "research_link": "watch-2026-11-05.html#project-4"
       }
     ]
   },
