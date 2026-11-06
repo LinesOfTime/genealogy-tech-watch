@@ -81,7 +81,8 @@ def main():
             print(json.dumps(dict(error='Protected history differs',findings=protected),ensure_ascii=False));return 1
         checks=[[sys.executable,'tools/watch_pipeline.py','validate','--json'],
                 [sys.executable,'-m','unittest','discover','-s','tests','-v'],
-                ['node','tests/ui_smoke.cjs']]
+                ['node','tests/ui_smoke.cjs'],
+                ['node','tests/catalog_io.cjs']]
         outputs=[]
         for command in checks:
             environment={**os.environ,'PYTHONIOENCODING':'utf-8','PYTHONUTF8':'1'}

@@ -2,16 +2,16 @@
   "version": 1,
   "method": "Практический выбор по задаче и роли; аудит сохранённых оценок, без новых баллов и утверждений",
   "counts": {
-    "total": 184,
+    "total": 187,
     "priorities": {
       "P3": 3,
       "P2": 89,
       "P1": 72,
-      "Не оценён": 20
+      "Не оценён": 23
     },
     "states": {
       "reference_issue": 4,
-      "missing": 0,
+      "missing": 3,
       "changed": 0,
       "triaged": 0,
       "proposed": 0,
@@ -25,7 +25,7 @@
       "P3": 19
     },
     "p1_e0": 46,
-    "missing_evaluations": 9,
+    "missing_evaluations": 12,
     "independent_reports": 0
   },
   "states": {
@@ -13359,7 +13359,7 @@
       "legacy_priority": "Не оценён",
       "priority_original": "Не оценён",
       "state": "practical_approved",
-      "legacy_state": "triaged",
+      "legacy_state": "changed",
       "state_label": "Практический приоритет утверждён",
       "role": {
         "id": "unknown",
@@ -13375,7 +13375,7 @@
       "license_state": null,
       "integration_effort": null,
       "reviewed_at": "2026-10-28",
-      "latest_source_review": "2026-10-23",
+      "latest_source_review": "2026-11-06",
       "rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
       "next_action": "Взять один маршрут ревизских сказок и вручную проверить первоисточник и границы покрытия.",
       "source_urls": [
@@ -14750,6 +14750,99 @@
         "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
         "approved_at": "2026-11-04T18:26:40.963239+00:00"
       }
+    },
+    {
+      "project": "pioneeraiacademy/cowork-genealogy",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+      "legacy_priority": "Не оценён",
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский агент и рабочее пространство"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": null,
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "semanticmeaning/kinship-kit",
+      "url": "https://github.com/semanticmeaning/kinship-kit",
+      "legacy_priority": "Не оценён",
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Генеалогический toolkit: Agent Skill, CLI, MCP-сервер и генератор семейного сайта"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-06",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "joaquimrcarvalho/personal-historical-archive",
+      "url": "https://github.com/joaquimrcarvalho/personal-historical-archive",
+      "legacy_priority": "Не оценён",
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Python/CLI-конвейер и MCP-сервер локального архива документов"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-06",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
     }
   ]
 }

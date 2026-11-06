@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "7b9485e83384c29e5deda1c2cbc326ac1d9d4fad6ca0bf1f6d6b18c27542526b",
+  "source_hash": "86d026bd41ca5f244d585947feb10eaef4cfbabf69eb116a6ef011932939f0ac",
   "tasks": [
     {
       "id": "transcribe",
@@ -14013,6 +14013,431 @@
       "use_case": "Подключить MCP-клиент к своему Gramps Web, найти человека и связанные источники, подготовить изменение записи; при подходящей версии API создать серверный backup и проверить его наличие до работы на копии дерева.",
       "license": "AGPL-3.0",
       "limitations": "GitHub — зеркало GitLab; синхронность origin отдельно не подтверждена. Входящий MCP требует защищённого развёртывания. Backup без медиа, восстановление через MCP не предоставлено; API 3.24+, BACKUP_DIR и ManageBackups обязательны для backup. Экономия токенов заявлена автором; независимых испытаний нет.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "resolve",
+      "project": "pioneeraiacademy/cowork-genealogy",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "pioneeraiacademy/cowork-genealogy",
+          "field": "components",
+          "excerpt": "Research Workspace · Person Resolver · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский агент и рабочее пространство"
+        }
+      },
+      "purpose": "Alpha-инструмент исследования с планированием, фиксацией поисков, свидетельств и противоречий по данным README разработчиков.",
+      "use_case": "Проверить исследовательский журнал, работу с конфликтующими источниками, восстановление сессий и переносимость архитектуры на российские архивы.",
+      "license": "Apache-2.0 (предварительно)",
+      "limitations": "Зависимость от внешних сервисов и FamilySearch; авторские заявления не подтверждены независимым тестированием.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "На копии данных проверьте известный дубль и двух разных однофамильцев. Сравните источники и убедитесь, что ошибочное объединение можно отменить."
+    },
+    {
+      "task": "research",
+      "project": "pioneeraiacademy/cowork-genealogy",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "pioneeraiacademy/cowork-genealogy",
+          "field": "use_case",
+          "excerpt": "Изучить устройство Research Workspace, планирование поиска, журнал доказательств и контроль противоречий.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "pioneeraiacademy/cowork-genealogy",
+          "field": "components",
+          "excerpt": "Research Workspace · Person Resolver · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский агент и рабочее пространство"
+        }
+      },
+      "purpose": "Alpha-инструмент исследования с планированием, фиксацией поисков, свидетельств и противоречий по данным README разработчиков.",
+      "use_case": "Проверить исследовательский журнал, работу с конфликтующими источниками, восстановление сессий и переносимость архитектуры на российские архивы.",
+      "license": "Apache-2.0 (предварительно)",
+      "limitations": "Зависимость от внешних сервисов и FamilySearch; авторские заявления не подтверждены независимым тестированием.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "agents",
+      "project": "pioneeraiacademy/cowork-genealogy",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "pioneeraiacademy/cowork-genealogy",
+          "field": "components",
+          "excerpt": "Research Workspace · Person Resolver · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский агент и рабочее пространство"
+        }
+      },
+      "purpose": "Alpha-инструмент исследования с планированием, фиксацией поисков, свидетельств и противоречий по данным README разработчиков.",
+      "use_case": "Проверить исследовательский журнал, работу с конфликтующими источниками, восстановление сессий и переносимость архитектуры на российские архивы.",
+      "license": "Apache-2.0 (предварительно)",
+      "limitations": "Зависимость от внешних сервисов и FamilySearch; авторские заявления не подтверждены независимым тестированием.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "research",
+      "project": "semanticmeaning/kinship-kit",
+      "url": "https://github.com/semanticmeaning/kinship-kit",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "semanticmeaning/kinship-kit",
+          "field": "use_case",
+          "excerpt": "На вымышленной семье создать исследовательское дело, прикрепить скан с архивным шифром, записать конкурирующие атрибуции и отрицательный поиск; проверить сохранение состояния и публичную сборку до переноса реальных данных.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "semanticmeaning/kinship-kit",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "semanticmeaning/kinship-kit",
+          "field": "editorial_use_case",
+          "excerpt": "На вымышленной семье создать исследовательское дело, прикрепить скан с архивным шифром, записать конкурирующие атрибуции и отрицательный поиск; проверить сохранение состояния и публичную сборку до переноса реальных данных.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Генеалогический toolkit: Agent Skill, CLI, MCP-сервер и генератор семейного сайта"
+        }
+      },
+      "purpose": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+      "use_case": "На вымышленной семье создать исследовательское дело, прикрепить скан с архивным шифром, записать конкурирующие атрибуции и отрицательный поиск; проверить сохранение состояния и публичную сборку до переноса реальных данных.",
+      "license": "MIT",
+      "limitations": "Нужны Python 3.10+ и настройка выбранного агента; установка CLI из клона описана только в editable-режиме. Качество агентного ревью и защита живущих при публикации независимо не проверены. GEDCOM переносит лишь часть полей, полный обмен дела выполняется другим форматом. Использовать актуальную 0.5.2 с описанными авторами исправлениями; это версия метаданных, не GitHub Release.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": {
+        "label": "Бывший СССР · Российская империя — исследовательский фокус",
+        "regions": [
+          "Бывший СССР",
+          "Российская империя"
+        ],
+        "scope": "editorial",
+        "scenario": "Вести дело о родстве с источниками, конкурирующими гипотезами и журналом отрицательного поиска; первую пробу делать на вымышленной семье.",
+        "boundary": "Фокус заявлен в README. Он не подтверждает полноту архивов, работоспособность каждого скачивателя, качество ИИ-чтения или доступность сервисов из РФ. Другая роль агента не заменяет независимый документ.",
+        "evidence": {
+          "file": "docs/research.json",
+          "field": "editorial_summary",
+          "excerpt": "бывшего СССР и Российской империи",
+          "key": "semanticmeaning/kinship-kit",
+          "original_text": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+          "basis": "Редакционное уточнение по сохранённому описанию; не независимое испытание"
+        }
+      },
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "gedcom",
+      "project": "semanticmeaning/kinship-kit",
+      "url": "https://github.com/semanticmeaning/kinship-kit",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "semanticmeaning/kinship-kit",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Генеалогический toolkit: Agent Skill, CLI, MCP-сервер и генератор семейного сайта"
+        }
+      },
+      "purpose": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+      "use_case": "На вымышленной семье создать исследовательское дело, прикрепить скан с архивным шифром, записать конкурирующие атрибуции и отрицательный поиск; проверить сохранение состояния и публичную сборку до переноса реальных данных.",
+      "license": "MIT",
+      "limitations": "Нужны Python 3.10+ и настройка выбранного агента; установка CLI из клона описана только в editable-режиме. Качество агентного ревью и защита живущих при публикации независимо не проверены. GEDCOM переносит лишь часть полей, полный обмен дела выполняется другим форматом. Использовать актуальную 0.5.2 с описанными авторами исправлениями; это версия метаданных, не GitHub Release.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": {
+        "label": "Бывший СССР · Российская империя — исследовательский фокус",
+        "regions": [
+          "Бывший СССР",
+          "Российская империя"
+        ],
+        "scope": "editorial",
+        "scenario": "Вести дело о родстве с источниками, конкурирующими гипотезами и журналом отрицательного поиска; первую пробу делать на вымышленной семье.",
+        "boundary": "Фокус заявлен в README. Он не подтверждает полноту архивов, работоспособность каждого скачивателя, качество ИИ-чтения или доступность сервисов из РФ. Другая роль агента не заменяет независимый документ.",
+        "evidence": {
+          "file": "docs/research.json",
+          "field": "editorial_summary",
+          "excerpt": "бывшего СССР и Российской империи",
+          "key": "semanticmeaning/kinship-kit",
+          "original_text": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+          "basis": "Редакционное уточнение по сохранённому описанию; не независимое испытание"
+        }
+      },
+      "next_check": "Используйте копию GEDCOM. Сравните до и после количество людей, связи, даты, ссылки на источники и неподдержанные поля; сохраните исходный файл."
+    },
+    {
+      "task": "agents",
+      "project": "semanticmeaning/kinship-kit",
+      "url": "https://github.com/semanticmeaning/kinship-kit",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "semanticmeaning/kinship-kit",
+          "field": "description",
+          "excerpt": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "semanticmeaning/kinship-kit",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "semanticmeaning/kinship-kit",
+          "field": "editorial_summary",
+          "excerpt": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Генеалогический toolkit: Agent Skill, CLI, MCP-сервер и генератор семейного сайта"
+        }
+      },
+      "purpose": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+      "use_case": "На вымышленной семье создать исследовательское дело, прикрепить скан с архивным шифром, записать конкурирующие атрибуции и отрицательный поиск; проверить сохранение состояния и публичную сборку до переноса реальных данных.",
+      "license": "MIT",
+      "limitations": "Нужны Python 3.10+ и настройка выбранного агента; установка CLI из клона описана только в editable-режиме. Качество агентного ревью и защита живущих при публикации независимо не проверены. GEDCOM переносит лишь часть полей, полный обмен дела выполняется другим форматом. Использовать актуальную 0.5.2 с описанными авторами исправлениями; это версия метаданных, не GitHub Release.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": {
+        "label": "Бывший СССР · Российская империя — исследовательский фокус",
+        "regions": [
+          "Бывший СССР",
+          "Российская империя"
+        ],
+        "scope": "editorial",
+        "scenario": "Вести дело о родстве с источниками, конкурирующими гипотезами и журналом отрицательного поиска; первую пробу делать на вымышленной семье.",
+        "boundary": "Фокус заявлен в README. Он не подтверждает полноту архивов, работоспособность каждого скачивателя, качество ИИ-чтения или доступность сервисов из РФ. Другая роль агента не заменяет независимый документ.",
+        "evidence": {
+          "file": "docs/research.json",
+          "field": "editorial_summary",
+          "excerpt": "бывшего СССР и Российской империи",
+          "key": "semanticmeaning/kinship-kit",
+          "original_text": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+          "basis": "Редакционное уточнение по сохранённому описанию; не независимое испытание"
+        }
+      },
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "transcribe",
+      "project": "joaquimrcarvalho/personal-historical-archive",
+      "url": "https://github.com/joaquimrcarvalho/personal-historical-archive",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "description",
+          "excerpt": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "use_case",
+          "excerpt": "На двух разрешённых страницах сохранить сканы, получить машинную транскрипцию и отдельно перевод или модернизированное чтение; найти известное имя и сверить ответ, цитату и номер страницы с оригиналом.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "editorial_summary",
+          "excerpt": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "editorial_use_case",
+          "excerpt": "На двух разрешённых страницах сохранить сканы, получить машинную транскрипцию и отдельно перевод или модернизированное чтение; найти известное имя и сверить ответ, цитату и номер страницы с оригиналом.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Python/CLI-конвейер и MCP-сервер локального архива документов"
+        }
+      },
+      "purpose": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP.",
+      "use_case": "На двух разрешённых страницах сохранить сканы, получить машинную транскрипцию и отдельно перевод или модернизированное чтение; найти известное имя и сверить ответ, цитату и номер страницы с оригиналом.",
+      "license": "Не установлена: LICENSE отсутствует в проверенном корне, поле license не задано в pyproject.toml",
+      "limitations": "Нужны Python 3.11+, сервер совместимых моделей и ресурсы для vision/embeddings. Удалённые модели могут получать документы. Лицензия проекта не установлена: отдельного LICENSE в проверенном корне и поля license в pyproject нет. Качество чтения, поиска, цитирования и переносимость на русские документы независимо не проверены; 0.46.7 — номер в метаданных, GitHub Releases пуст.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Возьмите страницу с известной расшифровкой. Сравните ошибки имён, дат и порядок строк; сохраните оригинал рядом с результатом."
+    },
+    {
+      "task": "research",
+      "project": "joaquimrcarvalho/personal-historical-archive",
+      "url": "https://github.com/joaquimrcarvalho/personal-historical-archive",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Python/CLI-конвейер и MCP-сервер локального архива документов"
+        }
+      },
+      "purpose": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP.",
+      "use_case": "На двух разрешённых страницах сохранить сканы, получить машинную транскрипцию и отдельно перевод или модернизированное чтение; найти известное имя и сверить ответ, цитату и номер страницы с оригиналом.",
+      "license": "Не установлена: LICENSE отсутствует в проверенном корне, поле license не задано в pyproject.toml",
+      "limitations": "Нужны Python 3.11+, сервер совместимых моделей и ресурсы для vision/embeddings. Удалённые модели могут получать документы. Лицензия проекта не установлена: отдельного LICENSE в проверенном корне и поля license в pyproject нет. Качество чтения, поиска, цитирования и переносимость на русские документы независимо не проверены; 0.46.7 — номер в метаданных, GitHub Releases пуст.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "agents",
+      "project": "joaquimrcarvalho/personal-historical-archive",
+      "url": "https://github.com/joaquimrcarvalho/personal-historical-archive",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "description",
+          "excerpt": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "components",
+          "excerpt": "Research Workspace · OCR/HTR · Indexer · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "joaquimrcarvalho/personal-historical-archive",
+          "field": "editorial_summary",
+          "excerpt": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Python/CLI-конвейер и MCP-сервер локального архива документов"
+        }
+      },
+      "purpose": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP.",
+      "use_case": "На двух разрешённых страницах сохранить сканы, получить машинную транскрипцию и отдельно перевод или модернизированное чтение; найти известное имя и сверить ответ, цитату и номер страницы с оригиналом.",
+      "license": "Не установлена: LICENSE отсутствует в проверенном корне, поле license не задано в pyproject.toml",
+      "limitations": "Нужны Python 3.11+, сервер совместимых моделей и ресурсы для vision/embeddings. Удалённые модели могут получать документы. Лицензия проекта не установлена: отдельного LICENSE в проверенном корне и поля license в pyproject нет. Качество чтения, поиска, цитирования и переносимость на русские документы независимо не проверены; 0.46.7 — номер в метаданных, GitHub Releases пуст.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "usage_context": null,

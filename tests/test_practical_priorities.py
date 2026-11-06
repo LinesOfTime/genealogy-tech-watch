@@ -105,7 +105,15 @@ class PracticalPriorityTests(unittest.TestCase):
         proposals = load_proposals(ROOT, cards)
         expected = {r['name'].lower() for r in audit if r['result'] == 'exists'}
         self.assertEqual(set(proposals), expected)
-        self.assertEqual(len(cards) - len(proposals), 4)
+        self.assertEqual(len(audit) - len(proposals), 4)
+        # A dated assessment stays immutable when later Watch cards are added.
+        self.assertTrue({r['name'].lower() for r in audit}.issubset({c['name'].lower() for c in cards}))
+
+    def test_dated_scope_allows_new_unrated_card_but_not_loss(self):
+        cards = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(load_proposals(ROOT, cards + [dict(name='new/unrated', url='https://github.com/new/unrated')])), 180)
+        with self.assertRaises(ValueError):
+            load_proposals(ROOT, [c for c in cards if c['name'] != 'gramps-project/gramps'])
 
     def test_directory_listing_cannot_borrow_readme_evidence(self):
         path = self.root / self.proposal['evidence_file']

@@ -13,6 +13,7 @@ function fixture(seed) {
   const context = vm.createContext({document:{getElementById:get, title:''}, URL, URLSearchParams, structuredClone,
     location:{search:''}, localStorage:{getItem(){throw Error('Storage must never override published data');},setItem(){throw Error('No persistence');}}, console});
   vm.runInContext(read('docs/watch-ui.js'), context);
+  vm.runInContext(read('docs/catalog-io.js'), context);
   return {get,context};
 }
 function count(html, className) { return (html.match(new RegExp('<article class="' + className, 'g')) || []).length; }

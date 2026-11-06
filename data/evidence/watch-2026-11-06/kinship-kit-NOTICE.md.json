@@ -1,0 +1,6 @@
+{
+  "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/NOTICE.md?ref=4d90a0621febc37479ac265f41649a357e7a2558",
+  "checked_at": "2026-11-06T18:24:39.947Z",
+  "http_status": 200,
+  "content": "# Атрибуция / Attribution\n\nНавык `skills/kinship-kit` (методика, правила доказательности) и справочники `skills/kinship-kit/references/`\nоснованы на навыке **ex-ussr-kinship-research** v1.11.0 — https://github.com/DenisSergeevitch/ex-ussr-kinship-research,\n© 2026 Denis Shiryaev, лицензия MIT. Текст лицензии исходника сохранён в `LICENSE`.\n\nИзменения kinship-kit: CLI `kin` вместо скриптов исходника, реестры упоминаний, мест, гипотез и задач,\nжурнал отрицательных поисков, публикационный набор с фильтром приватности, сайт-схема.\n\nИконки пола на карточках сайта-схемы (`skills/kinship-kit/kin/web/icons/`): kareemovic2000, Noun Project, лицензия CC BY 3.0\n(указано в легенде сайта).\n\nДемонстрационное дело (`examples/demo`) полностью вымышлено: люди, места, архивы и шифры не существуют.\n"
+}

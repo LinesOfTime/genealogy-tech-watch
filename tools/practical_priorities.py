@@ -97,10 +97,11 @@ def load_proposals(root, catalog):
     if 'coverage' in data:
         audit = json.loads((root / 'reports/priority-source-audit-2026-11-04.json').read_text(encoding='utf-8'))
         expected = {r['name'].lower() for r in audit if r['result'] == 'exists'}
-        if set(result) != expected or {r['name'].lower() for r in audit} != set(cards):
+        scope = {r['name'].lower() for r in audit}
+        if set(result) != expected or not scope.issubset(cards):
             raise ValueError('Full practical review lost projects or reference issues')
-        if data['coverage'] != dict(catalog=len(cards), reviewed_repositories=len(expected),
-                                    reference_issues=len(cards) - len(expected)):
+        if data['coverage'] != dict(catalog=len(scope), reviewed_repositories=len(expected),
+                                    reference_issues=len(scope) - len(expected)):
             raise ValueError('Full practical review coverage counts differ')
     application = root / 'data/practical-priority-application.json'
     if application.exists():

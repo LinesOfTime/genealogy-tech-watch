@@ -35,5 +35,8 @@
   "github:geiserx/gramps-web-toolkit:watch-2026-11-04": "f10abd01958a7f3cbfa91e7ba494b556013863bf7b6837e51fc86c3ef5f2c71f",
   "github:scormave/gramps-web-mcp:watch-2026-11-04": "09b0eefefabbd904f257d94cee6720201865129bd5d66d82f559ffc067749464",
   "github:genealogy-mcp/gramps-mcp:watch-2026-11-04": "c74114d30e6491ec8af9f150bb6732d7d7e72ec96ce9fca1972eeb566ae71d6e",
-  "github:ai-riksarkivet/htrflow-batch:watch-2026-11-04": "6cdcfe42e515ba8b5e9fe0f89422a73b0c9833f137685b6d1eb1dc7db2c8a37f"
+  "github:ai-riksarkivet/htrflow-batch:watch-2026-11-04": "6cdcfe42e515ba8b5e9fe0f89422a73b0c9833f137685b6d1eb1dc7db2c8a37f",
+  "github:semanticmeaning/kinship-kit:watch-2026-11-06": "4770fd3a71a1db7567bc489548eacecfae9b173c80ee4ee9f9cc2c326e2c44bc",
+  "github:joaquimrcarvalho/personal-historical-archive:watch-2026-11-06": "cd97d305424b7d62a5800f3d7d975d9c7231e3554863f5fe1778e7842859e081",
+  "github:kinprove/genealogy-research-recipes:watch-2026-11-06": "2d1f9972fe0da52572c3788fbdda3e4bb5117b4b37823964544347141122581e"
 }

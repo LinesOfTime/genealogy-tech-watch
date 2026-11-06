@@ -89,6 +89,7 @@ def refresh_and_check():
                 [sys.executable,'tools/sync_data.py'],
                 [sys.executable,'tools/watch_pipeline.py','validate'],
                 [sys.executable,'-m','unittest','discover','-s','tests','-v'],
+                ['node','tests/catalog_io.cjs'],
                 ['node','tests/ui_smoke.cjs']]
     import tempfile
     with tempfile.TemporaryDirectory(dir=ROOT,prefix='.watch-e2e-check-') as temporary:

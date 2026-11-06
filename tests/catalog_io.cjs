@@ -1,0 +1,17 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const context=vm.createContext({URL,structuredClone});
+vm.runInContext(fs.readFileSync('docs/catalog-io.js','utf8'),context);
+const validate=context.CatalogIO.validate;
+const original=JSON.parse(fs.readFileSync('catalog.json','utf8'));
+assert.equal(JSON.stringify(validate(original)),JSON.stringify(original));
+const card={name:'test/project',url:'https://github.com/test/project',description:'<img src=x onerror=alert(1)>',custom:{kept:true}};
+assert.equal(JSON.stringify(validate([card])),JSON.stringify([card]));
+assert.throws(()=>validate({projects:[card]}));
+assert.throws(()=>validate([{...card,url:'javascript:alert(1)'}]));
+assert.throws(()=>validate([{...card,url:'https://github.com.evil.example/test/project'}]));
+assert.throws(()=>validate([{...card,url:'https://user:password@github.com/test/project'}]));
+assert.throws(()=>validate([card,{...card,name:'another',url:'https://www.github.com/Test/Project.git/'}]));
+assert.throws(()=>validate([{...card,section:{html:'bad'}}]));
+assert.throws(()=>validate([{...card,practical_priority:{priority:{unsafe:true}}}]));
+assert.equal(validate([]).length,0);
+console.log('Catalog JSON IO passed: lossless object round-trip, unsafe URLs, duplicates and malformed fields rejected.');

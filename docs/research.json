@@ -15034,6 +15034,64 @@
         "reviewer": "Codex: статическая проверка первоисточников по поручению пользователя; не ручное утверждение пользователя",
         "reviewed_at": "2026-10-23T09:44:05.352Z",
         "reviewed_content_hash": "7668b50bad0fa8b5a770ab57eb83b4d823a23ca481ad97fb0f3e07e91df933e7"
+      },
+      {
+        "discovery_id": "github:kinprove/genealogy-research-recipes:watch-2026-11-06",
+        "date": "2026-11-06",
+        "change": "Genealogy Research Recipes 1.10.0–1.11.0: портативный plugin.json и инструкции Codex; уточнены существующие шведские и другие архивные маршруты, затем шесть процедур для Франции, Баварии, военных и регистрационных записей. Новая карточка не создаётся.",
+        "previous_state": "В каталоге одна карточка и опубликованное событие 1.6.0/1.6.1; переоценка 4 ноября сохранена отдельно. Пакет 1.10–1.11 и portable plugin.json ранее не отражены в истории.",
+        "new_state": "К существующей карточке добавлено одно событие о выпусках 1.10.0 от 5 ноября и 1.11.0 от 6 ноября. Текущий plugin.json имеет 1.11.0 и FSL-1.1-MIT; релиз 1.11 уточняет существующие рецепты и не добавляет новых инструментов/прав доступа.",
+        "significance_reason": "Появился описанный путь подключения того же набора к Codex/ChatGPT и уточнены практические маршруты поиска; это изменение подключения и методики, а не косметическая перестановка README.",
+        "source_urls": [
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes/releases/tags/v1.11.0"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/ecfeca598253aaab3474e247aa0a78b7848d98b4/plugin.json"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/README.md?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/LICENSE?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/plugin.json?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/skills/genealogy-research-recipes/recipes/french-departmental-record-routing.md?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes/releases/tags/v1.10.0"
+          }
+        ],
+        "url": "https://api.github.com/repos/Kinprove/genealogy-research-recipes/releases/tags/v1.11.0",
+        "claims_vs_verified": {
+          "independent_testing": "Не проводилось. Проверяются первоисточники и собственный конвейер каталога; проекты, их модели и внешние сервисы не запускались.",
+          "verified": "Проверены тексты GitHub Releases v1.10.0/v1.11.0, README, plugin.json с версией 1.11.0, FSL-1.1-MIT и пример французской процедуры на commit ecfeca59. Точный URL уже имеет одну карточку; совпадающих новых событий нет.",
+          "author_claims": "14 и 6 изменённых процедур, отсутствие новых recipe-файлов/инструментов и результаты CI приведены в release notes; полнота пересчёта и качество всех процедур независимо не проверялись."
+        },
+        "risks": [
+          "FSL-1.1-MIT не является текущей безусловной MIT; переход относится к каждой версии спустя два года по тексту лицензии.",
+          "Fact-checked и прохождение CI — заявления авторов, не наш аудит исторической точности и не независимый тест плагина.",
+          "Рецепты не выполняют архивный поиск самостоятельно и не дают универсальный доступ к перечисленным сервисам. Права, учётные записи и покрытие проверяются отдельно.",
+          "Перестановка списка в README сама по себе не считается существенным событием; сохранены конкретные изменения manifest и исследовательских процедур."
+        ],
+        "license": "FSL-1.1-MIT: ограничение конкурирующего коммерческого использования; MIT для каждой версии через два года по тексту лицензии",
+        "license_evidence": [
+          "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/LICENSE?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4"
+        ],
+        "review_status": "approved",
+        "reviewer": "Codex: статическая проверка источников по прямому поручению пользователя 2026-11-06 добавить эти URL и отправить main; отдельное ручное подтверждение фактов пользователем не заявляется",
+        "reviewed_at": "2026-11-06T19:49:07.453402+00:00",
+        "reviewed_content_hash": "2d1f9972fe0da52572c3788fbdda3e4bb5117b4b37823964544347141122581e"
       }
     ],
     "russia_applicability": {
@@ -17603,6 +17661,269 @@
       "original_line": null,
       "source": "https://github.com/PioneerAIAcademy/cowork-genealogy",
       "basis": "Не проверялась работа с российскими архивными источниками."
+    }
+  },
+  "semanticmeaning/kinship-kit": {
+    "watch_events": [
+      {
+        "discovery_id": "github:semanticmeaning/kinship-kit:watch-2026-11-06",
+        "date": "2026-11-02",
+        "change": "Добавлен kinship-kit: навык для агентов, CLI kin, MCP и сайт-схема для доказательного исследования родства; версия 0.5.2 по pyproject/CHANGELOG, MIT. Фокус — бывший СССР и Российская империя.",
+        "previous_state": "Точного URL в каталоге нет. ex-ussr-kinship-research уже учтён отдельно; ссылка в NOTICE указывает происхождение материалов, а не переименование репозитория.",
+        "new_state": "Отдельная карточка набора: приватное дело, источники и конкурирующие гипотезы, журнал отрицательного поиска, проверка другой ролью, RU/EN и публикация семейной схемы. Возможности описаны авторами; независимо не испытаны.",
+        "significance_reason": "Практический сценарий — вести архивное дело и проверять каждую атрибуцию до публикации; данные дела отделены от кода набора.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/semanticmeaning/kinship-kit/4d90a0621febc37479ac265f41649a357e7a2558/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/README.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/LICENSE?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/pyproject.toml?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/CHANGELOG.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/docs/GEDCOM.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/docs/ACCEPTANCE.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/NOTICE.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/releases?per_page=3"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/semanticmeaning/kinship-kit/4d90a0621febc37479ac265f41649a357e7a2558/README.md",
+        "claims_vs_verified": {
+          "independent_testing": "Не проводилось. Проверяются первоисточники и собственный конвейер каталога; проекты, их модели и внешние сервисы не запускались.",
+          "verified": "Проверены существование репозитория, README, pyproject 0.5.2, CHANGELOG, MIT/NOTICE, описание GEDCOM и авторская приёмочная ведомость на commit 4d90a062. GitHub Releases не содержит выпусков.",
+          "author_claims": "Сохранность данных, отказ от необоснованных слияний, приватность публичной сборки, качество второй роли и успех тестов — заявления авторов, а не независимые результаты каталога."
+        },
+        "risks": [
+          "Другая роль агента не является независимым документальным подтверждением. Правила evidence/privacy и заявленные тесты автора не воспроизводились.",
+          "Версия 0.5.2 описывает исправления запуска темы дела и блокировок/кодировок Windows; исправление безопасности сверено по CHANGELOG, не проверено эксплуатацией.",
+          "GEDCOM переносит только подмножество сведений; медиа, часть источников/цитат, календарей и исследовательское состояние не равны полному обмену дела.",
+          "MIT и NOTICE подтверждают происхождение от ex-ussr-kinship-research. Это не алиас; прежнюю карточку не заменять."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/LICENSE?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+        ],
+        "review_status": "approved",
+        "reviewer": "Codex: статическая проверка источников по прямому поручению пользователя 2026-11-06 добавить эти URL и отправить main; отдельное ручное подтверждение фактов пользователем не заявляется",
+        "reviewed_at": "2026-11-06T19:49:07.453402+00:00",
+        "reviewed_content_hash": "4770fd3a71a1db7567bc489548eacecfae9b173c80ee4ee9f9cc2c326e2c44bc"
+      }
+    ],
+    "editorial_summary": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода.",
+    "editorial_use_case": "На вымышленной семье создать исследовательское дело, прикрепить скан с архивным шифром, записать конкурирующие атрибуции и отрицательный поиск; проверить сохранение состояния и публичную сборку до переноса реальных данных.",
+    "editorial_limitations": "Нужны Python 3.10+ и настройка выбранного агента; установка CLI из клона описана только в editable-режиме. Качество агентного ревью и защита живущих при публикации независимо не проверены. GEDCOM переносит лишь часть полей, полный обмен дела выполняется другим форматом. Использовать актуальную 0.5.2 с описанными авторами исправлениями; это версия метаданных, не GitHub Release.",
+    "project_type": "Генеалогический toolkit: Agent Skill, CLI, MCP-сервер и генератор семейного сайта",
+    "license": "MIT",
+    "license_evidence": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/LICENSE?ref=4d90a0621febc37479ac265f41649a357e7a2558",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-06",
+    "source_evidence": "https://raw.githubusercontent.com/semanticmeaning/kinship-kit/4d90a0621febc37479ac265f41649a357e7a2558/README.md",
+    "maturity": "Ранний активно разрабатываемый проект: создан 2 ноября; версия 0.5.2 в метаданных и CHANGELOG. GitHub Releases пуст; перечисленные автором тесты здесь не запускались.",
+    "profile_provenance": {
+      "discovery_id": "github:semanticmeaning/kinship-kit:watch-2026-11-06",
+      "reviewed_content_hash": "4770fd3a71a1db7567bc489548eacecfae9b173c80ee4ee9f9cc2c326e2c44bc",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/semanticmeaning/kinship-kit/4d90a0621febc37479ac265f41649a357e7a2558/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/README.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/LICENSE?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/pyproject.toml?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/CHANGELOG.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/docs/GEDCOM.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/docs/ACCEPTANCE.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/NOTICE.md?ref=4d90a0621febc37479ac265f41649a357e7a2558"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/semanticmeaning/kinship-kit/releases?per_page=3"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "joaquimrcarvalho/personal-historical-archive": {
+    "watch_events": [
+      {
+        "discovery_id": "github:joaquimrcarvalho/personal-historical-archive:watch-2026-11-06",
+        "date": "2026-11-03",
+        "change": "Добавлен Personal Historical Archive: локальный архив PDF/изображений с постраничной VLM-транскрипцией, отдельным редактором/encoder, поиском FTS5/embeddings и MCP. Версия 0.46.7 подтверждена pyproject; лицензия не установлена.",
+        "previous_state": "Точного URL нет в каталоге, расширенных исследованиях и событиях.",
+        "new_state": "Отдельная карточка локального Python/CLI/MCP-конвейера. README и руководство отделяют чтение скана от модернизации/перевода и структурированных записей; локальная обработка по умолчанию не исключает настройки удалённых моделей.",
+        "significance_reason": "Позволяет рассматривать собственный корпус исторических сканов как поисковый архив с обратным переходом к странице, сохраняя различие транскрипции и редакторской производной.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/joaquimrcarvalho/personal-historical-archive/4a458d64b08556c975573bd0a8274fbcabb87c3a/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/README.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/pyproject.toml?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/HISTORIANS_README.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/MCP_CLIENTS.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/releases?per_page=3"
+          },
+          {
+            "type": "README",
+            "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/joaquimrcarvalho/personal-historical-archive/4a458d64b08556c975573bd0a8274fbcabb87c3a/README.md",
+        "claims_vs_verified": {
+          "independent_testing": "Не проводилось. Проверяются первоисточники и собственный конвейер каталога; проекты, их модели и внешние сервисы не запускались.",
+          "verified": "Проверены публичный репозиторий, README, руководство для историков, MCP-документация и pyproject на commit 4a458d64. Версия 0.46.7; список GitHub Releases пуст. В проверенном корневом списке файлов нет LICENSE, в pyproject нет декларации license.",
+          "author_claims": "Точность VLM-чтения, удобство historian workflow, сохранность производных, производительность и поддержка ОС описаны авторами, без независимого запуска."
+        },
+        "risks": [
+          "Отсутствие LICENSE в корне и поля license не доказывает отсутствие любых условий в проекте. Не представлять как лицензированный MIT/Apache или подтверждённый Open Source.",
+          "Нужны Python 3.11+ и серверы vision/embedding, возможны удалённые редакторы. Проверить ресурсы, стоимость и допустимость передачи документов.",
+          "Модернизация, перевод и развёртывание сокращений — производные чтения, не оригинал и не доказанный исторический факт.",
+          "Примеры португалоязычных материалов не подтверждают качество русской скорописи; применимость определяется моделями и контрольным корпусом."
+        ],
+        "license": "Не установлена: LICENSE отсутствует в проверенном корне, поле license не задано в pyproject.toml",
+        "license_evidence": [
+          "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/pyproject.toml?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a",
+          "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+        ],
+        "review_status": "approved",
+        "reviewer": "Codex: статическая проверка источников по прямому поручению пользователя 2026-11-06 добавить эти URL и отправить main; отдельное ручное подтверждение фактов пользователем не заявляется",
+        "reviewed_at": "2026-11-06T19:49:07.453402+00:00",
+        "reviewed_content_hash": "cd97d305424b7d62a5800f3d7d975d9c7231e3554863f5fe1778e7842859e081"
+      }
+    ],
+    "editorial_summary": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP.",
+    "editorial_use_case": "На двух разрешённых страницах сохранить сканы, получить машинную транскрипцию и отдельно перевод или модернизированное чтение; найти известное имя и сверить ответ, цитату и номер страницы с оригиналом.",
+    "editorial_limitations": "Нужны Python 3.11+, сервер совместимых моделей и ресурсы для vision/embeddings. Удалённые модели могут получать документы. Лицензия проекта не установлена: отдельного LICENSE в проверенном корне и поля license в pyproject нет. Качество чтения, поиска, цитирования и переносимость на русские документы независимо не проверены; 0.46.7 — номер в метаданных, GitHub Releases пуст.",
+    "project_type": "Python/CLI-конвейер и MCP-сервер локального архива документов",
+    "license": "Не установлена: LICENSE отсутствует в проверенном корне, поле license не задано в pyproject.toml",
+    "license_evidence": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/pyproject.toml?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a; https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-06",
+    "source_evidence": "https://raw.githubusercontent.com/joaquimrcarvalho/personal-historical-archive/4a458d64b08556c975573bd0a8274fbcabb87c3a/README.md",
+    "maturity": "Разрабатываемый инструмент: 0.46.7 в pyproject и сообщении commit от 3 ноября. GitHub Releases пуст; установка, модели и качество обработки не испытывались.",
+    "profile_provenance": {
+      "discovery_id": "github:joaquimrcarvalho/personal-historical-archive:watch-2026-11-06",
+      "reviewed_content_hash": "cd97d305424b7d62a5800f3d7d975d9c7231e3554863f5fe1778e7842859e081",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/joaquimrcarvalho/personal-historical-archive/4a458d64b08556c975573bd0a8274fbcabb87c3a/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/README.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/pyproject.toml?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/HISTORIANS_README.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/MCP_CLIENTS.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/releases?per_page=3"
+        },
+        {
+          "type": "README",
+          "url": "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
     }
   }
 }
