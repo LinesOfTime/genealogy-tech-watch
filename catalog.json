@@ -6728,7 +6728,7 @@
     "section": "Источники, OCR и архивы",
     "description": "По редакционным материалам (без независимой проверки): Загрузчик IIIF-изображений. Практический вариант получения изображений из цифровых архивов, поддерживающих IIIF.",
     "use_case": "",
-    "limitations": "CLI для IIIF Presentation 3 и последовательных URL; не путать лицензию кода с правами на изображения архивов",
+    "limitations": "CLI для IIIF Presentation 3 и последовательных URL; не путать лицензию кода с правами на изображения архивов Текущий адрес репозитория возвращает HTTP 404 (повторная проверка 08.11.2026). Доступность проекта, возможный перенос и актуальность описанных возможностей не подтверждены; исторические сведения сохранены.",
     "license": "MIT",
     "license_status": "Подтверждена документацией репозитория; версия по маркировке GitHub/README",
     "priority": "P1",
@@ -6801,8 +6801,11 @@
     },
     "repository_reference_issue": {
       "result": "not_found",
-      "checked_on": "2026-11-04",
-      "url": "https://github.com/komura-shoan/iiif-downloader"
+      "checked_on": "2026-11-08",
+      "url": "https://github.com/komura-shoan/iiif-downloader",
+      "review_status": "unresolved",
+      "evidence": "GitHub REST repository endpoint returned HTTP 404 on 2026-11-08; repository deletion or relocation is not established.",
+      "next_action": "Identify canonical upstream or authoritative release source; retain historical record until verified."
     }
   },
   {
@@ -16620,7 +16623,7 @@
     "section": "Новые исследования / GitHub Watch",
     "description": "Альтернативный семейный веб-интерфейс Gramps Web; по README заменяет frontend и обращается к существующему Gramps Web API.",
     "use_case": "Редакционный сценарий: сравнить просмотр родственников, редактирование и навигацию на телефоне с обычным Gramps Web на копии одного дерева.",
-    "limitations": "Ранняя стадия; совместимость задумана, но не гарантирована. Работа, скорость и сохранность данных независимо не испытывались. В README указаны немецкий и английский языки.",
+    "limitations": "Ранняя стадия; совместимость задумана, но не гарантирована. Работа, скорость и сохранность данных независимо не испытывались. В README указаны немецкий и английский языки. Текущий адрес репозитория возвращает HTTP 404 (повторная проверка 08.11.2026). Доступность проекта, возможный перенос и актуальность описанных возможностей не подтверждены; исторические сведения сохранены.",
     "license": "AGPL-3.0-or-later по README тега 0.1.0; сохранён LICENSE AGPL v3",
     "license_status": "См. источники события; независимая проверка не заявлена",
     "priority": "Не оценён",
@@ -16741,8 +16744,11 @@
     },
     "repository_reference_issue": {
       "result": "not_found",
-      "checked_on": "2026-11-04",
-      "url": "https://github.com/b21-agency/gramps-ui"
+      "checked_on": "2026-11-08",
+      "url": "https://github.com/b21-agency/gramps-ui",
+      "review_status": "unresolved",
+      "evidence": "GitHub REST repository endpoint returned HTTP 404 on 2026-11-08; repository deletion or relocation is not established.",
+      "next_action": "Identify canonical upstream or authoritative release source; retain historical record until verified."
     }
   },
   {
