@@ -1101,7 +1101,7 @@
     "license_status": "Подтверждена документацией репозитория; версия по маркировке GitHub/README",
     "priority": "P1",
     "verification": "GitHub README и карточка лицензии",
-    "verified_at": "2026-10-08",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировалось",
     "source": "https://github.com/archival-IIIF/viewer",
     "status": "Исходное исследование, 8–10 октября",
@@ -1166,7 +1166,8 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "latest_verified_change": "В версии 5.0.1 после перехода на Vite/MUI 7 исправлена конфигурация библиотечной сборки и изменён экспорт компонента (коммит a67689b)."
   },
   {
     "name": "benwbrum/fromthepage",
@@ -8941,7 +8942,7 @@
     "license_status": "Подтверждена по LICENSE/README",
     "priority": "P2",
     "verification": "Первичные GitHub LICENSE и README; без запуска ПО",
-    "verified_at": "2026-10-08",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировалось",
     "source": "https://github.com/omeka/omeka",
     "status": "Исходное исследование, 8–10 октября",
@@ -9033,7 +9034,8 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "latest_verified_change": "В административном интерфейсе обновлены элементы управления тегами, включая семантику кнопок и оформление (коммит a1f3066)."
   },
   {
     "name": "omeka/omeka-s",
