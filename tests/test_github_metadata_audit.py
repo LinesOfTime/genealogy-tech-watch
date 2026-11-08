@@ -1,6 +1,7 @@
 import importlib.util
 from pathlib import Path
 import unittest
+from datetime import datetime, timezone
 
 spec = importlib.util.spec_from_file_location(
     'github_metadata_audit', Path(__file__).resolve().parents[1] / 'tools/github_metadata_audit.py')
@@ -28,6 +29,20 @@ class GitHubMetadataAuditTests(unittest.TestCase):
         self.assertEqual(calls, ['org/repo'])
         self.assertEqual(result[0]['license_spdx'], 'MIT')
         self.assertEqual(result[2]['status'], 'not_github_repository')
+
+    def test_activity_after_catalog_event_is_only_a_candidate(self):
+        cards = [{'name': 'A', 'url': 'https://github.com/a/b',
+                  'history': [{'date': '2026-10-01'}]}]
+        result = audit.inspect(cards, lambda repo: {
+            'pushed_at': '2026-11-03T12:00:00Z', 'archived': False},
+            checked_at=datetime(2026, 11, 8, tzinfo=timezone.utc))
+        self.assertEqual(result[0]['screening'], 'activity_after_catalog_event')
+
+    def test_archived_repository_is_flagged(self):
+        cards = [{'name': 'A', 'url': 'https://github.com/a/b'}]
+        result = audit.inspect(cards, lambda repo: {'archived': True},
+            checked_at=datetime(2026, 11, 8, tzinfo=timezone.utc))
+        self.assertEqual(result[0]['screening'], 'repository_status_change_candidate')
 
     def test_request_errors_are_visible(self):
         result = audit.inspect([{'name': 'A', 'url': 'https://github.com/a/b'}],
