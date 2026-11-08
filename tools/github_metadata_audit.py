@@ -16,6 +16,12 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Verified project homepage; a replacement URL is a review suggestion, not an automatic edit.
+KNOWN_RELOCATIONS = {
+    'scripta/escriptorium': 'https://gitlab.com/scripta/escriptorium',
+}
+
+
 
 def repository_name(url):
     if not isinstance(url, str):
@@ -36,6 +42,8 @@ def repository_name(url):
 
 def screening(card, metadata, checked_at):
     """Prioritize manual inspection; activity is NOT evidence of material changes."""
+    if metadata.get('resolution') == 'known_external_repository_candidate':
+        return 'repository_url_correction_candidate'
     if metadata.get('status') != 'ok':
         return 'unverified'
     if metadata.get('archived') or metadata.get('disabled'):
@@ -86,6 +94,9 @@ def inspect(cards, fetch, pause=0, checked_at=None):
             data = cache[repo]
             if '_error' in data:
                 row.update(status='request_failed', error=data['_error'])
+                if repo in KNOWN_RELOCATIONS and '404' in data['_error']:
+                    row['suggested_url'] = KNOWN_RELOCATIONS[repo]
+                    row['resolution'] = 'known_external_repository_candidate'
             elif not isinstance(data, dict):
                 row.update(status='invalid_response')
             else:
@@ -128,12 +139,13 @@ def main():
         except URLError as exc:
             raise RuntimeError('network error: ' + str(exc.reason)) from exc
     items = inspect(cards, fetch, args.pause)
-    priority_order = {'repository_status_change_candidate': 0,
-                      'activity_after_catalog_event': 1,
-                      'recent_activity_review': 2,
-                      'invalid_future_timestamp': 3,
-                      'unknown_activity': 4,
-                      'unverified': 5}
+    priority_order = {'repository_url_correction_candidate': 0,
+                      'repository_status_change_candidate': 1,
+                      'activity_after_catalog_event': 2,
+                      'recent_activity_review': 3,
+                      'invalid_future_timestamp': 4,
+                      'unknown_activity': 5,
+                      'unverified': 6}
     candidates = [item for item in items if item['screening'] in priority_order]
     candidates.sort(key=lambda item: (priority_order[item['screening']], str(item['name'])))
     summary = dict(Counter(item['status'] for item in items))
