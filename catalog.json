@@ -19530,7 +19530,7 @@
     "limitations": "GitHub — зеркало GitLab; синхронность origin отдельно не подтверждена. Входящий MCP требует защищённого развёртывания. Backup без медиа, восстановление через MCP не предоставлено; API 3.24+, BACKUP_DIR и ManageBackups обязательны для backup. Экономия токенов заявлена автором; независимых испытаний нет.",
     "license": "AGPL-3.0",
     "license_status": "См. источники события; независимая проверка не заявлена",
-    "priority": "P2",
+    "priority": "Не оценён",
     "priority_original": "Не оценён",
     "verification": "Редакционная проверка источников события; см. историю",
     "verified_at": "2026-11-03",
@@ -19817,35 +19817,6 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    },
-    "priority_basis": "Синхронизировано с утверждённой практической оценкой P2 от 2026-11-04; подтверждены README, LICENSE и pyproject.toml, без независимого испытания.",
-    "priority_status": "approved",
-    "evaluation": {
-      "method_version": "2026-11-08",
-      "reviewed_at": "2026-11-08",
-      "review_scope": "Сверены README, LICENSE и pyproject.toml GitHub-зеркала; учтена утверждённая практическая оценка P2 от 2026-11-04 и проверенные diff. GitLab origin отдельно не перепроверялся; проект не запускался.",
-      "component_fit": 4,
-      "russia_fit": 2,
-      "maturity": 3,
-      "evidence_level": "E1",
-      "license_risk": "L1",
-      "integration_effort": 3,
-      "priority_rationale": "MCP-интерфейс для чтения и изменения Gramps Web через 22 операции. Подходит для пилота на копии дерева; риски записи, входящей MCP-аутентификации, backup без media и AGPL исключают автоматическое повышение до P1. Значение P2 ранее утверждено в practical_priority.",
-      "next_action": "На тестовой копии дерева проверить read-only поиск и цитирования, создание и откат изменений, резервную копию с media вне MCP и поведение после тайм-аута; сверить GitLab origin и требования AGPL перед интеграцией.",
-      "recheck_trigger": "Независимый интеграционный тест на реальных генеалогических данных, проверка GitLab origin или изменение лицензии/API.",
-      "source_urls": [
-        "https://github.com/Genealogy-MCP/gramps-mcp/blob/main/README.md",
-        "https://github.com/Genealogy-MCP/gramps-mcp/blob/main/LICENSE",
-        "https://github.com/Genealogy-MCP/gramps-mcp/blob/main/pyproject.toml"
-      ],
-      "source_blob_sha": {
-        "README_md": "1ac1a8d74eefbcb6037c6daef35cc1ffc62fd181",
-        "LICENSE": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
-        "pyproject_toml": "7865fb7e48ee35b07c779a5dc7eff1fe0e713de5"
-      },
-      "reviewer": "Редакционная сверка ранее утверждённого P2",
-      "review_status": "approved_priority_synced",
-      "independent_test": false
     }
   },
   {
