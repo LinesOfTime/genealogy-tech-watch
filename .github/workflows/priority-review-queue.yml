@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - '.github/workflows/priority-review-queue.yml'
+      - 'tools/github_metadata_audit.py'
+      - 'tests/test_github_metadata_audit.py'
   workflow_dispatch:
   schedule:
     - cron: '15 6 * * 1'
