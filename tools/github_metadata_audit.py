@@ -44,6 +44,8 @@ def screening(card, metadata, checked_at):
     """Prioritize manual inspection; activity is NOT evidence of material changes."""
     if metadata.get('resolution') == 'known_external_repository_candidate':
         return 'repository_url_correction_candidate'
+    if metadata.get('resolution') == 'repository_not_found_needs_review':
+        return 'repository_not_found_review'
     if metadata.get('status') != 'ok':
         return 'unverified'
     if metadata.get('archived') or metadata.get('disabled'):
@@ -94,6 +96,8 @@ def inspect(cards, fetch, pause=0, checked_at=None):
             data = cache[repo]
             if '_error' in data:
                 row.update(status='request_failed', error=data['_error'])
+                if 'HTTP 404' in data['_error']:
+                    row['resolution'] = 'repository_not_found_needs_review'
                 if repo in KNOWN_RELOCATIONS and '404' in data['_error']:
                     row['suggested_url'] = KNOWN_RELOCATIONS[repo]
                     row['resolution'] = 'known_external_repository_candidate'
@@ -139,13 +143,14 @@ def main():
         except URLError as exc:
             raise RuntimeError('network error: ' + str(exc.reason)) from exc
     items = inspect(cards, fetch, args.pause)
-    priority_order = {'repository_url_correction_candidate': 0,
-                      'repository_status_change_candidate': 1,
-                      'activity_after_catalog_event': 2,
-                      'recent_activity_review': 3,
-                      'invalid_future_timestamp': 4,
-                      'unknown_activity': 5,
-                      'unverified': 6}
+    priority_order = {'repository_not_found_review': 0,
+                      'repository_url_correction_candidate': 1,
+                      'repository_status_change_candidate': 2,
+                      'activity_after_catalog_event': 3,
+                      'recent_activity_review': 4,
+                      'invalid_future_timestamp': 5,
+                      'unknown_activity': 6,
+                      'unverified': 7}
     candidates = [item for item in items if item['screening'] in priority_order]
     candidates.sort(key=lambda item: (priority_order[item['screening']], str(item['name'])))
     summary = dict(Counter(item['status'] for item in items))
