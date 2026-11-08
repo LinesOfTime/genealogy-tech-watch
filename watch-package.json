@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "edition_date": "2026-11-08",
+  "events": [
+    {
+      "discovery_id": "github:n1kozor/tree-monk:v1.10.8:2026-11-08",
+      "repo_full_name": "n1kozor/Tree-Monk",
+      "canonical_url": "https://github.com/n1kozor/Tree-Monk",
+      "aliases": [],
+      "detected_at": "2026-11-08T17:37:00Z",
+      "event_date": "2026-11-07",
+      "event_type": "new_project",
+      "source_urls": [
+        {
+          "type": "release",
+          "url": "https://github.com/n1kozor/Tree-Monk/releases/tag/v1.10.8"
+        }
+      ],
+      "source_checks": [
+        {
+          "url": "https://github.com/n1kozor/Tree-Monk/releases/tag/v1.10.8",
+          "checked_at": "2026-11-08T17:37:59Z",
+          "evidence_file": "data/evidence/updater/treemonk-1108/release.json",
+          "sha256": "2908467d92607f4e9e2f2166f66d73707e4d56a6fca7491a3a2ff160c7efad20",
+          "verified_scope": "GitHub release v1.10.8, English opening summary of release notes; other capabilities and performance not independently tested."
+        }
+      ],
+      "change_summary": "TreeMonk 1.10.8: отдельная страница семей, обнаружение общих предков супругов, GEDCOM ZIP с изображениями, исправление поиска кириллицы.",
+      "previous_state": "Проект ранее не включён в текущий пакет обновления; наличие карточки в опубликованном каталоге должен проверить preview.",
+      "new_state": "В релизе 1.10.8 заявлены Families page, kinship detection, GEDCOM ZIP with images и Cyrillic search fixes.",
+      "significance_reason": "Примеры для Research Workspace, GEDCOM-обмена и поиска по русским именам.",
+      "components": [
+        "Research Workspace",
+        "Person Resolver",
+        "GEDCOM/data model"
+      ],
+      "maturity": "Выпускаемое настольное приложение, релиз 1.10.8; независимое тестирование не проводилось.",
+      "license": "PolyForm Noncommercial 1.0.0; коммерческое использование ограничено.",
+      "license_evidence": [],
+      "claims_vs_verified": {
+        "verified": "GitHub опубликовал релиз v1.10.8 7 ноября 2026; его описание перечисляет указанные изменения.",
+        "author_claims": "Функциональность заявлена автором релиза; работа на наших данных не проверялась.",
+        "independent_testing": "Не проводилось."
+      },
+      "risks": [
+        "Не подтверждена совместимость с российскими архивными данными.",
+        "Лицензия не разрешает свободное коммерческое заимствование кода."
+      ],
+      "decision": "publish",
+      "decision_reason": "Существенные возможности для исследовательского интерфейса и GEDCOM.",
+      "review_status": "pending",
+      "catalog_profile": {
+        "description": "Локальный генеалогический исследовательский кабинет с древом, документами и исследовательской доской.",
+        "use_case": "Изучить подход к гипотезам и связям, семейным представлениям, GEDCOM-обмену и поиску кириллических имён.",
+        "limitations": "Не проверен на наших данных; PolyForm Noncommercial ограничивает коммерческое использование.",
+        "project_type": "Desktop genealogy research workspace"
+      },
+      "initialize_research_profile": true,
+      "preliminary_priority": "P2"
+    }
+  ],
+  "evidence": {
+    "data/evidence/updater/treemonk-1108/release.json": "{\"url\":\"https://github.com/n1kozor/Tree-Monk/releases/tag/v1.10.8\",\"checked_at\":\"2026-11-08T17:37:59Z\",\"http_status\":200,\"content\":\"## TreeMonk 1.10.8\\n\\n**A new Families page — marriages as cards, a table, a timeline and insights, with blood-related couples detected —, GEDCOM packages with pictures, unified country names, and name search that works for Cyrillic.**\"}"
+  }
+}
