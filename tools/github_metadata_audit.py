@@ -165,8 +165,14 @@ def main():
     print(json.dumps({'catalog_count': len(cards), 'status_counts': summary, 'screening_counts': screening_counts}, ensure_ascii=False))
     unresolved = [item for item in items if item['status'] in ('request_failed', 'invalid_response')
                   and item.get('resolution') != 'known_external_repository_candidate']
+    # A missing repository is a review task, not an infrastructure failure.
+    # Keep the run red for transport failures and invalid API responses only.
+    infrastructure_errors = [item for item in unresolved
+                             if item.get('resolution') != 'repository_not_found_needs_review']
+    if infrastructure_errors:
+        raise SystemExit(str(len(infrastructure_errors)) + ' API checks failed; inspect the report.')
     if unresolved:
-        raise SystemExit(str(len(unresolved)) + ' unresolved repository checks; inspect the report.')
+        print(str(len(unresolved)) + ' repository URLs need manual review.')
 
 
 if __name__ == '__main__':
