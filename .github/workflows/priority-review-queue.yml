@@ -15,13 +15,15 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_priority_review_queue.py' -v
       - name: Test full catalog audit
         run: python3 -m unittest discover -s tests -p 'test_github_metadata_audit.py' -v
+      - name: Generate review queue
+        run: python3 tools/priority_review_queue.py --max-age 90 --output priority-review-queue.json
       - name: Audit every GitHub project (read-only)
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 tools/github_metadata_audit.py --output github-metadata-audit.json
-      - name: Generate review queue
-        run: python3 tools/priority_review_queue.py --max-age 90 --output priority-review-queue.json
       - name: Summarize queue
+        if: always()
         run: |
           python3 - <<'PY'
           import json, os
@@ -29,7 +31,9 @@ jobs:
           report=json.load(open('priority-review-queue.json',encoding='utf-8'))
           counts=Counter(reason for item in report['items'] for reason in item['reasons'])
           groups=Counter(item['review_group'] for item in report['items'])
-          audit=json.load(open('github-metadata-audit.json',encoding='utf-8'))
+          from pathlib import Path
+          audit=(json.loads(Path('github-metadata-audit.json').read_text(encoding='utf-8'))
+                 if Path('github-metadata-audit.json').exists() else {'screening_counts': {'audit_unavailable': 1}})
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as f:
               f.write('# Очередь переоценки приоритетов\n\n')
               f.write(f"Каталог: {report['catalog_count']}; требуют проверки: {report['queue_count']}\n\n")
@@ -47,5 +51,7 @@ jobs:
         if: always()
         with:
           name: priority-review-queue
-          path: |\n            priority-review-queue.json\n            github-metadata-audit.json
+          path: |
+            priority-review-queue.json
+            github-metadata-audit.json
           retention-days: 30
