@@ -827,6 +827,29 @@
         },
         "review_status": "proposed",
         "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:ai-riksarkivet/htrflow-batch:review-2026-11-08-1a8f826",
+        "date": "2026-11-05",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "1a8f826e59bc8163c5c8837b1d1433931de24933",
+        "change": "Команда экспорта теперь принимает --pipeline, --namespace, --volumes или --volumes-file вместо обязательного файла кампании; идентификаторы томов проверяются на формат и дубли.",
+        "significance_reason": "Явное задание конвейера и списка томов упрощает воспроизводимый пакетный экспорт результатов HTR.",
+        "risks": [
+          "Изменился CLI-контракт: прежние команды с файлом кампании необходимо адаптировать; собственный экспорт не запускался."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/ai-riksarkivet/htrflow-batch/commit/1a8f826e59bc8163c5c8837b1d1433931de24933"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и связанные изменения тестов или документации.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
       }
     ],
     "origin": "Реестр 8–10 октября 2026",
@@ -4442,6 +4465,29 @@
         ],
         "claims_vs_verified": {
           "verified": "Проверены diff и изменения тестов/документации в конкретном коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-eba51f6",
+        "date": "2026-11-04",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "eba51f6bbad57bad462fa6d63e2830c27f317f25",
+        "change": "В DNA-ресурсе кэширование всех персон и семей выполняется только при наличии у выбранного человека ассоциации с отношением DNA.",
+        "significance_reason": "Избегает лишней загрузки полного дерева для ДНК-запросов без совпадений.",
+        "risks": [
+          "Коммит не подтверждает ускорение для запросов с ДНК-совпадениями; сравнительные замеры не проводились."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/eba51f6bbad57bad462fa6d63e2830c27f317f25"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и связанные изменения тестов или документации.",
           "independent_testing": "Не проводилось."
         },
         "review_status": "proposed",
@@ -19462,6 +19508,29 @@
         ],
         "claims_vs_verified": {
           "verified": "Проверены diff и изменения тестов/документации в конкретном коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-25c6e6a",
+        "date": "2026-11-07",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "25c6e6a9bd0a908f03d9dacc7f67aef584662b0b",
+        "change": "get_recent_changes передаёт page и pagesize (по умолчанию 1 и 20, максимум 100); ограничено число обрабатываемых транзакций и связанных запросов.",
+        "significance_reason": "Снижает риск загрузки всей истории правок и чрезмерного числа API-запросов при работе ИИ с большим деревом.",
+        "risks": [
+          "При полной странице возможны дополнительные результаты, но это не гарантировано; нужно листать страницы. Нагрузка на реальном дереве не измерялась."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/25c6e6a9bd0a908f03d9dacc7f67aef584662b0b"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и связанные изменения тестов или документации.",
           "independent_testing": "Не проводилось."
         },
         "review_status": "proposed",
