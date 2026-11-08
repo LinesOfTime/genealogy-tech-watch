@@ -2878,7 +2878,54 @@
     "test_status": "Не запускалось",
     "source": "https://github.com/FamilySearch/GEDCOM ; https://gedcom.io/specifications/FamilySearchGEDCOMv7.html",
     "status": "Переоценка предложена 28.10.2026",
-    "history": [],
+    "history": [
+      {
+        "discovery_id": "github:familysearch/gedcom:review-2026-11-08-4df2da8",
+        "date": "2026-11-08",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "4df2da8a5649e7e8100b05f55963de80beba923d",
+        "change": "Добавлена инструкция для ревью изменений спецификации GEDCOM: различать исправление, уточнение, добавление и изменение смысла; проверять совместимость веток 7.0/7.1, changelog, сгенерированные определения, тестовые GEDCOM/GEDZIP и URI.",
+        "significance_reason": "Полезный образец контроля совместимости форматов при развитии генеалогической модели данных.",
+        "risks": [
+          "Это инструкция для проверки PR, а не принятая новая версия спецификации или новое правило обмена данными."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/familysearch/gedcom/commit/4df2da8a5649e7e8100b05f55963de80beba923d"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff указанного коммита.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:familysearch/gedcom:review-2026-11-08-ce437eb",
+        "date": "2026-11-08",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "ce437eb76a968412ab19dc8447301fc623d92ceb",
+        "change": "Исправлены workflow генерации GEDCOM-файлов: встроенный GitHub token вместо устаревшего WORKFLOW_TOKEN; перед генерацией ветки 7.1 загружается main, чтобы не терять поле subsumes в извлечённых определениях.",
+        "significance_reason": "Уменьшается риск некорректно сгенерированных схем GEDCOM 7.1 и расхождения машинных определений со спецификацией.",
+        "risks": [
+          "Исправление инфраструктуры сборки, а не публикация GEDCOM 7.1; успешность будущих запусков здесь не проверялась."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/familysearch/gedcom/commit/ce437eb76a968412ab19dc8447301fc623d92ceb"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff указанного коммита.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      }
+    ],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
     "priority_basis": "Официальная спецификация FamilySearch GEDCOM, не библиотека для импорта. Источник нормативных требований к обмену и расширениям.",
@@ -3091,7 +3138,31 @@
     "test_status": "Не тестировалось",
     "source": "https://github.com/fisharebest/webtrees/blob/main/README.md",
     "status": "Переоценка предложена 28.10.2026",
-    "history": [],
+    "history": [
+      {
+        "discovery_id": "github:fisharebest/webtrees:review-2026-11-08-d7db03b",
+        "date": "2026-11-03",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "d7db03bd6b051a5957446498846892db6a8ad054",
+        "change": "В настройке сессионного cookie удалён атрибут domain: cookie привязывается к конкретному хосту, а не распространяется на поддомены.",
+        "significance_reason": "Снижение риска нежелательной передачи сессионного cookie другим поддоменам при развёртывании семейного веб-сервиса.",
+        "risks": [
+          "Проверен точечный diff, не проводились аудит сессий или проверка работающего сайта; доступность изменения в релизе не установлена."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/fisharebest/webtrees/commit/d7db03bd6b051a5957446498846892db6a8ad054"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff указанного коммита.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      }
+    ],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
     "priority_basis": "Зрелый веб-инструмент GEDCOM и совместной работы, важен для сравнения UX и прав доступа.",
