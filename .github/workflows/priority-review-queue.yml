@@ -29,6 +29,7 @@ jobs:
           report=json.load(open('priority-review-queue.json',encoding='utf-8'))
           counts=Counter(reason for item in report['items'] for reason in item['reasons'])
           groups=Counter(item['review_group'] for item in report['items'])
+          audit=json.load(open('github-metadata-audit.json',encoding='utf-8'))
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as f:
               f.write('# Очередь переоценки приоритетов\n\n')
               f.write(f"Каталог: {report['catalog_count']}; требуют проверки: {report['queue_count']}\n\n")
@@ -37,7 +38,10 @@ jobs:
               f.write('\nГруппы работы:\n')
               for group, count in sorted(groups.items()):
                   f.write(f'- {group}: {count}\n')
-              f.write('\nПолный JSON — в артефакте запуска. Оценки не менялись.\n')
+              f.write('\nСигналы GitHub по всему каталогу:\n')
+              for signal, count in sorted(audit['screening_counts'].items()):
+                  f.write(f'- {signal}: {count}\n')
+              f.write('\nПолные JSON — в артефакте запуска. Оценки не менялись.\n')
           PY
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         if: always()
