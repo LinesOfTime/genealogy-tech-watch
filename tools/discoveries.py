@@ -103,6 +103,17 @@ def compare(root, records):
                 not isinstance(preliminary, str) or preliminary not in ('P1', 'P2', 'P3')
                 or profile is None or r.get('event_type') != 'new_project'):
             errors.append('preliminary_priority requires P1–P3 and a new catalog profile')
+        # Reassessment is explicit, evidence-backed and never inferred from a release.
+        priority_review = r.get('priority_review')
+        if priority_review is not None:
+            valid = (isinstance(priority_review, dict) and
+                     set(priority_review) == {'previous', 'proposed', 'reason', 'next_action'} and
+                     priority_review.get('previous') in ('P1', 'P2', 'P3', 'Не оценён') and
+                     priority_review.get('proposed') in ('P1', 'P2', 'P3', 'Не оценён') and
+                     all(isinstance(priority_review.get(k), str) and priority_review[k].strip()
+                         for k in ('reason', 'next_action')))
+            if not valid:
+                errors.append('priority_review requires previous, proposed, reason and next_action')
         for field in ('license_evidence', 'claims_vs_verified', 'risks'):
             if field not in r:
                 errors.append('missing field: ' + field)
@@ -131,6 +142,14 @@ def compare(root, records):
         if not isinstance(r.get('review_status'), str) or r.get('review_status') not in {'pending', 'approved', 'rejected'}:
             errors.append('invalid review_status')
         matches = [c['url'] for c in catalog if repo_key(c.get('url')) in identities]
+        if priority_review is not None and isinstance(priority_review, dict) and not errors:
+            if len(matches) != 1:
+                errors.append('priority_review requires exactly one existing catalog card')
+            else:
+                current = next(c for c in catalog if c['url'] == matches[0])
+                actual = current.get('practical_priority', current.get('priority', 'Не оценён'))
+                if priority_review['previous'] != actual:
+                    errors.append('priority_review previous value differs from current practical priority')
         matched_names = {c['name'].lower() for c in catalog if c.get('url') in matches and isinstance(c.get('name'), str)}
         research_matches = [k for k in research if repo_key(k) in identities or k in matched_names]
         history = [dict(date=d['date'], **item) for d in digest for item in d['items']
