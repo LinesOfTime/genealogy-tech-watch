@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - 'watch-inbox/**'
-    paths:
-      - 'watch-package.json'
   workflow_dispatch:
     inputs:
       package_commit:
