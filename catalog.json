@@ -9045,9 +9045,9 @@
     "license_status": "Подтверждена по LICENSE/README",
     "priority": "P2",
     "verification": "Первичные GitHub LICENSE и README; без запуска ПО",
-    "verified_at": "2026-10-08",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировалось",
-    "source": "https://github.com/omeka/omeka-s",
+    "source": "https://github.com/omeka/omeka-s/commit/22678fa00b96f7c12c114a508b9723ce1c4d2dd2",
     "status": "Исходное исследование, 8–10 октября",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
@@ -9146,7 +9146,8 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "latest_verified_change": "Добавлены явные проверки разрешений редактирования в контроллере администрирования сайтов Omeka S."
   },
   {
     "name": "openseadragon/openseadragon",
@@ -9159,9 +9160,9 @@
     "license_status": "Проверена по первоисточнику",
     "priority": "P2",
     "verification": "https://github.com/openseadragon/openseadragon/blob/master/LICENSE.txt",
-    "verified_at": "2026-10-08",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировался",
-    "source": "https://github.com/openseadragon/openseadragon/blob/master/LICENSE.txt",
+    "source": "https://github.com/openseadragon/openseadragon/commit/df0eaa115a584cb1735f480d6df152f3ab4c7a07",
     "status": "Исходное исследование, 8–10 октября",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
@@ -9245,7 +9246,8 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "latest_verified_change": "Изменения цикла обновления и рисования плиток в просмотрщике больших изображений (PR #3005): сокращена работа, выполняемая каждый кадр."
   },
   {
     "name": "projectmirador/mirador",
@@ -9471,9 +9473,9 @@
     "license_status": "Подтверждена по документации проекта",
     "priority": "P2",
     "verification": "README / LICENSE / документация GitHub",
-    "verified_at": "2026-10-08",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировалось",
-    "source": "https://github.com/recogito/text-annotator-js",
+    "source": "https://github.com/recogito/text-annotator-js/commit/413dccde107686fcaa3f782f7a8ade27de206779",
     "status": "Исходное исследование, 8–10 октября",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
@@ -9557,7 +9559,8 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "latest_verified_change": "Исправлено определение страницы для границ выделенного фрагмента при разделении PDF-аннотаций по страницам."
   },
   {
     "name": "rollybre/cthulhu",
@@ -11054,9 +11057,9 @@
     "license_status": "Подтверждена по LICENSE/README",
     "priority": "P1",
     "verification": "Первичные GitHub LICENSE и README; без запуска ПО",
-    "verified_at": "2026-10-08",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировалось",
-    "source": "https://github.com/tropy/docs",
+    "source": "https://github.com/tropy/tropy/commit/f9a4c82e9b19301d7486bf2fa1943c9a0cdb4502",
     "status": "Исходное исследование, 8–10 октября",
     "history": [],
     "origin": "Реестр 8–10 октября 2026",
@@ -11154,7 +11157,8 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "latest_verified_change": "Ограничена сложность быстрого поиска по записям и длина запросов через API и внутренний протокол."
   },
   {
     "name": "trungdong/prov",
