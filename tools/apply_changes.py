@@ -94,6 +94,19 @@ def build_plan(root, records, edition_date):
             if 'preliminary_priority' in r:
                 card['priority'] = card['preliminary_priority'] = r['preliminary_priority']
             catalog.append(card)
+        priority_review = r.get('priority_review')
+        if priority_review is not None:
+            # The compare gate already checked the current value and unique identity.
+            previous = priority_review['previous']
+            proposed = priority_review['proposed']
+            card.setdefault('practical_priority_history', []).append(dict(
+                previous=previous, proposed=proposed,
+                reason=priority_review['reason'], next_action=priority_review['next_action'],
+                discovery_id=r['discovery_id'], source_urls=copy.deepcopy(r['source_urls']),
+                reviewed_at=r['reviewed_at']))
+            card['practical_priority'] = proposed
+            card['practical_priority_reason'] = priority_review['reason']
+            card['practical_priority_next_action'] = priority_review['next_action']
         target = card['url']
         if target in touched:
             raise ValueError('Multiple pending events for one card; apply separately: ' + target)
