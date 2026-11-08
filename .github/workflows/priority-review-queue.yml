@@ -23,7 +23,6 @@ jobs:
       - name: Generate priority review queue
         run: python3 tools/priority_review_queue.py --max-age 90 --output priority-review-queue.json
       - name: Audit all catalog repositories
-        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 tools/github_metadata_audit.py --output github-metadata-audit.json
