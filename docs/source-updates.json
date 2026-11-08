@@ -174,6 +174,62 @@
         "https://github.com/itarunnn/jp-lit-mcp/blob/48706e1a97ce08ba3316154b387bd1c6c622686a/src/iiif/ocr-state.mjs",
         "https://github.com/itarunnn/jp-lit-mcp/blob/48706e1a97ce08ba3316154b387bd1c6c622686a/src/lib/xml.ts"
       ]
+    },
+    {
+      "project": "openseadragon/openseadragon",
+      "checked_at": "2026-11-09",
+      "commit": "df0eaa115a584cb1735f480d6df152f3ab4c7a07",
+      "kind": "tile_render_performance",
+      "status": "source_verified",
+      "summary": "Изменения цикла обновления и рисования плиток в просмотрщике больших изображений (PR #3005): сокращена работа, выполняемая каждый кадр.",
+      "verified": "Дифф коммита df0eaa1 меняет src/tiledimage.js, src/canvasdrawer.js, src/viewer.js и добавляет проверки кода; changelog фиксирует сокращение объёма покадровой работы.",
+      "limitations": "Нет опубликованного в этом коммите измерения ускорения на архивных IIIF-изображениях; интеграционная производительность не определена.",
+      "next_action": "При сравнении просмотровщиков архивных разворотов отдельно измерить плавность панорамирования и расход памяти на больших изображенияx.",
+      "sources": [
+        "https://github.com/openseadragon/openseadragon/blob/df0eaa115a584cb1735f480d6df152f3ab4c7a07/src/tiledimage.js"
+      ]
+    },
+    {
+      "project": "omeka/omeka-s",
+      "checked_at": "2026-11-09",
+      "commit": "22678fa00b96f7c12c114a508b9723ce1c4d2dd2",
+      "kind": "site_access_controls",
+      "status": "source_verified",
+      "summary": "Добавлены явные проверки разрешений редактирования в контроллере администрирования сайтов Omeka S.",
+      "verified": "Коммит 22678fa добавляет вызовы userIsAllowed('update') перед отдельными действиями контроллера SiteAdmin/IndexController.php.",
+      "limitations": "Это локальное усиление проверки прав доступа, а не подтверждение полного аудита безопасности всей платформы.",
+      "next_action": "Для кабинета архивных коллекций учитывать проверку прав на уровне каждого серверного действия, а не только видимости кнопок.",
+      "sources": [
+        "https://github.com/omeka/omeka-s/blob/22678fa00b96f7c12c114a508b9723ce1c4d2dd2/application/src/Controller/SiteAdmin/IndexController.php"
+      ]
+    },
+    {
+      "project": "tropy/tropy",
+      "checked_at": "2026-11-09",
+      "commit": "f9a4c82e9b19301d7486bf2fa1943c9a0cdb4502",
+      "kind": "search_input_limits",
+      "status": "source_verified",
+      "summary": "Ограничена сложность быстрого поиска по записям и длина запросов через API и внутренний протокол.",
+      "verified": "Коммит f9a4c82 задаёт maxLength=1024 для строки поиска, ограничивает количество обрабатываемых поисковых терминов и добавляет тесты длинных запросов.",
+      "limitations": "Это защита от чрезмерных запросов и стабилизация поиска, а не изменение качества извлечения текста из архивных фотографий.",
+      "next_action": "При проектировании поиска в генеалогическом кабинете предусмотреть проверку длины и числа терминов до выполнения тяжёлого запроса.",
+      "sources": [
+        "https://github.com/tropy/tropy/blob/f9a4c82e9b19301d7486bf2fa1943c9a0cdb4502/src/models/item.js"
+      ]
+    },
+    {
+      "project": "recogito/text-annotator-js",
+      "checked_at": "2026-11-09",
+      "commit": "413dccde107686fcaa3f782f7a8ade27de206779",
+      "kind": "pdf_cross_page_annotation",
+      "status": "source_verified",
+      "summary": "Исправлено определение страницы для границ выделенного фрагмента при разделении PDF-аннотаций по страницам.",
+      "verified": "Коммит 413dccd (PR #293) изменяет split-selector.ts: страница определяется от самого DOM-элемента, когда граница диапазона уже находится на элементе страницы.",
+      "limitations": "Исправление касается координатно-текстовых выделений в PDF, а не качества OCR или архивной атрибуции.",
+      "next_action": "Проверять пограничные случаи аннотаций, переходящих на соседнюю страницу документа, включая сохранение исходного диапазона.",
+      "sources": [
+        "https://github.com/recogito/text-annotator-js/blob/413dccde107686fcaa3f782f7a8ade27de206779/packages/pdf-annotator/src/utils/dom/split-selector.ts"
+      ]
     }
   ]
 }
