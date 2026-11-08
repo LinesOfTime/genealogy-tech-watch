@@ -30,6 +30,13 @@ class GitHubMetadataAuditTests(unittest.TestCase):
         self.assertEqual(result[0]['license_spdx'], 'MIT')
         self.assertEqual(result[2]['status'], 'not_github_repository')
 
+    def test_gitlab_entry_is_external_host_review(self):
+        result = audit.inspect([{'name': 'eScriptorium',
+            'url': 'https://gitlab.com/scripta/escriptorium'}],
+            lambda repo: self.fail('GitHub API must not be called'))
+        self.assertEqual(result[0]['status'], 'external_repository')
+        self.assertEqual(result[0]['screening'], 'external_host_review')
+
     def test_activity_after_catalog_event_is_only_a_candidate(self):
         cards = [{'name': 'A', 'url': 'https://github.com/a/b',
                   'history': [{'date': '2026-10-01'}]}]
