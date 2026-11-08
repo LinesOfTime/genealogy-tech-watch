@@ -23,7 +23,7 @@ Windows 11 с Docker Desktop (запущенным Linux Engine), Git и `uv` (P
 powershell -ExecutionPolicy Bypass -File .\tools\run_gramps_baseline.ps1
 ```
 
-Скрипт создаёт отдельную папку `local-gramps-baseline`, загружает исходный код upstream, переключается на **проверенный SHA**, устанавливает зависимости по lock-файлу, поднимает тестовый Gramps Web в отдельном Docker Compose-проекте `gtw-gramps-baseline`, засевает fixture и запускает `pytest -m integration --no-cov -q`.
+Скрипт создаёт отдельную папку `local-gramps-baseline`, загружает исходный код upstream, переключается на **проверенный SHA**, устанавливает зависимости по lock-файлу, поднимает тестовый Gramps Web в отдельном Docker Compose-проекте `gtw-gramps-baseline`. Скрипт также выставляет `COMPOSE_PROJECT_NAME` для дочерних Python-процессов, запрещает пропуск интеграционных тестов через `REQUIRE_INTEGRATION=1` и очищает унаследованные `GRAMPS_API_URL` и учётные данные, чтобы не попасть в действующее дерево, засевает fixture и запускает `pytest -m integration --no-cov -q`.
 
 Результаты: `local-gramps-baseline/logs/baseline-*.txt` и `baseline-*-metadata.json`. Они не являются доказательством независимости испытания. **Никакая запись в `docs/trials.json` не добавляется автоматически.**
 
@@ -36,6 +36,8 @@ powershell -ExecutionPolicy Bypass -File .\tools\run_gramps_baseline.ps1 -Cleanu
 Внимание: `-CleanupTestVolumes` вызывает `docker compose ... down -v` и уничтожает данные **только Compose-проекта `gtw-gramps-baseline`**. Не используйте его, если переименовали проект Compose или разместили в этой группе нужные данные.
 
 ## Следующая стадия
+
+**Обязательное условие безопасности:** baseline запускается только на тестовой инфраструктуре upstream. Переменные для подключения к пользовательскому Gramps Web игнорируются; данные рабочего дерева не используются. При незапущенной тестовой среде интеграционные тесты должны завершиться ошибкой, а не сообщением об успешной проверке.
 
 После успешного baseline — выполнить собственный протокол [G-MCP-01](PILOT_GRAMPS_MCP_01.md) T1–T7: чтение записей/цитирований, негативные ID, сравнение с Web API, отдельная проверка прав записи и фиксация снимков до/после. Для фиксации наблюдений предусмотрен [анализатор](GRAMPS_MCP_CAPTURE_RUNNER.md).
 
