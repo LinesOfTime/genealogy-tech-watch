@@ -22,6 +22,7 @@ jobs:
           from collections import Counter
           report=json.load(open('priority-review-queue.json',encoding='utf-8'))
           counts=Counter(reason for item in report['items'] for reason in item['reasons'])
+          groups=Counter(item['review_group'] for item in report['items'])
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as f:
               f.write('# Очередь переоценки приоритетов\n\n')
               f.write(f"Каталог: {report['catalog_count']}; требуют проверки: {report['queue_count']}\n\n")
