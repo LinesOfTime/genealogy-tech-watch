@@ -158,8 +158,10 @@ def main():
               'limitations': 'Activity screening only. Pushed-at timestamps and archived flags do not establish a substantive release, change, or quality. Inspect source commits, README, release notes, license and tests before updating cards.'}
     args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'catalog_count': len(cards), 'status_counts': summary, 'screening_counts': screening_counts}, ensure_ascii=False))
-    if summary.get('request_failed') or summary.get('invalid_response'):
-        raise SystemExit('Some requests failed; inspect the report before using it.')
+    unresolved = [item for item in items if item['status'] in ('request_failed', 'invalid_response')
+                  and item.get('resolution') != 'known_external_repository_candidate']
+    if unresolved:
+        raise SystemExit(str(len(unresolved)) + ' unresolved repository checks; inspect the report.')
 
 
 if __name__ == '__main__':
