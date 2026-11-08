@@ -804,6 +804,29 @@
         },
         "review_status": "proposed",
         "reviewer": "Автоматизированный аудит с ручной сверкой diff"
+      },
+      {
+        "discovery_id": "github:ai-riksarkivet/htrflow-batch:review-2026-11-08-761dab4",
+        "date": "2026-11-05",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "761dab4b312f317478f49a5aa395a977c58185f4",
+        "change": "Экспорт поддерживает --manifests DIR: размеры страниц берутся из заранее скачанных IIIF-манифестов вместо запросов к серверу изображений.",
+        "significance_reason": "Позволяет экспортировать ALTO в средах без доступа к серверу изображений при наличии локальных манифестов.",
+        "risks": [
+          "Отсутствующий или нечитаемый манифест приводит к ошибке конкретного тома; режим не заменяет получение самих изображений."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/ai-riksarkivet/htrflow-batch/commit/761dab4b312f317478f49a5aa395a977c58185f4"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены diff и изменения тестов/документации в конкретном коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
       }
     ],
     "origin": "Реестр 8–10 октября 2026",
@@ -4400,6 +4423,29 @@
         },
         "review_status": "proposed",
         "reviewer": "Автоматизированный аудит с ручной сверкой diff"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-a3c0b6f",
+        "date": "2026-11-03",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "a3c0b6fa0542f96e47440c2c4d282fa5eb82a7c4",
+        "change": "Фильтр Celery скрывает возвращаемые значения задач в сообщениях об успешном выполнении, включая потенциальный OCR-текст и ответы ИИ.",
+        "significance_reason": "Снижение риска раскрытия приватных генеалогических данных через журналы фоновых задач.",
+        "risks": [
+          "Фильтр относится к конкретным записям Celery; полный аудит всех журналов и сторонних обработчиков не проводился."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/a3c0b6fa0542f96e47440c2c4d282fa5eb82a7c4"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены diff и изменения тестов/документации в конкретном коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
       }
     ],
     "origin": "Реестр 8–10 октября 2026",
@@ -19397,6 +19443,29 @@
         },
         "review_status": "proposed",
         "reviewer": "Автоматизированный аудит с ручной сверкой diff"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-f5bc842",
+        "date": "2026-11-07",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "f5bc842649bff721917b930cf89f6b2675459f98",
+        "change": "Исправлена серверная пагинация search и list_tags: теперь передаётся page, без которого Gramps Web мог возвращать все записи, несмотря на pagesize.",
+        "significance_reason": "Снижает объём передачи данных и нагрузку при поиске по большим семейным деревьям.",
+        "risks": [
+          "Для поиска пользовательских типов с клиентской фильтрацией сохраняется получение полного набора соответствующего Custom-типа; экономия ресурсов не измерена."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/f5bc842649bff721917b930cf89f6b2675459f98"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены diff и изменения тестов/документации в конкретном коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
       }
     ],
     "origin": "GitHub Watch",
