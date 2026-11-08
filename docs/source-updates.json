@@ -255,6 +255,39 @@
         "https://github.com/benwbrum/fromthepage/commit/c07e6e29fbd4431c588de8dee28712ee157e4bac",
         "https://github.com/benwbrum/fromthepage/commit/d87fc835aa68013da7b623c959fa60eb998f627d"
       ]
+    },
+    {
+      "project": "archival-iiif/viewer",
+      "checked_at": "2026-11-09",
+      "commit": "a67689b7788f6f5bfb5f03bf667942ed67383b99",
+      "kind": "library_release_5_0_1",
+      "status": "source_verified",
+      "summary": "Релиз 5.0.1 от 19 октября 2026: после перехода версии 5.0.0 с webpack на Vite и обновления MUI 5→7 исправлена конфигурация библиотечной сборки для process.env.NODE_ENV; изменён экспорт компонента библиотеки.",
+      "verified": "Проверены changelog.md, dist-pkg/package.json, vite.config.ts и src/library.ts на коммите a67689b (PR #216). В package.json указана версия 5.0.1 и MIT.",
+      "limitations": "Проверка основана на диффах исходников; библиотека не собиралась и не запускалась. Совместимость существующих React-интеграций и производительность IIIF на архивных изображениях не проверены.",
+      "next_action": "До интеграции в просмотрщик сканов проверить импорт компонента после изменения exports, сборку Vite и открытие IIIF manifest на контрольном развороте.",
+      "project_url": "https://github.com/archival-IIIF/viewer",
+      "change_url": "https://github.com/archival-IIIF/viewer/commit/a67689b7788f6f5bfb5f03bf667942ed67383b99",
+      "sources": [
+        "https://github.com/archival-IIIF/viewer/commit/a67689b7788f6f5bfb5f03bf667942ed67383b99",
+        "https://github.com/archival-IIIF/viewer/commit/5294642593915cabf985228050980b3e1b4ed803"
+      ]
+    },
+    {
+      "project": "omeka/omeka",
+      "checked_at": "2026-11-09",
+      "commit": "a1f3066e335e4ee61c0029435447ff9230eb91a1",
+      "kind": "tag_controls_accessibility",
+      "status": "source_verified",
+      "summary": "Изменена разметка и стили элементов управления тегами в административном интерфейсе Omeka; ссылки действий заменяются элементами управления с семантикой кнопок.",
+      "verified": "Дифф коммита a1f3066 меняет шаблон admin/themes/default/items/tag-form.php и CSS/Sass списка тегов; изменения затрагивают элементы управления добавлением и удалением тегов.",
+      "limitations": "Проверен код, но интерфейс и доступность с клавиатуры/скринридером не испытывались. Это не изменение OCR, метаданных коллекции или поисковой точности.",
+      "next_action": "Для интерфейса разметки архивных объектов проверить с клавиатуры добавление и удаление тегов, фокус и обратную связь.",
+      "project_url": "https://github.com/omeka/omeka",
+      "change_url": "https://github.com/omeka/omeka/commit/a1f3066e335e4ee61c0029435447ff9230eb91a1",
+      "sources": [
+        "https://github.com/omeka/omeka/commit/a1f3066e335e4ee61c0029435447ff9230eb91a1"
+      ]
     }
   ]
 }
