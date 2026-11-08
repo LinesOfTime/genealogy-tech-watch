@@ -60,6 +60,25 @@ class UpdaterTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'already recorded'):
             prepare(self.root, raw, 'base')
 
+    def test_existing_project_requires_priority_review_even_if_unchanged(self):
+        event = self.packet['events'][0]
+        event.update(repo_full_name='a/repo', canonical_url='https://github.com/a/repo',
+                     event_type='release')
+        for key in ('preliminary_priority', 'initialize_research_profile', 'catalog_profile'):
+            del event[key]
+        with self.assertRaisesRegex(ValueError, 'requires priority_review'):
+            prepare(self.root, encoded(self.packet), 'base')
+        event['priority_review'] = dict(previous='P2', proposed='P2',
+                                        reason='New release does not change pilot readiness',
+                                        next_action='Test API on a small sample')
+        packet, preview, key = prepare(self.root, encoded(self.packet), 'base')
+        plan = authorize(self.root, packet, key, key, 'editor', self.stamp)
+        write_plan(self.root, plan, plan['plan_hash'])
+        card = json.loads((self.root / 'catalog.json').read_text())[0]
+        self.assertEqual(card['practical_priority'], 'P2')
+        self.assertEqual(card['practical_priority_history'][-1]['proposed'], 'P2')
+        self.assertEqual(card['practical_priority_next_action'], 'Test API on a small sample')
+
     def test_hash_binds_base_and_exact_package(self):
         raw = encoded(self.packet)
         hashes = []
