@@ -4632,6 +4632,29 @@
         },
         "review_status": "proposed",
         "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-7a82674",
+        "date": "2026-10-29",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "7a82674708d6394a0329e0251e9577e78135cc97",
+        "change": "При смене пароля или отключении пользователя увеличивается token_version, поэтому старые refresh-токены перестают работать; при собственной смене пароля выдаётся новая пара токенов.",
+        "significance_reason": "Улучшает управление доступом к персональным генеалогическим данным при компрометации учётной записи или отзыве доступа.",
+        "risks": [
+          "Уже выданные access-токены этим механизмом не отзываются и действуют до истечения срока (в описании изменения — 15 минут); независимый аудит безопасности не проводился."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/7a82674708d6394a0329e0251e9577e78135cc97"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и тесты авторов.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
       }
     ],
     "origin": "Реестр 8–10 октября 2026",
@@ -19671,6 +19694,52 @@
         ],
         "claims_vs_verified": {
           "verified": "Проверен diff коммита и связанные изменения тестов или документации.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-20b7b0b",
+        "date": "2026-11-04",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "20b7b0bf5f3acd58609de022a949f0398d9020db",
+        "change": "При тайм-ауте после отправки POST создания объекта Gramps MCP проверяет существование записи по заранее выбранному handle; подтверждённую запись не создаёт повторно.",
+        "significance_reason": "Снижает риск дублирования людей, событий и других объектов после сетевого сбоя во время агентной записи.",
+        "risks": [
+          "Если проверка не обнаружила запись, сервер всё ещё может завершить сохранение позднее; автоматический повтор без дополнительной проверки небезопасен. Создание медиа имеет отдельные ограничения."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/20b7b0bf5f3acd58609de022a949f0398d9020db"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и тесты авторов.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-6d5079f",
+        "date": "2026-11-03",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "6d5079f5d81fb1616a49b487fcba6b02da0b1af2",
+        "change": "Иерархия места извлекается из одного GET profile=self с parent_places, вместо запроса к каждому родительскому уровню; добавлена защита от циклов.",
+        "significance_reason": "Уменьшает количество запросов при поиске по историческим населённым пунктам и представлении административной иерархии.",
+        "risks": [
+          "Проверено по коду и тестам авторов; производительность на собственных деревьях и корректность исторической АТД не оценивались."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/6d5079f5d81fb1616a49b487fcba6b02da0b1af2"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и тесты авторов.",
           "independent_testing": "Не проводилось."
         },
         "review_status": "proposed",
