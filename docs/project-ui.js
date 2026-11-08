@@ -33,7 +33,7 @@
         '<p><b>Ограничения проверки:</b> ' + esc(u.limitations) + '</p>' +
         '<p><b>Следующее действие:</b> ' + esc(u.next_action) + '</p>' +
         '<p>' + (u.sources || []).map((url,i) => link(url,'Первоисточник ' + (i+1))).join(' · ') + '</p></div>'
-      ).join('') + '<small>Редакционные уточнения. Исторические поля ниже не переписаны; независимая проверка функций не проводилась.</small>');
+      ).join(''));
     }
 
     html += typePanel + russiaPanel;
@@ -43,7 +43,7 @@
       html += '<details class="panel"><summary>Происхождение описания назначения</summary>' + ( para('Прежнее описание: ' + p.original_description) +
         para('Источник: ' + p.source.file + ' → ' + p.source.key + ' → ' + p.source.field) +
         para('Исходный текст: ' + p.source.original_text) +
-        para('Редакционный материал; назначение и функции независимо не подтверждены. Тип проекта не выводился из описания.')) + '</details>';
+        para('Редакционный материал; тип проекта не выводился из описания.')) + '</details>';
     }
     const housekeeping=[...(x.editorial_service_notes||[]),...(r.editorial_service_notes||[])];
     if(housekeeping.length)html+='<details class="panel"><summary>Служебные редакционные пометки</summary>'+[...new Set(housekeeping.flatMap(n=>n.notes||[]))].map(para).join('')+'<small>Историческая очередь проверки полей; это не описание ограничений инструмента.</small></details>';
@@ -56,12 +56,12 @@
         '<div class="entry">'+(c.checked_at?para('Дата уточнения: '+c.checked_at):'')+para(c.basis)+sources(c.sources)+
         (c.previous_catalog||c.previous_research?'<details><summary>Прежние значения до уточнения</summary>'+previous(c.previous_catalog,'Каталог')+previous(c.previous_research,'Исследовательская карточка')+'</details>':'')+'</div>').join(''));
     }
-    if (r.guide_excerpt) html += '<details class="panel"><summary>Из путеводителя от 10 октября 2026</summary>'+para(r.guide_excerpt)+'<small>Полный исходный текст сохранён. Это редакционное описание, не независимое испытание.</small></details>';
+    if (r.guide_excerpt) html += '<details class="panel"><summary>Из путеводителя от 10 октября 2026</summary>'+para(r.guide_excerpt)+'<small>Полный исходный текст сохранён. Это редакционное описание.</small></details>';
     html += panel('Лицензия и проверка', para('Лицензия: ' + (r.license || x.license || 'Не определена')) + para('Статус лицензии: ' + (r.license_status || x.license_status || 'Не подтверждён')) +
       para('Основание: ' + (r.license_evidence || 'Не указано')) + para('Открытость: ' + (r.opensource_status || 'Не установлена')) +
       para('Аудит: ' + (r.audit_status || 'Не указан')) + para('Метод проверки: ' + (r.verification_basis || x.verification || 'Не указан')) +
       para('Дата проверки: ' + (r.verification_date || x.verified_at || 'Не указана')) +
-      para('Независимое тестирование: ' + (r.test_status || x.test_status || 'Не подтверждено')) + link(x.url, 'Репозиторий') + ' · ' + link(x.source, 'Источник каталога') + ' · ' + link(r.source_evidence, 'Источник исследования'));
+      ((x.evaluation?.independent_test === true || x.practical_priority?.independent_test === true || x.evaluation?.test_report_url) ? para('Испытание: ' + (r.test_status || x.test_status || 'См. протокол испытания')) : '') + link(x.url, 'Репозиторий') + ' · ' + link(x.source, 'Источник каталога') + ' · ' + link(r.source_evidence, 'Источник исследования'));
     const events = [...(r.watch_events || []), ...(x.history || [])];
     const repository = x.url.toLowerCase().replace(/\/$/, '').replace('https://github.com/', '');
     for (const day of digest) for (const item of day.items || []) if ([key,repository].includes(item.repo.toLowerCase())) events.push({...item, date:item.event_date || day.date, url:item.link});
@@ -77,7 +77,7 @@
         (e.risks ? '<p><b>Риски</b></p>' + WatchUI.risks(e.risks) : '') +
         (e.license ? para('Лицензия по событию: ' + e.license) + sources(e.license_evidence) : '') +
         (e.action ? para('Редакционная рекомендация: ' + e.action) : '') +
-        para(e.review_status === 'approved' ? 'Событие утверждено редактором; это не подтверждение независимого испытания. Проверяющий: ' + e.reviewer : 'Историческое событие: статус новой проверки не указан') +
+        para(e.review_status === 'approved' ? 'Событие утверждено редактором. Проверяющий: ' + e.reviewer : 'Историческое событие: статус новой проверки не указан') +
         sources(e.source_urls) + ' ' + link(e.url, 'Источник изменения') + '</div>';
     }).join('') || para('Пока нет датированных обновлений'));
     html += panel('Происхождение сведений', para('Редакционный реестр от 8 октября 2026; путеводитель от 10 октября 2026; записи GitHub Watch. Источники и статусы проверки указаны отдельно.'));
