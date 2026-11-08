@@ -781,6 +781,75 @@
         "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
         "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
         "reviewed_content_hash": "6cdcfe42e515ba8b5e9fe0f89422a73b0c9833f137685b6d1eb1dc7db2c8a37f"
+      },
+      {
+        "discovery_id": "github:ai-riksarkivet/htrflow-batch:review-2026-11-08-5852227",
+        "date": "2026-11-06",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "585222719037889bd89dcf6994f37ae267e75e96",
+        "change": "Экспорт кампаний: прогресс по томам и страницам теперь выводится в stderr; итоговый табличный отчёт остаётся в stdout.",
+        "significance_reason": "Удобнее контролировать длительную пакетную выгрузку и фиксировать сбои по отдельным томам.",
+        "risks": [
+          "Изменение наблюдаемости CLI, а не повышение качества HTR. Исполнение на собственных архивных данных не проверялось."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/ai-riksarkivet/htrflow-batch/commit/585222719037889bd89dcf6994f37ae267e75e96"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Изучен конкретный diff коммита GitHub и сопутствующие изменения тестов или документации.",
+          "independent_testing": "Не проводилось; изменения зафиксированы как кандидаты редакционного обзора."
+        },
+        "review_status": "proposed",
+        "reviewer": "Автоматизированный аудит с ручной сверкой diff"
+      },
+      {
+        "discovery_id": "github:ai-riksarkivet/htrflow-batch:review-2026-11-08-761dab4",
+        "date": "2026-11-05",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "761dab4b312f317478f49a5aa395a977c58185f4",
+        "change": "Экспорт поддерживает --manifests DIR: размеры страниц берутся из заранее скачанных IIIF-манифестов вместо запросов к серверу изображений.",
+        "significance_reason": "Позволяет экспортировать ALTO в средах без доступа к серверу изображений при наличии локальных манифестов.",
+        "risks": [
+          "Отсутствующий или нечитаемый манифест приводит к ошибке конкретного тома; режим не заменяет получение самих изображений."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/ai-riksarkivet/htrflow-batch/commit/761dab4b312f317478f49a5aa395a977c58185f4"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены diff и изменения тестов/документации в конкретном коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:ai-riksarkivet/htrflow-batch:review-2026-11-08-1a8f826",
+        "date": "2026-11-05",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "1a8f826e59bc8163c5c8837b1d1433931de24933",
+        "change": "Команда экспорта теперь принимает --pipeline, --namespace, --volumes или --volumes-file вместо обязательного файла кампании; идентификаторы томов проверяются на формат и дубли.",
+        "significance_reason": "Явное задание конвейера и списка томов упрощает воспроизводимый пакетный экспорт результатов HTR.",
+        "risks": [
+          "Изменился CLI-контракт: прежние команды с файлом кампании необходимо адаптировать; собственный экспорт не запускался."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/ai-riksarkivet/htrflow-batch/commit/1a8f826e59bc8163c5c8837b1d1433931de24933"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и связанные изменения тестов или документации.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
       }
     ],
     "origin": "Реестр 8–10 октября 2026",
@@ -2809,7 +2878,54 @@
     "test_status": "Не запускалось",
     "source": "https://github.com/FamilySearch/GEDCOM ; https://gedcom.io/specifications/FamilySearchGEDCOMv7.html",
     "status": "Переоценка предложена 28.10.2026",
-    "history": [],
+    "history": [
+      {
+        "discovery_id": "github:familysearch/gedcom:review-2026-11-08-4df2da8",
+        "date": "2026-11-08",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "4df2da8a5649e7e8100b05f55963de80beba923d",
+        "change": "Добавлена инструкция для ревью изменений спецификации GEDCOM: различать исправление, уточнение, добавление и изменение смысла; проверять совместимость веток 7.0/7.1, changelog, сгенерированные определения, тестовые GEDCOM/GEDZIP и URI.",
+        "significance_reason": "Полезный образец контроля совместимости форматов при развитии генеалогической модели данных.",
+        "risks": [
+          "Это инструкция для проверки PR, а не принятая новая версия спецификации или новое правило обмена данными."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/familysearch/gedcom/commit/4df2da8a5649e7e8100b05f55963de80beba923d"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff указанного коммита.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:familysearch/gedcom:review-2026-11-08-ce437eb",
+        "date": "2026-11-08",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "ce437eb76a968412ab19dc8447301fc623d92ceb",
+        "change": "Исправлены workflow генерации GEDCOM-файлов: встроенный GitHub token вместо устаревшего WORKFLOW_TOKEN; перед генерацией ветки 7.1 загружается main, чтобы не терять поле subsumes в извлечённых определениях.",
+        "significance_reason": "Уменьшается риск некорректно сгенерированных схем GEDCOM 7.1 и расхождения машинных определений со спецификацией.",
+        "risks": [
+          "Исправление инфраструктуры сборки, а не публикация GEDCOM 7.1; успешность будущих запусков здесь не проверялась."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/familysearch/gedcom/commit/ce437eb76a968412ab19dc8447301fc623d92ceb"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff указанного коммита.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      }
+    ],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
     "priority_basis": "Официальная спецификация FamilySearch GEDCOM, не библиотека для импорта. Источник нормативных требований к обмену и расширениям.",
@@ -3022,7 +3138,54 @@
     "test_status": "Не тестировалось",
     "source": "https://github.com/fisharebest/webtrees/blob/main/README.md",
     "status": "Переоценка предложена 28.10.2026",
-    "history": [],
+    "history": [
+      {
+        "discovery_id": "github:fisharebest/webtrees:review-2026-11-08-d7db03b",
+        "date": "2026-11-03",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "d7db03bd6b051a5957446498846892db6a8ad054",
+        "change": "В настройке сессионного cookie удалён атрибут domain: cookie привязывается к конкретному хосту, а не распространяется на поддомены.",
+        "significance_reason": "Снижение риска нежелательной передачи сессионного cookie другим поддоменам при развёртывании семейного веб-сервиса.",
+        "risks": [
+          "Проверен точечный diff, не проводились аудит сессий или проверка работающего сайта; доступность изменения в релизе не установлена."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/fisharebest/webtrees/commit/d7db03bd6b051a5957446498846892db6a8ad054"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff указанного коммита.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:fisharebest/webtrees:review-2026-11-08-fa4f315",
+        "date": "2026-10-31",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "fa4f315ecc22f6acd4275382806b124db81422c0",
+        "change": "Обработка маршрутов допускает пустой параметр route и нормализует URL с завершающим index.php; добавлены модульные тесты.",
+        "significance_reason": "Устраняет часть ошибок HTTP 404 при открытии генеалогического веб-приложения по нестандартным ссылкам.",
+        "risks": [
+          "Исправление ограничено маршрутизацией; публикация в конкретном релизе и работа на пользовательском сервере не проверены."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/fisharebest/webtrees/commit/fa4f315ecc22f6acd4275382806b124db81422c0"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены изменения исходного кода и соответствующие тесты, если они были в коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      }
+    ],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "A",
     "priority_basis": "Зрелый веб-инструмент GEDCOM и совместной работы, важен для сравнения UX и прав доступа.",
@@ -4354,6 +4517,144 @@
         "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
         "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
         "reviewed_content_hash": "1a40259b9da4ce54019d0260b5902cfdbaac2ab1dbeb9882204f255cde85e6c7"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-5761890",
+        "date": "2026-11-04",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "57618907ce0529a893a02207115e3a3db79e0628",
+        "change": "Загрузка медиа переведена на временный файл с порогом 10 МиБ вместо дублирования данных в памяти; добавлена проверка координат обрезки изображения в пределах 0–100%.",
+        "significance_reason": "Снижение пикового потребления памяти и ограничение некорректных запросов обработки изображений.",
+        "risks": [
+          "Эффект на больших коллекциях не измерен; наличие коммита не доказывает развёртывание исправления."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/57618907ce0529a893a02207115e3a3db79e0628"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Изучен конкретный diff коммита GitHub и сопутствующие изменения тестов или документации.",
+          "independent_testing": "Не проводилось; изменения зафиксированы как кандидаты редакционного обзора."
+        },
+        "review_status": "proposed",
+        "reviewer": "Автоматизированный аудит с ручной сверкой diff"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-a3c0b6f",
+        "date": "2026-11-03",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "a3c0b6fa0542f96e47440c2c4d282fa5eb82a7c4",
+        "change": "Фильтр Celery скрывает возвращаемые значения задач в сообщениях об успешном выполнении, включая потенциальный OCR-текст и ответы ИИ.",
+        "significance_reason": "Снижение риска раскрытия приватных генеалогических данных через журналы фоновых задач.",
+        "risks": [
+          "Фильтр относится к конкретным записям Celery; полный аудит всех журналов и сторонних обработчиков не проводился."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/a3c0b6fa0542f96e47440c2c4d282fa5eb82a7c4"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены diff и изменения тестов/документации в конкретном коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-eba51f6",
+        "date": "2026-11-04",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "eba51f6bbad57bad462fa6d63e2830c27f317f25",
+        "change": "В DNA-ресурсе кэширование всех персон и семей выполняется только при наличии у выбранного человека ассоциации с отношением DNA.",
+        "significance_reason": "Избегает лишней загрузки полного дерева для ДНК-запросов без совпадений.",
+        "risks": [
+          "Коммит не подтверждает ускорение для запросов с ДНК-совпадениями; сравнительные замеры не проводились."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/eba51f6bbad57bad462fa6d63e2830c27f317f25"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и связанные изменения тестов или документации.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-4b3a266",
+        "date": "2026-11-03",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "4b3a266255fffc0b656e754a47359a6f9a8c3a48",
+        "change": "Из debug/error-логов ИИ-агента удалены содержимое пользовательских промптов, ответов, поисковых запросов и значений фильтров; для ряда ошибок журналируется тип или краткое сообщение.",
+        "significance_reason": "Уменьшает риск утечки персональных данных и исследовательских запросов через технические журналы.",
+        "risks": [
+          "Не является комплексным аудитом логирования всех компонентов; исключения и сторонние обработчики не проверены."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/4b3a266255fffc0b656e754a47359a6f9a8c3a48"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены изменения исходного кода и соответствующие тесты, если они были в коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-c66ec63",
+        "date": "2026-10-31",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "c66ec63410da139c3bbc825af44e5781c518a3a2",
+        "change": "При переполнении бюджета истории ИИ-диалога сначала сокращаются старые результаты инструментов, а не удаляются целые ходы; системный промпт и текущий ход сохраняются. Если этого недостаточно, удаляются старые завершённые ходы.",
+        "significance_reason": "Снижает риск потери исходного вопроса и инструкций во время многошагового генеалогического исследования.",
+        "risks": [
+          "Старые результаты инструментов заменяются заглушками, поэтому для повторной проверки может потребоваться новый вызов; устойчивость на реальных сценариях не измерена."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/c66ec63410da139c3bbc825af44e5781c518a3a2"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены изменения исходного кода и соответствующие тесты, если они были в коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web-api:review-2026-11-08-7a82674",
+        "date": "2026-10-29",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "7a82674708d6394a0329e0251e9577e78135cc97",
+        "change": "При смене пароля или отключении пользователя увеличивается token_version, поэтому старые refresh-токены перестают работать; при собственной смене пароля выдаётся новая пара токенов.",
+        "significance_reason": "Улучшает управление доступом к персональным генеалогическим данным при компрометации учётной записи или отзыве доступа.",
+        "risks": [
+          "Уже выданные access-токены этим механизмом не отзываются и действуют до истечения срока (в описании изменения — 15 минут); независимый аудит безопасности не проводился."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/7a82674708d6394a0329e0251e9577e78135cc97"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и тесты авторов.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
       }
     ],
     "origin": "Реестр 8–10 октября 2026",
@@ -6728,7 +7029,7 @@
     "section": "Источники, OCR и архивы",
     "description": "По редакционным материалам (без независимой проверки): Загрузчик IIIF-изображений. Практический вариант получения изображений из цифровых архивов, поддерживающих IIIF.",
     "use_case": "",
-    "limitations": "CLI для IIIF Presentation 3 и последовательных URL; не путать лицензию кода с правами на изображения архивов",
+    "limitations": "CLI для IIIF Presentation 3 и последовательных URL; не путать лицензию кода с правами на изображения архивов Текущий адрес репозитория возвращает HTTP 404 (повторная проверка 08.11.2026). Доступность проекта, возможный перенос и актуальность описанных возможностей не подтверждены; исторические сведения сохранены.",
     "license": "MIT",
     "license_status": "Подтверждена документацией репозитория; версия по маркировке GitHub/README",
     "priority": "P1",
@@ -6801,8 +7102,11 @@
     },
     "repository_reference_issue": {
       "result": "not_found",
-      "checked_on": "2026-11-04",
-      "url": "https://github.com/komura-shoan/iiif-downloader"
+      "checked_on": "2026-11-08",
+      "url": "https://github.com/komura-shoan/iiif-downloader",
+      "review_status": "unresolved",
+      "evidence": "GitHub REST repository endpoint returned HTTP 404 on 2026-11-08; repository deletion or relocation is not established.",
+      "next_action": "Identify canonical upstream or authoritative release source; retain historical record until verified."
     }
   },
   {
@@ -10359,7 +10663,7 @@
   },
   {
     "name": "scripta/escriptorium",
-    "url": "https://github.com/scripta/escriptorium",
+    "url": "https://gitlab.com/scripta/escriptorium",
     "section": "Источники, OCR и архивы",
     "description": "HTR-система; основное размещение GitLab",
     "use_case": "Редакционный сценарий: организовать в eScriptorium пробную кампанию транскрипции рукописных страниц, импортировать изображения и подходящую модель, оценить автоматическую сегментацию и распознавание и выполнить ручную сверку. Сценарий независимо не испытывался.",
@@ -10422,16 +10726,19 @@
       "next_action": "Проверить сценарий: Редакционный сценарий: организовать в eScriptorium пробную кампанию транскрипции рукописных страниц, импортировать изображения и подходящую модел",
       "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
       "source_urls": [
-        "https://github.com/scripta/escriptorium"
+        "https://gitlab.com/scripta/escriptorium"
       ],
       "reviewer": "Каталожный аудит",
       "review_status": "triaged",
       "verification_issue": "Указанный GitHub README не найден (404); проверить канонический upstream GitLab и зеркало."
     },
     "repository_reference_issue": {
-      "result": "not_found",
+      "result": "resolved_relocated",
       "checked_on": "2026-11-04",
-      "url": "https://github.com/scripta/escriptorium"
+      "url": "https://gitlab.com/scripta/escriptorium",
+      "resolved_on": "2026-11-08",
+      "previous_url": "https://github.com/scripta/escriptorium",
+      "basis": "Existing catalog source and editorial correction identify GitLab as primary upstream; former GitHub URL returns 404."
     }
   },
   {
@@ -16617,7 +16924,7 @@
     "section": "Новые исследования / GitHub Watch",
     "description": "Альтернативный семейный веб-интерфейс Gramps Web; по README заменяет frontend и обращается к существующему Gramps Web API.",
     "use_case": "Редакционный сценарий: сравнить просмотр родственников, редактирование и навигацию на телефоне с обычным Gramps Web на копии одного дерева.",
-    "limitations": "Ранняя стадия; совместимость задумана, но не гарантирована. Работа, скорость и сохранность данных независимо не испытывались. В README указаны немецкий и английский языки.",
+    "limitations": "Ранняя стадия; совместимость задумана, но не гарантирована. Работа, скорость и сохранность данных независимо не испытывались. В README указаны немецкий и английский языки. Текущий адрес репозитория возвращает HTTP 404 (повторная проверка 08.11.2026). Доступность проекта, возможный перенос и актуальность описанных возможностей не подтверждены; исторические сведения сохранены.",
     "license": "AGPL-3.0-or-later по README тега 0.1.0; сохранён LICENSE AGPL v3",
     "license_status": "См. источники события; независимая проверка не заявлена",
     "priority": "Не оценён",
@@ -16738,8 +17045,11 @@
     },
     "repository_reference_issue": {
       "result": "not_found",
-      "checked_on": "2026-11-04",
-      "url": "https://github.com/b21-agency/gramps-ui"
+      "checked_on": "2026-11-08",
+      "url": "https://github.com/b21-agency/gramps-ui",
+      "review_status": "unresolved",
+      "evidence": "GitHub REST repository endpoint returned HTTP 404 on 2026-11-08; repository deletion or relocation is not established.",
+      "next_action": "Identify canonical upstream or authoritative release source; retain historical record until verified."
     }
   },
   {
@@ -19319,6 +19629,121 @@
         "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
         "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
         "reviewed_content_hash": "c74114d30e6491ec8af9f150bb6732d7d7e72ec96ce9fca1972eeb566ae71d6e"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-abe403b",
+        "date": "2026-11-07",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "abe403b2a9bef910065f69e8811224655b622760",
+        "change": "Версия 3.15.27 в исходном коде: защита upsert_note от записи усечённого текста переработана; добавлен явный allow_shortening для намеренного сокращения после чтения полной заметки.",
+        "significance_reason": "Предотвращение случайной потери части генеалогической заметки при работе ИИ-агента с краткими представлениями.",
+        "risks": [
+          "Авторы прямо указывают, что эвристика может как отклонить допустимую правку, так и пропустить некоторые усечения. Независимое тестирование не проводилось."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/abe403b2a9bef910065f69e8811224655b622760"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Изучен конкретный diff коммита GitHub и сопутствующие изменения тестов или документации.",
+          "independent_testing": "Не проводилось; изменения зафиксированы как кандидаты редакционного обзора."
+        },
+        "review_status": "proposed",
+        "reviewer": "Автоматизированный аудит с ручной сверкой diff"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-f5bc842",
+        "date": "2026-11-07",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "f5bc842649bff721917b930cf89f6b2675459f98",
+        "change": "Исправлена серверная пагинация search и list_tags: теперь передаётся page, без которого Gramps Web мог возвращать все записи, несмотря на pagesize.",
+        "significance_reason": "Снижает объём передачи данных и нагрузку при поиске по большим семейным деревьям.",
+        "risks": [
+          "Для поиска пользовательских типов с клиентской фильтрацией сохраняется получение полного набора соответствующего Custom-типа; экономия ресурсов не измерена."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/f5bc842649bff721917b930cf89f6b2675459f98"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверены diff и изменения тестов/документации в конкретном коммите.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-25c6e6a",
+        "date": "2026-11-07",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "25c6e6a9bd0a908f03d9dacc7f67aef584662b0b",
+        "change": "get_recent_changes передаёт page и pagesize (по умолчанию 1 и 20, максимум 100); ограничено число обрабатываемых транзакций и связанных запросов.",
+        "significance_reason": "Снижает риск загрузки всей истории правок и чрезмерного числа API-запросов при работе ИИ с большим деревом.",
+        "risks": [
+          "При полной странице возможны дополнительные результаты, но это не гарантировано; нужно листать страницы. Нагрузка на реальном дереве не измерялась."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/25c6e6a9bd0a908f03d9dacc7f67aef584662b0b"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и связанные изменения тестов или документации.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-20b7b0b",
+        "date": "2026-11-04",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "20b7b0bf5f3acd58609de022a949f0398d9020db",
+        "change": "При тайм-ауте после отправки POST создания объекта Gramps MCP проверяет существование записи по заранее выбранному handle; подтверждённую запись не создаёт повторно.",
+        "significance_reason": "Снижает риск дублирования людей, событий и других объектов после сетевого сбоя во время агентной записи.",
+        "risks": [
+          "Если проверка не обнаружила запись, сервер всё ещё может завершить сохранение позднее; автоматический повтор без дополнительной проверки небезопасен. Создание медиа имеет отдельные ограничения."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/20b7b0bf5f3acd58609de022a949f0398d9020db"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и тесты авторов.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
+      },
+      {
+        "discovery_id": "github:genealogy-mcp/gramps-mcp:review-2026-11-08-6d5079f",
+        "date": "2026-11-03",
+        "reviewed_on": "2026-11-08",
+        "source_commit": "6d5079f5d81fb1616a49b487fcba6b02da0b1af2",
+        "change": "Иерархия места извлекается из одного GET profile=self с parent_places, вместо запроса к каждому родительскому уровню; добавлена защита от циклов.",
+        "significance_reason": "Уменьшает количество запросов при поиске по историческим населённым пунктам и представлении административной иерархии.",
+        "risks": [
+          "Проверено по коду и тестам авторов; производительность на собственных деревьях и корректность исторической АТД не оценивались."
+        ],
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/genealogy-mcp/gramps-mcp/commit/6d5079f5d81fb1616a49b487fcba6b02da0b1af2"
+          }
+        ],
+        "claims_vs_verified": {
+          "verified": "Проверен diff коммита и тесты авторов.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "proposed",
+        "reviewer": "Редакционная проверка первоисточников"
       }
     ],
     "origin": "GitHub Watch",
@@ -19400,13 +19825,13 @@
     "section": "Новые исследования / GitHub Watch",
     "description": "Alpha-инструмент многоэтапного генеалогического исследования с фиксацией поисков, источников и конфликтующих свидетельств; функции заявлены авторами.",
     "use_case": "Изучить устройство Research Workspace, планирование поиска, журнал доказательств и контроль противоречий.",
-    "limitations": "Зависимость от Claude Desktop Cowork и FamilySearch; независимое испытание не проводилось, применимость к архивам РФ не установлена.",
-    "license": "Apache-2.0 (заявлено авторами; проверить LICENSE перед заимствованием)",
-    "license_status": "Предварительно по репозиторию; независимый аудит не проводился",
+    "limitations": "Стадия alpha по README. Для описанного рабочего процесса необходимы Claude Cowork, FamilySearch и Node.js 22+; доступность сервисов и охват российских архивов не установлены. Использование FamilySearch и передача данных зависят от отдельных условий. Работоспособность на архивных делах не оценивалась.",
+    "license": "Apache-2.0 — LICENSE проверен по коммиту 97221bd3c721af05c012b539091decb6e8e10960",
+    "license_status": "Подтверждено по тексту LICENSE в исходном репозитории; условия сторонних сервисов отдельно",
     "priority": "Не оценён",
     "priority_original": "Не оценён",
     "verification": "README проекта прочитан 2026-11-05; работоспособность не тестировалась",
-    "verified_at": "2026-11-05",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировалось",
     "source": "https://github.com/PioneerAIAcademy/cowork-genealogy",
     "status": "Предварительная редакционная карточка",
