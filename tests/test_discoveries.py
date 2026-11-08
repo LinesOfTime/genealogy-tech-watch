@@ -52,6 +52,34 @@ class DiscoveryTests(unittest.TestCase):
                            reviewed_at='2026-10-22T11:00:00+03:00')
         self.record['reviewed_content_hash'] = discovery.content_hash(self.record)
 
+    def test_priority_review_requires_matching_current_priority(self):
+        self.write('catalog.json', [dict(name='Friendly name', url='https://github.com/a/repo',
+                                         practical_priority='P2')])
+        self.record['priority_review'] = dict(previous='P2', proposed='P1',
+                                               reason='Test evidence for a pilot',
+                                               next_action='Run a pilot on sample documents')
+        self.approve()
+        self.assertEqual(self.check()['eligible'], 1)
+        self.record['priority_review']['previous'] = 'P3'
+        self.record['reviewed_content_hash'] = discovery.content_hash(self.record)
+        self.assertEqual(self.check()['eligible'], 0)
+        self.assertTrue(any('previous value differs' in e
+                            for e in self.check()['results'][0]['errors']))
+
+    def test_priority_review_rejects_incomplete_or_unknown_values(self):
+        self.record['priority_review'] = dict(previous='P2', proposed='P0',
+                                               reason='Unsubstantiated', next_action='')
+        self.assertEqual(self.check()['eligible'], 0)
+        self.assertTrue(any('priority_review requires' in e
+                            for e in self.check()['results'][0]['errors']))
+
+    def test_priority_review_requires_existing_card(self):
+        self.record['priority_review'] = dict(previous='P2', proposed='P1',
+                                               reason='Specific evidence', next_action='Pilot')
+        self.record.update(repo_full_name='b/repo', canonical_url='https://github.com/b/repo')
+        self.assertTrue(any('exactly one existing catalog card' in e
+                            for e in self.check()['results'][0]['errors']))
+
     def test_pending_and_bound_approval(self):
         self.assertEqual(self.check()['eligible'], 0)
         self.approve()
