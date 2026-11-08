@@ -1179,7 +1179,7 @@
     "license_status": "Требует уточнения",
     "priority": "P2",
     "verification": "https://github.com/benwbrum/fromthepage",
-    "verified_at": "2026-10-08",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировался",
     "source": "https://github.com/benwbrum/fromthepage",
     "status": "Исходное исследование, 8–10 октября",
@@ -1265,7 +1265,8 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "latest_verified_change": "Централизована проверка доступа к предметным статьям; исправлено сохранение вложенной XML-разметки при экспорте в LaTeX (коммиты c07e6e2 и d87fc83)."
   },
   {
     "name": "bhaskargautam/record-linkage",
