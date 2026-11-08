@@ -65,6 +65,38 @@
         "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/src/personal_historical_archive/CHANGELOG.json",
         "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/skills/palaeographers-compare/LICENSE"
       ]
+    },
+    {
+      "project": "ai-riksarkivet/htrflow-batch",
+      "checked_at": "2026-11-09",
+      "commit": "5c20ffe9da4ef4405633b4d4b11555bf1c20bd85",
+      "kind": "export_progress",
+      "status": "source_verified",
+      "summary": "В коммите 5852227 добавлено отображение прогресса экспорта: по одному сообщению на том в stderr, счётчик страниц в интерактивном терминале. Основной табличный отчёт stdout сохранён.",
+      "verified": "Проверен дифф коммита 585222719037889bd89dcf6994f37ae267e75e96 (включён в main через PR #130, SHA 5c20ffe9). Изменены export.py, новый export_progress.py, CLI-документация и тесты разработчика. LICENSE и pyproject подтверждают EUPL-1.2, Python >=3.12.",
+      "limitations": "Изменение улучшает наблюдаемость длительных экспортов, но не повышает точность HTR. Тесты разработчика и реальная производительность в данной проверке не выполнялись.",
+      "next_action": "Применить раздельное логирование stdout/stderr и счётчики томов/страниц к Indexator UNO; проверить экспорт нескольких тестовых томов.",
+      "sources": [
+        "https://github.com/AI-Riksarkivet/htrflow-batch/blob/5c20ffe9da4ef4405633b4d4b11555bf1c20bd85/packages/converter/src/htrflow_converter/export_progress.py",
+        "https://github.com/AI-Riksarkivet/htrflow-batch/blob/5c20ffe9da4ef4405633b4d4b11555bf1c20bd85/packages/converter/tests/test_export_progress.py",
+        "https://github.com/AI-Riksarkivet/htrflow-batch/blob/5c20ffe9da4ef4405633b4d4b11555bf1c20bd85/pyproject.toml"
+      ]
+    },
+    {
+      "project": "mittagessen/kraken",
+      "checked_at": "2026-11-09",
+      "commit": "7186ce2a7142b0433e0938a139e6e687a9bb0188",
+      "kind": "forced_alignment_bugfix",
+      "status": "source_verified",
+      "summary": "В коммите d35e686 изменён расчёт emission в forced alignment для согласования с выходом распознавания; добавлен регрессионный тест на сопоставление позиций символов.",
+      "verified": "Проверен дифф коммита d35e68641c365a3d543fc4b9db2d7507df55db02, вошедшего в main через PR #819. В kraken/tasks/align.py заменено log_softmax на log с защитой минимального значения. Добавлен test_predict_aligns_with_recognition. LICENSE и pyproject подтверждают Apache-2.0, Python >=3.10,<3.15.",
+      "limitations": "Это исправление forced alignment, не новый OCR-бенчмарк и не подтверждение улучшения CER/WER на русских рукописях. Регрессионный тест лично не выполнялся.",
+      "next_action": "При сопоставлении строк на сканах ревизий сравнить координаты по старому и новому forced alignment на контрольной разметке; не переносить ожидаемый эффект на распознавание текста без метрик.",
+      "sources": [
+        "https://github.com/mittagessen/kraken/blob/7186ce2a7142b0433e0938a139e6e687a9bb0188/kraken/tasks/align.py",
+        "https://github.com/mittagessen/kraken/blob/7186ce2a7142b0433e0938a139e6e687a9bb0188/tests/test_tasks.py",
+        "https://github.com/mittagessen/kraken/blob/7186ce2a7142b0433e0938a139e6e687a9bb0188/pyproject.toml"
+      ]
     }
   ]
 }
