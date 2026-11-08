@@ -50,6 +50,14 @@ class GitHubMetadataAuditTests(unittest.TestCase):
             checked_at=datetime(2026, 11, 8, tzinfo=timezone.utc))
         self.assertEqual(result[0]['screening'], 'unknown_activity')
 
+    def test_known_escriptorium_relocation_is_review_candidate(self):
+        result = audit.inspect([{'name': 'eScriptorium',
+            'url': 'https://github.com/scripta/escriptorium'}],
+            lambda repo: (_ for _ in ()).throw(RuntimeError('HTTP 404')))
+        self.assertEqual(result[0]['screening'], 'repository_url_correction_candidate')
+        self.assertEqual(result[0]['suggested_url'], 'https://gitlab.com/scripta/escriptorium')
+        self.assertEqual(result[0]['status'], 'request_failed')
+
     def test_request_errors_are_visible(self):
         result = audit.inspect([{'name': 'A', 'url': 'https://github.com/a/b'}],
                                lambda repo: (_ for _ in ()).throw(RuntimeError('HTTP 404')))
