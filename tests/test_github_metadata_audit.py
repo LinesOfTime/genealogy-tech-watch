@@ -63,6 +63,8 @@ class GitHubMetadataAuditTests(unittest.TestCase):
                                lambda repo: (_ for _ in ()).throw(RuntimeError('HTTP 404')))
         self.assertEqual(result[0]['status'], 'request_failed')
         self.assertIn('404', result[0]['error'])
+        self.assertEqual(result[0]['screening'], 'repository_not_found_review')
+        self.assertEqual(result[0]['resolution'], 'repository_not_found_needs_review')
 
 
 if __name__ == '__main__':
