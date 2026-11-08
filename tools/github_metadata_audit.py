@@ -46,6 +46,8 @@ def screening(card, metadata, checked_at):
         return 'repository_url_correction_candidate'
     if metadata.get('resolution') == 'repository_not_found_needs_review':
         return 'repository_not_found_review'
+    if metadata.get('status') == 'external_repository':
+        return 'external_host_review'
     if metadata.get('status') != 'ok':
         return 'unverified'
     if metadata.get('archived') or metadata.get('disabled'):
@@ -89,7 +91,7 @@ def inspect(cards, fetch, pause=0, checked_at=None):
         if repo == 'scripta/escriptorium' and str(card.get('source', '')).startswith('https://gitlab.com/scripta/escriptorium'):
             row['catalog_source_confirms_relocation'] = True
         if not repo:
-            row['status'] = 'not_github_repository'
+            row['status'] = 'external_repository' if urlparse(str(url)).hostname == 'gitlab.com' else 'not_github_repository'
         else:
             if repo not in cache:
                 try:
@@ -149,7 +151,8 @@ def main():
             raise RuntimeError('network error: ' + str(exc.reason)) from exc
     items = inspect(cards, fetch, args.pause)
     priority_order = {'repository_not_found_review': 0,
-                      'repository_url_correction_candidate': 1,
+                      'external_host_review': 1,
+                      'repository_url_correction_candidate': 2,
                       'repository_status_change_candidate': 2,
                       'activity_after_catalog_event': 3,
                       'recent_activity_review': 4,
