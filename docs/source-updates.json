@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "snapshot_date": "2026-11-09",
+  "method": "Редакционный срез первоисточников; не независимое испытание и не изменение исторических оценок.",
+  "items": [
+    {
+      "project": "b21-agency/gramps-ui",
+      "checked_at": "2026-11-09",
+      "kind": "repository_access",
+      "status": "needs_recheck",
+      "summary": "При проверке через GitHub API адрес репозитория вернул HTTP 404. Это не подтверждает удаление проекта: возможны перенос, приватность или временная недоступность.",
+      "verified": "Получен ответ GitHub API HTTP 404 для репозитория и корневого содержимого.",
+      "limitations": "Исторические данные о версии и лицензии этим запросом не подтверждены. Не заменять URL предположением.",
+      "next_action": "Проверить перенос проекта и официальный адрес, не изменяя прежний приоритет.",
+      "sources": [
+        "https://github.com/b21-agency/gramps-ui"
+      ]
+    },
+    {
+      "project": "PioneerAIAcademy/cowork-genealogy",
+      "checked_at": "2026-11-09",
+      "commit": "97221bd3c721af05c012b539091decb6e8e10960",
+      "kind": "license_and_requirements",
+      "status": "source_verified",
+      "summary": "В корне текущей версии присутствует полный текст Apache License 2.0. README определяет проект как alpha и описывает работу с Claude Cowork и FamilySearch.",
+      "verified": "Прочитаны LICENSE, README и package.json на указанном коммите; package.json требует Node.js 22+.",
+      "limitations": "Наличие лицензии и заявлений README не подтверждает работоспособность, доступность FamilySearch или качество исследования.",
+      "next_action": "Уточнить системные ограничения в основной карточке; затем пилот с синтетическим делом.",
+      "sources": [
+        "https://github.com/PioneerAIAcademy/cowork-genealogy/blob/97221bd3c721af05c012b539091decb6e8e10960/LICENSE",
+        "https://github.com/PioneerAIAcademy/cowork-genealogy/blob/97221bd3c721af05c012b539091decb6e8e10960/README.md",
+        "https://github.com/PioneerAIAcademy/cowork-genealogy/blob/97221bd3c721af05c012b539091decb6e8e10960/package.json"
+      ]
+    },
+    {
+      "project": "semanticmeaning/kinship-kit",
+      "checked_at": "2026-11-09",
+      "commit": "4d90a0621febc37479ac265f41649a357e7a2558",
+      "kind": "source_recheck",
+      "status": "source_verified",
+      "summary": "В исходниках подтверждены версия 0.5.2 (pyproject), LICENSE MIT и документированный набор CLI `kin` и навыка для Claude Code и Codex.",
+      "verified": "Сопоставлены README, LICENSE и pyproject.toml по зафиксированному коммиту.",
+      "limitations": "Независимая работа CLI, защита приватности и корректность генеалогических доказательств не проверялись.",
+      "next_action": "Проверить цепочку «источник → утверждение → конфликт → решение» на отдельном учебном деле.",
+      "sources": [
+        "https://github.com/semanticmeaning/kinship-kit/blob/4d90a0621febc37479ac265f41649a357e7a2558/README.md",
+        "https://github.com/semanticmeaning/kinship-kit/blob/4d90a0621febc37479ac265f41649a357e7a2558/LICENSE",
+        "https://github.com/semanticmeaning/kinship-kit/blob/4d90a0621febc37479ac265f41649a357e7a2558/pyproject.toml"
+      ]
+    },
+    {
+      "project": "joaquimrcarvalho/personal-historical-archive",
+      "checked_at": "2026-11-09",
+      "commit": "247d4ce89fe7c22f492bb79bc9770f674ac4b28d",
+      "kind": "version_change",
+      "status": "source_verified_with_gap",
+      "summary": "В pyproject.toml версия 0.47.0, выше ранее учтённой 0.46.7. README описывает VLM-транскрипцию, опциональное редакторское преобразование и MCP-поиск.",
+      "verified": "Проверены README и pyproject.toml; в корне репозитория файл LICENSE не обнаружен.",
+      "limitations": "Отсутствие LICENSE в корне не доказывает отсутствия лицензии во всём проекте. Условия использования и реальные результаты HTR требуют проверки.",
+      "next_action": "Установить юридические условия, изучить diff версии 0.46.7→0.47.0, протестировать происхождение транскрипций.",
+      "sources": [
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/pyproject.toml",
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/README.md"
+      ]
+    }
+  ]
+}

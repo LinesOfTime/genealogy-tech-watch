@@ -4,6 +4,7 @@
   try {
     const load = async path => { const response = await fetch(path, {cache:'no-store'}); if (!response.ok) throw Error(`Не удалось загрузить ${path}`); return response.json(); };
     const [catalog, research, digest, usage] = await Promise.all(['catalog.json','research.json','digest.json','usage-context.json'].map(load));
+    const updates = await load('source-updates.json');
     const requested = (new URLSearchParams(location.search).get('repo') || '').toLowerCase();
     const x = catalog.find(v => v.name.toLowerCase() === requested || v.url.toLowerCase().replace(/\/$/, '').replace('https://github.com/', '') === requested);
     if (!x) throw Error('Проект не найден: ' + requested);
@@ -23,6 +24,17 @@
     const practicalDetails=p?'<p><b>'+esc(p.task)+'</b></p>'+para(p.scope)+para(p.rationale)+'<p><b>Небольшая проба:</b> '+esc(p.pilot)+'</p>':'';
     html += panel('Практическое применение', practicalDetails+ WatchUI.usage(usage?.projects?.[key],true)+WatchUI.practical(x,r));
     html += panel('Ограничения и редакционная оценка', WatchUI.limitations(x,r));
+    const latest = (updates.items || []).filter(u => u.project.toLowerCase() === key);
+    if (latest.length) {
+      html += panel('Новая проверка первоисточников', latest.map(u =>
+        '<div class="entry"><p><b>' + esc(u.checked_at) + ' · ' + esc(u.status) + '</b></p>' +
+        para(u.summary) + '<p><b>Подтверждено:</b> ' + esc(u.verified) + '</p>' +
+        '<p><b>Ограничения проверки:</b> ' + esc(u.limitations) + '</p>' +
+        '<p><b>Следующее действие:</b> ' + esc(u.next_action) + '</p>' +
+        '<p>' + (u.sources || []).map((url,i) => link(url,'Первоисточник ' + (i+1))).join(' · ') + '</p></div>'
+      ).join('') + '<small>Редакционные уточнения. Исторические поля ниже не переписаны; независимая проверка функций не проводилась.</small>');
+    }
+
     html += typePanel + russiaPanel;
     html += panel('Приоритеты и доказательность', WatchUI.priorityAxes(x)+WatchUI.priorityNote(x)+para(x.practical_priority?.rationale||x.evaluation?.priority_rationale||'Обоснование оценки отсутствует.')+'<a href="priorities.html?q='+encodeURIComponent(x.name)+'">Проверить актуальность и следующий шаг →</a> · <a href="trials.html?project='+encodeURIComponent(x.name)+'">Протоколы испытаний →</a>');
     if (x.description_provenance) {
