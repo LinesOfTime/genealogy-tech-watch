@@ -87,6 +87,12 @@ def complete_plan(root, package, records):
     if failed:
         details = [(result['discovery_id'], result['novelty_status'], result['errors']) for result in failed]
         raise ValueError('Package contains invalid, duplicate or immaterial events: ' + str(details))
+    # Every material update to an existing card must explicitly reconsider priority.
+    # No score is invented: retaining the current value is a valid documented decision.
+    for record, result in zip(records, report['results']):
+        if result['novelty_status'] == 'material_update' and result['catalog_match']:
+            if 'priority_review' not in record:
+                raise ValueError('Existing project update requires priority_review: ' + record['discovery_id'])
     plan = build_plan(root, records, package['edition_date'])
     if plan['events'] != [record['discovery_id'] for record in records]:
         raise ValueError('The plan must apply every package event exactly once')
