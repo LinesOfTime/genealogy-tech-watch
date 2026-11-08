@@ -238,6 +238,23 @@
       ],
       "project_url": "https://github.com/recogito/text-annotator-js",
       "change_url": "https://github.com/recogito/text-annotator-js/commit/413dccde107686fcaa3f782f7a8ade27de206779"
+    },
+    {
+      "project": "benwbrum/fromthepage",
+      "checked_at": "2026-11-09",
+      "commit": "c07e6e29fbd4431c588de8dee28712ee157e4bac",
+      "kind": "subject_access_and_export",
+      "status": "source_verified",
+      "summary": "Добавлена централизованная проверка прав доступа к контексту предметных статей; для закрытых записей используется ответ 404 без раскрытия содержания. Отдельным коммитом исправлено сохранение вложенной разметки при экспорте XML в LaTeX.",
+      "verified": "В коммите c07e6e2 изменены app/controllers/application_controller.rb и проверки доступа в spec/requests/subject_access_spec.rb; коммит d87fc83 изменяет app/interactors/work/export/lib/utils.rb и добавляет регрессионные проверки вложенного LaTeX, включая вызов pandoc.",
+      "limitations": "Код и тесты просмотрены по GitHub; сервер не разворачивался, регрессионные тесты не запускались. Не доказано качество транскрипции или сохранность пользовательских данных в эксплуатации.",
+      "next_action": "Для пилота совместной транскрипции отдельно проверить закрытые коллекции, доступ к статьям и корректность экспорта документа с вложенной разметкой.",
+      "project_url": "https://github.com/benwbrum/fromthepage",
+      "change_url": "https://github.com/benwbrum/fromthepage/commit/c07e6e29fbd4431c588de8dee28712ee157e4bac",
+      "sources": [
+        "https://github.com/benwbrum/fromthepage/commit/c07e6e29fbd4431c588de8dee28712ee157e4bac",
+        "https://github.com/benwbrum/fromthepage/commit/d87fc835aa68013da7b623c959fa60eb998f627d"
+      ]
     }
   ]
 }
