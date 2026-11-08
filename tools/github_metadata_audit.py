@@ -83,6 +83,11 @@ def inspect(cards, fetch, pause=0, checked_at=None):
         url = card.get('url')
         repo = repository_name(url)
         row = {'name': name, 'url': url, 'repository': repo}
+        existing_issue = card.get('repository_reference_issue')
+        if isinstance(existing_issue, dict):
+            row['existing_reference_issue'] = existing_issue
+        if repo == 'scripta/escriptorium' and str(card.get('source', '')).startswith('https://gitlab.com/scripta/escriptorium'):
+            row['catalog_source_confirms_relocation'] = True
         if not repo:
             row['status'] = 'not_github_repository'
         else:
@@ -154,11 +159,13 @@ def main():
     candidates = [item for item in items if item['screening'] in priority_order]
     candidates.sort(key=lambda item: (priority_order[item['screening']], str(item['name'])))
     summary = dict(Counter(item['status'] for item in items))
+    previously_flagged = sum(1 for item in items if item.get('existing_reference_issue'))
     screening_counts = dict(Counter(item['screening'] for item in items))
     report = {'checked_at': datetime.now(timezone.utc).isoformat(),
               'catalog_count': len(cards), 'status_counts': summary,
               'screening_counts': screening_counts,
               'candidate_count': len(candidates), 'candidates': candidates,
+              'previously_flagged_reference_issues': previously_flagged,
               'items': items,
               'limitations': 'Activity screening only. Pushed-at timestamps and archived flags do not establish a substantive release, change, or quality. Inspect source commits, README, release notes, license and tests before updating cards.'}
     args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
