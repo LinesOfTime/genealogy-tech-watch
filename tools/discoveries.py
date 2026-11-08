@@ -147,7 +147,10 @@ def compare(root, records):
                 errors.append('priority_review requires exactly one existing catalog card')
             else:
                 current = next(c for c in catalog if c['url'] == matches[0])
-                actual = current.get('practical_priority', current.get('priority', 'Не оценён'))
+                practical = current.get('practical_priority')
+                actual = (practical.get('priority', 'Не оценён') if isinstance(practical, dict)
+                          else practical if isinstance(practical, str)
+                          else current.get('priority', 'Не оценён'))
                 if priority_review['previous'] != actual:
                     errors.append('priority_review previous value differs from current practical priority')
         matched_names = {c['name'].lower() for c in catalog if c.get('url') in matches and isinstance(c.get('name'), str)}
