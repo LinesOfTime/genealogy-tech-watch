@@ -187,7 +187,9 @@
       "next_action": "При сравнении просмотровщиков архивных разворотов отдельно измерить плавность панорамирования и расход памяти на больших изображениях.",
       "sources": [
         "https://github.com/openseadragon/openseadragon/blob/df0eaa115a584cb1735f480d6df152f3ab4c7a07/src/tiledimage.js"
-      ]
+      ],
+      "project_url": "https://github.com/openseadragon/openseadragon",
+      "change_url": "https://github.com/openseadragon/openseadragon/commit/df0eaa115a584cb1735f480d6df152f3ab4c7a07"
     },
     {
       "project": "omeka/omeka-s",
@@ -201,7 +203,9 @@
       "next_action": "Для кабинета архивных коллекций учитывать проверку прав на уровне каждого серверного действия, а не только видимости кнопок.",
       "sources": [
         "https://github.com/omeka/omeka-s/blob/22678fa00b96f7c12c114a508b9723ce1c4d2dd2/application/src/Controller/SiteAdmin/IndexController.php"
-      ]
+      ],
+      "project_url": "https://github.com/omeka/omeka-s",
+      "change_url": "https://github.com/omeka/omeka-s/commit/22678fa00b96f7c12c114a508b9723ce1c4d2dd2"
     },
     {
       "project": "tropy/tropy",
@@ -215,7 +219,9 @@
       "next_action": "При проектировании поиска в генеалогическом кабинете предусмотреть проверку длины и числа терминов до выполнения тяжёлого запроса.",
       "sources": [
         "https://github.com/tropy/tropy/blob/f9a4c82e9b19301d7486bf2fa1943c9a0cdb4502/src/models/item.js"
-      ]
+      ],
+      "project_url": "https://github.com/tropy/tropy",
+      "change_url": "https://github.com/tropy/tropy/commit/f9a4c82e9b19301d7486bf2fa1943c9a0cdb4502"
     },
     {
       "project": "recogito/text-annotator-js",
@@ -229,7 +235,9 @@
       "next_action": "Проверять пограничные случаи аннотаций, переходящих на соседнюю страницу документа, включая сохранение исходного диапазона.",
       "sources": [
         "https://github.com/recogito/text-annotator-js/blob/413dccde107686fcaa3f782f7a8ade27de206779/packages/pdf-annotator/src/utils/dom/split-selector.ts"
-      ]
+      ],
+      "project_url": "https://github.com/recogito/text-annotator-js",
+      "change_url": "https://github.com/recogito/text-annotator-js/commit/413dccde107686fcaa3f782f7a8ade27de206779"
     }
   ]
 }
