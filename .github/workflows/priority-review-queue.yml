@@ -28,6 +28,9 @@ jobs:
               f.write(f"Каталог: {report['catalog_count']}; требуют проверки: {report['queue_count']}\n\n")
               for reason, count in sorted(counts.items()):
                   f.write(f"- {reason}: {count}\n")
+              f.write('\nГруппы работы:\n')
+              for group, count in sorted(groups.items()):
+                  f.write(f'- {group}: {count}\n')
               f.write('\nПолный JSON — в артефакте запуска. Оценки не менялись.\n')
           PY
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
