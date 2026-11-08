@@ -1,5 +1,8 @@
 name: Priority Review Queue
 on:
+  push:
+    paths:
+      - '.github/workflows/priority-review-queue.yml'
   workflow_dispatch:
   schedule:
     - cron: '15 6 * * 1'
