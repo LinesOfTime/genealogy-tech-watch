@@ -3,59 +3,34 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '15 6 * * 1'
+
 permissions:
   contents: read
+
 jobs:
   report:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - name: Run priority queue tests
+      - name: Test priority review queue
         run: python3 -m unittest discover -s tests -p 'test_priority_review_queue.py' -v
-      - name: Test full catalog audit
+      - name: Test GitHub metadata audit
         run: python3 -m unittest discover -s tests -p 'test_github_metadata_audit.py' -v
-      - name: Generate review queue
+      - name: Generate priority review queue
         run: python3 tools/priority_review_queue.py --max-age 90 --output priority-review-queue.json
-      - name: Audit every GitHub project (read-only)
+      - name: Audit all catalog repositories
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 tools/github_metadata_audit.py --output github-metadata-audit.json
-      - name: Summarize queue
+      - name: Upload reports
         if: always()
-        run: |
-          python3 - <<'PY'
-          import json, os
-          from collections import Counter
-          from pathlib import Path
-          report=(json.loads(Path('priority-review-queue.json').read_text(encoding='utf-8'))
-                  if Path('priority-review-queue.json').exists() else {'catalog_count': 0, 'queue_count': 0, 'items': []})
-          counts=Counter(reason for item in report['items'] for reason in item['reasons'])
-          groups=Counter(item['review_group'] for item in report['items'])
-          audit=(json.loads(Path('github-metadata-audit.json').read_text(encoding='utf-8'))
-                 if Path('github-metadata-audit.json').exists() else {'screening_counts': {'audit_unavailable': 1}})
-          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as f:
-              f.write('# Очередь переоценки приоритетов\n\n')
-              if not Path('priority-review-queue.json').exists():
-                  f.write('ОШИБКА: отчёт очереди не создан; нули ниже не являются результатами проверки.\\n\\n')
-              else:
-                  f.write(f"Каталог: {report['catalog_count']}; требуют проверки: {report['queue_count']}\\n\\n")
-              for reason, count in sorted(counts.items()):
-                  f.write(f"- {reason}: {count}\n")
-              f.write('\nГруппы работы:\n')
-              for group, count in sorted(groups.items()):
-                  f.write(f'- {group}: {count}\n')
-              f.write('\nСигналы GitHub по всему каталогу:\n')
-              for signal, count in sorted(audit['screening_counts'].items()):
-                  f.write(f'- {signal}: {count}\n')
-              f.write('\nПолные JSON — в артефакте запуска. Оценки не менялись.\n')
-          PY
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
-        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: priority-review-queue
           path: |
             priority-review-queue.json
             github-metadata-audit.json
+          if-no-files-found: warn
           retention-days: 30
