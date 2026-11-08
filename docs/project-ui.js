@@ -24,7 +24,7 @@
     html += panel('Практическое применение', practicalDetails+ WatchUI.usage(usage?.projects?.[key],true)+WatchUI.practical(x,r));
     html += panel('Ограничения и редакционная оценка', WatchUI.limitations(x,r));
     html += typePanel + russiaPanel;
-    html += panel('Приоритеты и доказательность', WatchUI.priorityAxes(x)+WatchUI.priorityNote(x)+para(x.practical_priority?.rationale||x.evaluation?.priority_rationale||'Обоснование оценки отсутствует.')+'<a href="priorities.html?q='+encodeURIComponent(x.name)+'">Проверить актуальность и следующий шаг →</a>');
+    html += panel('Приоритеты и доказательность', WatchUI.priorityAxes(x)+WatchUI.priorityNote(x)+para(x.practical_priority?.rationale||x.evaluation?.priority_rationale||'Обоснование оценки отсутствует.')+'<a href="priorities.html?q='+encodeURIComponent(x.name)+'">Проверить актуальность и следующий шаг →</a> · <a href="trials.html?project='+encodeURIComponent(x.name)+'">Протоколы испытаний →</a>');
     if (x.description_provenance) {
       const p = x.description_provenance;
       html += '<details class="panel"><summary>Происхождение описания назначения</summary>' + ( para('Прежнее описание: ' + p.original_description) +
