@@ -8,12 +8,13 @@
       "checked_at": "2026-11-09",
       "kind": "repository_access",
       "status": "needs_recheck",
-      "summary": "При проверке через GitHub API адрес репозитория вернул HTTP 404. Это не подтверждает удаление проекта: возможны перенос, приватность или временная недоступность.",
-      "verified": "Получен ответ GitHub API HTTP 404 для репозитория и корневого содержимого.",
-      "limitations": "Исторические данные о версии и лицензии этим запросом не подтверждены. Не заменять URL предположением.",
+      "summary": "В октябре разработчик публично представил Gramps UI как альтернативный frontend и сослался на b21-agency/gramps-ui. На 9 ноября GitHub API по адресу репозитория возвращает 404; подтверждённого переноса найти не удалось.",
+      "verified": "В Gramps Web discussion #1576 от 24 октября 2026 содержится первоначальный адрес, указанный автором. При текущем запросе к GitHub REST /repos/b21-agency/gramps-ui получен 404.",
+      "limitations": "Историческая публикация подтверждает адрес на дату обсуждения, но не доступность репозитория сегодня. Нельзя делать вывод о закрытии продукта, лицензии или работоспособности.",
       "next_action": "Проверить перенос проекта и официальный адрес, не изменяя прежний приоритет.",
       "sources": [
-        "https://github.com/b21-agency/gramps-ui"
+        "https://github.com/b21-agency/gramps-ui",
+        "https://github.com/gramps-project/gramps-web/discussions/1576"
       ]
     },
     {
@@ -52,15 +53,17 @@
       "project": "joaquimrcarvalho/personal-historical-archive",
       "checked_at": "2026-11-09",
       "commit": "247d4ce89fe7c22f492bb79bc9770f674ac4b28d",
-      "kind": "version_change",
+      "kind": "release_diff_and_license_scope",
       "status": "source_verified_with_gap",
-      "summary": "В pyproject.toml версия 0.47.0, выше ранее учтённой 0.46.7. README описывает VLM-транскрипцию, опциональное редакторское преобразование и MCP-поиск.",
-      "verified": "Проверены README и pyproject.toml; в корне репозитория файл LICENSE не обнаружен.",
-      "limitations": "Отсутствие LICENSE в корне не доказывает отсутствия лицензии во всём проекте. Условия использования и реальные результаты HTR требуют проверки.",
-      "next_action": "Установить юридические условия, изучить diff версии 0.46.7→0.47.0, протестировать происхождение транскрипций.",
+      "summary": "Версия 0.47.0 подтверждена на коммите 247d4ce. По сравнению с 0.46.7 зафиксированы изменения просмотра исходных PDF/изображений и интеграции DSH: просмотр оригинала и переход к странице в PHA viewer. Это не новый измеренный результат HTR.",
+      "verified": "GitHub compare 4a458d64→247d4ce: три коммита, включая release 0.47.0, изменение CLI, DSH-клиента и тестов просмотра. Полный рекурсивный список из 288 путей содержит LICENSE только внутри skills/palaeographers-compare; общей лицензии в дереве не обнаружено.",
+      "limitations": "LICENSE отдельного навыка нельзя распространять на весь репозиторий. Доступность функций по README/коммитам не означает, что они успешно испытаны; качество транскрипции независимо не оценивалось.",
+      "next_action": "До интеграции уточнить общие лицензионные условия у правообладателя. Затем проверить открытие оригинального документа и точность ссылок на страницы, отдельно от HTR.",
       "sources": [
         "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/pyproject.toml",
-        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/README.md"
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/README.md",
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/src/personal_historical_archive/CHANGELOG.json",
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/skills/palaeographers-compare/LICENSE"
       ]
     }
   ]
