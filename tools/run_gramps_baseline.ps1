@@ -27,7 +27,9 @@ $stackStarted = $false
 function HasCommand($name) { return [bool](Get-Command $name -ErrorAction SilentlyContinue) }
 function InvokeChecked([string]$label, [string[]]$argv) {
   Write-Host "== $label =="
-  & $argv[0] $argv[1..($argv.Count-1)] 2>&1 | Out-File -FilePath $record -Append -Encoding utf8
+  $command = $argv[0]
+  $arguments = @($argv[1..($argv.Count-1)])
+  & $command @arguments 2>&1 | Out-File -FilePath $record -Append -Encoding utf8
   if ($LASTEXITCODE -ne 0) { throw "$label failed (exit code $LASTEXITCODE); see $record" }
 }
 try {
@@ -51,7 +53,7 @@ try {
     if ($actual -ne $pin) { throw "Commit mismatch: $actual" }
     if ((& git status --porcelain).Count -gt 0) { throw "Checkout contains local changes; aborting" }
     InvokeChecked "Prepare Python dependencies" @("uv","sync","--group","dev","--frozen")
-    InvokeChecked "Start isolated Gramps Web test stack" @("docker","compose","-f","docker-compose.test.yml","up","-d","--wait")
+    InvokeChecked "Start isolated Gramps Web test stack" @("docker","compose","-p","gtw-gramps-baseline","-f","docker-compose.test.yml","up","-d","--wait")
     $stackStarted = $true
     InvokeChecked "Seed upstream test database" @("uv","run","--no-sync","python","scripts/seed_test_db.py","--skip-if-seeded")
     InvokeChecked "Run upstream integration tests" @("uv","run","--no-sync","pytest","-m","integration","--no-cov","-q")
@@ -64,6 +66,7 @@ try {
   $exitCode = 1
 } finally {
   @{
+    compose_project = "gtw-gramps-baseline"
     upstream_repo = $source
     upstream_commit = $pin
     started_at_utc = $started
@@ -77,7 +80,7 @@ try {
   Write-Host "Metadata: $pinFile"
   if ($CleanupTestVolumes -and $stackStarted) {
     Push-Location $checkout
-    try { & docker compose -f docker-compose.test.yml down -v 2>&1 | Out-File -FilePath $record -Append -Encoding utf8 }
+    try { & docker compose -p gtw-gramps-baseline -f docker-compose.test.yml down -v 2>&1 | Out-File -FilePath $record -Append -Encoding utf8 }
     finally { Pop-Location }
     Write-Host "CAUTION: only the isolated upstream test stack volumes were removed."
   } else {
