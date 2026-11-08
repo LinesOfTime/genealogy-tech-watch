@@ -23,6 +23,19 @@ class PriorityQueueTests(unittest.TestCase):
                                        'pilot': 'Check a sample'}}
         self.assertEqual(module.queue([card], date(2026, 11, 8)), [])
 
+    def test_unrated_grouping_preserves_evidence(self):
+        cards = [
+            {'name': 'Rights', 'practical_priority': {'priority': 'Не оценён',
+                'reviewed_on': '2026-11-04', 'rationale': 'Проверить лицензию',
+                'evidence_level': 'E1'}},
+            {'name': 'New', 'priority': 'Не оценён'},
+        ]
+        result = module.queue(cards, date(2026, 11, 8))
+        by_name = {item['name']: item for item in result}
+        self.assertEqual(by_name['Rights']['review_group'], 'rights_or_license_check')
+        self.assertEqual(by_name['Rights']['evidence_level'], 'E1')
+        self.assertEqual(by_name['New']['review_group'], 'initial_review')
+
     def test_recent_review_not_queued(self):
         card = {'name': 'A', 'practical_priority': 'P1',
                 'practical_priority_history': [{'reviewed_at': '2026-11-07T12:00:00Z'}]}
