@@ -17261,8 +17261,8 @@
     "license_status": "См. источники события; независимая проверка не заявлена",
     "test_status": "Не тестировалось",
     "verification_basis": "Редакционная проверка источников события; см. историю",
-    "verification_date": "2026-10-31",
-    "source_evidence": "https://github.com/itarunnn/jp-lit-mcp/releases/tag/v0.19.0",
+    "verification_date": "2026-11-09",
+    "source_evidence": "https://github.com/itarunnn/jp-lit-mcp/blob/48706e1a97ce08ba3316154b387bd1c6c622686a/package.json",
     "maturity": "Развиваемый проект с релизом 0.19.0 и опубликованными авторскими тестами. Раннее развитие до 1.0; проверены тексты и выбранный SQLite-код, установка, OCR, Modal, IIIF и реальный корпус не запускались.",
     "profile_provenance": {
       "discovery_id": "github:itarunnn/jp-lit-mcp:watch-2026-10-31",
@@ -17358,7 +17358,10 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "current_version": "0.19.1",
+    "current_version_source": "https://github.com/itarunnn/jp-lit-mcp/releases/tag/v0.19.1",
+    "latest_verified_change": "0.19.1: пагинация нескольких японских каталогов, диагностика NDL SRU, обработка тайм-аутов и сохранение соответствия OCR текущей области изображения."
   },
   "k-woitas/eperiodica-explorer": {
     "watch_events": [

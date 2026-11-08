@@ -158,6 +158,22 @@
         "https://github.com/meh313/htr-model-tester/blob/6e6d93a946aaba0ebe0a95388f56a43da3e0efea/htr_tester/metrics.py",
         "https://github.com/meh313/htr-model-tester/blob/6e6d93a946aaba0ebe0a95388f56a43da3e0efea/htr_tester/vision_transcription_service.py"
       ]
+    },
+    {
+      "project": "itarunnn/jp-lit-mcp",
+      "checked_at": "2026-11-09",
+      "commit": "48706e1a97ce08ba3316154b387bd1c6c622686a",
+      "kind": "release_and_provenance_fix",
+      "status": "source_verified",
+      "summary": "Релиз 0.19.1 от 3 ноября 2026: исправлены повтор/пропуск результатов постраничного поиска, различение ошибок NDL SRU и пустых результатов, а также связь локального OCR с текущей областью исходного изображения.",
+      "verified": "GitHub Release v0.19.1 и package.json на коммите 48706e1a подтверждают версию; дифф коммита 51815ad содержит изменения в адаптерах источников, логике OCR-region matching и начале исследовательских сессий. Авторы также описывают корректировку тайм-аутов и безопасного запуска установки Skills.",
+      "limitations": "Специализация — японские библиографические и архивные коллекции. Изменение повышает обоснованность отслеживания источника OCR, но не доказывает качество распознавания российских документов или доступность японских API. Показатели тестов в release notes приведены авторами.",
+      "next_action": "Взять в качестве примера контроля provenance при OCR: текст каждого фрагмента должен быть связан с конкретным изображением, областью, версией результата и ревизией. Практическую оценку пересматривать отдельно от релиза.",
+      "sources": [
+        "https://github.com/itarunnn/jp-lit-mcp/blob/48706e1a97ce08ba3316154b387bd1c6c622686a/package.json",
+        "https://github.com/itarunnn/jp-lit-mcp/blob/48706e1a97ce08ba3316154b387bd1c6c622686a/src/iiif/ocr-state.mjs",
+        "https://github.com/itarunnn/jp-lit-mcp/blob/48706e1a97ce08ba3316154b387bd1c6c622686a/src/lib/xml.ts"
+      ]
     }
   ]
 }

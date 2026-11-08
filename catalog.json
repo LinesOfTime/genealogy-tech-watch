@@ -19181,9 +19181,9 @@
     "priority": "Не оценён",
     "priority_original": "Не оценён",
     "verification": "Редакционная проверка источников события; см. историю",
-    "verified_at": "2026-10-31",
+    "verified_at": "2026-11-09",
     "test_status": "Не тестировалось",
-    "source": "https://github.com/itarunnn/jp-lit-mcp/releases/tag/v0.19.0",
+    "source": "https://github.com/itarunnn/jp-lit-mcp/releases/tag/v0.19.1",
     "status": "Дополнение из GitHub Watch",
     "history": [
       {
@@ -19386,7 +19386,10 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "current_version": "0.19.1",
+    "current_version_source": "https://github.com/itarunnn/jp-lit-mcp/releases/tag/v0.19.1",
+    "latest_verified_change": "0.19.1: исправлены пагинация поиска, обработка ошибок и привязка локального OCR к выбранной области; подробнее — проверка первоисточников."
   },
   {
     "name": "k-woitas/eperiodica-explorer",
