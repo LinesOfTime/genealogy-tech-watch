@@ -23,17 +23,17 @@ Windows 11 с Docker Desktop (запущенным Linux Engine), Git и `uv` (P
 powershell -ExecutionPolicy Bypass -File .\tools\run_gramps_baseline.ps1
 ```
 
-Скрипт создаёт отдельную папку `local-gramps-baseline`, загружает исходный код upstream, переключается на **проверенный SHA**, устанавливает зависимости по lock-файлу, поднимает тестовый Gramps Web в отдельном Docker Compose-проекте `gtw-gramps-baseline`. Скрипт также выставляет `COMPOSE_PROJECT_NAME` для дочерних Python-процессов, запрещает пропуск интеграционных тестов через `REQUIRE_INTEGRATION=1` и очищает унаследованные `GRAMPS_API_URL` и учётные данные, чтобы не попасть в действующее дерево, засевает fixture и запускает `pytest -m integration --no-cov -q`.
+Скрипт создаёт отдельную папку `local-gramps-baseline`, загружает исходный код upstream, переключается на **проверенный SHA**, устанавливает зависимости по lock-файлу, поднимает тестовый Gramps Web в отдельном Docker Compose-проекте с уникальным именем вида `gtw-gramps-<12 символов>`. Скрипт также выставляет уникальный `COMPOSE_PROJECT_NAME` для дочерних Python-процессов, запрещает пропуск интеграционных тестов через `REQUIRE_INTEGRATION=1` и очищает унаследованные `GRAMPS_API_URL` и учётные данные, чтобы не попасть в действующее дерево, засевает fixture и запускает `pytest -m integration --no-cov -q`.
 
-Результаты: `local-gramps-baseline/logs/baseline-*.txt` и `baseline-*-metadata.json`. Они не являются доказательством независимости испытания. **Никакая запись в `docs/trials.json` не добавляется автоматически.**
+Результаты: `local-gramps-baseline/logs/baseline-*.txt` и `baseline-*-metadata.json` с точным именем Compose-проекта. Каждый запуск получает новые тестовые тома; старые тома не затрагиваются и требуют отдельной очистки по сохранённому имени проекта. Они не являются доказательством независимости испытания. **Никакая запись в `docs/trials.json` не добавляется автоматически.**
 
-Для удаления только тестовых томов upstream после проверки:
+Для удаления тестовых томов **в рамках этого же запуска**:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tools\run_gramps_baseline.ps1 -CleanupTestVolumes
 ```
 
-Внимание: `-CleanupTestVolumes` вызывает `docker compose ... down -v` и уничтожает данные **только Compose-проекта `gtw-gramps-baseline`**. Не используйте его, если переименовали проект Compose или разместили в этой группе нужные данные.
+Внимание: `-CleanupTestVolumes` вызывает `docker compose ... down -v` и уничтожает данные **только автоматически созданного Compose-проекта текущего прогона**. Без ключа контейнеры и тома сохраняются для изучения. Повторный запуск с ключом создаст новый отдельный проект и очистит только его, а не предыдущие. Для уборки старого прогона используйте сохранённое имя проекта и команду `docker compose -p <имя> -f docker-compose.test.yml down -v` внутри его checkout, предварительно проверив имена томов.
 
 ## Следующая стадия
 

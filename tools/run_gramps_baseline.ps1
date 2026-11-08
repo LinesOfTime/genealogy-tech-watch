@@ -24,11 +24,13 @@ $pinFile = Join-Path $logs ("baseline-" + $timestamp + "-metadata.json")
 $started = (Get-Date).ToUniversalTime().ToString("o")
 $exitCode = 1
 $stackStarted = $false
+# Unique Compose project avoids reusing a previously mutated test tree.
+$composeProject = "gtw-gramps-" + [guid]::NewGuid().ToString("N").Substring(0, 12)
 $envNames = @("COMPOSE_PROJECT_NAME","GRAMPS_API_URL","GRAMPS_USERNAME","GRAMPS_PASSWORD","GRAMPS_TREE_ID","REQUIRE_INTEGRATION")
 $oldEnv = @{}
 foreach ($name in $envNames) { $oldEnv[$name] = [Environment]::GetEnvironmentVariable($name, "Process") }
 # Upstream seed and pytest discover the stack through COMPOSE_PROJECT_NAME.
-$env:COMPOSE_PROJECT_NAME = "gtw-gramps-baseline"
+$env:COMPOSE_PROJECT_NAME = $composeProject
 # Never accidentally execute tests against an inherited, potentially live Gramps instance.
 foreach ($name in @("GRAMPS_API_URL","GRAMPS_USERNAME","GRAMPS_PASSWORD","GRAMPS_TREE_ID")) {
   [Environment]::SetEnvironmentVariable($name, $null, "Process")
@@ -63,7 +65,7 @@ try {
     if ($actual -ne $pin) { throw "Commit mismatch: $actual" }
     if ((& git status --porcelain).Count -gt 0) { throw "Checkout contains local changes; aborting" }
     InvokeChecked "Prepare Python dependencies" @("uv","sync","--group","dev","--frozen")
-    InvokeChecked "Start isolated Gramps Web test stack" @("docker","compose","-p","gtw-gramps-baseline","-f","docker-compose.test.yml","up","-d","--wait")
+    InvokeChecked "Start isolated Gramps Web test stack" @("docker","compose","-p",$composeProject,"-f","docker-compose.test.yml","up","-d","--wait")
     $stackStarted = $true
     InvokeChecked "Seed upstream test database" @("uv","run","--no-sync","python","scripts/seed_test_db.py","--skip-if-seeded")
     InvokeChecked "Run upstream integration tests" @("uv","run","--no-sync","pytest","-m","integration","--no-cov","-q")
@@ -76,7 +78,7 @@ try {
   $exitCode = 1
 } finally {
   @{
-    compose_project = "gtw-gramps-baseline"
+    compose_project = $composeProject
     require_integration = $true
     inherited_gramps_credentials_ignored = $true
     upstream_repo = $source
@@ -93,11 +95,11 @@ try {
   Write-Host "Metadata: $pinFile"
   if ($CleanupTestVolumes -and $stackStarted) {
     Push-Location $checkout
-    try { & docker compose -p gtw-gramps-baseline -f docker-compose.test.yml down -v 2>&1 | Out-File -FilePath $record -Append -Encoding utf8 }
+    try { & docker compose -p $composeProject -f docker-compose.test.yml down -v 2>&1 | Out-File -FilePath $record -Append -Encoding utf8 }
     finally { Pop-Location }
-    Write-Host "CAUTION: only the isolated upstream test stack volumes were removed."
+    Write-Host "Cleanup requested for isolated Compose project: $composeProject"
   } else {
-    Write-Host "Test volumes preserved. Use -CleanupTestVolumes to remove ONLY this test stack's volumes after verifying project identity."
+    Write-Host "Test volumes preserved for Compose project $composeProject. Run with -CleanupTestVolumes on a fresh run only; to remove this exact past stack, use the project name recorded in metadata."
   }
 }
 exit $exitCode
