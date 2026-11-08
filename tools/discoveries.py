@@ -98,6 +98,11 @@ def compare(root, records):
             errors.append('catalog_profile requires separate nonempty description, use_case, limitations and project_type')
         if 'initialize_research_profile' in r and (r['initialize_research_profile'] is not True or profile is None):
             errors.append('initialize_research_profile requires true and a reviewed catalog_profile')
+        preliminary = r.get('preliminary_priority')
+        if 'preliminary_priority' in r and (
+                not isinstance(preliminary, str) or preliminary not in ('P1', 'P2', 'P3')
+                or profile is None or r.get('event_type') != 'new_project'):
+            errors.append('preliminary_priority requires P1–P3 and a new catalog profile')
         for field in ('license_evidence', 'claims_vs_verified', 'risks'):
             if field not in r:
                 errors.append('missing field: ' + field)

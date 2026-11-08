@@ -65,6 +65,7 @@ globalThis.WatchUI = (() => {
     if(card.repository_reference_issue)return '<p class="meta">Проблема ссылки: '+esc(card.repository_reference_issue.result==='not_found'?'GitHub HTTP 404 — публичный репозиторий не найден':'профиль владельца, не репозиторий')+'. Сначала проверить адрес; это не оценка характеристик.</p>';
     const p=card.practical_priority;
     if(p?.review_status==='approved')return '<p class="meta">Практический приоритет по задаче · '+esc(p.evidence_level)+' · утверждён пользователем. Работа проекта независимо не проверялась.</p>';
+    if(card.preliminary_priority)return '<p class="meta">Предварительный приоритет · '+esc(card.preliminary_priority)+'</p>';
     const e=card.evaluation;
     if(!e)return '<p class="meta">Оценка приоритета отсутствует.</p>';
     const status={triaged:'каталожный триаж',proposed:'предложение не утверждено',approved:'утверждённая оценка'}[e.review_status]||'статус не установлен';

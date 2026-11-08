@@ -8,6 +8,8 @@ from pathlib import Path
 import re
 from urllib.parse import urlsplit
 
+UPDATER_WORKFLOW = '.github/workflows/watch-updater.yml'
+
 
 def canonical_url(value):
     if not isinstance(value, str):
@@ -308,8 +310,10 @@ def validate(root, baseline=None):
     except (ValueError, OSError, KeyError, TypeError, AttributeError) as exc:
         issue('error', 'practical_priority_proposal', 'data/practical-priority-proposals.json', str(exc))
     workflows = root / '.github' / 'workflows'
-    if workflows.exists() and any(workflows.iterdir()):
-        issue('error', 'actions', '.github/workflows', 'GitHub Actions are prohibited')
+    if workflows.exists():
+        for path in workflows.iterdir():
+            if path.relative_to(root).as_posix() != UPDATER_WORKFLOW or not path.is_file() or path.is_symlink():
+                issue('error', 'actions', path.relative_to(root).as_posix(), 'Unexpected GitHub Actions workflow')
     return dict(counts=dict(catalog=len(catalog), research=len(research),
                             editions=len(loaded.get('digest.json', []))),
                 russia_ratings=dict(russia), issues=issues,

@@ -1,5 +1,87 @@
 [
   {
+    "date": "2026-11-08",
+    "title": "Значимые изменения проектов",
+    "summary": "Утверждённые события; источники и дельты указаны в записях.",
+    "items": [
+      {
+        "repo": "openheritageonline/agent-tooling",
+        "priority": "P2",
+        "change": "OpenHeritage Agent Tooling 3.5.0: восемь Agent Skills, включая новый Catalog Review для проверки источников и канонических мест. 6 ноября версия этого навыка 1.0.1 уточнила обработку HTTP 403.",
+        "link": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/README.md",
+        "components": "Archive Adapter · Research Workspace · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+        "action": "Предварительный P2. Начать с чтения: найти один украинский архивный источник и сопоставить выдачу с конкретной страницей и архивной ссылкой. Оценить соответствие задачам до подключения операций изменения.",
+        "event_date": "2026-11-06",
+        "significance_reason": "Один набор связывает поиск по украинским источникам, рабочее пространство исследования и исторический справочник мест; режим поиска можно использовать отдельно от редакторского доступа.",
+        "review_status": "approved",
+        "reviewer": "Codex: проверка первоисточников по поручению пользователя добавить этот репозиторий с P2 и отправить в main",
+        "reviewed_at": "2026-11-08T17:04:13.589287+00:00",
+        "discovery_id": "github:openheritageonline/agent-tooling:watch-2026-11-08",
+        "source_urls": [
+          {
+            "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/README.md",
+            "type": "README"
+          },
+          {
+            "url": "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/git/trees/0697af3db34951cd112410eee375c353e8b7bf19?recursive=1",
+            "type": "commit"
+          },
+          {
+            "url": "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/commits/e26fcca8361080d5a94b0d1f9f92c8fbf47283d9",
+            "type": "commit"
+          },
+          {
+            "url": "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/commits/0697af3db34951cd112410eee375c353e8b7bf19",
+            "type": "commit"
+          },
+          {
+            "url": "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/commits?per_page=12",
+            "type": "commit"
+          },
+          {
+            "url": "https://api.github.com/repos/OpenHeritageOnline/agent-tooling",
+            "type": "README"
+          },
+          {
+            "url": "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/releases",
+            "type": "release"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/.codex-plugin/plugin.json",
+            "type": "README"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/.claude-plugin/plugin.json",
+            "type": "README"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/server.json",
+            "type": "README"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-archives/SKILL.md",
+            "type": "README"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-researches/SKILL.md",
+            "type": "README"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-catalog-review/SKILL.md",
+            "type": "README"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-catalog-review/references/place-review.md",
+            "type": "README"
+          }
+        ],
+        "research_link": "project.html?repo=openheritageonline%2Fagent-tooling",
+        "previous_state": "В каталоге Genealogy Tech Watch отдельной карточки репозитория не было.",
+        "new_state": "На 6 ноября 2026 года в дереве 0697af3 восемь файлов SKILL.md. Публичный удалённый MCP поддерживает чтение; изменения выполняются отдельно через авторизованный API с ограниченными правами."
+      }
+    ]
+  },
+  {
     "date": "2026-11-06",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",

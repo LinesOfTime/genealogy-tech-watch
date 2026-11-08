@@ -29,7 +29,8 @@ def build(catalog,research,checks=None,proposals=None):
         url=c['url'].lower().rstrip('/')
         profile=bool(re.fullmatch(r'/[^/]+/?',urlsplit(url).path))
         reference=missing.get(url)
-        state=('reference_issue' if reference or profile else 'missing' if not ev else
+        state=('reference_issue' if reference or profile else
+               'triaged' if not ev and c.get('preliminary_priority') else 'missing' if not ev else
                'changed' if latest and date and latest>date else ev.get('review_status','missing'))
         if state not in STATES:state='missing'
         flags=[]

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "86d026bd41ca5f244d585947feb10eaef4cfbabf69eb116a6ef011932939f0ac",
+  "source_hash": "a098e87b338bb9bd218fe420ce3698495bf96011fb7d217eb58c1a51528c68c9",
   "tasks": [
     {
       "id": "transcribe",
@@ -14438,6 +14438,161 @@
       "use_case": "На двух разрешённых страницах сохранить сканы, получить машинную транскрипцию и отдельно перевод или модернизированное чтение; найти известное имя и сверить ответ, цитату и номер страницы с оригиналом.",
       "license": "Не установлена: LICENSE отсутствует в проверенном корне, поле license не задано в pyproject.toml",
       "limitations": "Нужны Python 3.11+, сервер совместимых моделей и ресурсы для vision/embeddings. Удалённые модели могут получать документы. Лицензия проекта не установлена: отдельного LICENSE в проверенном корне и поля license в pyproject нет. Качество чтения, поиска, цитирования и переносимость на русские документы независимо не проверены; 0.46.7 — номер в метаданных, GitHub Releases пуст.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "places",
+      "project": "openheritageonline/agent-tooling",
+      "url": "https://github.com/OpenHeritageOnline/agent-tooling",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "use_case",
+          "excerpt": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "components",
+          "excerpt": "Archive Adapter · Research Workspace · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "editorial_use_case",
+          "excerpt": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Набор инструментов интеграции для ИИ-агентов и конфигурация удалённого MCP."
+        }
+      },
+      "purpose": "Инструменты интеграции с OpenHeritage для поиска по украинским архивным, мемориальным и генеалогическим материалам. В репозитории восемь Agent Skills и конфигурация подключения к публичному MCP.",
+      "use_case": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+      "license": "Не установлена",
+      "limitations": "Охват определяется коллекциями OpenHeritage; полнота по конкретному архиву и историческому АТД не установлена. Участник ограничен правами записи и scope; модераторские операции выходят за рамки описанного сценария. При исправлении проверенного места или утверждённого источника статус проверки может измениться. Лицензия репозитория не установлена. Работа сервиса и качество результатов независимо не проверялись.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проверьте историческое название, нужный год и административную принадлежность по источнику. Совпадение современного названия не подтверждает место события."
+    },
+    {
+      "task": "research",
+      "project": "openheritageonline/agent-tooling",
+      "url": "https://github.com/OpenHeritageOnline/agent-tooling",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "use_case",
+          "excerpt": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "components",
+          "excerpt": "Archive Adapter · Research Workspace · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "editorial_use_case",
+          "excerpt": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Набор инструментов интеграции для ИИ-агентов и конфигурация удалённого MCP."
+        }
+      },
+      "purpose": "Инструменты интеграции с OpenHeritage для поиска по украинским архивным, мемориальным и генеалогическим материалам. В репозитории восемь Agent Skills и конфигурация подключения к публичному MCP.",
+      "use_case": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+      "license": "Не установлена",
+      "limitations": "Охват определяется коллекциями OpenHeritage; полнота по конкретному архиву и историческому АТД не установлена. Участник ограничен правами записи и scope; модераторские операции выходят за рамки описанного сценария. При исправлении проверенного места или утверждённого источника статус проверки может измениться. Лицензия репозитория не установлена. Работа сервиса и качество результатов независимо не проверялись.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "agents",
+      "project": "openheritageonline/agent-tooling",
+      "url": "https://github.com/OpenHeritageOnline/agent-tooling",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "description",
+          "excerpt": "Инструменты интеграции с OpenHeritage для поиска по украинским архивным, мемориальным и генеалогическим материалам. В репозитории восемь Agent Skills и конфигурация подключения к публичному MCP.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "use_case",
+          "excerpt": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "components",
+          "excerpt": "Archive Adapter · Research Workspace · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "editorial_summary",
+          "excerpt": "Инструменты интеграции с OpenHeritage для поиска по украинским архивным, мемориальным и генеалогическим материалам. В репозитории восемь Agent Skills и конфигурация подключения к публичному MCP.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "openheritageonline/agent-tooling",
+          "field": "editorial_use_case",
+          "excerpt": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Набор инструментов интеграции для ИИ-агентов и конфигурация удалённого MCP."
+        }
+      },
+      "purpose": "Инструменты интеграции с OpenHeritage для поиска по украинским архивным, мемориальным и генеалогическим материалам. В репозитории восемь Agent Skills и конфигурация подключения к публичному MCP.",
+      "use_case": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+      "license": "Не установлена",
+      "limitations": "Охват определяется коллекциями OpenHeritage; полнота по конкретному архиву и историческому АТД не установлена. Участник ограничен правами записи и scope; модераторские операции выходят за рамки описанного сценария. При исправлении проверенного места или утверждённого источника статус проверки может измениться. Лицензия репозитория не установлена. Работа сервиса и качество результатов независимо не проверялись.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "usage_context": null,

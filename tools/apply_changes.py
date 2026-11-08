@@ -91,6 +91,8 @@ def build_plan(root, records, edition_date):
                     discovery_id=r['discovery_id'], reviewed_content_hash=r['reviewed_content_hash'],
                     basis='Редакционное описание по первоисточникам; не независимое испытание')
                 card.update(copy.deepcopy(profile))
+            if 'preliminary_priority' in r:
+                card['priority'] = card['preliminary_priority'] = r['preliminary_priority']
             catalog.append(card)
         target = card['url']
         if target in touched:

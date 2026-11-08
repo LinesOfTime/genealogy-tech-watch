@@ -2,10 +2,10 @@
   "version": 1,
   "method": "Практический выбор по задаче и роли; аудит сохранённых оценок, без новых баллов и утверждений",
   "counts": {
-    "total": 187,
+    "total": 188,
     "priorities": {
       "P3": 3,
-      "P2": 89,
+      "P2": 90,
       "P1": 72,
       "Не оценён": 23
     },
@@ -13,7 +13,7 @@
       "reference_issue": 4,
       "missing": 3,
       "changed": 0,
-      "triaged": 0,
+      "triaged": 1,
       "proposed": 0,
       "approved": 0,
       "practical_approved": 180
@@ -25,7 +25,7 @@
       "P3": 19
     },
     "p1_e0": 46,
-    "missing_evaluations": 12,
+    "missing_evaluations": 13,
     "independent_reports": 0
   },
   "states": {
@@ -14838,6 +14838,37 @@
       "latest_source_review": "2026-11-06",
       "rationale": "Обоснование оценки отсутствует.",
       "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "openheritageonline/agent-tooling",
+      "url": "https://github.com/OpenHeritageOnline/agent-tooling",
+      "legacy_priority": "P2",
+      "priority_original": "Не оценён",
+      "state": "triaged",
+      "legacy_state": "triaged",
+      "state_label": "Только каталожный триаж",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Набор инструментов интеграции для ИИ-агентов и конфигурация удалённого MCP."
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-08",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Проверить первоисточник, конкретный сценарий, вход и результат. Сохранённая метка не обоснована повторной оценкой.",
       "source_urls": [],
       "flags": [],
       "independent_report": null,

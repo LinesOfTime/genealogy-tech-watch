@@ -96,6 +96,11 @@ def event_issues(root, catalog, research, digest):
             if record.get('decision')=='research_only' and d:
                 error(loc,'Research-only event must not be in digest')
             profile=record.get('catalog_profile')
+            if 'preliminary_priority' in record:
+                priority=record['preliminary_priority']
+                if (priority not in ('P1', 'P2', 'P3') or card.get('priority')!=priority
+                        or card.get('preliminary_priority')!=priority or any(item.get('priority')!=priority for _,item in d)):
+                    error(loc,'Preliminary priority differs from reviewed journal')
             if profile is not None:
                 if not isinstance(profile,dict) or any(card.get(field)!=value for field,value in profile.items()):
                     error(loc,'Initial catalogue profile differs from reviewed journal')

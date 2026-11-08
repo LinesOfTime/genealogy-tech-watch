@@ -18,6 +18,18 @@ const {chromium} = require('playwright');
       await route.fulfill({body:await fs.readFile(path.join(root,name)),contentType:type});
     });
     await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
+    await page.locator('#search').fill('openheritageonline/agent-tooling');
+    await page.locator('#priority').selectOption('P2');
+    assert.match(await page.locator('#shown').innerText(),/^Показано 1 из /);
+    assert.match(await page.locator('.card').innerText(),/Предварительный приоритет · P2/);
+    await page.locator('.card-links a[href^="project.html"]').click();
+    await page.waitForLoadState('networkidle');
+    const openHeritage = await page.locator('#content').innerText();
+    for(const text of ['Archive Adapter','Research Workspace','Place Resolver/АТД','provenance/evidence',
+      'только для поиска и чтения','Personal API','1.0.1','Не установлена']) {
+      assert.ok(openHeritage.includes(text),text);
+    }
+    await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
     await page.locator('#search').fill('Швейцария');
     assert.match(await page.locator('#shown').innerText(),/^Показано 1 из /);
     assert.match(await page.locator('.usage-geography').innerText(),/Швейцария.*e-periodica/);
