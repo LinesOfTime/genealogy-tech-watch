@@ -57,6 +57,16 @@ class GitHubMetadataAuditTests(unittest.TestCase):
         self.assertEqual(result[0]['screening'], 'repository_url_correction_candidate')
         self.assertEqual(result[0]['suggested_url'], 'https://gitlab.com/scripta/escriptorium')
         self.assertEqual(result[0]['status'], 'request_failed')
+        self.assertFalse(result[0].get('catalog_source_confirms_relocation', False))
+
+    def test_existing_issue_and_source_are_preserved(self):
+        cards = [{'name': 'eScriptorium',
+                  'url': 'https://github.com/scripta/escriptorium',
+                  'source': 'https://gitlab.com/scripta/escriptorium/-/blob/develop/LICENSE',
+                  'repository_reference_issue': {'result': 'not_found'}}]
+        result = audit.inspect(cards, lambda repo: (_ for _ in ()).throw(RuntimeError('HTTP 404')))
+        self.assertTrue(result[0]['catalog_source_confirms_relocation'])
+        self.assertEqual(result[0]['existing_reference_issue']['result'], 'not_found')
 
     def test_request_errors_are_visible(self):
         result = audit.inspect([{'name': 'A', 'url': 'https://github.com/a/b'}],
