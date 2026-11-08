@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linesoftime.github.io/genealogy-tech-watch/trials.schema.json",
+  "title": "Genealogy Tech Watch — reproducible trial registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "updated_at", "trials"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "updated_at": {"type": "string", "format": "date"},
+    "description": {"type": "string"},
+    "trials": {"type": "array", "items": {"$ref": "#/$defs/trial"}}
+  },
+  "$defs": {
+    "nonempty": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "trial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "project", "status", "performed_at", "reviewed_at", "reviewer", "project_version", "environment", "dataset", "method", "metrics", "outcome", "limitations", "report_url", "report_sha256", "independent_of_author"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$"},
+        "project": {"$ref": "#/$defs/nonempty"},
+        "status": {"enum": ["submitted", "reviewed", "accepted", "rejected"]},
+        "performed_at": {"type": "string", "format": "date"},
+        "reviewed_at": {"type": "string", "format": "date"},
+        "reviewer": {"$ref": "#/$defs/nonempty"},
+        "project_version": {"$ref": "#/$defs/nonempty"},
+        "project_commit": {"type": ["string", "null"]},
+        "environment": {
+          "type": "object", "additionalProperties": false,
+          "required": ["hardware", "software", "configuration"],
+          "properties": {"hardware": {"$ref": "#/$defs/nonempty"}, "software": {"$ref": "#/$defs/nonempty"}, "configuration": {"$ref": "#/$defs/nonempty"}}
+        },
+        "dataset": {
+          "type": "object", "additionalProperties": false,
+          "required": ["name", "version", "access", "rights", "size", "reference_truth"],
+          "properties": {"name": {"$ref": "#/$defs/nonempty"}, "version": {"$ref": "#/$defs/nonempty"}, "access": {"$ref": "#/$defs/nonempty"}, "rights": {"$ref": "#/$defs/nonempty"}, "size": {"$ref": "#/$defs/nonempty"}, "reference_truth": {"$ref": "#/$defs/nonempty"}, "hash_sha256": {"type": ["string","null"]}}
+        },
+        "method": {"$ref": "#/$defs/nonempty"},
+        "metrics": {"type": "array", "minItems": 1, "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["name", "value", "unit", "definition", "sample_size"],
+          "properties": {"name": {"$ref": "#/$defs/nonempty"}, "value": {"type": "number"}, "unit": {"$ref": "#/$defs/nonempty"}, "definition": {"$ref": "#/$defs/nonempty"}, "sample_size": {"type": "integer", "minimum": 1}, "confidence_interval": {"type": ["string", "null"]}}
+        }},
+        "outcome": {"$ref": "#/$defs/nonempty"},
+        "limitations": {"$ref": "#/$defs/nonempty"},
+        "report_url": {"$ref": "#/$defs/url"},
+        "report_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "independent_of_author": {"type": "boolean"},
+        "review_notes": {"type": "string"},
+        "source_urls": {"type": "array", "items": {"$ref": "#/$defs/url"}}
+      }
+    }
+  }
+}
