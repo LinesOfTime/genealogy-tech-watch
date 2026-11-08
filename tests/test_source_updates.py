@@ -34,5 +34,24 @@ class SourceUpdatesTests(unittest.TestCase):
         self.assertIn("esc(u.summary)",js)
         self.assertIn("esc(u.limitations)",js)
 
+    def test_validator_rejects_missing_project_and_unpinned_sources(self):
+        import tempfile
+        import sys
+        sys.path.insert(0, str(ROOT / "tools"))
+        from source_updates import validate_source_updates
+        with tempfile.TemporaryDirectory() as directory:
+            root=pathlib.Path(directory)
+            (root/"docs").mkdir()
+            data=json.loads((ROOT/"docs/source-updates.json").read_text(encoding="utf-8"))
+            data["items"][1]["sources"][0]=data["items"][1]["sources"][0].replace(
+                data["items"][1]["commit"],"0"*40)
+            data["items"][2]["project"]="missing/not-in-catalog"
+            (root/"docs/source-updates.json").write_text(json.dumps(data),encoding="utf-8")
+            catalog=[{"name":x["project"]} for x in data["items"] if x["project"]!="missing/not-in-catalog"]
+            problems=validate_source_updates(root,catalog)
+            self.assertTrue(any("pinned" in x["message"] for x in problems))
+            self.assertTrue(any("not present" in x["message"] for x in problems))
+
 if __name__=="__main__":
     unittest.main()
+

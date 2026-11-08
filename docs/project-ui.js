@@ -4,7 +4,8 @@
   try {
     const load = async path => { const response = await fetch(path, {cache:'no-store'}); if (!response.ok) throw Error(`Не удалось загрузить ${path}`); return response.json(); };
     const [catalog, research, digest, usage] = await Promise.all(['catalog.json','research.json','digest.json','usage-context.json'].map(load));
-    const updates = await load('source-updates.json');
+    // Optional commentary must never make an existing project detail unavailable.
+    const updates = await load('source-updates.json').catch(error => { console.warn('Source update notes unavailable', error); return {items:[]}; });
     const requested = (new URLSearchParams(location.search).get('repo') || '').toLowerCase();
     const x = catalog.find(v => v.name.toLowerCase() === requested || v.url.toLowerCase().replace(/\/$/, '').replace('https://github.com/', '') === requested);
     if (!x) throw Error('Проект не найден: ' + requested);
