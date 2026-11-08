@@ -24,6 +24,16 @@ $pinFile = Join-Path $logs ("baseline-" + $timestamp + "-metadata.json")
 $started = (Get-Date).ToUniversalTime().ToString("o")
 $exitCode = 1
 $stackStarted = $false
+$envNames = @("COMPOSE_PROJECT_NAME","GRAMPS_API_URL","GRAMPS_USERNAME","GRAMPS_PASSWORD","GRAMPS_TREE_ID","REQUIRE_INTEGRATION")
+$oldEnv = @{}
+foreach ($name in $envNames) { $oldEnv[$name] = [Environment]::GetEnvironmentVariable($name, "Process") }
+# Upstream seed and pytest discover the stack through COMPOSE_PROJECT_NAME.
+$env:COMPOSE_PROJECT_NAME = "gtw-gramps-baseline"
+# Never accidentally execute tests against an inherited, potentially live Gramps instance.
+foreach ($name in @("GRAMPS_API_URL","GRAMPS_USERNAME","GRAMPS_PASSWORD","GRAMPS_TREE_ID")) {
+  [Environment]::SetEnvironmentVariable($name, $null, "Process")
+}
+$env:REQUIRE_INTEGRATION = "1"
 function HasCommand($name) { return [bool](Get-Command $name -ErrorAction SilentlyContinue) }
 function InvokeChecked([string]$label, [string[]]$argv) {
   Write-Host "== $label =="
@@ -67,6 +77,8 @@ try {
 } finally {
   @{
     compose_project = "gtw-gramps-baseline"
+    require_integration = $true
+    inherited_gramps_credentials_ignored = $true
     upstream_repo = $source
     upstream_commit = $pin
     started_at_utc = $started
@@ -76,6 +88,7 @@ try {
     tests_are = "upstream integration suite, not independent G-MCP-01 T1-T7"
     log = $record
   } | ConvertTo-Json -Depth 4 | Set-Content -Encoding UTF8 $pinFile
+  foreach ($name in $envNames) { [Environment]::SetEnvironmentVariable($name, $oldEnv[$name], "Process") }
   Write-Host "Log: $record"
   Write-Host "Metadata: $pinFile"
   if ($CleanupTestVolumes -and $stackStarted) {
