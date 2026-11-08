@@ -10359,7 +10359,7 @@
   },
   {
     "name": "scripta/escriptorium",
-    "url": "https://github.com/scripta/escriptorium",
+    "url": "https://gitlab.com/scripta/escriptorium",
     "section": "Источники, OCR и архивы",
     "description": "HTR-система; основное размещение GitLab",
     "use_case": "Редакционный сценарий: организовать в eScriptorium пробную кампанию транскрипции рукописных страниц, импортировать изображения и подходящую модель, оценить автоматическую сегментацию и распознавание и выполнить ручную сверку. Сценарий независимо не испытывался.",
@@ -10422,16 +10422,19 @@
       "next_action": "Проверить сценарий: Редакционный сценарий: организовать в eScriptorium пробную кампанию транскрипции рукописных страниц, импортировать изображения и подходящую модел",
       "recheck_trigger": "Сверка README, LICENSE, релизов и тест на российских данных",
       "source_urls": [
-        "https://github.com/scripta/escriptorium"
+        "https://gitlab.com/scripta/escriptorium"
       ],
       "reviewer": "Каталожный аудит",
       "review_status": "triaged",
       "verification_issue": "Указанный GitHub README не найден (404); проверить канонический upstream GitLab и зеркало."
     },
     "repository_reference_issue": {
-      "result": "not_found",
+      "result": "resolved_relocated",
       "checked_on": "2026-11-04",
-      "url": "https://github.com/scripta/escriptorium"
+      "url": "https://gitlab.com/scripta/escriptorium",
+      "resolved_on": "2026-11-08",
+      "previous_url": "https://github.com/scripta/escriptorium",
+      "basis": "Existing catalog source and editorial correction identify GitLab as primary upstream; former GitHub URL returns 404."
     }
   },
   {
