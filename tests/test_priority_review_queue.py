@@ -17,6 +17,12 @@ class PriorityQueueTests(unittest.TestCase):
         self.assertIn('unrated', result[0]['reasons'])
         self.assertIn('no_dated_review', result[1]['reasons'])
 
+    def test_structured_review_is_not_unrated(self):
+        card = {'name': 'A', 'priority': 'P2',
+                'practical_priority': {'priority': 'P1', 'reviewed_on': '2026-11-04',
+                                       'pilot': 'Check a sample'}}
+        self.assertEqual(module.queue([card], date(2026, 11, 8)), [])
+
     def test_recent_review_not_queued(self):
         card = {'name': 'A', 'practical_priority': 'P1',
                 'practical_priority_history': [{'reviewed_at': '2026-11-07T12:00:00Z'}]}
