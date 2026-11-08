@@ -128,11 +128,20 @@ def main():
         except URLError as exc:
             raise RuntimeError('network error: ' + str(exc.reason)) from exc
     items = inspect(cards, fetch, args.pause)
+    priority_order = {'repository_status_change_candidate': 0,
+                      'activity_after_catalog_event': 1,
+                      'recent_activity_review': 2,
+                      'invalid_future_timestamp': 3,
+                      'unknown_activity': 4,
+                      'unverified': 5}
+    candidates = [item for item in items if item['screening'] in priority_order]
+    candidates.sort(key=lambda item: (priority_order[item['screening']], str(item['name'])))
     summary = dict(Counter(item['status'] for item in items))
     screening_counts = dict(Counter(item['screening'] for item in items))
     report = {'checked_at': datetime.now(timezone.utc).isoformat(),
               'catalog_count': len(cards), 'status_counts': summary,
               'screening_counts': screening_counts,
+              'candidate_count': len(candidates), 'candidates': candidates,
               'items': items,
               'limitations': 'Activity screening only. Pushed-at timestamps and archived flags do not establish a substantive release, change, or quality. Inspect source commits, README, release notes, license and tests before updating cards.'}
     args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
