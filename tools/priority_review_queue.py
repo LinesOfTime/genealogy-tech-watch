@@ -37,9 +37,23 @@ def queue(cards, as_of, max_age=90):
         elif age >= max_age:
             reasons.append('stale_review')
         if reasons:
+            rationale = practical.get('rationale', '') if isinstance(practical, dict) else ''
+            if 'unrated' in reasons:
+                if not stamp:
+                    review_group = 'initial_review'
+                elif 'лиценз' in rationale.lower() or 'прав' in rationale.lower():
+                    review_group = 'rights_or_license_check'
+                else:
+                    review_group = 'evidence_or_pilot_check'
+            elif 'no_dated_review' in reasons or 'invalid_review_date' in reasons:
+                review_group = 'document_review_date'
+            else:
+                review_group = 'scheduled_reassessment'
             result.append(dict(name=card.get('name'), url=card.get('url'),
                                priority=priority, reviewed_at=stamp,
-                               age_days=age, reasons=reasons,
+                               age_days=age, reasons=reasons, review_group=review_group,
+                               evidence_level=(practical.get('evidence_level') if isinstance(practical, dict) else None),
+                               rationale=rationale,
                                next_action=latest.get('next_action') or (practical.get('pilot') if isinstance(practical, dict) else None) or card.get('practical_priority_next_action')))
     return sorted(result, key=lambda x: (0 if 'unrated' in x['reasons'] else 1,
                                         0 if 'no_dated_review' in x['reasons'] else 1,
