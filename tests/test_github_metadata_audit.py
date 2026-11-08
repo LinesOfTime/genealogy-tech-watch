@@ -44,6 +44,12 @@ class GitHubMetadataAuditTests(unittest.TestCase):
             checked_at=datetime(2026, 11, 8, tzinfo=timezone.utc))
         self.assertEqual(result[0]['screening'], 'repository_status_change_candidate')
 
+    def test_screening_handles_bad_timestamp(self):
+        card = {'name': 'A', 'url': 'https://github.com/a/b'}
+        result = audit.inspect([card], lambda repo: {'pushed_at': 'not-a-date'},
+            checked_at=datetime(2026, 11, 8, tzinfo=timezone.utc))
+        self.assertEqual(result[0]['screening'], 'unknown_activity')
+
     def test_request_errors_are_visible(self):
         result = audit.inspect([{'name': 'A', 'url': 'https://github.com/a/b'}],
                                lambda repo: (_ for _ in ()).throw(RuntimeError('HTTP 404')))
