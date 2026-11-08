@@ -11,10 +11,16 @@ VALID = {'P1', 'P2', 'P3', 'Не оценён'}
 def queue(cards, as_of, max_age=90):
     result = []
     for card in cards:
-        priority = card.get('practical_priority', card.get('priority', 'Не оценён'))
+        practical = card.get('practical_priority')
+        priority = (practical.get('priority', 'Не оценён') if isinstance(practical, dict)
+                    else practical if isinstance(practical, str)
+                    else card.get('priority', 'Не оценён'))
         history = card.get('practical_priority_history') or []
         latest = history[-1] if isinstance(history, list) and history and isinstance(history[-1], dict) else {}
-        stamp = latest.get('reviewed_at') or card.get('practical_priority_reviewed_at')
+        stamp = (latest.get('reviewed_at') or
+                 (practical.get('reviewed_on') or practical.get('approved_at')
+                  if isinstance(practical, dict) else None) or
+                 card.get('practical_priority_reviewed_at'))
         age = None
         if isinstance(stamp, str):
             try:
@@ -34,7 +40,7 @@ def queue(cards, as_of, max_age=90):
             result.append(dict(name=card.get('name'), url=card.get('url'),
                                priority=priority, reviewed_at=stamp,
                                age_days=age, reasons=reasons,
-                               next_action=latest.get('next_action') or card.get('practical_priority_next_action')))
+                               next_action=latest.get('next_action') or (practical.get('pilot') if isinstance(practical, dict) else None) or card.get('practical_priority_next_action')))
     return sorted(result, key=lambda x: (0 if 'unrated' in x['reasons'] else 1,
                                         0 if 'no_dated_review' in x['reasons'] else 1,
                                         -(x['age_days'] or 0), str(x['name'])))
