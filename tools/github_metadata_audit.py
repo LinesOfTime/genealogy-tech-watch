@@ -5,7 +5,7 @@ Metadata is a screening signal, not independent verification of software quality
 """
 import argparse
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import json
 import os
 from pathlib import Path
@@ -34,7 +34,38 @@ def repository_name(url):
     return owner + '/' + repo
 
 
-def inspect(cards, fetch, pause=0):
+def screening(card, metadata, checked_at):
+    """Prioritize manual inspection; activity is NOT evidence of material changes."""
+    if metadata.get('status') != 'ok':
+        return 'unverified'
+    if metadata.get('archived') or metadata.get('disabled'):
+        return 'repository_status_change_candidate'
+    pushed = metadata.get('pushed_at')
+    if not pushed:
+        return 'unknown_activity'
+    try:
+        last_push = datetime.fromisoformat(pushed.replace('Z', '+00:00'))
+    except (ValueError, TypeError):
+        return 'unknown_activity'
+    if last_push > checked_at + timedelta(days=1):
+        return 'invalid_future_timestamp'
+    history = card.get('history') or []
+    latest = max((event.get('date', '')[:10] for event in history
+                  if isinstance(event, dict) and isinstance(event.get('date'), str)), default='')
+    if latest:
+        try:
+            review_day = datetime.fromisoformat(latest).replace(tzinfo=timezone.utc)
+            if last_push > review_day + timedelta(days=1):
+                return 'activity_after_catalog_event'
+        except ValueError:
+            pass
+    if last_push >= checked_at - timedelta(days=30):
+        return 'recent_activity_review'
+    return 'no_recent_activity_signal'
+
+
+def inspect(cards, fetch, pause=0, checked_at=None):
+    checked_at = checked_at or datetime.now(timezone.utc)
     items = []
     cache = {}
     for card in cards:
@@ -70,6 +101,7 @@ def inspect(cards, fetch, pause=0):
                     license_spdx=(license_info.get('spdx_id') if isinstance(license_info, dict) else None),
                     github_url=data.get('html_url'),
                 )
+        row['screening'] = screening(card, row, checked_at)
         items.append(row)
     return items
 
@@ -97,12 +129,14 @@ def main():
             raise RuntimeError('network error: ' + str(exc.reason)) from exc
     items = inspect(cards, fetch, args.pause)
     summary = dict(Counter(item['status'] for item in items))
+    screening_counts = dict(Counter(item['screening'] for item in items))
     report = {'checked_at': datetime.now(timezone.utc).isoformat(),
               'catalog_count': len(cards), 'status_counts': summary,
+              'screening_counts': screening_counts,
               'items': items,
-              'limitations': 'GitHub repository metadata only; no releases, README, license text, quality or compatibility verified.'}
+              'limitations': 'Activity screening only. Pushed-at timestamps and archived flags do not establish a substantive release, change, or quality. Inspect source commits, README, release notes, license and tests before updating cards.'}
     args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(json.dumps({'catalog_count': len(cards), 'status_counts': summary}, ensure_ascii=False))
+    print(json.dumps({'catalog_count': len(cards), 'status_counts': summary, 'screening_counts': screening_counts}, ensure_ascii=False))
     if summary.get('request_failed') or summary.get('invalid_response'):
         raise SystemExit('Some requests failed; inspect the report before using it.')
 
