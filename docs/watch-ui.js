@@ -49,7 +49,7 @@ globalThis.WatchUI = (() => {
   const practical = (x,r) => {
     const chosen=cardContent(x,r).practical;
     const labels={editorial_use_case:'Редакционное исследование',use_case:'Каталог','guide_excerpt:Возможности / сценарий':'Путеводитель от 10 октября 2026'};
-    if(chosen.text)return para(chosen.text)+`<small>${esc(labels[chosen.source])}. Редакционный сценарий; независимое испытание не заявлено.</small>`;
+    if(chosen.text)return para(chosen.text)+`<small>${esc(labels[chosen.source])}. Редакционный сценарий.</small>`;
     return '<p>Конкретный сценарий в имеющихся материалах не описан.</p>';
   };
   const limitations = (x,r) => {
@@ -72,13 +72,13 @@ globalThis.WatchUI = (() => {
     return '<dl><dt>Практический приоритет — что пробовать сейчас</dt><dd>' + esc(p?.priority || 'Не оценён') + ' · ' + status +
       '</dd><dt>Редакционный приоритет — интерес для платформы</dt><dd>' + esc(editorialPriority(card)) +
       '</dd><dt>Доказательность</dt><dd>' + esc(level ? level + ' · из ' + provenance : 'уровень не установлен') +
-      '. ' + (independent ? 'Отмечено независимое испытание; проверьте отчёт.' : 'Независимое испытание не подтверждено.') +
+      (independent ? ' · указано испытание; см. протокол' : '') +
       '</dd></dl><p class="meta">Шкалы независимы: разные P-значения не являются ошибкой.</p>';
   };
   const priorityNote = card => {
     if(card.repository_reference_issue)return '<p class="meta">Проблема ссылки: '+esc(card.repository_reference_issue.result==='not_found'?'GitHub HTTP 404 — публичный репозиторий не найден':'профиль владельца, не репозиторий')+'. Сначала проверить адрес; это не оценка характеристик.</p>';
     const p=card.practical_priority;
-    if(p?.review_status==='approved')return '<p class="meta">Практический приоритет по задаче · '+esc(p.evidence_level)+' · утверждён пользователем. Работа проекта независимо не проверялась.</p>';
+    if(p?.review_status==='approved')return '<p class="meta">Практический приоритет по задаче · '+esc(p.evidence_level)+' · утверждён пользователем.</p>';
     if(card.preliminary_priority)return '<p class="meta">Предварительный приоритет · '+esc(card.preliminary_priority)+'</p>';
     const e=card.evaluation;
     if(!e)return '<p class="meta">Оценка приоритета отсутствует.</p>';
@@ -90,7 +90,7 @@ globalThis.WatchUI = (() => {
     let html='<p class="usage-geography"><b>География источников:</b> '+esc(context.label)+'</p>';
     if(detailed)html+='<p><b>Когда смотреть:</b> '+esc(context.scenario)+'</p><p><b>Границы применения:</b> '+esc(context.boundary)+'</p>'+
       '<details><summary>Откуда географическая подсказка</summary>'+para(context.evidence?.original_text)+
-      '<small>'+esc(context.evidence?.file)+' → '+esc(context.evidence?.key)+' → '+esc(context.evidence?.field)+'. Редакционный материал; не независимое испытание.</small></details>';
+      '<small>'+esc(context.evidence?.file)+' → '+esc(context.evidence?.key)+' → '+esc(context.evidence?.field)+'. Редакционный материал.</small></details>';
     return html;
   };
   return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent, usage, priorityNote, priorityValue, editorialPriority, priorityAxes};
