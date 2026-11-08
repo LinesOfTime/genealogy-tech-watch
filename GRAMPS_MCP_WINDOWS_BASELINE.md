@@ -23,7 +23,7 @@ Windows 11 с Docker Desktop (запущенным Linux Engine), Git и `uv` (P
 powershell -ExecutionPolicy Bypass -File .\tools\run_gramps_baseline.ps1
 ```
 
-Скрипт создаёт отдельную папку `local-gramps-baseline`, загружает исходный код upstream, переключается на **проверенный SHA**, устанавливает зависимости по lock-файлу, поднимает тестовый Gramps Web, засевает fixture и запускает `pytest -m integration --no-cov -q`.
+Скрипт создаёт отдельную папку `local-gramps-baseline`, загружает исходный код upstream, переключается на **проверенный SHA**, устанавливает зависимости по lock-файлу, поднимает тестовый Gramps Web в отдельном Docker Compose-проекте `gtw-gramps-baseline`, засевает fixture и запускает `pytest -m integration --no-cov -q`.
 
 Результаты: `local-gramps-baseline/logs/baseline-*.txt` и `baseline-*-metadata.json`. Они не являются доказательством независимости испытания. **Никакая запись в `docs/trials.json` не добавляется автоматически.**
 
@@ -33,7 +33,7 @@ powershell -ExecutionPolicy Bypass -File .\tools\run_gramps_baseline.ps1
 powershell -ExecutionPolicy Bypass -File .\tools\run_gramps_baseline.ps1 -CleanupTestVolumes
 ```
 
-Внимание: `-CleanupTestVolumes` вызывает `docker compose ... down -v` и уничтожает данные **только этой конкретной тестовой Compose-группы**. Не используйте его, если переименовали проект Compose или разместили в этой группе нужные данные.
+Внимание: `-CleanupTestVolumes` вызывает `docker compose ... down -v` и уничтожает данные **только Compose-проекта `gtw-gramps-baseline`**. Не используйте его, если переименовали проект Compose или разместили в этой группе нужные данные.
 
 ## Следующая стадия
 
