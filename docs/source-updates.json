@@ -142,6 +142,22 @@
       "sources": [
         "https://github.com/UB-Mannheim/escriptorium/blob/26047d53229b895c2ff7433866c24545b5d711c0/packaging/macos/build.sh"
       ]
+    },
+    {
+      "project": "meh313/htr-model-tester",
+      "checked_at": "2026-11-09",
+      "commit": "6e6d93a946aaba0ebe0a95388f56a43da3e0efea",
+      "kind": "evaluation_workflow",
+      "status": "source_verified",
+      "summary": "Локальный интерфейс на Gradio для проб HTR-моделей Kraken: PAGE XML, разметка строк, проверяемая транскрипция, подсчёт CER/WER и экспорт исправленных данных для обучения. Это стенд сравнения, а не универсальная OCR-модель.",
+      "verified": "README конкретного коммита описывает запуск в Ubuntu WSL 2, Kraken 6.0.0, локальный Gradio, импорт Transkribus PAGE XML, полигональную сегментацию BLLA, оценку по проверенному тексту и CSV-экспорт. Код htr_tester/metrics.py реализует редактирующее расстояние с нормализацией Unicode; vision_transcription_service.py выбирает Ollama или OpenRouter.",
+      "limitations": "Модель Kraken должна быть подобрана отдельно для конкретного почерка; сам стенд не доказывает качество на русском языке. Не все изображения остаются только в памяти: README описывает локальное сохранение исходных страниц в run_assets. OpenRouter передаёт изображения внешнему сервису при явном выборе; Ollama может использовать облачную модель, если она выбрана.",
+      "next_action": "Для пилота на контрольных листах ревизии сравнить несколько HTR-чекпойнтов по CER/WER после одинаковой нормализации, сохранить PAGE XML, версии модели и изображения ошибок; отдельно проверить условия передачи сканов в выбранный VLM.",
+      "sources": [
+        "https://github.com/meh313/htr-model-tester/blob/6e6d93a946aaba0ebe0a95388f56a43da3e0efea/README.md",
+        "https://github.com/meh313/htr-model-tester/blob/6e6d93a946aaba0ebe0a95388f56a43da3e0efea/htr_tester/metrics.py",
+        "https://github.com/meh313/htr-model-tester/blob/6e6d93a946aaba0ebe0a95388f56a43da3e0efea/htr_tester/vision_transcription_service.py"
+      ]
     }
   ]
 }
