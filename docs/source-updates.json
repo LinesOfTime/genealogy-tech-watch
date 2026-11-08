@@ -97,6 +97,51 @@
         "https://github.com/mittagessen/kraken/blob/7186ce2a7142b0433e0938a139e6e687a9bb0188/tests/test_tasks.py",
         "https://github.com/mittagessen/kraken/blob/7186ce2a7142b0433e0938a139e6e687a9bb0188/pyproject.toml"
       ]
+    },
+    {
+      "project": "ai-riksarkivet/htrflow",
+      "checked_at": "2026-11-09",
+      "commit": "34ebd90895a3d3cb45888b3b123bc59a719f7f81",
+      "kind": "alto_xml_serialization",
+      "status": "source_verified",
+      "summary": "Исправлено экранирование специальных символов в атрибутах ALTO XML при пословном экспорте, включая случаи переноса слов; добавлены тесты сериализации XML.",
+      "verified": "Дифф коммита 34ebd908 от 16 октября 2026: изменён шаблон alto-4-4, в CONTENT и SUBS_CONTENT используется экранирование HTML/XML; в tests/unit/test_serialization.py добавлены проверки пословных регионов и специальных символов. Корневая лицензия EUPL-1.2.",
+      "limitations": "Это исправление корректности XML-экспорта, а не доказательство улучшения точности распознавания кириллицы. Код и тесты в этом аудите не запускались.",
+      "next_action": "Проверить ALTO XML на собственных контрольных страницах с амперсандами, кавычками, угловыми скобками и переносами; сохранять ссылку от транскрипции к координатам.",
+      "sources": [
+        "https://github.com/AI-Riksarkivet/htrflow/blob/34ebd90895a3d3cb45888b3b123bc59a719f7f81/src/htrflow/serialization/templates/alto-4-4",
+        "https://github.com/AI-Riksarkivet/htrflow/blob/34ebd90895a3d3cb45888b3b123bc59a719f7f81/tests/unit/test_serialization.py"
+      ]
+    },
+    {
+      "project": "htrmopo/htrmopo",
+      "checked_at": "2026-11-09",
+      "commit": "d6e193ff320d58c35fb2b5544f1a4618a33ea282",
+      "kind": "htr_model_provenance",
+      "status": "source_verified",
+      "summary": "Модельные карточки получили связи obsoleted_by и variant_of: можно явно описывать заменяющие модели и родственные варианты, а при публикации передавать связи в метаданные Zenodo.",
+      "verified": "Коммит d6e193f от 22 июля 2026 меняет модельную схему, CLI и генерацию Zenodo related_identifiers; введены isObsoletedBy / isVariantFormOf и добавлены тестовые ресурсы. Корневая лицензия Apache-2.0.",
+      "limitations": "Это метаданные выбора и происхождения моделей, а не новая модель HTR. Качество, скорость и применимость на кириллице из этого изменения не следуют.",
+      "next_action": "Для каталога локальных OCR/HTR-моделей учитывать базовую модель, датасет, вариант квантования и сведения о замене; при сравнении не смешивать варианты с независимыми моделями.",
+      "sources": [
+        "https://github.com/htrmopo/htrmopo/blob/d6e193ff320d58c35fb2b5544f1a4618a33ea282/schema/v1/metadata.schema.json",
+        "https://github.com/htrmopo/htrmopo/blob/d6e193ff320d58c35fb2b5544f1a4618a33ea282/htrmopo/publish.py",
+        "https://github.com/htrmopo/htrmopo/blob/d6e193ff320d58c35fb2b5544f1a4618a33ea282/htrmopo/cli.py"
+      ]
+    },
+    {
+      "project": "ub-mannheim/escriptorium",
+      "checked_at": "2026-11-09",
+      "commit": "26047d53229b895c2ff7433866c24545b5d711c0",
+      "kind": "macos_packaging",
+      "status": "source_verified",
+      "summary": "Исправлена переносимость macOS-сборки eScriptorium: зависимости PostgreSQL, собранные из исходников, перенастраиваются на @rpath и проверяется отсутствие ссылок на временные пути сборки.",
+      "verified": "Коммит 26047d5 от 10 сентября 2026 изменяет packaging/macos/build.sh: исправление install names в бинарных файлах и библиотеках, пропуск статических архивов, контроль недопустимых build-path ссылок.",
+      "limitations": "Изменение касается macOS-пакетирования, а не качества HTR и не поддержки Windows. Успешная установка на компьютере пользователя не проверялась.",
+      "next_action": "Учитывать как развитие переносимой поставки; для локального запуска на Windows отдельно проверять существующие Docker-инструкции и требования сервисов.",
+      "sources": [
+        "https://github.com/UB-Mannheim/escriptorium/blob/26047d53229b895c2ff7433866c24545b5d711c0/packaging/macos/build.sh"
+      ]
     }
   ]
 }
