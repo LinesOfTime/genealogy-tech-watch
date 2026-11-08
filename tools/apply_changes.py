@@ -104,7 +104,18 @@ def build_plan(root, records, edition_date):
                 reason=priority_review['reason'], next_action=priority_review['next_action'],
                 discovery_id=r['discovery_id'], source_urls=copy.deepcopy(r['source_urls']),
                 reviewed_at=r['reviewed_at']))
-            card['practical_priority'] = proposed
+            practical = card.get('practical_priority')
+            if isinstance(practical, dict):
+                practical = copy.deepcopy(practical)
+                practical.update(priority=proposed, previous_priority=previous,
+                                 reviewed_on=r['reviewed_at'][:10],
+                                 rationale=priority_review['reason'],
+                                 pilot=priority_review['next_action'],
+                                 review_status='approved', approved_at=r['reviewed_at'],
+                                 approved_by=r['reviewer'])
+                card['practical_priority'] = practical
+            else:
+                card['practical_priority'] = proposed
             card['practical_priority_reason'] = priority_review['reason']
             card['practical_priority_next_action'] = priority_review['next_action']
         target = card['url']
