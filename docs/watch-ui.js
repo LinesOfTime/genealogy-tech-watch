@@ -60,7 +60,21 @@ globalThis.WatchUI = (() => {
     if(originals.some(value=>/Часть\s*\d+|Ч\d+\s*:/i.test(value))) body+='<details><summary>Исходные редакционные заметки</summary>'+originals.map(para).join('')+'</details>';
     return body;
   };
-  const priorityValue = card => card.repository_reference_issue ? 'Проверить ссылку' : card.practical_priority?.priority || card.priority || 'Не оценён';
+  // The editorial and practical scales are independent and must not be conflated.
+  const priorityValue = card => card.repository_reference_issue ? 'Проверить ссылку' : card.practical_priority?.priority || 'Не оценён';
+  const editorialPriority = card => card.priority || 'Не оценён';
+  const priorityAxes = card => {
+    const p = card.practical_priority;
+    const status = p?.review_status === 'approved' ? 'утверждён' : p ? 'предложение, не утверждено' : 'новая оценка отсутствует';
+    const level = p?.evidence_level || card.evaluation?.evidence_level;
+    const provenance = p?.evidence_level ? 'практической проверки' : 'исторической оценки';
+    const independent = p?.independent_test === true || card.evaluation?.independent_test === true;
+    return '<dl><dt>Практический приоритет — что пробовать сейчас</dt><dd>' + esc(p?.priority || 'Не оценён') + ' · ' + status +
+      '</dd><dt>Редакционный приоритет — интерес для платформы</dt><dd>' + esc(editorialPriority(card)) +
+      '</dd><dt>Доказательность</dt><dd>' + esc(level ? level + ' · из ' + provenance : 'уровень не установлен') +
+      '. ' + (independent ? 'Отмечено независимое испытание; проверьте отчёт.' : 'Независимое испытание не подтверждено.') +
+      '</dd></dl><p class="meta">Шкалы независимы: разные P-значения не являются ошибкой.</p>';
+  };
   const priorityNote = card => {
     if(card.repository_reference_issue)return '<p class="meta">Проблема ссылки: '+esc(card.repository_reference_issue.result==='not_found'?'GitHub HTTP 404 — публичный репозиторий не найден':'профиль владельца, не репозиторий')+'. Сначала проверить адрес; это не оценка характеристик.</p>';
     const p=card.practical_priority;
@@ -79,7 +93,7 @@ globalThis.WatchUI = (() => {
       '<small>'+esc(context.evidence?.file)+' → '+esc(context.evidence?.key)+' → '+esc(context.evidence?.field)+'. Редакционный материал; не независимое испытание.</small></details>';
     return html;
   };
-  return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent, usage, priorityNote, priorityValue};
+  return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent, usage, priorityNote, priorityValue, editorialPriority, priorityAxes};
 })();
 
 // Persist filter values, never catalogue data, in the current URL.

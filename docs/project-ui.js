@@ -10,7 +10,7 @@
     const key = x.name.toLowerCase(), r = research[key] || {};
     document.title = x.name + ' — исследование';
     document.getElementById('title').textContent = x.name;
-    document.getElementById('subtitle').textContent = x.section + ' · практический приоритет ' + WatchUI.priorityValue(x);
+    document.getElementById('subtitle').textContent = x.section + ' · практический приоритет ' + WatchUI.priorityValue(x) + ' · редакционный приоритет ' + WatchUI.editorialPriority(x);
     const applicability = r.russia_applicability || x.russia_applicability;
     const russiaPanel = panel('Применимость для России', para(rating(r.russia_applicability ? r : x)) + para(applicability?.basis || 'Оценка не установлена') +
       (applicability?.original_line ? para('Исходная строка: ' + applicability.original_line) + '<small>Источник: путеводитель от 10 октября 2026, guide_excerpt. Редакционная оценка.</small>' : '') +
@@ -24,7 +24,7 @@
     html += panel('Практическое применение', practicalDetails+ WatchUI.usage(usage?.projects?.[key],true)+WatchUI.practical(x,r));
     html += panel('Ограничения и редакционная оценка', WatchUI.limitations(x,r));
     html += typePanel + russiaPanel;
-    html += panel('Приоритет и основания оценки', WatchUI.priorityNote(x)+para(x.practical_priority?.rationale||x.evaluation?.priority_rationale||'Обоснование оценки отсутствует.')+'<a href="priorities.html?q='+encodeURIComponent(x.name)+'">Проверить актуальность и следующий шаг →</a>');
+    html += panel('Приоритеты и доказательность', WatchUI.priorityAxes(x)+WatchUI.priorityNote(x)+para(x.practical_priority?.rationale||x.evaluation?.priority_rationale||'Обоснование оценки отсутствует.')+'<a href="priorities.html?q='+encodeURIComponent(x.name)+'">Проверить актуальность и следующий шаг →</a>');
     if (x.description_provenance) {
       const p = x.description_provenance;
       html += '<details class="panel"><summary>Происхождение описания назначения</summary>' + ( para('Прежнее описание: ' + p.original_description) +
