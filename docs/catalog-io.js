@@ -13,6 +13,15 @@ var CatalogIO = (() => {
       const identity=url.hostname.replace(/^www\./,'')+url.pathname.replace(/\/$/,'').replace(/\.git$/i,'').toLowerCase(),name=card.name.toLowerCase();
       if(names.has(name)||urls.has(identity))throw Error(`Карточка ${i+1}: повтор имени или адреса.`);
       names.add(name);urls.add(identity);
+      if(card.legal_notes!==undefined){
+        if(!Array.isArray(card.legal_notes))throw Error('Правовые условия должны быть массивом.');
+        for(const note of card.legal_notes){
+          if(!note||typeof note!=='object'||Array.isArray(note)||
+              ['label','text','checked_at'].some(key=>typeof note[key]!=='string')||
+              !Array.isArray(note.sources)||!note.sources.length||
+              note.sources.some(source=>!source||typeof source.title!=='string'||typeof source.url!=='string'))throw Error('Неверный формат правовых условий.');
+        }
+      }
       if(card.practical_priority!==undefined){
         const p=card.practical_priority;
         if(!p||typeof p!=='object'||Array.isArray(p))throw Error(`Карточка ${i+1}: неверная практическая оценка.`);

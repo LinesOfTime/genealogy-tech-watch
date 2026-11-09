@@ -23,7 +23,10 @@ class ApplyPracticalTests(unittest.TestCase):
         self.package = dict(version=1, status='pending', projects=[p])
         self.put('catalog.json', [self.card])
         self.put('digest.json', [])
-        self.put('docs/research.json', {p['project'].lower(): dict(marker='retained')})
+        profile = dict(marker='retained')
+        if self.card.get('legal_notes'):
+            profile['legal_notes'] = copy.deepcopy(self.card['legal_notes'])
+        self.put('docs/research.json', {p['project'].lower(): profile})
         self.put('data/practical-priority-proposals.json', self.package)
         self.put('reports/priority-source-audit-2026-11-04.json', [dict(name=p['project'], url=self.card['url'], result='exists', checked_on='2026-11-04')])
         source = self.root / p['evidence_file']

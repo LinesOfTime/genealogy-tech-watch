@@ -32,6 +32,7 @@ ORIGINS = {'initial': 'Первоначальный реестр', 'watch': 'Git
            'manual': 'Ручное добавление', 'unknown': 'Не установлено'}
 CURRENCY = {'current': 'Актуален', 'reassess': 'Требует переоценки',
             'insufficient': 'Недостаточно данных', 'proposed': 'Предложена новая оценка'}
+LEGAL_NOTE_IDS = ('publication', 'external_processing', 'genetic_data', 'archive_access')
 MODEL_FILES = ('data/classification-decisions.json', 'data/assessment-currency-review.json',
                'data/priority-reassessment-proposals.json', 'docs/source-updates.json')
 
@@ -115,6 +116,61 @@ def assessment_currency(card, research, updates, review, proposal):
 def assessment_hash(value):
     from practical_priorities import package_hash
     return package_hash(value or {})
+
+
+def legal_note_issues(catalog, research):
+    """Check dated legal conditions against their preserved project descriptions."""
+    from urllib.parse import urlsplit
+    issues = []
+    if not isinstance(catalog, list):
+        catalog = []
+    catalog = [card for card in catalog if isinstance(card, dict)
+               and isinstance(card.get('name'), str)]
+    research = research if isinstance(research, dict) else {}
+    for card in catalog:
+        notes = card.get('legal_notes')
+        if notes is None:
+            continue
+        try:
+            if not isinstance(notes, list) or not notes:
+                raise ValueError('Legal notes must be a nonempty array')
+            seen = set()
+            for note in notes:
+                if note['id'] not in LEGAL_NOTE_IDS or note['id'] in seen or note['jurisdiction'] != 'RU':
+                    raise ValueError('Invalid or duplicate legal condition')
+                seen.add(note['id'])
+                for field in ('label', 'text'):
+                    if not isinstance(note[field], str) or not note[field].strip():
+                        raise ValueError('Missing legal condition text')
+                checked = date.fromisoformat(note['checked_at'])
+                if checked > date.today():
+                    raise ValueError('Legal check is in the future')
+                basis = note['project_basis']
+                if basis['field'] != 'description' or basis['value'] != card['description']:
+                    raise ValueError('Project description changed; review legal conditions')
+                if not isinstance(note['sources'], list) or not note['sources']:
+                    raise ValueError('Legal condition requires legal sources')
+                for source in note['sources']:
+                    parsed = urlsplit(source['url'])
+                    if (not isinstance(source['title'], str) or not source['title'].strip()
+                            or parsed.scheme != 'https' or parsed.username or parsed.password
+                            or parsed.hostname not in ('www.consultant.ru', 'consultant.ru',
+                                'mintrud.gov.ru', 'rkn.gov.ru', 'pravo.gov.ru',
+                                'publication.pravo.gov.ru', 'archives.gov.ru')):
+                        raise ValueError('Invalid legal source')
+            profile = research.get(card['name'].lower())
+            if profile is not None and (not isinstance(profile, dict) or profile.get('legal_notes') != notes):
+                raise ValueError('Research legal conditions differ from catalog')
+        except (ValueError, KeyError, TypeError, AttributeError) as exc:
+            issues.append(dict(level='error', code='legal_notes', location=card.get('name'),
+                               message=str(exc)))
+    for name, profile in research.items():
+        if isinstance(profile, dict) and profile.get('legal_notes') and not any(
+                card['name'].lower() == name and card.get('legal_notes') == profile['legal_notes']
+                for card in catalog):
+            issues.append(dict(level='error', code='legal_notes', location=name,
+                               message='Research legal conditions have no matching catalog record'))
+    return issues
 
 
 def enrich(root, catalog, research):
@@ -212,6 +268,20 @@ def schema():
         'type': 'array', 'items': {'type': 'object', 'required': ['name', 'url'],
             'properties': {
                 'name': {'type':'string','minLength':1}, 'url': {'type':'string','format':'uri'},
+                'legal_notes': {'type':'array', 'minItems':1, 'items': {
+                    'type':'object',
+                    'required':['id','jurisdiction','label','text','checked_at','sources','project_basis'],
+                    'properties': {
+                        'id':{'enum':list(LEGAL_NOTE_IDS)}, 'jurisdiction':{'const':'RU'},
+                        'label':{'type':'string','minLength':1}, 'text':{'type':'string','minLength':1},
+                        'checked_at':{'type':'string','format':'date'},
+                        'sources':{'type':'array','minItems':1,'items':{'type':'object',
+                            'required':['title','url'], 'properties':{
+                                'title':{'type':'string','minLength':1},
+                                'url':{'type':'string','format':'uri'}}}},
+                        'project_basis':{'type':'object','required':['field','value'],
+                            'properties':{'field':{'const':'description'},'value':{'type':'string'}}}
+                    }}},
                 'classification': {'type':'object','required':['primary_type','domains','origin','sources','reason'],
                     'properties': {
                         'primary_type': {'enum':list(TYPES)}, 'domains':{'type':'array','uniqueItems':True,'items':{'enum':list(DOMAINS)}},

@@ -28,6 +28,12 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   assert.equal(helper.para('Не указано'),'');
   assert.equal(helper.panel('Пусто',''),'');
   assert.equal(helper.limitations({limitations:'Не установлено'},{}),'');
+  const legalCard=catalog.find(card=>card.legal_notes?.length);
+  const legalHtml=helper.legalNotes(legalCard);
+  assert.ok(legalHtml.includes('Правовые условия для РФ'));
+  assert.ok(legalHtml.includes(legalCard.legal_notes[0].text));
+  assert.ok(legalHtml.includes(legalCard.legal_notes[0].sources[0].url));
+  assert.equal(helper.legalNotes({}), '');
   const duplicated='Очистка таблиц | Часть 51: незакрытые поля: первоисточник';
   const limited=helper.limitations({limitations:duplicated},{audit_notes:duplicated});
   const mainLimited=limited.split('<details>')[0];

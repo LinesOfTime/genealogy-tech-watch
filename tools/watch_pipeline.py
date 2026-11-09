@@ -298,8 +298,9 @@ def validate(root, baseline=None):
                 issue('error', 'baseline', name, str(exc))
     from source_updates import validate_source_updates
     issues.extend(validate_source_updates(root, catalog))
-    from catalog_model import model_issues
+    from catalog_model import model_issues, legal_note_issues
     issues.extend(model_issues(root,catalog,research))
+    issues.extend(legal_note_issues(catalog,research))
     from event_integrity import event_issues
     issues.extend(event_issues(root, catalog, research, loaded.get('digest.json', [])))
     from restore_descriptions import restore, VERSION

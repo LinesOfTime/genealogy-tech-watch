@@ -28,6 +28,7 @@
       (model?.sources||[]).map(source=>para(source.file+' → '+source.field+' — '+JSON.stringify(source.value))).join('')+'</details>');
     const purpose = x.description_provenance ? x.description : r.editorial_summary || x.description;
     html += panel('Назначение', para(purpose));
+    html += WatchUI.legalNotes(x);
     const p=x.practical_priority;
     const practicalDetails=p?'<p><b>'+esc(p.task)+'</b></p>'+para(p.scope)+para(p.rationale)+'<p><b>Небольшая проба:</b> '+esc(p.pilot)+'</p>':'';
     html += panel('Практическое применение', practicalDetails+ WatchUI.usage(usage?.projects?.[key],true)+WatchUI.practical(x,r));

@@ -8,13 +8,33 @@ import unittest
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
-from catalog_model import MODEL_FILES, CURRENCY, DOMAINS, TYPES, enrich, model_issues, assessment_hash
+from catalog_model import MODEL_FILES, CURRENCY, DOMAINS, TYPES, enrich, model_issues, assessment_hash, legal_note_issues
 
 
 class CatalogModelTests(unittest.TestCase):
     def setUp(self):
         self.cards=json.loads((ROOT/'catalog.json').read_text(encoding='utf-8'))
         self.research=json.loads((ROOT/'docs/research.json').read_text(encoding='utf-8'))
+
+    def test_legal_conditions_need_sources_and_preserved_project_basis(self):
+        self.assertEqual(legal_note_issues(self.cards, self.research), [])
+        card = next(copy.deepcopy(c) for c in self.cards if c.get('legal_notes'))
+        key = card['name'].lower()
+        for change in ('sources', 'description', 'future_date', 'duplicate', 'research'):
+            with self.subTest(change=change):
+                candidate = copy.deepcopy(card)
+                profile = copy.deepcopy(self.research[key])
+                if change == 'sources':
+                    candidate['legal_notes'][0]['sources'] = []
+                elif change == 'description':
+                    candidate['description'] = 'Changed project scope'
+                elif change == 'future_date':
+                    candidate['legal_notes'][0]['checked_at'] = '9999-01-01'
+                elif change == 'duplicate':
+                    candidate['legal_notes'].append(copy.deepcopy(candidate['legal_notes'][0]))
+                else:
+                    profile.pop('legal_notes')
+                self.assertTrue(legal_note_issues([candidate], {key: profile}))
 
     def test_preserves_original_records_priorities_and_history(self):
         actual={c['name'].lower():c for c in self.cards}

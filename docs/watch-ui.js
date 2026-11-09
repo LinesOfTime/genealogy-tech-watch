@@ -22,6 +22,18 @@ globalThis.WatchUI = (() => {
     return typeof source === 'string' ? 'Источник' : ({release:'Релиз',commit:'Коммит',README:'Документация',ADR:'Архитектурное решение',paper:'Публикация',benchmark:'Оценочные материалы',PR:'Обсуждение изменения'}[source.type] || source.type || 'Источник');
   };
   const sources = items => (Array.isArray(items) ? items : []).map(s => link(typeof s === 'string' ? s : s.url, sourceLabel(s))).filter(Boolean).join(' · ');
+  const legalNotes = card => {
+    const notes = Array.isArray(card.legal_notes) ? card.legal_notes : [];
+    if (!notes.length) return '';
+    const items = notes.map(note => '<li><b>' + esc(note.label) + '</b>' + para(note.text) +
+      '<small>' + (Array.isArray(note.sources) ? note.sources : [])
+        .map(source => link(source.url, source.title)).filter(Boolean).join(' · ') +
+      ' · проверено ' + esc(note.checked_at) + '</small></li>').join('');
+    const familyScope = notes.some(note => note.id !== 'archive_access') ?
+      '<p class="meta">Исключение по 152-ФЗ для исключительно личных и семейных нужд действует при соблюдении прав других людей (ст. 1 ч. 2 п. 1).</p>' : '';
+    return '<details class="legal-notes"><summary>Правовые условия для РФ</summary><ul>' +
+      items + '</ul>' + familyScope + '</details>';
+  };
   const claims = value => {
     if (!value || typeof value !== 'object' || Array.isArray(value)) return para(value);
     const labels = {verified:'Проверено по источнику', author_claims:'Заявления авторов', independent_testing:'Независимое тестирование'};
@@ -94,7 +106,7 @@ globalThis.WatchUI = (() => {
       '<small>'+esc(context.evidence?.file)+' → '+esc(context.evidence?.key)+' → '+esc(context.evidence?.field)+'. Редакционный материал.</small></details>';
     return html;
   };
-  return {esc, url, link, rating, text, para, panel, sources, meaningful, testResult, claims, risks, practical, limitations, cardContent, usage, priorityNote, priorityValue, editorialPriority, priorityAxes};
+  return {esc, url, link, rating, text, para, panel, sources, legalNotes, meaningful, testResult, claims, risks, practical, limitations, cardContent, usage, priorityNote, priorityValue, editorialPriority, priorityAxes};
 })();
 
 // Persist filter values, never catalogue data, in the current URL.

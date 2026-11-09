@@ -13,5 +13,7 @@ assert.throws(()=>validate([{...card,url:'https://user:password@github.com/test/
 assert.throws(()=>validate([card,{...card,name:'another',url:'https://www.github.com/Test/Project.git/'}]));
 assert.throws(()=>validate([{...card,section:{html:'bad'}}]));
 assert.throws(()=>validate([{...card,practical_priority:{priority:{unsafe:true}}}]));
+assert.throws(()=>validate([{...card,legal_notes:{text:'Invalid'}}]));
+assert.throws(()=>validate([{...card,legal_notes:[{label:'Legal',text:'Condition',checked_at:'2026-11-09',sources:[null]}]}]));
 assert.equal(validate([]).length,0);
 console.log('Catalog JSON IO passed: lossless object round-trip, unsafe URLs, duplicates and malformed fields rejected.');

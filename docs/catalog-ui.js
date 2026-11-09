@@ -87,6 +87,7 @@ function render() {
       (model?.domain_labels?.length ? '<div class="card-domains">' +
         model.domain_labels.map(tag => '<span class="pill">' + esc(tag) + '</span>').join('') + '</div>' : '') +
       WatchUI.usage(usage[card.name.toLowerCase()]) +
+      WatchUI.legalNotes(card) +
       '<details class="card-details"><summary>Сведения об оценке и лицензии</summary>' +
       '<p class="meta">Редакционный · ' + esc(WatchUI.editorialPriority(card)) +
       (card.preliminary_priority ? ' · Предварительный приоритет · ' + esc(card.preliminary_priority) : '') + '</p>' +

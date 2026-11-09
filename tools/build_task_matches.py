@@ -85,6 +85,8 @@ def build(catalog,research,usage=None):
                 russia_applicability=card.get('russia_applicability',{}).get('rating','Не оценено'),
                 usage_context=usage['projects'].get(key),
                 next_check=TASK_CHECKS[task]))
+            if card.get('legal_notes'):
+                matches[-1]['legal_notes'] = card['legal_notes']
     source_hash=hashlib.sha256(json.dumps([catalog,research,usage],ensure_ascii=False,sort_keys=True).encode()).hexdigest()
     return dict(version=1,method='Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества',
                 source_hash=source_hash,tasks=tasks,matches=matches)

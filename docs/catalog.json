@@ -136,7 +136,38 @@
         "https://api.github.com/repos/23andme/bonsaitree/contents/README.md?ref=72bfaf25508635a5c39d4b9617d4179e0675bd15",
         "https://api.github.com/repos/23andme/bonsaitree/contents/LICENSE.txt?ref=72bfaf25508635a5c39d4b9617d4179e0675bd15"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Восстановление возможных родственных связей по генетическим данным"
+        }
+      }
+    ]
   },
   {
     "name": "abbyy/jfk-ocr",
@@ -560,7 +591,38 @@
         "https://api.github.com/repos/aehrc/tribes/contents/README.md?ref=5af6adebc85cfa80ec8bca14dfaef929b8194888",
         "https://api.github.com/repos/aehrc/tribes/contents/LICENSE?ref=5af6adebc85cfa80ec8bca14dfaef929b8194888"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Исследовательский анализ генетического родства"
+        }
+      }
+    ]
   },
   {
     "name": "ai-collaboratory/scribe",
@@ -2481,7 +2543,38 @@
         "https://api.github.com/repos/browning-lab/hap-ibd/contents/README.md?ref=a3fdd2d6294903387ee29d2f67ce6260593b681f",
         "https://api.github.com/repos/browning-lab/hap-ibd/contents/LICENSE-2.0.txt?ref=a3fdd2d6294903387ee29d2f67ce6260593b681f"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Поиск общих генетических сегментов IBD"
+        }
+      }
+    ]
   },
   {
     "name": "bruceyyu/ml-chinese-record-linkage",
@@ -3252,7 +3345,38 @@
         "https://api.github.com/repos/cboulanger/tei-annotator/contents/README.md?ref=f1f1b3217489aa7cca9c1bc4a4f40020dd3662b7",
         "https://api.github.com/repos/cboulanger/tei-annotator/contents/LICENSE?ref=f1f1b3217489aa7cca9c1bc4a4f40020dd3662b7"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Аннотирование текстов в формате TEI"
+        }
+      }
+    ]
   },
   {
     "name": "clariah/burgerlinker",
@@ -5659,7 +5783,34 @@
         "https://api.github.com/repos/fisharebest/webtrees/contents/README.md?ref=b6b4742bd04d3c7a17e60124649ab3801fbc68e2",
         "https://api.github.com/repos/fisharebest/webtrees/contents/LICENSE.md?ref=b6b4742bd04d3c7a17e60124649ab3801fbc68e2"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Веб-приложение"
+        }
+      }
+    ]
   },
   {
     "name": "freeukgen/myopicvicar",
@@ -6163,7 +6314,34 @@
         "https://api.github.com/repos/geneweb/geneweb/contents/README.md?ref=dd63b027d35136f67379226d9fba4a54be2c5a28",
         "https://api.github.com/repos/geneweb/geneweb/contents/LICENSE?ref=dd63b027d35136f67379226d9fba4a54be2c5a28"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Приложение/веб-сервис"
+        }
+      }
+    ]
   },
   {
     "name": "glamberson/gedcom-evidence",
@@ -7080,7 +7258,34 @@
         "https://api.github.com/repos/gramps-project/gramps/contents/README.md?ref=e9c09a44791def6a6b81079dc7f8cbe8c7e69cc0",
         "https://api.github.com/repos/gramps-project/gramps/contents/COPYING?ref=e9c09a44791def6a6b81079dc7f8cbe8c7e69cc0"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Приложение"
+        }
+      }
+    ]
   },
   {
     "name": "gramps-project/gramps-web",
@@ -7394,7 +7599,34 @@
       }
     ],
     "practical_priority_reason": "Сохраняется практическая роль P1: ведение дерева, цитат и медиа; новые релизы улучшают обычную исследовательскую работу, но не подтверждают отдельного улучшения качества исследований.",
-    "practical_priority_next_action": "На резервной копии проверить поиск человека, редактирование цитаты, карту WebGL 2 и восстановление после массового удаления."
+    "practical_priority_next_action": "На резервной копии проверить поиск человека, редактирование цитаты, карту WebGL 2 и восстановление после массового удаления.",
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Веб-интерфейс"
+        }
+      }
+    ]
   },
   {
     "name": "gramps-project/gramps-web-api",
@@ -8016,7 +8248,34 @@
         "https://api.github.com/repos/gramps-project/gramps-web-api/contents/README.md?ref=57618907ce0529a893a02207115e3a3db79e0628",
         "https://api.github.com/repos/gramps-project/gramps-web-api/contents/LICENSE?ref=57618907ce0529a893a02207115e3a3db79e0628"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Программный интерфейс Gramps Web"
+        }
+      }
+    ]
   },
   {
     "name": "gramps-project/gramps-web-docs",
@@ -8447,7 +8706,38 @@
         "https://api.github.com/repos/gusevlab/germline/contents/README.md?ref=f8029fcf469a09a83aa1e0d1fb45769f6dcb3c6d",
         "https://api.github.com/repos/gusevlab/germline/contents/LICENSE?ref=f8029fcf469a09a83aa1e0d1fb45769f6dcb3c6d"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Поиск генетических сегментов общего происхождения"
+        }
+      }
+    ]
   },
   {
     "name": "hdlabconicet/recogito-tei",
@@ -10109,7 +10399,38 @@
         "https://api.github.com/repos/jameskane/decodingus-navigator/contents/README.md?ref=94c600a46fd87386fef0e741d54b0d690ff49293",
         "https://api.github.com/repos/jameskane/decodingus-navigator/contents/LICENSE?ref=94c600a46fd87386fef0e741d54b0d690ff49293"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Инструмент из области генетической генеалогии"
+        }
+      }
+    ]
   },
   {
     "name": "jasiek/genealogy-plugin",
@@ -17665,7 +17986,63 @@
         "https://api.github.com/repos/scormave/gramps-web-mcp/contents/README.md?ref=ff2c5db571b903ee922b1dfecd898e51ed947f2b",
         "https://api.github.com/repos/scormave/gramps-web-mcp/contents/LICENSE?ref=ff2c5db571b903ee922b1dfecd898e51ed947f2b"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "По редакционным материалам (без независимой проверки): MCP-интерфейс для Gramps Web. Проверить управляемые запросы к людям, событиям, источникам и цитатам в тестовой базе."
+        }
+      },
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "По редакционным материалам (без независимой проверки): MCP-интерфейс для Gramps Web. Проверить управляемые запросы к людям, событиям, источникам и цитатам в тестовой базе."
+        }
+      }
+    ]
   },
   {
     "name": "scripta/escriptorium",
@@ -19196,7 +19573,38 @@
         "https://api.github.com/repos/umb-oconnorgroup/ibdtools/contents/Readme.md?ref=dd3f185c65c5f67a13cb3bd87af9da7d9a02838f",
         "https://api.github.com/repos/umb-oconnorgroup/ibdtools/contents/LICENSE?ref=dd3f185c65c5f67a13cb3bd87af9da7d9a02838f"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "По редакционным материалам (без независимой проверки): Инструменты анализа IBD-сегментов ДНК. Исследовать выявление генетических совпадений и группирование вероятных родственников."
+        }
+      }
+    ]
   },
   {
     "name": "unstructured-io/unstructured-mlk-archive-public",
@@ -19700,7 +20108,38 @@
         "https://api.github.com/repos/williamscole/haptic/contents/README.md?ref=386fd975c5e5897d22334e8c6a00219006861e51",
         "https://api.github.com/repos/williamscole/haptic/contents/LICENSE?ref=386fd975c5e5897d22334e8c6a00219006861e51"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "По редакционным материалам (без независимой проверки): Инструменты генетического анализа. Оценить применимость к группировке совпадений ДНК и реконструкции родства."
+        }
+      }
+    ]
   },
   {
     "name": "williamscole/ponderosa",
@@ -19867,7 +20306,38 @@
         "https://api.github.com/repos/williamscole/ponderosa/contents/README.md?ref=e3ef4027572028ccb98b2de03902c938ae926457",
         "https://api.github.com/repos/williamscole/ponderosa/contents/LICENSE?ref=e3ef4027572028ccb98b2de03902c938ae926457"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "По редакционным материалам (без независимой проверки): Анализ генетических совпадений. Изучить подходы к классификации родства по генетическим данным."
+        }
+      }
+    ]
   },
   {
     "name": "worldhistoricalgazetteer/documentation",
@@ -20341,7 +20811,38 @@
         "https://api.github.com/repos/yfullteam/ytree/contents/README.md?ref=bdc9bb4d8db72abc7658362f258dbc2a63e34789",
         "https://api.github.com/repos/yfullteam/ytree/contents/LICENSE.md?ref=bdc9bb4d8db72abc7658362f258dbc2a63e34789"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Набор данных / дерево Y-ДНК"
+        }
+      }
+    ]
   },
   {
     "name": "yingzhou001/ibdkin",
@@ -20510,7 +21011,38 @@
         "https://api.github.com/repos/yingzhou001/ibdkin/contents/readme.md?ref=733c33eb7031677c29dad3574f25821b21fd9134",
         "https://api.github.com/repos/yingzhou001/ibdkin/contents?ref=733c33eb7031677c29dad3574f25821b21fd9134"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "По редакционным материалам (без независимой проверки): Оценка генетического родства по IBD. Рассмотреть как исследовательский метод оценки вероятных связей между образцами."
+        }
+      }
+    ]
   },
   {
     "name": "zal-analytics/zer",
@@ -26886,7 +27418,26 @@
         "https://api.github.com/repos/igormel81/genealogy-mcp/contents/README.md?ref=7f4e96b4f9ad1ab7b4c81819b59612e936c571c0",
         "https://api.github.com/repos/igormel81/genealogy-mcp/contents/LICENSE?ref=7f4e96b4f9ad1ab7b4c81819b59612e936c571c0"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "archive_access",
+        "jurisdiction": "RU",
+        "label": "Архивные документы РФ",
+        "text": "При работе с архивными документами РФ, содержащими личную и семейную тайну, учитывайте ограничение доступа на 75 лет со дня создания документа. Статья 25 предусматривает возможность досрочного доступа с письменного разрешения гражданина, а после его смерти — наследников.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "125-ФЗ, ст. 25",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_1406/2476677c14d65b4e41f542f0e8548dc8226e5084/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Российские архивные справочники, имена, даты и аудит GEDCOM."
+        }
+      }
+    ]
   },
   {
     "name": "Archive MCP adapters (ianderso)",
@@ -27663,7 +28214,63 @@
         "https://api.github.com/repos/GeiserX/gramps-web-toolkit/contents/README.md?ref=01cf2de33c0a926dedf6510a80787f505415b0d8",
         "https://api.github.com/repos/GeiserX/gramps-web-toolkit/contents/LICENSE?ref=01cf2de33c0a926dedf6510a80787f505415b0d8"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Набор CLI-инструментов для работы исследовательских AI-агентов с Gramps Web; по README объединяет применение изменений, проверку дерева, загрузку источников, журнал поисков и управление запросами."
+        }
+      },
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Набор CLI-инструментов для работы исследовательских AI-агентов с Gramps Web; по README объединяет применение изменений, проверку дерева, загрузку источников, журнал поисков и управление запросами."
+        }
+      }
+    ]
   },
   {
     "name": "kinprove/genealogy-research-recipes",
@@ -27971,7 +28578,67 @@
         "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/README.md?ref=4f8decf59e460cbb6c84e7ac1889ba249488cef2",
         "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/LICENSE?ref=4f8decf59e460cbb6c84e7ac1889ba249488cef2"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Набор генеалогических исследовательских процедур, упакованный как Agent Skill и плагины с инструкциями для AI-помощников; README охватывает поиск записей, проверку доказательств и работу с ДНК."
+        }
+      },
+      {
+        "id": "genetic_data",
+        "jurisdiction": "RU",
+        "label": "Генетические данные",
+        "text": "Перед анализом генотипов, связанных с определяемыми людьми, проверьте правовое основание обработки. Сведения о здоровье требуют учёта ст. 10, а использование биологических характеристик для установления личности — ст. 11. Публикация генетических совпадений может раскрыть сведения о родственниках.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/26edb2934b899bf9c74c3a8f7e574651c6565e6d/"
+          },
+          {
+            "title": "152-ФЗ, ст. 11",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/7336c78762a98b5f4f698b8c3800dca1111acc16/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Набор генеалогических исследовательских процедур, упакованный как Agent Skill и плагины с инструкциями для AI-помощников; README охватывает поиск записей, проверку доказательств и работу с ДНК."
+        }
+      }
+    ]
   },
   {
     "name": "b21-agency/gramps-ui",
@@ -29870,7 +30537,38 @@
         "https://api.github.com/repos/mouchar/ftb-mcp/contents/README.md?ref=2869434bc59350204f567297ef04b2a832ece6ef",
         "https://api.github.com/repos/mouchar/ftb-mcp/contents/LICENSE?ref=2869434bc59350204f567297ef04b2a832ece6ef"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Read-only MCP-сервер для локальных файлов MyHeritage Family Tree Builder (.ftb) и GEDCOM (.ged): 17 инструментов поиска персон, родства, источников, мест и событий."
+        }
+      }
+    ]
   },
   {
     "name": "ai-riksarkivet/ra-mcp",
@@ -31269,7 +31967,63 @@
         "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/contents/README.md?ref=0036ef76638a10e84aa49b1137310af23928d838",
         "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/contents/LICENSE?ref=0036ef76638a10e84aa49b1137310af23928d838"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "MCP-сервер на Rust для доступа AI-клиента к дереву Gramps Web: поиск, структурированные фильтры, чтение и редактирование генеалогических объектов. Это адаптер к существующему Gramps Web."
+        }
+      },
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "MCP-сервер на Rust для доступа AI-клиента к дереву Gramps Web: поиск, структурированные фильтры, чтение и редактирование генеалогических объектов. Это адаптер к существующему Gramps Web."
+        }
+      }
+    ]
   },
   {
     "name": "magicianmarty/heritage-research-mcp",
@@ -32500,7 +33254,63 @@
         "https://api.github.com/repos/Genealogy-MCP/gramps-mcp/contents/README.md?ref=ca6de056e9c088652627cc73dae5a3d6f106f81c",
         "https://api.github.com/repos/Genealogy-MCP/gramps-mcp/contents/LICENSE?ref=ca6de056e9c088652627cc73dae5a3d6f106f81c"
       ]
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "MCP-адаптер к Gramps Web: два инструмента search и execute раскрывают 22 операции поиска, чтения, изменения и анализа дерева, включая создание и просмотр серверных резервных копий."
+        }
+      },
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "MCP-адаптер к Gramps Web: два инструмента search и execute раскрывают 22 операции поиска, чтения, изменения и анализа дерева, включая создание и просмотр серверных резервных копий."
+        }
+      }
+    ]
   },
   {
     "name": "pioneeraiacademy/cowork-genealogy",
@@ -32631,7 +33441,38 @@
       },
       "evidence_level": null,
       "assessment_sources": []
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Alpha-инструмент многоэтапного генеалогического исследования с фиксацией поисков, источников и конфликтующих свидетельств; функции заявлены авторами."
+        }
+      }
+    ]
   },
   {
     "name": "semanticmeaning/kinship-kit",
@@ -32911,7 +33752,80 @@
       },
       "evidence_level": null,
       "assessment_sources": []
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода."
+        }
+      },
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода."
+        }
+      },
+      {
+        "id": "archive_access",
+        "jurisdiction": "RU",
+        "label": "Архивные документы РФ",
+        "text": "При работе с архивными документами РФ, содержащими личную и семейную тайну, учитывайте ограничение доступа на 75 лет со дня создания документа. Статья 25 предусматривает возможность досрочного доступа с письменного разрешения гражданина, а после его смерти — наследников.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "125-ФЗ, ст. 25",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_1406/2476677c14d65b4e41f542f0e8548dc8226e5084/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Набор навыка, CLI kin, MCP и сайта-схемы для исследования родства по архивам бывшего СССР и Российской империи; семейные данные хранятся отдельно от публичного кода."
+        }
+      }
+    ]
   },
   {
     "name": "joaquimrcarvalho/personal-historical-archive",
@@ -33159,7 +34073,38 @@
       "pending_proposal": null,
       "evidence_level": null,
       "assessment_sources": []
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Локальный исследовательский архив исторических PDF и изображений: постраничная транскрипция vision-моделью, отдельные редакторские преобразования, структурированные выписки и поиск через MCP."
+        }
+      }
+    ]
   },
   {
     "name": "openheritageonline/agent-tooling",
@@ -33977,6 +34922,33 @@
       "pending_proposal": null,
       "evidence_level": null,
       "assessment_sources": []
-    }
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-09",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений."
+        }
+      }
+    ]
   }
 ]

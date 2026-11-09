@@ -19,6 +19,13 @@ const {chromium} = require('playwright');
     });
     await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
     const published=JSON.parse(await fs.readFile(path.join(root,'catalog.json'),'utf8'));
+    const legalCards=page.locator('#cards .legal-notes');
+    assert.equal(await legalCards.count(),published.filter(card=>card.legal_notes?.length).length);
+    assert.equal(await legalCards.first().locator('ul').isVisible(),false);
+    await legalCards.first().locator('summary').click();
+    assert.match(await legalCards.first().innerText(),/Генетические данные/);
+    assert.ok(await legalCards.first().locator('a').count()>=1);
+    await legalCards.first().locator('summary').click();
 
     for (const repo of ['thodel/agentic_historian','rodoslovje/ged-merge','kjiwa/geneanet-drift','gramps-project/gramps-web']) {
       await page.locator('#search').fill(repo);
