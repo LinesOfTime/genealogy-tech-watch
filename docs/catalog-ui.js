@@ -64,21 +64,28 @@ function render() {
     const priorityLink = 'priorities.html?q=' + encodeURIComponent(card.name);
     const level = card.practical_priority?.evidence_level || card.evaluation?.evidence_level || 'НД';
     const type = model?.type_label || 'Не определено';
+    const priority = WatchUI.priorityValue(card);
+    const priorityLabel = priority === 'Проверить ссылку' ? priority : 'Практический · ' + priority;
+    const priorityBadge = priority === 'Не оценён' ? '' :
+      '<a class="card-priority" href="' + priorityLink + '">' + esc(priorityLabel) + '</a>';
     return '<article class="card catalog-card-v2"><div class="card-head"><div class="card-ident"><h2>' +
       (known ? '<a href="' + projectLink + '">' + esc(card.name) + '</a>' : esc(card.name)) +
       '</h2><div class="card-section">' + esc(type) + '</div></div>' +
-      '<a class="card-priority" href="' + priorityLink + '">Практический · ' + esc(WatchUI.priorityValue(card)) + '</a></div>' +
+      priorityBadge + '</div>' +
       '<p class="card-summary">' + esc(card.description || 'Назначение не описано') + '</p>' +
+      (model?.domain_labels?.length ? '<div class="card-domains">' +
+        model.domain_labels.map(tag => '<span class="pill">' + esc(tag) + '</span>').join('') + '</div>' : '') +
       WatchUI.usage(usage[card.name.toLowerCase()]) +
-      '<div class="card-domains">' + (model?.domain_labels?.length ? model.domain_labels : ['Направления не определены']).map(tag => '<span class="pill">' + esc(tag) + '</span>').join('') + '</div>' +
+      '<details class="card-details"><summary>Сведения об оценке и лицензии</summary>' +
       '<p class="meta">Редакционный · ' + esc(WatchUI.editorialPriority(card)) +
       (card.preliminary_priority ? ' · Предварительный приоритет · ' + esc(card.preliminary_priority) : '') + '</p>' +
       '<p class="meta">' + esc(status?.label || 'Недостаточно данных') +
       ' · оценка ' + esc(status?.assessment_approved_at?.slice(0,10) || 'не утверждена') +
       ' · источник ' + esc(status?.last_substantive_source_check || 'не датирован') + '</p>' +
       '<div class="card-meta"><span class="card-testing">Для России · ' + esc(WatchUI.rating(card)) + '</span>' +
-      '<a class="card-testing" href="' + projectLink + '#evidence" title="Основания и практические испытания">Основания · ' + esc(level) + '</a>' +
-      '<span class="card-license">' + esc(card.license || 'Лицензия не установлена') + '</span></div>' +
+      (known ? '<a class="card-testing" href="' + projectLink + '#evidence">Основания · ' + esc(level) + '</a>' :
+        '<span class="card-testing">Основания · ' + esc(level) + '</span>') +
+      '<span class="card-license">' + esc(card.license || 'Лицензия не установлена') + '</span></div></details>' +
       '<div class="card-links">' + (known ? '<a href="' + projectLink + '">Исследование →</a>' : '<span>Локальная запись</span>') +
       WatchUI.link(card.url, 'Репозиторий ↗') + '</div></article>';
   }).join('') || '<p class="empty">Ничего не найдено. Измените запрос или сбросьте фильтры.</p>';

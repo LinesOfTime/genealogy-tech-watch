@@ -34,7 +34,20 @@ var CatalogIO = (() => {
   }
   function bind({getData,setData,published}){
     const $=id=>document.getElementById(id),file=$('import-file'),status=$('json-status'),restore=$('restore-published');
-    let preview=false,request=0;
+    const exportButton=$('export-json');
+    let preview=false,request=0,exporting=false;
+    async function exportPublished(rows){
+      const response=await fetch('research.json',{cache:'no-cache'});
+      if(!response.ok)throw Error('Не удалось загрузить исследования.');
+      const research=await response.json();
+      if(!research||typeof research!=='object'||Array.isArray(research))throw Error('Неверный формат исследований.');
+      return rows.map(card=>{
+        const key=card.name.toLowerCase();
+        const profile=Object.hasOwn(research,key)?research[key]:null;
+        if(profile!==null&&(!profile||typeof profile!=='object'||Array.isArray(profile)))throw Error('Неверный формат исследования.');
+        return {...card,research:profile};
+      });
+    }
     $('import-json').addEventListener('click',()=>file.click());
     file.addEventListener('change',async()=>{
       const current=++request,input=file.files?.[0];if(!input)return;
@@ -43,18 +56,37 @@ var CatalogIO = (() => {
         const rows=validate(JSON.parse((await input.text()).replace(/^\uFEFF/,'')));
         if(current!==request)return;
         setData(rows);preview=true;restore.hidden=false;
+        exportButton.textContent='Экспорт локального JSON';
         status.textContent=`Локальный JSON: ${rows.length} карточек. Сведения файла не проверены и не опубликованы; расширенные исследования доступны только для опубликованных записей.`;
       }catch(error){if(current===request)status.textContent='Ошибка импорта: '+error.message+' Текущий каталог сохранён.'}
       finally{if(current===request)file.value=''}
     });
     restore.addEventListener('click',()=>{
       request++;setData(structuredClone(published));preview=false;restore.hidden=true;file.value='';
+      exportButton.textContent='Экспорт с исследованиями';
       status.textContent='Опубликованный каталог восстановлен. Импорт не меняет данные сайта.';
     });
-    $('export-json').addEventListener('click',()=>{
-      const blob=new Blob([JSON.stringify(getData(),null,2)+'\n'],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
-      a.href=url;a.download=preview?'genealogy-tech-watch-local.json':'catalog.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
-      status.textContent=preview?'Экспортирован локальный JSON; данные сайта не изменены.':'Экспортирован опубликованный каталог JSON.';
+    exportButton.addEventListener('click',async()=>{
+      if(exporting)return;
+      const local=preview,current=request,rows=getData();
+      exporting=true;
+      exportButton.disabled=true;
+      try{
+        const data=local?rows:await exportPublished(rows);
+        if(current!==request)return;
+        const blob=new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json;charset=utf-8'});
+        const url=URL.createObjectURL(blob),a=document.createElement('a');
+        a.href=url;
+        a.download=local?'genealogy-tech-watch-local.json':'catalog-with-research.json';
+        a.click();
+        setTimeout(()=>URL.revokeObjectURL(url),1000);
+        status.textContent=local?'Экспортирован локальный JSON.':'Экспортирован каталог с исследованиями.';
+      }catch(error){
+        if(current===request)status.textContent='Ошибка экспорта: '+error.message+' Повторите попытку.';
+      }finally{
+        exporting=false;
+        exportButton.disabled=false;
+      }
     });
   }
   return {validate,bind};
