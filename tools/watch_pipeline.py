@@ -9,6 +9,7 @@ import re
 from urllib.parse import urlsplit
 
 UPDATER_WORKFLOW = '.github/workflows/watch-updater.yml'
+KNOWN_WORKFLOWS = {UPDATER_WORKFLOW, '.github/workflows/priority-review-queue.yml'}
 
 
 def canonical_url(value):
@@ -297,6 +298,8 @@ def validate(root, baseline=None):
                 issue('error', 'baseline', name, str(exc))
     from source_updates import validate_source_updates
     issues.extend(validate_source_updates(root, catalog))
+    from catalog_model import model_issues
+    issues.extend(model_issues(root,catalog,research))
     from event_integrity import event_issues
     issues.extend(event_issues(root, catalog, research, loaded.get('digest.json', [])))
     from restore_descriptions import restore, VERSION
@@ -314,7 +317,7 @@ def validate(root, baseline=None):
     workflows = root / '.github' / 'workflows'
     if workflows.exists():
         for path in workflows.iterdir():
-            if path.relative_to(root).as_posix() != UPDATER_WORKFLOW or not path.is_file() or path.is_symlink():
+            if path.relative_to(root).as_posix() not in KNOWN_WORKFLOWS or not path.is_file() or path.is_symlink():
                 issue('error', 'actions', path.relative_to(root).as_posix(), 'Unexpected GitHub Actions workflow')
     return dict(counts=dict(catalog=len(catalog), research=len(research),
                             editions=len(loaded.get('digest.json', []))),

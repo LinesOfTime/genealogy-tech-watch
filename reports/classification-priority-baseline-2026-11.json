@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-09",
+  "base": "15c3b73410e3de4debf46c1363f19b4ebb8b0869",
+  "catalog": 188,
+  "research": 167,
+  "approved": 180,
+  "missing": [
+    "komura-shoan/iiif-downloader",
+    "scripta/escriptorium",
+    "Archive MCP adapters (ianderso)",
+    "b21-agency/gramps-ui",
+    "pioneeraiacademy/cowork-genealogy",
+    "semanticmeaning/kinship-kit",
+    "joaquimrcarvalho/personal-historical-archive",
+    "openheritageonline/agent-tooling"
+  ],
+  "historical_practical_differences": 113,
+  "sections": {
+    "Генетическая генеалогия": 9,
+    "География и карты": 6,
+    "ИИ, агенты и поиск": 14,
+    "Источники, OCR и архивы": 41,
+    "Новые исследования / GitHub Watch": 47,
+    "Программы и деревья": 43,
+    "Прочие и междисциплинарные": 15,
+    "Сопоставление и качество данных": 13
+  },
+  "historical": {
+    "P1": 72,
+    "P2": 90,
+    "P3": 3,
+    "Не оценён": 23
+  },
+  "practical": {
+    "P1": 23,
+    "P2": 113,
+    "P3": 19,
+    "Не оценён": 33
+  },
+  "protected_fields": [
+    "url",
+    "section",
+    "priority",
+    "priority_original",
+    "evaluation",
+    "practical_priority",
+    "practical_priority_history",
+    "history"
+  ],
+  "protected_sha256": "6ca48896c3f4ea54be19dd24ebb2626c8cf88c359cfca23524558fd34840b773"
+}

@@ -31,6 +31,7 @@ class ValidationTests(unittest.TestCase):
             (self.root / 'docs' / (page + '.html')).write_text(
                 '<script type="application/json" id="seed">' + payload + '</script>', encoding='utf-8')
         (self.root / 'docs/research.json').write_text('{}', encoding='utf-8')
+        (self.root / 'docs/source-updates.json').write_text('{"version":1,"items":[]}', encoding='utf-8')
 
     def codes(self):
         return {x['code'] for x in pipeline.validate(self.root)['issues']}

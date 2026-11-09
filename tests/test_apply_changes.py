@@ -30,6 +30,7 @@ class ApplyTests(unittest.TestCase):
             (self.root / 'docs' / (page + '.html')).write_text(
                 '<script id="seed" type="application/json">' + text + '</script>', encoding='utf-8')
         self.write('docs/research.json', self.research)
+        self.write('docs/source-updates.json', dict(version=1,items=[]))
         self.record = dict(discovery_id='test-event', repo_full_name='a/repo',
                            canonical_url='https://github.com/a/repo', aliases=[],
                            detected_at='2026-10-22T10:00:00+03:00', event_date='2026-10-21',

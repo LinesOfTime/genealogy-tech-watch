@@ -1,0 +1,3476 @@
+{
+  "catalog_count": 188,
+  "research_count": 167,
+  "types": {
+    "Готовое приложение": 49,
+    "Библиотека / SDK": 35,
+    "OCR/HTR-модель": 0,
+    "ИИ-модель общего назначения": 0,
+    "Набор данных": 3,
+    "Стандарт / спецификация": 11,
+    "Сервер / API / MCP-адаптер": 24,
+    "Архивный / исследовательский сервис": 9,
+    "Исследовательский прототип": 9,
+    "Инструмент разработки": 27,
+    "Методика / документация": 13,
+    "Не определено": 8
+  },
+  "domains": {
+    "OCR/HTR": 31,
+    "Сегментация и разметка": 6,
+    "Цифровые архивы": 29,
+    "IIIF и просмотр изображений": 28,
+    "Индексация и извлечение сущностей": 16,
+    "GEDCOM и моделирование данных": 31,
+    "Исследовательские агенты и поиск": 53,
+    "Источники, цитирование и доказательства": 38,
+    "Сопоставление записей и родства": 23,
+    "Историческая география": 11,
+    "Визуализация родословных": 7,
+    "Генетическая генеалогия": 11,
+    "Оценка качества и тестирование": 5
+  },
+  "origins": {
+    "Первоначальный реестр": 141,
+    "GitHub Watch": 47
+  },
+  "editorial_priorities": {
+    "P3": 3,
+    "P2": 90,
+    "P1": 72,
+    "Не оценён": 23
+  },
+  "practical_priorities": {
+    "P2": 113,
+    "P1": 23,
+    "Не оценён": 33,
+    "P3": 19
+  },
+  "currency": {
+    "Актуален": 0,
+    "Требует переоценки": 6,
+    "Недостаточно данных": 179,
+    "Предложена новая оценка": 3
+  },
+  "sections": {
+    "Генетическая генеалогия": {
+      "count": 9,
+      "types": {
+        "Библиотека / SDK": 6,
+        "Инструмент разработки": 1,
+        "Готовое приложение": 2
+      },
+      "domains": {
+        "Генетическая генеалогия": 9,
+        "Исследовательские агенты и поиск": 2
+      }
+    },
+    "География и карты": {
+      "count": 6,
+      "types": {
+        "Готовое приложение": 2,
+        "Методика / документация": 1,
+        "Архивный / исследовательский сервис": 1,
+        "Стандарт / спецификация": 1,
+        "Инструмент разработки": 1
+      },
+      "domains": {
+        "Сопоставление записей и родства": 1,
+        "Историческая география": 1
+      }
+    },
+    "ИИ, агенты и поиск": {
+      "count": 14,
+      "types": {
+        "Исследовательский прототип": 4,
+        "Набор данных": 1,
+        "Сервер / API / MCP-адаптер": 6,
+        "Архивный / исследовательский сервис": 2,
+        "Инструмент разработки": 1
+      },
+      "domains": {
+        "OCR/HTR": 2,
+        "Индексация и извлечение сущностей": 3,
+        "Исследовательские агенты и поиск": 11,
+        "Оценка качества и тестирование": 1,
+        "Цифровые архивы": 3
+      }
+    },
+    "Источники, OCR и архивы": {
+      "count": 41,
+      "types": {
+        "Набор данных": 1,
+        "Архивный / исследовательский сервис": 4,
+        "Инструмент разработки": 9,
+        "Сервер / API / MCP-адаптер": 1,
+        "Библиотека / SDK": 6,
+        "Методика / документация": 4,
+        "Стандарт / спецификация": 1,
+        "Не определено": 3,
+        "Готовое приложение": 12
+      },
+      "domains": {
+        "OCR/HTR": 14,
+        "Цифровые архивы": 10,
+        "Индексация и извлечение сущностей": 2,
+        "IIIF и просмотр изображений": 17,
+        "Исследовательские агенты и поиск": 2,
+        "Сегментация и разметка": 4,
+        "Оценка качества и тестирование": 1
+      }
+    },
+    "Новые исследования / GitHub Watch": {
+      "count": 47,
+      "types": {
+        "Готовое приложение": 10,
+        "Методика / документация": 5,
+        "Инструмент разработки": 5,
+        "Сервер / API / MCP-адаптер": 14,
+        "Исследовательский прототип": 3,
+        "Библиотека / SDK": 5,
+        "Не определено": 4,
+        "Архивный / исследовательский сервис": 1
+      },
+      "domains": {
+        "GEDCOM и моделирование данных": 14,
+        "Источники, цитирование и доказательства": 27,
+        "OCR/HTR": 12,
+        "IIIF и просмотр изображений": 9,
+        "Индексация и извлечение сущностей": 9,
+        "Оценка качества и тестирование": 2,
+        "Исследовательские агенты и поиск": 29,
+        "Цифровые архивы": 15,
+        "Историческая география": 6,
+        "Сопоставление записей и родства": 9,
+        "Сегментация и разметка": 2,
+        "Генетическая генеалогия": 1
+      }
+    },
+    "Программы и деревья": {
+      "count": 43,
+      "types": {
+        "Готовое приложение": 19,
+        "Библиотека / SDK": 8,
+        "Сервер / API / MCP-адаптер": 3,
+        "Методика / документация": 1,
+        "Стандарт / спецификация": 7,
+        "Инструмент разработки": 4,
+        "Набор данных": 1
+      },
+      "domains": {
+        "Визуализация родословных": 7,
+        "Сопоставление записей и родства": 5,
+        "Исследовательские агенты и поиск": 6,
+        "GEDCOM и моделирование данных": 15,
+        "Цифровые архивы": 1,
+        "Источники, цитирование и доказательства": 8,
+        "Историческая география": 2,
+        "Генетическая генеалогия": 1
+      }
+    },
+    "Прочие и междисциплинарные": {
+      "count": 15,
+      "types": {
+        "Инструмент разработки": 5,
+        "Готовое приложение": 3,
+        "Архивный / исследовательский сервис": 1,
+        "Стандарт / спецификация": 1,
+        "Не определено": 1,
+        "Исследовательский прототип": 1,
+        "Методика / документация": 1,
+        "Библиотека / SDK": 2
+      },
+      "domains": {
+        "GEDCOM и моделирование данных": 2,
+        "Индексация и извлечение сущностей": 1,
+        "Исследовательские агенты и поиск": 2,
+        "Источники, цитирование и доказательства": 1,
+        "Сопоставление записей и родства": 2,
+        "OCR/HTR": 1,
+        "Историческая география": 2
+      }
+    },
+    "Сопоставление и качество данных": {
+      "count": 13,
+      "types": {
+        "Библиотека / SDK": 8,
+        "Методика / документация": 1,
+        "Готовое приложение": 1,
+        "Исследовательский прототип": 1,
+        "Инструмент разработки": 1,
+        "Стандарт / спецификация": 1
+      },
+      "domains": {
+        "Сопоставление записей и родства": 6,
+        "OCR/HTR": 2,
+        "Оценка качества и тестирование": 1,
+        "IIIF и просмотр изображений": 2,
+        "Источники, цитирование и доказательства": 2,
+        "Исследовательские агенты и поиск": 1,
+        "Индексация и извлечение сущностей": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "project": "23andme/bonsaitree",
+      "url": "https://github.com/23andme/bonsaitree",
+      "section": "Генетическая генеалогия",
+      "primary_type": "library",
+      "domains": [
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P3",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "abbyy/jfk-ocr",
+      "url": "https://github.com/abbyy/jfk-ocr",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "dataset",
+      "domains": [
+        "ocr"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "abdash/roots-familytreevisualizer",
+      "url": "https://github.com/abdash/roots-familytreevisualizer",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "trees"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "aehrc/tribes",
+      "url": "https://github.com/aehrc/tribes",
+      "section": "Генетическая генеалогия",
+      "primary_type": "developer_tool",
+      "domains": [
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ai-collaboratory/scribe",
+      "url": "https://github.com/ai-collaboratory/scribe",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "service",
+      "domains": [
+        "ocr"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "ai-historian/chronos",
+      "url": "https://github.com/ai-historian/chronos",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "prototype",
+      "domains": [
+        "ocr",
+        "indexing",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ai-historian/chronos-benchmarks",
+      "url": "https://github.com/ai-historian/chronos-benchmarks",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "dataset",
+      "domains": [
+        "ocr",
+        "indexing",
+        "evaluation"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ai-riksarkivet/htrflow",
+      "url": "https://github.com/ai-riksarkivet/htrflow",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [
+        "ocr",
+        "archives",
+        "indexing"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Содержательная проверка относится к уже зафиксированному коммиту оценки. Изменение после неё не установлено; полная актуальность условий пилота требует отдельной сверки.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ai-riksarkivet/htrflow-batch",
+      "url": "https://github.com/ai-riksarkivet/htrflow-batch",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "service",
+      "domains": [
+        "ocr",
+        "archives",
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "reassess",
+      "currency_reason": "Проверенное изменение затрагивает условия пилота или совместимость. В коммите 5852227 добавлено отображение прогресса экспорта: по одному сообщению на том в stderr, счётчик страниц в интерактивном терминале. Основной табличный отчёт stdout сохранён.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "ai-riksarkivet/htrflow_app",
+      "url": "https://github.com/ai-riksarkivet/htrflow_app",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "adapter",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "ajaskey/genealogy",
+      "url": "https://github.com/ajaskey/genealogy",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "archival-iiif/viewer",
+      "url": "https://github.com/archival-iiif/viewer",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "library",
+      "domains": [
+        "archives",
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "reassess",
+      "currency_reason": "Проверенное изменение затрагивает условия пилота или совместимость. Релиз 5.0.1 от 19 октября 2026: после перехода версии 5.0.0 с webpack на Vite и обновления MUI 5→7 исправлена конфигурация библиотечной сборки для process.env.NODE_ENV; изменён экспорт компонента библиотеки.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "benwbrum/fromthepage",
+      "url": "https://github.com/benwbrum/fromthepage",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "service",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "reassess",
+      "currency_reason": "Проверенное изменение затрагивает условия пилота или совместимость. Добавлена централизованная проверка прав доступа к контексту предметных статей; для закрытых записей используется ответ 404 без раскрытия содержания. Отдельным коммитом исправлено сохранение вложенной разметки при экспорте XML в LaTeX.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "bhaskargautam/record-linkage",
+      "url": "https://github.com/bhaskargautam/record-linkage",
+      "section": "Программы и деревья",
+      "primary_type": "library",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "browning-lab/hap-ibd",
+      "url": "https://github.com/browning-lab/hap-ibd",
+      "section": "Генетическая генеалогия",
+      "primary_type": "application",
+      "domains": [
+        "agents",
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P3",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "bruceyyu/ml-chinese-record-linkage",
+      "url": "https://github.com/bruceyyu/ml-chinese-record-linkage",
+      "section": "Программы и деревья",
+      "primary_type": "library",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "cabout-me/gramps-mcp",
+      "url": "https://github.com/cabout-me/gramps-mcp",
+      "section": "Программы и деревья",
+      "primary_type": "adapter",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "cacack/my-family",
+      "url": "https://github.com/cacack/my-family",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "application",
+      "domains": [
+        "gedcom"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "cartwrightdj/gedcomtools",
+      "url": "https://github.com/cartwrightdj/gedcomtools",
+      "section": "Программы и деревья",
+      "primary_type": "library",
+      "domains": [
+        "gedcom",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "cboulanger/tei-annotator",
+      "url": "https://github.com/cboulanger/tei-annotator",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "library",
+      "domains": [
+        "annotation"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "clariah/burgerlinker",
+      "url": "https://github.com/clariah/burgerlinker",
+      "section": "Программы и деревья",
+      "primary_type": "library",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "claudiomartino/iiif-downloader",
+      "url": "https://github.com/claudiomartino/iiif-downloader",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "dedupeio/dedupe",
+      "url": "https://github.com/dedupeio/dedupe",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "library",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "digirati-co-uk/madoc-platform",
+      "url": "https://github.com/digirati-co-uk/madoc-platform",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "service",
+      "domains": [
+        "annotation",
+        "archives",
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "digitalarchivst/open-genealogy",
+      "url": "https://github.com/digitalarchivst/open-genealogy",
+      "section": "Программы и деревья",
+      "primary_type": "reference",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "districtdatalabs/entity-resolution",
+      "url": "https://github.com/districtdatalabs/entity-resolution",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "library",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "dmarkey/irish-census-mcp",
+      "url": "https://github.com/dmarkey/irish-census-mcp",
+      "section": "Программы и деревья",
+      "primary_type": "adapter",
+      "domains": [
+        "archives",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "dsblank/gramps-ez-mcp",
+      "url": "https://github.com/dsblank/gramps-ez-mcp",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "adapter",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "dthaler/gedcom-citations",
+      "url": "https://github.com/dthaler/gedcom-citations",
+      "section": "Программы и деревья",
+      "primary_type": "standard",
+      "domains": [
+        "gedcom",
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "ecoto/iiif_downloader",
+      "url": "https://github.com/ecoto/iiif_downloader",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "erichare/kinresolve",
+      "url": "https://github.com/erichare/kinresolve",
+      "section": "География и карты",
+      "primary_type": "application",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "evelynkimm/ari",
+      "url": "https://github.com/evelynkimm/ari",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "prototype",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "familysearch/gedcom",
+      "url": "https://github.com/familysearch/gedcom",
+      "section": "Программы и деревья",
+      "primary_type": "standard",
+      "domains": [
+        "gedcom",
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "familysearch/gedcomx",
+      "url": "https://github.com/familysearch/gedcomx",
+      "section": "Программы и деревья",
+      "primary_type": "standard",
+      "domains": [
+        "gedcom",
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "fisharebest/webtrees",
+      "url": "https://github.com/fisharebest/webtrees",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "gedcom",
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "freeukgen/myopicvicar",
+      "url": "https://github.com/freeukgen/myopicvicar",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "service",
+      "domains": [
+        "indexing",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "genealogix/glx",
+      "url": "https://github.com/genealogix/glx",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "standard",
+      "domains": [
+        "gedcom",
+        "evidence",
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "geneweb/geneweb",
+      "url": "https://github.com/geneweb/geneweb",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "gedcom"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "glamberson/gedcom-evidence",
+      "url": "https://github.com/glamberson/gedcom-evidence",
+      "section": "Программы и деревья",
+      "primary_type": "standard",
+      "domains": [
+        "gedcom",
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "glamberson/gedcom-occurrences",
+      "url": "https://github.com/glamberson/gedcom-occurrences",
+      "section": "Программы и деревья",
+      "primary_type": "standard",
+      "domains": [
+        "gedcom"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "google/family-tree",
+      "url": "https://github.com/google/family-tree",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "trees"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "gramps-project/addons",
+      "url": "https://github.com/gramps-project/addons",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "gramps-project/addons-source",
+      "url": "https://github.com/gramps-project/addons-source",
+      "section": "Программы и деревья",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "gramps-project/gramps",
+      "url": "https://github.com/gramps-project/gramps",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "gedcom",
+        "evidence",
+        "places"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "gramps-project/gramps-web",
+      "url": "https://github.com/gramps-project/gramps-web",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "gedcom",
+        "agents",
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "gramps-project/gramps-web-api",
+      "url": "https://github.com/gramps-project/gramps-web-api",
+      "section": "Программы и деревья",
+      "primary_type": "adapter",
+      "domains": [
+        "gedcom",
+        "agents",
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "gramps-project/gramps-web-docs",
+      "url": "https://github.com/gramps-project/gramps-web-docs",
+      "section": "География и карты",
+      "primary_type": "reference",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "gsmitheidw/genealogytools",
+      "url": "https://github.com/gsmitheidw/genealogytools",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "gusevlab/germline",
+      "url": "https://github.com/gusevlab/germline",
+      "section": "Генетическая генеалогия",
+      "primary_type": "library",
+      "domains": [
+        "agents",
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "hdlabconicet/recogito-tei",
+      "url": "https://github.com/hdlabconicet/recogito-tei",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "reference",
+      "domains": [
+        "annotation"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "htrmopo/htrmopo",
+      "url": "https://github.com/htrmopo/htrmopo",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "developer_tool",
+      "domains": [
+        "ocr"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Содержательная проверка относится к уже зафиксированному коммиту оценки. Изменение после неё не установлено; полная актуальность условий пилота требует отдельной сверки.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "iiif/api",
+      "url": "https://github.com/iiif/api",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "standard",
+      "domains": [
+        "archives",
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "iiif/awesome-iiif",
+      "url": "https://github.com/iiif/awesome-iiif",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "reference",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "iiif/website",
+      "url": "https://github.com/iiif/website",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "reference",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "ipums/hlink",
+      "url": "https://github.com/ipums/hlink",
+      "section": "Программы и деревья",
+      "primary_type": "library",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "j535d165/data-matching-software",
+      "url": "https://github.com/j535d165/data-matching-software",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "reference",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "j535d165/recordlinkage",
+      "url": "https://github.com/j535d165/recordlinkage",
+      "section": "Программы и деревья",
+      "primary_type": "library",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "j535d165/recordlinkage-annotator",
+      "url": "https://github.com/j535d165/recordlinkage-annotator",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "application",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "j535d165/recordlinkage-review",
+      "url": "https://github.com/j535d165/recordlinkage-review",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "prototype",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "jameskane/decodingus-navigator",
+      "url": "https://github.com/jameskane/decodingus-navigator",
+      "section": "Генетическая генеалогия",
+      "primary_type": "application",
+      "domains": [
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "jasiek/genealogy-plugin",
+      "url": "https://github.com/jasiek/genealogy-plugin",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "adapter",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "jerged24/family-tree",
+      "url": "https://github.com/jerged24/family-tree",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "trees"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "jitsi/jiwer",
+      "url": "https://github.com/jitsi/jiwer",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "library",
+      "domains": [
+        "ocr",
+        "evaluation"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "jregimbal/iiif-downloader",
+      "url": "https://github.com/jregimbal/iiif-downloader",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "kanik0/rustenati",
+      "url": "https://github.com/kanik0/rustenati",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "kasssandr/archilles",
+      "url": "https://github.com/kasssandr/archilles",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "service",
+      "domains": [
+        "archives",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "keerthanamurugaraj/topic-rag-for-historical-newspapers",
+      "url": "https://github.com/keerthanamurugaraj/topic-rag-for-historical-newspapers",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "prototype",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "kimon1230/gedcom_tools",
+      "url": "https://github.com/kimon1230/gedcom_tools",
+      "section": "Программы и деревья",
+      "primary_type": "library",
+      "domains": [
+        "gedcom"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "kimon1230/gedgraph",
+      "url": "https://github.com/kimon1230/gedgraph",
+      "section": "Программы и деревья",
+      "primary_type": "developer_tool",
+      "domains": [
+        "gedcom"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "kkkamur07/nomikos",
+      "url": "https://github.com/kkkamur07/nomikos",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "unknown",
+      "domains": [
+        "ocr",
+        "annotation"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип оставлен неопределённым из-за неоднозначного исходного описания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "knuckles-team/gramps-mcp",
+      "url": "https://github.com/knuckles-team/gramps-mcp",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "adapter",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "komura-shoan/iiif-downloader",
+      "url": "https://github.com/komura-shoan/iiif-downloader",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "unknown",
+      "domains": [
+        "archives",
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип оставлен неопределённым из-за неоднозначного исходного описания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Повторный GitHub HTTP 404. Публичная доступность не подтверждена; причина и перенос не установлены.",
+      "assessment_approved_at": null,
+      "last_substantive_source_check": null,
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "libraryofcongress/gazetteer",
+      "url": "https://github.com/libraryofcongress/gazetteer",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "unknown",
+      "domains": [
+        "linkage",
+        "places"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип оставлен неопределённым из-за неоднозначного исходного описания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "lieuwe89/genealogy-viz",
+      "url": "https://github.com/lieuwe89/genealogy-viz",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "trees"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "lovasoa/dezoomify-rs",
+      "url": "https://github.com/lovasoa/dezoomify-rs",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "magne/vitni",
+      "url": "https://github.com/magne/vitni",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "meh313/htr-model-tester",
+      "url": "https://github.com/meh313/htr-model-tester",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [
+        "ocr"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Содержательная проверка относится к уже зафиксированному коммиту оценки. Изменение после неё не установлено; полная актуальность условий пилота требует отдельной сверки.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "microsoft/graphrag",
+      "url": "https://github.com/microsoft/graphrag",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "prototype",
+      "domains": [
+        "archives",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "mittagessen/kraken",
+      "url": "https://github.com/mittagessen/kraken",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "library",
+      "domains": [
+        "ocr"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Содержательная проверка относится к уже зафиксированному коммиту оценки. Изменение после неё не установлено; полная актуальность условий пилота требует отдельной сверки.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "moj-analytical-services/splink",
+      "url": "https://github.com/moj-analytical-services/splink",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "library",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "n1kozor/tree-monk",
+      "url": "https://github.com/n1kozor/tree-monk",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "narasimhan-lab/repare",
+      "url": "https://github.com/narasimhan-lab/repare",
+      "section": "Программы и деревья",
+      "primary_type": "library",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ngohung0704/rag-militai",
+      "url": "https://github.com/ngohung0704/rag-militai",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "service",
+      "domains": [
+        "indexing",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "nigelhorne/gedcom",
+      "url": "https://github.com/nigelhorne/gedcom",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "gedcom"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "nikazzio/scriptoria",
+      "url": "https://github.com/nikazzio/scriptoria",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [
+        "ocr",
+        "archives",
+        "images",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "nikkoxgonzales/mcp-grampsweb",
+      "url": "https://github.com/nikkoxgonzales/mcp-grampsweb",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "adapter",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "noahkiss/genealogy-mcp",
+      "url": "https://github.com/noahkiss/genealogy-mcp",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "adapter",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "notakeith/handscribe",
+      "url": "https://github.com/notakeith/handscribe",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [
+        "ocr"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "oh-kay-blanket/family-plot",
+      "url": "https://github.com/oh-kay-blanket/family-plot",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "trees"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "omeka/omeka",
+      "url": "https://github.com/omeka/omeka",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "unknown",
+      "domains": [
+        "archives"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип оставлен неопределённым из-за неоднозначного исходного описания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "omeka/omeka-s",
+      "url": "https://github.com/omeka/omeka-s",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [
+        "archives"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "reassess",
+      "currency_reason": "Проверенное изменение затрагивает условия пилота или совместимость. Добавлены явные проверки разрешений редактирования в контроллере администрирования сайтов Omeka S.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "openseadragon/openseadragon",
+      "url": "https://github.com/openseadragon/openseadragon",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "library",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "projectmirador/mirador",
+      "url": "https://github.com/projectmirador/mirador",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "qurator-spk/dinglehopper",
+      "url": "https://github.com/qurator-spk/dinglehopper",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "developer_tool",
+      "domains": [
+        "ocr",
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "recogito/text-annotator-js",
+      "url": "https://github.com/recogito/text-annotator-js",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "library",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "reassess",
+      "currency_reason": "Проверенное изменение затрагивает условия пилота или совместимость. Исправлено определение страницы для границ выделенного фрагмента при разделении PDF-аннотаций по страницам.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "rollybre/cthulhu",
+      "url": "https://github.com/rollybre/cthulhu",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "library",
+      "domains": [
+        "ocr",
+        "evaluation"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "rue-a/provo",
+      "url": "https://github.com/rue-a/provo",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "library",
+      "domains": [
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ruempel/nacarta",
+      "url": "https://github.com/ruempel/nacarta",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "trees"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ryanfb/iiif-dl",
+      "url": "https://github.com/ryanfb/iiif-dl",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "sandxlab/sandx-er",
+      "url": "https://github.com/sandxlab/sandx-er",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "library",
+      "domains": [
+        "agents",
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "satvikgosai/genea-web",
+      "url": "https://github.com/satvikgosai/genea-web",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "places"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "scheldt-llc/genealogy_ai",
+      "url": "https://github.com/scheldt-llc/genealogy_ai",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "prototype",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "scormave/gramps-web-mcp",
+      "url": "https://github.com/scormave/gramps-web-mcp",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "adapter",
+      "domains": [
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "scripta/escriptorium",
+      "url": "https://gitlab.com/scripta/escriptorium",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [
+        "ocr"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Подтверждённое основное размещение GitLab доступно. README описывает Django/Celery/PostgreSQL/Redis/Kraken, Docker и WSL. Страница лицензии указывает MIT. Конкретная версия, ресурсы и HTR-модель под русские материалы требуют сверки перед предложением P2.",
+      "assessment_approved_at": null,
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "shelfgot/maatikshemua",
+      "url": "https://github.com/shelfgot/maatikshemua",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [
+        "ocr"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "stefromlc/iiif-downloader",
+      "url": "https://github.com/stefromlc/iiif-downloader",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "thisisankit27/f-tree",
+      "url": "https://github.com/thisisankit27/f-tree",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [
+        "trees"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "tropy/tropy",
+      "url": "https://github.com/tropy/tropy",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "reassess",
+      "currency_reason": "Проверенное изменение затрагивает условия пилота или совместимость. Ограничена сложность быстрого поиска по записям и длина запросов через API и внутренний протокол.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "trungdong/prov",
+      "url": "https://github.com/trungdong/prov",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "library",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ub-mannheim/escriptorium",
+      "url": "https://github.com/ub-mannheim/escriptorium",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [
+        "ocr",
+        "archives",
+        "images",
+        "indexing"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Содержательная проверка относится к уже зафиксированному коммиту оценки. Изменение после неё не установлено; полная актуальность условий пилота требует отдельной сверки.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ub-mannheim/escriptorium_dokumentation",
+      "url": "https://github.com/ub-mannheim/escriptorium_dokumentation",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "reference",
+      "domains": [
+        "ocr",
+        "images"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "umb-oconnorgroup/ibdtools",
+      "url": "https://github.com/umb-oconnorgroup/ibdtools",
+      "section": "Генетическая генеалогия",
+      "primary_type": "library",
+      "domains": [
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "unstructured-io/unstructured-mlk-archive-public",
+      "url": "https://github.com/unstructured-io/unstructured-mlk-archive-public",
+      "section": "ИИ, агенты и поиск",
+      "primary_type": "developer_tool",
+      "domains": [
+        "archives",
+        "agents"
+      ],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "w3c/prov",
+      "url": "https://github.com/w3c/prov",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "standard",
+      "domains": [
+        "images",
+        "indexing",
+        "evidence"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "williamscole/haptic",
+      "url": "https://github.com/williamscole/haptic",
+      "section": "Генетическая генеалогия",
+      "primary_type": "library",
+      "domains": [
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "williamscole/ponderosa",
+      "url": "https://github.com/williamscole/ponderosa",
+      "section": "Генетическая генеалогия",
+      "primary_type": "library",
+      "domains": [
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P3",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "worldhistoricalgazetteer/documentation",
+      "url": "https://github.com/worldhistoricalgazetteer/documentation",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "reference",
+      "domains": [
+        "places"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "worldhistoricalgazetteer/website",
+      "url": "https://github.com/worldhistoricalgazetteer/website",
+      "section": "География и карты",
+      "primary_type": "service",
+      "domains": [
+        "places"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "yfullteam/ytree",
+      "url": "https://github.com/yfullteam/ytree",
+      "section": "Программы и деревья",
+      "primary_type": "dataset",
+      "domains": [
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "yingzhou001/ibdkin",
+      "url": "https://github.com/yingzhou001/ibdkin",
+      "section": "Генетическая генеалогия",
+      "primary_type": "library",
+      "domains": [
+        "genetics"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "zal-analytics/zer",
+      "url": "https://github.com/zal-analytics/zer",
+      "section": "Сопоставление и качество данных",
+      "primary_type": "library",
+      "domains": [
+        "linkage"
+      ],
+      "origin": "initial",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "allmaps/allmaps",
+      "url": "https://github.com/allmaps/allmaps",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "kartta-labs/mapwarper",
+      "url": "https://github.com/kartta-labs/mapwarper",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Segolene-Albouy/iiif-download",
+      "url": "https://github.com/Segolene-Albouy/iiif-download",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "nypl-spacetime/nypl-warper",
+      "url": "https://github.com/nypl-spacetime/nypl-warper",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "GeospatialCentroid/historic_map_explorer",
+      "url": "https://github.com/GeospatialCentroid/historic_map_explorer",
+      "section": "Источники, OCR и архивы",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "OpenRefine/OpenRefine",
+      "url": "https://github.com/OpenRefine/OpenRefine",
+      "section": "География и карты",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "LinkedPasts/linked-places-format",
+      "url": "https://github.com/LinkedPasts/linked-places-format",
+      "section": "География и карты",
+      "primary_type": "standard",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "OpenRefine/FilesExtension",
+      "url": "https://github.com/OpenRefine/FilesExtension",
+      "section": "География и карты",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "familysearch/gedcom-registries",
+      "url": "https://github.com/FamilySearch/GEDCOM-registries",
+      "section": "Программы и деревья",
+      "primary_type": "standard",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "AleBeda/genechart",
+      "url": "https://github.com/AleBeda/genechart",
+      "section": "Программы и деревья",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ADZirid/STEMMA",
+      "url": "https://github.com/ADZirid/STEMMA",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "genea-app/genea-app",
+      "url": "https://github.com/genea-app/genea-app",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "ryanturcotte/open-family-tree",
+      "url": "https://github.com/ryanturcotte/open-family-tree",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Mip555/root-free",
+      "url": "https://github.com/Mip555/root-free",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "spacecat56/Ged2Reg",
+      "url": "https://github.com/spacecat56/Ged2Reg",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "KeithPetro/Yggdrasil",
+      "url": "https://github.com/KeithPetro/Yggdrasil",
+      "section": "Программы и деревья",
+      "primary_type": "application",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "nigelhorne/ged2site",
+      "url": "https://github.com/nigelhorne/ged2site",
+      "section": "Программы и деревья",
+      "primary_type": "developer_tool",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "glamberson/gedcom-tags",
+      "url": "https://github.com/glamberson/gedcom-tags",
+      "section": "Программы и деревья",
+      "primary_type": "standard",
+      "domains": [
+        "gedcom"
+      ],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "recogito/pdf-annotator-js",
+      "url": "https://github.com/recogito/pdf-annotator-js",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "library",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "recogito/recogito-js",
+      "url": "https://github.com/recogito/recogito-js",
+      "section": "Прочие и междисциплинарные",
+      "primary_type": "library",
+      "domains": [],
+      "origin": "initial",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "Genealogy Research Workbench",
+      "url": "https://github.com/glasgowm148/genealogy-research-workbench",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "gedcom",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "IIIF Kasane",
+      "url": "https://github.com/nakamura196/iiif-kasane",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "ocr",
+        "images",
+        "indexing",
+        "evaluation"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "scan2gedcom",
+      "url": "https://github.com/briancase1776/scan2gedcom",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "reference",
+      "domains": [
+        "ocr",
+        "indexing",
+        "gedcom"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ZMO AI Pipelines",
+      "url": "https://github.com/fmadore/zmo-ai-pipelines",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "developer_tool",
+      "domains": [
+        "ocr",
+        "evidence",
+        "evaluation"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "genealogy-agent-skills",
+      "url": "https://github.com/rfsbraz/genealogy-agent-skills",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "reference",
+      "domains": [
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "gramps-mcp-dotnet",
+      "url": "https://github.com/zankul/gramps-mcp-dotnet",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "agents"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Rask",
+      "url": "https://github.com/AI-Riksarkivet/rask",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "prototype",
+      "domains": [
+        "archives",
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "oxidged / OxidGene",
+      "url": "https://github.com/trois-six/oxidged",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "library",
+      "domains": [
+        "gedcom",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Exscriptor",
+      "url": "https://github.com/julioalonzom/exscriptor",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "library",
+      "domains": [
+        "ocr",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Gramps Connect",
+      "url": "https://github.com/dsblank/gramps-connect",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "gedcom",
+        "places"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "GEDKeeper",
+      "url": "https://github.com/Serg-Norseman/GEDKeeper",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "agents"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "Bartelby",
+      "url": "https://github.com/absaltfox/bartelby",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "evidence",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Desembarque",
+      "url": "https://github.com/allan-valin/ocr-gene-docs",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "unknown",
+      "domains": [
+        "ocr",
+        "archives",
+        "indexing",
+        "agents",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип оставлен неопределённым из-за неоднозначного исходного описания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Historic Records AI Reader",
+      "url": "https://github.com/usulkies/historic-records-ai-reader",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "reference",
+      "domains": [
+        "ocr",
+        "indexing",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "gedaudit",
+      "url": "https://github.com/thobgg/gedaudit",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "gedcom",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "open-ancestry",
+      "url": "https://github.com/adamsilverstein/open-ancestry",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "gedcom",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "NAFRec",
+      "url": "https://github.com/Kansallisarkisto-AI/nafrec",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "developer_tool",
+      "domains": [
+        "ocr",
+        "annotation",
+        "archives",
+        "indexing"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Scribe",
+      "url": "https://github.com/lehigh-university-libraries/scribe",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "ocr",
+        "annotation",
+        "images",
+        "indexing"
+      ],
+      "origin": "watch",
+      "classification_reason": "Редакционная классификация по сохранённому README конкретного коммита. Тип описывает устройство проекта; готовность и текущие условия пилота оцениваются отдельно.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "gov-gazetteer-mcp",
+      "url": "https://github.com/ianderso/gov-gazetteer-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "agents",
+        "places"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "genealogy-mcp",
+      "url": "https://github.com/igormel81/genealogy-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "archives",
+        "gedcom",
+        "agents",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "Archive MCP adapters (ianderso)",
+      "url": "https://github.com/ianderso",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "unknown",
+      "domains": [
+        "archives",
+        "agents"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип оставлен неопределённым из-за неоднозначного исходного описания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Адрес указывает на профиль владельца. Для оценки нужен конкретный репозиторий и его первоисточники.",
+      "assessment_approved_at": null,
+      "last_substantive_source_check": null,
+      "editorial_priority": "P1",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "Gramps Evidence MCP",
+      "url": "https://github.com/ianderso/gramps-evidence-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "geiserx/gramps-web-toolkit",
+      "url": "https://github.com/GeiserX/gramps-web-toolkit",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "kinprove/genealogy-research-recipes",
+      "url": "https://github.com/Kinprove/genealogy-research-recipes",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "reference",
+      "domains": [
+        "agents",
+        "evidence",
+        "genetics"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-06",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "b21-agency/gramps-ui",
+      "url": "https://github.com/b21-agency/gramps-ui",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "unknown",
+      "domains": [
+        "agents"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип оставлен неопределённым из-за неоднозначного исходного описания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Повторный GitHub HTTP 404. Публичная доступность не подтверждена; причина и перенос не установлены.",
+      "assessment_approved_at": null,
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "dsblank/gramps-connect-stories",
+      "url": "https://github.com/dsblank/gramps-connect-stories",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "library",
+      "domains": [
+        "gedcom",
+        "places"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "device25/gedview",
+      "url": "https://github.com/device25/gedview",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "application",
+      "domains": [
+        "gedcom"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "stanford-oval/sheldon",
+      "url": "https://github.com/stanford-oval/sheldon",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "library",
+      "domains": [
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "denissergeevitch/ex-ussr-kinship-research",
+      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "reference",
+      "domains": [
+        "agents",
+        "evidence",
+        "places"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P1",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "archiveheritagegroup/ahg-archives-mcp",
+      "url": "https://github.com/ArchiveHeritageGroup/ahg-archives-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "archives",
+        "images",
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "archiveheritagegroup/heratio",
+      "url": "https://github.com/ArchiveHeritageGroup/heratio",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "service",
+      "domains": [
+        "archives",
+        "images",
+        "evidence",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "yifenglu1999/ai-historian",
+      "url": "https://github.com/YiFengLu1999/AI-Historian",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "developer_tool",
+      "domains": [
+        "agents",
+        "evidence",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "vaibhaav-tiwari/lineage",
+      "url": "https://github.com/Vaibhaav-Tiwari/lineage",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "library",
+      "domains": [
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Основной тип нормализован по сохранённой роли в практической оценке. Направления отражают описанное назначение.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "mouchar/ftb-mcp",
+      "url": "https://github.com/mouchar/ftb-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "gedcom",
+        "agents"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "P2",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "ai-riksarkivet/ra-mcp",
+      "url": "https://github.com/AI-Riksarkivet/ra-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "ocr",
+        "archives",
+        "images",
+        "agents"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "borisovodov/doru",
+      "url": "https://github.com/borisovodov/doru",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "gedcom",
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "stanford-oval/credit",
+      "url": "https://github.com/stanford-oval/CREDIT",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "prototype",
+      "domains": [
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P3"
+    },
+    {
+      "project": "fmadore/iwac-mcp-server",
+      "url": "https://github.com/fmadore/iwac-mcp-server",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "archives",
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "alexey-n-chernyshov/gramps-web-mcp-rs",
+      "url": "https://github.com/Alexey-N-Chernyshov/gramps-web-mcp-rs",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "gedcom",
+        "agents",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "magicianmarty/heritage-research-mcp",
+      "url": "https://github.com/magicianmarty/heritage-research-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "archives",
+        "images",
+        "indexing",
+        "agents",
+        "evidence",
+        "places"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "itarunnn/jp-lit-mcp",
+      "url": "https://github.com/itarunnn/jp-lit-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "ocr",
+        "archives",
+        "images",
+        "indexing",
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Содержательная проверка относится к уже зафиксированному коммиту оценки. Изменение после неё не установлено; полная актуальность условий пилота требует отдельной сверки.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "k-woitas/eperiodica-explorer",
+      "url": "https://github.com/k-woitas/eperiodica-explorer",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "unknown",
+      "domains": [
+        "ocr",
+        "archives",
+        "images",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип оставлен неопределённым из-за неоднозначного исходного описания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P1"
+    },
+    {
+      "project": "genealogy-mcp/gramps-mcp",
+      "url": "https://github.com/Genealogy-MCP/gramps-mcp",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "gedcom",
+        "agents"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
+      "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "last_substantive_source_check": "2026-11-04",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "P2"
+    },
+    {
+      "project": "pioneeraiacademy/cowork-genealogy",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "prototype",
+      "domains": [
+        "agents",
+        "evidence",
+        "linkage"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "proposed",
+      "currency_reason": "Alpha, Node.js 22+ и интеграция Claude/FamilySearch требуют подготовки. Apache-2.0 проверена, самостоятельная работа не испытана.",
+      "assessment_approved_at": null,
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "semanticmeaning/kinship-kit",
+      "url": "https://github.com/semanticmeaning/kinship-kit",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "developer_tool",
+      "domains": [
+        "archives",
+        "gedcom",
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "proposed",
+      "currency_reason": "Навык и CLI для бывшего СССР, MIT и версия 0.5.2 подтверждены. Требуется отдельное приватное учебное дело и настройка агента.",
+      "assessment_approved_at": null,
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "joaquimrcarvalho/personal-historical-archive",
+      "url": "https://github.com/joaquimrcarvalho/personal-historical-archive",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "developer_tool",
+      "domains": [
+        "ocr",
+        "archives",
+        "images",
+        "indexing",
+        "agents",
+        "evidence"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "insufficient",
+      "currency_reason": "Версия 0.47.0 подтверждена. В полном дереве только LICENSE отдельного навыка; общая лицензия не установлена. Условия использования и VLM требуют уточнения.",
+      "assessment_approved_at": null,
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "Не оценён",
+      "practical_priority": "Не оценён"
+    },
+    {
+      "project": "openheritageonline/agent-tooling",
+      "url": "https://github.com/OpenHeritageOnline/agent-tooling",
+      "section": "Новые исследования / GitHub Watch",
+      "primary_type": "adapter",
+      "domains": [
+        "archives",
+        "agents",
+        "evidence",
+        "places"
+      ],
+      "origin": "watch",
+      "classification_reason": "Нормализация сохранённых редакционных полей. Основной тип сверен с описанием роли; направления обозначают назначение, а не результат испытания.",
+      "currency_status": "proposed",
+      "currency_reason": "Публичный read-only MCP и восемь навыков позволяют ограничить пилот чтением украинских источников. Лицензия репозитория не установлена; права на переиспользование материалов требуют уточнения.",
+      "assessment_approved_at": null,
+      "last_substantive_source_check": "2026-11-09",
+      "editorial_priority": "P2",
+      "practical_priority": "Не оценён"
+    }
+  ]
+}

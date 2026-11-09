@@ -68,7 +68,13 @@ def validate_source_updates(root, catalog):
                 add(loc, "Expected HTTPS github.com source")
                 continue
             if row.get("status") != "needs_recheck":
+                if '/'.join(parts.path.strip('/').split('/')[:2]).lower() != name:
+                    add(loc, "Verified source must identify the reviewed project")
                 match = SOURCE_RE.fullmatch(parts.path)
-                if not match or not commit or match.group(1) != commit:
+                commit_link = re.fullmatch(r"/[^/]+/[^/]+/commit/([0-9a-f]{40})", parts.path)
+                if not commit or not ((match and match.group(1) == commit) or commit_link):
                     add(loc, "Verified claim requires blob URL pinned to matching commit")
+        if row.get("status") != "needs_recheck" and commit and not any(
+                commit in url for url in row.get("sources",[]) if isinstance(url,str)):
+            add(where, "Primary commit must be present in pinned source URLs")
     return issues

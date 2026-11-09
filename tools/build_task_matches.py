@@ -49,7 +49,7 @@ def build(catalog,research,usage=None):
     tasks=[dict(id=key,title=title) for key,title,_ in TASKS]
     matches=[]
     for card in catalog:
-        if card.get('repository_reference_issue'):continue
+        if card.get('repository_reference_issue',{}).get('result') in ('not_found','owner_profile'):continue
         key=card['name'].lower(); r=research.get(key,{})
         fields=[]
         for field in ('description','use_case','limitations','components'):
@@ -97,6 +97,8 @@ def main():
     root=Path(__file__).resolve().parents[1]
     catalog=json.loads((root/'catalog.json').read_text(encoding='utf-8'))
     research=json.loads((root/'docs/research.json').read_text(encoding='utf-8'))
+    from catalog_model import enrich
+    catalog=enrich(root,catalog,research)
     usage=load_context(root,catalog,research)
     result=build(catalog,research,usage)
     data=(json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode()
@@ -112,6 +114,15 @@ def main():
         if html.count(marker)!=1:raise ValueError('Cannot locate catalogue renderer for usage seed')
         html=html.replace(marker,script+'\n'+marker)
     files={'docs/task-matches.json':data,'docs/usage-context.json':encoded(usage),'docs/index.html':html.encode('utf-8')}
+    from apply_changes import sync_payloads
+    synced=sync_payloads(root,catalog=catalog)
+    # Merge the usage seed into the page containing the synchronized catalog seed.
+    synced['docs/index.html']=re.sub(r'<script\b[^>]*\bid="usage-seed"[^>]*>.*?</script>',
+        lambda _:script,synced['docs/index.html'].decode('utf-8'),flags=re.S).encode('utf-8')
+    files.update(synced)
+    from catalog_model import schema
+    if (root/'data/classification-decisions.json').exists():
+        files['docs/catalog.schema.json']=encoded(schema())
     if (root/'docs/priorities-ui.js').exists():
         from priority_review import build as review_priorities
         audit=root/'reports/repository-existence.json'

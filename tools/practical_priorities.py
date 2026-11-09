@@ -125,7 +125,18 @@ def load_proposals(root, catalog):
         for row in json.loads(audit_path.read_text(encoding='utf-8')):
             if row['result'] != 'exists':
                 expected = dict(result=row['result'], checked_on=row['checked_on'], url=row['url'])
-                if cards[row['name'].lower()].get('repository_reference_issue') != expected:
+                card = cards[row['name'].lower()]
+                issue = card.get('repository_reference_issue') or {}
+                current = (issue.get('result') == row['result'] and issue.get('url') == row['url']
+                           and issue.get('checked_on', '') >= row['checked_on'])
+                relocated = (issue.get('result') == 'resolved_relocated'
+                             and issue.get('previous_url') == row['url']
+                             and issue.get('url') == card['url']
+                             and issue.get('resolved_on', '') >= row['checked_on']
+                             and any(source.get('url') == card['url']
+                                     for correction in card.get('editorial_corrections', [])
+                                     for source in correction.get('sources', [])))
+                if not (current or relocated):
                     raise ValueError('Repository reference issue lost from publication')
     elif any(c.get('practical_priority') for c in catalog):
         raise ValueError('Practical assessment has no application approval')

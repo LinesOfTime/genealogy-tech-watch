@@ -1,0 +1,10 @@
+{
+  "url": "https://gitlab.com/scripta/escriptorium",
+  "checked_on": "2026-11-09",
+  "kind": "editorial_verification_note",
+  "sources": [
+    "https://gitlab.com/scripta/escriptorium/-/raw/master/README.md",
+    "https://gitlab.com/scripta/escriptorium/-/raw/master/LICENSE"
+  ],
+  "observations": "Страница GitLab указывает проект Scripta / escriptorium, Project ID 26940117. README описывает Django, Celery, PostgreSQL, Redis, Kraken, Docker и WSL. Прочитанный LICENSE содержит условия MIT. Ссылки master не закрепляют версию; актуальность пилота и применение к русским документам требуют отдельной сверки."
+}

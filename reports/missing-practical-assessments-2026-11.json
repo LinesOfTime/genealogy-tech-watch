@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-09",
+  "projects": [
+    {
+      "project": "komura-shoan/iiif-downloader",
+      "url": "https://github.com/komura-shoan/iiif-downloader",
+      "previous_priority": "Не оценён",
+      "proposed_priority": "Не оценён",
+      "review_status": "pending",
+      "reason": "Повторный GitHub HTTP 404. Публичная доступность не подтверждена; причина и перенос не установлены.",
+      "sources": [
+        "https://api.github.com/repos/komura-shoan/iiif-downloader"
+      ],
+      "role": "Не установлен",
+      "scope": "",
+      "limitations": "CLI для IIIF Presentation 3 и последовательных URL; не путать лицензию кода с правами на изображения архивов Текущий адрес репозитория возвращает HTTP 404 (повторная проверка 08.11.2026). Доступность проекта, возможный перенос и актуальность описанных возможностей не подтверждены; исторические сведения сохранены.",
+      "license": "MIT"
+    },
+    {
+      "project": "scripta/escriptorium",
+      "url": "https://gitlab.com/scripta/escriptorium",
+      "previous_priority": "Не оценён",
+      "proposed_priority": "Не оценён",
+      "review_status": "pending",
+      "reason": "Подтверждённое основное размещение GitLab доступно. README описывает Django/Celery/PostgreSQL/Redis/Kraken, Docker и WSL. Страница лицензии указывает MIT. Конкретная версия, ресурсы и HTR-модель под русские материалы требуют сверки перед предложением P2.",
+      "sources": [
+        "https://gitlab.com/scripta/escriptorium",
+        "https://gitlab.com/scripta/escriptorium/-/raw/master/README.md",
+        "https://gitlab.com/scripta/escriptorium/-/blob/master/LICENSE"
+      ],
+      "role": "HTR-система; основное размещение GitLab",
+      "scope": "Редакционный сценарий: организовать в eScriptorium пробную кампанию транскрипции рукописных страниц, импортировать изображения и подходящую модель, оценить автоматическую сегментацию и распознавание и выполнить ручную сверку. Сценарий независимо не испытывался.",
+      "limitations": "Нужен доступ к развёрнутому веб-приложению и подходящей модели Kraken. Автоматический результат требует сверки с изображениями; качество на русских материалах здесь не оценивалось. Каталожный GitHub-адрес при проверке вернул 404, поэтому описание основано на официальной документации и проекте в GitLab; актуальность прежней ссылки и лицензия требуют отдельной проверки.",
+      "license": "MIT по странице GitLab; версия текста не закреплена"
+    },
+    {
+      "project": "Archive MCP adapters (ianderso)",
+      "url": "https://github.com/ianderso",
+      "previous_priority": "Не оценён",
+      "proposed_priority": "Не оценён",
+      "review_status": "pending",
+      "reason": "Адрес указывает на профиль владельца. Для оценки нужен конкретный репозиторий и его первоисточники.",
+      "sources": [
+        "https://github.com/ianderso"
+      ],
+      "role": "Не определено",
+      "scope": "Изучить единый контракт",
+      "limitations": "Требует независимой проверки по GitHub",
+      "license": "MIT (по предыдущим обзорам)"
+    },
+    {
+      "project": "b21-agency/gramps-ui",
+      "url": "https://github.com/b21-agency/gramps-ui",
+      "previous_priority": "Не оценён",
+      "proposed_priority": "Не оценён",
+      "review_status": "pending",
+      "reason": "Повторный GitHub HTTP 404. Публичная доступность не подтверждена; причина и перенос не установлены.",
+      "sources": [
+        "https://api.github.com/repos/b21-agency/gramps-ui"
+      ],
+      "role": "Не определено",
+      "scope": "Редакционный сценарий: сравнить просмотр родственников, редактирование и навигацию на телефоне с обычным Gramps Web на копии одного дерева.",
+      "limitations": "Ранняя стадия; совместимость задумана, но не гарантирована. Работа, скорость и сохранность данных независимо не испытывались. В README указаны немецкий и английский языки. Текущий адрес репозитория возвращает HTTP 404 (повторная проверка 08.11.2026). Доступность проекта, возможный перенос и актуальность описанных возможностей не подтверждены; исторические сведения сохранены.",
+      "license": "AGPL-3.0-or-later по README тега 0.1.0; сохранён LICENSE AGPL v3"
+    },
+    {
+      "project": "pioneeraiacademy/cowork-genealogy",
+      "url": "https://github.com/PioneerAIAcademy/cowork-genealogy",
+      "previous_priority": "Не оценён",
+      "proposed_priority": "P2",
+      "review_status": "pending",
+      "reason": "Alpha, Node.js 22+ и интеграция Claude/FamilySearch требуют подготовки. Apache-2.0 проверена, самостоятельная работа не испытана.",
+      "sources": [
+        "https://raw.githubusercontent.com/PioneerAIAcademy/cowork-genealogy/bcef24ee3ee75bf4d418e92595a7471b493e9d07/README.md",
+        "https://raw.githubusercontent.com/PioneerAIAcademy/cowork-genealogy/bcef24ee3ee75bf4d418e92595a7471b493e9d07/LICENSE"
+      ],
+      "role": "Исследовательский агент и рабочее пространство",
+      "scope": "Проверить исследовательский журнал, работу с конфликтующими источниками, восстановление сессий и переносимость архитектуры на российские архивы.",
+      "limitations": "Alpha; Claude Cowork, FamilySearch, Node.js 22+. Доступность сервисов, юридические условия использования архивных материалов и применимость к России требуют отдельного рассмотрения.",
+      "license": "Apache-2.0 — LICENSE на коммите 97221bd3c721af05c012b539091decb6e8e10960",
+      "task": "Вести дело с источниками и конкурирующими гипотезами",
+      "input_output": "Учебный вопрос и известный документ → журнал поисков и проверяемая ссылка на свидетельство",
+      "pilot": "На вымышленной семье проследить одну связь от документа к гипотезе и решению. Критерий — каждая ссылка открывает исходную страницу, пропуски отмечены.",
+      "recheck_trigger": "После проверки установки, прав доступа, лицензионных условий и результатов учебной пробы.",
+      "evidence_level": "E1",
+      "reviewed_at": "2026-11-09",
+      "independent_test": false,
+      "russia_scope": "Универсальная методика исследования по онлайн-записям. Доступность FamilySearch, российских источников и качество кириллицы требуют отдельной проверки.",
+      "dependencies": "Node.js 22+, Claude Cowork и разрешённый доступ к выбранным источникам"
+    },
+    {
+      "project": "semanticmeaning/kinship-kit",
+      "url": "https://github.com/semanticmeaning/kinship-kit",
+      "previous_priority": "Не оценён",
+      "proposed_priority": "P2",
+      "review_status": "pending",
+      "reason": "Навык и CLI для бывшего СССР, MIT и версия 0.5.2 подтверждены. Требуется отдельное приватное учебное дело и настройка агента.",
+      "sources": [
+        "https://raw.githubusercontent.com/semanticmeaning/kinship-kit/4d90a0621febc37479ac265f41649a357e7a2558/README.md",
+        "https://raw.githubusercontent.com/semanticmeaning/kinship-kit/4d90a0621febc37479ac265f41649a357e7a2558/LICENSE"
+      ],
+      "role": "Генеалогический toolkit: Agent Skill, CLI, MCP-сервер и генератор семейного сайта",
+      "scope": "На вымышленной семье создать исследовательское дело, прикрепить скан с архивным шифром, записать конкурирующие атрибуции и отрицательный поиск; проверить сохранение состояния и публичную сборку до переноса реальных данных.",
+      "limitations": "Нужны Python 3.10+ и настройка выбранного агента; установка CLI из клона описана только в editable-режиме. Качество агентного ревью и защита живущих при публикации независимо не проверены. GEDCOM переносит лишь часть полей, полный обмен дела выполняется другим форматом. Использовать актуальную 0.5.2 с описанными авторами исправлениями; это версия метаданных, не GitHub Release.",
+      "license": "MIT",
+      "task": "Вести дело с источниками и конкурирующими гипотезами",
+      "input_output": "Учебный вопрос и известный документ → журнал поисков и проверяемая ссылка на свидетельство",
+      "pilot": "На вымышленной семье проследить одну связь от документа к гипотезе и решению. Критерий — каждая ссылка открывает исходную страницу, пропуски отмечены.",
+      "recheck_trigger": "После проверки установки, прав доступа, лицензионных условий и результатов учебной пробы.",
+      "evidence_level": "E1",
+      "reviewed_at": "2026-11-09",
+      "independent_test": false,
+      "russia_scope": "README прямо называет бывший СССР и Российскую империю; полнота архивных адаптеров и качество ИИ-чтения требуют испытания.",
+      "dependencies": "Python 3.10+, совместимый ИИ-агент и отдельный приватный каталог дела"
+    },
+    {
+      "project": "joaquimrcarvalho/personal-historical-archive",
+      "url": "https://github.com/joaquimrcarvalho/personal-historical-archive",
+      "previous_priority": "Не оценён",
+      "proposed_priority": "Не оценён",
+      "review_status": "pending",
+      "reason": "Версия 0.47.0 подтверждена. В полном дереве только LICENSE отдельного навыка; общая лицензия не установлена. Условия использования и VLM требуют уточнения.",
+      "sources": [
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/pyproject.toml",
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/README.md",
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/src/personal_historical_archive/CHANGELOG.json",
+        "https://github.com/joaquimrcarvalho/personal-historical-archive/blob/247d4ce89fe7c22f492bb79bc9770f674ac4b28d/skills/palaeographers-compare/LICENSE"
+      ],
+      "role": "Python/CLI-конвейер и MCP-сервер локального архива документов",
+      "scope": "На двух разрешённых страницах сохранить сканы, получить машинную транскрипцию и отдельно перевод или модернизированное чтение; найти известное имя и сверить ответ, цитату и номер страницы с оригиналом.",
+      "limitations": "Нужны Python 3.11+, сервер совместимых моделей и ресурсы для vision/embeddings. Удалённые модели могут получать документы. Лицензия проекта не установлена: отдельного LICENSE в проверенном корне и поля license в pyproject нет. Качество чтения, поиска, цитирования и переносимость на русские документы независимо не проверены; 0.46.7 — номер в метаданных, GitHub Releases пуст.",
+      "license": "Не установлена: LICENSE отсутствует в проверенном корне, поле license не задано в pyproject.toml"
+    },
+    {
+      "project": "openheritageonline/agent-tooling",
+      "url": "https://github.com/OpenHeritageOnline/agent-tooling",
+      "previous_priority": "Не оценён",
+      "proposed_priority": "P2",
+      "review_status": "pending",
+      "reason": "Публичный read-only MCP и восемь навыков позволяют ограничить пилот чтением украинских источников. Лицензия репозитория не установлена; права на переиспользование материалов требуют уточнения.",
+      "sources": [
+        "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/README.md"
+      ],
+      "role": "Набор инструментов интеграции для ИИ-агентов и конфигурация удалённого MCP.",
+      "scope": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
+      "limitations": "Охват определяется коллекциями OpenHeritage; полнота по конкретному архиву и историческому АТД не установлена. Участник ограничен правами записи и scope; модераторские операции выходят за рамки описанного сценария. При исправлении проверенного места или утверждённого источника статус проверки может измениться. Лицензия репозитория не установлена. Работа сервиса и качество результатов независимо не проверялись.",
+      "license": "Не установлена",
+      "task": "Найти украинский архивный источник и сверить конкретную страницу",
+      "input_output": "Название места, период и фамилия → публичная запись источника, страница документа и каноническая ссылка",
+      "pilot": "В read-only MCP найти один заранее известный источник, открыть указанную страницу и сравнить с ручным поиском. Критерий — правильная ссылка на документ и отсутствие записи в общие данные.",
+      "recheck_trigger": "После проверки установки, прав доступа, лицензионных условий и результатов учебной пробы.",
+      "evidence_level": "E1",
+      "reviewed_at": "2026-11-09",
+      "independent_test": false,
+      "russia_scope": "Украинские коллекции полезны при соответствующей географии предков. Покрытие российских архивов и доступность из РФ не проверены.",
+      "dependencies": "Совместимый клиент MCP, доступ к публичному сервису OpenHeritage; для операций изменения нужен отдельный scope API"
+    }
+  ]
+}

@@ -9,8 +9,8 @@ var CatalogIO = (() => {
       for(const field of scalarFields)if(card[field]!==undefined&&typeof card[field]!=='string')throw Error(`Карточка ${i+1}: поле ${field} должно быть строкой.`);
       if(!card.name?.trim()||!card.url)throw Error(`Карточка ${i+1}: нужны name и url.`);
       let url;try{url=new URL(card.url)}catch{throw Error(`Карточка ${i+1}: неверный URL.`)}
-      if(url.protocol!=='https:'||!['github.com','www.github.com'].includes(url.hostname)||url.username||url.password||url.port||url.search||url.hash||!/^\/[\w.-]+(?:\/[\w.-]+)?\/?$/.test(url.pathname))throw Error(`Карточка ${i+1}: нужен безопасный HTTPS-адрес GitHub.`);
-      const identity=url.pathname.replace(/\/$/,'').replace(/\.git$/i,'').toLowerCase(),name=card.name.toLowerCase();
+      if(url.protocol!=='https:'||!['github.com','www.github.com','gitlab.com'].includes(url.hostname)||url.username||url.password||url.port||url.search||url.hash||!/^\/[\w.-]+(?:\/[\w.-]+)?\/?$/.test(url.pathname))throw Error(`Карточка ${i+1}: нужен безопасный HTTPS-адрес GitHub или GitLab.`);
+      const identity=url.hostname.replace(/^www\./,'')+url.pathname.replace(/\/$/,'').replace(/\.git$/i,'').toLowerCase(),name=card.name.toLowerCase();
       if(names.has(name)||urls.has(identity))throw Error(`Карточка ${i+1}: повтор имени или адреса.`);
       names.add(name);urls.add(identity);
       if(card.practical_priority!==undefined){
@@ -19,6 +19,16 @@ var CatalogIO = (() => {
         for(const key of ['priority','task','scope','rationale','evidence_level','review_status'])if(p[key]!==undefined&&typeof p[key]!=='string')throw Error(`Карточка ${i+1}: неверное поле оценки ${key}.`);
       }
       if(card.russia_applicability!==undefined&&(!card.russia_applicability||typeof card.russia_applicability!=='object'||Array.isArray(card.russia_applicability)))throw Error(`Карточка ${i+1}: неверная применимость.`);
+      if(card.classification!==undefined){
+        const value=card.classification;
+        if(!value||typeof value!=='object'||Array.isArray(value)||typeof value.type_label!=='string'||
+            !Array.isArray(value.domain_labels)||value.domain_labels.some(tag=>typeof tag!=='string'))throw Error('Неверная классификация.');
+      }
+      if(card.assessment_currency!==undefined){
+        const value=card.assessment_currency;
+        if(!value||typeof value!=='object'||Array.isArray(value)||typeof value.label!=='string'||
+            [value.assessment_approved_at,value.last_substantive_source_check].some(date=>date!=null&&typeof date!=='string'))throw Error('Неверная актуальность оценки.');
+      }
     }
     return structuredClone(value);
   }
