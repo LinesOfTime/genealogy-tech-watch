@@ -64,6 +64,17 @@ function render() {
     const priorityLink = 'priorities.html?q=' + encodeURIComponent(card.name);
     const level = card.practical_priority?.evidence_level || card.evaluation?.evidence_level || 'НД';
     const type = model?.type_label || 'Не определено';
+    const assessmentStatus = {
+      current:'Оценка актуальна',
+      reassess:'Оценка требует пересмотра',
+      insufficient:card.practical_priority?.review_status === 'approved' ?
+        'Актуальность оценки требует проверки' : 'Практическая оценка не проведена',
+      proposed:'Оценка ожидает утверждения'
+    }[status?.status];
+    const checkedAt = new Date(status?.last_substantive_source_check || NaN);
+    const sourceDate = Number.isNaN(checkedAt.getTime()) ? '' : checkedAt.toLocaleDateString(
+      'ru-RU', {day:'numeric', month:'long', year:'numeric', timeZone:'UTC'});
+
     const priority = WatchUI.priorityValue(card);
     const priorityLabel = priority === 'Проверить ссылку' ? priority : 'Практический · ' + priority;
     const priorityBadge = priority === 'Не оценён' ? '' :
@@ -79,9 +90,9 @@ function render() {
       '<details class="card-details"><summary>Сведения об оценке и лицензии</summary>' +
       '<p class="meta">Редакционный · ' + esc(WatchUI.editorialPriority(card)) +
       (card.preliminary_priority ? ' · Предварительный приоритет · ' + esc(card.preliminary_priority) : '') + '</p>' +
-      '<p class="meta">' + esc(status?.label || 'Недостаточно данных') +
-      ' · оценка ' + esc(status?.assessment_approved_at?.slice(0,10) || 'не утверждена') +
-      ' · источник ' + esc(status?.last_substantive_source_check || 'не датирован') + '</p>' +
+      (assessmentStatus ? '<p class="meta">' + esc(assessmentStatus) + '</p>' : '') +
+      (WatchUI.meaningful(status?.reason) ? '<p class="meta">' + esc(status.reason) + '</p>' : '') +
+      (sourceDate ? '<p class="meta">Источники проверены ' + esc(sourceDate) + '</p>' : '') +
       '<div class="card-meta"><span class="card-testing">Для России · ' + esc(WatchUI.rating(card)) + '</span>' +
       (known ? '<a class="card-testing" href="' + projectLink + '#evidence">Основания · ' + esc(level) + '</a>' :
         '<span class="card-testing">Основания · ' + esc(level) + '</span>') +

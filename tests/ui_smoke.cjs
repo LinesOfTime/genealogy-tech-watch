@@ -70,6 +70,10 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
   assert.equal(scripts.length, 0);
   vm.runInContext(read('docs/catalog-ui.js'), page.context);
+  assert.ok(!page.get('cards').innerHTML.includes(' · оценка '));
+  assert.ok(!page.get('cards').innerHTML.includes(' · источник '));
+  assert.ok(page.get('cards').innerHTML.includes('Источники проверены 4 ноября 2026'));
+  assert.ok(page.get('cards').innerHTML.includes('Актуальность оценки требует проверки'));
   assert.equal(count(page.get('cards').innerHTML, 'card'), catalog.length);
   for (const rating of ['Высокий','Специализированный / зависит от задачи','Не оценено']) {
     const expected = catalog.filter(x => (x.russia_applicability?.rating || 'Не оценено') === rating).length;
