@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "a192f31b01a4d03f465fccabb7bdc9a61c572769b450c3f71ffbd4b51559b0f3",
+  "source_hash": "62124aa7e514724c9bf74a211cb4100faea06185b83a86f0d7965748ca89f5fc",
   "tasks": [
     {
       "id": "transcribe",
@@ -3516,14 +3516,14 @@
       ],
       "practical_priority": {
         "project": "gramps-project/gramps-web",
-        "reviewed_on": "2026-11-04",
+        "reviewed_on": "2026-11-09",
         "method_version": "2026-11-04",
         "role": "Веб-приложение",
         "task": "Совместно просматривать и редактировать дерево",
         "scope": "Многоязычный интерфейс; страна не ограничена",
         "input_output": "Тестовое дерево на демо → просмотр и проверка ролей",
-        "rationale": "Проба на демо доступна; собственное размещение и AI-функции требуют отдельной настройки.",
-        "pilot": "На демо сравнить доступ owner/editor/member к одной записи; без загрузки личных данных.",
+        "rationale": "Сохраняется практическая роль P1: ведение дерева, цитат и медиа; новые релизы улучшают обычную исследовательскую работу, но не подтверждают отдельного улучшения качества исследований.",
+        "pilot": "На резервной копии проверить поиск человека, редактирование цитаты, карту WebGL 2 и восстановление после массового удаления.",
         "recheck_trigger": "Перед своим размещением проверить резервирование, права и синхронизацию.",
         "evidence_level": "E1",
         "independent_test": false,
@@ -3536,8 +3536,8 @@
         "priority": "P1",
         "previous_priority": "P1",
         "review_status": "approved",
-        "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
-        "approved_at": "2026-11-04T18:26:40.963239+00:00",
+        "approved_by": "GitHub @LinesOfTime",
+        "approved_at": "2026-11-09T12:22:41.919825+00:00",
         "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
       },
       "role": {
@@ -3574,14 +3574,14 @@
       ],
       "practical_priority": {
         "project": "gramps-project/gramps-web",
-        "reviewed_on": "2026-11-04",
+        "reviewed_on": "2026-11-09",
         "method_version": "2026-11-04",
         "role": "Веб-приложение",
         "task": "Совместно просматривать и редактировать дерево",
         "scope": "Многоязычный интерфейс; страна не ограничена",
         "input_output": "Тестовое дерево на демо → просмотр и проверка ролей",
-        "rationale": "Проба на демо доступна; собственное размещение и AI-функции требуют отдельной настройки.",
-        "pilot": "На демо сравнить доступ owner/editor/member к одной записи; без загрузки личных данных.",
+        "rationale": "Сохраняется практическая роль P1: ведение дерева, цитат и медиа; новые релизы улучшают обычную исследовательскую работу, но не подтверждают отдельного улучшения качества исследований.",
+        "pilot": "На резервной копии проверить поиск человека, редактирование цитаты, карту WebGL 2 и восстановление после массового удаления.",
         "recheck_trigger": "Перед своим размещением проверить резервирование, права и синхронизацию.",
         "evidence_level": "E1",
         "independent_test": false,
@@ -3594,8 +3594,8 @@
         "priority": "P1",
         "previous_priority": "P1",
         "review_status": "approved",
-        "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
-        "approved_at": "2026-11-04T18:26:40.963239+00:00",
+        "approved_by": "GitHub @LinesOfTime",
+        "approved_at": "2026-11-09T12:22:41.919825+00:00",
         "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
       },
       "role": {
@@ -3632,14 +3632,14 @@
       ],
       "practical_priority": {
         "project": "gramps-project/gramps-web",
-        "reviewed_on": "2026-11-04",
+        "reviewed_on": "2026-11-09",
         "method_version": "2026-11-04",
         "role": "Веб-приложение",
         "task": "Совместно просматривать и редактировать дерево",
         "scope": "Многоязычный интерфейс; страна не ограничена",
         "input_output": "Тестовое дерево на демо → просмотр и проверка ролей",
-        "rationale": "Проба на демо доступна; собственное размещение и AI-функции требуют отдельной настройки.",
-        "pilot": "На демо сравнить доступ owner/editor/member к одной записи; без загрузки личных данных.",
+        "rationale": "Сохраняется практическая роль P1: ведение дерева, цитат и медиа; новые релизы улучшают обычную исследовательскую работу, но не подтверждают отдельного улучшения качества исследований.",
+        "pilot": "На резервной копии проверить поиск человека, редактирование цитаты, карту WebGL 2 и восстановление после массового удаления.",
         "recheck_trigger": "Перед своим размещением проверить резервирование, права и синхронизацию.",
         "evidence_level": "E1",
         "independent_test": false,
@@ -3652,8 +3652,8 @@
         "priority": "P1",
         "previous_priority": "P1",
         "review_status": "approved",
-        "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
-        "approved_at": "2026-11-04T18:26:40.963239+00:00",
+        "approved_by": "GitHub @LinesOfTime",
+        "approved_at": "2026-11-09T12:22:41.919825+00:00",
         "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
       },
       "role": {
@@ -14640,6 +14640,491 @@
       "use_case": "Archive Adapter: искать в OpenHeritage репозитории, фонды и источники, открывать документы, страницы, сканы и XML. Research Workspace: вести вопросы, гипотезы и связи с источниками в проекте OpenHeritage. Place Resolver/АТД: сверять исторические названия и административных или церковных родителей на дату по каноническим местам и внешним идентификаторам. provenance/evidence: сохранять каноническую ссылку на источник или страницу и отдельно фиксировать гипотезы. API/MCP: публичный анонимный MCP (Streamable HTTP) только для поиска и чтения публичных ресурсов; изменения выполняются с разрешения пользователя отдельно через Personal API и scoped bearer token (например, api:sources, api:places, api:researches по операции). Токен передаётся только в заголовке авторизации API.",
       "license": "Не установлена",
       "limitations": "Охват определяется коллекциями OpenHeritage; полнота по конкретному архиву и историческому АТД не установлена. Участник ограничен правами записи и scope; модераторские операции выходят за рамки описанного сценария. При исправлении проверенного места или утверждённого источника статус проверки может измениться. Лицензия репозитория не установлена. Работа сервиса и качество результатов независимо не проверялись.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "transcribe",
+      "project": "thodel/agentic_historian",
+      "url": "https://github.com/thodel/agentic_historian",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "thodel/agentic_historian",
+          "field": "description",
+          "excerpt": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "thodel/agentic_historian",
+          "field": "use_case",
+          "excerpt": "Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "thodel/agentic_historian",
+          "field": "components",
+          "excerpt": "OCR/HTR · Research Workspace · Person Resolver · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "thodel/agentic_historian",
+          "field": "editorial_summary",
+          "excerpt": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "thodel/agentic_historian",
+          "field": "editorial_use_case",
+          "excerpt": "Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+      "use_case": "Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+      "license": "MIT (заявлена в pyproject.toml; отдельного текста нет)",
+      "limitations": "README требует VPN и сервисы Бернского университета; перенос на другую инфраструктуру требует настройки. В pyproject.toml заявлена MIT, но отдельный текст лицензии в проверенном дереве не найден. Выбор варианта распознавания не является эталонной транскрипцией; независимые испытания и качество русского материала не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Возьмите страницу с известной расшифровкой. Сравните ошибки имён, дат и порядок строк; сохраните оригинал рядом с результатом."
+    },
+    {
+      "task": "resolve",
+      "project": "thodel/agentic_historian",
+      "url": "https://github.com/thodel/agentic_historian",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "thodel/agentic_historian",
+          "field": "components",
+          "excerpt": "OCR/HTR · Research Workspace · Person Resolver · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+      "use_case": "Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+      "license": "MIT (заявлена в pyproject.toml; отдельного текста нет)",
+      "limitations": "README требует VPN и сервисы Бернского университета; перенос на другую инфраструктуру требует настройки. В pyproject.toml заявлена MIT, но отдельный текст лицензии в проверенном дереве не найден. Выбор варианта распознавания не является эталонной транскрипцией; независимые испытания и качество русского материала не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "На копии данных проверьте известный дубль и двух разных однофамильцев. Сравните источники и убедитесь, что ошибочное объединение можно отменить."
+    },
+    {
+      "task": "places",
+      "project": "thodel/agentic_historian",
+      "url": "https://github.com/thodel/agentic_historian",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "thodel/agentic_historian",
+          "field": "components",
+          "excerpt": "OCR/HTR · Research Workspace · Person Resolver · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+      "use_case": "Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+      "license": "MIT (заявлена в pyproject.toml; отдельного текста нет)",
+      "limitations": "README требует VPN и сервисы Бернского университета; перенос на другую инфраструктуру требует настройки. В pyproject.toml заявлена MIT, но отдельный текст лицензии в проверенном дереве не найден. Выбор варианта распознавания не является эталонной транскрипцией; независимые испытания и качество русского материала не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проверьте историческое название, нужный год и административную принадлежность по источнику. Совпадение современного названия не подтверждает место события."
+    },
+    {
+      "task": "research",
+      "project": "thodel/agentic_historian",
+      "url": "https://github.com/thodel/agentic_historian",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "thodel/agentic_historian",
+          "field": "components",
+          "excerpt": "OCR/HTR · Research Workspace · Person Resolver · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+      "use_case": "Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+      "license": "MIT (заявлена в pyproject.toml; отдельного текста нет)",
+      "limitations": "README требует VPN и сервисы Бернского университета; перенос на другую инфраструктуру требует настройки. В pyproject.toml заявлена MIT, но отдельный текст лицензии в проверенном дереве не найден. Выбор варианта распознавания не является эталонной транскрипцией; независимые испытания и качество русского материала не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "agents",
+      "project": "thodel/agentic_historian",
+      "url": "https://github.com/thodel/agentic_historian",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "thodel/agentic_historian",
+          "field": "components",
+          "excerpt": "OCR/HTR · Research Workspace · Person Resolver · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+      "use_case": "Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+      "license": "MIT (заявлена в pyproject.toml; отдельного текста нет)",
+      "limitations": "README требует VPN и сервисы Бернского университета; перенос на другую инфраструктуру требует настройки. В pyproject.toml заявлена MIT, но отдельный текст лицензии в проверенном дереве не найден. Выбор варианта распознавания не является эталонной транскрипцией; независимые испытания и качество русского материала не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "resolve",
+      "project": "rodoslovje/ged-merge",
+      "url": "https://github.com/rodoslovje/ged-merge",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "rodoslovje/ged-merge",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · Person Resolver · Place Resolver/АТД · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "purpose": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+      "use_case": "Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском.",
+      "license": "MIT",
+      "limitations": "Сохранность нестандартных тегов и точность подбора дублей заявлены автором и требуют проверки на копии своего файла. Сетевые справочники и подложки карт включаются отдельно и передают запросы поставщикам. Формальных GitHub-релизов нет; версия package.json 0.0.0 не служит подтверждением зрелости.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "На копии данных проверьте известный дубль и двух разных однофамильцев. Сравните источники и убедитесь, что ошибочное объединение можно отменить."
+    },
+    {
+      "task": "places",
+      "project": "rodoslovje/ged-merge",
+      "url": "https://github.com/rodoslovje/ged-merge",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "rodoslovje/ged-merge",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · Person Resolver · Place Resolver/АТД · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "purpose": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+      "use_case": "Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском.",
+      "license": "MIT",
+      "limitations": "Сохранность нестандартных тегов и точность подбора дублей заявлены автором и требуют проверки на копии своего файла. Сетевые справочники и подложки карт включаются отдельно и передают запросы поставщикам. Формальных GitHub-релизов нет; версия package.json 0.0.0 не служит подтверждением зрелости.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проверьте историческое название, нужный год и административную принадлежность по источнику. Совпадение современного названия не подтверждает место события."
+    },
+    {
+      "task": "research",
+      "project": "rodoslovje/ged-merge",
+      "url": "https://github.com/rodoslovje/ged-merge",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "rodoslovje/ged-merge",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · Person Resolver · Place Resolver/АТД · provenance/evidence",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "purpose": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+      "use_case": "Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском.",
+      "license": "MIT",
+      "limitations": "Сохранность нестандартных тегов и точность подбора дублей заявлены автором и требуют проверки на копии своего файла. Сетевые справочники и подложки карт включаются отдельно и передают запросы поставщикам. Формальных GitHub-релизов нет; версия package.json 0.0.0 не служит подтверждением зрелости.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "gedcom",
+      "project": "rodoslovje/ged-merge",
+      "url": "https://github.com/rodoslovje/ged-merge",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "rodoslovje/ged-merge",
+          "field": "description",
+          "excerpt": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "rodoslovje/ged-merge",
+          "field": "use_case",
+          "excerpt": "Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "rodoslovje/ged-merge",
+          "field": "components",
+          "excerpt": "Research Workspace · GEDCOM/data model · Person Resolver · Place Resolver/АТД · provenance/evidence",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "rodoslovje/ged-merge",
+          "field": "editorial_summary",
+          "excerpt": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "rodoslovje/ged-merge",
+          "field": "editorial_use_case",
+          "excerpt": "Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "purpose": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+      "use_case": "Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском.",
+      "license": "MIT",
+      "limitations": "Сохранность нестандартных тегов и точность подбора дублей заявлены автором и требуют проверки на копии своего файла. Сетевые справочники и подложки карт включаются отдельно и передают запросы поставщикам. Формальных GitHub-релизов нет; версия package.json 0.0.0 не служит подтверждением зрелости.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Используйте копию GEDCOM. Сравните до и после количество людей, связи, даты, ссылки на источники и неподдержанные поля; сохраните исходный файл."
+    },
+    {
+      "task": "resolve",
+      "project": "kjiwa/geneanet-drift",
+      "url": "https://github.com/kjiwa/geneanet-drift",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kjiwa/geneanet-drift",
+          "field": "components",
+          "excerpt": "Research Workspace · Archive Adapter · Person Resolver · provenance/evidence · GEDCOM/data model · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений.",
+      "use_case": "Согласовать дополнения родственника из Geneanet со своим Gramps Web: сохранить просмотренные страницы расширением, проверить различия в локальном интерфейсе и применить выбранные изменения. Привязка к Geneanet и Gramps Web, а не к отдельной стране.",
+      "license": "MIT",
+      "limitations": "Python 3.13+, ручная установка расширения. Чтение требует отдельного пользователя Gramps с ViewPrivate; apply/undo используют Editor с правами записи. Нужны защита локальных персональных данных и резервные копии. Авторская трактовка правил Geneanet не гарантирует допустимость расширения. Надёжность отката и полнота переноса независимо не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "На копии данных проверьте известный дубль и двух разных однофамильцев. Сравните источники и убедитесь, что ошибочное объединение можно отменить."
+    },
+    {
+      "task": "research",
+      "project": "kjiwa/geneanet-drift",
+      "url": "https://github.com/kjiwa/geneanet-drift",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kjiwa/geneanet-drift",
+          "field": "components",
+          "excerpt": "Research Workspace · Archive Adapter · Person Resolver · provenance/evidence · GEDCOM/data model · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений.",
+      "use_case": "Согласовать дополнения родственника из Geneanet со своим Gramps Web: сохранить просмотренные страницы расширением, проверить различия в локальном интерфейсе и применить выбранные изменения. Привязка к Geneanet и Gramps Web, а не к отдельной стране.",
+      "license": "MIT",
+      "limitations": "Python 3.13+, ручная установка расширения. Чтение требует отдельного пользователя Gramps с ViewPrivate; apply/undo используют Editor с правами записи. Нужны защита локальных персональных данных и резервные копии. Авторская трактовка правил Geneanet не гарантирует допустимость расширения. Надёжность отката и полнота переноса независимо не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "gedcom",
+      "project": "kjiwa/geneanet-drift",
+      "url": "https://github.com/kjiwa/geneanet-drift",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kjiwa/geneanet-drift",
+          "field": "components",
+          "excerpt": "Research Workspace · Archive Adapter · Person Resolver · provenance/evidence · GEDCOM/data model · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений.",
+      "use_case": "Согласовать дополнения родственника из Geneanet со своим Gramps Web: сохранить просмотренные страницы расширением, проверить различия в локальном интерфейсе и применить выбранные изменения. Привязка к Geneanet и Gramps Web, а не к отдельной стране.",
+      "license": "MIT",
+      "limitations": "Python 3.13+, ручная установка расширения. Чтение требует отдельного пользователя Gramps с ViewPrivate; apply/undo используют Editor с правами записи. Нужны защита локальных персональных данных и резервные копии. Авторская трактовка правил Geneanet не гарантирует допустимость расширения. Надёжность отката и полнота переноса независимо не проверены.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Используйте копию GEDCOM. Сравните до и после количество людей, связи, даты, ссылки на источники и неподдержанные поля; сохраните исходный файл."
+    },
+    {
+      "task": "agents",
+      "project": "kjiwa/geneanet-drift",
+      "url": "https://github.com/kjiwa/geneanet-drift",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "kjiwa/geneanet-drift",
+          "field": "components",
+          "excerpt": "Research Workspace · Archive Adapter · Person Resolver · provenance/evidence · GEDCOM/data model · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательский прототип"
+        }
+      },
+      "purpose": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений.",
+      "use_case": "Согласовать дополнения родственника из Geneanet со своим Gramps Web: сохранить просмотренные страницы расширением, проверить различия в локальном интерфейсе и применить выбранные изменения. Привязка к Geneanet и Gramps Web, а не к отдельной стране.",
+      "license": "MIT",
+      "limitations": "Python 3.13+, ручная установка расширения. Чтение требует отдельного пользователя Gramps с ViewPrivate; apply/undo используют Editor с правами записи. Нужны защита локальных персональных данных и резервные копии. Авторская трактовка правил Geneanet не гарантирует допустимость расширения. Надёжность отката и полнота переноса независимо не проверены.",
       "test_status": "Не тестировалось",
       "russia_applicability": "Не оценено",
       "usage_context": null,

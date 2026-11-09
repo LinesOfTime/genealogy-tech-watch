@@ -145,6 +145,8 @@ def build_plan(root, records, edition_date):
         card.setdefault('history', []).append(copy.deepcopy(event))
         research_created = key not in research
         research.setdefault(key, {}).setdefault('watch_events', []).append(copy.deepcopy(event))
+        if priority_review is not None:
+            research[key]['practical_priority'] = copy.deepcopy(card['practical_priority'])
         if research_created and r.get('initialize_research_profile'):
             profile = r['catalog_profile']
             research[key].update(
@@ -210,6 +212,9 @@ def build_plan(root, records, edition_date):
     dependencies=['data/editorial-corrections.json','data/repository-rechecks.json']
     from catalog_model import MODEL_FILES
     dependencies += [name for name in MODEL_FILES if (root/name).exists()]
+    dependencies += [name for name in ('data/practical-priority-proposals.json',
+                     'data/practical-priority-application.json',
+                     'reports/priority-source-audit-2026-11-04.json') if (root/name).exists()]
     dependencies += [str(p.relative_to(root)).replace('\\','/') for p in (root/'data/evidence').glob('**/*') if p.is_file()]
     for name in dependencies:
         if name not in before:before[name]=(root/name).read_bytes() if (root/name).exists() else None

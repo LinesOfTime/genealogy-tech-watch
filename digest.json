@@ -1,5 +1,148 @@
 [
   {
+    "date": "2026-11-09",
+    "title": "Значимые изменения проектов",
+    "summary": "Утверждённые события; источники и дельты указаны в записях.",
+    "items": [
+      {
+        "repo": "thodel/agentic_historian",
+        "priority": "Не оценён",
+        "change": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+        "link": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/README.md",
+        "components": "OCR/HTR · Research Workspace · Person Resolver · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
+        "action": "Добавить описание назначения с явными требованиями, границами проверки и условиями безопасного пилота.",
+        "event_date": "2026-11-09",
+        "significance_reason": "Самостоятельный инструмент для конкретной исследовательской задачи; не замена одноимённых проектов.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
+        "discovery_id": "github:thodel/agentic_historian:review-2026-11-09",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/README.md"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/thodel/agentic_historian/git/trees/607a10015429d53934036f18ebaab772329adb2e?recursive=1"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/thodel/agentic_historian/releases?per_page=5"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/agentic_historian/pyproject.toml"
+          }
+        ],
+        "research_link": "project.html?repo=thodel%2Fagentic_historian",
+        "previous_state": "Отдельной карточки и события этого репозитория в каталоге, исследованиях и дайджесте нет.",
+        "new_state": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками. Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам."
+      },
+      {
+        "repo": "rodoslovje/ged-merge",
+        "priority": "Не оценён",
+        "change": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+        "link": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/README.md",
+        "components": "Research Workspace · GEDCOM/data model · Person Resolver · Place Resolver/АТД · provenance/evidence",
+        "action": "Добавить описание назначения с явными требованиями, границами проверки и условиями безопасного пилота.",
+        "event_date": "2026-11-09",
+        "significance_reason": "Самостоятельный инструмент для конкретной исследовательской задачи; не замена одноимённых проектов.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
+        "discovery_id": "github:rodoslovje/ged-merge:review-2026-11-09",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/LICENSE.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/package.json"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/rodoslovje/ged-merge/releases?per_page=5"
+          }
+        ],
+        "research_link": "project.html?repo=rodoslovje%2Fged-merge",
+        "previous_state": "Отдельной карточки и события этого репозитория в каталоге, исследованиях и дайджесте нет.",
+        "new_state": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям. Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском."
+      },
+      {
+        "repo": "kjiwa/geneanet-drift",
+        "priority": "Не оценён",
+        "change": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений.",
+        "link": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/README.md",
+        "components": "Research Workspace · Archive Adapter · Person Resolver · provenance/evidence · GEDCOM/data model · API/MCP/agent layer",
+        "action": "Добавить описание назначения с явными требованиями, границами проверки и условиями безопасного пилота.",
+        "event_date": "2026-11-09",
+        "significance_reason": "Самостоятельный инструмент для конкретной исследовательской задачи; не замена одноимённых проектов.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
+        "discovery_id": "github:kjiwa/geneanet-drift:review-2026-11-09",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/pyproject.toml"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/kjiwa/geneanet-drift/releases?per_page=5"
+          }
+        ],
+        "research_link": "project.html?repo=kjiwa%2Fgeneanet-drift",
+        "previous_state": "Отдельной карточки и события этого репозитория в каталоге, исследованиях и дайджесте нет.",
+        "new_state": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений. Согласовать дополнения родственника из Geneanet со своим Gramps Web: сохранить просмотренные страницы расширением, проверить различия в локальном интерфейсе и применить выбранные изменения. Привязка к Geneanet и Gramps Web, а не к отдельной стране."
+      },
+      {
+        "repo": "gramps-project/gramps-web",
+        "priority": "P1",
+        "change": "Gramps Web 26.11.0–26.11.2: Material Web, просмотр медиа и массовое удаление; улучшены поиск, фильтры, задачи и работа с исторической картой; 26.11.2 исправляет загрузку MapLibre worker и отображение возраста из API.",
+        "link": "https://raw.githubusercontent.com/gramps-project/gramps-web/385d68397f6c2d5890907e0b21f903479d13e589/LICENSE",
+        "components": "Research Workspace · GEDCOM/data model · provenance/evidence · Place Resolver/АТД · API/MCP/agent layer",
+        "action": "Дополнить существующую историю без замены прежних исследований и без повторения v26.10.2.",
+        "event_date": "2026-11-09",
+        "significance_reason": "Изменения ежедневной работы с деревом, источниками, медиа и картой; исправление карты затрагивает практическое использование.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
+        "discovery_id": "github:gramps-project/gramps-web:releases-26.11.0-26.11.2",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/385d68397f6c2d5890907e0b21f903479d13e589/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/385d68397f6c2d5890907e0b21f903479d13e589/package.json"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web/releases?per_page=4"
+          }
+        ],
+        "research_link": "project.html?repo=gramps-project%2Fgramps-web",
+        "previous_state": "В истории карточки последний отдельный учтённый релиз — v26.10.2; события v26.11.0–v26.11.2 отсутствуют.",
+        "new_state": "Добавлена история релизов v26.11.0 (31 октября), v26.11.1 (7 ноября), v26.11.2 (9 ноября); для карты требуется WebGL 2, семантический поиск удалён в 26.11.0."
+      }
+    ]
+  },
+  {
     "date": "2026-11-08",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",

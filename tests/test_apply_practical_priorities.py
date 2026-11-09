@@ -70,5 +70,80 @@ class ApplyPracticalTests(unittest.TestCase):
             load_proposals(self.root, [card])
 
 
+    def apply_watch_review(self, proposed="P1"):
+        from apply_changes import build_plan as watch_plan, digest_bytes
+        from discoveries import content_hash
+        for field in ('classification', 'assessment_currency', 'russia_applicability'):
+            self.card.pop(field, None)
+        self.put('catalog.json', [self.card])
+        self.put('docs/source-updates.json', dict(version=1, items=[]))
+        plan = build_plan(self.root, self.approval)
+        write_plan(self.root, plan, plan['plan_hash'])
+        card = json.loads((self.root / 'catalog.json').read_text(encoding='utf-8'))[0]
+        stamp = '2026-11-05T12:00:00+00:00'
+        url = card['url'] + '/commit/' + 'a' * 40
+        evidence = 'data/evidence/updater/test-review/source.json'
+        raw = json.dumps(dict(url=url, checked_at=stamp, http_status=200,
+                              content='Synthetic fixture: new source editing capability.'))
+        self.put(evidence, json.loads(raw))
+        raw_bytes = (self.root / evidence).read_bytes()
+        event = dict(discovery_id='synthetic-approved-review', repo_full_name=card['name'],
+            canonical_url=card['url'], aliases=[], detected_at=stamp, event_date='2026-11-05',
+            event_type='capability', source_urls=[dict(type='commit', url=url)],
+            change_summary='Synthetic source editing update', previous_state='Old editor',
+            new_state='New editor', significance_reason='Explicit new editing capability',
+            components=['Research Workspace'], maturity='Synthetic fixture', license='MIT',
+            license_evidence=[url], claims_vs_verified=dict(verified='Synthetic text saved',
+                author_claims='Not a real research assertion', independent_testing='Not performed'),
+            risks=['Synthetic test only'], decision='publish', decision_reason='Test approved update',
+            review_status='approved', reviewer='Synthetic later reviewer', reviewed_at=stamp,
+            priority_review=dict(previous=card['practical_priority']['priority'], proposed=proposed or card['practical_priority']['priority'],
+                reason='Synthetic source-bound rationale', next_action='Test a source citation'),
+            source_checks=[dict(url=url, checked_at=stamp, evidence_file=evidence,
+                sha256=digest_bytes(raw_bytes), verified_scope='Synthetic source text only')])
+        event['reviewed_content_hash'] = content_hash(event)
+        plan = watch_plan(self.root, [event], '2026-11-05')
+        write_plan(self.root, plan, plan['plan_hash'])
+        return json.loads((self.root / 'catalog.json').read_text(encoding='utf-8'))[0], event
+
+    def test_source_bound_watch_review_updates_catalog_and_research(self):
+        card, event = self.apply_watch_review()
+        result = load_proposals(self.root, [card])[card['name'].lower()]
+        self.assertEqual(result['proposed_priority'], 'P1')
+        self.assertEqual(card['practical_priority']['approved_by'], event['reviewer'])
+        research = json.loads((self.root / 'docs/research.json').read_text(encoding='utf-8'))
+        self.assertEqual(research[card['name'].lower()]['practical_priority'], card['practical_priority'])
+        self.assertEqual(research[card['name'].lower()]['marker'], 'retained')
+
+    def test_retaining_grade_still_records_a_source_bound_review(self):
+        card, event = self.apply_watch_review(proposed=None)
+        load_proposals(self.root, [card])
+        self.assertEqual(event['priority_review']['previous'], event['priority_review']['proposed'])
+        self.assertEqual(len(card['practical_priority_history']), 1)
+
+    def test_reassessment_requires_original_approval_journal_ledger_and_evidence(self):
+        card, event = self.apply_watch_review()
+        paths = ['data/applied-events.json', 'data/discoveries.jsonl',
+                 event['source_checks'][0]['evidence_file'], 'data/practical-priority-application.json']
+        for name in paths:
+            with self.subTest(name=name):
+                path = self.root / name
+                original = path.read_bytes()
+                path.write_bytes(b'{}' if name.endswith('.json') else b'')
+                try:
+                    with self.assertRaises((ValueError, KeyError)):
+                        load_proposals(self.root, [card])
+                finally:
+                    path.write_bytes(original)
+        changed = copy.deepcopy(card)
+        changed['practical_priority_history'][0]['reason'] = 'Unapproved assertion'
+        with self.assertRaises(ValueError):
+            load_proposals(self.root, [changed])
+        changed = copy.deepcopy(card)
+        changed['practical_priority']['priority'] = 'P3'
+        with self.assertRaises(ValueError):
+            load_proposals(self.root, [changed])
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -4552,6 +4552,45 @@
         "reviewer": "Пользователь: утверждение всего пакета в чате («утверждаю»)",
         "reviewed_at": "2026-10-24T08:50:10.295948+00:00",
         "reviewed_content_hash": "4692a4df3b283eba908b9d556e3896b69ef66575a9b94cc5682f7da3b9ac9ca6"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web:releases-26.11.0-26.11.2",
+        "date": "2026-11-09",
+        "change": "Gramps Web 26.11.0–26.11.2: Material Web, просмотр медиа и массовое удаление; улучшены поиск, фильтры, задачи и работа с исторической картой; 26.11.2 исправляет загрузку MapLibre worker и отображение возраста из API.",
+        "previous_state": "В истории карточки последний отдельный учтённый релиз — v26.10.2; события v26.11.0–v26.11.2 отсутствуют.",
+        "new_state": "Добавлена история релизов v26.11.0 (31 октября), v26.11.1 (7 ноября), v26.11.2 (9 ноября); для карты требуется WebGL 2, семантический поиск удалён в 26.11.0.",
+        "significance_reason": "Изменения ежедневной работы с деревом, источниками, медиа и картой; исправление карты затрагивает практическое использование.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/385d68397f6c2d5890907e0b21f903479d13e589/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/385d68397f6c2d5890907e0b21f903479d13e589/package.json"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/gramps-project/gramps-web/releases?per_page=4"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/385d68397f6c2d5890907e0b21f903479d13e589/LICENSE",
+        "claims_vs_verified": {
+          "verified": "Проверены опубликованные записи трёх релизов, версия 26.11.2 в package.json и текст AGPLv3.",
+          "author_claims": "Исправления и возможности перечислены разработчиками; заявленное снижение ресурсов API не измерялось.",
+          "independent_testing": "Не проводилось; работа обновлённого Gramps Web и WebGL на пользовательских данных не проверялась."
+        },
+        "risks": [
+          "Перед обновлением собственного сервера нужны резервная копия и проверка совместимости API; карта требует WebGL 2. Удалённый семантический поиск нельзя продолжать считать доступной возможностью релиза."
+        ],
+        "license": "AGPL-3.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/gramps-project/gramps-web/385d68397f6c2d5890907e0b21f903479d13e589/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
+        "reviewed_content_hash": "d8457c28755376a27c346706971c0ed137d5fffbf9bdb5664b3e86117d24558a"
       }
     ],
     "evaluation": {
@@ -4584,14 +4623,14 @@
     },
     "practical_priority": {
       "project": "gramps-project/gramps-web",
-      "reviewed_on": "2026-11-04",
+      "reviewed_on": "2026-11-09",
       "method_version": "2026-11-04",
       "role": "Веб-приложение",
       "task": "Совместно просматривать и редактировать дерево",
       "scope": "Многоязычный интерфейс; страна не ограничена",
       "input_output": "Тестовое дерево на демо → просмотр и проверка ролей",
-      "rationale": "Проба на демо доступна; собственное размещение и AI-функции требуют отдельной настройки.",
-      "pilot": "На демо сравнить доступ owner/editor/member к одной записи; без загрузки личных данных.",
+      "rationale": "Сохраняется практическая роль P1: ведение дерева, цитат и медиа; новые релизы улучшают обычную исследовательскую работу, но не подтверждают отдельного улучшения качества исследований.",
+      "pilot": "На резервной копии проверить поиск человека, редактирование цитаты, карту WebGL 2 и восстановление после массового удаления.",
       "recheck_trigger": "Перед своим размещением проверить резервирование, права и синхронизацию.",
       "evidence_level": "E1",
       "independent_test": false,
@@ -4604,8 +4643,8 @@
       "priority": "P1",
       "previous_priority": "P1",
       "review_status": "approved",
-      "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
-      "approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "approved_by": "GitHub @LinesOfTime",
+      "approved_at": "2026-11-09T12:22:41.919825+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
     }
   },
@@ -18090,6 +18129,271 @@
         {
           "url": "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-catalog-review/references/place-review.md",
           "type": "README"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "thodel/agentic_historian": {
+    "watch_events": [
+      {
+        "discovery_id": "github:thodel/agentic_historian:review-2026-11-09",
+        "date": "2026-11-09",
+        "change": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+        "previous_state": "Отдельной карточки и события этого репозитория в каталоге, исследованиях и дайджесте нет.",
+        "new_state": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками. Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+        "significance_reason": "Самостоятельный инструмент для конкретной исследовательской задачи; не замена одноимённых проектов.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/README.md"
+          },
+          {
+            "type": "commit",
+            "url": "https://api.github.com/repos/thodel/agentic_historian/git/trees/607a10015429d53934036f18ebaab772329adb2e?recursive=1"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/thodel/agentic_historian/releases?per_page=5"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/agentic_historian/pyproject.toml"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/README.md",
+        "claims_vs_verified": {
+          "verified": "Проверены README и метаданные по закреплённому коммиту; наличие или отсутствие лицензии и опубликованных релизов.",
+          "author_claims": "Возможности описаны по документации разработчика; качество распознавания, согласования и сохранности данных независимо не подтверждено.",
+          "independent_testing": "Не проводилось; реальные деревья и внешние сервисы не использовались."
+        },
+        "risks": [
+          "README требует VPN и сервисы Бернского университета; перенос на другую инфраструктуру требует настройки. В pyproject.toml заявлена MIT, но отдельный текст лицензии в проверенном дереве не найден. Выбор варианта распознавания не является эталонной транскрипцией; независимые испытания и качество русского материала не проверены."
+        ],
+        "license": "MIT (заявлена в pyproject.toml; отдельного текста нет)",
+        "license_evidence": [
+          "https://api.github.com/repos/thodel/agentic_historian/git/trees/607a10015429d53934036f18ebaab772329adb2e?recursive=1",
+          "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/agentic_historian/pyproject.toml"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
+        "reviewed_content_hash": "2ef41ef94b4b3c56689ee09e43aa8795508ed31e1f9b51ab8525d6e3add9e879"
+      }
+    ],
+    "editorial_summary": "Agentic Historian: оркестрация распознавания исторических рукописей, описания источников и связывания имён и мест с ручными контрольными точками.",
+    "editorial_use_case": "Исследование швейцарских и немецких административных источников XIV–XIX веков: сопоставить варианты HTR, проверить метаданные, извлечь упоминания людей и мест и сохранить происхождение результата. Это специализированная инфраструктура, а не готовый поиск предков по всем странам.",
+    "editorial_limitations": "README требует VPN и сервисы Бернского университета; перенос на другую инфраструктуру требует настройки. В pyproject.toml заявлена MIT, но отдельный текст лицензии в проверенном дереве не найден. Выбор варианта распознавания не является эталонной транскрипцией; независимые испытания и качество русского материала не проверены.",
+    "project_type": "Исследовательский прототип",
+    "license": "MIT (заявлена в pyproject.toml; отдельного текста нет)",
+    "license_evidence": "https://api.github.com/repos/thodel/agentic_historian/git/trees/607a10015429d53934036f18ebaab772329adb2e?recursive=1; https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/agentic_historian/pyproject.toml",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-09",
+    "source_evidence": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/README.md",
+    "maturity": "Ранняя разработка; GitHub-релизов при проверке нет; независимые испытания не проводились.",
+    "profile_provenance": {
+      "discovery_id": "github:thodel/agentic_historian:review-2026-11-09",
+      "reviewed_content_hash": "2ef41ef94b4b3c56689ee09e43aa8795508ed31e1f9b51ab8525d6e3add9e879",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/README.md"
+        },
+        {
+          "type": "commit",
+          "url": "https://api.github.com/repos/thodel/agentic_historian/git/trees/607a10015429d53934036f18ebaab772329adb2e?recursive=1"
+        },
+        {
+          "type": "release",
+          "url": "https://api.github.com/repos/thodel/agentic_historian/releases?per_page=5"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/thodel/agentic_historian/607a10015429d53934036f18ebaab772329adb2e/agentic_historian/pyproject.toml"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "rodoslovje/ged-merge": {
+    "watch_events": [
+      {
+        "discovery_id": "github:rodoslovje/ged-merge:review-2026-11-09",
+        "date": "2026-11-09",
+        "change": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+        "previous_state": "Отдельной карточки и события этого репозитория в каталоге, исследованиях и дайджесте нет.",
+        "new_state": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям. Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском.",
+        "significance_reason": "Самостоятельный инструмент для конкретной исследовательской задачи; не замена одноимённых проектов.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/LICENSE.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/package.json"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/rodoslovje/ged-merge/releases?per_page=5"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/README.md",
+        "claims_vs_verified": {
+          "verified": "Проверены README и метаданные по закреплённому коммиту; наличие или отсутствие лицензии и опубликованных релизов.",
+          "author_claims": "Возможности описаны по документации разработчика; качество распознавания, согласования и сохранности данных независимо не подтверждено.",
+          "independent_testing": "Не проводилось; реальные деревья и внешние сервисы не использовались."
+        },
+        "risks": [
+          "Сохранность нестандартных тегов и точность подбора дублей заявлены автором и требуют проверки на копии своего файла. Сетевые справочники и подложки карт включаются отдельно и передают запросы поставщикам. Формальных GitHub-релизов нет; версия package.json 0.0.0 не служит подтверждением зрелости."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/LICENSE.md"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
+        "reviewed_content_hash": "88fd6408da869185dab97cc913339aefc8d79dbdd60cacfec7073fcf67aa3fa7"
+      }
+    ],
+    "editorial_summary": "GED Merge: браузерный редактор GEDCOM с поиском кандидатов в дубли и согласованием двух деревьев по отдельным полям.",
+    "editorial_use_case": "Перед импортом родственного дерева сравнить GEDCOM, вручную согласовать имена, даты, места и источники, затем выгрузить объединённый файл и отчёт. Основная работа не привязана к стране; есть отдельные словенские интеграции, интерфейс на английском и словенском.",
+    "editorial_limitations": "Сохранность нестандартных тегов и точность подбора дублей заявлены автором и требуют проверки на копии своего файла. Сетевые справочники и подложки карт включаются отдельно и передают запросы поставщикам. Формальных GitHub-релизов нет; версия package.json 0.0.0 не служит подтверждением зрелости.",
+    "project_type": "Готовое приложение",
+    "license": "MIT",
+    "license_evidence": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/LICENSE.md",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-09",
+    "source_evidence": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/README.md",
+    "maturity": "Ранняя разработка; GitHub-релизов при проверке нет; независимые испытания не проводились.",
+    "profile_provenance": {
+      "discovery_id": "github:rodoslovje/ged-merge:review-2026-11-09",
+      "reviewed_content_hash": "88fd6408da869185dab97cc913339aefc8d79dbdd60cacfec7073fcf67aa3fa7",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/LICENSE.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/rodoslovje/ged-merge/3cb85c0f33cf4cb82ed0d77e6fbded7739ba0b72/package.json"
+        },
+        {
+          "type": "release",
+          "url": "https://api.github.com/repos/rodoslovje/ged-merge/releases?per_page=5"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "kjiwa/geneanet-drift": {
+    "watch_events": [
+      {
+        "discovery_id": "github:kjiwa/geneanet-drift:review-2026-11-09",
+        "date": "2026-11-09",
+        "change": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений.",
+        "previous_state": "Отдельной карточки и события этого репозитория в каталоге, исследованиях и дайджесте нет.",
+        "new_state": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений. Согласовать дополнения родственника из Geneanet со своим Gramps Web: сохранить просмотренные страницы расширением, проверить различия в локальном интерфейсе и применить выбранные изменения. Привязка к Geneanet и Gramps Web, а не к отдельной стране.",
+        "significance_reason": "Самостоятельный инструмент для конкретной исследовательской задачи; не замена одноимённых проектов.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/LICENSE"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/pyproject.toml"
+          },
+          {
+            "type": "release",
+            "url": "https://api.github.com/repos/kjiwa/geneanet-drift/releases?per_page=5"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/README.md",
+        "claims_vs_verified": {
+          "verified": "Проверены README и метаданные по закреплённому коммиту; наличие или отсутствие лицензии и опубликованных релизов.",
+          "author_claims": "Возможности описаны по документации разработчика; качество распознавания, согласования и сохранности данных независимо не подтверждено.",
+          "independent_testing": "Не проводилось; реальные деревья и внешние сервисы не использовались."
+        },
+        "risks": [
+          "Python 3.13+, ручная установка расширения. Чтение требует отдельного пользователя Gramps с ViewPrivate; apply/undo используют Editor с правами записи. Нужны защита локальных персональных данных и резервные копии. Авторская трактовка правил Geneanet не гарантирует допустимость расширения. Надёжность отката и полнота переноса независимо не проверены."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
+        "reviewed_content_hash": "fc04d65351699eaad612c3a577010a1b2266d36338b0da4aa93431397732c8f6"
+      }
+    ],
+    "editorial_summary": "Geneanet Drift: локальное сравнение вручную открытых страниц дерева Geneanet с Gramps Web и перенос принятых пользователем изменений.",
+    "editorial_use_case": "Согласовать дополнения родственника из Geneanet со своим Gramps Web: сохранить просмотренные страницы расширением, проверить различия в локальном интерфейсе и применить выбранные изменения. Привязка к Geneanet и Gramps Web, а не к отдельной стране.",
+    "editorial_limitations": "Python 3.13+, ручная установка расширения. Чтение требует отдельного пользователя Gramps с ViewPrivate; apply/undo используют Editor с правами записи. Нужны защита локальных персональных данных и резервные копии. Авторская трактовка правил Geneanet не гарантирует допустимость расширения. Надёжность отката и полнота переноса независимо не проверены.",
+    "project_type": "Исследовательский прототип",
+    "license": "MIT",
+    "license_evidence": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/LICENSE",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-09",
+    "source_evidence": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/README.md",
+    "maturity": "Ранняя разработка; GitHub-релизов при проверке нет; независимые испытания не проводились.",
+    "profile_provenance": {
+      "discovery_id": "github:kjiwa/geneanet-drift:review-2026-11-09",
+      "reviewed_content_hash": "fc04d65351699eaad612c3a577010a1b2266d36338b0da4aa93431397732c8f6",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/LICENSE"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/pyproject.toml"
+        },
+        {
+          "type": "release",
+          "url": "https://api.github.com/repos/kjiwa/geneanet-drift/releases?per_page=5"
         }
       ],
       "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"

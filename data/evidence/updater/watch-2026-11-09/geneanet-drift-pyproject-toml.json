@@ -1,0 +1,6 @@
+{
+  "url": "https://raw.githubusercontent.com/kjiwa/geneanet-drift/4654e042f594390c45ec9eba7bd3f52247160757/pyproject.toml",
+  "checked_at": "2026-11-09T12:22:20Z",
+  "http_status": 200,
+  "content": "[build-system]\nrequires = [\"setuptools>=77\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"geneanet-drift\"\nversion = \"0.1.0\"\ndescription = \"Fold edits captured from a Geneanet tree into a Gramps Web tree, with review and undo\"\nreadme = \"README.md\"\nrequires-python = \">=3.13\"\ndependencies = []\n\n[project.optional-dependencies]\ndev = [\n  \"pytest==9.2.0\",\n  \"ruff==0.17.3\",\n]\n\n[project.scripts]\ngeneanet-drift = \"geneanet_drift.wizard:main\"\n\n[tool.setuptools.packages.find]\nwhere = [\"src\"]\n\n[tool.setuptools.package-data]\ngeneanet_drift = [\"web/*\"]\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\n\n[tool.ruff]\ntarget-version = \"py313\"\n\n[tool.ruff.lint]\n# The change log shows wall-clock times with no zone; they are only compared to each other.\nextend-ignore = [\"DTZ001\", \"DTZ007\"]\n"
+}

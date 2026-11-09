@@ -19,6 +19,22 @@ const {chromium} = require('playwright');
     });
     await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
     const published=JSON.parse(await fs.readFile(path.join(root,'catalog.json'),'utf8'));
+
+    for (const repo of ['thodel/agentic_historian','rodoslovje/ged-merge','kjiwa/geneanet-drift','gramps-project/gramps-web']) {
+      await page.locator('#search').fill(repo);
+      const projectLink=page.locator('.card-links a[href="project.html?repo='+encodeURIComponent(repo)+'"]');
+      assert.equal(await projectLink.count(),1);
+      await projectLink.click();
+      await page.waitForLoadState('networkidle');
+      assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);
+      const text=await page.locator('#content').innerText();
+      assert.match(text,/Практическое применение/);
+      if(repo==='thodel/agentic_historian') assert.match(text,/Бернского университета/);
+      if(repo==='rodoslovje/ged-merge') assert.match(text,/словенском/);
+      if(repo==='kjiwa/geneanet-drift') assert.match(text,/ViewPrivate/);
+      if(repo==='gramps-project/gramps-web') assert.equal(text.split('Gramps Web 26.11.0–26.11.2:').length-1,1);
+      await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
+    }
     await page.locator('#advanced-filters summary').click();
     const tags=['IIIF и просмотр изображений','OCR/HTR'];
     await page.locator('#domains').selectOption(tags);

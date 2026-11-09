@@ -17,6 +17,43 @@ def public_assessment(proposal, approval):
     return result
 
 
+
+def replay_approved_reviews(root, card, expected, journal, ledger):
+    """Advance the original approval only through source-bound, applied events."""
+    from datetime import datetime
+    from discoveries import content_hash, repo_key
+    from source_evidence import evidence_errors
+    history = []
+    for event in journal:
+        review = event.get('priority_review')
+        if review is None or repo_key(event.get('canonical_url')) != repo_key(card['url']):
+            continue
+        key = event.get('discovery_id')
+        if (event.get('review_status') != 'approved' or not event.get('reviewer')
+                or event.get('reviewed_content_hash') != content_hash(event)
+                or ledger.get(key) != content_hash(event) or evidence_errors(root, event)):
+            raise ValueError('Practical reassessment has missing approval/evidence: ' + str(key))
+        if (set(review) != {'previous', 'proposed', 'reason', 'next_action'}
+                or review['previous'] != expected['priority']
+                or review['proposed'] not in ('P1', 'P2', 'P3', 'Не оценён')
+                or any(not isinstance(review.get(k), str) or not review[k].strip()
+                       for k in ('reason', 'next_action'))
+                or datetime.fromisoformat(event['reviewed_at'].replace('Z', '+00:00'))
+                   < datetime.fromisoformat(expected['approved_at'].replace('Z', '+00:00'))):
+            raise ValueError('Practical reassessment chain differs: ' + str(key))
+        history.append(dict(previous=review['previous'], proposed=review['proposed'],
+                            reason=review['reason'], next_action=review['next_action'],
+                            discovery_id=key, source_urls=event['source_urls'],
+                            reviewed_at=event['reviewed_at']))
+        expected = dict(expected, priority=review['proposed'], previous_priority=review['previous'],
+                        reviewed_on=event['reviewed_at'][:10], rationale=review['reason'],
+                        pilot=review['next_action'], review_status='approved',
+                        approved_at=event['reviewed_at'], approved_by=event['reviewer'])
+    if card.get('practical_priority_history', []) != history:
+        raise ValueError('Practical reassessment history differs from applied journal: ' + card['name'])
+    return expected
+
+
 def merge_source_audit(root, checks):
     """Retain the historical audit; prefer the new, dated public check per URL."""
     path = root / 'reports/priority-source-audit-2026-11-04.json'
@@ -113,14 +150,21 @@ def load_proposals(root, catalog):
         if datetime.fromisoformat(approval['approved_at'].replace('Z', '+00:00')).tzinfo is None:
             raise ValueError('Practical approval needs timezone')
         research = json.loads((root / 'docs/research.json').read_text(encoding='utf-8'))
+        from discoveries import read_jsonl
+        journal_path = root / 'data/discoveries.jsonl'
+        ledger_path = root / 'data/applied-events.json'
+        journal = read_jsonl(journal_path) if journal_path.exists() else []
+        ledger = json.loads(ledger_path.read_text(encoding='utf-8')) if ledger_path.exists() else {}
         for key, p in result.items():
-            expected = public_assessment(p, approval)
+            expected = replay_approved_reviews(root, cards[key], public_assessment(p, approval), journal, ledger)
             if cards[key].get('practical_priority') != expected:
                 raise ValueError('Applied practical assessment differs from approval: ' + key)
             if key in research and research[key].get('practical_priority') != expected:
                 raise ValueError('Research practical assessment differs from approval: ' + key)
-            result[key] = {**p, 'review_status': 'approved', 'approved_by': approval['approved_by'],
-                           'approved_at': approval['approved_at']}
+            result[key] = {**p, 'review_status': 'approved', 'approved_by': expected['approved_by'],
+                           'approved_at': expected['approved_at'],
+                           'proposed_priority': expected['priority'], 'rationale': expected['rationale'],
+                           'pilot': expected['pilot'], 'reviewed_on': expected['reviewed_on']}
         audit_path = root / 'reports/priority-source-audit-2026-11-04.json'
         for row in json.loads(audit_path.read_text(encoding='utf-8')):
             if row['result'] != 'exists':

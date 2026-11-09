@@ -111,7 +111,7 @@ function count(html, className) { return (html.match(new RegExp('<article class=
     pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
     await vm.runInContext(read('docs/project-ui.js'),pr.context);
     for (const event of r.watch_events) {
-      assert.equal(pr.get('content').innerHTML.split(pr.context.WatchUI.esc(event.change)).length-1,1,'Event must render once across research/history/digest');
+      assert.equal(pr.get('content').innerHTML.split('<small>'+pr.context.WatchUI.esc(event.date)+'</small><p>'+pr.context.WatchUI.esc(event.change)+'</p>').length-1,1,'Event must render once across research/history/digest');
       if (event.claims_vs_verified) assert.match(pr.get('content').innerHTML,/Заявления и проверка/);
       if (event.claims_vs_verified?.verified) assert.match(pr.get('content').innerHTML,/Проверено по источнику/);
       if (event.claims_vs_verified?.author_claims) assert.match(pr.get('content').innerHTML,/Заявления авторов/);
