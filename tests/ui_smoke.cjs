@@ -22,6 +22,12 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   assert.match(helper.sources([{type:'README',url:'https://github.com/a/b/blob/main/LICENSE.txt'}]),/>Лицензия ↗/);
   assert.match(helper.sources([{type:'README',url:'https://github.com/a/b/blob/main/tests/calendar.test.ts'}]),/>Тест: calendar.test.ts ↗/);
   assert.match(helper.sources([{type:'commit',url:'https://github.com/a/b/commit/1234567890'}]),/>Коммит 12345678 ↗/);
+  for(const value of ['Не тестировалось','Не тестировалось независимо','Не проводилось независимое тестирование','Не тестировался','Испытания не подтверждены','Не запускалось'])assert.equal(helper.testResult(value),'');
+  assert.equal(helper.testResult('Проверено на 12 документах, обнаружены 2 ошибки'),'Проверено на 12 документах, обнаружены 2 ошибки');
+  assert.equal(helper.testResult('Не тестировалось на кириллице; нужен русский образец'),'Не тестировалось на кириллице; нужен русский образец');
+  assert.equal(helper.para('Не указано'),'');
+  assert.equal(helper.panel('Пусто',''),'');
+  assert.equal(helper.limitations({limitations:'Не установлено'},{}),'');
   const duplicated='Очистка таблиц | Часть 51: незакрытые поля: первоисточник';
   const limited=helper.limitations({limitations:duplicated},{audit_notes:duplicated});
   const mainLimited=limited.split('<details>')[0];
@@ -98,7 +104,8 @@ function count(html, className) { return (html.match(new RegExp('<article class=
     pr.context.fetch = async url => ({ok:true, json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
     await vm.runInContext(read('docs/project-ui.js'), pr.context);
     assert.equal(pr.get('title').textContent,name);
-    assert.match(pr.get('content').innerHTML,/Доступность сервиса из РФ/);
+    assert.ok(!pr.get('content').innerHTML.includes('Доступность сервиса из РФ: не проверена'));
+    assert.ok(!pr.get('content').innerHTML.includes('Ссылка на воспроизводимый протокол в оценке не указана.'));
     const r=research[name.toLowerCase()];
     if (r?.guide_excerpt) assert.ok(pr.get('content').innerHTML.includes(pr.context.WatchUI.esc(r.guide_excerpt)));
   }

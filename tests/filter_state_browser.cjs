@@ -124,12 +124,14 @@ const {chromium} = require('playwright');
       assert.match(await page.locator('#results').innerText(),new RegExp(repo));
       assert.match(await page.locator('#results').innerText(),/Границы применения/);
       assert.match(await page.locator('#results').innerText(),/Проба на своих материалах/);
-      assert.match(await page.locator('#results').innerText(),/утверждён пользователем/);
+      assert.match(await page.locator('#results').innerText(),/Практический приоритет/);
+      assert.ok(!(await page.locator('#results').innerText()).includes('Подбор сам по себе испытанием не является'));
+      assert.ok(!(await page.locator('#results').innerText()).includes('Независимое испытание:'));
       await page.locator('#results [data-compare]').click();
     }
     assert.match(await page.locator('#compare-results').innerText(),/География источников/);
     await page.goto('https://ux.local/project.html?repo=genealogy-mcp%2Fgramps-mcp',{waitUntil:'networkidle'});
-    assert.match(await page.locator('#content').innerText(),/не означает универсальное покрытие/);
+    assert.ok(!(await page.locator('#content').innerText()).includes('География источников в подсказках пока не уточнена'));
     await page.goto('https://ux.local/index.html',{waitUntil:'networkidle'});
     const newProjects=['ai-riksarkivet/ra-mcp','borisovodov/doru','stanford-oval/credit','fmadore/iwac-mcp-server',
       'gramps-project/gramps-web-api','scormave/gramps-web-mcp',
@@ -196,7 +198,10 @@ const {chromium} = require('playwright');
         assert.match(details,/не подтверждённые GitHub Releases/);
       }
       assert.match(details,/Практическое применение/);
-      assert.match(details,/Практическое испытание/);
+      const reviewedCard=published.find(card=>card.name.toLowerCase()===repo);
+      const trialReport=reviewedCard.practical_priority?.test_report_url||reviewedCard.evaluation?.test_report_url;
+      if(trialReport)assert.match(details,/Практическое испытание/);
+      else assert.ok(!details.includes('Ссылка на воспроизводимый протокол в оценке не указана.'));
       assert.doesNotMatch(details,/Ошибка:|Сведения не установлены/);
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),repo+' research overflows');
       await page.goto('https://ux.local/digest.html',{waitUntil:'networkidle'});

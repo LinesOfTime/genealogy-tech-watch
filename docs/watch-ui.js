@@ -5,8 +5,8 @@ globalThis.WatchUI = (() => {
   const link = (href, label) => url(href) ? `<a href="${esc(url(href))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>` : '';
   const rating = card => card.russia_applicability?.rating || 'Не оценено';
   const text = value => typeof value === 'string' ? value : JSON.stringify(value ?? 'Не указано', null, 2);
-  const para = value => `<p>${esc(text(value || 'Сведения не установлены'))}</p>`;
-  const panel = (title, body, id) => `<section class="panel"${id ? ' id="'+esc(id)+'"' : ''}><h2>${esc(title)}</h2>${body}</section>`;
+  const para = value => value == null || (typeof value === 'string' && !meaningful(value)) ? '' : `<p>${esc(text(value))}</p>`;
+  const panel = (title, body, id) => !body ? '' : `<section class="panel"${id ? ' id="'+esc(id)+'"' : ''}><h2>${esc(title)}</h2>${body}</section>`;
   const sourceLabel = source => {
     const href = typeof source === 'string' ? source : source.url;
     try {
@@ -25,10 +25,12 @@ globalThis.WatchUI = (() => {
   const claims = value => {
     if (!value || typeof value !== 'object' || Array.isArray(value)) return para(value);
     const labels = {verified:'Проверено по источнику', author_claims:'Заявления авторов', independent_testing:'Независимое тестирование'};
-    return Object.entries(value).map(([key, entry]) => `<p><b>${esc(labels[key] || key)}:</b> ${esc(text(entry))}</p>`).join('');
+    return Object.entries(value).filter(([key, entry]) => key !== 'independent_testing' || testResult(entry))
+      .map(([key, entry]) => `<p><b>${esc(labels[key] || key)}:</b> ${esc(text(entry))}</p>`).join('');
   };
   const risks = value => Array.isArray(value) ? '<ul>' + value.map(entry => `<li>${esc(text(entry))}</li>`).join('') + '</ul>' : para(value);
-  const meaningful = value => typeof value === 'string' && value.trim() && !/^(не установлен[аоы]?|сведения (пока )?не установлены|не указано|не оценено)[.!]?$/i.test(value.trim());
+  const meaningful = value => typeof value === 'string' && value.trim() && !/^(не установлен[аоы]?|сведения (пока )?не установлены|не указан[аоы]?|не оцен[её]н[аоы]?|не определ[её]н[аоы]?)[.!]?$/i.test(value.trim());
+  const testResult = value => meaningful(value) && !/^(не тестировалось( независимо)?|не тестировался|не проводилось( независимое тестирование)?|испытания не подтверждены|не запускалось)([.!](\s|$)|$)/i.test(value.trim()) ? value : '';
   const guideField = (r, label) => {
     const lines=(r.guide_excerpt || '').split(/\r?\n/).filter(line=>line.startsWith(label+':'));
     return lines.length===1 ? lines[0].slice(label.length+1).trim() : '';
@@ -48,13 +50,12 @@ globalThis.WatchUI = (() => {
   };
   const practical = (x,r) => {
     const chosen=cardContent(x,r).practical;
-    const labels={editorial_use_case:'Редакционное исследование',use_case:'Каталог','guide_excerpt:Возможности / сценарий':'Путеводитель от 10 октября 2026'};
-    if(chosen.text)return para(chosen.text)+`<small>${esc(labels[chosen.source])}. Редакционный сценарий.</small>`;
-    return '<p>Конкретный сценарий в имеющихся материалах не описан.</p>';
+    if(chosen.text)return para(chosen.text);
+    return '';
   };
   const limitations = (x,r) => {
     const chosen=cardContent(x,r).limitations;
-    let body=chosen.text?para(chosen.text):'<p>Ограничения в имеющихся материалах не описаны.</p>';
+    let body=chosen.text?para(chosen.text):'';
     if(chosen.note)body+='<p><b>Редакционная заметка:</b> '+esc(chosen.note)+'</p>';
     const originals=chosen.originals;
     if(originals.some(value=>/Часть\s*\d+|Ч\d+\s*:/i.test(value))) body+='<details><summary>Исходные редакционные заметки</summary>'+originals.map(para).join('')+'</details>';
@@ -73,7 +74,7 @@ globalThis.WatchUI = (() => {
       '</dd><dt>Редакционный приоритет — интерес для платформы</dt><dd>' + esc(editorialPriority(card)) +
       '</dd><dt>Доказательность</dt><dd>' + esc(level ? level + ' · из ' + provenance : 'уровень не установлен') +
       (independent ? ' · указано испытание; см. протокол' : '') +
-      '</dd></dl><p class="meta">Шкалы независимы: разные P-значения не являются ошибкой.</p>';
+      '</dd></dl>';
   };
   const priorityNote = card => {
     if(card.repository_reference_issue && card.repository_reference_issue.result !== 'resolved_relocated')return '<p class="meta">Проблема ссылки: '+esc(card.repository_reference_issue.result==='not_found'?'GitHub HTTP 404 — публичный репозиторий не найден':'профиль владельца, не репозиторий')+'. Сначала проверить адрес; это не оценка характеристик.</p>';
@@ -86,14 +87,14 @@ globalThis.WatchUI = (() => {
     return '<p class="meta">Основание сохранённой метки: '+esc(status)+' · '+esc(e.evidence_level||'без E-уровня')+'. Не рейтинг качества.</p>';
   };
   const usage = (context, detailed=false) => {
-    if(!context)return detailed?'<p>География источников в подсказках пока не уточнена. Это не означает универсальное покрытие.</p>':'';
+    if(!context)return '';
     let html='<p class="usage-geography"><b>География источников:</b> '+esc(context.label)+'</p>';
     if(detailed)html+='<p><b>Когда смотреть:</b> '+esc(context.scenario)+'</p><p><b>Границы применения:</b> '+esc(context.boundary)+'</p>'+
       '<details><summary>Откуда географическая подсказка</summary>'+para(context.evidence?.original_text)+
       '<small>'+esc(context.evidence?.file)+' → '+esc(context.evidence?.key)+' → '+esc(context.evidence?.field)+'. Редакционный материал.</small></details>';
     return html;
   };
-  return {esc, url, link, rating, text, para, panel, sources, claims, risks, practical, limitations, cardContent, usage, priorityNote, priorityValue, editorialPriority, priorityAxes};
+  return {esc, url, link, rating, text, para, panel, sources, meaningful, testResult, claims, risks, practical, limitations, cardContent, usage, priorityNote, priorityValue, editorialPriority, priorityAxes};
 })();
 
 // Persist filter values, never catalogue data, in the current URL.
