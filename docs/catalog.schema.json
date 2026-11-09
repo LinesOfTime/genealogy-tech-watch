@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Genealogy Tech Watch catalog",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "name",
+      "url"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "classification": {
+        "type": "object",
+        "required": [
+          "primary_type",
+          "domains",
+          "origin",
+          "sources",
+          "reason"
+        ],
+        "properties": {
+          "primary_type": {
+            "enum": [
+              "application",
+              "library",
+              "ocr_model",
+              "general_model",
+              "dataset",
+              "standard",
+              "adapter",
+              "service",
+              "prototype",
+              "developer_tool",
+              "reference",
+              "unknown"
+            ]
+          },
+          "domains": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "ocr",
+                "annotation",
+                "archives",
+                "images",
+                "indexing",
+                "gedcom",
+                "agents",
+                "evidence",
+                "linkage",
+                "places",
+                "trees",
+                "genetics",
+                "evaluation"
+              ]
+            }
+          },
+          "origin": {
+            "enum": [
+              "initial",
+              "watch",
+              "manual",
+              "unknown"
+            ]
+          },
+          "sources": {
+            "type": "array"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "assessment_currency": {
+        "type": "object",
+        "required": [
+          "status",
+          "reason",
+          "assessment_approved_at",
+          "last_substantive_source_check"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "current",
+              "reassess",
+              "insufficient",
+              "proposed"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "additionalProperties": true
+  }
+}

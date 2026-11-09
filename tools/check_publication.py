@@ -8,7 +8,7 @@ import sys
 import tempfile
 import argparse
 
-from watch_pipeline import UPDATER_WORKFLOW
+from watch_pipeline import UPDATER_WORKFLOW, KNOWN_WORKFLOWS
 
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN_PATTERNS = [rb'gh[pousr]_[A-Za-z0-9]{30,}', rb'github_pat_[A-Za-z0-9_]{40,}',
@@ -70,7 +70,8 @@ def main():
     updater = UPDATER_WORKFLOW
     trusted_workflow = updater in tree and (args.allow_updater_workflow or updater not in staged)
     findings={name:result for name,data in tree.items()
-              if (result:=scan_blob(name,data,name == updater and trusted_workflow))}
+              if (result:=scan_blob(name,data,(name == updater and trusted_workflow)
+                                   or (name in KNOWN_WORKFLOWS and name not in staged)))}
     if findings:
         print(json.dumps(dict(error='Publication file checks failed',findings=findings),indent=2))
         return 1

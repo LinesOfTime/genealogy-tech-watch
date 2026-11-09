@@ -38,7 +38,8 @@ def event_issues(root, catalog, research, digest):
             error('data/discoveries.jsonl',str(exc))
     else:
         error('data/discoveries.jsonl','Applied events require their reviewed discovery journal')
-    ids=[event.get('discovery_id') for _,event in items+[(None,e) for _,e in history+extended]]
+    ids=[event.get('discovery_id') for _,event in items+[(None,e) for _,e in history+extended
+                                                     if e.get('review_status')=='approved']]
     for key in sorted({x for x in ids if isinstance(x,str) and x} | set(ledger)):
         loc='event:'+key
         h=[(c,e) for c,e in history if e.get('discovery_id')==key]

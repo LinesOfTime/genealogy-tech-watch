@@ -24,14 +24,14 @@ class SourceUpdatesTests(unittest.TestCase):
             for url in row["sources"]:
                 self.assertTrue(url.startswith("https://github.com/"))
                 if row["status"]!="needs_recheck":
-                    self.assertRegex(url,r"/blob/[0-9a-f]{40}/")
+                    self.assertRegex(url,r"/(?:blob/[0-9a-f]{40}/|commit/[0-9a-f]{40}$)")
         self.assertEqual(len(seen),len(data["items"]))
 
     def test_render_does_not_rewrite_catalog(self):
         js=(ROOT/"docs/project-ui.js").read_text(encoding="utf-8")
         self.assertIn("source-updates.json",js)
         self.assertIn("Новая проверка первоисточников",js)
-        self.assertIn("esc(u.summary)",js)
+        self.assertIn("para(u.summary)",js)
         self.assertIn("esc(u.limitations)",js)
 
     def test_validator_rejects_missing_project_and_unpinned_sources(self):

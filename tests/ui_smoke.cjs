@@ -62,8 +62,8 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   }
   const page = fixture(catalog), html = read('docs/index.html');
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
-  assert.equal(scripts.length, 1);
-  vm.runInContext(scripts[0][1], page.context);
+  assert.equal(scripts.length, 0);
+  vm.runInContext(read('docs/catalog-ui.js'), page.context);
   assert.equal(count(page.get('cards').innerHTML, 'card'), catalog.length);
   for (const rating of ['Высокий','Специализированный / зависит от задачи','Не оценено']) {
     const expected = catalog.filter(x => (x.russia_applicability?.rating || 'Не оценено') === rating).length;
@@ -79,10 +79,10 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   assert.equal(count(page.get('cards').innerHTML,'card'), catalog.filter(x => !x.repository_reference_issue && (x.practical_priority?.priority||x.priority)==='P1' && x.russia_applicability.rating==='Высокий').length);
   page.get('russia').value='';
   vm.runInContext('render()', page.context);
-  assert.equal(count(page.get('cards').innerHTML,'card'),23);
+  assert.equal(count(page.get('cards').innerHTML,'card'), catalog.filter(c=>c.practical_priority?.priority==='P1'&&c.repository_reference_issue?.result!=='not_found').length);
   page.get('priority').value='Проверить ссылку';
   vm.runInContext('render()', page.context);
-  assert.equal(count(page.get('cards').innerHTML,'card'),4);
+  assert.equal(count(page.get('cards').innerHTML,'card'), catalog.filter(c=>c.repository_reference_issue&&c.repository_reference_issue.result!=='resolved_relocated').length);
   const dg = fixture(digest);
   vm.runInContext(read('docs/digest-ui.js'), dg.context);
   const eventCount = digest.reduce((n,d) => n+d.items.length, 0);
@@ -144,7 +144,7 @@ function count(html, className) { return (html.match(new RegExp('<article class=
     pr.context.fetch=async url=>({ok:true,json:async()=>({'catalog.json':catalog,'research.json':research,'digest.json':digest,'usage-context.json':JSON.parse(read('docs/usage-context.json'))}[url])});
     await vm.runInContext(read('docs/project-ui.js'),pr.context);
     assert.ok(pr.get('content').innerHTML.includes(pr.context.WatchUI.esc(card.description)));
-    assert.match(pr.get('content').innerHTML,/<h2>Тип проекта<\/h2>/);
+    assert.match(pr.get('content').innerHTML,/<h2>Тип и функциональные направления<\/h2>/);
     assert.match(pr.get('content').innerHTML,/<h2>Назначение<\/h2>/);
     assert.ok(pr.get('content').innerHTML.includes(pr.context.WatchUI.esc(card.description_provenance.source.original_text)));
   }

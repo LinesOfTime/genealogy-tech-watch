@@ -48,6 +48,10 @@ def build(catalog,research,checks=None,proposals=None):
         proposal=proposals.get(key)
         if proposal and proposal.get('review_status')=='approved' and not (reference or profile):state='practical_approved'
         rows.append(dict(project=c['name'],url=c['url'],legacy_priority=c.get('priority','Не оценён'),
+            classification={'type_label': c.get('classification',{}).get('type_label')},
+            assessment_currency=c.get('assessment_currency'),
+            practical_priority={'priority': (c.get('practical_priority') or {}).get('priority')}
+                if isinstance(c.get('practical_priority'),dict) else None,
             priority_original=c.get('priority_original'),state=state,legacy_state=legacy_state,state_label=STATES[state],
             role=role_for(c,r),evidence_level=ev.get('evidence_level'),maturity=ev.get('maturity'),
             license_state=ev.get('license_risk'),integration_effort=ev.get('integration_effort'),

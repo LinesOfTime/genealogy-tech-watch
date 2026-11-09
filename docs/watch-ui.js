@@ -6,7 +6,7 @@ globalThis.WatchUI = (() => {
   const rating = card => card.russia_applicability?.rating || 'Не оценено';
   const text = value => typeof value === 'string' ? value : JSON.stringify(value ?? 'Не указано', null, 2);
   const para = value => `<p>${esc(text(value || 'Сведения не установлены'))}</p>`;
-  const panel = (title, body) => `<section class="panel"><h2>${esc(title)}</h2>${body}</section>`;
+  const panel = (title, body, id) => `<section class="panel"${id ? ' id="'+esc(id)+'"' : ''}><h2>${esc(title)}</h2>${body}</section>`;
   const sourceLabel = source => {
     const href = typeof source === 'string' ? source : source.url;
     try {
@@ -61,7 +61,7 @@ globalThis.WatchUI = (() => {
     return body;
   };
   // The editorial and practical scales are independent and must not be conflated.
-  const priorityValue = card => card.repository_reference_issue ? 'Проверить ссылку' : card.practical_priority?.priority || 'Не оценён';
+  const priorityValue = card => card.repository_reference_issue && card.repository_reference_issue.result !== 'resolved_relocated' ? 'Проверить ссылку' : card.practical_priority?.priority || 'Не оценён';
   const editorialPriority = card => card.priority || 'Не оценён';
   const priorityAxes = card => {
     const p = card.practical_priority;
@@ -76,7 +76,7 @@ globalThis.WatchUI = (() => {
       '</dd></dl><p class="meta">Шкалы независимы: разные P-значения не являются ошибкой.</p>';
   };
   const priorityNote = card => {
-    if(card.repository_reference_issue)return '<p class="meta">Проблема ссылки: '+esc(card.repository_reference_issue.result==='not_found'?'GitHub HTTP 404 — публичный репозиторий не найден':'профиль владельца, не репозиторий')+'. Сначала проверить адрес; это не оценка характеристик.</p>';
+    if(card.repository_reference_issue && card.repository_reference_issue.result !== 'resolved_relocated')return '<p class="meta">Проблема ссылки: '+esc(card.repository_reference_issue.result==='not_found'?'GitHub HTTP 404 — публичный репозиторий не найден':'профиль владельца, не репозиторий')+'. Сначала проверить адрес; это не оценка характеристик.</p>';
     const p=card.practical_priority;
     if(p?.review_status==='approved')return '<p class="meta">Практический приоритет по задаче · '+esc(p.evidence_level)+' · утверждён пользователем.</p>';
     if(card.preliminary_priority)return '<p class="meta">Предварительный приоритет · '+esc(card.preliminary_priority)+'</p>';
@@ -104,19 +104,29 @@ WatchUI.bindFilterState = (ids, render, resetId) => {
     const params = new URLSearchParams(location.search);
     fields.forEach(field => {
       const value = params.get(field.id) || '';
-      field.value = field.tagName === 'SELECT' && ![...field.options].some(o => o.value === value) ? '' : value;
+      if(field.multiple) {
+        const values=params.getAll(field.id);
+        for(const option of field.options)option.selected=values.includes(option.value);
+      } else field.value = field.tagName === 'SELECT' && ![...field.options].some(o => o.value === value) ? '' : value;
     });
     render();
   };
   const update = () => {
     const next = new URL(location.href);
-    fields.forEach(field => field.value ? next.searchParams.set(field.id, field.value) : next.searchParams.delete(field.id));
+    fields.forEach(field => {
+      next.searchParams.delete(field.id);
+      if(field.multiple)for(const option of field.selectedOptions)next.searchParams.append(field.id,option.value);
+      else if(field.value)next.searchParams.set(field.id,field.value);
+    });
     history.replaceState(null, '', next);
     render();
   };
   fields.forEach(field => field.addEventListener(field.tagName === 'SELECT' ? 'change' : 'input', update));
   document.getElementById(resetId)?.addEventListener('click', () => {
-    fields.forEach(field => field.value = '');
+    fields.forEach(field => {
+      if(field.multiple)for(const option of field.options)option.selected=false;
+      else field.value = '';
+    });
     update();
     fields[0]?.focus();
   });

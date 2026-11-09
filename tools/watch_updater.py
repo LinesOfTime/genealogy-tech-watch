@@ -109,21 +109,28 @@ def prepare(root, raw, base):
         key = event.get('discovery_id')
         if not isinstance(key, str) or key in existing_ids:
             raise ValueError('Missing or already recorded discovery_id: ' + str(key))
-    for name, snapshot in package['evidence'].items():
-        path = root / name
-        if path.exists():
-            raise ValueError('Evidence already exists: ' + name)
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_bytes(snapshot.encode('utf-8'))
-    # Use a reproducible placeholder valid under the evidence rules. A real
-    # reviewer and timestamp are recorded only during the publish dispatch.
-    timestamps = [check['checked_at'] for event in package['events'] for check in event['source_checks']]
-    stamp = max(datetime.fromisoformat(value.replace('Z', '+00:00')) for value in timestamps).isoformat()
-    preview = complete_plan(root, package, approved_events(package['events'], 'Updater preview', stamp))
-    approval_hash = digest_bytes(encoded({
-        'base': base, 'package_sha256': digest_bytes(raw), 'plan_hash': preview['plan_hash'],
-    }))
-    return package, preview, approval_hash
+    created = []
+    try:
+        for name, snapshot in package['evidence'].items():
+            path = root / name
+            if path.exists():
+                raise ValueError('Evidence already exists: ' + name)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(snapshot.encode('utf-8'))
+            created.append(path)
+        # Use a reproducible placeholder valid under the evidence rules. A real
+        # reviewer and timestamp are recorded only during the publish dispatch.
+        timestamps = [check['checked_at'] for event in package['events'] for check in event['source_checks']]
+        stamp = max(datetime.fromisoformat(value.replace('Z', '+00:00')) for value in timestamps).isoformat()
+        preview = complete_plan(root, package, approved_events(package['events'], 'Updater preview', stamp))
+        approval_hash = digest_bytes(encoded({
+            'base': base, 'package_sha256': digest_bytes(raw), 'plan_hash': preview['plan_hash'],
+        }))
+        return package, preview, approval_hash
+    except Exception:
+        for path in created:
+            path.unlink(missing_ok=True)
+        raise
 
 
 def authorize(root, package, approval_hash, expected, actor, stamp):

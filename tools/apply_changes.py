@@ -25,6 +25,13 @@ def sync_payloads(root, catalog=None, digest=None):
     """Prepare all copies and seeds before writing any of them."""
     root = Path(root)
     output = {}
+    from catalog_model import enrich
+    current = json.loads((root / 'catalog.json').read_text(encoding='utf-8')) if catalog is None else catalog
+    research_path = root / 'docs/research.json'
+    research = json.loads(research_path.read_text(encoding='utf-8')) if research_path.exists() else {}
+    enriched = enrich(root, current, research)
+    if enriched != current or catalog is not None:
+        catalog = enriched
     for source, page, supplied in [('catalog', 'index', catalog), ('digest', 'digest', digest)]:
         raw = (root / (source + '.json')).read_bytes() if supplied is None else encoded(supplied)
         value = json.loads(raw)
@@ -200,6 +207,8 @@ def build_plan(root, records, edition_date):
                                               for r in journal) + '\n').encode('utf-8')
     before = {name: (root / name).read_bytes() if (root / name).exists() else None for name in files}
     dependencies=['data/editorial-corrections.json','data/repository-rechecks.json']
+    from catalog_model import MODEL_FILES
+    dependencies += [name for name in MODEL_FILES if (root/name).exists()]
     dependencies += [str(p.relative_to(root)).replace('\\','/') for p in (root/'data/evidence').glob('**/*') if p.is_file()]
     for name in dependencies:
         if name not in before:before[name]=(root/name).read_bytes() if (root/name).exists() else None
