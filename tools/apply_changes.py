@@ -21,14 +21,15 @@ def digest_bytes(value):
     return hashlib.sha256(value).hexdigest()
 
 
-def sync_payloads(root, catalog=None, digest=None):
+def sync_payloads(root, catalog=None, digest=None, *, research=None):
     """Prepare all copies and seeds before writing any of them."""
     root = Path(root)
     output = {}
     from catalog_model import enrich
     current = json.loads((root / 'catalog.json').read_text(encoding='utf-8')) if catalog is None else catalog
-    research_path = root / 'docs/research.json'
-    research = json.loads(research_path.read_text(encoding='utf-8')) if research_path.exists() else {}
+    if research is None:
+        research_path = root / 'docs/research.json'
+        research = json.loads(research_path.read_text(encoding='utf-8')) if research_path.exists() else {}
     enriched = enrich(root, current, research)
     if enriched != current or catalog is not None:
         catalog = enriched
@@ -188,7 +189,7 @@ def build_plan(root, records, edition_date):
     from repository_integrity import rejection_issues
     rejected=rejection_issues(root,catalog,research,digest)
     if rejected:raise ValueError('Rejected repository gate: '+str(rejected))
-    files = sync_payloads(root, catalog, digest if items else None)
+    files = sync_payloads(root, catalog, digest if items else None, research=research)
     files['docs/research.json'] = encoded(research)
     files['data/applied-events.json'] = encoded(ledger)
     journal_path = root / 'data/discoveries.jsonl'

@@ -9,6 +9,7 @@ import test_apply_changes
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 from apply_changes import digest_bytes, encoded, write_plan
+from catalog_model import MODEL_FILES
 from discoveries import read_jsonl
 from watch_pipeline import validate
 from watch_updater import authorize, load_package, prepare
@@ -59,6 +60,17 @@ class UpdaterTests(unittest.TestCase):
         self.assertEqual(validate(self.root)['errors'], 0)
         with self.assertRaisesRegex(ValueError, 'already recorded'):
             prepare(self.root, raw, 'base')
+
+    def test_classified_catalog_accepts_new_project_and_counts_review_once(self):
+        for name in MODEL_FILES[:3]:
+            (self.root / name).write_bytes(encoded({'projects': {}}))
+        packet, _, key = prepare(self.root, encoded(self.packet), 'base')
+        plan = authorize(self.root, packet, key, key, 'editor', self.stamp)
+        write_plan(self.root, plan, plan['plan_hash'])
+        card = json.loads((self.root / 'catalog.json').read_bytes())[-1]
+        self.assertEqual(card['classification']['primary_type'], 'unknown')
+        self.assertEqual(len(card['assessment_currency']['sources']), 1)
+        self.assertEqual(validate(self.root)['errors'], 0)
 
     def test_existing_project_requires_priority_review_even_if_unchanged(self):
         event = self.packet['events'][0]

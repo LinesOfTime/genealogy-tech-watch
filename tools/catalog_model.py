@@ -81,9 +81,10 @@ def assessment_currency(card, research, updates, review, proposal):
                             kind='assessment_basis', urls=p.get('source_urls', [])))
     for event in card.get('history', []) + research.get('watch_events', []):
         if event.get('review_status') == 'approved' and event.get('source_urls'):
-            sources.append(dict(checked_at=event.get('reviewed_at') or event.get('date'),
-                                kind='watch_source_review',
-                                urls=[s['url'] for s in event['source_urls']]))
+            source = dict(checked_at=event.get('reviewed_at') or event.get('date'),
+                          kind='watch_source_review', urls=[s['url'] for s in event['source_urls']])
+            if source not in sources:
+                sources.append(source)
     if updates:
         sources.append(dict(checked_at=updates['checked_at'], kind='source_update',
                             urls=updates['sources']))

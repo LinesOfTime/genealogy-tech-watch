@@ -1543,24 +1543,6 @@
           ]
         },
         {
-          "checked_at": "2026-10-22T09:18:27Z",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/AI-Riksarkivet/htrflow-batch/commit/d087c1ec02417c73e4061b8a54fc44627424d876"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/packages/web/src/htrflow_web/search.py",
-            "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/packages/web/src/htrflow_web/app.py",
-            "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/docs/features/search-solr/feature.md",
-            "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/README.md",
-            "https://raw.githubusercontent.com/AI-Riksarkivet/htrflow-batch/7cf504c80f8784caa8d224f83bd17973dca3f69d/LICENSE"
-          ]
-        },
-        {
           "checked_at": "2026-11-09",
           "kind": "source_update",
           "urls": [
@@ -7330,16 +7312,6 @@
             "https://github.com/gramps-project/gramps-web/blob/v26.10.2/LICENSE",
             "https://api.github.com/repos/gramps-project/gramps-web"
           ]
-        },
-        {
-          "checked_at": "2026-10-24T08:50:10.295948+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/gramps-project/gramps-web/releases/tag/v26.10.2",
-            "https://github.com/gramps-project/gramps-web/blob/v26.10.2/README.md",
-            "https://github.com/gramps-project/gramps-web/blob/v26.10.2/LICENSE",
-            "https://api.github.com/repos/gramps-project/gramps-web"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -7910,57 +7882,6 @@
           "urls": [
             "https://api.github.com/repos/gramps-project/gramps-web-api/contents/README.md?ref=57618907ce0529a893a02207115e3a3db79e0628",
             "https://api.github.com/repos/gramps-project/gramps-web-api/contents/LICENSE?ref=57618907ce0529a893a02207115e3a3db79e0628"
-          ]
-        },
-        {
-          "checked_at": "2026-10-24T08:50:10.295948+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/gramps-project/gramps-web-api/commit/187ac6445c9d50ad296058c3552823eb886fb743",
-            "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/README.md",
-            "https://github.com/gramps-project/gramps-web-api/blob/187ac6445c9d50ad296058c3552823eb886fb743/LICENSE",
-            "https://api.github.com/repos/gramps-project/gramps-web-api"
-          ]
-        },
-        {
-          "checked_at": "2026-10-29T17:58:23.094364+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/gramps-project/gramps-web-api/releases/tags/v3.25.0",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits/7a82674708d6394a0329e0251e9577e78135cc97",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits/a9e400676e836688086b18f6f7e95273faf1a752",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits/ca4e19f1ecd6ad509d286270008eb3ccbcc4f9d8",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits?per_page=12",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/releases?per_page=3",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/44bf834478db3199f0188a876d3b7961772913d1/LICENSE",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/44bf834478db3199f0188a876d3b7961772913d1/README.md",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/44bf834478db3199f0188a876d3b7961772913d1/pyproject.toml"
-          ]
-        },
-        {
-          "checked_at": "2026-11-01T08:30:26.860658+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/gramps-project/gramps-web-api/releases/tag/v3.25.1",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits/13abafd133bfcb33858983687d89bd17db4d20d5",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits/2b80b26b7c160afa734e948eed5e36dd892b5d31",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits/c66ec63410da139c3bbc825af44e5781c518a3a2",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits/v3.25.1",
-            "https://api.github.com/repos/gramps-project/gramps-web-api/releases/tags/v3.25.1",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/LICENSE",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/README.md",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/alembic_users/env.py",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/gramps_webapi/api/llm/agent.py",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/77263b895c1d476dae9a655587956ec798536776/pyproject.toml"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/gramps-project/gramps-web-api/commits/4b3a266255fffc0b656e754a47359a6f9a8c3a48",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/4b3a266255fffc0b656e754a47359a6f9a8c3a48/pyproject.toml",
-            "https://raw.githubusercontent.com/gramps-project/gramps-web-api/4b3a266255fffc0b656e754a47359a6f9a8c3a48/LICENSE"
           ]
         },
         {
@@ -17662,64 +17583,6 @@
             "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/6b2cb2207fbfce40e124d1f78b2600721b60dcd2/README.md",
             "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/6b2cb2207fbfce40e124d1f78b2600721b60dcd2/LICENSE"
           ]
-        },
-        {
-          "checked_at": "2026-10-29T17:58:23.094364+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/Scormave/gramps-web-mcp/releases/tags/v2.7.0",
-            "https://api.github.com/repos/Scormave/gramps-web-mcp",
-            "https://api.github.com/repos/Scormave/gramps-web-mcp/commits?per_page=12",
-            "https://api.github.com/repos/Scormave/gramps-web-mcp/releases?per_page=3",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/GrampsWeb.Mcp/Config/ConfirmationMode.cs",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/GrampsWeb.Mcp/Tools/UndoTools.cs",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/GrampsWeb.Mcp/Tools/UserConfirmation.cs",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/LICENSE",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/86269e6f50718b071b9f15136d8d48876d33caae/README.md"
-          ]
-        },
-        {
-          "checked_at": "2026-10-30T21:02:29.027623+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/Scormave/gramps-web-mcp/commit/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67",
-            "https://api.github.com/repos/Scormave/gramps-web-mcp/commits/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67",
-            "https://api.github.com/repos/Scormave/gramps-web-mcp/releases?per_page=2",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/CHANGELOG.md",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/GrampsWeb.Mcp.IntegrationTests/RecordBatchTests.cs",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/GrampsWeb.Mcp/Client/GrampsApiClient.cs",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/GrampsWeb.Mcp/Input/BatchRecords.cs",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/GrampsWeb.Mcp/Tools/RecordBatchTools.cs",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/LICENSE",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/864d4e593e1d301df5a4ac0d7d7a1c90f0476a67/README.md"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/Scormave/gramps-web-mcp/commits/65d1f19e7d525f388b9852baeffe13008a9cfc8a",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/65d1f19e7d525f388b9852baeffe13008a9cfc8a/README.md",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/65d1f19e7d525f388b9852baeffe13008a9cfc8a/LICENSE"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/Scormave/gramps-web-mcp/commits/0d5823465d5ce9add526b227e2f98eb8d70dc17c",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/0d5823465d5ce9add526b227e2f98eb8d70dc17c/README.md",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/0d5823465d5ce9add526b227e2f98eb8d70dc17c/LICENSE"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/Scormave/gramps-web-mcp/releases/432627106",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/6b2cb2207fbfce40e124d1f78b2600721b60dcd2/README.md",
-            "https://raw.githubusercontent.com/Scormave/gramps-web-mcp/6b2cb2207fbfce40e124d1f78b2600721b60dcd2/LICENSE"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -24947,26 +24810,6 @@
             "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/README.md",
             "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
           ]
-        },
-        {
-          "checked_at": "2026-10-23T09:44:05.354Z",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/AI-Riksarkivet/rask/commit/a2af14d9d715d586852e56428cb2f7f0fdcc5156",
-            "https://github.com/AI-Riksarkivet/rask/commit/1ce098a42fe93656f841130b2b093fa4d9e8c6aa",
-            "https://github.com/AI-Riksarkivet/rask/commit/d2f3f88e3b8166075801465bc4893e0433b6bf43",
-            "https://github.com/AI-Riksarkivet/rask/blob/d2f3f88e3b8166075801465bc4893e0433b6bf43/LICENSE",
-            "https://api.github.com/repos/AI-Riksarkivet/rask"
-          ]
-        },
-        {
-          "checked_at": "2026-10-24T08:50:10.295948+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/AI-Riksarkivet/rask/commit/da7b293644b08e767271744be63775491cd553ba",
-            "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/README.md",
-            "https://github.com/AI-Riksarkivet/rask/blob/da7b293644b08e767271744be63775491cd553ba/LICENSE"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -26961,15 +26804,6 @@
             "https://github.com/igormel81/genealogy-mcp/blob/7f4e96b4f9ad1ab7b4c81819b59612e936c571c0/LICENSE",
             "https://api.github.com/repos/igormel81/genealogy-mcp"
           ]
-        },
-        {
-          "checked_at": "2026-10-23T09:44:05.353Z",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/igormel81/genealogy-mcp/releases/tag/v0.7.0",
-            "https://github.com/igormel81/genealogy-mcp/blob/7f4e96b4f9ad1ab7b4c81819b59612e936c571c0/LICENSE",
-            "https://api.github.com/repos/igormel81/genealogy-mcp"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -27747,70 +27581,6 @@
             "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/pyproject.toml",
             "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/LICENSE"
           ]
-        },
-        {
-          "checked_at": "2026-10-23T09:44:05.349Z",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/README.md",
-            "https://github.com/GeiserX/gramps-web-toolkit/blob/337064d5d7f1191ba2f3b28bb3536e0391f65d28/docs/pipeline.md",
-            "https://github.com/GeiserX/gramps-web-toolkit/blob/main/LICENSE",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit"
-          ]
-        },
-        {
-          "checked_at": "2026-10-31T08:16:55.065081+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/GeiserX/gramps-web-toolkit/releases/tag/v0.2.12",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/443fcd2266979e2a8b2ee6f1f328d3539aa2350b",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits?per_page=5",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/tags/v0.2.12",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases?per_page=4",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/CHANGELOG.md",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/LICENSE",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/README.md",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/docs/apply.md",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/f0f83bdc04d9db6bb43288571d4ee198331dc86d/pyproject.toml"
-          ]
-        },
-        {
-          "checked_at": "2026-11-01T08:30:26.860658+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/GeiserX/gramps-web-toolkit/releases/tag/v0.3.0",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/305df0b23304ed95aacc87737e233061a65efd1e",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/7b0ecac6a17451a49d8b1f1da098917dc360dd92",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/a8f5b83915354bbc0b6c7917c9f3dae284c5bc79",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/commits/v0.3.0",
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/tags/v0.3.0",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/CHANGELOG.md",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/LICENSE",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/README.md",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/docs/apply.md",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/pyproject.toml",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/77935a58b9273c70d87440267b574143aaa2f23f/read/gwt_insee.py"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/432370054",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/7d89023ac04e9466cc4fd624066ef75a887354c0/CHANGELOG.md",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/7d89023ac04e9466cc4fd624066ef75a887354c0/pyproject.toml",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/7d89023ac04e9466cc4fd624066ef75a887354c0/LICENSE"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/GeiserX/gramps-web-toolkit/releases/433108652",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/CHANGELOG.md",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/pyproject.toml",
-            "https://raw.githubusercontent.com/GeiserX/gramps-web-toolkit/081b7e177580e5b4d59447b2c4ee60d38557115e/LICENSE"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -28119,30 +27889,6 @@
             "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/skills/genealogy-research-recipes/recipes/french-departmental-record-routing.md?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4",
             "https://api.github.com/repos/Kinprove/genealogy-research-recipes/releases/tags/v1.10.0"
           ]
-        },
-        {
-          "checked_at": "2026-10-23T09:44:05.352Z",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.0",
-            "https://github.com/Kinprove/genealogy-research-recipes/releases/tag/v1.6.1",
-            "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/README.md",
-            "https://github.com/Kinprove/genealogy-research-recipes/blob/v1.6.1/LICENSE",
-            "https://api.github.com/repos/Kinprove/genealogy-research-recipes"
-          ]
-        },
-        {
-          "checked_at": "2026-11-06T19:49:07.453402+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/Kinprove/genealogy-research-recipes/releases/tags/v1.11.0",
-            "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/ecfeca598253aaab3474e247aa0a78b7848d98b4/plugin.json",
-            "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/README.md?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4",
-            "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/LICENSE?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4",
-            "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/plugin.json?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4",
-            "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/skills/genealogy-research-recipes/recipes/french-departmental-record-routing.md?ref=ecfeca598253aaab3474e247aa0a78b7848d98b4",
-            "https://api.github.com/repos/Kinprove/genealogy-research-recipes/releases/tags/v1.10.0"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -28330,16 +28076,6 @@
       "last_substantive_source_check": "2026-11-09",
       "reviewed_at": "2026-11-09",
       "sources": [
-        {
-          "checked_at": "2026-10-24T08:50:10.295948+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/b21-agency/gramps-ui/releases/tag/0.1.0",
-            "https://github.com/b21-agency/gramps-ui/blob/0.1.0/README.md",
-            "https://github.com/b21-agency/gramps-ui/blob/0.1.0/LICENSE",
-            "https://api.github.com/repos/b21-agency/gramps-ui"
-          ]
-        },
         {
           "checked_at": "2026-10-24T08:50:10.295948+00:00",
           "kind": "watch_source_review",
@@ -28600,18 +28336,6 @@
           "urls": [
             "https://api.github.com/repos/dsblank/gramps-connect-stories/contents/README.md?ref=8e801cbc4ad93259bdfa31c4db2b6f53ba271421",
             "https://api.github.com/repos/dsblank/gramps-connect-stories/contents/LICENSE?ref=8e801cbc4ad93259bdfa31c4db2b6f53ba271421"
-          ]
-        },
-        {
-          "checked_at": "2026-10-24T08:50:10.295948+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/README.md",
-            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/spec/1.0/story.schema.json",
-            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/README.md",
-            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/LICENSE",
-            "https://github.com/dsblank/gramps-connect-stories/blob/7026d43e47395072be6544026403fc30abea283e/python/gramps_connect_story.py",
-            "https://api.github.com/repos/dsblank/gramps-connect-stories"
           ]
         },
         {
@@ -28892,21 +28616,6 @@
             "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.test.ts",
             "https://api.github.com/repos/device25/gedview"
           ]
-        },
-        {
-          "checked_at": "2026-10-24T08:50:10.295948+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/README.md",
-            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/LICENSE",
-            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/calendar.ts",
-            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/calendar.test.ts",
-            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/date.ts",
-            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/gedcom/date.test.ts",
-            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.ts",
-            "https://github.com/device25/gedview/blob/9b651201441774dd67d9f1e8e802909ee07462c4/src/ui/format.test.ts",
-            "https://api.github.com/repos/device25/gedview"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -29129,16 +28838,6 @@
           "urls": [
             "https://api.github.com/repos/stanford-oval/sheldon/contents/README.md?ref=7fbf027d1fb414443612d4ad2661b396c8352cd3",
             "https://api.github.com/repos/stanford-oval/sheldon/contents/LICENSE?ref=7fbf027d1fb414443612d4ad2661b396c8352cd3"
-          ]
-        },
-        {
-          "checked_at": "2026-10-24T08:50:10.295948+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/README.md",
-            "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/LICENSE",
-            "https://github.com/stanford-oval/sheldon/blob/7fbf027d1fb414443612d4ad2661b396c8352cd3/sheldon/methods/sheldon/schemas.py",
-            "https://api.github.com/repos/stanford-oval/sheldon"
           ]
         },
         {
@@ -30334,19 +30033,6 @@
             "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/LICENSE",
             "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/README.md"
           ]
-        },
-        {
-          "checked_at": "2026-10-28T17:30:49.142091+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/AI-Riksarkivet/ra-mcp/releases/tags/v0.18.0",
-            "https://api.github.com/repos/AI-Riksarkivet/ra-mcp/commits?per_page=3",
-            "https://api.github.com/repos/AI-Riksarkivet/ra-mcp",
-            "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/docs/how-it-works/architecture.md",
-            "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/docs/how-it-works/data-sources.md",
-            "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/LICENSE",
-            "https://raw.githubusercontent.com/AI-Riksarkivet/ra-mcp/09de121b651d77c79d122afad617f98aa35daaa7/README.md"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -30592,19 +30278,6 @@
             "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/packages/core/src/ops/op.ts",
             "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/README.md"
           ]
-        },
-        {
-          "checked_at": "2026-10-28T17:30:49.142091+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/borisovodov/doru/releases/tags/v0.0.26",
-            "https://api.github.com/repos/borisovodov/doru/commits?per_page=3",
-            "https://api.github.com/repos/borisovodov/doru",
-            "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/LICENSE.md",
-            "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/packages/ai/src/server.ts",
-            "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/packages/core/src/ops/op.ts",
-            "https://raw.githubusercontent.com/borisovodov/doru/c37d1c54801939726c125334566be8f8a1aff107/README.md"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -30830,19 +30503,6 @@
           "urls": [
             "https://api.github.com/repos/stanford-oval/CREDIT/contents/README.md?ref=55b912d8ae1d0072238ee9c0f2a9f35208467721",
             "https://api.github.com/repos/stanford-oval/CREDIT/contents/LICENSE?ref=55b912d8ae1d0072238ee9c0f2a9f35208467721"
-          ]
-        },
-        {
-          "checked_at": "2026-10-28T17:30:49.142091+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/stanford-oval/CREDIT/commits?per_page=3",
-            "https://api.github.com/repos/stanford-oval/CREDIT",
-            "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/credit/cf_disclose.py",
-            "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/data/README.md",
-            "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/LICENSE",
-            "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/NOTICE",
-            "https://raw.githubusercontent.com/stanford-oval/CREDIT/55b912d8ae1d0072238ee9c0f2a9f35208467721/README.md"
           ]
         },
         {
@@ -31252,47 +30912,6 @@
             "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/4048b031fa3204531d8ab8c2e3e3bace50442f27/README.md",
             "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/4048b031fa3204531d8ab8c2e3e3bace50442f27/LICENSE"
           ]
-        },
-        {
-          "checked_at": "2026-10-28T17:30:49.142091+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/fmadore/iwac-mcp-server/releases/tags/v4.3.1",
-            "https://api.github.com/repos/fmadore/iwac-mcp-server/commits?per_page=3",
-            "https://api.github.com/repos/fmadore/iwac-mcp-server",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/b3e651b5f3ca4159321cbd4ae65121b144a0949c/LICENSE",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/b3e651b5f3ca4159321cbd4ae65121b144a0949c/mcpb/src/tools/skills.ts",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/b3e651b5f3ca4159321cbd4ae65121b144a0949c/README.md"
-          ]
-        },
-        {
-          "checked_at": "2026-10-30T21:02:29.027623+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/fmadore/iwac-mcp-server/releases/tag/v5.0.0",
-            "https://api.github.com/repos/fmadore/iwac-mcp-server/commits?per_page=4",
-            "https://api.github.com/repos/fmadore/iwac-mcp-server/releases/tags/v5.0.0",
-            "https://api.github.com/repos/fmadore/iwac-mcp-server/releases?per_page=2",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/LICENSE",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/README.md",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/docs/releases/v5.0.0.md",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/package.json",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/provenance.ts",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/toolProfiles.ts",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/tools/register.ts",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/tools/researchExports.ts",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/src/tools/shared/text.ts",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/e3d9867c8696fbce7a020f56b329b3a6629ba7c0/mcpb/test/v5-contract.test.ts"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/fmadore/iwac-mcp-server/releases/431142241",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/4048b031fa3204531d8ab8c2e3e3bace50442f27/README.md",
-            "https://raw.githubusercontent.com/fmadore/iwac-mcp-server/4048b031fa3204531d8ab8c2e3e3bace50442f27/LICENSE"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -31551,22 +31170,6 @@
           "urls": [
             "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/contents/README.md?ref=0036ef76638a10e84aa49b1137310af23928d838",
             "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/contents/LICENSE?ref=0036ef76638a10e84aa49b1137310af23928d838"
-          ]
-        },
-        {
-          "checked_at": "2026-10-29T17:58:23.094364+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/releases/tags/v1.8.0",
-            "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/releases/tags/v1.8.1",
-            "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs",
-            "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/commits?per_page=12",
-            "https://api.github.com/repos/Alexey-N-Chernyshov/gramps-web-mcp-rs/releases?per_page=3",
-            "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/LICENSE",
-            "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/README.md",
-            "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/docs/choose-setup.md",
-            "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/src/auth.rs",
-            "https://raw.githubusercontent.com/Alexey-N-Chernyshov/gramps-web-mcp-rs/cb9da08ca76c82c652612643513813a36f95484b/src/config.rs"
           ]
         },
         {
@@ -31844,21 +31447,6 @@
           "urls": [
             "https://api.github.com/repos/magicianmarty/heritage-research-mcp/contents/README.md?ref=a88957fea659904d37ec3a1f7f3cfcab26a17058",
             "https://api.github.com/repos/magicianmarty/heritage-research-mcp/contents/LICENSE?ref=a88957fea659904d37ec3a1f7f3cfcab26a17058"
-          ]
-        },
-        {
-          "checked_at": "2026-10-29T17:58:23.094364+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/magicianmarty/heritage-research-mcp/releases/tags/v0.2.0",
-            "https://api.github.com/repos/magicianmarty/heritage-research-mcp",
-            "https://api.github.com/repos/magicianmarty/heritage-research-mcp/commits?per_page=12",
-            "https://api.github.com/repos/magicianmarty/heritage-research-mcp/releases?per_page=3",
-            "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/LICENSE",
-            "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/README.md",
-            "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/pyproject.toml",
-            "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/src/heritage_research_mcp/rights.py",
-            "https://raw.githubusercontent.com/magicianmarty/heritage-research-mcp/a88957fea659904d37ec3a1f7f3cfcab26a17058/src/heritage_research_mcp/sources/dispatch.py"
           ]
         },
         {
@@ -32203,26 +31791,6 @@
           ]
         },
         {
-          "checked_at": "2026-10-31T08:16:55.065081+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://github.com/itarunnn/jp-lit-mcp/releases/tag/v0.19.0",
-            "https://api.github.com/repos/itarunnn/jp-lit-mcp",
-            "https://api.github.com/repos/itarunnn/jp-lit-mcp/commits/914f96dc249f9e08aaeb707864223c55c33d5eb8",
-            "https://api.github.com/repos/itarunnn/jp-lit-mcp/commits?per_page=5",
-            "https://api.github.com/repos/itarunnn/jp-lit-mcp/releases/tags/v0.19.0",
-            "https://api.github.com/repos/itarunnn/jp-lit-mcp/releases?per_page=4",
-            "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/LICENSE",
-            "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/README.md",
-            "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/docs/book-structure.md",
-            "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/docs/install/runtime-requirements.md",
-            "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/docs/source-usage-conditions.md",
-            "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/docs/third-party-notices.md",
-            "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/package.json",
-            "https://raw.githubusercontent.com/itarunnn/jp-lit-mcp/914f96dc249f9e08aaeb707864223c55c33d5eb8/packages/book-structure/book_structure/sqlite_export.py"
-          ]
-        },
-        {
           "checked_at": "2026-11-09",
           "kind": "source_update",
           "urls": [
@@ -32448,16 +32016,6 @@
           "urls": [
             "https://api.github.com/repos/k-woitas/eperiodica-explorer/contents/README.md?ref=8d14e0f2f6869c4739155173f5b41cd764ddf892",
             "https://api.github.com/repos/k-woitas/eperiodica-explorer/contents/LICENSE?ref=8d14e0f2f6869c4739155173f5b41cd764ddf892"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/k-woitas/eperiodica-explorer",
-            "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/README.md",
-            "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/PROXY.md",
-            "https://raw.githubusercontent.com/k-woitas/eperiodica-explorer/8d14e0f2f6869c4739155173f5b41cd764ddf892/LICENSE"
           ]
         },
         {
@@ -32860,26 +32418,6 @@
             "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/src/gramps_mcp/tools/upsert_table.py",
             "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/LICENSE"
           ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://api.github.com/repos/Genealogy-MCP/gramps-mcp",
-            "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/README.md",
-            "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/CHANGELOG.md",
-            "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/src/gramps_mcp/operations.py",
-            "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ac633d50945863c60a8c5ae876dc5d38f823ad17/LICENSE"
-          ]
-        },
-        {
-          "checked_at": "2026-11-04T13:37:19.941586+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/CHANGELOG.md",
-            "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/src/gramps_mcp/tools/upsert_table.py",
-            "https://raw.githubusercontent.com/Genealogy-MCP/gramps-mcp/ca6de056e9c088652627cc73dae5a3d6f106f81c/LICENSE"
-          ]
         }
       ],
       "pending_proposal": null,
@@ -33255,22 +32793,6 @@
           ]
         },
         {
-          "checked_at": "2026-11-06T19:49:07.453402+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://raw.githubusercontent.com/semanticmeaning/kinship-kit/4d90a0621febc37479ac265f41649a357e7a2558/README.md",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/README.md?ref=4d90a0621febc37479ac265f41649a357e7a2558",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/LICENSE?ref=4d90a0621febc37479ac265f41649a357e7a2558",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/pyproject.toml?ref=4d90a0621febc37479ac265f41649a357e7a2558",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/CHANGELOG.md?ref=4d90a0621febc37479ac265f41649a357e7a2558",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/docs/GEDCOM.md?ref=4d90a0621febc37479ac265f41649a357e7a2558",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/docs/ACCEPTANCE.md?ref=4d90a0621febc37479ac265f41649a357e7a2558",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit/contents/NOTICE.md?ref=4d90a0621febc37479ac265f41649a357e7a2558",
-            "https://api.github.com/repos/semanticmeaning/kinship-kit/releases?per_page=3"
-          ]
-        },
-        {
           "checked_at": "2026-11-09",
           "kind": "source_update",
           "urls": [
@@ -33525,20 +33047,6 @@
       "last_substantive_source_check": "2026-11-09",
       "reviewed_at": "2026-11-09",
       "sources": [
-        {
-          "checked_at": "2026-11-06T19:49:07.453402+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://raw.githubusercontent.com/joaquimrcarvalho/personal-historical-archive/4a458d64b08556c975573bd0a8274fbcabb87c3a/README.md",
-            "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive",
-            "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/README.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a",
-            "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/pyproject.toml?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a",
-            "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/HISTORIANS_README.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a",
-            "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents/MCP_CLIENTS.md?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a",
-            "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/releases?per_page=3",
-            "https://api.github.com/repos/joaquimrcarvalho/personal-historical-archive/contents?ref=4a458d64b08556c975573bd0a8274fbcabb87c3a"
-          ]
-        },
         {
           "checked_at": "2026-11-06T19:49:07.453402+00:00",
           "kind": "watch_source_review",
@@ -33830,26 +33338,6 @@
       "last_substantive_source_check": "2026-11-09",
       "reviewed_at": "2026-11-09",
       "sources": [
-        {
-          "checked_at": "2026-11-08T17:04:13.589287+00:00",
-          "kind": "watch_source_review",
-          "urls": [
-            "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/README.md",
-            "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/git/trees/0697af3db34951cd112410eee375c353e8b7bf19?recursive=1",
-            "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/commits/e26fcca8361080d5a94b0d1f9f92c8fbf47283d9",
-            "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/commits/0697af3db34951cd112410eee375c353e8b7bf19",
-            "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/commits?per_page=12",
-            "https://api.github.com/repos/OpenHeritageOnline/agent-tooling",
-            "https://api.github.com/repos/OpenHeritageOnline/agent-tooling/releases",
-            "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/.codex-plugin/plugin.json",
-            "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/.claude-plugin/plugin.json",
-            "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/server.json",
-            "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-archives/SKILL.md",
-            "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-researches/SKILL.md",
-            "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-catalog-review/SKILL.md",
-            "https://raw.githubusercontent.com/OpenHeritageOnline/agent-tooling/0697af3db34951cd112410eee375c353e8b7bf19/skills/openheritage-catalog-review/references/place-review.md"
-          ]
-        },
         {
           "checked_at": "2026-11-08T17:04:13.589287+00:00",
           "kind": "watch_source_review",
