@@ -282,6 +282,20 @@ const {chromium} = require('playwright');
         expected=bounds;
         assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth <= innerWidth));
         assert.equal(await page.locator('.skip-link').count(),1);
+        assert.equal(await page.locator('.site-nav').evaluate(nav=>getComputedStyle(nav).position),'sticky');
+        if(name==='index'){
+          await page.locator('#advanced-filters summary').click();
+          const heights=await page.locator('#advanced-filters select').evaluateAll(controls=>
+            controls.map(control=>control.getBoundingClientRect().height));
+          assert.equal(heights.length,5);
+          assert.ok(heights.slice(0,4).every(height=>height===heights[0]&&height<=60));
+          assert.ok(heights[4]>=150);
+          assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+          await page.evaluate(()=>scrollTo(0,750));
+          assert.ok(await page.evaluate(()=>scrollY>0));
+          assert.equal((await page.locator('.site-nav').boundingBox()).y,0);
+        }
+
       }
     }
     assert.deepEqual(runtimeErrors,[]);
