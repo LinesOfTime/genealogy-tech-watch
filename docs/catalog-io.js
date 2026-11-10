@@ -1,6 +1,49 @@
 /* Explicit local JSON preview. Never persist or replace the published catalogue. */
 var CatalogIO = (() => {
   const scalarFields=['name','url','section','description','use_case','limitations','license','license_status','priority','origin','test_status'];
+  const exportFields = [
+    'name','url','section','project_type','description','use_case','limitations',
+    'license','license_status','priority','preliminary_priority','origin','test_status',
+    'current_version','current_version_source','latest_verified_change','components',
+    'verification','verified_at','source','russia_applicability','classification',
+    'assessment_currency','practical_priority','evaluation','repository_reference_issue',
+    'repository_access_notes','history','legal_notes','research'
+  ];
+  const researchFields = [
+    'editorial_summary','editorial_use_case','editorial_limitations','audit_notes',
+    'audit_status','guide_excerpt','project_type','maturity','license','license_status',
+    'license_evidence','opensource_status','test_status','verification_basis',
+    'verification_date','source_evidence','current_version','current_version_source',
+    'latest_verified_change','practical_priority','evaluation','russia_applicability',
+    'watch_events','legal_notes'
+  ];
+  const internalFields = new Set([
+    'reviewer','review_status','reviewed_at','discovery_id','evidence_file',
+    'method_version','previous_priority','project_basis','previous_values',
+    'original_section','original_line','pending_proposal','assessment_approved_at'
+  ]);
+  function withoutInternalFields(value){
+    if(Array.isArray(value))return value.map(withoutInternalFields);
+    if(!value||typeof value!=='object')return value;
+    return Object.fromEntries(Object.entries(value)
+      .filter(([key])=>!internalFields.has(key)&&!/(?:^|_)(?:hash|sha256)$|^(?:approved_|approval_)/.test(key))
+      .map(([key,entry])=>[key,withoutInternalFields(entry)]));
+  }
+  function selectFields(value, fields){
+    return Object.fromEntries(fields.filter(key=>Object.hasOwn(value,key)).map(key=>[key,value[key]]));
+  }
+  function userExport(rows){
+    return rows.map(card=>{
+      const result=selectFields(card,exportFields);
+      if(result.research)result.research=selectFields(result.research,researchFields);
+      if(result.classification)result.classification=selectFields(result.classification,
+        ['primary_type','type_label','domains','domain_labels','origin','origin_label']);
+      if(result.russia_applicability)result.russia_applicability=selectFields(result.russia_applicability,['rating','basis']);
+      if(result.research?.russia_applicability)result.research.russia_applicability=selectFields(
+        result.research.russia_applicability,['rating','basis']);
+      return withoutInternalFields(result);
+    });
+  }
   function validate(value){
     if(!Array.isArray(value)||value.length>10000)throw Error('Ожидается массив не более 10 000 карточек.');
     const names=new Set(),urls=new Set();
@@ -50,12 +93,12 @@ var CatalogIO = (() => {
       if(!response.ok)throw Error('Не удалось загрузить исследования.');
       const research=await response.json();
       if(!research||typeof research!=='object'||Array.isArray(research))throw Error('Неверный формат исследований.');
-      return rows.map(card=>{
+      return userExport(rows.map(card=>{
         const key=card.name.toLowerCase();
         const profile=Object.hasOwn(research,key)?research[key]:null;
         if(profile!==null&&(!profile||typeof profile!=='object'||Array.isArray(profile)))throw Error('Неверный формат исследования.');
         return {...card,research:profile};
-      });
+      }));
     }
     $('import-json').addEventListener('click',()=>file.click());
     file.addEventListener('change',async()=>{
@@ -98,5 +141,5 @@ var CatalogIO = (() => {
       }
     });
   }
-  return {validate,bind};
+  return {validate,bind,userExport};
 })();

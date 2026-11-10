@@ -103,7 +103,22 @@ const {chromium} = require('playwright');
     const exported=JSON.parse(Buffer.concat(chunks).toString('utf8'));
     assert.equal(download.suggestedFilename(),'catalog-with-research.json');
     const research=JSON.parse(await fs.readFile(path.join(root,'research.json'),'utf8'));
-    assert.deepEqual(exported,published.map(card=>({...card,research:research[card.name.toLowerCase()]??null})));
+    assert.equal(exported.length,published.length);
+    for(const row of exported){
+      const original=published.find(card=>card.name===row.name);
+      assert.equal(row.description,original.description);
+      assert.deepEqual(row.research?.watch_events?.map(event=>event.change),
+        research[row.name.toLowerCase()]?.watch_events?.map(event=>event.change));
+    }
+    const keys=[];
+    function collectKeys(value){
+      if(!value||typeof value!=='object')return;
+      for(const [key,entry]of Object.entries(value)){keys.push(key);collectKeys(entry);}
+    }
+    collectKeys(exported);
+    assert.ok(!keys.some(key=>/approved_|approval_|_hash$|_sha256$/.test(key)));
+    assert.ok(!keys.includes('reviewer'));
+    assert.ok(!keys.includes('evidence_file'));
     const exportBytes=Buffer.concat(chunks);
     await page.locator('#import-file').setInputFiles({name:'catalog-with-research.json',mimeType:'application/json',buffer:exportBytes});
     await page.waitForFunction(()=>document.getElementById('json-status').textContent.startsWith('Локальный JSON:'));
