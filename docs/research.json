@@ -4796,6 +4796,41 @@
         "reviewer": "GitHub @LinesOfTime",
         "reviewed_at": "2026-11-09T12:22:41.919825+00:00",
         "reviewed_content_hash": "d8457c28755376a27c346706971c0ed137d5fffbf9bdb5664b3e86117d24558a"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web:shared-event-editing-3c0d843-2026-11-09",
+        "date": "2026-11-09",
+        "change": "Добавлено редактирование общего события из карточки связанного человека или семьи: при нескольких участниках поля сначала только для чтения; изменение разрешается после явного выбора Edit for everyone.",
+        "previous_state": "В каталоге есть Gramps Web и релизы 26.11.0–26.11.2 от 9 ноября; это последующее изменение интерфейса, не указанное в прежнем событии.",
+        "new_state": "Исходный компонент на commit 3c0d843 отражает изменение общего события. Попадание в очередной релиз не установлено.",
+        "significance_reason": "Архитектурный принцип предотвращает незаметные изменения данных сразу у нескольких людей.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/src/components/GrampsjsFormEditEventInContext.js"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/LICENSE"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/src/components/GrampsjsFormEditEventInContext.js",
+        "claims_vs_verified": {
+          "verified": "Прочитаны файл конкретного изменения и LICENSE на закреплённом коммите 3c0d843f43a9a8e591a92f7701f9c936f5ec861b.",
+          "author_claims": "Функциональность и улучшения описаны авторами; воспроизведение и измерение качества не проводились.",
+          "independent_testing": "Не проводилось. Исторические документы, интерфейсы и пользовательские сценарии не испытывались."
+        },
+        "risks": [
+          "Код не запускался; релизность, ACL, откат и конфликты редактирования не проверены."
+        ],
+        "license": "AGPL-3.0; прямое заимствование кода требует лицензионной проверки",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-11T10:24:19.995035+00:00",
+        "reviewed_content_hash": "46a9c7b6d0124b643b1e821e0e0538d9cc6dcd86a3a7e9e5a3084ec5f833268f"
       }
     ],
     "evaluation": {
@@ -4828,14 +4863,14 @@
     },
     "practical_priority": {
       "project": "gramps-project/gramps-web",
-      "reviewed_on": "2026-11-09",
+      "reviewed_on": "2026-11-11",
       "method_version": "2026-11-04",
       "role": "Веб-приложение",
       "task": "Совместно просматривать и редактировать дерево",
       "scope": "Многоязычный интерфейс; страна не ограничена",
       "input_output": "Тестовое дерево на демо → просмотр и проверка ролей",
-      "rationale": "Сохраняется практическая роль P1: ведение дерева, цитат и медиа; новые релизы улучшают обычную исследовательскую работу, но не подтверждают отдельного улучшения качества исследований.",
-      "pilot": "На резервной копии проверить поиск человека, редактирование цитаты, карту WebGL 2 и восстановление после массового удаления.",
+      "rationale": "Существующий практический приоритет оставлен без изменений: независимого испытания, обосновывающего пересмотр, нет.",
+      "pilot": "Проверить редактирование общих событий на тестовом дереве и оценить заимствование UX-принципа.",
       "recheck_trigger": "Перед своим размещением проверить резервирование, права и синхронизацию.",
       "evidence_level": "E1",
       "independent_test": false,
@@ -4849,7 +4884,7 @@
       "previous_priority": "P1",
       "review_status": "approved",
       "approved_by": "GitHub @LinesOfTime",
-      "approved_at": "2026-11-09T12:22:41.919825+00:00",
+      "approved_at": "2026-11-11T10:24:19.995035+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
     },
     "legal_notes": [
@@ -15719,6 +15754,41 @@
         "reviewer": "Codex: статическая проверка источников по прямому поручению пользователя 2026-11-06 добавить эти URL и отправить main; отдельное ручное подтверждение фактов пользователем не заявляется",
         "reviewed_at": "2026-11-06T19:49:07.453402+00:00",
         "reviewed_content_hash": "2d1f9972fe0da52572c3788fbdda3e4bb5117b4b37823964544347141122581e"
+      },
+      {
+        "discovery_id": "github:kinprove/genealogy-research-recipes:russian-transcription-audit-2026-11-10",
+        "date": "2026-11-10",
+        "change": "Добавлен отдельный рецепт проверки расшифровок русских исповедных ведомостей и ревизских сказок по изображениям: полнота персон, спорные буквы одного писца, возраст, формулы родства и сохранение исходных записей.",
+        "previous_state": "В каталоге уже есть проект и более раннее событие о версии 1.11.0; отдельной процедуры аудита русских списков в истории нет.",
+        "new_state": "На commit 3c4c42d имеется новая процедура; версия пакета не менялась. Это методика проверки человеком, а не ИИ-модель.",
+        "significance_reason": "Подходит для унификации контроля качества индексирования исторических документов в нескольких проектах.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/3c4c42d968330fba425cb953c498b77f8e529af8/skills/genealogy-research-recipes/recipes/russian-household-list-transcription-audit.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/3c4c42d968330fba425cb953c498b77f8e529af8/LICENSE"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/3c4c42d968330fba425cb953c498b77f8e529af8/skills/genealogy-research-recipes/recipes/russian-household-list-transcription-audit.md",
+        "claims_vs_verified": {
+          "verified": "Прочитаны файл конкретного изменения и LICENSE на закреплённом коммите 3c4c42d968330fba425cb953c498b77f8e529af8.",
+          "author_claims": "Функциональность и улучшения описаны авторами; воспроизведение и измерение качества не проводились.",
+          "independent_testing": "Не проводилось. Исторические документы, интерфейсы и пользовательские сценарии не испытывались."
+        },
+        "risks": [
+          "Методика не является автономным OCR; применимость к МК необходимо проверить на архивных сканах."
+        ],
+        "license": "FSL-1.1-MIT с ограничениями конкурирующего использования",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/3c4c42d968330fba425cb953c498b77f8e529af8/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-11T10:24:19.995035+00:00",
+        "reviewed_content_hash": "94d4151a573734168638347094bc633f23a20cc36bdf5a42ab9469edbde3e4de"
       }
     ],
     "russia_applicability": {
@@ -15749,14 +15819,14 @@
     },
     "practical_priority": {
       "project": "kinprove/genealogy-research-recipes",
-      "reviewed_on": "2026-11-04",
+      "reviewed_on": "2026-11-11",
       "method_version": "2026-11-04",
       "role": "Спецификация, документация или исследовательская методика",
       "task": "Исследовательский вопрос → рецепт поиска",
       "scope": "Применимость определяется форматом и языком конкретных данных; национальное покрытие здесь не подтверждается.",
       "input_output": "Исследовательский вопрос → рецепт поиска",
-      "rationale": "Это skill без собственной сети, FSL-1.1-MIT имеет ограничения; заявления fact-checked не независимый аудит. Совместимость лицензии кода с правами на данные, модели и зависимости отдельно не подтверждена.",
-      "pilot": "Взять один маршрут ревизских сказок и вручную проверить первоисточник и границы покрытия.",
+      "rationale": "Существующий практический приоритет оставлен без изменений: независимого испытания, обосновывающего пересмотр, нет.",
+      "pilot": "Проверить переносимость методики на реальные МК и ревизии, сопоставив с имеющимися процедурами координатора.",
       "recheck_trigger": "Проверка указанной пробы, версии, прав доступа и сохранности исходных данных; при расхождениях пересмотреть приоритет.",
       "evidence_level": "E1",
       "independent_test": false,
@@ -15768,10 +15838,10 @@
         "https://api.github.com/repos/Kinprove/genealogy-research-recipes/contents/LICENSE?ref=4f8decf59e460cbb6c84e7ac1889ba249488cef2"
       ],
       "priority": "P2",
-      "previous_priority": "Не оценён",
+      "previous_priority": "P2",
       "review_status": "approved",
-      "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
-      "approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "approved_by": "GitHub @LinesOfTime",
+      "approved_at": "2026-11-11T10:24:19.995035+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
     },
     "legal_notes": [
@@ -19376,5 +19446,77 @@
         }
       }
     ]
+  },
+  "denissergeevitch/ex-ussr-kinship-research": {
+    "watch_events": [
+      {
+        "discovery_id": "github:denissergeevitch/ex-ussr-kinship-research:release-1.41.0-2026-11-11",
+        "date": "2026-11-11",
+        "change": "Версия 1.41.0: уточнены GEDCOM lint, работа с тёзками и неопределёнными датами, учёт истории правок FamilySearch и маршруты архивного поиска по России и Украине.",
+        "previous_state": "В каталоге есть карточка проекта, но отсутствует новая история версии 1.41.0.",
+        "new_state": "Changelog на commit 8ea31b5 содержит раздел 1.41.0 от 11 ноября; это обновление набора исследовательских инструкций, а не поисковая ИИ-модель.",
+        "significance_reason": "Правила проверки дат, происхождения сведений и родства помогают уменьшить ложные выводы в Research Workspace.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/DenisSergeevitch/ex-ussr-kinship-research/8ea31b5d39855fca73cf70be73eee251ac3084d2/references/changelog.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/DenisSergeevitch/ex-ussr-kinship-research/8ea31b5d39855fca73cf70be73eee251ac3084d2/LICENSE"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/DenisSergeevitch/ex-ussr-kinship-research/8ea31b5d39855fca73cf70be73eee251ac3084d2/references/changelog.md",
+        "claims_vs_verified": {
+          "verified": "Прочитаны файл конкретного изменения и LICENSE на закреплённом коммите 8ea31b5d39855fca73cf70be73eee251ac3084d2.",
+          "author_claims": "Функциональность и улучшения описаны авторами; воспроизведение и измерение качества не проводились.",
+          "independent_testing": "Не проводилось. Исторические документы, интерфейсы и пользовательские сценарии не испытывались."
+        },
+        "risks": [
+          "GEDCOM lint не заменяет полную проверку GEDCOM; архивные юридические правила требуют актуальной независимой проверки."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/DenisSergeevitch/ex-ussr-kinship-research/8ea31b5d39855fca73cf70be73eee251ac3084d2/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-11T10:24:19.995035+00:00",
+        "reviewed_content_hash": "1059fa321d35ed6613dda87fd2efc68b10250d409523725974fe37c7b06d90e5"
+      }
+    ],
+    "practical_priority": {
+      "project": "denissergeevitch/ex-ussr-kinship-research",
+      "reviewed_on": "2026-11-11",
+      "method_version": "2026-11-04",
+      "role": "Спецификация, документация или исследовательская методика",
+      "task": "Исследование бывшего СССР → evidence-first журнал",
+      "scope": "Бывший СССР; проверять страну, период и конкретный архив",
+      "input_output": "Исследование бывшего СССР → evidence-first журнал",
+      "rationale": "Существующий практический приоритет оставлен без изменений: независимого испытания, обосновывающего пересмотр, нет.",
+      "pilot": "Сопоставить правила и тест-кейсы с действующими проверками кабинета, не дублировать реализованное.",
+      "recheck_trigger": "Проверка указанной пробы, версии, прав доступа и сохранности исходных данных; при расхождениях пересмотреть приоритет.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "license_review": "document_read",
+      "evidence_file": "data/evidence/priority-2026-11-04/review-denissergeevitch%2Fex-ussr-kinship-research.json",
+      "evidence_sha256": "8e8bb2292a33ea15db3c9b658515139d1755d57facc8a199cb29d53479c7f519",
+      "source_urls": [
+        "https://api.github.com/repos/DenisSergeevitch/ex-ussr-kinship-research/contents/README.md?ref=557abe41be1bbf97dbe1bcf8788150559a6f37f5",
+        "https://api.github.com/repos/DenisSergeevitch/ex-ussr-kinship-research/contents/LICENSE?ref=557abe41be1bbf97dbe1bcf8788150559a6f37f5"
+      ],
+      "priority": "P2",
+      "previous_priority": "P2",
+      "review_status": "approved",
+      "approved_by": "GitHub @LinesOfTime",
+      "approved_at": "2026-11-11T10:24:19.995035+00:00",
+      "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
   }
 }

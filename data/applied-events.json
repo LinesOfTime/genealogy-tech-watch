@@ -43,5 +43,8 @@
   "github:thodel/agentic_historian:review-2026-11-09": "2ef41ef94b4b3c56689ee09e43aa8795508ed31e1f9b51ab8525d6e3add9e879",
   "github:rodoslovje/ged-merge:review-2026-11-09": "88fd6408da869185dab97cc913339aefc8d79dbdd60cacfec7073fcf67aa3fa7",
   "github:kjiwa/geneanet-drift:review-2026-11-09": "fc04d65351699eaad612c3a577010a1b2266d36338b0da4aa93431397732c8f6",
-  "github:gramps-project/gramps-web:releases-26.11.0-26.11.2": "d8457c28755376a27c346706971c0ed137d5fffbf9bdb5664b3e86117d24558a"
+  "github:gramps-project/gramps-web:releases-26.11.0-26.11.2": "d8457c28755376a27c346706971c0ed137d5fffbf9bdb5664b3e86117d24558a",
+  "github:kinprove/genealogy-research-recipes:russian-transcription-audit-2026-11-10": "94d4151a573734168638347094bc633f23a20cc36bdf5a42ab9469edbde3e4de",
+  "github:gramps-project/gramps-web:shared-event-editing-3c0d843-2026-11-09": "46a9c7b6d0124b643b1e821e0e0538d9cc6dcd86a3a7e9e5a3084ec5f833268f",
+  "github:denissergeevitch/ex-ussr-kinship-research:release-1.41.0-2026-11-11": "1059fa321d35ed6613dda87fd2efc68b10250d409523725974fe37c7b06d90e5"
 }

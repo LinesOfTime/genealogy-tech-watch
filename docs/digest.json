@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-11-11",
+    "title": "Значимые изменения проектов",
+    "summary": "Утверждённые события; источники и дельты указаны в записях.",
+    "items": [
+      {
+        "repo": "kinprove/genealogy-research-recipes",
+        "priority": "Не оценён",
+        "change": "Добавлен отдельный рецепт проверки расшифровок русских исповедных ведомостей и ревизских сказок по изображениям: полнота персон, спорные буквы одного писца, возраст, формулы родства и сохранение исходных записей.",
+        "link": "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/3c4c42d968330fba425cb953c498b77f8e529af8/skills/genealogy-research-recipes/recipes/russian-household-list-transcription-audit.md",
+        "components": "OCR/HTR · Indexer · Research Workspace · provenance/evidence",
+        "action": "Проверить переносимость методики на реальные МК и ревизии, сопоставив с имеющимися процедурами координатора.",
+        "event_date": "2026-11-10",
+        "significance_reason": "Подходит для унификации контроля качества индексирования исторических документов в нескольких проектах.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-11T10:24:19.995035+00:00",
+        "discovery_id": "github:kinprove/genealogy-research-recipes:russian-transcription-audit-2026-11-10",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/3c4c42d968330fba425cb953c498b77f8e529af8/skills/genealogy-research-recipes/recipes/russian-household-list-transcription-audit.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Kinprove/genealogy-research-recipes/3c4c42d968330fba425cb953c498b77f8e529af8/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=kinprove%2Fgenealogy-research-recipes",
+        "previous_state": "В каталоге уже есть проект и более раннее событие о версии 1.11.0; отдельной процедуры аудита русских списков в истории нет.",
+        "new_state": "На commit 3c4c42d имеется новая процедура; версия пакета не менялась. Это методика проверки человеком, а не ИИ-модель."
+      },
+      {
+        "repo": "gramps-project/gramps-web",
+        "priority": "P1",
+        "change": "Добавлено редактирование общего события из карточки связанного человека или семьи: при нескольких участниках поля сначала только для чтения; изменение разрешается после явного выбора Edit for everyone.",
+        "link": "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/src/components/GrampsjsFormEditEventInContext.js",
+        "components": "Research Workspace · GEDCOM/data model · provenance/evidence",
+        "action": "Проверить редактирование общих событий на тестовом дереве и оценить заимствование UX-принципа.",
+        "event_date": "2026-11-09",
+        "significance_reason": "Архитектурный принцип предотвращает незаметные изменения данных сразу у нескольких людей.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-11T10:24:19.995035+00:00",
+        "discovery_id": "github:gramps-project/gramps-web:shared-event-editing-3c0d843-2026-11-09",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/src/components/GrampsjsFormEditEventInContext.js"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=gramps-project%2Fgramps-web",
+        "previous_state": "В каталоге есть Gramps Web и релизы 26.11.0–26.11.2 от 9 ноября; это последующее изменение интерфейса, не указанное в прежнем событии.",
+        "new_state": "Исходный компонент на commit 3c0d843 отражает изменение общего события. Попадание в очередной релиз не установлено."
+      },
+      {
+        "repo": "denissergeevitch/ex-ussr-kinship-research",
+        "priority": "P1",
+        "change": "Версия 1.41.0: уточнены GEDCOM lint, работа с тёзками и неопределёнными датами, учёт истории правок FamilySearch и маршруты архивного поиска по России и Украине.",
+        "link": "https://raw.githubusercontent.com/DenisSergeevitch/ex-ussr-kinship-research/8ea31b5d39855fca73cf70be73eee251ac3084d2/references/changelog.md",
+        "components": "Research Workspace · Archive Adapter · provenance/evidence · GEDCOM/data model",
+        "action": "Сопоставить правила и тест-кейсы с действующими проверками кабинета, не дублировать реализованное.",
+        "event_date": "2026-11-11",
+        "significance_reason": "Правила проверки дат, происхождения сведений и родства помогают уменьшить ложные выводы в Research Workspace.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-11T10:24:19.995035+00:00",
+        "discovery_id": "github:denissergeevitch/ex-ussr-kinship-research:release-1.41.0-2026-11-11",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/DenisSergeevitch/ex-ussr-kinship-research/8ea31b5d39855fca73cf70be73eee251ac3084d2/references/changelog.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/DenisSergeevitch/ex-ussr-kinship-research/8ea31b5d39855fca73cf70be73eee251ac3084d2/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=denissergeevitch%2Fex-ussr-kinship-research",
+        "previous_state": "В каталоге есть карточка проекта, но отсутствует новая история версии 1.41.0.",
+        "new_state": "Changelog на commit 8ea31b5 содержит раздел 1.41.0 от 11 ноября; это обновление набора исследовательских инструкций, а не поисковая ИИ-модель."
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",
