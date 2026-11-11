@@ -19,6 +19,10 @@ on:
       approval_hash:
         description: Approval hash from the reviewed preview (publish only)
         type: string
+      reviewer:
+        description: Original authenticated GitHub actor of validated inbox push
+        type: string
+        required: false
 
 permissions:
   contents: read
@@ -66,7 +70,7 @@ jobs:
         run: |
           APPROVAL_HASH=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["approval_hash"])' "$RUNNER_TEMP/watch-preview.json")
           gh workflow run watch-updater.yml --ref main \
-            -f package_commit="$PACKAGE_COMMIT" -f mode=publish -f approval_hash="$APPROVAL_HASH"
+            -f package_commit="$PACKAGE_COMMIT" -f mode=publish -f approval_hash="$APPROVAL_HASH" -f reviewer="${{ github.actor }}"
 
   preview:
     if: github.ref == 'refs/heads/main' && inputs.mode == 'preview'
@@ -104,7 +108,7 @@ jobs:
         env:
           PACKAGE_COMMIT: ${{ inputs.package_commit }}
           APPROVAL_HASH: ${{ inputs.approval_hash }}
-          REVIEWER: ${{ github.triggering_actor }}
+          REVIEWER: ${{ inputs.reviewer || github.triggering_actor }}
         run: |
           python3 tools/watch_updater.py --package-commit "$PACKAGE_COMMIT" \
             --publish --expect "$APPROVAL_HASH" --actor "$REVIEWER"
