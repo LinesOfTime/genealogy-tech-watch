@@ -2,7 +2,7 @@
 
 **Исследовательский каталог открытых инструментов цифровой генеалогии, архивных технологий и ИИ** с датированным дайджестом изменений. Он помогает выбрать решения для исследования источников, обработки исторических документов и разработки генеалогических систем.
 
-**[Открыть каталог](https://linesoftime.github.io/genealogy-tech-watch/) · [OCR/HTR: межпроектные решения (11.11)](https://linesoftime.github.io/genealogy-tech-watch/ocr-htr-coordination-2026-11-11.html)** · [Дайджест](https://linesoftime.github.io/genealogy-tech-watch/digest.html) · [Подобрать по задаче](https://linesoftime.github.io/genealogy-tech-watch/tasks.html) · [Лицензии](https://linesoftime.github.io/genealogy-tech-watch/licenses.html) · [Приоритеты](https://linesoftime.github.io/genealogy-tech-watch/priorities.html)
+**[Открыть каталог](https://linesoftime.github.io/genealogy-tech-watch/)** · [Дайджест](https://linesoftime.github.io/genealogy-tech-watch/digest.html) · [Подобрать по задаче](https://linesoftime.github.io/genealogy-tech-watch/tasks.html) · [Лицензии](https://linesoftime.github.io/genealogy-tech-watch/licenses.html) · [Приоритеты](https://linesoftime.github.io/genealogy-tech-watch/priorities.html)
 
 ## Что можно найти
 
