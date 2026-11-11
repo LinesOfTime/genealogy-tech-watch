@@ -34,9 +34,11 @@ concurrency:
 jobs:
   automatic:
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/watch-inbox/')
+    permissions:
+      contents: read
+      actions: write
     runs-on: ubuntu-24.04
     timeout-minutes: 15
-    environment: watch-publish
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -57,27 +59,14 @@ jobs:
             ${{ runner.temp }}/watch-preview.json
             ${{ runner.temp }}/watch-preview.diff
           retention-days: 7
-      - name: Apply validated package
+      - name: Request protected publish from main after successful preview
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           PACKAGE_COMMIT: ${{ github.sha }}
-          REVIEWER: ${{ github.actor }}
         run: |
           APPROVAL_HASH=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["approval_hash"])' "$RUNNER_TEMP/watch-preview.json")
-          python3 tools/watch_updater.py --package-commit "$PACKAGE_COMMIT" \
-            --publish --expect "$APPROVAL_HASH" --actor "$REVIEWER"
-      - name: Publish to main
-        env:
-          PAGES_PUSH_TOKEN: ${{ secrets.WATCH_PUBLISH_TOKEN }}
-          PACKAGE_COMMIT: ${{ github.sha }}
-        run: |
-          test -n "$PAGES_PUSH_TOKEN"
-          remote=$(git ls-remote origin refs/heads/main | cut -f1)
-          test "$remote" = "$(git rev-parse HEAD)"
-          git -c user.name="Watch Updater" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-            commit -m "Watch: apply validated package" -m "Package: $PACKAGE_COMMIT"
-          git -c credential.helper= \
-            -c 'credential.helper=!f() { printf "username=x-access-token\\npassword=%s\\n" "$PAGES_PUSH_TOKEN"; }; f' \
-            push origin HEAD:refs/heads/main
+          gh workflow run watch-updater.yml --ref main \
+            -f package_commit="$PACKAGE_COMMIT" -f mode=publish -f approval_hash="$APPROVAL_HASH"
 
   preview:
     if: github.ref == 'refs/heads/main' && inputs.mode == 'preview'
