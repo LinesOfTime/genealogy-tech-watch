@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "705a260971c78bcb23fd8e6ea7083116b0c099cfd706b0bb3a36b49c9683dd7e",
+  "source_hash": "b8cdfecd5b2996bbdb138534bc48823b51b1bc704d47717563f4ba075b08b5a7",
   "tasks": [
     {
       "id": "transcribe",
@@ -16904,6 +16904,215 @@
           }
         }
       ]
+    },
+    {
+      "task": "agents",
+      "project": "igorkauf/raisa-mcp",
+      "url": "https://github.com/igorkauf/raisa-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "igorkauf/raisa-mcp",
+          "field": "description",
+          "excerpt": "MCP-сервер для генеалогического поиска по России и бывшему СССР",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "igorkauf/raisa-mcp",
+          "field": "components",
+          "excerpt": "API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "igorkauf/raisa-mcp",
+          "field": "editorial_summary",
+          "excerpt": "MCP-сервер для генеалогического поиска по России и бывшему СССР",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Инструмент разработки"
+        }
+      },
+      "purpose": "MCP-сервер для генеалогического поиска по России и бывшему СССР",
+      "use_case": "Проверить доступные архивные адаптеры и результаты поиска",
+      "license": "MIT",
+      "limitations": "Ранняя стадия; независимой оценки качества нет",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "gedcom",
+      "project": "paulfilkin/mycelia",
+      "url": "https://github.com/paulfilkin/mycelia",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "paulfilkin/mycelia",
+          "field": "description",
+          "excerpt": "Настольный инструмент GEDCOM с ИИ-помощником",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "paulfilkin/mycelia",
+          "field": "use_case",
+          "excerpt": "Проверить импорт и экспорт GEDCOM на копии дерева",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "paulfilkin/mycelia",
+          "field": "components",
+          "excerpt": "GEDCOM/data model",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "paulfilkin/mycelia",
+          "field": "editorial_summary",
+          "excerpt": "Настольный инструмент GEDCOM с ИИ-помощником",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "paulfilkin/mycelia",
+          "field": "editorial_use_case",
+          "excerpt": "Проверить импорт и экспорт GEDCOM на копии дерева",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Инструмент разработки"
+        }
+      },
+      "purpose": "Настольный инструмент GEDCOM с ИИ-помощником",
+      "use_case": "Проверить импорт и экспорт GEDCOM на копии дерева",
+      "license": "GPL-3.0",
+      "limitations": "Разработка; совместимость и сохранность данных не проверены",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Используйте копию GEDCOM. Сравните до и после количество людей, связи, даты, ссылки на источники и неподдержанные поля; сохраните исходный файл."
+    },
+    {
+      "task": "agents",
+      "project": "paulfilkin/mycelia",
+      "url": "https://github.com/paulfilkin/mycelia",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "paulfilkin/mycelia",
+          "field": "description",
+          "excerpt": "Настольный инструмент GEDCOM с ИИ-помощником",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "paulfilkin/mycelia",
+          "field": "editorial_summary",
+          "excerpt": "Настольный инструмент GEDCOM с ИИ-помощником",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Инструмент разработки"
+        }
+      },
+      "purpose": "Настольный инструмент GEDCOM с ИИ-помощником",
+      "use_case": "Проверить импорт и экспорт GEDCOM на копии дерева",
+      "license": "GPL-3.0",
+      "limitations": "Разработка; совместимость и сохранность данных не проверены",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "gedcom",
+      "project": "cacack/gedcom-go",
+      "url": "https://github.com/cacack/gedcom-go",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "cacack/gedcom-go",
+          "field": "description",
+          "excerpt": "Библиотека Go для работы с GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "cacack/gedcom-go",
+          "field": "use_case",
+          "excerpt": "Проверить чтение и запись GEDCOM на тестовом корпусе",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "cacack/gedcom-go",
+          "field": "components",
+          "excerpt": "GEDCOM/data model",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cacack/gedcom-go",
+          "field": "editorial_summary",
+          "excerpt": "Библиотека Go для работы с GEDCOM",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "cacack/gedcom-go",
+          "field": "editorial_use_case",
+          "excerpt": "Проверить чтение и запись GEDCOM на тестовом корпусе",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Инструмент разработки"
+        }
+      },
+      "purpose": "Библиотека Go для работы с GEDCOM",
+      "use_case": "Проверить чтение и запись GEDCOM на тестовом корпусе",
+      "license": "MIT",
+      "limitations": "Совместимость с нестандартными тегами не проверена",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Используйте копию GEDCOM. Сравните до и после количество людей, связи, даты, ссылки на источники и неподдержанные поля; сохраните исходный файл."
     }
   ]
 }

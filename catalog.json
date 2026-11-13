@@ -35154,5 +35154,368 @@
         }
       }
     ]
+  },
+  {
+    "name": "igorkauf/raisa-mcp",
+    "url": "https://github.com/igorkauf/raisa-mcp",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "MCP-сервер для генеалогического поиска по России и бывшему СССР",
+    "use_case": "Проверить доступные архивные адаптеры и результаты поиска",
+    "limitations": "Ранняя стадия; независимой оценки качества нет",
+    "license": "MIT",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "priority": "P2",
+    "priority_original": "Не оценён",
+    "verification": "Редакционная проверка источников события; см. историю",
+    "verified_at": "2026-11-13",
+    "test_status": "Не тестировалось",
+    "source": "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/README.md",
+    "status": "Дополнение из GitHub Watch",
+    "history": [
+      {
+        "discovery_id": "github:igorkauf/raisa-mcp:new-2026-11-13",
+        "date": "2026-11-13",
+        "change": "MCP-сервер для генеалогического поиска по России и бывшему СССР",
+        "previous_state": "Отсутствует в каталоге из 191 карточки.",
+        "new_state": "MCP-сервер для генеалогического поиска по России и бывшему СССР. Проверить доступные архивные адаптеры и результаты поиска",
+        "significance_reason": "Потенциально полезно для генеалогического кабинета.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/LICENSE"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/README.md",
+        "claims_vs_verified": {
+          "verified": "README и LICENSE проверены по закреплённому коммиту.",
+          "author_claims": "Функции описаны авторами.",
+          "independent_testing": "Не проводилось."
+        },
+        "risks": [
+          "Ранняя стадия; независимой оценки качества нет"
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-13T17:16:25.797732+00:00",
+        "reviewed_content_hash": "eb573dfe6d58afd14c2cf11178f4106106b5ee942ef5dc3749f41766e9a57d3f"
+      }
+    ],
+    "origin": "GitHub Watch",
+    "components": [
+      "API/MCP/agent layer"
+    ],
+    "catalog_profile_provenance": {
+      "previous_values": {
+        "description": "MCP-сервер для генеалогического поиска по России и бывшему СССР",
+        "use_case": "Не оценено",
+        "limitations": "Не оценено",
+        "project_type": null
+      },
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/LICENSE"
+        }
+      ],
+      "discovery_id": "github:igorkauf/raisa-mcp:new-2026-11-13",
+      "reviewed_content_hash": "eb573dfe6d58afd14c2cf11178f4106106b5ee942ef5dc3749f41766e9a57d3f",
+      "basis": "Редакционное описание по первоисточникам; не независимое испытание"
+    },
+    "project_type": "Инструмент разработки",
+    "preliminary_priority": "P2",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    },
+    "classification": {
+      "version": 1,
+      "primary_type": "unknown",
+      "type_label": "Не определено",
+      "domains": [],
+      "domain_labels": [],
+      "origin": "unknown",
+      "origin_label": "Не установлено",
+      "original_section": "Новые исследования / GitHub Watch",
+      "sources": [],
+      "reason": "Новая запись ожидает редакционной классификации."
+    },
+    "assessment_currency": {
+      "status": "insufficient",
+      "label": "Недостаточно данных",
+      "reason": "Утверждённая практическая оценка отсутствует.",
+      "assessment_approved_at": null,
+      "assessment_reviewed_on": null,
+      "last_substantive_source_check": "2026-11-13",
+      "reviewed_at": null,
+      "sources": [
+        {
+          "checked_at": "2026-11-13T17:16:25.797732+00:00",
+          "kind": "watch_source_review",
+          "urls": [
+            "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/README.md",
+            "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/LICENSE"
+          ]
+        }
+      ],
+      "pending_proposal": null,
+      "evidence_level": null,
+      "assessment_sources": []
+    }
+  },
+  {
+    "name": "paulfilkin/mycelia",
+    "url": "https://github.com/paulfilkin/mycelia",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Настольный инструмент GEDCOM с ИИ-помощником",
+    "use_case": "Проверить импорт и экспорт GEDCOM на копии дерева",
+    "limitations": "Разработка; совместимость и сохранность данных не проверены",
+    "license": "GPL-3.0",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "priority": "P2",
+    "priority_original": "Не оценён",
+    "verification": "Редакционная проверка источников события; см. историю",
+    "verified_at": "2026-11-13",
+    "test_status": "Не тестировалось",
+    "source": "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/README.md",
+    "status": "Дополнение из GitHub Watch",
+    "history": [
+      {
+        "discovery_id": "github:paulfilkin/mycelia:new-2026-11-13",
+        "date": "2026-11-13",
+        "change": "Настольный инструмент GEDCOM с ИИ-помощником",
+        "previous_state": "Отсутствует в каталоге из 191 карточки.",
+        "new_state": "Настольный инструмент GEDCOM с ИИ-помощником. Проверить импорт и экспорт GEDCOM на копии дерева",
+        "significance_reason": "Потенциально полезно для генеалогического кабинета.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/LICENSE"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/README.md",
+        "claims_vs_verified": {
+          "verified": "README и LICENSE проверены по закреплённому коммиту.",
+          "author_claims": "Функции описаны авторами.",
+          "independent_testing": "Не проводилось."
+        },
+        "risks": [
+          "Разработка; совместимость и сохранность данных не проверены"
+        ],
+        "license": "GPL-3.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-13T17:16:25.797732+00:00",
+        "reviewed_content_hash": "4e3eb1d476f52a543606b9895bd0a307994a14d874b4d356b4a1f37c9612ed62"
+      }
+    ],
+    "origin": "GitHub Watch",
+    "components": [
+      "GEDCOM/data model"
+    ],
+    "catalog_profile_provenance": {
+      "previous_values": {
+        "description": "Настольный инструмент GEDCOM с ИИ-помощником",
+        "use_case": "Не оценено",
+        "limitations": "Не оценено",
+        "project_type": null
+      },
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/LICENSE"
+        }
+      ],
+      "discovery_id": "github:paulfilkin/mycelia:new-2026-11-13",
+      "reviewed_content_hash": "4e3eb1d476f52a543606b9895bd0a307994a14d874b4d356b4a1f37c9612ed62",
+      "basis": "Редакционное описание по первоисточникам; не независимое испытание"
+    },
+    "project_type": "Инструмент разработки",
+    "preliminary_priority": "P2",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    },
+    "classification": {
+      "version": 1,
+      "primary_type": "unknown",
+      "type_label": "Не определено",
+      "domains": [],
+      "domain_labels": [],
+      "origin": "unknown",
+      "origin_label": "Не установлено",
+      "original_section": "Новые исследования / GitHub Watch",
+      "sources": [],
+      "reason": "Новая запись ожидает редакционной классификации."
+    },
+    "assessment_currency": {
+      "status": "insufficient",
+      "label": "Недостаточно данных",
+      "reason": "Утверждённая практическая оценка отсутствует.",
+      "assessment_approved_at": null,
+      "assessment_reviewed_on": null,
+      "last_substantive_source_check": "2026-11-13",
+      "reviewed_at": null,
+      "sources": [
+        {
+          "checked_at": "2026-11-13T17:16:25.797732+00:00",
+          "kind": "watch_source_review",
+          "urls": [
+            "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/README.md",
+            "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/LICENSE"
+          ]
+        }
+      ],
+      "pending_proposal": null,
+      "evidence_level": null,
+      "assessment_sources": []
+    }
+  },
+  {
+    "name": "cacack/gedcom-go",
+    "url": "https://github.com/cacack/gedcom-go",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Библиотека Go для работы с GEDCOM",
+    "use_case": "Проверить чтение и запись GEDCOM на тестовом корпусе",
+    "limitations": "Совместимость с нестандартными тегами не проверена",
+    "license": "MIT",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "priority": "P2",
+    "priority_original": "Не оценён",
+    "verification": "Редакционная проверка источников события; см. историю",
+    "verified_at": "2026-11-13",
+    "test_status": "Не тестировалось",
+    "source": "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/README.md",
+    "status": "Дополнение из GitHub Watch",
+    "history": [
+      {
+        "discovery_id": "github:cacack/gedcom-go:new-2026-11-13",
+        "date": "2026-11-13",
+        "change": "Библиотека Go для работы с GEDCOM",
+        "previous_state": "Отсутствует в каталоге из 191 карточки.",
+        "new_state": "Библиотека Go для работы с GEDCOM. Проверить чтение и запись GEDCOM на тестовом корпусе",
+        "significance_reason": "Потенциально полезно для генеалогического кабинета.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/LICENSE"
+          }
+        ],
+        "url": "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/README.md",
+        "claims_vs_verified": {
+          "verified": "README и LICENSE проверены по закреплённому коммиту.",
+          "author_claims": "Функции описаны авторами.",
+          "independent_testing": "Не проводилось."
+        },
+        "risks": [
+          "Совместимость с нестандартными тегами не проверена"
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-13T17:16:25.797732+00:00",
+        "reviewed_content_hash": "0f82d98950074c32dd79091611cc5b65ff0881939ef2e73c0af4a5c81d4886a6"
+      }
+    ],
+    "origin": "GitHub Watch",
+    "components": [
+      "GEDCOM/data model"
+    ],
+    "catalog_profile_provenance": {
+      "previous_values": {
+        "description": "Библиотека Go для работы с GEDCOM",
+        "use_case": "Не оценено",
+        "limitations": "Не оценено",
+        "project_type": null
+      },
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/LICENSE"
+        }
+      ],
+      "discovery_id": "github:cacack/gedcom-go:new-2026-11-13",
+      "reviewed_content_hash": "0f82d98950074c32dd79091611cc5b65ff0881939ef2e73c0af4a5c81d4886a6",
+      "basis": "Редакционное описание по первоисточникам; не независимое испытание"
+    },
+    "project_type": "Инструмент разработки",
+    "preliminary_priority": "P2",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    },
+    "classification": {
+      "version": 1,
+      "primary_type": "unknown",
+      "type_label": "Не определено",
+      "domains": [],
+      "domain_labels": [],
+      "origin": "unknown",
+      "origin_label": "Не установлено",
+      "original_section": "Новые исследования / GitHub Watch",
+      "sources": [],
+      "reason": "Новая запись ожидает редакционной классификации."
+    },
+    "assessment_currency": {
+      "status": "insufficient",
+      "label": "Недостаточно данных",
+      "reason": "Утверждённая практическая оценка отсутствует.",
+      "assessment_approved_at": null,
+      "assessment_reviewed_on": null,
+      "last_substantive_source_check": "2026-11-13",
+      "reviewed_at": null,
+      "sources": [
+        {
+          "checked_at": "2026-11-13T17:16:25.797732+00:00",
+          "kind": "watch_source_review",
+          "urls": [
+            "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/README.md",
+            "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/LICENSE"
+          ]
+        }
+      ],
+      "pending_proposal": null,
+      "evidence_level": null,
+      "assessment_sources": []
+    }
   }
 ]

@@ -46,5 +46,8 @@
   "github:gramps-project/gramps-web:releases-26.11.0-26.11.2": "d8457c28755376a27c346706971c0ed137d5fffbf9bdb5664b3e86117d24558a",
   "github:kinprove/genealogy-research-recipes:russian-transcription-audit-2026-11-10": "94d4151a573734168638347094bc633f23a20cc36bdf5a42ab9469edbde3e4de",
   "github:gramps-project/gramps-web:shared-event-editing-3c0d843-2026-11-09": "46a9c7b6d0124b643b1e821e0e0538d9cc6dcd86a3a7e9e5a3084ec5f833268f",
-  "github:denissergeevitch/ex-ussr-kinship-research:release-1.41.0-2026-11-11": "1059fa321d35ed6613dda87fd2efc68b10250d409523725974fe37c7b06d90e5"
+  "github:denissergeevitch/ex-ussr-kinship-research:release-1.41.0-2026-11-11": "1059fa321d35ed6613dda87fd2efc68b10250d409523725974fe37c7b06d90e5",
+  "github:igorkauf/raisa-mcp:new-2026-11-13": "eb573dfe6d58afd14c2cf11178f4106106b5ee942ef5dc3749f41766e9a57d3f",
+  "github:paulfilkin/mycelia:new-2026-11-13": "4e3eb1d476f52a543606b9895bd0a307994a14d874b4d356b4a1f37c9612ed62",
+  "github:cacack/gedcom-go:new-2026-11-13": "0f82d98950074c32dd79091611cc5b65ff0881939ef2e73c0af4a5c81d4886a6"
 }

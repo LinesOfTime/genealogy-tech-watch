@@ -2,10 +2,10 @@
   "version": 1,
   "method": "Практический выбор по задаче и роли; аудит сохранённых оценок, без новых баллов и утверждений",
   "counts": {
-    "total": 191,
+    "total": 194,
     "priorities": {
       "P3": 3,
-      "P2": 90,
+      "P2": 93,
       "P1": 72,
       "Не оценён": 26
     },
@@ -13,7 +13,7 @@
       "reference_issue": 3,
       "missing": 6,
       "changed": 0,
-      "triaged": 2,
+      "triaged": 5,
       "proposed": 0,
       "approved": 0,
       "practical_approved": 180
@@ -25,7 +25,7 @@
       "P3": 19
     },
     "p1_e0": 46,
-    "missing_evaluations": 16,
+    "missing_evaluations": 19,
     "independent_reports": 0
   },
   "states": {
@@ -21684,6 +21684,177 @@
       "latest_source_review": "2026-11-09",
       "rationale": "Обоснование оценки отсутствует.",
       "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "igorkauf/raisa-mcp",
+      "url": "https://github.com/igorkauf/raisa-mcp",
+      "legacy_priority": "P2",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-13",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-13T17:16:25.797732+00:00",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/README.md",
+              "https://raw.githubusercontent.com/igorkauf/raisa-mcp/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "triaged",
+      "legacy_state": "triaged",
+      "state_label": "Только каталожный триаж",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Инструмент разработки"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-13",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Проверить первоисточник, конкретный сценарий, вход и результат. Сохранённая метка не обоснована повторной оценкой.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "paulfilkin/mycelia",
+      "url": "https://github.com/paulfilkin/mycelia",
+      "legacy_priority": "P2",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-13",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-13T17:16:25.797732+00:00",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/README.md",
+              "https://raw.githubusercontent.com/paulfilkin/mycelia/42d12d8cdef7b667af66d1734d85f595e2702580/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "triaged",
+      "legacy_state": "triaged",
+      "state_label": "Только каталожный триаж",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Инструмент разработки"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-13",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Проверить первоисточник, конкретный сценарий, вход и результат. Сохранённая метка не обоснована повторной оценкой.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "cacack/gedcom-go",
+      "url": "https://github.com/cacack/gedcom-go",
+      "legacy_priority": "P2",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-13",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-13T17:16:25.797732+00:00",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/README.md",
+              "https://raw.githubusercontent.com/cacack/gedcom-go/5794f4b2db74d40b79be59e4e1fa9b1071933376/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "triaged",
+      "legacy_state": "triaged",
+      "state_label": "Только каталожный триаж",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Инструмент разработки"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-13",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Проверить первоисточник, конкретный сценарий, вход и результат. Сохранённая метка не обоснована повторной оценкой.",
       "source_urls": [],
       "flags": [],
       "independent_report": null,
