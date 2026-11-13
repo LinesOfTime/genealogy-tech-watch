@@ -50,3 +50,13 @@ GitHub connector, README и LICENSE из default branch; зафиксирова�
 **Дополнительный кандидат соседнего контура:** [AI-Riksarkivet/ra-mcp](https://github.com/AI-Riksarkivet/ra-mcp) — по публичной документации объединяет IIIF, ALTO, поиск и MCP; ещё не оценён на новизну и не входит в утверждённый пакет. См. [CLAUDE.md](https://github.com/AI-Riksarkivet/ra-mcp/blob/main/CLAUDE.md).
 
 **Не запускать публикацию автоматически из этой очереди:** необходимо определить точные дельты по коммитам/релизам, сравнить с опубликованным каталогом и сохранить валидные доказательства.
+
+## Подтверждение точных изменений по Git-коммитам
+
+Проверено GitHub Commit API, включая перечень изменённых файлов и diff. Это более сильное свидетельство дельты, чем README; не подменяет обязательный evidence snapshot для автоматического публикационного конвейера.
+
+1. **Raisa MCP:** [6f1d1aa](https://github.com/igorkauf/raisa-mcp/commit/6f1d1aadbc83c7f331a9d31fc82ca5a67588b5bc) — первоначальное добавление файлов MCP, архивных адаптеров, README и MIT LICENSE. Тип события: `new_project`, если отсутствует в каталоге.
+2. **Kinprove:** [11a493d](https://github.com/Kinprove/genealogy-research-recipes/commit/11a493d8197c42066e2fb7a8716f3bbb175a0354) — добавление provenance-файла `russian-village-family-reconstitution.yml` и обновление рецептов. По diff `PROVENANCE.md` количество sidecars выросло со 140 до 141, записей источников — с 4982 до 5042; это **заявленные числа в файле проекта**, не проверка качества источников.
+3. **Gramps Web API:** [12f5e73](https://github.com/gramps-project/gramps-web-api/commit/12f5e73ed0e00158a6b84c32470cba5b3c103ee2) — ROADMAP переносит удаление `gql` на планируемую версию **3.26.0**, ожидаемую в конце ноября 2026. `gql` будет возвращать 422; предложен `MatchesQuery` с GOQL. **Это изменение в коде/плане разработки, а не подтверждение выхода релиза 3.26.0.**
+
+Для остальных проектов ещё нужно сверить точную дельту с опубликованной карточкой, иначе событие может оказаться повтором.
