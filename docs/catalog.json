@@ -1117,8 +1117,27 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировался",
     "source": "https://github.com/AI-Riksarkivet/htrflow",
-    "status": "Переоценка предложена 28.10.2026",
-    "history": [],
+    "status": "Новое подтверждённое изменение 14.11.2026; испытание не проводилось",
+    "history": [
+      {
+        "date": "2026-11-14",
+        "change": "Интеграция Kraken: конфигурируемая обработка строк, пакетное распознавание, оценки по символам и тесты.",
+        "url": "https://github.com/AI-Riksarkivet/htrflow/commit/a92575725694bf4ec4bbfb6e35e901d9195cb607",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/AI-Riksarkivet/htrflow/commit/a92575725694bf4ec4bbfb6e35e901d9195cb607"
+          }
+        ],
+        "significance_reason": "Значимо для OCR/HTR; требуется испытание.",
+        "claims_vs_verified": {
+          "verified": "Изменение подтверждено содержимым коммита.",
+          "author_claims": "CER 7,37% → 7,10% на Swedish Lion (503 строки) — авторское измерение; на русских рукописях не проверено.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "editorial_source_checked"
+      }
+    ],
     "origin": "Реестр 8–10 октября 2026",
     "priority_original": "B",
     "priority_basis": "Модульный OCR/HTR-конвейер с документацией и CI; для русского исторического письма качество не доказано. EUPL-1.2 требует анализа совместимости при заимствовании.",
@@ -7703,8 +7722,26 @@
     "verified_at": "2026-10-08",
     "test_status": "Не тестировалось",
     "source": "https://github.com/gramps-project/gramps-web-api",
-    "status": "Переоценка предложена 28.10.2026",
+    "status": "Новое подтверждённое изменение 14.11.2026; испытание не проводилось",
     "history": [
+      {
+        "date": "2026-11-14",
+        "change": "Профиль события показывает название места, действительное на дату события, используя Gramps get_location_list.",
+        "url": "https://github.com/gramps-project/gramps-web-api/commit/7399f138681015f972d8623caf577bec72af7942",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/7399f138681015f972d8623caf577bec72af7942"
+          }
+        ],
+        "significance_reason": "Значимо для Place Resolver/АТД; требуется испытание.",
+        "claims_vs_verified": {
+          "verified": "Изменение подтверждено содержимым коммита.",
+          "author_claims": "Не является самостоятельным историческим геокодером; применимость к российскому АТД не проверена.",
+          "independent_testing": "Не проводилось."
+        },
+        "review_status": "editorial_source_checked"
+      },
       {
         "date": "2026-10-18",
         "change": "Согласованный экспорт, защита приватных связей, управление заданиями, структурированный агентный поиск."
@@ -35517,5 +35554,40 @@
       "evidence_level": null,
       "assessment_sources": []
     }
+  },
+  {
+    "name": "DavidMStraub/python-gedcom7",
+    "url": "https://github.com/DavidMStraub/python-gedcom7",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Библиотека Python для GEDCOM 7; добавлены чтение и запись GEDZIP.",
+    "use_case": "Проверить импорт и экспорт GEDZIP с медиафайлами и источниками на тестовом дереве.",
+    "limitations": "Изменение подтверждено коммитом, но не независимым испытанием; отдельный релиз функции не проверен.",
+    "license": "MIT (по ранее изученным сведениям; перепроверить LICENSE перед интеграцией)",
+    "license_status": "Требует повторной проверки",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "verification": "https://github.com/DavidMStraub/python-gedcom7/commit/97095fa2fcf9f9c02edbffce77939db946790c9e",
+    "verified_at": "2026-11-14",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/DavidMStraub/python-gedcom7/commit/97095fa2fcf9f9c02edbffce77939db946790c9e",
+    "status": "Новое подтверждённое изменение 14.11.2026",
+    "history": [
+      {
+        "date": "2026-11-14",
+        "change": "Добавлены чтение и запись GEDZIP, проверки имён архивных записей и тесты.",
+        "url": "https://github.com/DavidMStraub/python-gedcom7/commit/97095fa2fcf9f9c02edbffce77939db946790c9e",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/DavidMStraub/python-gedcom7/commit/97095fa2fcf9f9c02edbffce77939db946790c9e"
+          }
+        ],
+        "review_status": "editorial_source_checked"
+      }
+    ],
+    "origin": "GitHub Watch",
+    "components": [
+      "GEDCOM/data model"
+    ]
   }
 ]
