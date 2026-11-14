@@ -1,5 +1,36 @@
 [
   {
+    "date": "2026-11-14",
+    "title": "Проверенные изменения GitHub Watch",
+    "summary": "Три изменения подтверждены по конкретным коммитам. Независимые испытания не проводились; сведения об API и CER отделены от авторских оценок.",
+    "items": [
+      {
+        "repo": "AI-Riksarkivet/htrflow",
+        "priority": "P2",
+        "change": "Интеграция Kraken: конфигурируемая обработка строк, пакетное распознавание и посимвольные оценки.",
+        "link": "https://github.com/AI-Riksarkivet/htrflow/commit/a92575725694bf4ec4bbfb6e35e901d9195cb607",
+        "components": "OCR/HTR",
+        "action": "Экспериментировать на русских рукописях; CER 7,37% → 7,10% — авторское измерение, не независимая проверка."
+      },
+      {
+        "repo": "gramps-project/gramps-web-api",
+        "priority": "P2",
+        "change": "Название места в профиле события выбирается на дату события.",
+        "link": "https://github.com/gramps-project/gramps-web-api/commit/7399f138681015f972d8623caf577bec72af7942",
+        "components": "Place Resolver/АТД",
+        "action": "Изучить архитектуру и проверить на российском историческом АТД."
+      },
+      {
+        "repo": "DavidMStraub/python-gedcom7",
+        "priority": "Не оценён",
+        "change": "Чтение и запись GEDZIP, проверки имён записей в архиве.",
+        "link": "https://github.com/DavidMStraub/python-gedcom7/commit/97095fa2fcf9f9c02edbffce77939db946790c9e",
+        "components": "GEDCOM/data model",
+        "action": "Проверить round-trip с медиа и источниками; релиз функции отдельно не проверен."
+      }
+    ]
+  },
+  {
     "date": "2026-11-13",
     "title": "Значимые изменения проектов",
     "summary": "Утверждённые события; источники и дельты указаны в записях.",
