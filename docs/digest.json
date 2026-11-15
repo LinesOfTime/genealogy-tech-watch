@@ -1,5 +1,44 @@
 [
   {
+    "date": "2026-11-15",
+    "title": "GitHub Watch — изменения для проверки",
+    "summary": "Четыре изменения по первоисточникам; практические приоритеты P2 сверены с текущим каталогом. Независимые испытания не проводились. События ещё не прошли полный Watch Updater.",
+    "items": [
+      {
+        "repo": "gramps-project/gramps-web-api",
+        "priority": "P2",
+        "change": "Улучшен импорт GEDCOM 7: отчёты о потерях и предупреждения; дополнены пакетные операции API.",
+        "link": "https://github.com/gramps-project/gramps-web-api/commit/4acdca4b96403a6f179d0b6aa7b07342900de284",
+        "components": "GEDCOM/data model · API/MCP/agent layer",
+        "action": "Проверить отчёт потерь GEDCOM 7 и API на тестовом дереве; стабильный релиз не проверен."
+      },
+      {
+        "repo": "geneweb/geneweb",
+        "priority": "P2",
+        "change": "DictMemo: кеширование повторно используемых словарей мест, источников и занятий.",
+        "link": "https://github.com/geneweb/geneweb/commit/e65a44aea962772995d26fcfbf88fc16c3f9c9a0",
+        "components": "Place Resolver/АТД",
+        "action": "Проверить инвалидирование кеша; ускорение не измерялось независимо."
+      },
+      {
+        "repo": "DenisSergeevitch/ex-ussr-kinship-research",
+        "priority": "P2",
+        "change": "Версия 1.45.0: исправления GEDCOM, офлайн-сопоставление фамилий с provenance, уточнение отчётности поиска.",
+        "link": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research/blob/main/references/changelog.md",
+        "components": "Research Workspace · provenance/evidence",
+        "action": "Проверить заявленные изменения по исходникам и пилотному кейсу."
+      },
+      {
+        "repo": "Knuckles-Team/gramps-mcp",
+        "priority": "P2",
+        "change": "Рефакторинг классов онтологии и обновление зависимости scion-sdk.",
+        "link": "https://github.com/Knuckles-Team/gramps-mcp/commit/c3a0cde95d1b4974678911d16d2a1a2d63973347",
+        "components": "API/MCP/agent layer",
+        "action": "Проверить обратную совместимость идентификаторов IRI."
+      }
+    ]
+  },
+  {
     "date": "2026-11-14",
     "title": "Проверенные изменения GitHub Watch",
     "summary": "Три изменения подтверждены по конкретным коммитам. Независимые испытания не проводились; сведения об API и CER отделены от авторских оценок.",
