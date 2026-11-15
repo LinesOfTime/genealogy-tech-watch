@@ -4018,6 +4018,32 @@
           "value": "Приложение/веб-сервис"
         }
       }
+    ],
+    "watch_events": [
+      {
+        "discovery_id": "watch-2026-11-15-geneweb-geneweb",
+        "date": "2026-11-15",
+        "change": "Кеширование словарей мест, источников и занятий; проверить корректность инвалидирования кеша.",
+        "url": "https://github.com/geneweb/geneweb/commit/e65a44aea962772995d26fcfbf88fc16c3f9c9a0",
+        "source_urls": [
+          {
+            "type": "primary",
+            "url": "https://github.com/geneweb/geneweb/commit/e65a44aea962772995d26fcfbf88fc16c3f9c9a0"
+          }
+        ],
+        "review_status": "source-linked-not-pipeline-approved",
+        "independent_test": false,
+        "risks": [
+          "Изменение не проверено независимым тестом",
+          "Не прошло полный Watch Updater"
+        ],
+        "priority_review": {
+          "previous": "P2",
+          "proposed": "P2",
+          "reason": "Независимых испытаний для пересмотра приоритета нет",
+          "next_action": "Импортировать небольшое дерево, сверить родственные связи и обратный экспорт с оригиналом."
+        }
+      }
     ]
   },
   "glamberson/gedcom-evidence": {
@@ -5224,6 +5250,30 @@
         "reviewer": "Пользователь LinesOfTime: явное утверждение всего пакета в чате 2026-11-04",
         "reviewed_at": "2026-11-04T13:37:19.941586+00:00",
         "reviewed_content_hash": "1a40259b9da4ce54019d0260b5902cfdbaac2ab1dbeb9882204f255cde85e6c7"
+      },
+      {
+        "discovery_id": "watch-2026-11-15-gramps-project-gramps-web-api",
+        "date": "2026-11-15",
+        "change": "Улучшение обработки GEDCOM 7 и API; проверить сохранность данных и отчёты импорта.",
+        "url": "https://github.com/gramps-project/gramps-web-api/commit/4acdca4b96403a6f179d0b6aa7b07342900de284",
+        "source_urls": [
+          {
+            "type": "primary",
+            "url": "https://github.com/gramps-project/gramps-web-api/commit/4acdca4b96403a6f179d0b6aa7b07342900de284"
+          }
+        ],
+        "review_status": "source-linked-not-pipeline-approved",
+        "independent_test": false,
+        "risks": [
+          "Изменение не проверено независимым тестом",
+          "Не прошло полный Watch Updater"
+        ],
+        "priority_review": {
+          "previous": "P2",
+          "proposed": "P2",
+          "reason": "Независимых испытаний для пересмотра приоритета нет",
+          "next_action": "Получить одного человека и его цитаты read-only; сравнить с интерфейсом Gramps Web."
+        }
       }
     ],
     "evaluation": {
@@ -7772,7 +7822,33 @@
       "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
       "approved_at": "2026-11-04T18:26:40.963239+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
-    }
+    },
+    "watch_events": [
+      {
+        "discovery_id": "watch-2026-11-15-knuckles-team-gramps-mcp",
+        "date": "2026-11-15",
+        "change": "Изменение онтологии и зависимости scion-sdk; проверить совместимость IRI.",
+        "url": "https://github.com/Knuckles-Team/gramps-mcp/commit/c3a0cde95d1b4974678911d16d2a1a2d63973347",
+        "source_urls": [
+          {
+            "type": "primary",
+            "url": "https://github.com/Knuckles-Team/gramps-mcp/commit/c3a0cde95d1b4974678911d16d2a1a2d63973347"
+          }
+        ],
+        "review_status": "source-linked-not-pipeline-approved",
+        "independent_test": false,
+        "risks": [
+          "Изменение не проверено независимым тестом",
+          "Не прошло полный Watch Updater"
+        ],
+        "priority_review": {
+          "previous": "P2",
+          "proposed": "P2",
+          "reason": "Независимых испытаний для пересмотра приоритета нет",
+          "next_action": "Прочитать запись с ограниченной ролью и сверить возвращённые цитаты с UI без изменения базы."
+        }
+      }
+    ]
   },
   "komura-shoan/iiif-downloader": {
     "project_type": "Не установлен",
@@ -19483,6 +19559,30 @@
         "reviewer": "GitHub @LinesOfTime",
         "reviewed_at": "2026-11-11T10:24:19.995035+00:00",
         "reviewed_content_hash": "1059fa321d35ed6613dda87fd2efc68b10250d409523725974fe37c7b06d90e5"
+      },
+      {
+        "discovery_id": "watch-2026-11-15-denissergeevitch-ex-ussr-kinship-research",
+        "date": "2026-11-15",
+        "change": "Версия 1.45.0: изменения GEDCOM и сопоставления фамилий; проверить на реальном исследовательском кейсе.",
+        "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research/blob/main/references/changelog.md",
+        "source_urls": [
+          {
+            "type": "primary",
+            "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research/blob/main/references/changelog.md"
+          }
+        ],
+        "review_status": "source-linked-not-pipeline-approved",
+        "independent_test": false,
+        "risks": [
+          "Изменение не проверено независимым тестом",
+          "Не прошло полный Watch Updater"
+        ],
+        "priority_review": {
+          "previous": "P2",
+          "proposed": "P2",
+          "reason": "Независимых испытаний для пересмотра приоритета нет",
+          "next_action": "Сопоставить правила и тест-кейсы с действующими проверками кабинета, не дублировать реализованное."
+        }
       }
     ],
     "practical_priority": {
