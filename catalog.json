@@ -35687,5 +35687,37 @@
     "components": [
       "GEDCOM/data model"
     ]
+  },
+  {
+    "name": "Kansallisarkisto-AI/sfrd",
+    "url": "https://github.com/Kansallisarkisto-AI/sfrd",
+    "section": "OCR/HTR и извлечение структуры",
+    "description": "Structure from Repeating Documents: извлечение структуры повторяющихся архивных документов, подбор шаблонов и интеграция с nafrec для OCR/HTR.",
+    "use_case": "Экспериментальное структурирование серий однотипных архивных документов; потенциально ревизские сказки и посемейные списки.",
+    "limitations": "README прямо указывает, что пользовательская документация будет добавлена по мере развития; применимость к российским источникам не проверена.",
+    "license": "Apache-2.0",
+    "license_status": "Лицензия обозначена в GitHub; зависимости и веса моделей проверять отдельно.",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "verification": "README репозитория; независимых испытаний нет",
+    "verified_at": "2026-11-16",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/Kansallisarkisto-AI/sfrd",
+    "status": "Новая кандидатная карточка",
+    "origin": "GitHub Watch",
+    "components": [
+      "Indexer",
+      "OCR/HTR",
+      "Research Workspace"
+    ],
+    "history": [
+      {
+        "date": "2026-11-16",
+        "change": "Выявлена возможность автоматического поиска шаблонов и извлечения структуры повторяющихся документов; связка с nafrec.",
+        "source": "https://github.com/Kansallisarkisto-AI/sfrd",
+        "review_status": "research_only",
+        "independent_testing": false
+      }
+    ]
   }
 ]
