@@ -55,7 +55,6 @@ function render() {
     [data.length, 'Карточек'],
     [data.filter(card => card.practical_priority?.review_status === 'approved').length, 'Утверждённых практических оценок'],
     [data.filter(card => card.assessment_currency?.status === 'reassess').length, 'Требуют переоценки'],
-    [data.filter(card => card.assessment_currency?.status === 'insufficient').length, 'Актуальность требует проверки'],
   ].map(([number,label]) => '<div class="metric"><strong>' + number + '</strong><span>' + esc(label) + '</span></div>').join('');
   $('shown').textContent = 'Показано ' + items.length + ' из ' + data.length;
   $('cards').innerHTML = items.map(card => {
