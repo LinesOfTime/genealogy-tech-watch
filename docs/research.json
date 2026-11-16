@@ -19834,5 +19834,13 @@
       "source": null,
       "basis": "Нет оценки в путеводителе"
     }
+  },
+  "kansallisarkisto-ai/sfrd": {
+    "editorial_summary": "SfRD извлекает структуру повторяющихся документов и использует nafrec для OCR/HTR; команда structuralizer поддерживает --suggest_templates.",
+    "editorial_use_case": "Пилот на однотипных ревизских листах с эталонной разметкой; оценить качество полей и повторяемость шаблонов.",
+    "editorial_limitations": "Ранняя стадия документации, не проверено на российских архивах; лицензии моделей отдельно.",
+    "source_evidence": "https://github.com/Kansallisarkisto-AI/sfrd",
+    "test_status": "Не тестировалось",
+    "review_status": "research_only"
   }
 }
