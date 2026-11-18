@@ -8,7 +8,9 @@
       const items = day.items.filter(x => (!priority || x.priority === priority) && (!q || [x.repo,x.change,x.components,x.action,day.title].join(' ').toLowerCase().includes(q)));
       visible += items.length;
       if (!items.length) return '';
-      return `<section class="day"><div class="date">${esc(day.date)}</div><h2>${esc(day.title)}</h2><p>${esc(day.summary)}</p><div class="items">` + items.map(x =>
+      const reviewLink = /^review-\d{4}-\d{2}-\d{2}\.html$/.test(day.review_url || '')
+        ? `<p><a href="${esc(day.review_url)}">Подробный обзор</a></p>` : '';
+      return `<section class="day"><div class="date">${esc(day.date)}</div><h2>${esc(day.title)}</h2><p>${esc(day.summary)}</p>${reviewLink}<div class="items">` + items.map(x =>
         `<article class="item"><span class="badge">${esc(x.priority)}</span><h3>${esc(x.repo)}</h3><p>${esc(x.change)}</p>` +
         (x.previous_state ? `<p class="small">До: ${esc(x.previous_state)}<br>После: ${esc(x.new_state)}</p>` : '') +
         `<p class="small">Компоненты: ${esc(x.components)}</p><p class="small">Действие: ${esc(x.action)}</p>` +
