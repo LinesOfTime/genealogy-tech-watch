@@ -95,3 +95,7 @@ Workflow [Priority Review Queue](.github/workflows/priority-review-queue.yml) з
 
 [Ручной запуск GitHub Actions](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow) ·
 [Источник публикации GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+## Согласование предварительной записи дайджеста
+
+Если событие уже описано в дайджесте как предварительный кандидат, пакет может содержать `replaces_digest_entry` с полями `date` и `item` — точной прежней записью. При применении проверенное событие занимает её место. Прежняя запись сохраняется внутри утверждённого события журнала и входит в его контрольный хеш. Конвейер проверяет совпадение репозитория и ссылки с первоисточником. Утверждённые события и записи с `discovery_id` сохраняют обычную защиту от замены и дублей. Изменение кандидата после preview требует нового плана.

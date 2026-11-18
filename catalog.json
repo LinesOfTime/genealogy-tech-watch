@@ -7466,6 +7466,45 @@
         "reviewer": "GitHub @LinesOfTime",
         "reviewed_at": "2026-11-11T10:24:19.995035+00:00",
         "reviewed_content_hash": "46a9c7b6d0124b643b1e821e0e0538d9cc6dcd86a3a7e9e5a3084ec5f833268f"
+      },
+      {
+        "discovery_id": "github:gramps-project/gramps-web:fa2b45b758d0c3c1617a197d613a35ada2c1e96f",
+        "date": "2026-11-17",
+        "change": "Gramps Web: интерфейс показывает предложенные ИИ добавления, изменения и удаления записей до применения, отделяет ответ помощника от выполненной транзакции и отображает даты в формате Gramps.",
+        "previous_state": "Предварительное описание в дайджесте от 18 ноября; событие ещё не отражено в карточке.",
+        "new_state": "Gramps Web: интерфейс показывает предложенные ИИ добавления, изменения и удаления записей до применения, отделяет ответ помощника от выполненной транзакции и отображает даты в формате Gramps.",
+        "significance_reason": "Проверен конкретный коммит и условия использования; кандидат дайджеста согласуется с карточкой и исследованием.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web/commit/fa2b45b758d0c3c1617a197d613a35ada2c1e96f"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/LICENSE"
+          }
+        ],
+        "url": "https://github.com/gramps-project/gramps-web/commit/fa2b45b758d0c3c1617a197d613a35ada2c1e96f",
+        "claims_vs_verified": {
+          "verified": "Прочитаны изменения коммита, README и LICENSE одной ревизии; проверено наличие описанного кода и тестов.",
+          "author_claims": "Возможности описаны по реализации и документации разработчика; производительность и качество на пользовательских материалах требуют измерения.",
+          "independent_testing": "Не проводилось. Проверка репозитория и тесты каталога не являются запуском этого проекта."
+        },
+        "risks": [
+          "Нужны совместимый Gramps Web API, резервная копия дерева и проверка разрешений перед применением предлагаемых правок. Версия релиза с этим коммитом не установлена."
+        ],
+        "license": "AGPL-3.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00",
+        "reviewed_content_hash": "0d3bb1ce6a0bef266c93159659fd0db3187890ba4eadc49fad17838be3df6c95"
       }
     ],
     "origin": "Реестр 8–10 октября 2026",
@@ -7539,14 +7578,14 @@
     },
     "practical_priority": {
       "project": "gramps-project/gramps-web",
-      "reviewed_on": "2026-11-11",
+      "reviewed_on": "2026-11-18",
       "method_version": "2026-11-04",
       "role": "Веб-приложение",
       "task": "Совместно просматривать и редактировать дерево",
       "scope": "Многоязычный интерфейс; страна не ограничена",
       "input_output": "Тестовое дерево на демо → просмотр и проверка ролей",
-      "rationale": "Существующий практический приоритет оставлен без изменений: независимого испытания, обосновывающего пересмотр, нет.",
-      "pilot": "Проверить редактирование общих событий на тестовом дереве и оценить заимствование UX-принципа.",
+      "rationale": "Сохраняется роль Gramps Web в ведении дерева и источников; проверка предложений ИИ перед записью улучшает контроль изменений, но требует пилота на копии дерева.",
+      "pilot": "На копии дерева проверить предложения добавления, изменения и удаления, права пользователя, отказ API и восстановление из резервной копии.",
       "recheck_trigger": "Перед своим размещением проверить резервирование, права и синхронизацию.",
       "evidence_level": "E1",
       "independent_test": false,
@@ -7560,7 +7599,7 @@
       "previous_priority": "P1",
       "review_status": "approved",
       "approved_by": "GitHub @LinesOfTime",
-      "approved_at": "2026-11-11T10:24:19.995035+00:00",
+      "approved_at": "2026-11-18T17:04:23.602625+00:00",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
     },
     "classification": {
@@ -7613,13 +7652,13 @@
       "status": "insufficient",
       "label": "Недостаточно данных",
       "reason": "После редакционной проверки изменилось основание оценки; нужна новая сверка.",
-      "assessment_approved_at": "2026-11-11T10:24:19.995035+00:00",
-      "assessment_reviewed_on": "2026-11-11",
-      "last_substantive_source_check": "2026-11-11",
+      "assessment_approved_at": "2026-11-18T17:04:23.602625+00:00",
+      "assessment_reviewed_on": "2026-11-18",
+      "last_substantive_source_check": "2026-11-18",
       "reviewed_at": "2026-11-09",
       "sources": [
         {
-          "checked_at": "2026-11-11",
+          "checked_at": "2026-11-18",
           "kind": "assessment_basis",
           "urls": [
             "https://api.github.com/repos/gramps-project/gramps-web/contents/README.md?ref=44ede5a04f0a6ba91b084cf8ab719a97bcad6c22",
@@ -7651,6 +7690,15 @@
           "urls": [
             "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/src/components/GrampsjsFormEditEventInContext.js",
             "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/LICENSE"
+          ]
+        },
+        {
+          "checked_at": "2026-11-18T17:04:23.602625+00:00",
+          "kind": "watch_source_review",
+          "urls": [
+            "https://github.com/gramps-project/gramps-web/commit/fa2b45b758d0c3c1617a197d613a35ada2c1e96f",
+            "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/README.md",
+            "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/LICENSE"
           ]
         }
       ],
@@ -7701,10 +7749,32 @@
           }
         ],
         "reviewed_at": "2026-11-11T10:24:19.995035+00:00"
+      },
+      {
+        "previous": "P1",
+        "proposed": "P1",
+        "reason": "Сохраняется роль Gramps Web в ведении дерева и источников; проверка предложений ИИ перед записью улучшает контроль изменений, но требует пилота на копии дерева.",
+        "next_action": "На копии дерева проверить предложения добавления, изменения и удаления, права пользователя, отказ API и восстановление из резервной копии.",
+        "discovery_id": "github:gramps-project/gramps-web:fa2b45b758d0c3c1617a197d613a35ada2c1e96f",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web/commit/fa2b45b758d0c3c1617a197d613a35ada2c1e96f"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/LICENSE"
+          }
+        ],
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00"
       }
     ],
-    "practical_priority_reason": "Существующий практический приоритет оставлен без изменений: независимого испытания, обосновывающего пересмотр, нет.",
-    "practical_priority_next_action": "Проверить редактирование общих событий на тестовом дереве и оценить заимствование UX-принципа.",
+    "practical_priority_reason": "Сохраняется роль Gramps Web в ведении дерева и источников; проверка предложений ИИ перед записью улучшает контроль изменений, но требует пилота на копии дерева.",
+    "practical_priority_next_action": "На копии дерева проверить предложения добавления, изменения и удаления, права пользователя, отказ API и восстановление из резервной копии.",
     "legal_notes": [
       {
         "id": "publication",
@@ -35686,7 +35756,32 @@
     "origin": "GitHub Watch",
     "components": [
       "GEDCOM/data model"
-    ]
+    ],
+    "classification": {
+      "version": 1,
+      "primary_type": "unknown",
+      "type_label": "Не определено",
+      "domains": [],
+      "domain_labels": [],
+      "origin": "unknown",
+      "origin_label": "Не установлено",
+      "original_section": "Новые исследования / GitHub Watch",
+      "sources": [],
+      "reason": "Новая запись ожидает редакционной классификации."
+    },
+    "assessment_currency": {
+      "status": "insufficient",
+      "label": "Недостаточно данных",
+      "reason": "Утверждённая практическая оценка отсутствует.",
+      "assessment_approved_at": null,
+      "assessment_reviewed_on": null,
+      "last_substantive_source_check": null,
+      "reviewed_at": null,
+      "sources": [],
+      "pending_proposal": null,
+      "evidence_level": null,
+      "assessment_sources": []
+    }
   },
   {
     "name": "Kansallisarkisto-AI/sfrd",
@@ -35717,6 +35812,620 @@
         "source": "https://github.com/Kansallisarkisto-AI/sfrd",
         "review_status": "research_only",
         "independent_testing": false
+      }
+    ],
+    "classification": {
+      "version": 1,
+      "primary_type": "unknown",
+      "type_label": "Не определено",
+      "domains": [],
+      "domain_labels": [],
+      "origin": "unknown",
+      "origin_label": "Не установлено",
+      "original_section": "OCR/HTR и извлечение структуры",
+      "sources": [],
+      "reason": "Новая запись ожидает редакционной классификации."
+    },
+    "assessment_currency": {
+      "status": "insufficient",
+      "label": "Недостаточно данных",
+      "reason": "Утверждённая практическая оценка отсутствует.",
+      "assessment_approved_at": null,
+      "assessment_reviewed_on": null,
+      "last_substantive_source_check": null,
+      "reviewed_at": null,
+      "sources": [],
+      "pending_proposal": null,
+      "evidence_level": null,
+      "assessment_sources": []
+    }
+  },
+  {
+    "name": "ai-riksarkivet/workbench",
+    "url": "https://github.com/AI-Riksarkivet/workbench",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Workbench: просмотр, поиск, ручная разметка и запуск модельных конвейеров над архивными наборами данных, включая озеро данных rask.",
+    "use_case": "Для архивной команды: размечать сканы, тексты и временные фрагменты, проверять версии аннотаций и публиковать подготовленный набор. Разрабатывается Национальным архивом Швеции; охват российских источников зависит от загруженной коллекции и моделей.",
+    "limitations": "Инфраструктурный проект, выделенный из rask 14 ноября. Нужны собственное развёртывание, PostgreSQL и настройка доступа. Проверенный коммит переносит черновики в PostgreSQL, а окончательные аннотации записывает в Lance при публикации. Возобновление модельных задач отдельно не подтверждалось; качество моделей и надёжность миграции требуют пилота.",
+    "license": "Apache-2.0",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "verification": "Редакционная проверка источников события; см. историю",
+    "verified_at": "2026-11-17",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7",
+    "status": "Дополнение из GitHub Watch",
+    "history": [
+      {
+        "discovery_id": "github:ai-riksarkivet/workbench:bcbec0eabcfa79d99921d04583afcbf9132906d7",
+        "date": "2026-11-17",
+        "change": "Новая карточка Workbench: черновики аннотаций хранятся в PostgreSQL, сохранение проверяет ревизию отдельной задачи, публикация записывает итог в Lance; история черновика ограничена по числу сохранений и объёму.",
+        "previous_state": "Предварительное описание в дайджесте от 18 ноября; отдельной карточки и расширенного профиля нет.",
+        "new_state": "Новая карточка Workbench: черновики аннотаций хранятся в PostgreSQL, сохранение проверяет ревизию отдельной задачи, публикация записывает итог в Lance; история черновика ограничена по числу сохранений и объёму.",
+        "significance_reason": "Проверен конкретный коммит и условия использования; кандидат дайджеста согласуется с карточкой и исследованием.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/LICENSE"
+          }
+        ],
+        "url": "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7",
+        "claims_vs_verified": {
+          "verified": "Прочитаны изменения коммита, README и LICENSE одной ревизии; проверено наличие описанного кода и тестов.",
+          "author_claims": "Возможности описаны по реализации и документации разработчика; производительность и качество на пользовательских материалах требуют измерения.",
+          "independent_testing": "Не проводилось. Проверка репозитория и тесты каталога не являются запуском этого проекта."
+        },
+        "risks": [
+          "Инфраструктурный проект, выделенный из rask 14 ноября. Нужны собственное развёртывание, PostgreSQL и настройка доступа. Проверенный коммит переносит черновики в PostgreSQL, а окончательные аннотации записывает в Lance при публикации. Возобновление модельных задач отдельно не подтверждалось; качество моделей и надёжность миграции требуют пилота."
+        ],
+        "license": "Apache-2.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00",
+        "reviewed_content_hash": "f227fa893995eab6859be5ac60663149ef1e33d111043da505fd9c30186cbe62"
+      }
+    ],
+    "origin": "GitHub Watch",
+    "components": [
+      "Research Workspace",
+      "OCR/HTR",
+      "provenance/evidence",
+      "API/MCP/agent layer"
+    ],
+    "catalog_profile_provenance": {
+      "previous_values": {
+        "description": "Новая карточка Workbench: черновики аннотаций хранятся в PostgreSQL, сохранение проверяет ревизию отдельной задачи, публикация записывает итог в Lance; история черновика ограничена по числу сохранений и объёму.",
+        "use_case": "Не оценено",
+        "limitations": "Не оценено",
+        "project_type": null
+      },
+      "source_urls": [
+        {
+          "type": "commit",
+          "url": "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/LICENSE"
+        }
+      ],
+      "discovery_id": "github:ai-riksarkivet/workbench:bcbec0eabcfa79d99921d04583afcbf9132906d7",
+      "reviewed_content_hash": "f227fa893995eab6859be5ac60663149ef1e33d111043da505fd9c30186cbe62",
+      "basis": "Редакционное описание по первоисточникам; не независимое испытание"
+    },
+    "project_type": "Архивный / исследовательский сервис",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    },
+    "classification": {
+      "version": 1,
+      "primary_type": "service",
+      "type_label": "Архивный / исследовательский сервис",
+      "domains": [
+        "archives",
+        "annotation",
+        "ocr",
+        "evidence",
+        "agents"
+      ],
+      "domain_labels": [
+        "Цифровые архивы",
+        "Сегментация и разметка",
+        "OCR/HTR",
+        "Источники, цитирование и доказательства",
+        "Исследовательские агенты и поиск"
+      ],
+      "origin_label": "GitHub Watch",
+      "origin": "watch",
+      "original_section": "Новые исследования / GitHub Watch",
+      "sources": [
+        {
+          "file": "catalog.json",
+          "field": "project_type",
+          "value": "Архивный / исследовательский сервис"
+        },
+        {
+          "file": "catalog.json",
+          "field": "description",
+          "value": "Workbench: просмотр, поиск, ручная разметка и запуск модельных конвейеров над архивными наборами данных, включая озеро данных rask."
+        },
+        {
+          "file": "catalog.json",
+          "field": "use_case",
+          "value": "Для архивной команды: размечать сканы, тексты и временные фрагменты, проверять версии аннотаций и публиковать подготовленный набор. Разрабатывается Национальным архивом Швеции; охват российских источников зависит от загруженной коллекции и моделей."
+        }
+      ],
+      "reason": "Классификация назначения по проверенным README и коммиту GitHub Watch от 18 ноября 2026."
+    },
+    "assessment_currency": {
+      "status": "insufficient",
+      "label": "Недостаточно данных",
+      "reason": "Утверждённая практическая оценка отсутствует.",
+      "assessment_approved_at": null,
+      "assessment_reviewed_on": null,
+      "last_substantive_source_check": "2026-11-18",
+      "reviewed_at": null,
+      "sources": [
+        {
+          "checked_at": "2026-11-18T17:04:23.602625+00:00",
+          "kind": "watch_source_review",
+          "urls": [
+            "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7",
+            "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/README.md",
+            "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/LICENSE"
+          ]
+        }
+      ],
+      "pending_proposal": null,
+      "evidence_level": null,
+      "assessment_sources": []
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-18",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Workbench: просмотр, поиск, ручная разметка и запуск модельных конвейеров над архивными наборами данных, включая озеро данных rask."
+        }
+      }
+    ]
+  },
+  {
+    "name": "nbadino/tabularium",
+    "url": "https://github.com/nbadino/tabularium",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Tabularium: самостоятельное веб-приложение для OCR исторических документов, ручной коррекции и дообучения моделей на своих страницах.",
+    "use_case": "Разобрать историческую таблицу, исправить распознанные строки и ячейки, подготовить эталон и сравнить результаты дообученных моделей. Подходит для пилота на ревизских сказках и ведомостях после подготовки собственной разметки. Работа не ограничена отдельной страной.",
+    "limitations": "Для дообучения и gold-evaluation нужны подготовленный эталон, совместимая GPU-среда и ресурсы, включая возможную аренду. В проверенном коммите ошибочный или непарсируемый результат получает нулевую оценку; ошибка оценки записывается, но регистрация модели продолжается. Заявления о точности и пригодность для русских рукописей независимо не проверены. Отдельно учитываются лицензии моделей.",
+    "license": "MIT",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "verification": "Редакционная проверка источников события; см. историю",
+    "verified_at": "2026-11-17",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3",
+    "status": "Дополнение из GitHub Watch",
+    "history": [
+      {
+        "discovery_id": "github:nbadino/tabularium:74ce04e6ecbe7a00de035829676c8307d24803b3",
+        "date": "2026-11-17",
+        "change": "Новая карточка Tabularium: оценка дообученного Xiaomi-OCR-0 по утверждённым эталонным таблицам на той же арендованной GPU, CER, точные ячейки, пропущенные и лишние строки, структура заголовков; протокол и версии среды записываются в результаты запуска.",
+        "previous_state": "Предварительное описание в дайджесте от 18 ноября; отдельной карточки и расширенного профиля нет.",
+        "new_state": "Новая карточка Tabularium: оценка дообученного Xiaomi-OCR-0 по утверждённым эталонным таблицам на той же арендованной GPU, CER, точные ячейки, пропущенные и лишние строки, структура заголовков; протокол и версии среды записываются в результаты запуска.",
+        "significance_reason": "Проверен конкретный коммит и условия использования; кандидат дайджеста согласуется с карточкой и исследованием.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/LICENSE"
+          }
+        ],
+        "url": "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3",
+        "claims_vs_verified": {
+          "verified": "Прочитаны изменения коммита, README и LICENSE одной ревизии; проверено наличие описанного кода и тестов.",
+          "author_claims": "Возможности описаны по реализации и документации разработчика; производительность и качество на пользовательских материалах требуют измерения.",
+          "independent_testing": "Не проводилось. Проверка репозитория и тесты каталога не являются запуском этого проекта."
+        },
+        "risks": [
+          "Для дообучения и gold-evaluation нужны подготовленный эталон, совместимая GPU-среда и ресурсы, включая возможную аренду. В проверенном коммите ошибочный или непарсируемый результат получает нулевую оценку; ошибка оценки записывается, но регистрация модели продолжается. Заявления о точности и пригодность для русских рукописей независимо не проверены. Отдельно учитываются лицензии моделей."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00",
+        "reviewed_content_hash": "7fb4e6aa349276a05dcfc0846584b63be43efdc671558b774771c97d7f7141fa"
+      }
+    ],
+    "origin": "GitHub Watch",
+    "components": [
+      "OCR/HTR",
+      "Research Workspace",
+      "Indexer",
+      "provenance/evidence"
+    ],
+    "catalog_profile_provenance": {
+      "previous_values": {
+        "description": "Новая карточка Tabularium: оценка дообученного Xiaomi-OCR-0 по утверждённым эталонным таблицам на той же арендованной GPU, CER, точные ячейки, пропущенные и лишние строки, структура заголовков; протокол и версии среды записываются в результаты запуска.",
+        "use_case": "Не оценено",
+        "limitations": "Не оценено",
+        "project_type": null
+      },
+      "source_urls": [
+        {
+          "type": "commit",
+          "url": "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/LICENSE"
+        }
+      ],
+      "discovery_id": "github:nbadino/tabularium:74ce04e6ecbe7a00de035829676c8307d24803b3",
+      "reviewed_content_hash": "7fb4e6aa349276a05dcfc0846584b63be43efdc671558b774771c97d7f7141fa",
+      "basis": "Редакционное описание по первоисточникам; не независимое испытание"
+    },
+    "project_type": "Готовое приложение",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    },
+    "classification": {
+      "version": 1,
+      "primary_type": "application",
+      "type_label": "Готовое приложение",
+      "domains": [
+        "ocr",
+        "annotation",
+        "evaluation"
+      ],
+      "domain_labels": [
+        "OCR/HTR",
+        "Сегментация и разметка",
+        "Оценка качества и тестирование"
+      ],
+      "origin_label": "GitHub Watch",
+      "origin": "watch",
+      "original_section": "Новые исследования / GitHub Watch",
+      "sources": [
+        {
+          "file": "catalog.json",
+          "field": "project_type",
+          "value": "Готовое приложение"
+        },
+        {
+          "file": "catalog.json",
+          "field": "description",
+          "value": "Tabularium: самостоятельное веб-приложение для OCR исторических документов, ручной коррекции и дообучения моделей на своих страницах."
+        },
+        {
+          "file": "catalog.json",
+          "field": "use_case",
+          "value": "Разобрать историческую таблицу, исправить распознанные строки и ячейки, подготовить эталон и сравнить результаты дообученных моделей. Подходит для пилота на ревизских сказках и ведомостях после подготовки собственной разметки. Работа не ограничена отдельной страной."
+        }
+      ],
+      "reason": "Классификация назначения по проверенным README и коммиту GitHub Watch от 18 ноября 2026."
+    },
+    "assessment_currency": {
+      "status": "insufficient",
+      "label": "Недостаточно данных",
+      "reason": "Утверждённая практическая оценка отсутствует.",
+      "assessment_approved_at": null,
+      "assessment_reviewed_on": null,
+      "last_substantive_source_check": "2026-11-18",
+      "reviewed_at": null,
+      "sources": [
+        {
+          "checked_at": "2026-11-18T17:04:23.602625+00:00",
+          "kind": "watch_source_review",
+          "urls": [
+            "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3",
+            "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/README.md",
+            "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/LICENSE"
+          ]
+        }
+      ],
+      "pending_proposal": null,
+      "evidence_level": null,
+      "assessment_sources": []
+    },
+    "legal_notes": [
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-18",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Tabularium: самостоятельное веб-приложение для OCR исторических документов, ручной коррекции и дообучения моделей на своих страницах."
+        }
+      }
+    ]
+  },
+  {
+    "name": "rodoslovje/genealogical-index",
+    "url": "https://github.com/rodoslovje/genealogical-index",
+    "section": "Новые исследования / GitHub Watch",
+    "description": "Genealogical Index: поисковый веб-индекс генеалогических записей на PostgreSQL с API и MCP-интерфейсом чтения.",
+    "use_case": "Искать человека по имени и году, переходить к исходной карточке, видеть связанные записи и сведения о семье. README перечисляет установки в Словении и Хорватии; российские коллекции потребуют собственного импорта и настройки.",
+    "limitations": "Ранжирование по точному совпадению полей, сходству строк и близости года помогает отбирать кандидатов. Связи same_as основаны на сопоставлениях и нуждаются в проверке по документам. MCP предоставляет чтение, а детали сопоставления и доступ зависят от настройки установки. Полнота данных, точность совпадений и русские имена независимо не испытывались.",
+    "license": "MIT",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "priority": "Не оценён",
+    "priority_original": "Не оценён",
+    "verification": "Редакционная проверка источников события; см. историю",
+    "verified_at": "2026-11-17",
+    "test_status": "Не тестировалось",
+    "source": "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
+    "status": "Дополнение из GitHub Watch",
+    "history": [
+      {
+        "discovery_id": "github:rodoslovje/genealogical-index:dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
+        "date": "2026-11-17",
+        "change": "Новая карточка Genealogical Index: ранжированный поиск с общим числом результатов и same_as, MCP get_person с родственниками, ссылки на веб-карточки и постраничная выдача.",
+        "previous_state": "Предварительное описание в дайджесте от 18 ноября; отдельной карточки и расширенного профиля нет.",
+        "new_state": "Новая карточка Genealogical Index: ранжированный поиск с общим числом результатов и same_as, MCP get_person с родственниками, ссылки на веб-карточки и постраничная выдача.",
+        "significance_reason": "Проверен конкретный коммит и условия использования; кандидат дайджеста согласуется с карточкой и исследованием.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/LICENSE"
+          }
+        ],
+        "url": "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
+        "claims_vs_verified": {
+          "verified": "Прочитаны изменения коммита, README и LICENSE одной ревизии; проверено наличие описанного кода и тестов.",
+          "author_claims": "Возможности описаны по реализации и документации разработчика; производительность и качество на пользовательских материалах требуют измерения.",
+          "independent_testing": "Не проводилось. Проверка репозитория и тесты каталога не являются запуском этого проекта."
+        },
+        "risks": [
+          "Ранжирование по точному совпадению полей, сходству строк и близости года помогает отбирать кандидатов. Связи same_as основаны на сопоставлениях и нуждаются в проверке по документам. MCP предоставляет чтение, а детали сопоставления и доступ зависят от настройки установки. Полнота данных, точность совпадений и русские имена независимо не испытывались."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00",
+        "reviewed_content_hash": "96868bc5f354b07e479f538c9452ada2b9bccd6d5495222a6e1b3b07417c8303"
+      }
+    ],
+    "origin": "GitHub Watch",
+    "components": [
+      "Person Resolver",
+      "Indexer",
+      "GEDCOM/data model",
+      "API/MCP/agent layer",
+      "provenance/evidence"
+    ],
+    "catalog_profile_provenance": {
+      "previous_values": {
+        "description": "Новая карточка Genealogical Index: ранжированный поиск с общим числом результатов и same_as, MCP get_person с родственниками, ссылки на веб-карточки и постраничная выдача.",
+        "use_case": "Не оценено",
+        "limitations": "Не оценено",
+        "project_type": null
+      },
+      "source_urls": [
+        {
+          "type": "commit",
+          "url": "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/LICENSE"
+        }
+      ],
+      "discovery_id": "github:rodoslovje/genealogical-index:dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
+      "reviewed_content_hash": "96868bc5f354b07e479f538c9452ada2b9bccd6d5495222a6e1b3b07417c8303",
+      "basis": "Редакционное описание по первоисточникам; не независимое испытание"
+    },
+    "project_type": "Архивный / исследовательский сервис",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    },
+    "classification": {
+      "version": 1,
+      "primary_type": "service",
+      "type_label": "Архивный / исследовательский сервис",
+      "domains": [
+        "gedcom",
+        "linkage",
+        "indexing",
+        "agents"
+      ],
+      "domain_labels": [
+        "GEDCOM и моделирование данных",
+        "Сопоставление записей и родства",
+        "Индексация и извлечение сущностей",
+        "Исследовательские агенты и поиск"
+      ],
+      "origin_label": "GitHub Watch",
+      "origin": "watch",
+      "original_section": "Новые исследования / GitHub Watch",
+      "sources": [
+        {
+          "file": "catalog.json",
+          "field": "project_type",
+          "value": "Архивный / исследовательский сервис"
+        },
+        {
+          "file": "catalog.json",
+          "field": "description",
+          "value": "Genealogical Index: поисковый веб-индекс генеалогических записей на PostgreSQL с API и MCP-интерфейсом чтения."
+        },
+        {
+          "file": "catalog.json",
+          "field": "use_case",
+          "value": "Искать человека по имени и году, переходить к исходной карточке, видеть связанные записи и сведения о семье. README перечисляет установки в Словении и Хорватии; российские коллекции потребуют собственного импорта и настройки."
+        }
+      ],
+      "reason": "Классификация назначения по проверенным README и коммиту GitHub Watch от 18 ноября 2026."
+    },
+    "assessment_currency": {
+      "status": "insufficient",
+      "label": "Недостаточно данных",
+      "reason": "Утверждённая практическая оценка отсутствует.",
+      "assessment_approved_at": null,
+      "assessment_reviewed_on": null,
+      "last_substantive_source_check": "2026-11-18",
+      "reviewed_at": null,
+      "sources": [
+        {
+          "checked_at": "2026-11-18T17:04:23.602625+00:00",
+          "kind": "watch_source_review",
+          "urls": [
+            "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
+            "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/README.md",
+            "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/LICENSE"
+          ]
+        }
+      ],
+      "pending_proposal": null,
+      "evidence_level": null,
+      "assessment_sources": []
+    },
+    "legal_notes": [
+      {
+        "id": "publication",
+        "jurisdiction": "RU",
+        "label": "Публикация сведений о живых людях",
+        "text": "При публикации дерева, выгрузок или документов со сведениями о живых людях определите правовое основание обработки и распространения. Общедоступность чужого дерева сама по себе не даёт разрешения на дальнейшее распространение персональных данных.",
+        "checked_at": "2026-11-18",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 10.1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/591acc70f577873c1ee54765eda110b7a0271eaf/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Genealogical Index: поисковый веб-индекс генеалогических записей на PostgreSQL с API и MCP-интерфейсом чтения."
+        }
+      },
+      {
+        "id": "external_processing",
+        "jurisdiction": "RU",
+        "label": "Передача данных внешнему сервису",
+        "text": "При передаче персональных данных иностранному ИИ-сервису или размещении базы за рубежом проверьте основания обработки, место хранения и требования к трансграничной передаче. Для оператора предусмотрены отдельное уведомление о трансграничной передаче и требования к локализации при сборе данных граждан РФ с установленными законом исключениями.",
+        "checked_at": "2026-11-18",
+        "sources": [
+          {
+            "title": "152-ФЗ, ст. 6",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/315f051396c88f1e4f827ba3f2ae313d999a1873/"
+          },
+          {
+            "title": "152-ФЗ, ст. 12",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/e4ebbe1780de623c7cf32a59ca82a7bb523a25dd/"
+          },
+          {
+            "title": "152-ФЗ, ст. 18 ч. 5",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/cbf4e15b7c330f9372e876cdf2bc928bad7950ef/"
+          },
+          {
+            "title": "152-ФЗ, ст. 1",
+            "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/d44bdb356e6a691d0c72fef05ed16f68af0af9eb/"
+          }
+        ],
+        "project_basis": {
+          "field": "description",
+          "value": "Genealogical Index: поисковый веб-индекс генеалогических записей на PostgreSQL с API и MCP-интерфейсом чтения."
+        }
       }
     ]
   }

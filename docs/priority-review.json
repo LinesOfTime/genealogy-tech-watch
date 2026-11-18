@@ -2,16 +2,16 @@
   "version": 1,
   "method": "Практический выбор по задаче и роли; аудит сохранённых оценок, без новых баллов и утверждений",
   "counts": {
-    "total": 194,
+    "total": 199,
     "priorities": {
       "P3": 3,
       "P2": 93,
       "P1": 72,
-      "Не оценён": 26
+      "Не оценён": 31
     },
     "states": {
       "reference_issue": 3,
-      "missing": 6,
+      "missing": 11,
       "changed": 0,
       "triaged": 5,
       "proposed": 0,
@@ -25,7 +25,7 @@
       "P3": 19
     },
     "p1_e0": 46,
-    "missing_evaluations": 19,
+    "missing_evaluations": 24,
     "independent_reports": 0
   },
   "states": {
@@ -5118,13 +5118,13 @@
         "status": "insufficient",
         "label": "Недостаточно данных",
         "reason": "После редакционной проверки изменилось основание оценки; нужна новая сверка.",
-        "assessment_approved_at": "2026-11-11T10:24:19.995035+00:00",
-        "assessment_reviewed_on": "2026-11-11",
-        "last_substantive_source_check": "2026-11-11",
+        "assessment_approved_at": "2026-11-18T17:04:23.602625+00:00",
+        "assessment_reviewed_on": "2026-11-18",
+        "last_substantive_source_check": "2026-11-18",
         "reviewed_at": "2026-11-09",
         "sources": [
           {
-            "checked_at": "2026-11-11",
+            "checked_at": "2026-11-18",
             "kind": "assessment_basis",
             "urls": [
               "https://api.github.com/repos/gramps-project/gramps-web/contents/README.md?ref=44ede5a04f0a6ba91b084cf8ab719a97bcad6c22",
@@ -5157,6 +5157,15 @@
               "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/src/components/GrampsjsFormEditEventInContext.js",
               "https://raw.githubusercontent.com/gramps-project/gramps-web/3c0d843f43a9a8e591a92f7701f9c936f5ec861b/LICENSE"
             ]
+          },
+          {
+            "checked_at": "2026-11-18T17:04:23.602625+00:00",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/gramps-project/gramps-web/commit/fa2b45b758d0c3c1617a197d613a35ada2c1e96f",
+              "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/README.md",
+              "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/LICENSE"
+            ]
           }
         ],
         "pending_proposal": null,
@@ -5187,9 +5196,9 @@
       "license_state": "L1",
       "integration_effort": 2,
       "reviewed_at": "2026-10-28",
-      "latest_source_review": "2026-11-11",
+      "latest_source_review": "2026-11-18",
       "rationale": "Ориентир по веб-интерфейсу, совместной работе и доступу; фронтенд и API различать.",
-      "next_action": "Проверить редактирование общих событий на тестовом дереве и оценить заимствование UX-принципа.",
+      "next_action": "На копии дерева проверить предложения добавления, изменения и удаления, права пользователя, отказ API и восстановление из резервной копии.",
       "source_urls": [
         "https://github.com/gramps-project/gramps-web/blob/HEAD/README.md",
         "https://github.com/gramps-project/gramps-web/blob/HEAD/LICENSE"
@@ -5202,7 +5211,7 @@
       "practical_proposal": {
         "project": "gramps-project/gramps-web",
         "review_status": "approved",
-        "reviewed_on": "2026-11-11",
+        "reviewed_on": "2026-11-18",
         "method_version": "2026-11-04",
         "previous": {
           "priority": "P1",
@@ -5241,8 +5250,8 @@
         "task": "Совместно просматривать и редактировать дерево",
         "scope": "Многоязычный интерфейс; страна не ограничена",
         "input_output": "Тестовое дерево на демо → просмотр и проверка ролей",
-        "rationale": "Существующий практический приоритет оставлен без изменений: независимого испытания, обосновывающего пересмотр, нет.",
-        "pilot": "Проверить редактирование общих событий на тестовом дереве и оценить заимствование UX-принципа.",
+        "rationale": "Сохраняется роль Gramps Web в ведении дерева и источников; проверка предложений ИИ перед записью улучшает контроль изменений, но требует пилота на копии дерева.",
+        "pilot": "На копии дерева проверить предложения добавления, изменения и удаления, права пользователя, отказ API и восстановление из резервной копии.",
         "recheck_trigger": "Перед своим размещением проверить резервирование, права и синхронизацию.",
         "evidence_level": "E1",
         "independent_test": false,
@@ -5253,7 +5262,7 @@
           "https://api.github.com/repos/gramps-project/gramps-web/contents/LICENSE?ref=44ede5a04f0a6ba91b084cf8ab719a97bcad6c22"
         ],
         "approved_by": "GitHub @LinesOfTime",
-        "approved_at": "2026-11-11T10:24:19.995035+00:00"
+        "approved_at": "2026-11-18T17:04:23.602625+00:00"
       }
     },
     {
@@ -21855,6 +21864,272 @@
       "latest_source_review": "2026-11-13",
       "rationale": "Обоснование оценки отсутствует.",
       "next_action": "Проверить первоисточник, конкретный сценарий, вход и результат. Сохранённая метка не обоснована повторной оценкой.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "DavidMStraub/python-gedcom7",
+      "url": "https://github.com/DavidMStraub/python-gedcom7",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": null,
+        "reviewed_at": null,
+        "sources": [],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "catalog.json",
+          "field": "description",
+          "excerpt": "Библиотека Python для GEDCOM 7; добавлены чтение и запись GEDZIP."
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": null,
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "Kansallisarkisto-AI/sfrd",
+      "url": "https://github.com/Kansallisarkisto-AI/sfrd",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": null,
+        "reviewed_at": null,
+        "sources": [],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": null
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": null,
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "ai-riksarkivet/workbench",
+      "url": "https://github.com/AI-Riksarkivet/workbench",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Архивный / исследовательский сервис"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-18",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-18T17:04:23.602625+00:00",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7",
+              "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/README.md",
+              "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный / исследовательский сервис"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-18",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "nbadino/tabularium",
+      "url": "https://github.com/nbadino/tabularium",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Готовое приложение"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-18",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-18T17:04:23.602625+00:00",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3",
+              "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/README.md",
+              "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-18",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "rodoslovje/genealogical-index",
+      "url": "https://github.com/rodoslovje/genealogical-index",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Архивный / исследовательский сервис"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-18",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-18T17:04:23.602625+00:00",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
+              "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/README.md",
+              "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный / исследовательский сервис"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-18",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
       "source_urls": [],
       "flags": [],
       "independent_report": null,

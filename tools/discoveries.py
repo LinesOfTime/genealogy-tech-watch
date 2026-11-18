@@ -160,6 +160,20 @@ def compare(root, records):
         catalogue_events = [event for c in catalog if c.get('url') in matches for event in c.get('history', [])]
         research_events = [event for key in research_matches for event in research[key].get('watch_events', [])]
         links = {s['url'].rstrip('/') for s in sources}
+        replacement = r.get('replaces_digest_entry')
+        already_applied = isinstance(discovery_id, str) and ledger.get(discovery_id) == content_hash(r)
+        if replacement is not None and not already_applied:
+            try:
+                old = replacement['item']
+                exact = [dict(date=day['date'], **item) for day in digest
+                         if day['date'] == replacement['date'] for item in day['items'] if item == old]
+                if (r.get('decision') != 'publish' or len(exact) != 1
+                        or old.get('review_status') == 'approved' or old.get('discovery_id')
+                        or repo_key(old.get('repo')) != identity or old.get('link') not in links):
+                    raise ValueError('Only an exact unapproved digest candidate may be reconciled')
+                history = [event for event in history if event != exact[0]]
+            except (KeyError, TypeError, AttributeError, ValueError) as exc:
+                errors.append('replaces_digest_entry: ' + str(exc))
         delta = str(r.get('change_summary', '')).strip().casefold()
         def repeated(event):
             event_links = {str(event.get('link', event.get('url', ''))).rstrip('/')}
@@ -172,7 +186,6 @@ def compare(root, records):
         duplicate |= any(identities & keys and (delta == old_delta or bool(links & old_links))
                          for keys, old_delta, old_links in prior)
         prior.append((identities, delta, links))
-        already_applied = isinstance(discovery_id,str) and ledger.get(discovery_id) == content_hash(r)
         if profile is not None and (matches or research_matches or history) and not already_applied:
             errors.append('catalog_profile may initialize a new project only; existing research must be preserved')
         event_type = r.get('event_type')

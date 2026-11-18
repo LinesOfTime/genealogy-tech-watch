@@ -178,6 +178,10 @@ def build_plan(root, records, edition_date):
                           research_link='project.html?repo=' + quote(card['name'], safe=''),
                           previous_state=r['previous_state'], new_state=r['new_state'])
         if r['decision'] == 'publish':
+            replacement = r.get('replaces_digest_entry')
+            if replacement is not None:
+                day = next(day for day in digest if day['date'] == replacement['date'])
+                day['items'].remove(replacement['item'])
             items.append(item)
         ledger[r['discovery_id']] = content_hash(r)
         event_ids.append(r['discovery_id'])

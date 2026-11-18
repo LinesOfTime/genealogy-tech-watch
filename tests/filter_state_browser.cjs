@@ -27,7 +27,7 @@ const {chromium} = require('playwright');
     assert.ok(await legalCards.first().locator('a').count()>=1);
     await legalCards.first().locator('summary').click();
 
-    for (const repo of ['thodel/agentic_historian','rodoslovje/ged-merge','kjiwa/geneanet-drift','gramps-project/gramps-web']) {
+    for (const repo of ['thodel/agentic_historian','rodoslovje/ged-merge','kjiwa/geneanet-drift','gramps-project/gramps-web','ai-riksarkivet/workbench','nbadino/tabularium','rodoslovje/genealogical-index']) {
       await page.locator('#search').fill(repo);
       const projectLink=page.locator('.card-links a[href="project.html?repo='+encodeURIComponent(repo)+'"]');
       assert.equal(await projectLink.count(),1);
@@ -230,12 +230,12 @@ const {chromium} = require('playwright');
       await page.locator('#q').fill(repo);
       // An existing project can have several independently reviewed events.
       assert.ok(await page.locator('article.item').count()>=1);
-      if(repo==='scormave/gramps-web-mcp')assert.match(await page.locator('article.item').first().innerText(),/2\.9\.1/);
-      if(repo==='fmadore/iwac-mcp-server')assert.match(await page.locator('article.item').first().innerText(),/6\.0\.0/);
-      if(repo==='geiserx/gramps-web-toolkit')assert.match(await page.locator('article.item').first().innerText(),/1\.3\.0/);
-      if(repo==='gramps-project/gramps-web-api')assert.match(await page.locator('article.item').first().innerText(),/4b3a266/);
-      if(repo==='genealogy-mcp/gramps-mcp')assert.match(await page.locator('article.item').first().innerText(),/3\.15\.20–3\.15\.23/);
-      if(repo==='itarunnn/jp-lit-mcp')assert.match(await page.locator('article.item').first().innerText(),/0\.19\.0/);
+      if(repo==='scormave/gramps-web-mcp')assert.match((await page.locator('article.item').allTextContents()).join('\n'),/2\.9\.1/);
+      if(repo==='fmadore/iwac-mcp-server')assert.match((await page.locator('article.item').allTextContents()).join('\n'),/6\.0\.0/);
+      if(repo==='geiserx/gramps-web-toolkit')assert.match((await page.locator('article.item').allTextContents()).join('\n'),/1\.3\.0/);
+      if(repo==='gramps-project/gramps-web-api')assert.match((await page.locator('article.item').allTextContents()).join('\n'),/4b3a266/);
+      if(repo==='genealogy-mcp/gramps-mcp')assert.match((await page.locator('article.item').allTextContents()).join('\n'),/3\.15\.20–3\.15\.23/);
+      if(repo==='itarunnn/jp-lit-mcp')assert.match((await page.locator('article.item').allTextContents()).join('\n'),/0\.19\.0/);
       await page.locator('article.item a[href^="project.html"]').first().click();
       await page.waitForLoadState('networkidle');
       assert.equal((await page.locator('#title').innerText()).toLowerCase(),repo);

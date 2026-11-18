@@ -2,39 +2,131 @@
   {
     "date": "2026-11-18",
     "title": "GitHub Watch — архивные рабочие места, доказательства и поиск персон",
-    "summary": "Четыре значимых изменения, отобранных для технической проверки по ссылкам на коммиты. Сведения о возможностях требуют воспроизведения; независимых испытаний не проводилось. Это выпуск дайджеста, не изменение карточек каталога. Подробный обзор: review-2026-11-18.html.",
+    "summary": "Проверены исходные коммиты, README и LICENSE. Три новые карточки и обновление Gramps Web содержат условия применения и предложения для пилота. Подробный обзор: review-2026-11-18.html.",
     "items": [
       {
-        "repo": "AI-Riksarkivet/workbench",
-        "priority": "P1",
-        "change": "Изменения в хранении версионированных аннотаций и механизме возобновляемых задач обработки документов.",
+        "repo": "ai-riksarkivet/workbench",
+        "priority": "Не оценён",
+        "change": "Новая карточка Workbench: черновики аннотаций хранятся в PostgreSQL, сохранение проверяет ревизию отдельной задачи, публикация записывает итог в Lance; история черновика ограничена по числу сохранений и объёму.",
         "link": "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7",
-        "components": "Research Workspace · OCR/HTR · provenance/evidence",
-        "action": "Изучить архитектуру; проверить PostgreSQL, Lance, идемпотентность и лицензию по исходникам. Независимых испытаний нет."
+        "components": "Research Workspace · OCR/HTR · provenance/evidence · API/MCP/agent layer",
+        "action": "Опубликовать проверенное описание, сохранить прежний кандидат в журнале и проверить сценарий на копии данных.",
+        "event_date": "2026-11-17",
+        "significance_reason": "Проверен конкретный коммит и условия использования; кандидат дайджеста согласуется с карточкой и исследованием.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00",
+        "discovery_id": "github:ai-riksarkivet/workbench:bcbec0eabcfa79d99921d04583afcbf9132906d7",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/workbench/bcbec0eabcfa79d99921d04583afcbf9132906d7/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=ai-riksarkivet%2Fworkbench",
+        "previous_state": "Предварительное описание в дайджесте от 18 ноября; отдельной карточки и расширенного профиля нет.",
+        "new_state": "Новая карточка Workbench: черновики аннотаций хранятся в PostgreSQL, сохранение проверяет ревизию отдельной задачи, публикация записывает итог в Lance; история черновика ограничена по числу сохранений и объёму."
       },
       {
         "repo": "gramps-project/gramps-web",
         "priority": "P1",
-        "change": "Изменения в интерфейсе подтверждения предложенных ИИ правок и обратной связи об их применении.",
+        "change": "Gramps Web: интерфейс показывает предложенные ИИ добавления, изменения и удаления записей до применения, отделяет ответ помощника от выполненной транзакции и отображает даты в формате Gramps.",
         "link": "https://github.com/gramps-project/gramps-web/commit/fa2b45b758d0c3c1617a197d613a35ada2c1e96f",
-        "components": "Research Workspace · Person Resolver · API/MCP",
-        "action": "Испытать на тестовом дереве; отдельно проверить новый API родственных цепочек. Лицензия AGPL-3.0."
+        "components": "Research Workspace · provenance/evidence · API/MCP/agent layer",
+        "action": "Опубликовать проверенное описание, сохранить прежний кандидат в журнале и проверить сценарий на копии данных.",
+        "event_date": "2026-11-17",
+        "significance_reason": "Проверен конкретный коммит и условия использования; кандидат дайджеста согласуется с карточкой и исследованием.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00",
+        "discovery_id": "github:gramps-project/gramps-web:fa2b45b758d0c3c1617a197d613a35ada2c1e96f",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/gramps-project/gramps-web/commit/fa2b45b758d0c3c1617a197d613a35ada2c1e96f"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps-web/fa2b45b758d0c3c1617a197d613a35ada2c1e96f/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=gramps-project%2Fgramps-web",
+        "previous_state": "Предварительное описание в дайджесте от 18 ноября; событие ещё не отражено в карточке.",
+        "new_state": "Gramps Web: интерфейс показывает предложенные ИИ добавления, изменения и удаления записей до применения, отделяет ответ помощника от выполненной транзакции и отображает даты в формате Gramps."
       },
       {
         "repo": "nbadino/tabularium",
-        "priority": "P2",
-        "change": "Добавлен протокол оценки дообученной OCR-модели на эталонном наборе, включая CER и показатели табличной структуры.",
+        "priority": "Не оценён",
+        "change": "Новая карточка Tabularium: оценка дообученного Xiaomi-OCR-0 по утверждённым эталонным таблицам на той же арендованной GPU, CER, точные ячейки, пропущенные и лишние строки, структура заголовков; протокол и версии среды записываются в результаты запуска.",
         "link": "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3",
-        "components": "OCR/HTR · Indexer · реестр испытаний",
-        "action": "Проверить код оценки и воспроизвести на ревизских сказках; результаты автора не считать независимым benchmark."
+        "components": "OCR/HTR · Research Workspace · Indexer · provenance/evidence",
+        "action": "Опубликовать проверенное описание, сохранить прежний кандидат в журнале и проверить сценарий на копии данных.",
+        "event_date": "2026-11-17",
+        "significance_reason": "Проверен конкретный коммит и условия использования; кандидат дайджеста согласуется с карточкой и исследованием.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00",
+        "discovery_id": "github:nbadino/tabularium:74ce04e6ecbe7a00de035829676c8307d24803b3",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/nbadino/tabularium/74ce04e6ecbe7a00de035829676c8307d24803b3/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=nbadino%2Ftabularium",
+        "previous_state": "Предварительное описание в дайджесте от 18 ноября; отдельной карточки и расширенного профиля нет.",
+        "new_state": "Новая карточка Tabularium: оценка дообученного Xiaomi-OCR-0 по утверждённым эталонным таблицам на той же арендованной GPU, CER, точные ячейки, пропущенные и лишние строки, структура заголовков; протокол и версии среды записываются в результаты запуска."
       },
       {
         "repo": "rodoslovje/genealogical-index",
-        "priority": "P2",
-        "change": "Изменения ранжирования кандидатов при поиске и интерфейса MCP для чтения сведений о персоне.",
+        "priority": "Не оценён",
+        "change": "Новая карточка Genealogical Index: ранжированный поиск с общим числом результатов и same_as, MCP get_person с родственниками, ссылки на веб-карточки и постраничная выдача.",
         "link": "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
-        "components": "Person Resolver · Indexer · GEDCOM/data model · API/MCP",
-        "action": "Проверить критерии ранжирования, same_as и обработку записей без года; пилот на реальных источниках."
+        "components": "Person Resolver · Indexer · GEDCOM/data model · API/MCP/agent layer · provenance/evidence",
+        "action": "Опубликовать проверенное описание, сохранить прежний кандидат в журнале и проверить сценарий на копии данных.",
+        "event_date": "2026-11-17",
+        "significance_reason": "Проверен конкретный коммит и условия использования; кандидат дайджеста согласуется с карточкой и исследованием.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-18T17:04:23.602625+00:00",
+        "discovery_id": "github:rodoslovje/genealogical-index:dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/rodoslovje/genealogical-index/dc334cf4886ee3e4d8c70985f835f89ca185e2fe/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=rodoslovje%2Fgenealogical-index",
+        "previous_state": "Предварительное описание в дайджесте от 18 ноября; отдельной карточки и расширенного профиля нет.",
+        "new_state": "Новая карточка Genealogical Index: ранжированный поиск с общим числом результатов и same_as, MCP get_person с родственниками, ссылки на веб-карточки и постраничная выдача."
       }
     ]
   },

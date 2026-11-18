@@ -8,7 +8,7 @@ import unittest
 import test_apply_changes
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from apply_changes import digest_bytes, encoded, write_plan
+from apply_changes import digest_bytes, encoded, write_plan, sync_payloads
 from catalog_model import MODEL_FILES
 from discoveries import read_jsonl
 from watch_pipeline import validate
@@ -90,6 +90,41 @@ class UpdaterTests(unittest.TestCase):
         self.assertEqual(card['practical_priority'], 'P2')
         self.assertEqual(card['practical_priority_history'][-1]['proposed'], 'P2')
         self.assertEqual(card['practical_priority_next_action'], 'Test API on a small sample')
+
+    def add_digest_candidate(self, approved=False):
+        event = self.packet['events'][0]
+        item = dict(repo='b/new', priority='P2', change='Preliminary description',
+                    link=event['source_urls'][0]['url'], components='Research Workspace',
+                    action='Check documentation')
+        if approved:
+            item['review_status'] = 'approved'
+        day = dict(date=self.packet['edition_date'], title='Candidate review',
+                   summary='Preliminary findings', items=[item])
+        for name, raw in sync_payloads(self.root, digest=[day]).items():
+            (self.root / name).write_bytes(raw)
+        event['replaces_digest_entry'] = dict(date=day['date'], item=copy.deepcopy(item))
+        return item
+
+    def test_promotes_exact_digest_candidate_without_duplicate_and_keeps_original(self):
+        old = self.add_digest_candidate()
+        packet, preview, key = prepare(self.root, encoded(self.packet), 'base')
+        plan = authorize(self.root, packet, key, key, 'editor', self.stamp)
+        write_plan(self.root, plan, plan['plan_hash'])
+        digest = json.loads((self.root / 'digest.json').read_bytes())
+        self.assertEqual(len(digest[0]['items']), 1)
+        self.assertEqual(digest[0]['items'][0]['review_status'], 'approved')
+        journal = read_jsonl(self.root / 'data/discoveries.jsonl')
+        self.assertEqual(journal[0]['replaces_digest_entry']['item'], old)
+        self.assertEqual(validate(self.root)['errors'], 0)
+
+    def test_refuses_replacement_of_approved_or_changed_digest_entry(self):
+        self.add_digest_candidate(approved=True)
+        with self.assertRaisesRegex(ValueError, 'unapproved digest candidate'):
+            prepare(self.root, encoded(self.packet), 'base')
+        self.add_digest_candidate()
+        self.packet['events'][0]['replaces_digest_entry']['item']['action'] = 'Different content'
+        with self.assertRaisesRegex(ValueError, 'unapproved digest candidate'):
+            prepare(self.root, encoded(self.packet), 'base')
 
     def test_hash_binds_base_and_exact_package(self):
         raw = encoded(self.packet)

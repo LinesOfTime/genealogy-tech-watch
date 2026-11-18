@@ -6245,6 +6245,90 @@
         }
       ],
       "reason": "Редакционная классификация назначения по проверенному профилю GitHub Watch 9 ноября 2026; источники закреплены в catalog_profile_provenance и журнале. Тип не означает независимо подтверждённую зрелость или практическую оценку."
+    },
+    "ai-riksarkivet/workbench": {
+      "primary_type": "service",
+      "domains": [
+        "archives",
+        "annotation",
+        "ocr",
+        "evidence",
+        "agents"
+      ],
+      "origin": "watch",
+      "sources": [
+        {
+          "file": "catalog.json",
+          "field": "project_type",
+          "value": "Архивный / исследовательский сервис"
+        },
+        {
+          "file": "catalog.json",
+          "field": "description",
+          "value": "Workbench: просмотр, поиск, ручная разметка и запуск модельных конвейеров над архивными наборами данных, включая озеро данных rask."
+        },
+        {
+          "file": "catalog.json",
+          "field": "use_case",
+          "value": "Для архивной команды: размечать сканы, тексты и временные фрагменты, проверять версии аннотаций и публиковать подготовленный набор. Разрабатывается Национальным архивом Швеции; охват российских источников зависит от загруженной коллекции и моделей."
+        }
+      ],
+      "reason": "Классификация назначения по проверенным README и коммиту GitHub Watch от 18 ноября 2026."
+    },
+    "nbadino/tabularium": {
+      "primary_type": "application",
+      "domains": [
+        "ocr",
+        "annotation",
+        "evaluation"
+      ],
+      "origin": "watch",
+      "sources": [
+        {
+          "file": "catalog.json",
+          "field": "project_type",
+          "value": "Готовое приложение"
+        },
+        {
+          "file": "catalog.json",
+          "field": "description",
+          "value": "Tabularium: самостоятельное веб-приложение для OCR исторических документов, ручной коррекции и дообучения моделей на своих страницах."
+        },
+        {
+          "file": "catalog.json",
+          "field": "use_case",
+          "value": "Разобрать историческую таблицу, исправить распознанные строки и ячейки, подготовить эталон и сравнить результаты дообученных моделей. Подходит для пилота на ревизских сказках и ведомостях после подготовки собственной разметки. Работа не ограничена отдельной страной."
+        }
+      ],
+      "reason": "Классификация назначения по проверенным README и коммиту GitHub Watch от 18 ноября 2026."
+    },
+    "rodoslovje/genealogical-index": {
+      "primary_type": "service",
+      "domains": [
+        "gedcom",
+        "linkage",
+        "indexing",
+        "agents"
+      ],
+      "origin": "watch",
+      "sources": [
+        {
+          "file": "catalog.json",
+          "field": "project_type",
+          "value": "Архивный / исследовательский сервис"
+        },
+        {
+          "file": "catalog.json",
+          "field": "description",
+          "value": "Genealogical Index: поисковый веб-индекс генеалогических записей на PostgreSQL с API и MCP-интерфейсом чтения."
+        },
+        {
+          "file": "catalog.json",
+          "field": "use_case",
+          "value": "Искать человека по имени и году, переходить к исходной карточке, видеть связанные записи и сведения о семье. README перечисляет установки в Словении и Хорватии; российские коллекции потребуют собственного импорта и настройки."
+        }
+      ],
+      "reason": "Классификация назначения по проверенным README и коммиту GitHub Watch от 18 ноября 2026."
     }
   }
 }
