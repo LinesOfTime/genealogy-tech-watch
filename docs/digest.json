@@ -1,5 +1,44 @@
 [
   {
+    "date": "2026-11-18",
+    "title": "GitHub Watch — архивные рабочие места, доказательства и поиск персон",
+    "summary": "Четыре значимых изменения, отобранных для технической проверки по ссылкам на коммиты. Сведения о возможностях требуют воспроизведения; независимых испытаний не проводилось. Это выпуск дайджеста, не изменение карточек каталога. Подробный обзор: review-2026-11-18.html.",
+    "items": [
+      {
+        "repo": "AI-Riksarkivet/workbench",
+        "priority": "P1",
+        "change": "Изменения в хранении версионированных аннотаций и механизме возобновляемых задач обработки документов.",
+        "link": "https://github.com/AI-Riksarkivet/workbench/commit/bcbec0eabcfa79d99921d04583afcbf9132906d7",
+        "components": "Research Workspace · OCR/HTR · provenance/evidence",
+        "action": "Изучить архитектуру; проверить PostgreSQL, Lance, идемпотентность и лицензию по исходникам. Независимых испытаний нет."
+      },
+      {
+        "repo": "gramps-project/gramps-web",
+        "priority": "P1",
+        "change": "Изменения в интерфейсе подтверждения предложенных ИИ правок и обратной связи об их применении.",
+        "link": "https://github.com/gramps-project/gramps-web/commit/fa2b45b758d0c3c1617a197d613a35ada2c1e96f",
+        "components": "Research Workspace · Person Resolver · API/MCP",
+        "action": "Испытать на тестовом дереве; отдельно проверить новый API родственных цепочек. Лицензия AGPL-3.0."
+      },
+      {
+        "repo": "nbadino/tabularium",
+        "priority": "P2",
+        "change": "Добавлен протокол оценки дообученной OCR-модели на эталонном наборе, включая CER и показатели табличной структуры.",
+        "link": "https://github.com/nbadino/tabularium/commit/74ce04e6ecbe7a00de035829676c8307d24803b3",
+        "components": "OCR/HTR · Indexer · реестр испытаний",
+        "action": "Проверить код оценки и воспроизвести на ревизских сказках; результаты автора не считать независимым benchmark."
+      },
+      {
+        "repo": "rodoslovje/genealogical-index",
+        "priority": "P2",
+        "change": "Изменения ранжирования кандидатов при поиске и интерфейса MCP для чтения сведений о персоне.",
+        "link": "https://github.com/rodoslovje/genealogical-index/commit/dc334cf4886ee3e4d8c70985f835f89ca185e2fe",
+        "components": "Person Resolver · Indexer · GEDCOM/data model · API/MCP",
+        "action": "Проверить критерии ранжирования, same_as и обработку записей без года; пилот на реальных источниках."
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "title": "Кандидат для испытаний: SfRD",
     "summary": "Найден проект структурирования повторяющихся архивных документов; NAFRec и htrflow-batch уже присутствуют в каталоге и не повторяются как новые находки.",
