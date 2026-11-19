@@ -1,5 +1,36 @@
 [
   {
+    "date": "2026-11-19",
+    "title": "Новые навыки и агентные процессы для генеалогии",
+    "summary": "Два новых проекта и развитие архивного Workbench. Проверены README репозиториев через GitHub; описания конкретных коммитов требуют отдельной проверки. Независимые испытания не проводились.",
+    "items": [
+      {
+        "repo": "AntonShevchuk/charted-roots-skills",
+        "priority": "P1",
+        "change": "Навыки Claude Code для Obsidian/Charted Roots: архивные записи с цитированием, исследование родства, проверка и синхронизация GEDCOM, согласование исторических названий мест. README указывает поддержку региональных руководств бывшего СССР.",
+        "link": "https://github.com/AntonShevchuk/charted-roots-skills/blob/main/README.md",
+        "components": "Research Workspace · Place Resolver/АТД · GEDCOM/data model · provenance/evidence",
+        "action": "Изучить применение навыков и сравнить с ex-USSR; проверить точную атрибуцию заимствования и LICENSE. Ранняя стадия, без независимых испытаний."
+      },
+      {
+        "repo": "houlette/genealogy-agents",
+        "priority": "P1",
+        "change": "Мультиагентный процесс исследования с GEDCOM, журналом, очередью задач, градацией доказательств и независимой перепроверкой чтения рукописей.",
+        "link": "https://github.com/houlette/genealogy-agents/blob/main/README.md",
+        "components": "Research Workspace · OCR/HTR · Person Resolver · provenance/evidence · API/MCP/agent layer",
+        "action": "Изучить правила оценки источников, отрицательных результатов и согласования агентных изменений. Ранняя стадия, независимого benchmark нет."
+      },
+      {
+        "repo": "AI-Riksarkivet/workbench",
+        "priority": "P1",
+        "change": "Продолжение развития ранее рассмотренного Workbench: README подтверждает разделение explorer, annotator и flows, доступ к lakehouse через API rask.",
+        "link": "https://github.com/AI-Riksarkivet/workbench/blob/main/README.md",
+        "components": "Research Workspace · Indexer · OCR/HTR · provenance/evidence",
+        "action": "Сопоставить новую архитектуру с предыдущим обзором и проверить изменения UI по коммитам; повторной карточкой нового проекта не считать."
+      }
+    ]
+  },
+  {
     "date": "2026-11-18",
     "title": "GitHub Watch — архивные рабочие места, доказательства и поиск персон",
     "summary": "Проверены исходные коммиты, README и LICENSE. Три новые карточки и обновление Gramps Web содержат условия применения и предложения для пилота.",
