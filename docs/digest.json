@@ -43,7 +43,8 @@
         "components": "Research Workspace · Indexer · OCR/HTR · provenance/evidence",
         "action": "Сопоставить новую архитектуру с предыдущим обзором и проверить изменения UI по коммитам; повторной карточкой нового проекта не считать."
       }
-    ]
+    ],
+    "review_url": "review-2026-11-19.html"
   },
   {
     "date": "2026-11-18",
