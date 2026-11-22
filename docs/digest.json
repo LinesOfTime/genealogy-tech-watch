@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-11-22",
+    "title": "Gramps MCP, ResearchZosho и gene-archive — новые архитектурные кандидаты",
+    "summary": "Три новых для мониторинга проекта. Возможности и лицензии сверены с README и LICENSE GitHub; дата появления отдельных функций и независимые испытания не установлены.",
+    "items": [
+      {
+        "repo": "Knuckles-Team/gramps-mcp",
+        "priority": "P1",
+        "change": "Типизированный клиент Gramps Web API, MCP-сервер с маршрутизацией действий и необязательный A2A-агент. Документация описывает 35 функциональных областей.",
+        "link": "https://github.com/Knuckles-Team/gramps-mcp/blob/main/README.md",
+        "components": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · provenance/evidence",
+        "action": "Изучить разграничение прав, безопасную запись и структуру инструментов. MIT; независимые испытания не проводились."
+      },
+      {
+        "repo": "Wyrdsekai/researchzosho",
+        "priority": "P1",
+        "change": "Исследовательский агент для локальных моделей и работы с источниками, с привязкой утверждений к документам и формированием отчётов.",
+        "link": "https://github.com/Wyrdsekai/researchzosho/blob/main/README.md",
+        "components": "Research Workspace · provenance/evidence · API/MCP/agent layer",
+        "action": "Проверить хранение доказательств, обработку противоречий и использование локальных LLM. Apache-2.0; заявления авторов не испытаны."
+      },
+      {
+        "repo": "igormel81/gene_archive",
+        "priority": "P2",
+        "change": "Генератор семейного сайта с деревом, документами и ссылками на источники; есть русскоязычный сценарий использования.",
+        "link": "https://github.com/igormel81/gene_archive/blob/main/README.md",
+        "components": "Research Workspace · provenance/evidence · GEDCOM/data model",
+        "action": "Изучить визуальное представление источников и сомнительных связей. AGPL-3.0: проверить ограничения интеграции в сетевой сервис."
+      }
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "title": "Архивный MCP и многомодельное распознавание рукописей",
+    "summary": "Два новых кандидата для мониторинга: поиск в финских архивных корпусах и согласование результатов нескольких VLM для HTR. Лицензии подтверждены по LICENSE, эффективность не проверена.",
+    "items": [
+      {
+        "repo": "AI-Riksarkivet/kansallisarkisto-mcp",
+        "priority": "P1",
+        "change": "MCP-доступ к поиску по историческим корпусам Финляндии с архивными ссылками и переходом к изображениям.",
+        "link": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp/blob/main/README.md",
+        "components": "Archive Adapter · Research Workspace · provenance/evidence · API/MCP/agent layer",
+        "action": "Изучить модель архивных ссылок, поисковый индекс и применимость принципа для российских архивов. Apache-2.0; права на данные отдельно."
+      },
+      {
+        "repo": "gtw2i/Transcribe-HTR",
+        "priority": "P2",
+        "change": "Веб-приложение для транскрибирования рукописей несколькими VLM, согласования расхождений и извлечения сущностей.",
+        "link": "https://github.com/gtw2i/Transcribe-HTR/blob/main/README.md",
+        "components": "OCR/HTR · Indexer · Person Resolver",
+        "action": "Испытать на размеченных российских метрических книгах и ревизских сказках. BSD-2-Clause; CER/WER независимо не проверялись."
+      }
+    ]
+  },
+  {
     "date": "2026-11-20",
     "title": "GEDCOM MCP Server — контролируемые изменения и журнал исследовательских гипотез",
     "summary": "Архитектурный кандидат: релиз 2.0.0 датирован 1 октября, поэтому не выдаётся за релиз 20 ноября. В ветке разработки описан журнал гипотез и поиск исследовательских пробелов. Лицензия MIT подтверждена; независимые тесты не проводились.",
