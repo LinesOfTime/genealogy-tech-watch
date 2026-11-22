@@ -7837,14 +7837,14 @@
     },
     "practical_priority": {
       "project": "knuckles-team/gramps-mcp",
-      "reviewed_on": "2026-11-04",
+      "reviewed_on": "2026-11-22",
       "method_version": "2026-11-04",
       "role": "MCP-адаптер к данным и исследовательским инструментам",
       "task": "Gramps Web API → MCP/A2A-доступ",
       "scope": "Применимость определяется форматом и языком конкретных данных; национальное покрытие здесь не подтверждается.",
       "input_output": "Gramps Web API → MCP/A2A-доступ",
-      "rationale": "Нужны сервер, runtime credentials и политика доступа; число доменов не гарантирует безопасность записи. Совместимость лицензии кода с правами на данные, модели и зависимости отдельно не подтверждена.",
-      "pilot": "Прочитать запись с ограниченной ролью и сверить возвращённые цитаты с UI без изменения базы.",
+      "rationale": "Исправление схемы не меняет практическую роль адаптера.",
+      "pilot": "Сверить экспорт онтологии с базовой схемой на тестовом дереве.",
       "recheck_trigger": "Проверка указанной пробы, версии, прав доступа и сохранности исходных данных; при расхождениях пересмотреть приоритет.",
       "evidence_level": "E1",
       "independent_test": false,
@@ -7856,10 +7856,10 @@
         "https://api.github.com/repos/knuckles-team/gramps-mcp/contents/LICENSE?ref=2f32c503ce45b7e7e9aefae5cdf1f7789ce75d0c"
       ],
       "priority": "P2",
-      "previous_priority": "P1",
+      "previous_priority": "P2",
       "review_status": "approved",
-      "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
-      "approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "approved_by": "GitHub @LinesOfTime",
+      "approved_at": "2026-11-22T09:08:58Z",
       "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
     },
     "watch_events": [
@@ -7886,6 +7886,49 @@
           "reason": "Независимых испытаний для пересмотра приоритета нет",
           "next_action": "Прочитать запись с ограниченной ролью и сверить возвращённые цитаты с UI без изменения базы."
         }
+      },
+      {
+        "discovery_id": "github:knuckles-team/gramps-mcp:3e91c26feaadf3bb0ff49c0b19b1fb8f806d8270",
+        "date": "2026-11-21",
+        "change": "Gramps MCP использует определения базовой онтологии для семей, событий, мест и цитат; исправление удаляет повторные объявления и добавляет тест схемы.",
+        "previous_state": "Карточка уже существует; прежнее событие описывало переход на общую онтологию.",
+        "new_state": "Gramps MCP использует определения базовой онтологии для семей, событий, мест и цитат; исправление удаляет повторные объявления и добавляет тест схемы.",
+        "significance_reason": "Сверить экспорт онтологии с базовой схемой на тестовом дереве.",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/Knuckles-Team/gramps-mcp/commit/3e91c26feaadf3bb0ff49c0b19b1fb8f806d8270"
+          },
+          {
+            "type": "README",
+            "url": "https://github.com/Knuckles-Team/gramps-mcp/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Knuckles-Team/gramps-mcp/3f2047fee3ce9880f3fd893d4a3a3221ecd546d3/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Knuckles-Team/gramps-mcp/3f2047fee3ce9880f3fd893d4a3a3221ecd546d3/LICENSE"
+          }
+        ],
+        "url": "https://github.com/Knuckles-Team/gramps-mcp/commit/3e91c26feaadf3bb0ff49c0b19b1fb8f806d8270",
+        "claims_vs_verified": {
+          "verified": "Прочитаны README и LICENSE закреплённой ревизии. Проверен diff исправления и добавленный тест.",
+          "author_claims": "Сценарии основаны на документации проекта.",
+          "independent_testing": "Не проводилось."
+        },
+        "risks": [
+          "Изменение относится к схеме онтологии. Работа API и права записи отдельно требуют проверки."
+        ],
+        "license": "MIT",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Knuckles-Team/gramps-mcp/3f2047fee3ce9880f3fd893d4a3a3221ecd546d3/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "reviewed_content_hash": "ac4b92acba9ef98310691f555251bb007265456cb3c7fe94e62ef996c157e9dc"
       }
     ]
   },
@@ -20235,5 +20278,325 @@
         }
       }
     ]
+  },
+  "ai-riksarkivet/kansallisarkisto-mcp": {
+    "watch_events": [
+      {
+        "discovery_id": "github:ai-riksarkivet/kansallisarkisto-mcp:23db8397dc82f6affdad3cd94b441ac5a29ea4d0",
+        "date": "2026-09-28",
+        "change": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
+        "previous_state": "Кандидат присутствует в дайджесте; карточки каталога нет.",
+        "new_state": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
+        "significance_reason": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/LICENSE"
+          }
+        ],
+        "url": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp/blob/main/README.md",
+        "claims_vs_verified": {
+          "verified": "Прочитаны README и LICENSE закреплённой ревизии.",
+          "author_claims": "Сценарии основаны на документации проекта.",
+          "independent_testing": "Не проводилось."
+        },
+        "risks": [
+          "Охват ограничен подключёнными финскими корпусами; доступность снимков зависит от записи."
+        ],
+        "license": "Apache-2.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "reviewed_content_hash": "74acdba7c3ad8cbaa98294b6810a5d1c63565d15da730b34a2c2883a169c1829"
+      }
+    ],
+    "editorial_summary": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
+    "editorial_use_case": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+    "editorial_limitations": "Охват ограничен подключёнными финскими корпусами; доступность снимков зависит от записи.",
+    "project_type": "Архивный / исследовательский сервис",
+    "license": "Apache-2.0",
+    "license_evidence": "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/LICENSE",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-22",
+    "source_evidence": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp/blob/main/README.md",
+    "maturity": "GitHub-релиз v0.3.0.",
+    "profile_provenance": {
+      "discovery_id": "github:ai-riksarkivet/kansallisarkisto-mcp:23db8397dc82f6affdad3cd94b441ac5a29ea4d0",
+      "reviewed_content_hash": "74acdba7c3ad8cbaa98294b6810a5d1c63565d15da730b34a2c2883a169c1829",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp/blob/main/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/LICENSE"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "gtw2i/transcribe-htr": {
+    "watch_events": [
+      {
+        "discovery_id": "github:gtw2i/transcribe-htr:ec10bdfc0a448dcdfc129a27ff50d6888206b5ba",
+        "date": "2026-07-31",
+        "change": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты.",
+        "previous_state": "Кандидат присутствует в дайджесте; карточки каталога нет.",
+        "new_state": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты.",
+        "significance_reason": "Прогнать один размеченный лист метрической книги и вручную сверить имена, даты и места с оригиналом.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/gtw2i/Transcribe-HTR/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/LICENSE"
+          }
+        ],
+        "url": "https://github.com/gtw2i/Transcribe-HTR/blob/main/README.md",
+        "claims_vs_verified": {
+          "verified": "Прочитаны README и LICENSE закреплённой ревизии.",
+          "author_claims": "Сценарии основаны на документации проекта.",
+          "independent_testing": "Не проводилось."
+        },
+        "risks": [
+          "Межмодельное согласие не измеряет точность без эталона. Для облачных API нужны ключи и проверка условий передачи изображений."
+        ],
+        "license": "BSD-2-Clause",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "reviewed_content_hash": "212792df1cdb5fe920b7a05cd36bf0d799402af30d6be2afad9ce2b16481df31"
+      }
+    ],
+    "editorial_summary": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты.",
+    "editorial_use_case": "Прогнать один размеченный лист метрической книги и вручную сверить имена, даты и места с оригиналом.",
+    "editorial_limitations": "Межмодельное согласие не измеряет точность без эталона. Для облачных API нужны ключи и проверка условий передачи изображений.",
+    "project_type": "Готовое приложение",
+    "license": "BSD-2-Clause",
+    "license_evidence": "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/LICENSE",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-22",
+    "source_evidence": "https://github.com/gtw2i/Transcribe-HTR/blob/main/README.md",
+    "maturity": "Доступен исходный код и инструкция развёртывания; GitHub-релизы отсутствуют.",
+    "profile_provenance": {
+      "discovery_id": "github:gtw2i/transcribe-htr:ec10bdfc0a448dcdfc129a27ff50d6888206b5ba",
+      "reviewed_content_hash": "212792df1cdb5fe920b7a05cd36bf0d799402af30d6be2afad9ce2b16481df31",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://github.com/gtw2i/Transcribe-HTR/blob/main/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/LICENSE"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "wyrdsekai/researchzosho": {
+    "watch_events": [
+      {
+        "discovery_id": "github:wyrdsekai/researchzosho:4a8ed0651996eacd32819204374e8b85e6bd7c43",
+        "date": "2026-11-20",
+        "change": "ResearchZosho готовит отчёты со ссылками на источники и хранит результаты поиска для следующих запросов.",
+        "previous_state": "Кандидат присутствует в дайджесте; карточки каталога нет.",
+        "new_state": "ResearchZosho готовит отчёты со ссылками на источники и хранит результаты поиска для следующих запросов.",
+        "significance_reason": "Собрать справку о миграции семьи по открытым источникам и вручную сверить цитаты; доступны локальные и облачные модели.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/Wyrdsekai/researchzosho/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/LICENSE"
+          }
+        ],
+        "url": "https://github.com/Wyrdsekai/researchzosho/blob/main/README.md",
+        "claims_vs_verified": {
+          "verified": "Прочитаны README и LICENSE закреплённой ревизии.",
+          "author_claims": "Сценарии основаны на документации проекта.",
+          "independent_testing": "Не проводилось."
+        },
+        "risks": [
+          "Результаты и ссылки требуют редакторской проверки. Охват российских архивов не установлен."
+        ],
+        "license": "Apache-2.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "reviewed_content_hash": "492b2e1c4b457bcb0acabac11b8f07964a3baecf28f6baaf279d054a34683bce"
+      }
+    ],
+    "editorial_summary": "ResearchZosho готовит отчёты со ссылками на источники и хранит результаты поиска для следующих запросов.",
+    "editorial_use_case": "Собрать справку о миграции семьи по открытым источникам и вручную сверить цитаты; доступны локальные и облачные модели.",
+    "editorial_limitations": "Результаты и ссылки требуют редакторской проверки. Охват российских архивов не установлен.",
+    "project_type": "Исследовательское приложение",
+    "license": "Apache-2.0",
+    "license_evidence": "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/LICENSE",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-22",
+    "source_evidence": "https://github.com/Wyrdsekai/researchzosho/blob/main/README.md",
+    "maturity": "GitHub-релиз v0.8.0.",
+    "profile_provenance": {
+      "discovery_id": "github:wyrdsekai/researchzosho:4a8ed0651996eacd32819204374e8b85e6bd7c43",
+      "reviewed_content_hash": "492b2e1c4b457bcb0acabac11b8f07964a3baecf28f6baaf279d054a34683bce",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://github.com/Wyrdsekai/researchzosho/blob/main/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/LICENSE"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
+  },
+  "igormel81/gene_archive": {
+    "watch_events": [
+      {
+        "discovery_id": "github:igormel81/gene_archive:b6c445c3aed8a265542b99f77ae73970d50f748b",
+        "date": "2026-11-15",
+        "change": "gene_archive создаёт семейный сайт с деревом, сканами и указанием документов, на которых основаны даты и места.",
+        "previous_state": "Кандидат присутствует в дайджесте; карточки каталога нет.",
+        "new_state": "gene_archive создаёт семейный сайт с деревом, сканами и указанием документов, на которых основаны даты и места.",
+        "significance_reason": "Подготовить русскоязычный сайт по небольшой копии дерева и проверить перенос данных через GEDCOM. Доступны также английский, румынский и украинский интерфейсы.",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/igormel81/gene_archive/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/LICENSE"
+          }
+        ],
+        "url": "https://github.com/igormel81/gene_archive/blob/main/README.md",
+        "claims_vs_verified": {
+          "verified": "Прочитаны README и LICENSE закреплённой ревизии.",
+          "author_claims": "Сценарии основаны на документации проекта.",
+          "independent_testing": "Не проводилось."
+        },
+        "risks": [
+          "Перед публикацией проверить, какие сведения о живых людях и документы остаются в выгрузках."
+        ],
+        "license": "AGPL-3.0",
+        "license_evidence": [
+          "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/LICENSE"
+        ],
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "reviewed_content_hash": "d6e8acc07679f20ce66e4fe96f248d5c896880b24635b71826d0bff2275c24a1"
+      }
+    ],
+    "editorial_summary": "gene_archive создаёт семейный сайт с деревом, сканами и указанием документов, на которых основаны даты и места.",
+    "editorial_use_case": "Подготовить русскоязычный сайт по небольшой копии дерева и проверить перенос данных через GEDCOM. Доступны также английский, румынский и украинский интерфейсы.",
+    "editorial_limitations": "Перед публикацией проверить, какие сведения о живых людях и документы остаются в выгрузках.",
+    "project_type": "Готовое приложение",
+    "license": "AGPL-3.0",
+    "license_evidence": "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/LICENSE",
+    "license_status": "См. источники события; независимая проверка не заявлена",
+    "test_status": "Не тестировалось",
+    "verification_basis": "Редакционная проверка источников события; см. историю",
+    "verification_date": "2026-11-22",
+    "source_evidence": "https://github.com/igormel81/gene_archive/blob/main/README.md",
+    "maturity": "GitHub-релиз v0.8.0.",
+    "profile_provenance": {
+      "discovery_id": "github:igormel81/gene_archive:b6c445c3aed8a265542b99f77ae73970d50f748b",
+      "reviewed_content_hash": "d6e8acc07679f20ce66e4fe96f248d5c896880b24635b71826d0bff2275c24a1",
+      "source_urls": [
+        {
+          "type": "README",
+          "url": "https://github.com/igormel81/gene_archive/blob/main/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/README.md"
+        },
+        {
+          "type": "README",
+          "url": "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/LICENSE"
+        }
+      ],
+      "basis": "Начальный редакционный профиль по первоисточникам; не независимое испытание"
+    },
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    }
   }
 }

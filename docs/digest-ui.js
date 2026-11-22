@@ -15,7 +15,7 @@
         (x.previous_state ? `<p class="small">До: ${esc(x.previous_state)}<br>После: ${esc(x.new_state)}</p>` : '') +
         `<p class="small">Компоненты: ${esc(x.components)}</p><p class="small">Действие: ${esc(x.action)}</p>` +
         `<p class="small">${x.review_status === 'approved' ? 'Событие утверждено редактором' : 'Исторический обзор; новая проверка не указана'}</p>` +
-        link(x.link, 'Первоисточник / основание') + ' · ' + `<a href="project.html?repo=${encodeURIComponent(x.repo)}">Исследование →</a>` +
+        link(x.link, 'Первоисточник / основание') + (x.catalog_pending ? '' : ' · ' + `<a href="project.html?repo=${encodeURIComponent(x.repo)}">Исследование →</a>`) +
         (x.source_urls ? '<p class="small">' + WatchUI.sources(x.source_urls) + '</p>' : '') + '</article>').join('') + '</div></section>';
     }).join('') || '<div class="empty">Нет совпадений.</div>';
     $('stats').textContent = `Показано ${visible} событий; выпусков: ${data.length}. Повторные проекты отражают отдельные изменения.`;

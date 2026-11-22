@@ -103,8 +103,9 @@ function count(html, className) { return (html.match(new RegExp('<article class=
   vm.runInContext(read('docs/digest-ui.js'), dg.context);
   const eventCount = digest.reduce((n,d) => n+d.items.length, 0);
   assert.equal(count(dg.get('content').innerHTML,'item'),eventCount);
-  assert.equal((dg.get('content').innerHTML.match(/project.html\?repo=/g)||[]).length,eventCount);
-  for (const day of digest) for (const item of day.items) assert.ok(catalog.some(x =>
+  const linkedItems = digest.flatMap(day => day.items).filter(item => !item.catalog_pending);
+  assert.equal((dg.get('content').innerHTML.match(/project.html\?repo=/g)||[]).length,linkedItems.length);
+  for (const item of linkedItems) assert.ok(catalog.some(x =>
     x.name.toLowerCase() === item.repo.toLowerCase() || x.url.toLowerCase().replace(/\/$/,'').replace('https://github.com/','') === item.repo.toLowerCase()), 'Digest project lookup: ' + item.repo);
   dg.get('q').value='NO_SUCH_EVENT'; dg.get('q').oninput();
   assert.equal(count(dg.get('content').innerHTML,'item'),0);

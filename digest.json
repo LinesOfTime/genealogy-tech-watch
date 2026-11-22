@@ -5,28 +5,101 @@
     "summary": "Три новых для мониторинга проекта. Возможности и лицензии сверены с README и LICENSE GitHub; дата появления отдельных функций и независимые испытания не установлены.",
     "items": [
       {
-        "repo": "Knuckles-Team/gramps-mcp",
+        "repo": "knuckles-team/gramps-mcp",
         "priority": "P1",
-        "change": "Типизированный клиент Gramps Web API, MCP-сервер с маршрутизацией действий и необязательный A2A-агент. Документация описывает 35 функциональных областей.",
-        "link": "https://github.com/Knuckles-Team/gramps-mcp/blob/main/README.md",
+        "change": "Gramps MCP использует определения базовой онтологии для семей, событий, мест и цитат; исправление удаляет повторные объявления и добавляет тест схемы.",
+        "link": "https://github.com/Knuckles-Team/gramps-mcp/commit/3e91c26feaadf3bb0ff49c0b19b1fb8f806d8270",
         "components": "API/MCP/agent layer · GEDCOM/data model · Research Workspace · provenance/evidence",
-        "action": "Изучить разграничение прав, безопасную запись и структуру инструментов. MIT; независимые испытания не проводились."
+        "action": "Сверить экспорт онтологии с базовой схемой на тестовом дереве.",
+        "event_date": "2026-11-21",
+        "significance_reason": "Сверить экспорт онтологии с базовой схемой на тестовом дереве.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "discovery_id": "github:knuckles-team/gramps-mcp:3e91c26feaadf3bb0ff49c0b19b1fb8f806d8270",
+        "source_urls": [
+          {
+            "type": "commit",
+            "url": "https://github.com/Knuckles-Team/gramps-mcp/commit/3e91c26feaadf3bb0ff49c0b19b1fb8f806d8270"
+          },
+          {
+            "type": "README",
+            "url": "https://github.com/Knuckles-Team/gramps-mcp/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Knuckles-Team/gramps-mcp/3f2047fee3ce9880f3fd893d4a3a3221ecd546d3/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Knuckles-Team/gramps-mcp/3f2047fee3ce9880f3fd893d4a3a3221ecd546d3/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=knuckles-team%2Fgramps-mcp",
+        "previous_state": "Карточка уже существует; прежнее событие описывало переход на общую онтологию.",
+        "new_state": "Gramps MCP использует определения базовой онтологии для семей, событий, мест и цитат; исправление удаляет повторные объявления и добавляет тест схемы."
       },
       {
-        "repo": "Wyrdsekai/researchzosho",
-        "priority": "P1",
-        "change": "Исследовательский агент для локальных моделей и работы с источниками, с привязкой утверждений к документам и формированием отчётов.",
+        "repo": "wyrdsekai/researchzosho",
+        "priority": "Не оценён",
+        "change": "ResearchZosho готовит отчёты со ссылками на источники и хранит результаты поиска для следующих запросов.",
         "link": "https://github.com/Wyrdsekai/researchzosho/blob/main/README.md",
         "components": "Research Workspace · provenance/evidence · API/MCP/agent layer",
-        "action": "Проверить хранение доказательств, обработку противоречий и использование локальных LLM. Apache-2.0; заявления авторов не испытаны."
+        "action": "Собрать справку о миграции семьи по открытым источникам и вручную сверить цитаты; доступны локальные и облачные модели.",
+        "event_date": "2026-11-20",
+        "significance_reason": "Собрать справку о миграции семьи по открытым источникам и вручную сверить цитаты; доступны локальные и облачные модели.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "discovery_id": "github:wyrdsekai/researchzosho:4a8ed0651996eacd32819204374e8b85e6bd7c43",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/Wyrdsekai/researchzosho/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=wyrdsekai%2Fresearchzosho",
+        "previous_state": "Кандидат присутствует в дайджесте; карточки каталога нет.",
+        "new_state": "ResearchZosho готовит отчёты со ссылками на источники и хранит результаты поиска для следующих запросов."
       },
       {
         "repo": "igormel81/gene_archive",
-        "priority": "P2",
-        "change": "Генератор семейного сайта с деревом, документами и ссылками на источники; есть русскоязычный сценарий использования.",
+        "priority": "Не оценён",
+        "change": "gene_archive создаёт семейный сайт с деревом, сканами и указанием документов, на которых основаны даты и места.",
         "link": "https://github.com/igormel81/gene_archive/blob/main/README.md",
         "components": "Research Workspace · provenance/evidence · GEDCOM/data model",
-        "action": "Изучить визуальное представление источников и сомнительных связей. AGPL-3.0: проверить ограничения интеграции в сетевой сервис."
+        "action": "Подготовить русскоязычный сайт по небольшой копии дерева и проверить перенос данных через GEDCOM. Доступны также английский, румынский и украинский интерфейсы.",
+        "event_date": "2026-11-15",
+        "significance_reason": "Подготовить русскоязычный сайт по небольшой копии дерева и проверить перенос данных через GEDCOM. Доступны также английский, румынский и украинский интерфейсы.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "discovery_id": "github:igormel81/gene_archive:b6c445c3aed8a265542b99f77ae73970d50f748b",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/igormel81/gene_archive/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=igormel81%2Fgene_archive",
+        "previous_state": "Кандидат присутствует в дайджесте; карточки каталога нет.",
+        "new_state": "gene_archive создаёт семейный сайт с деревом, сканами и указанием документов, на которых основаны даты и места."
       }
     ]
   },
@@ -36,20 +109,66 @@
     "summary": "Два новых кандидата для мониторинга: поиск в финских архивных корпусах и согласование результатов нескольких VLM для HTR. Лицензии подтверждены по LICENSE, эффективность не проверена.",
     "items": [
       {
-        "repo": "AI-Riksarkivet/kansallisarkisto-mcp",
-        "priority": "P1",
-        "change": "MCP-доступ к поиску по историческим корпусам Финляндии с архивными ссылками и переходом к изображениям.",
+        "repo": "ai-riksarkivet/kansallisarkisto-mcp",
+        "priority": "Не оценён",
+        "change": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
         "link": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp/blob/main/README.md",
         "components": "Archive Adapter · Research Workspace · provenance/evidence · API/MCP/agent layer",
-        "action": "Изучить модель архивных ссылок, поисковый индекс и применимость принципа для российских архивов. Apache-2.0; права на данные отдельно."
+        "action": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+        "event_date": "2026-09-28",
+        "significance_reason": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "discovery_id": "github:ai-riksarkivet/kansallisarkisto-mcp:23db8397dc82f6affdad3cd94b441ac5a29ea4d0",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=ai-riksarkivet%2Fkansallisarkisto-mcp",
+        "previous_state": "Кандидат присутствует в дайджесте; карточки каталога нет.",
+        "new_state": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia."
       },
       {
-        "repo": "gtw2i/Transcribe-HTR",
-        "priority": "P2",
-        "change": "Веб-приложение для транскрибирования рукописей несколькими VLM, согласования расхождений и извлечения сущностей.",
+        "repo": "gtw2i/transcribe-htr",
+        "priority": "Не оценён",
+        "change": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты.",
         "link": "https://github.com/gtw2i/Transcribe-HTR/blob/main/README.md",
         "components": "OCR/HTR · Indexer · Person Resolver",
-        "action": "Испытать на размеченных российских метрических книгах и ревизских сказках. BSD-2-Clause; CER/WER независимо не проверялись."
+        "action": "Прогнать один размеченный лист метрической книги и вручную сверить имена, даты и места с оригиналом.",
+        "event_date": "2026-07-31",
+        "significance_reason": "Прогнать один размеченный лист метрической книги и вручную сверить имена, даты и места с оригиналом.",
+        "review_status": "approved",
+        "reviewer": "GitHub @LinesOfTime",
+        "reviewed_at": "2026-11-22T09:08:58Z",
+        "discovery_id": "github:gtw2i/transcribe-htr:ec10bdfc0a448dcdfc129a27ff50d6888206b5ba",
+        "source_urls": [
+          {
+            "type": "README",
+            "url": "https://github.com/gtw2i/Transcribe-HTR/blob/main/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/README.md"
+          },
+          {
+            "type": "README",
+            "url": "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/LICENSE"
+          }
+        ],
+        "research_link": "project.html?repo=gtw2i%2Ftranscribe-htr",
+        "previous_state": "Кандидат присутствует в дайджесте; карточки каталога нет.",
+        "new_state": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты."
       }
     ]
   },
@@ -64,7 +183,8 @@
         "change": "FastMCP-сервер GEDCOM 2.0: девять основных инструментов чтения, поиск персон и родства, источники и доказательства, подготовка и подтверждение изменений через prepare_change/apply_tree_change. В Unreleased добавлены record_research и get_research_gaps; это ещё не подтверждённый стабильный релиз.",
         "link": "https://github.com/sjmatta/gedcom-mcp/blob/main/CHANGELOG.md",
         "components": "GEDCOM/data model · Research Workspace · provenance/evidence · Person Resolver · API/MCP/agent layer",
-        "action": "Изучить журнал гипотез и двухэтапное применение изменений, провести тесты на сложных родственных связях и исходных цитированиях. MIT; зрелость и корректность на российских данных не проверены."
+        "action": "Изучить журнал гипотез и двухэтапное применение изменений, провести тесты на сложных родственных связях и исходных цитированиях. MIT; зрелость и корректность на российских данных не проверены.",
+        "catalog_pending": true
       }
     ]
   },
@@ -79,7 +199,8 @@
         "change": "Навыки Claude Code для Obsidian/Charted Roots: архивные записи с цитированием, исследование родства, проверка и синхронизация GEDCOM, согласование исторических названий мест. README указывает поддержку региональных руководств бывшего СССР.",
         "link": "https://github.com/AntonShevchuk/charted-roots-skills/blob/main/README.md",
         "components": "Research Workspace · Place Resolver/АТД · GEDCOM/data model · provenance/evidence",
-        "action": "Изучить применение навыков и сравнить с ex-USSR; проверить точную атрибуцию заимствования и LICENSE. Ранняя стадия, без независимых испытаний."
+        "action": "Изучить применение навыков и сравнить с ex-USSR; проверить точную атрибуцию заимствования и LICENSE. Ранняя стадия, без независимых испытаний.",
+        "catalog_pending": true
       },
       {
         "repo": "houlette/genealogy-agents",
@@ -87,7 +208,8 @@
         "change": "Мультиагентный процесс исследования с GEDCOM, журналом, очередью задач, градацией доказательств и независимой перепроверкой чтения рукописей.",
         "link": "https://github.com/houlette/genealogy-agents/blob/main/README.md",
         "components": "Research Workspace · OCR/HTR · Person Resolver · provenance/evidence · API/MCP/agent layer",
-        "action": "Изучить правила оценки источников, отрицательных результатов и согласования агентных изменений. Ранняя стадия, независимого benchmark нет."
+        "action": "Изучить правила оценки источников, отрицательных результатов и согласования агентных изменений. Ранняя стадия, независимого benchmark нет.",
+        "catalog_pending": true
       },
       {
         "repo": "AI-Riksarkivet/workbench",

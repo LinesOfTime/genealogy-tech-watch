@@ -2,16 +2,16 @@
   "version": 1,
   "method": "Практический выбор по задаче и роли; аудит сохранённых оценок, без новых баллов и утверждений",
   "counts": {
-    "total": 199,
+    "total": 203,
     "priorities": {
       "P3": 3,
       "P2": 93,
       "P1": 72,
-      "Не оценён": 31
+      "Не оценён": 35
     },
     "states": {
       "reference_issue": 3,
-      "missing": 11,
+      "missing": 15,
       "changed": 0,
       "triaged": 5,
       "proposed": 0,
@@ -25,7 +25,7 @@
       "P3": 19
     },
     "p1_e0": 46,
-    "missing_evaluations": 24,
+    "missing_evaluations": 28,
     "independent_reports": 0
   },
   "states": {
@@ -8179,18 +8179,28 @@
       "assessment_currency": {
         "status": "insufficient",
         "label": "Недостаточно данных",
-        "reason": "Сохранены проверяемые источники исходной оценки. Полная сверка текущих условий доступа, лицензии, входа/результата и пилота не выполнена.",
-        "assessment_approved_at": "2026-11-04T18:26:40.963239+00:00",
-        "assessment_reviewed_on": "2026-11-04",
-        "last_substantive_source_check": "2026-11-04",
+        "reason": "После редакционной проверки изменилось основание оценки; нужна новая сверка.",
+        "assessment_approved_at": "2026-11-22T09:08:58Z",
+        "assessment_reviewed_on": "2026-11-22",
+        "last_substantive_source_check": "2026-11-22",
         "reviewed_at": "2026-11-09",
         "sources": [
           {
-            "checked_at": "2026-11-04",
+            "checked_at": "2026-11-22",
             "kind": "assessment_basis",
             "urls": [
               "https://api.github.com/repos/knuckles-team/gramps-mcp/contents/README.md?ref=2f32c503ce45b7e7e9aefae5cdf1f7789ce75d0c",
               "https://api.github.com/repos/knuckles-team/gramps-mcp/contents/LICENSE?ref=2f32c503ce45b7e7e9aefae5cdf1f7789ce75d0c"
+            ]
+          },
+          {
+            "checked_at": "2026-11-22T09:08:58Z",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/Knuckles-Team/gramps-mcp/commit/3e91c26feaadf3bb0ff49c0b19b1fb8f806d8270",
+              "https://github.com/Knuckles-Team/gramps-mcp/blob/main/README.md",
+              "https://raw.githubusercontent.com/Knuckles-Team/gramps-mcp/3f2047fee3ce9880f3fd893d4a3a3221ecd546d3/README.md",
+              "https://raw.githubusercontent.com/Knuckles-Team/gramps-mcp/3f2047fee3ce9880f3fd893d4a3a3221ecd546d3/LICENSE"
             ]
           }
         ],
@@ -8206,7 +8216,7 @@
       },
       "priority_original": "A",
       "state": "practical_approved",
-      "legacy_state": "triaged",
+      "legacy_state": "changed",
       "state_label": "Практический приоритет утверждён",
       "role": {
         "id": "unknown",
@@ -8222,9 +8232,9 @@
       "license_state": null,
       "integration_effort": null,
       "reviewed_at": "2026-10-28",
-      "latest_source_review": null,
+      "latest_source_review": "2026-11-22",
       "rationale": "Текущий приоритет сохранён до проверки первоисточников; нельзя обосновать изменение по одному каталогу.",
-      "next_action": "Прочитать запись с ограниченной ролью и сверить возвращённые цитаты с UI без изменения базы.",
+      "next_action": "Сверить экспорт онтологии с базовой схемой на тестовом дереве.",
       "source_urls": [
         "https://github.com/knuckles-team/gramps-mcp"
       ],
@@ -8236,7 +8246,7 @@
       "practical_proposal": {
         "project": "knuckles-team/gramps-mcp",
         "review_status": "approved",
-        "reviewed_on": "2026-11-04",
+        "reviewed_on": "2026-11-22",
         "method_version": "2026-11-04",
         "previous": {
           "priority": "P1",
@@ -8267,8 +8277,8 @@
         "task": "Gramps Web API → MCP/A2A-доступ",
         "scope": "Применимость определяется форматом и языком конкретных данных; национальное покрытие здесь не подтверждается.",
         "input_output": "Gramps Web API → MCP/A2A-доступ",
-        "rationale": "Нужны сервер, runtime credentials и политика доступа; число доменов не гарантирует безопасность записи. Совместимость лицензии кода с правами на данные, модели и зависимости отдельно не подтверждена.",
-        "pilot": "Прочитать запись с ограниченной ролью и сверить возвращённые цитаты с UI без изменения базы.",
+        "rationale": "Исправление схемы не меняет практическую роль адаптера.",
+        "pilot": "Сверить экспорт онтологии с базовой схемой на тестовом дереве.",
         "recheck_trigger": "Проверка указанной пробы, версии, прав доступа и сохранности исходных данных; при расхождениях пересмотреть приоритет.",
         "evidence_level": "E1",
         "independent_test": false,
@@ -8279,8 +8289,8 @@
           "https://api.github.com/repos/knuckles-team/gramps-mcp/contents/README.md?ref=2f32c503ce45b7e7e9aefae5cdf1f7789ce75d0c",
           "https://api.github.com/repos/knuckles-team/gramps-mcp/contents/LICENSE?ref=2f32c503ce45b7e7e9aefae5cdf1f7789ce75d0c"
         ],
-        "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
-        "approved_at": "2026-11-04T18:26:40.963239+00:00"
+        "approved_by": "GitHub @LinesOfTime",
+        "approved_at": "2026-11-22T09:08:58Z"
       }
     },
     {
@@ -22128,6 +22138,238 @@
       "integration_effort": null,
       "reviewed_at": null,
       "latest_source_review": "2026-11-18",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "ai-riksarkivet/kansallisarkisto-mcp",
+      "url": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-22",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-22T09:08:58Z",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp/blob/main/README.md",
+              "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/README.md",
+              "https://raw.githubusercontent.com/AI-Riksarkivet/kansallisarkisto-mcp/23db8397dc82f6affdad3cd94b441ac5a29ea4d0/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный / исследовательский сервис"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-22",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "gtw2i/transcribe-htr",
+      "url": "https://github.com/gtw2i/Transcribe-HTR",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-22",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-22T09:08:58Z",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/gtw2i/Transcribe-HTR/blob/main/README.md",
+              "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/README.md",
+              "https://raw.githubusercontent.com/gtw2i/Transcribe-HTR/ec10bdfc0a448dcdfc129a27ff50d6888206b5ba/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-22",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "wyrdsekai/researchzosho",
+      "url": "https://github.com/Wyrdsekai/researchzosho",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-22",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-22T09:08:58Z",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/Wyrdsekai/researchzosho/blob/main/README.md",
+              "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/README.md",
+              "https://raw.githubusercontent.com/Wyrdsekai/researchzosho/4a8ed0651996eacd32819204374e8b85e6bd7c43/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательское приложение"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-22",
+      "rationale": "Обоснование оценки отсутствует.",
+      "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
+      "source_urls": [],
+      "flags": [],
+      "independent_report": null,
+      "evaluation_status": null,
+      "practical_proposal": null
+    },
+    {
+      "project": "igormel81/gene_archive",
+      "url": "https://github.com/igormel81/gene_archive",
+      "legacy_priority": "Не оценён",
+      "classification": {
+        "type_label": "Не определено"
+      },
+      "assessment_currency": {
+        "status": "insufficient",
+        "label": "Недостаточно данных",
+        "reason": "Утверждённая практическая оценка отсутствует.",
+        "assessment_approved_at": null,
+        "assessment_reviewed_on": null,
+        "last_substantive_source_check": "2026-11-22",
+        "reviewed_at": null,
+        "sources": [
+          {
+            "checked_at": "2026-11-22T09:08:58Z",
+            "kind": "watch_source_review",
+            "urls": [
+              "https://github.com/igormel81/gene_archive/blob/main/README.md",
+              "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/README.md",
+              "https://raw.githubusercontent.com/igormel81/gene_archive/b6c445c3aed8a265542b99f77ae73970d50f748b/LICENSE"
+            ]
+          }
+        ],
+        "pending_proposal": null,
+        "evidence_level": null,
+        "assessment_sources": []
+      },
+      "practical_priority": null,
+      "priority_original": "Не оценён",
+      "state": "missing",
+      "legacy_state": "missing",
+      "state_label": "Оценка отсутствует",
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "evidence_level": null,
+      "maturity": null,
+      "license_state": null,
+      "integration_effort": null,
+      "reviewed_at": null,
+      "latest_source_review": "2026-11-22",
       "rationale": "Обоснование оценки отсутствует.",
       "next_action": "Выбрать задачу и роль проекта; проверить первоисточники и условия небольшой пробы до назначения приоритета.",
       "source_urls": [],

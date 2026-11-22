@@ -53,5 +53,10 @@
   "github:ai-riksarkivet/workbench:bcbec0eabcfa79d99921d04583afcbf9132906d7": "f227fa893995eab6859be5ac60663149ef1e33d111043da505fd9c30186cbe62",
   "github:gramps-project/gramps-web:fa2b45b758d0c3c1617a197d613a35ada2c1e96f": "0d3bb1ce6a0bef266c93159659fd0db3187890ba4eadc49fad17838be3df6c95",
   "github:nbadino/tabularium:74ce04e6ecbe7a00de035829676c8307d24803b3": "7fb4e6aa349276a05dcfc0846584b63be43efdc671558b774771c97d7f7141fa",
-  "github:rodoslovje/genealogical-index:dc334cf4886ee3e4d8c70985f835f89ca185e2fe": "96868bc5f354b07e479f538c9452ada2b9bccd6d5495222a6e1b3b07417c8303"
+  "github:rodoslovje/genealogical-index:dc334cf4886ee3e4d8c70985f835f89ca185e2fe": "96868bc5f354b07e479f538c9452ada2b9bccd6d5495222a6e1b3b07417c8303",
+  "github:ai-riksarkivet/kansallisarkisto-mcp:23db8397dc82f6affdad3cd94b441ac5a29ea4d0": "74acdba7c3ad8cbaa98294b6810a5d1c63565d15da730b34a2c2883a169c1829",
+  "github:gtw2i/transcribe-htr:ec10bdfc0a448dcdfc129a27ff50d6888206b5ba": "212792df1cdb5fe920b7a05cd36bf0d799402af30d6be2afad9ce2b16481df31",
+  "github:knuckles-team/gramps-mcp:3e91c26feaadf3bb0ff49c0b19b1fb8f806d8270": "ac4b92acba9ef98310691f555251bb007265456cb3c7fe94e62ef996c157e9dc",
+  "github:wyrdsekai/researchzosho:4a8ed0651996eacd32819204374e8b85e6bd7c43": "492b2e1c4b457bcb0acabac11b8f07964a3baecf28f6baaf279d054a34683bce",
+  "github:igormel81/gene_archive:b6c445c3aed8a265542b99f77ae73970d50f748b": "d6e8acc07679f20ce66e4fe96f248d5c896880b24635b71826d0bff2275c24a1"
 }

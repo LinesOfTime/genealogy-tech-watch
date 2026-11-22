@@ -1,7 +1,7 @@
 {
   "version": 1,
   "method": "Лексическое соответствие существующим редакционным полям; не испытание и не рейтинг качества",
-  "source_hash": "9aac56ec28b52fe49639fde0be73d0ec5b8fb339ffb5b8565342841ad21aa86b",
+  "source_hash": "e22405fff543ae82eb2d82d030b89e4a5f01842992497e14586617f63353a560",
   "tasks": [
     {
       "id": "transcribe",
@@ -5245,14 +5245,14 @@
       ],
       "practical_priority": {
         "project": "knuckles-team/gramps-mcp",
-        "reviewed_on": "2026-11-04",
+        "reviewed_on": "2026-11-22",
         "method_version": "2026-11-04",
         "role": "MCP-адаптер к данным и исследовательским инструментам",
         "task": "Gramps Web API → MCP/A2A-доступ",
         "scope": "Применимость определяется форматом и языком конкретных данных; национальное покрытие здесь не подтверждается.",
         "input_output": "Gramps Web API → MCP/A2A-доступ",
-        "rationale": "Нужны сервер, runtime credentials и политика доступа; число доменов не гарантирует безопасность записи. Совместимость лицензии кода с правами на данные, модели и зависимости отдельно не подтверждена.",
-        "pilot": "Прочитать запись с ограниченной ролью и сверить возвращённые цитаты с UI без изменения базы.",
+        "rationale": "Исправление схемы не меняет практическую роль адаптера.",
+        "pilot": "Сверить экспорт онтологии с базовой схемой на тестовом дереве.",
         "recheck_trigger": "Проверка указанной пробы, версии, прав доступа и сохранности исходных данных; при расхождениях пересмотреть приоритет.",
         "evidence_level": "E1",
         "independent_test": false,
@@ -5264,10 +5264,10 @@
           "https://api.github.com/repos/knuckles-team/gramps-mcp/contents/LICENSE?ref=2f32c503ce45b7e7e9aefae5cdf1f7789ce75d0c"
         ],
         "priority": "P2",
-        "previous_priority": "P1",
+        "previous_priority": "P2",
         "review_status": "approved",
-        "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
-        "approved_at": "2026-11-04T18:26:40.963239+00:00",
+        "approved_by": "GitHub @LinesOfTime",
+        "approved_at": "2026-11-22T09:08:58Z",
         "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
       },
       "role": {
@@ -17931,6 +17931,352 @@
           }
         }
       ]
+    },
+    {
+      "task": "transcribe",
+      "project": "ai-riksarkivet/kansallisarkisto-mcp",
+      "url": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/kansallisarkisto-mcp",
+          "field": "use_case",
+          "excerpt": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/kansallisarkisto-mcp",
+          "field": "editorial_use_case",
+          "excerpt": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный / исследовательский сервис"
+        }
+      },
+      "purpose": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
+      "use_case": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+      "license": "Apache-2.0",
+      "limitations": "Охват ограничен подключёнными финскими корпусами; доступность снимков зависит от записи.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Возьмите страницу с известной расшифровкой. Сравните ошибки имён, дат и порядок строк; сохраните оригинал рядом с результатом."
+    },
+    {
+      "task": "research",
+      "project": "ai-riksarkivet/kansallisarkisto-mcp",
+      "url": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/kansallisarkisto-mcp",
+          "field": "components",
+          "excerpt": "Archive Adapter · Research Workspace · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный / исследовательский сервис"
+        }
+      },
+      "purpose": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
+      "use_case": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+      "license": "Apache-2.0",
+      "limitations": "Охват ограничен подключёнными финскими корпусами; доступность снимков зависит от записи.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "agents",
+      "project": "ai-riksarkivet/kansallisarkisto-mcp",
+      "url": "https://github.com/AI-Riksarkivet/kansallisarkisto-mcp",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/kansallisarkisto-mcp",
+          "field": "description",
+          "excerpt": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "ai-riksarkivet/kansallisarkisto-mcp",
+          "field": "components",
+          "excerpt": "Archive Adapter · Research Workspace · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "ai-riksarkivet/kansallisarkisto-mcp",
+          "field": "editorial_summary",
+          "excerpt": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "unknown",
+        "label": "Роль требует уточнения",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Архивный / исследовательский сервис"
+        }
+      },
+      "purpose": "kansallisarkisto-mcp даёт полнотекстовый поиск по историческим корпусам Национального архива Финляндии со ссылками на записи и изображения Astia.",
+      "use_case": "Искать упоминания семьи в финских судебных книгах и сверять транскрипции с образами документов.",
+      "license": "Apache-2.0",
+      "limitations": "Охват ограничен подключёнными финскими корпусами; доступность снимков зависит от записи.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "transcribe",
+      "project": "gtw2i/transcribe-htr",
+      "url": "https://github.com/gtw2i/Transcribe-HTR",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gtw2i/transcribe-htr",
+          "field": "description",
+          "excerpt": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "gtw2i/transcribe-htr",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Person Resolver",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "gtw2i/transcribe-htr",
+          "field": "editorial_summary",
+          "excerpt": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "purpose": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты.",
+      "use_case": "Прогнать один размеченный лист метрической книги и вручную сверить имена, даты и места с оригиналом.",
+      "license": "BSD-2-Clause",
+      "limitations": "Межмодельное согласие не измеряет точность без эталона. Для облачных API нужны ключи и проверка условий передачи изображений.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Возьмите страницу с известной расшифровкой. Сравните ошибки имён, дат и порядок строк; сохраните оригинал рядом с результатом."
+    },
+    {
+      "task": "resolve",
+      "project": "gtw2i/transcribe-htr",
+      "url": "https://github.com/gtw2i/Transcribe-HTR",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "gtw2i/transcribe-htr",
+          "field": "components",
+          "excerpt": "OCR/HTR · Indexer · Person Resolver",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "purpose": "Transcribe-HTR сравнивает транскрипции рукописей несколькими моделями, отмечает расхождения и экспортирует результаты.",
+      "use_case": "Прогнать один размеченный лист метрической книги и вручную сверить имена, даты и места с оригиналом.",
+      "license": "BSD-2-Clause",
+      "limitations": "Межмодельное согласие не измеряет точность без эталона. Для облачных API нужны ключи и проверка условий передачи изображений.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "На копии данных проверьте известный дубль и двух разных однофамильцев. Сравните источники и убедитесь, что ошибочное объединение можно отменить."
+    },
+    {
+      "task": "research",
+      "project": "wyrdsekai/researchzosho",
+      "url": "https://github.com/Wyrdsekai/researchzosho",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "wyrdsekai/researchzosho",
+          "field": "components",
+          "excerpt": "Research Workspace · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательское приложение"
+        }
+      },
+      "purpose": "ResearchZosho готовит отчёты со ссылками на источники и хранит результаты поиска для следующих запросов.",
+      "use_case": "Собрать справку о миграции семьи по открытым источникам и вручную сверить цитаты; доступны локальные и облачные модели.",
+      "license": "Apache-2.0",
+      "limitations": "Результаты и ссылки требуют редакторской проверки. Охват российских архивов не установлен.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "agents",
+      "project": "wyrdsekai/researchzosho",
+      "url": "https://github.com/Wyrdsekai/researchzosho",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "wyrdsekai/researchzosho",
+          "field": "components",
+          "excerpt": "Research Workspace · provenance/evidence · API/MCP/agent layer",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Исследовательское приложение"
+        }
+      },
+      "purpose": "ResearchZosho готовит отчёты со ссылками на источники и хранит результаты поиска для следующих запросов.",
+      "use_case": "Собрать справку о миграции семьи по открытым источникам и вручную сверить цитаты; доступны локальные и облачные модели.",
+      "license": "Apache-2.0",
+      "limitations": "Результаты и ссылки требуют редакторской проверки. Охват российских архивов не установлен.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Начните с чтения одной записи на тестовых данных. Перед записью проверьте права, подтверждение изменения, резервную копию и способ восстановления."
+    },
+    {
+      "task": "research",
+      "project": "igormel81/gene_archive",
+      "url": "https://github.com/igormel81/gene_archive",
+      "status": "candidate",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "igormel81/gene_archive",
+          "field": "components",
+          "excerpt": "Research Workspace · provenance/evidence · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "purpose": "gene_archive создаёт семейный сайт с деревом, сканами и указанием документов, на которых основаны даты и места.",
+      "use_case": "Подготовить русскоязычный сайт по небольшой копии дерева и проверить перенос данных через GEDCOM. Доступны также английский, румынский и украинский интерфейсы.",
+      "license": "AGPL-3.0",
+      "limitations": "Перед публикацией проверить, какие сведения о живых людях и документы остаются в выгрузках.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Проследите одно утверждение до документа и страницы. Проверьте, что цитата, гипотеза, исправление и противоречащие сведения сохраняются раздельно."
+    },
+    {
+      "task": "gedcom",
+      "project": "igormel81/gene_archive",
+      "url": "https://github.com/igormel81/gene_archive",
+      "status": "editorial",
+      "evidence": [
+        {
+          "file": "catalog.json",
+          "key": "igormel81/gene_archive",
+          "field": "use_case",
+          "excerpt": "Подготовить русскоязычный сайт по небольшой копии дерева и проверить перенос данных через GEDCOM. Доступны также английский, румынский и украинский интерфейсы.",
+          "basis": "Редакционное описание/сценарий"
+        },
+        {
+          "file": "catalog.json",
+          "key": "igormel81/gene_archive",
+          "field": "components",
+          "excerpt": "Research Workspace · provenance/evidence · GEDCOM/data model",
+          "basis": "Компонент каталога"
+        },
+        {
+          "file": "docs/research.json",
+          "key": "igormel81/gene_archive",
+          "field": "editorial_use_case",
+          "excerpt": "Подготовить русскоязычный сайт по небольшой копии дерева и проверить перенос данных через GEDCOM. Доступны также английский, румынский и украинский интерфейсы.",
+          "basis": "Редакционное описание/сценарий"
+        }
+      ],
+      "practical_priority": null,
+      "role": {
+        "id": "tool",
+        "label": "Инструменты и библиотеки",
+        "source": {
+          "file": "docs/research.json",
+          "field": "project_type",
+          "excerpt": "Готовое приложение"
+        }
+      },
+      "purpose": "gene_archive создаёт семейный сайт с деревом, сканами и указанием документов, на которых основаны даты и места.",
+      "use_case": "Подготовить русскоязычный сайт по небольшой копии дерева и проверить перенос данных через GEDCOM. Доступны также английский, румынский и украинский интерфейсы.",
+      "license": "AGPL-3.0",
+      "limitations": "Перед публикацией проверить, какие сведения о живых людях и документы остаются в выгрузках.",
+      "test_status": "Не тестировалось",
+      "russia_applicability": "Не оценено",
+      "usage_context": null,
+      "next_check": "Используйте копию GEDCOM. Сравните до и после количество людей, связи, даты, ссылки на источники и неподдержанные поля; сохраните исходный файл."
     }
   ]
 }
