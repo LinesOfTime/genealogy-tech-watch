@@ -13648,7 +13648,16 @@
     "test_status": "Не тестировалось",
     "source": "https://github.com/ianderso/gramps-evidence-mcp",
     "status": "Дополнение из GitHub Watch",
-    "history": [],
+    "history": [
+      {
+        "discovery_id": "editorial-2026-11-24-ianderso/gramps-evidence-mcp",
+        "date": "2026-11-24",
+        "change": "MCP для Gramps с контролем источников, аудитом неподтверждённых фактов и отдельным цитированием связей. MIT по предыдущему обзору; независимого запуска нет.",
+        "url": "https://github.com/ianderso/gramps-evidence-mcp",
+        "review_status": "source-linked-not-pipeline-approved",
+        "independent_test": false
+      }
+    ],
     "origin": "GitHub Watch",
     "components": [
       "provenance/evidence",
@@ -13776,7 +13785,41 @@
         "https://api.github.com/repos/ianderso/gramps-evidence-mcp/contents/README.md?ref=77aceea16b0cf48bd51c3adcf476bc908bd5d086",
         "https://api.github.com/repos/ianderso/gramps-evidence-mcp/contents/LICENSE?ref=77aceea16b0cf48bd51c3adcf476bc908bd5d086"
       ]
-    }
+    },
+    "editorial_merge_history": [
+      {
+        "date": "2026-11-25",
+        "reason": "Дубликат URL; сохранена утверждённая оценка исходной карточки.",
+        "merged_card": {
+          "name": "ianderso/gramps-evidence-mcp",
+          "url": "https://github.com/ianderso/gramps-evidence-mcp",
+          "section": "ИИ, агенты и поиск",
+          "description": "MCP для Gramps с контролем источников, аудитом неподтверждённых фактов и отдельным цитированием связей. MIT по предыдущему обзору; независимого запуска нет.",
+          "use_case": "Изучить принципы контролируемой записи и аудита доказательств.",
+          "limitations": "Редакционный кандидат по обзору 2026-11-24; первоисточник повторно не проверен, независимых испытаний нет.",
+          "license": "Требует повторной проверки",
+          "license_status": "Предварительная оценка",
+          "priority": "P1",
+          "verification": "Редакционный кандидат по обзору 2026-11-24; первоисточник повторно не проверен, независимых испытаний нет.",
+          "verified_at": "",
+          "test_status": "Не тестировалось независимо",
+          "source": "https://github.com/ianderso/gramps-evidence-mcp",
+          "status": "Кандидат GitHub Watch",
+          "history": [
+            {
+              "discovery_id": "editorial-2026-11-24-ianderso/gramps-evidence-mcp",
+              "date": "2026-11-24",
+              "change": "MCP для Gramps с контролем источников, аудитом неподтверждённых фактов и отдельным цитированием связей. MIT по предыдущему обзору; независимого запуска нет.",
+              "url": "https://github.com/ianderso/gramps-evidence-mcp",
+              "review_status": "source-linked-not-pipeline-approved",
+              "independent_test": false
+            }
+          ],
+          "origin": "GitHub Watch",
+          "priority_status": "Предварительный"
+        }
+      }
+    ]
   },
   {
     "name": "gramps-mcp-dotnet",
@@ -16638,34 +16681,6 @@
         "https://api.github.com/repos/htrmopo/htrmopo/contents/LICENSE?ref=d6e193ff320d58c35fb2b5544f1a4618a33ea282"
       ]
     }
-  },
-  {
-    "name": "ianderso/gramps-evidence-mcp",
-    "url": "https://github.com/ianderso/gramps-evidence-mcp",
-    "section": "ИИ, агенты и поиск",
-    "description": "MCP для Gramps с контролем источников, аудитом неподтверждённых фактов и отдельным цитированием связей. MIT по предыдущему обзору; независимого запуска нет.",
-    "use_case": "Изучить принципы контролируемой записи и аудита доказательств.",
-    "limitations": "Редакционный кандидат по обзору 2026-11-24; первоисточник повторно не проверен, независимых испытаний нет.",
-    "license": "Требует повторной проверки",
-    "license_status": "Предварительная оценка",
-    "priority": "P1",
-    "verification": "Редакционный кандидат по обзору 2026-11-24; первоисточник повторно не проверен, независимых испытаний нет.",
-    "verified_at": "",
-    "test_status": "Не тестировалось независимо",
-    "source": "https://github.com/ianderso/gramps-evidence-mcp",
-    "status": "Кандидат GitHub Watch",
-    "history": [
-      {
-        "discovery_id": "editorial-2026-11-24-ianderso/gramps-evidence-mcp",
-        "date": "2026-11-24",
-        "change": "MCP для Gramps с контролем источников, аудитом неподтверждённых фактов и отдельным цитированием связей. MIT по предыдущему обзору; независимого запуска нет.",
-        "url": "https://github.com/ianderso/gramps-evidence-mcp",
-        "review_status": "source-linked-not-pipeline-approved",
-        "independent_test": false
-      }
-    ],
-    "origin": "GitHub Watch",
-    "priority_status": "Предварительный"
   },
   {
     "name": "igorkauf/raisa-mcp",
