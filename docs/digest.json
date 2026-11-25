@@ -5,13 +5,12 @@
     "summary": "Три новых для мониторинга кандидата; не обязательно новые релизы. Независимые испытания не проводились.",
     "items": [
       {
-        "repo": "UCSB-AMPLab/zasqua",
+        "repo": "ucsb-amplab/zasqua",
         "priority": "P1",
         "change": "Статическая публикация архивов, поиск по OCR, IIIF и справочники сущностей. Масштаб демонстрации (106 тыс. описаний и 41 млн фрагментов изображений) заявлен авторами. AGPL-3.0.",
         "link": "https://github.com/UCSB-AMPLab/zasqua",
         "components": "Archive Adapter · Research Workspace · Indexer · Place Resolver/АТД",
-        "action": "Изучить отделение исследовательской базы от автономной публикации; проверить лицензионную совместимость.",
-        "catalog_pending": true
+        "action": "Изучить отделение исследовательской базы от автономной публикации; проверить лицензионную совместимость."
       },
       {
         "repo": "bucklo/riksarkivet-mcp",
@@ -19,17 +18,15 @@
         "change": "Независимый ранний MCP-адаптер шведского архива: поиск прихода, серии, тома и страницы через API/IIIF. MIT по предыдущему обзору.",
         "link": "https://github.com/bucklo/riksarkivet-mcp",
         "components": "Archive Adapter · Place Resolver/АТД · provenance/evidence · API/MCP/agent layer",
-        "action": "Изучить контракты архивного поиска; запуск не проверен.",
-        "catalog_pending": true
+        "action": "Изучить контракты архивного поиска; запуск не проверен."
       },
       {
-        "repo": "n1kozor/Tree-Monk",
+        "repo": "n1kozor/tree-monk",
         "priority": "P2",
         "change": "Локальное генеалогическое приложение: SQLite, GEDCOM, карты, журнал и доска исследований. Заявлено некоммерческое использование.",
         "link": "https://github.com/n1kozor/Tree-Monk",
         "components": "Research Workspace · GEDCOM/data model · Place Resolver/АТД",
-        "action": "Изучить интерфейс; не заимствовать код до уточнения лицензии.",
-        "catalog_pending": true
+        "action": "Изучить интерфейс; не заимствовать код до уточнения лицензии."
       }
     ]
   },
@@ -44,17 +41,15 @@
         "change": "MCP для Gramps с контролем источников, аудитом неподтверждённых фактов и отдельным цитированием связей. MIT по предыдущему обзору; независимого запуска нет.",
         "link": "https://github.com/ianderso/gramps-evidence-mcp",
         "components": "provenance/evidence · GEDCOM/data model · Person Resolver · API/MCP/agent layer",
-        "action": "Изучить принципы контролируемой записи и аудита доказательств.",
-        "catalog_pending": true
+        "action": "Изучить принципы контролируемой записи и аудита доказательств."
       },
       {
-        "repo": "mhumphries2323/Archive_Studio",
+        "repo": "mhumphries2323/archive_studio",
         "priority": "P1",
         "change": "Среда транскрипции, версий текста и междокументного согласования сущностей. README указывает NonCommercial, что расходится с Apache-2.0 в предыдущем обзоре.",
         "link": "https://github.com/mhumphries2323/Archive_Studio",
         "components": "Research Workspace · OCR/HTR · Indexer · Person Resolver · Place Resolver/АТД",
-        "action": "Изучить рабочий процесс; не рекомендовать повторное использование кода до выяснения лицензии.",
-        "catalog_pending": true
+        "action": "Изучить рабочий процесс; не рекомендовать повторное использование кода до выяснения лицензии."
       }
     ]
   },
@@ -64,13 +59,12 @@
     "summary": "Один исследовательский кандидат: адаптация HTR к новому стилю письма и языковая посткоррекция. P1 — изучить и испытать; независимых результатов для русской скорописи нет.",
     "items": [
       {
-        "repo": "FIorentI/DRA-HTR-Disentangling-Representation-and-Adaptation-for-Handwritten-Text-Recognition",
+        "repo": "fiorenti/dra-htr-disentangling-representation-and-adaptation-for-handwritten-text-recognition",
         "priority": "P1",
         "change": "Опубликован исследовательский код DRA-HTR/DRAL-HTR: адаптация HTR на размеченном исходном корпусе и неразмеченном целевом, с необязательной коррекцией Qwen. Заявленное авторами снижение CER на 13,52 п.п. относительно базового метода адаптации и ещё на 2,16 п.п. после коррекции не проверено независимо; на русских рукописях результатов нет. Лицензия кода не установлена.",
         "link": "https://github.com/FIorentI/DRA-HTR-Disentangling-Representation-and-Adaptation-for-Handwritten-Text-Recognition",
         "components": "OCR/HTR · Indexer",
-        "action": "Изучить; провести пилот на размеченных строках ревизских сказок и метрических книг, измерить CER до и после коррекции. Исследовательский прототип, права на повторное использование кода уточнить.",
-        "catalog_pending": true
+        "action": "Изучить; провести пилот на размеченных строках ревизских сказок и метрических книг, измерить CER до и после коррекции. Исследовательский прототип, права на повторное использование кода уточнить."
       }
     ]
   },
