@@ -20662,6 +20662,39 @@
     "priority": "P1",
     "test_status": "Не тестировалось независимо",
     "source_evidence": "https://github.com/ianderso/gramps-evidence-mcp",
-    "guide_excerpt": "Назначение: MCP для Gramps с контролем источников, аудитом неподтверждённых фактов и отдельным цитированием связей. MIT по предыдущему обзору; независимого запуска нет.\nСценарий: Изучить принципы контролируемой записи и аудита доказательств."
+    "guide_excerpt": "Назначение: MCP для Gramps с контролем источников, аудитом неподтверждённых фактов и отдельным цитированием связей. MIT по предыдущему обзору; независимого запуска нет.\nСценарий: Изучить принципы контролируемой записи и аудита доказательств.",
+    "russia_applicability": {
+      "rating": "Не оценено",
+      "original_line": null,
+      "source": null,
+      "basis": "Нет оценки в путеводителе"
+    },
+    "practical_priority": {
+      "project": "Gramps Evidence MCP",
+      "reviewed_on": "2026-11-04",
+      "method_version": "2026-11-04",
+      "role": "MCP-адаптер к данным и исследовательским инструментам",
+      "task": "Дерево Gramps и GEDCOM → цитируемые агентные операции",
+      "scope": "Применимость определяется форматом и языком конкретных данных; национальное покрытие здесь не подтверждается.",
+      "input_output": "Дерево Gramps и GEDCOM → цитируемые агентные операции",
+      "rationale": "Нужны совместимый сервер, права и проверка write-guards; число инструментов не гарантирует сохранность. Совместимость лицензии кода с правами на данные, модели и зависимости отдельно не подтверждена.",
+      "pilot": "Сначала read-only сверить семью, затем на копии проверить отказ от утверждения без цитаты.",
+      "recheck_trigger": "Проверка указанной пробы, версии, прав доступа и сохранности исходных данных; при расхождениях пересмотреть приоритет.",
+      "evidence_level": "E1",
+      "independent_test": false,
+      "license_review": "document_read",
+      "evidence_file": "data/evidence/priority-2026-11-04/review-Gramps%20Evidence%20MCP.json",
+      "evidence_sha256": "d3e26ce9175a3f5e9c7a0ce789a092f601ff1093865562833a164427b792c5bc",
+      "source_urls": [
+        "https://api.github.com/repos/ianderso/gramps-evidence-mcp/contents/README.md?ref=77aceea16b0cf48bd51c3adcf476bc908bd5d086",
+        "https://api.github.com/repos/ianderso/gramps-evidence-mcp/contents/LICENSE?ref=77aceea16b0cf48bd51c3adcf476bc908bd5d086"
+      ],
+      "priority": "P2",
+      "previous_priority": "P1",
+      "review_status": "approved",
+      "approved_by": "Пользователь LinesOfTime: публикация показанной полной переоценки",
+      "approved_at": "2026-11-04T18:26:40.963239+00:00",
+      "approval_package_hash": "7c1ec4121fcec3631b5b42a4219c13aecdc9bcd50e9aadaa28e72d2f3d4ba6e3"
+    }
   }
 }
