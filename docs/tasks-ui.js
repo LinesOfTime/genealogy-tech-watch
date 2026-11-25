@@ -1,9 +1,8 @@
 (async()=>{
-  const {esc}=WatchUI,$=id=>document.getElementById(id);
+  const $=id=>document.getElementById(id);
   try {
-    const response=await fetch('task-matches.json',{cache:'no-store'});
-    if(!response.ok)throw Error('Не удалось загрузить основания подбора');
-    const data=await response.json();
+    const {esc}=WatchUI;
+    const data=await SectionData.load('task-matches.json');
     $('task').innerHTML='<option value="">Выберите задачу</option>'+data.tasks.map(t=>`<option value="${esc(t.id)}">${esc(t.title)}</option>`).join('');
     const requested=new URLSearchParams(location.search).get('task');
     if(data.tasks.some(t=>t.id===requested))$('task').value=requested;

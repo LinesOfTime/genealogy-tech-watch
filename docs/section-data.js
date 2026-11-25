@@ -1,0 +1,2 @@
+/* Prefer embedded, published data; refresh is not required for offline navigation. */
+var SectionData={async load(file){const node=document.getElementById(file);if(node){try{return JSON.parse(node.textContent)}catch(error){console.warn('Invalid embedded data',file,error)}}const r=await fetch(file,{cache:'no-cache'});if(!r.ok)throw Error('Не удалось загрузить '+file+' (HTTP '+r.status+')');return r.json()}};

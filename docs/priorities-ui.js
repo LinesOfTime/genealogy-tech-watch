@@ -1,7 +1,8 @@
 (async()=>{
-  const {esc,link}=WatchUI,$=id=>document.getElementById(id);
+  const $=id=>document.getElementById(id);
   try {
-    const load=async file=>{const r=await fetch(file,{cache:'no-store'});if(!r.ok)throw Error('Не удалось загрузить '+file);return r.json()};
+    const {esc,link}=WatchUI;
+    const load=file=>SectionData.load(file);
     const [review,tasks]=await Promise.all(['priority-review.json','task-matches.json'].map(load));
     $('priority-metrics').textContent=`${review.counts.total} карточки · ${review.counts.p1_e0} меток P1 с E0-триажем · ${review.counts.missing_evaluations} без прежней оценки · ${review.counts.independent_reports} отчётов об испытаниях в оценках`;
     $('priority-metrics').textContent+=` · ${review.projects.filter(x=>x.practical_proposal).length} практических оценок`;
